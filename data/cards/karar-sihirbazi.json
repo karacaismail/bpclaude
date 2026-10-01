@@ -1,0 +1,344 @@
+{
+  "slug": "karar-sihirbazi",
+  "baslik": "Teknoloji yığını karar sihirbazı",
+  "ozet": "Müşterinin sitedeki koşullu formu doldurmasıyla stack önerisi, kapsam, kaba efor bandı ve logolu teklif taslağı üreten Türkçe keşif sihirbazı; web ajanslarına ve bağımsız geliştiricilere satılır. Bugün form motoru ve soru bankası var; arka uç, PDF ve panel yok, ödeyen müşteri yok.",
+  "bugun": {
+    "var": [
+      "Koşullu form motoru ve 8 proje profili; canlı demo herkese açık",
+      "Yaklaşık 100 soruluk, 21 kategorili Türkçe teknik soru bankası (ajans diline çevrilmeli)",
+      "Kural tabanlı öneri kartları ve JSON dışa aktarma",
+      "Arka uç taslağı (öneri ve açıklama uçları) mock durumda",
+      "README'de MIT lisansı belirtilmiş; tek birim test dosyası"
+    ],
+    "yok": [
+      "Kalıcılık, kimlik doğrulama ve çok kiracılı hesap yok",
+      "Teklif taslağı PDF ve e-posta gönderimi yok",
+      "Ajans paneli ve webhook yok",
+      "LICENSE dosyası yok; lisans seçimi kurucuya ait",
+      "Bu ürün için ödeme ve fatura düzeni kurulmadı",
+      "Ajanslarla görüşme, ücretli pilot ya da yazılı niyet kaydı yok"
+    ],
+    "odeyen_musteri": 0
+  },
+  "iki_calisma": {
+    "claude": "Ajanslar için white-label proje keşif sihirbazı: 490-990 ₺/ay abonelik, 5.000 ₺ kurulum, önce kurucunun kendi hizmetinde dahili kullanım. Baz hedef 12 ayda 15 ajans; kötü senaryo üç yıl zarar. Sunum koşullu: 90 günde 3 pilottan 2 ödeme çıkmazsa yalnız dahili araç. Geliştirme 6-8 hafta.",
+    "gpt": "Bugün müşteriye dağıtım, gelir ya da her özelliğin çalıştığı doğrulanmadı. İlk alıcı hipotezi proje başında stack kararı veren ajans. Üç dar seçenek: mimari karar çalıştayı, white-label onboarding formu, karar raporu export paketi. İlk ödeme tek çıktının kabulüne bağlanır; tekrar talep görülmeden abonelik yok.",
+    "ayrisma": "Claude planı hemen abonelikli SaaS ve rakamlı gelir projeksiyonu kuruyor; GPT çalışması önce 7 günlük deney ve tek çıktılı hizmet istiyor, abonelik için tekrar kullanım kanıtı arıyor ve gelir rakamı uydurmuyor.",
+    "birlesik": "Ödeme kanıtı olmadan SaaS yatırımı yapılmamalı: önce sabit kapsamlı karar dosyası hizmeti ya da uyarlama kiti ile 8 hafta içinde tahsilat denenmeli; tekrar talep ve 3 pilottan 2 ödeme görülürse abonelik ürünleşir."
+  },
+  "analist_gorusu": "En gerçekçi yol önce sabit fiyatlı karar dosyası hizmeti (B) ile ajanslardan ilk tahsilatı almak; abonelik ürünü (A) yaklaşık 320 saat geliştirme ve 90 günlük pilot nedeniyle 6 ayda zayıf kalır.",
+  "secenekler": [
+    {
+      "id": "karar-sihirbazi-a",
+      "ad": "Ajanslara white-label keşif sihirbazı aboneliği",
+      "tur": "yazılım ürünü",
+      "musteri": "2-8 kişilik web ajansları ve küçük yazılım evleri; satın alma kararı ajans sahibinde",
+      "is": "Gelen fiyat taleplerinde keşif görüşmesi yapmadan kapsamı anlamak ve teklifi 3-7 günde değil 1 günde çıkarmak",
+      "tetikleyici": "Yeni müşteriden gelen 'fiyat ver' talebi; hafta sonu teklif yazmak zorunda kalmak; geç verilip kaybedilen teklif",
+      "teklif": "Sitede yayınlanan koşullu form, stack ve efor bandı önerisi, ajans logolu teklif taslağı PDF, lead listesi ve webhook; 90 günlük pilot, kurulum bedava",
+      "fiyat": "Starter 490 ₺/ay, Pro 990 ₺/ay, Pro kurulumu 5.000 ₺ tek sefer; yıllık ödemede 2 ay indirim",
+      "kanal_birincil": "LinkedIn'de elle seçilen ajans sahiplerine ayda 50 kişisel mesaj ve 20 dakikalık canlı demo",
+      "kanal_yedek": "Mali müşavir ve hosting satıcılarıyla %20 paylı ortaklık; açık kaynak motor deposu; ajans dizinleri",
+      "ilk_adim": "Dahili sürümü kurucunun kendi hizmet sayfasına gömüp 10 gerçek keşif toplamak; 3 tanıdık ajansa pilot teklifi vermek",
+      "ilk_kapsam": "Form, öneri, PDF, e-posta ve basit ajans paneli; PDF ve panel sıfırdan (ürün yaklaşık %30 hazır). Tek kiracı gibi çalışan, 8 profilli, ajans diline çevrilmiş sürüm",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucunun deposunda; LICENSE dosyası yok, README MIT diyor, CDN bileşen lisansları teyit bekliyor"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "KVKK veri işleyen rolü, aydınlatma, veri işleme sözleşmesi ve hukuk görüşü bekliyor"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve fatura ile satış planlı, sanal POS abonelik sonraya; hesap açılmadı, fatura düzeni teyitsiz"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net (ajans sahibi); isim listesi yok, planda yalnız 3 pilot adayı ve ağ çevresi anılıyor"
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Birincil kanal LinkedIn kişisel mesaj, ilk adım 50 mesaj; ortak ve açık kaynak yedekleri adlı"
+        },
+        "G6": {
+          "durum": "kaldi",
+          "not": "İlk ödenebilir kapsam yaklaşık 320 saat (16 hafta, plan kalan iş); pilot ödeme kapısı 90. günde"
+        },
+        "G7": {
+          "durum": "test",
+          "not": "Başlangıç nakdi 14.000 ₺; plandaki aylık gider payı 8.700 ₺ ile ilk tahsilata 3-6 ayda 40-66 bin ₺, tavan 50.000 ₺ sınırında ya da üstünde"
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Soru seti uyarlama kurulumu sabit fiyatlı ama ajans başına uyarlama sınırı yazılı değil; uyarlama 1 saati aşarsa hizmet projesine kayar"
+        }
+      },
+      "kapi_duzeltme": "G6: statik form ve e-posta PDF'iyle başla, pilotları elle kur. G7: gider payını hesapla. G8: uyarlama kapsamını yaz. G1-G4: LICENSE, hukuk ve mali müşavir teyidi, hesap, 20 isim.",
+      "finans": {
+        "satis_tipi": "aylık abonelik",
+        "net_fiyat_tl": 790,
+        "degisken_maliyet_tl": 40,
+        "sabit_gider_aylik_tl": 8700,
+        "baslangic_nakit_tl": 14000,
+        "kalan_efor_saat": {
+          "min": 200,
+          "beklenen": 320,
+          "max": 420
+        },
+        "ilk_tahsilat_gun": {
+          "min": 90,
+          "max": 180
+        },
+        "satis_basina_kurucu_saati": 12,
+        "musteri_basina_aylik_destek_dk": 20,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 980,
+          "baz": 10500,
+          "iyi": 20600
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 2,
+          "baz": 11,
+          "iyi": 20
+        },
+        "alti_ay_musteri": {
+          "kotu": 1,
+          "baz": 3,
+          "iyi": 5
+        },
+        "donusum_orani": {
+          "dusuk": 0.06,
+          "yuksek": 0.2
+        },
+        "dayanak": "Plan 5, 6, 8 ve ek C.8, D.2. Net fiyat 790 ₺ plan ARPU'su. Kalan efor plan: yaklaşık 320 saat. Baz: 2 pilot 490 ₺ x 4 ay (ay 3'ten), 1 yeni ajans 790 ₺ x 2 ay, 1 Pro kurulumu 5.000 ₺ = 10.500. Plan 12 ayda 15 ajans diyor; 6. ayda 3 ödeyen alındı. Dönüşüm kanıtsız varsayım."
+      },
+      "deney": {
+        "varsayim": "Küçük ajanslar teklif süresini kısaltan keşif formu için ayda 490 ₺ öder",
+        "yontem": "Dahili sürümde 10 gerçek keşif yap, teklif süresini öncesi/sonrası ölç; 3 tanıdık ajansa 90 günlük pilot (kurulum bedava, 490 ₺/ay) ve ödeme isteği sun",
+        "sure_gun": 90,
+        "maliyet_saat": 120,
+        "maliyet_tl": 3600,
+        "basari_olcutu": "3 pilottan en az 2 ödeme ve teklif süresinde en az %50 kısalma",
+        "birakma_olcutu": "90. günde en çok 1 ödeme: abonelik kapatılır, yalnız dahili araç kalır",
+        "sonraki_dilim": "Çok kiracılı panel, abonelik tahsilatı, webhook ve 8 ödeyen ajansa ulaşma"
+      },
+      "etiketler": {
+        "segment": "Küçük web ajansı ve yazılım evi",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "TypeScript, FastAPI, PostgreSQL",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "Claude planı bölüm 2, 5, 6, 8: Starter 490, Pro 990, kurulum 5.000 ₺; baz 12 ayda 15 ajans, yıl 1 net -21.400 ₺; kalan iş yaklaşık 42 gün (320 saat). Ek C ve D.8: 90 gün takvimi, 3 pilot, ay 3'te 2 ödeme, eksik arka uç, PDF ve panel. Rakipler: ücretsiz Tally, ScoreApp 39-149 $/ay. GPT dosyası: dağıtım ve gelir doğrulanmadı. Ödeyen müşteri yok."
+    },
+    {
+      "id": "karar-sihirbazi-b",
+      "ad": "Proje başı stack karar dosyası (sabit kapsamlı hizmet)",
+      "tur": "hizmet",
+      "musteri": "Teklif öncesi stack kararı veren ajanslarda çözüm mimarı ve teklif sahibi; küçük yazılım evleri",
+      "is": "Bir müşteri projesi için beş kritik teknoloji seçimini alternatif, gerekçe ve sonuçla yazılı hâle getirip müşteriye savunmak",
+      "tetikleyici": "Yeni proje teklifi öncesi stack seçimi; müşterinin 'neden bu teknoloji' sorusu; kapsam kayması yaşayan önceki proje",
+      "teklif": "Tek proje için 60 dakikalık çalıştay ve beş seçimlik karar dosyası; 3 iş gününde teslim, bir tur revizyon; kabulde ödeme",
+      "fiyat": "6.000 ₺ sabit fiyat (varsayım), KDV hariç; havale ve fatura, kabulde tahsilat",
+      "kanal_birincil": "Kurucunun tanıdık ajans çevresine ve LinkedIn'de elle seçilen ajans sahiplerine birebir mesaj",
+      "kanal_yedek": "Açık kaynak sihirbaz demosundan gelen talepler; mali müşavir ve hosting satıcısı ortakları; ajans toplulukları",
+      "ilk_adim": "Kurucunun kendi bir projesi için örnek karar dosyası üretmek; izinli anonim örnekle 10 ajans sahibine mesaj atmak",
+      "ilk_kapsam": "Mevcut sihirbazla elle yürütülen 60 dakikalık çalıştay ve şablonlu beş seçimlik karar dosyası; yazılım geliştirmesi yok",
+      "kapilar": {
+        "G1": {
+          "durum": "gecti",
+          "not": "Teslim kurucunun kendi yazdığı soru bankası ve uzman gerekçesinden oluşan belge; üçüncü taraf kod satılmıyor"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Sözleşme şablonu, sorumluluk sınırı ve fatura düzeni mali müşavir ve hukukçu teyidi bekliyor; kişisel veri alınmıyor"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve fatura yolu belli; fatura kesim düzeni ve hesap bu iş için teyit edilmedi"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; isim listesi yok, belgelerde yalnız tanıdık ağ çevresi ve 3 pilot adayı anılıyor"
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Birincil kanal tanıdık ağ ve LinkedIn birebir mesaj, ilk adım örnek dosya; yedek kanallar adlı"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor yaklaşık 30 saat (2 hafta) analist tahmini; planda hizmetin eforu yok, satış döngüsü ve 14-45 günlük ilk tahsilat ölçülmedi"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi yaklaşık 4.000 ₺ (sözleşme şablonu, alan adı); tavanın çok altında"
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Sabit kapsam: tek proje, beş seçim, bir revizyon turu, sabit fiyat; özel geliştirme yok"
+        }
+      },
+      "kapi_duzeltme": "G6: örnek karar dosyasını üretip gerçek saati ölç, ilk 10 temasla satış süresini gör. G2-G4: sözleşme şablonu ve fatura düzenini teyit ettir, hesabı aç, 20 ajans sahibinin isim listesini çıkar.",
+      "finans": {
+        "satis_tipi": "proje",
+        "net_fiyat_tl": 6000,
+        "degisken_maliyet_tl": 300,
+        "sabit_gider_aylik_tl": 1900,
+        "baslangic_nakit_tl": 4000,
+        "kalan_efor_saat": {
+          "min": 15,
+          "beklenen": 30,
+          "max": 50
+        },
+        "ilk_tahsilat_gun": {
+          "min": 14,
+          "max": 45
+        },
+        "satis_basina_kurucu_saati": 14,
+        "musteri_basina_aylik_destek_dk": 30,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 12000,
+          "iyi": 24000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 2,
+          "iyi": 4
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 2,
+          "iyi": 4
+        },
+        "donusum_orani": {
+          "dusuk": 0.05,
+          "yuksek": 0.2
+        },
+        "dayanak": "GPT dosyası fiyat vermiyor; 6.000 ₺ kanıtsız varsayım (planın 5.000 ₺ kurulum ücretinin üstü). Baz 6 ayda 2 satış: ayda 50 mesaj, %10 demo, ücretli satış %20, hepsi varsayım. Kötü hiç satış yok; iyi 4 satış. Fiyat da satış sayısı da kanıtlı değil, ödeyen müşteri yok."
+      },
+      "deney": {
+        "varsayim": "Ajanslar, tek projelik gerekçeli stack kararı için ön ödemesiz de olsa 6.000 ₺ öder",
+        "yontem": "7 günde kurucunun bir projesi için örnek dosya üret; izinli anonim örnekle 10 ajans sahibine yaz, 3 demo yap, 2 ücretli teklif ver; ödemeyi kabule bağla",
+        "sure_gun": 30,
+        "maliyet_saat": 30,
+        "maliyet_tl": 600,
+        "basari_olcutu": "30 günde en az 1 ödenen dosya ve alıcıdan ikinci proje talebi",
+        "birakma_olcutu": "10 temas ve 3 demodan sonra ücretli teklif yok: hizmet bırakılır",
+        "sonraki_dilim": "Aynı alıcıdan tekrar talep gelirse aylık karar dosyası paketi; sonra uyarlama kiti"
+      },
+      "etiketler": {
+        "segment": "Ajans çözüm mimarı ve teklif sahibi",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "Mevcut sihirbaz, elle şablon",
+        "regulasyon": "yok"
+      },
+      "kanit_notlari": "GPT dosyası: ilk alıcı hipotezi ajans; üç dar seçenek (mimari karar çalıştayı, onboarding formu, rapor paketi); ilk ödeme tek çıktının kabulüne bağlanabilir; yedi günlük deney; fiyat rakamı yok. Claude planı bölüm 1 ve 2: teklif başına 4-8 saat, kapsam hatası; sihirbaz motoru ve soru bankası mevcut. Ödeyen müşteri yok; fiyat varsayım."
+    },
+    {
+      "id": "karar-sihirbazi-c",
+      "ad": "Ajans için uyarlanmış keşif formu kiti (tek seferlik)",
+      "tur": "kod satışı",
+      "musteri": "Kendi sitesine keşif formu koymak isteyen küçük web ajansları ve bağımsız geliştiriciler",
+      "is": "Fiyat talebi gelen müşteriye, görüşmeden önce doldurtulacak ajans markalı keşif formu ve kaba efor özeti elde etmek",
+      "tetikleyici": "Yeni sitesini yayına alan ajans; 'önce fiyat' diyen müşteriyle sonuçsuz kalan görüşmeler",
+      "teklif": "Ajans diline çevrilmiş soru seti, 8 profil, gömülebilir statik form ve efor bandı özeti; kurulum, marka uyarlaması ve 1 saat eğitim; aboneliksiz",
+      "fiyat": "5.000 ₺ tek sefer (planın kurulum ücreti), KDV hariç; kabulde havale ve fatura",
+      "kanal_birincil": "Kurucunun tanıdık ajans çevresine ve LinkedIn'de elle seçilen ajans sahiplerine birebir mesaj",
+      "kanal_yedek": "Açık kaynak motor deposu ve canlı demo; 'proje keşif formu' aramaları için içerik sayfaları; ajans toplulukları",
+      "ilk_adim": "Soru bankasını ajans diline çevirmek ve kurucunun kendi hizmet sayfasına gömmek; 3 tanıdık ajansa kit teklifi vermek",
+      "ilk_kapsam": "Ajans diline çevrilmiş 8 profilli, statik gömülebilir form ve ekranda efor bandı özeti; PDF, panel ve arka uç yok",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "LICENSE dosyası yok; kit satışında kullanım lisansı metni, açık kaynak motor ilişkisi ve bileşen lisansları netleşmeli"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Kit lisans sözleşmesi ve fatura düzeni teyit bekliyor; veri ajansın kendi sitesinde toplanır, KVKK yükü ajansta"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve fatura yolu belli; hesap ve fatura düzeni bu iş için teyit edilmedi"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; isim listesi yok, belgelerde yalnız tanıdık ağ çevresi anılıyor"
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Birincil kanal tanıdık ağ ve LinkedIn birebir mesaj, ilk adım soru seti çevirisi; yedek kanallar adlı"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor yaklaşık 137 saat (7 hafta); en kötü durumda 9,5 hafta, tahmin yüksek belirsizlikli"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi yaklaşık 3.600 ₺ (sözleşme metni, alan adı); tavanın çok altında"
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Aynı kit herkese; uyarlama kurulumda 1 saatlik sabit kapsam ve sabit fiyat"
+        }
+      },
+      "kapi_duzeltme": "G6: yalnız 2 profil ve ekranda efor özetiyle başla, kalan profilleri sonra ekle. G1-G4: LICENSE ve kit lisans metni, mali müşavir teyidi, hesap açılışı, 20 isimli liste.",
+      "finans": {
+        "satis_tipi": "tek seferlik",
+        "net_fiyat_tl": 5000,
+        "degisken_maliyet_tl": 200,
+        "sabit_gider_aylik_tl": 1000,
+        "baslangic_nakit_tl": 3600,
+        "kalan_efor_saat": {
+          "min": 90,
+          "beklenen": 137,
+          "max": 190
+        },
+        "ilk_tahsilat_gun": {
+          "min": 45,
+          "max": 100
+        },
+        "satis_basina_kurucu_saati": 10,
+        "musteri_basina_aylik_destek_dk": 30,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 5000,
+          "iyi": 15000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "donusum_orani": {
+          "dusuk": 0.03,
+          "yuksek": 0.12
+        },
+        "dayanak": "Plan 5 ve ek D.2: kurulum 5.000 ₺ (soru seti uyarlama, marka, eğitim). Efor: ek D.2 çeviri 5, profil 3, gömme 3, öneri 3, efor bandı 4 = 18 gün x 7,6 saat. Motor ücretsiz ve LICENSE yok; baz 1 satış = 5.000, iyi 3, kötü sıfır. Fiyat ve dönüşüm kanıtsız varsayım."
+      },
+      "deney": {
+        "varsayim": "Ajanslar ücretsiz açık motor varken uyarlanmış hazır kit için 5.000 ₺ öder",
+        "yontem": "Soru bankasını çevir, 2 profilli statik kiti kendi sayfana göm; 10 ajans sahibine canlı örnekle yaz, 3 demo yap, 2 ücretli kit teklifi ver",
+        "sure_gun": 45,
+        "maliyet_saat": 70,
+        "maliyet_tl": 600,
+        "basari_olcutu": "45 günde en az 1 ödenen kit ve alıcıdan ek profil ya da destek talebi",
+        "birakma_olcutu": "10 temas ve 3 demodan sonra ücretli teklif yok: kit açık kaynak olarak bırakılır",
+        "sonraki_dilim": "Alıcı aylık güncelleme isterse PDF ve panelli abonelik (seçenek A)"
+      },
+      "etiketler": {
+        "segment": "Küçük web ajansı ve bağımsız geliştirici",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "TypeScript, statik gömme",
+        "regulasyon": "lisans"
+      },
+      "kanit_notlari": "Claude planı bölüm 2 ve ek D.2, D.8: sihirbaz motoru ve profiller %60-70 hazır, çeviri ve gömme eksik; kurulum ücreti 5.000 ₺; rakip Tally ücretsiz. GPT dosyası: onboarding formu ve rapor export paketi dar seçenek olarak öneriliyor, tekrar kullanım görülmeden abonelik yok. Motor açık kaynak olduğundan ücretli fark yalnız uyarlama emeği. Ödeyen müşteri yok."
+    }
+  ]
+}

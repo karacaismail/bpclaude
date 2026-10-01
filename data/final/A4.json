@@ -1,0 +1,665 @@
+{
+ "kriter": "A4",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Kafe bugün menü baskısına ödüyor; rakip QR menü abonelikleri 175-250 TL/ay, POS içi ücretsiz QR de kullanılıyor."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Zincir şube menüsünü PDF, baskı ve elle denetimle yürütüyor; bu işe ödenen araç gösterilmedi, rakip planlar ucuz."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans ya da iç ekip modülü kendi yazıyor olabilir; ücret ya da emek kaydı yok, yalnız varsayım."
+  },
+  "parselq-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı bugün Endeksa arsa raporuna 1.199 TL, Eder Mi'ye 250-950 TL ödüyor ya da 3-5 saat ilan tarıyor."
+  },
+  "parselq-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ofis ilan görselini Canva ile elle hazırlıyor; portal paketine ödüyor ama bu işe ayrı ödeme yok."
+  },
+  "parselq-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ofis belgeleri Sheets, PDF ve mesajla elle birleştiriyor, analist saati harcıyor; ücretli araç gösterilmedi."
+  },
+  "destektesvik-a": {
+   "p": 5,
+   "k": 1,
+   "g": "KOBİ bu iş için bugün danışmana 3.000-50.000 TL, Teşvik Rotası analizine 500-2.600 TL ödüyor; fiyatlar kamuya açık."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Büro portföy taramasını Excel ve hafızayla elle, faturasız yapıyor; TeşvikAra paneli 839 TL/ay ama ödeyen büro gösterilmedi."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Kurum üyeye toplu e-posta ve bilgi semineriyle yetiniyor; tarama için bütçe ya da ödenen çözüm yok."
+  },
+  "asgari-iscilik-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Yüklenici hesabı Excel ile ayda 2-4 gün elle yapıyor ve dosya başı danışmana ödüyor; danışman ücreti kamuya açık değil."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Büro her mükellef için ayrı Excel ile elle izliyor; hakediş ve bordro araçları bu hesabı yapmıyor, ödenen araç yok."
+  },
+  "asgari-iscilik-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Yüklenici hesabı Excel ile ayda 2-4 gün elle yapıyor ve dosya başı danışmana ödüyor; danışman ücreti kamuya açık değil."
+  },
+  "zincir-danismanligi-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Zincir bu işleri bugün web ajansı ve iç ekiple yürütüyor, para ve emek harcıyor; ödenen tutar belgelenmedi."
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Zincirler ajansa aylık ödüyor ama denetimi ajanslar ücretsiz verebiliyor; denetime ayrı ödeme kaydı yok."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Şube menüsü baskı ve elle güncellemeyle yürüyor; baskı maliyeti varsayım, rakip QR planları ucuz ya da ücretsiz."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Satıcı Excel ve 15'ten çok ücretsiz araçla elle hesaplıyor; Karpanel 349-1.299 TL/ay ama ödeyen sayısı belgesiz."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Danışman müşteri raporunu Excel ve ücretsiz araçla elle hazırlıyor; ücretli paneller satıcıya satıyor, danışmana değil."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Satıcı Excel ve mali müşavirle elle çözüyor; Karpanel 349-1.299 TL/ay ama ödeyen sayısı belgesiz."
+  },
+  "titanlar-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı kitlesi e-ticaret eğitimine bugün ödüyor: sertifika programı 5.000 TL, kayıtlı kurs 3.900 TL; bir kısmı ücretsiz kaynakla yetiniyor."
+  },
+  "titanlar-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Satıcı bugün özel derse 1.500-20.000 TL ya da ajansa ödüyor; kalanı Excel ve ücretsiz hesaplayıcıyla elle çözüyor."
+  },
+  "titanlar-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurumlar ücretsiz bakanlık etkinliği ve oda akademisi kullanıyor; 15-60 bin TL eğitim bütçesi yalnız varsayım."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Üretici tek dilli eski site, PDF katalog ve WhatsApp ile idare ediyor; ajans fiyatı 180 bin TL üstü, ödediği kayıt yok."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Küçük üretici çoğunlukla tek sayfalık siteyle yetiniyor; serbest çalışan 10-25 bin TL seçeneği var, ödeme istekliliği düşük."
+  },
+  "kurumsal-site-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici kalıbı elle yazıyor ya da ücretli tema alıyor; bu niş için benzer tema satış verisi bulunamadı."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Üretici Excel ve ücretsiz platform eğitimiyle elle çözüyor; ajans denetimi 15.000-60.000 TL ama ödediği kayıt yok."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Üretici kârlılığı kendi tablosuyla elle hesaplıyor; ajans denetimi 15.000-60.000 TL bandı kamuya açık, ödeme kaydı yok."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Üretici PDF katalog, Instagram ve dağınık e-posta teklifiyle elle yürütüyor; ajans web bandı yüksek, ödeme kaydı yok."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Ajans her sitede elle 2-3 saat kuruyor; yerli uyum SaaS'ı 719 TL/ay ve hukuk bürosu metni bugün ödenen seçenekler."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Mağaza ücretsiz PSP tablosu ve kod parçacığıyla elle çözüyor; ücretli kalem yalnız PSP eklenti kurulumu."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Ajans her sitede elle yaklaşık 3 saat kuruyor; yerli uyum SaaS'ı 719 TL/ay ve hukuk bürosu metni bugün ödenen seçenekler."
+  },
+  "qral-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kullanıcı ücretsiz uzantı ya da elle kopyalamayla yetiniyor; rakiplerin hepsi ücretsiz, bu işe para ödeyen gösterilmedi."
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Öğretmen QR'ı ücretsiz sitelerde üretip belgeye tek tek elle yerleştiriyor; zaman harcıyor, ödenen çözüm yok."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekip kaynakları elle Markdown ve yer imiyle biçimlendiriyor, zaman harcıyor; ücretsiz yapay zekâ güçlü ikame."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Eğitmen müfredatı Notion ve belgelerde elle yeniden yazıyor; ücretli tema ve şablonlar var, ödediği gösterilmedi."
+  },
+  "frontend-atlasi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Öğrenen ücretsiz YouTube ve 10-12 dolarlık Udemy kursuyla 50-150 saat harcıyor; ücretsiz platformlar baskın."
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Eğitmen dersi ve laboratuvarı kendisi elle yazıyor; ders üretimi için dışarıya ödeme gösterilmedi."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Şirketler genel eğitime 1.000-11.000 TL bandında ödüyor; karar atölyesine özel harcama yok, kararlar iç toplantıyla alınıyor."
+  },
+  "karar-kitabi-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı aynı iş için kitap, kurs ve 29-79 dolarlık Notion şablonu satın alıyor; kitap ve kurs satış adetleri kaynaklı."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Facilitatör oturum notunu Notion, Miro ve kendi şablonuyla yaklaşık iki saatte elle toparlıyor; ödenen araç gösterilmedi."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Kurucu bugün slayt ajansına 1.000-5.000 TL, pitch deck'e 5-25 bin TL ödüyor ya da Excel ve PowerPoint ile kendi yapıyor."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu üç dosyayı elle karşılaştırıyor ya da mentör saati harcıyor; slayt ajansı ayrı iş, denetime ödeme yok."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Program yöneticisi PowerPoint şablonu ve mentör saatiyle elle düzeltiyor; bu iş için ödenen yazılım yok."
+  },
+  "vize-operasyon-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Acente dosyaları Excel, WhatsApp ve kâğıtla elle izliyor; rakip CRM'ler fiyat belirtmiyor, ödenen araç belgesiz."
+  },
+  "vize-operasyon-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Acente başvuru satırlarını Sheet, mesaj ve portal arasında elle işliyor, operatör emeği harcıyor; ödenen tutar yazılı değil."
+  },
+  "vize-operasyon-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Başvurucu forum, ücretsiz liste ve ChatGPT ile kendi hazırlıyor; acenteye 3.000-6.000 TL ödeme varsayım."
+  },
+  "software-factory-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Teknik ortağı olmayan girişim MVP için bugün ajansa ya da freelancera ödüyor; Clutch'ta 25-99 dolar/saat, asgari proje 10-50 bin dolar."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekip ajan PR'larını elle review ve CI ile inceliyor, zaman harcıyor; bu işe ayrı ücret ödemiyor."
+  },
+  "software-factory-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Geliştirici kadrosu olmayan ajans uygulama işini alt yüklenici freelancera ödeyerek yaptırıyor; tutarlar görüşmesiz varsayım."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Program fikirleri serbest metin form ve mentor okumasıyla elle eliyor, mentor saati harcıyor; ücretli çözüm yok."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aday ChatGPT, Excel ve kanvas araçlarıyla elle çözüyor; danışmana 5.000-25.000 TL ödeme kaynaksız varsayım."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 0,
+   "g": "KOBİ kararı Excel ve sunumla elle hazırlıyor, mali müşavire soruyor; ücretli ön değerlendirme kanıtı yok."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici Activity Monitor ile elle teşhis edip süreç sonlandırıyor, zaman kaybediyor; rakipler ücretsiz, para ödemiyor."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Takım donan istasyonu elle teşhis edip yeniden başlatıyor, zaman harcıyor; ücretsiz araçlar var, ödeme yok."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Orkestratörler bugün bu iş için para ya da emek harcamıyor; kabul kararını kendileri yazma maliyeti yalnız varsayım."
+  },
+  "actionplan-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici görevleri Markdown dosyası ve ücretsiz CLI araçlarıyla elle bölüyor; rakipler ücretsiz, ödeyen yok."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans kapsam ve kabulü e-posta, ClickUp ve Plane ile elle izliyor; bu işe özel ücretli çözüm kullanmıyor."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Alıcı ücretsiz İngilizce şablon ve yapay zekâ sohbetiyle yetiniyor; ödenen çözüm ya da ölçülü emek gösterilmedi."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici üç ücretsiz aracı ayrı ayrı açıp elle bakıyor; ayda yaklaşık 2 saat varsayım, para ödemiyor."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans yapay zekâ harcamasını Excel ile elle topluyor varsayımı; persona kurgusal, gerçek ajans verisi yok."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Bugünkü çözüm belirsiz; ücretsiz grafik araçları çok, elle izleme ya da ödeme için kanıt yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici İngilizce blog ve deneme-yanılmayla öğreniyor, zaman harcıyor; çeviri teknik kitaplar 322-679 TL."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip tasarım sistemini iç emekle kuruyor; serbest çalışana 100-150 bin TL ödeme rakamı yalnız varsayım."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans ekran tutarsızlığını elle inceleme ve yeniden işle gideriyor; ayrı ücretli çözüm kanıtı yok."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kafe sahibi menü metnini ve yorum yanıtını elle yazıyor ya da ücretsiz ChatGPT'ye kopyalıyor; bu işe ödeme yok."
+  },
+  "aicommandcard-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekip AI yüzeyini sıfırdan 2-4 haftada yazıyor ya da ücretsiz kütüphane kuruyor; hizmete ödeme kanıtı yok."
+  },
+  "atonota-denetim-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Site sahibi PageSpeed'i elle çalıştırıyor, ücretsiz Site Kit kullanıyor; zaman harcıyor, bu işe para ödemiyor."
+  },
+  "atonota-denetim-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Ajans müşteri raporunu Excel ve ekran görüntüsüyle elle hazırlıyor ya da AgencyAnalytics'e müşteri başı 20 dolar/ay ödüyor."
+  },
+  "atonota-denetim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans kabul ve revizyonu ticket, e-posta ve proje yöneticisi emeğiyle yürütüyor; ödenen araç kanıtı yok."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Üretici ürün bilgisini PDF katalog ve tek dilli sayfayla sunuyor; ajans ürün sayfası 20-40 bin TL fiyatı varsayım."
+  },
+  "b2b-bilesenler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans ürün sayfasını Figma ve elle kodlamayla çıkarıyor; iç emek maliyeti varsayım, dışarıya ödeme yok."
+  },
+  "b2b-bilesenler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici ücretsiz örnek ve bloklarla elle kuruyor; Metronic 49 dolar yalnız yakın alanda ödeme gösteriyor."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kafe sahibi görseli Canva ücretsiz katmanında elle üretiyor, zaman harcıyor; harcama rakamları varsayım."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İşletme görseli elle Canva ile ya da ajansla yapıyor; ajans paketi 5-15 bin TL bandı varsayım, ödeme kaydı yok."
+  },
+  "banner-post-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans aynı briefin boyut ve içerik varyantlarını elle çoğaltıyor; sayı ve ücret verilmemiş, hipotez."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans keşfi Word şablonu, ücretsiz Tally formu ve e-postayla elle yapıyor, teklif başı 4-8 saat; ayrı ödeme yok."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Çözüm mimarı gerekçeyi kafadan ve ChatGPT ile elle yazıyor; ödenen danışman ya da araç gösterilmedi."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans ücretsiz Tally ve Word şablonuyla elle çözüyor; kit için bugün ödenen bir şey gösterilmedi."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Pazarlama sorumlusu sunumları PowerPoint ile elle güncelliyor; acil işte ajansa ödeme rakamı varsayım."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sunumları iç tasarımcı ve serbest çalışanla elle üretiyor; aylık maliyet rakamı varsayım, kayıt yok."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Danışman raporu PowerPoint ya da Canva ile elle yeniden düzenliyor; zaman maliyeti ve ücret belgesiz."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Kurucu demo için bugün AI üreticiye 25-50 dolar/ay ya da tasarımcıya ödüyor; AI üretici fiyatı kaynaklı, ajans bandı varsayım."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans teklif demosunu kendi tasarımcısıyla 2-4 günde statik maket olarak hazırlıyor; gün ücreti varsayım, dış ödeme yok."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 3,
+   "k": 1,
+   "g": "İşletme puantajı Excel, PDKS ekranı ve uzman kontrolüyle elle mutabık kılıyor; yerleşik İK ürünleri bu dar işi çözmüyor."
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Geliştirici ücretsiz İngilizce blog ve boş sayfayla başlıyor; bu iş için para ödemiyor, emek ölçülmedi."
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekip mimari belgeyi Confluence ve ücretsiz araçlarla elle yazıyor; IcePanel 40-80 dolar/editör/ay ama ödeyen gösterilmedi."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip mimari belgeyi 16-32 saatlik iç emekle elle yazıyor; danışmana ödeme varsayım, kaynakla gösterilmedi."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekip onay akışını ve log tablosunu 2-3 günde elle yazıyor; Retool kullanıcı başı ücretli ama ödediği gösterilmedi."
+  },
+  "devpanel-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Operasyon sahibi Excel başlıklarını geliştiriciye iletiyor, geliştirici formu elle yazıyor; ücretsiz form kütüphaneleri yaygın."
+  },
+  "devpanel-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı bugün hazır panel şablonu satın alıyor: Metronic 49 dolar ve 120 binden çok satış; ücretsiz kütüphaneler de kullanılıyor."
+  },
+  "e-menum-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Ajans bugün 19-89 dolarlık betik satın alıp 80-160 saat uyarlıyor; betik fiyatları ve satış adetleri kamuya açık."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Çok şubeli marka menüyü PDF, ajans mesajı ve elektronik tabloyla elle güncelliyor; bedeli ölçülmedi, ödenen araç yok."
+  },
+  "e-menum-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Geliştirici bugün 19-89 dolarlık betik satın alıp uyarlıyor; pazar yerinde 2 bine yakın satış kamuya açık."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici forumları elle tarıyor ve genel yapay zekâ kullanıyor; trend araçları 39-249 dolar/ay ama çoğu ödemiyor."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici yaklaşık 8 saat elle tarama yapıyor, genel yapay zekâ istemi kullanıyor; ücretli harcama yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansta ürün fikri müşteri talebinden tesadüfen çıkıyor; düzenli emek ya da ücretli danışmanlık kanıtı yok, persona varsayım."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Çeviri sonrası siteyi elle geziyor, Excel tutuyor, çevirmene yeniden ödüyor; denetim için ücretli rakip yok."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Geliştirici ücretsiz W3C listeleri ve TMS bloglarıyla yetiniyor; ücretli çözüm kullanmıyor, emek ölçülmedi."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekip Playwright, Storybook ve elle pseudo locale ile kontrol ediyor; para değil mühendis emeği harcıyor."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yönetim kararı toplantı ve Excel ile elle hazırlıyor, ajanstan teklif alıyor; para harcandığı belgelenmedi."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucu kategoriyi tablo, görüşme ve kendi paneliyle elle sınıyor; zaman harcıyor, ücret ödediği kanıt yok."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurumsal ekip kararı iç toplantı ve ajans teklifleriyle yürütüyor; danışmana ödeme rakamları doğrulanmamış varsayım."
+  },
+  "lifeos-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı kitap, kurs ve 29-79 dolarlık şablon alıyor ama gün içi uygulama için özel harcama ya da ölçülü emek yok."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Freelancer haftalık kaydı elle zaman çizelgesi ve CSV ile hazırlıyor; mevcut izleyici fiyatları araştırılmamış."
+  },
+  "lifeos-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Geliştirici şablonu kendisi yazıyor ya da ücretsiz açık kaynak yeni sekme şablonu kullanıyor; ödeme kanıtı yok."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ofis müşteri ve komisyonu defter, Excel ve WhatsApp ile elle tutuyor; yerel CRM 499-599 TL ama ödeyen oranı bilinmiyor."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans cam arayüzü özel CSS ve ücretsiz bileşenlerle elle yazıyor; ücretli UI paketleri var, bu iş için ödeme yok."
+  },
+  "metaframer-kernel-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Kurucu aynı iş için bugün 199-379 dolarlık başlangıç kiti alıyor (ShipFast 8.427 müşteri) ya da çekirdeği elle yazıyor."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans çok kiracılı çekirdeği her projede iç emekle elle yazıyor; 80 saat rakamı varsayım, dışarıya ödeme yok."
+  },
+  "metaframer-kernel-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Şirket yetki ve kiracı kontrolünü kendi middleware'i ve ücretsiz OpenFGA, Cerbos ile elle kuruyor; ödenen ücret yok."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Girişimci adayları kayıt firması kutuları ve ücretsiz araçlarla tek tek elle sorguluyor; zaman harcıyor, para ödemiyor."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans kısa listeyi slayt ve tabloyla elle hazırlıyor; harcanan saat varsayım, bilinen ücretli çözüm yok."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Girişimci adları elle ve ücretsiz araçlarla karşılaştırıyor, 3-6 saat varsayım; danışmana ödeme belgelenmedi."
+  },
+  "projector-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici çeviri kitaba 322-679 TL ödüyor, İngilizce kaynak tarıyor; mimari için özel ücretli Türkçe kaynak yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip bilgiyi kıdemli kişinin iç anlatımıyla aktarıyor; dış eğitmen 25-60 bin TL/gün rakamı varsayım."
+  },
+  "projector-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Firma dokümanları ZIP, Word ve Notion ile elle teslim ediyor; GitBook 65 dolar/site/ay ama kullanan firma belgesiz."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu kararlarını Excel ve dağınık notla elle tutuyor, ayda 4-6 saat; ücretli şablonlar var, ödediği kanıt yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mentor her ekibe ayrı PDF ve Notion sayfası elle hazırlıyor; emek var, ödeme yok, segment bilgisi varsayım."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Okur doğru çeviriyi forum ve yorum sitelerini elle tarayarak arıyor; zaman harcıyor, para ödemiyor."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans imzaları müşteri başına 2-3 saat elle HTML ya da ücretsiz araçla hazırlıyor; ücretli rakipler var, ödediği yok."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 1,
+   "g": "KOBİ imzayı Word'den kopyalayarak ya da ücretsiz HubSpot aracıyla elle dağıtıyor; bu iş için para ödemiyor."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ofis sorumlusu imzayı Word ya da e-postayla elle hazırlayıp dağıtıyor; çalışan başı 15-30 dakika varsayım, ödeme yok."
+  },
+  "volley-tap-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kulüp kampanyayı çekiliş, görsel ya da ajansla yürütüyor; ajans özel oyun fiyatı doğrulanmadı, ödeme kaydı yok."
+  },
+  "volley-tap-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Oyuncu binlerce ücretsiz portal oyunuyla yetiniyor; bu iş için para ya da emek harcamıyor, gelir yalnız reklam payı."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Oyuncu ücretsiz tarayıcı oyunlarıyla yetiniyor; ödeme alışkanlığı ya da harcanan emek için kanıt yok."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Mağaza taksit tablosunu temaya elle HTML ile ekliyor ya da ajans saati harcıyor; en büyük rakip eklenti ücretsiz."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans her mağazada taksit ve kapıda ödeme kuralını özel kodla elle yazıyor, saat harcıyor; ücretli araç almıyor."
+  },
+  "woocommnts-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Mağaza yorumları elle eşliyor ya da ücretsiz CusRev kullanıyor; ücretli göç hizmetine ödeme kanıtı yok."
+  },
+  "egitim-demolari-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Öğretmen soru ve etkinliği elle ya da ücretsiz kaynaklardan hazırlıyor; ödenen bedel gösterilmedi."
+  },
+  "egitim-demolari-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip lideri prensipleri iç anlatımla aktarıyor; koçluk ya da eğitime ödeme olabilir ama kaynakta rakam yok."
+  },
+  "baz-secenekler-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcılar bu işlere para ya da emek harcıyor; ödenen tutarlar belgelenmedi."
+  },
+  "baz-secenekler-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Ajans bugün 19-89 dolarlık betik satın alıp 2-4 hafta uyarlıyor; betik fiyatları ve satış adetleri kamuya açık."
+  },
+  "baz-secenekler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "B seçildi: program her çağrıda bu iş için fon aktarıyor (kamuya açık çağrı), A'nın dediği gibi hiç harcama yok değil; ama satın alma değil, pay karşılığı yatırım."
+  }
+ }
+}

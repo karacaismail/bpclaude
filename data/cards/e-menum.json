@@ -1,0 +1,344 @@
+{
+ "slug": "e-menum",
+ "baslik": "E-Menum (Django QR menü kod tabanı)",
+ "ozet": "Türkiye'deki restoran ve kafeler için yazılmış Django tabanlı QR menü ve sipariş kod tabanı; sahibin canlı ürünü aynı pazarda olduğundan ikinci ürün. Bugün ödeyen müşteri yok, satılabilir SaaS olarak yarım.",
+ "bugun": {
+  "var": [
+   "17 uygulamalı Django kod tabanı, yaklaşık 120 bin satır Python, 1.324 test fonksiyonu",
+   "Menü, misafir siparişi, mutfak ekranı, rezervasyon, kupon, sadakat, stok modülleri",
+   "Türkçe iş kuralları ve 20 spec belgesi",
+   "Docker üretim kurulumu ve Celery görevleri",
+   "Abonelik planları tanımlı ama hiç satılmamış"
+  ],
+  "yok": [
+   "Ödeme sağlayıcı entegrasyonu",
+   "Çok kiracılı izolasyonun açık ve testli hali; iki kopya ayrışmış, sürüm geçmişi yok",
+   "Ödeyen müşteri, canlı demo, referans",
+   "Alıcı isim listesi",
+   "Kapsam belgesi ve sözleşme şablonu",
+   "Operasyonel hazırlık eksikleri (birleştirme, temizlik)"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Plan iç kararı arşivle ve gereksinimleri canlı ürüne taşı olarak koyar; tek ticari biçim Django bilen ajans ve geliştiriciye tek kiracılı kurulum paketi (15-25 bin TL, bakım 6 bin TL/yıl). Baz senaryo 12 ayda 2 kurulum.",
+  "gpt": "Asıl vaat QR üretmek değil; çok şubeli markanın fiyat, varyant, dil ve alerjen değişikliğini onaylı yayınlaması (taslak, onay, sabit QR, geri alma). Ücretli: şube onayı ve yönetilen güncelleme, 5 şube 4.000 TL/ay. Ödeme ve POS çalışır kabul edilmez.",
+  "ayrisma": "Claude alıcıyı ajans/geliştirici ve ürünü kod kurulumu olarak görür; GPT alıcıyı 2-10 şubeli marka ve ürünü yönetilen onay hizmeti olarak görür. Claude ücreti tek seferlik, GPT aylık alır.",
+  "birlesik": "İkisi de ürünün ikinci sırada olduğunu, ödeme ve çok kiracılı kısmın tamamlanmadığını söyler. Ortak hüküm: en küçük, standart kapsamla (tek kiracılı kurulum ya da elle yönetilen güncelleme) önce ücretli kanıt aranmalı."
+ },
+ "analist_gorusu": "En gerçekçi yol tek kiracılı kurulum paketini Django bilen geliştiriciye topluluk kanallarıyla satmaktır; yönetilen menü hizmeti ikinci deney. Kod satışı tek başına düşük fiyatlı kalır.",
+ "secenekler": [
+  {
+   "id": "e-menum-a",
+   "ad": "Tek kiracılı white-label kurulum paketi",
+   "tur": "hizmet",
+   "musteri": "Restoran müşterisi olan, Django barındırabilen 2-10 kişilik web ajansı ya da küçük yazılım evi",
+   "is": "Restoran müşterisine kendi markalı QR menü ve sipariş sunmak; betik uyarlamak ya da sıfırdan yazmak yerine çalışan çekirdeği kurmak",
+   "tetikleyici": "Müşterisinden QR menü talebi gelmesi, yeni restoran sözleşmesi, betik uyarlamasının tıkanması",
+   "teklif": "Docker kurulumu, marka, 2 dil, KVKK metin yerleşimi, 20 saat uyarlama, ödeme bağlantısı ajans hesabıyla, 30 gün hata düzeltme",
+   "fiyat": "25.000 TL tek sefer (KDV hariç), %50 ön ödeme; yıllık bakım 6.000 TL",
+   "kanal_birincil": "Django Türkiye ve Python Türkiye Telegram grupları ile LinkedIn'de kişisel mesaj (haftada 10 ajans)",
+   "kanal_yedek": "Kamuya açık depo README'si, sahibin canlı ürününün destek kuyruğuna gelen ajans talepleri, ajans dizinleri",
+   "ilk_adim": "Kopyaları birleştirip temizle; 40 ajans ve geliştirici listesi çıkar; 90 saniyelik demo videosu çek",
+   "ilk_kapsam": "Tek kiracılı Docker kurulumu, marka ve dil ayarı, mutfak ekranı ve rezervasyon demosu, yazılı kapsam ve eksik listesi; ödeme ajansın sağlayıcı hesabıyla",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; bağımlılıklarda GPL taraması yapılmadı, açık kaynak lisans kararı bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Veri işleyen/sorumlu ayrımı sözleşme metni ve KVKK teyidi hukukçuda; tacirlere ileti kuralları doğrulanmadı"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli (plan 5); hesap ve fatura düzeni teyit edilmedi"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (Django bilen ajans); 20 isimlik liste henüz yok, planda 40 isim çıkarılacak"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Telegram grupları ve LinkedIn adlı, ilk adım ve yedek kanal tanımlı (derinlik belgesi C bölümü)"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Birleştirme, yayın öncesi temizlik, kurulum betiği ve demo yaklaşık 70 saat, haftada 20 saatle 4 hafta"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Hukukçu ve demo sunucusu yaklaşık 8.000 TL, tavanın altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "20 saat uyarlama sınırı planda var; yazılı kapsam belgesi şablonu yok, ödeme modülü isteği özel işe kayabilir"
+    }
+   },
+   "kapi_duzeltme": "Bağımlılık lisans taramasını yap; hukukçudan sözleşme ve KVKK teyidi al; hesabı aç; 20 isim listesini çıkar; sabit kapsam belgesi yaz. Hepsi 2-3 haftada kapanabilir.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 25000,
+    "degisken_maliyet_tl": 3000,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 50,
+     "beklenen": 70,
+     "max": 100
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 40,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 20000,
+     "iyi": 45000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan 6 ay hedefi baz 1 kurulum (bolum 11); plan 8 baz ortalama kurulum 20.000 TL, iyimser 22.500 TL: baz 1 x 20.000, iyi 2 x 22.500. Odeme %50 on, %50 teslimde (2 odeme). Donusum gorusme basina kapanis %5-10 (plan 3.2: yanit %5, kapanis %10; temas basina yaklasik %0,5); kanitsiz varsayim."
+   },
+   "deney": {
+    "varsayim": "Django bilen bir geliştirici ya da ajans, çalışan çekirdeği ve 20 saat uyarlamayı 25.000 TL'ye ön ödemeyle alır",
+    "yontem": "40 ajans ve geliştirici listesi çıkar, her haftaya 10 kişisel mesaj, topluluklara 2 gönderi, 12 demo görüşmesi; kapsam belgesi ile %50 ön ödeme iste",
+    "sure_gun": 90,
+    "maliyet_saat": 110,
+    "maliyet_tl": 8000,
+    "basari_olcutu": "90 günde en az 12 görüşme ve 1 imzalı kapsam belgesi ya da ön ödeme",
+    "birakma_olcutu": "12 görüşmede hiç teklif yoksa seçenek kapatılır",
+    "sonraki_dilim": "Ödeme modülünü ve kurulum betiğini ortak ürün yap; ikinci ajans kurulumu ve bakım yenilemesi"
+   },
+   "etiketler": {
+    "segment": "Django bilen web ajansı ve küçük yazılım evi",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Django, DRF, Celery, PostgreSQL, Docker",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Claude planı bölüm 0, 5, 6, 8 ve derinlik dosyası A, B, C: 120 bin satır, 1.324 test, 17 uygulama; ödeme yok, tek kiracı. Beachhead topluluk sayıları (661 ve 4.121 üye) kaynaklı; ajans sayısı ve huni oranları varsayım. Ödeyen müşteri ve referans yok. Rakip betikler 19-89 USD. Plan ana karari ic arsivleme; ajans satisi ikincil ve yalniz gelen talebe karsi."
+  },
+  {
+   "id": "e-menum-b",
+   "ad": "Çok şubeli markaya yönetilen menü güncelleme hizmeti",
+   "tur": "hizmet",
+   "musteri": "2-10 şubeli kafe ya da restoran markası; 50-200 ürün, iki dil, ayda en az iki fiyat ya da ürün değişimi",
+   "is": "Fiyat, varyant, dil ve alerjen değişikliğini şubelere onaylı yayınlamak; yanlış şube fiyatını ve eski fiyat görünmesini önlemek",
+   "tetikleyici": "Tedarik fiyatı değişimi, yeni sezon menüsü, şubeler arası fiyat tutarsızlığı, fiyat etiketi düzenlemesi",
+   "teklif": "Kurucunun mevcut yonetim paneliyle elle yurutecegi icerik aktarma, taslak farki, alerjen onayi, sahip onayi, sabit QR yayini ve geri alma; bu akislar urunde calisir kanitsiz",
+   "fiyat": "Test fiyati: 5 sube 4.000 TL/ay, tek sube 1.000 TL/ay (mevcut musteri fiyati degil); kurulum 5.000 TL analist varsayimi",
+   "kanal_birincil": "Mevcut zincir ve kafe ilişkileri ile LinkedIn'de kişisel mesaj (haftada 10 marka sorumlusu)",
+   "kanal_yedek": "Menü PDF'inde eksik fiyat kontrol listesi içeriği; restoran ajansı ve POS bayii ortaklığı; sahibin canlı ürününün destek kuyruğu",
+   "ilk_adim": "Mevcut ilişkilerden 20 çok şubeli marka listesi çıkar; yapay bir restoranla taslak, onay, yayın ve geri alma demosu hazırla",
+   "ilk_kapsam": "İki pilot şubede içe aktarma, elle fark raporu, alerjen onay listesi, sahip onayı, sabit QR; 320 piksel okuma kontrolü; yeni özellik yazılmaz",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; bağımlılık lisans taraması ve açık kaynak lisans kararı bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri menü verisi KVKK dışı olabilir; alerjen bilgisinde sorumluluk metni hukukçu teyidi ister"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve aylık fatura yolu belli; hesap ve fatura düzeni teyit edilmedi"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (şube sorumlusu ve marka sahibi); belgelerde adı geçen bir zincir görüşmesi var, 20 isimlik liste yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Doğrudan temas ve ajans ortaklığı belli; ortak ajanslar ve PDF içeriğinin yayın yeri adlandırılmadı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Elle yürütülen pilot küçük, ama içe aktarma ve şube izolasyonu işi 160 saate çıkabilir; ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 3.000 TL (sunucu, hukukçu payı), tavanın çok altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Sabit paket var; destek 90 dakikayı aşarsa katkı negatife döner, kapsam sınırı yazılı değil"
+    }
+   },
+   "kapi_duzeltme": "Lisans taramasını ve hesap açılışını yap; sözleşmeye alerjen sorumluluk sınırını ve aylık destek tavanını yaz; 20 marka listesini çıkar; elle akışın saatini iki pilotta ölç.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 4000,
+    "degisken_maliyet_tl": 500,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 100,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 110
+    },
+    "satis_basina_kurucu_saati": 15,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 13000,
+     "iyi": 26000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 6
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "GPT dosyasi: 5 sube 4.000 TL/ay test fiyati, mevcut musteri fiyati degil; 5.000 TL kurulum analist varsayimi. 30-60-90 gun deneyi: ucretsiz pilot sonrasi ucret en erken gun 60-90. Baz: 1 marka, 5.000 + 2x4.000 = 13.000 (3 odeme); iyi 2 marka 26.000. Isim listesi yok; donusum kanitsiz varsayim."
+   },
+   "deney": {
+    "varsayim": "İki-on şubeli bir marka, elle yönetilen onaylı menü yayınına aylık ücret öder",
+    "yontem": "20 marka listesi, yapay restoranla demo, 3 markada ücretsiz ilk değişiklik; sonra aylık teklif ve ilk fatura",
+    "sure_gun": 60,
+    "maliyet_saat": 40,
+    "maliyet_tl": 3000,
+    "basari_olcutu": "60 günde 1 marka ücretli aylık hizmet sözleşmesi ya da ön ödeme",
+    "birakma_olcutu": "60 günde ilgi yoksa ya da destek 60 dakikayı aşıyorsa fiyat ve kapsam değiştirilir, aksi halde kapatılır",
+    "sonraki_dilim": "Şube izolasyonu, değişiklik kaydı ve onay akışını ürünleştir; 5 şubeli ikinci marka"
+   },
+   "etiketler": {
+    "segment": "2-10 şubeli kafe ve restoran markası",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Django menü ve stok modelleri, QR",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyası: ilk güçlü vaat onaylı çok şubeli yayın; ücretli paket 5 şube 4.000 TL/ay, tek şube 1.000 TL/ay (katkı 520 TL, destek 90 dakikada negatif); 30-60-90 gün deneyi. Menü ve stok modelleri var; içe aktarma, onay ve geri alma önerilen kapsam, çalışır kanıtı yok. Claude derinlik B: 5-8 şubeli grup yalnız ikincil segment. Ödeyen müşteri yok."
+  },
+  {
+   "id": "e-menum-c",
+   "ad": "Kaynak kod ve belge paketi (depo ve topluluk)",
+   "tur": "kod satışı",
+   "musteri": "Django bilen serbest geliştirici ve girişimci; restoran müşterisi için hazır çekirdek arıyor",
+   "is": "Sıfırdan yazmadan restoran QR menü ve sipariş çekirdeğini kendi sunucusunda çalıştırmak",
+   "tetikleyici": "Bir restoran müşterisinin QR menü ya da mutfak ekranı talebi; uyarlama maliyetinin yükselmesi",
+   "teklif": "Kaynak kod, kurulum kılavuzu, Türkçe iş kuralları belgesi ve test paketi; destek ve ödeme entegrasyonu yok; kullanım lisansı",
+   "fiyat": "89 USD (yaklaşık 4.272 TL) tek sefer",
+   "kanal_birincil": "Depo README'si ve Django Turkiye Telegram grubu (yonetici izniyle gonderi); LinkedIn'de kisisel mesaj",
+   "kanal_yedek": "CodeCanyon yazilim pazar yeri, Django kategorisi (plan son care sayiyor, ilk 90 gun sonucsuzsa)",
+   "ilk_adim": "Kopyalari birlestirip temizle; kurulum kilavuzu ve demo videosu hazirla; depo README'sini ac, Telegram yoneticisinden gonderi izni iste",
+   "ilk_kapsam": "Temizlenmiş tek dal, Docker kurulum kılavuzu, 90 saniyelik demo videosu, lisans metni, bilinen eksikler sayfası; destek yok",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; GPL bağımlılık taraması ve yeniden satış lisansı kararı bekliyor; şablon metinlerinin hak durumu gözden geçirilecek"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Alıcıya kod satışı düşük risk; Türkiye'den doğrudan satışta fatura düzeni mali müşavir teyidi ister (pazar yeri yedek olursa yurt dışı gelir ayrıca)"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Doğrudan satışta havale ya da sanal POS ve fatura düzeni belli ama hesap açılmadı; pazar yeri satıcı hesabı yalnız yedek kanal"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (geliştirici); topluluk üyeleri ismen sayılamıyor, liste yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Depo README'si, Django Türkiye Telegram grubu ve LinkedIn adlı; ilk adım ve yedek (CodeCanyon) var; kanal hacmi bilinmiyor"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Temizlik, kılavuz ve listeleme yaklaşık 50 saat, haftada 20 saatle 3 hafta"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı birkaç yüz TL; tahsilat komisyonu satış başına"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı kodu alır; destek ve uyarlama kapsam dışı, yazılı sınır var"
+    }
+   },
+   "kapi_duzeltme": "Lisans taramasını yap, tahsilat hesabı ve fatura düzenini mali müşavirle kur, yeniden satış yasağını lisans metnine yaz.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 4272,
+    "degisken_maliyet_tl": 184,
+    "sabit_gider_aylik_tl": 0,
+    "baslangic_nakit_tl": 500,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 50,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 1,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 4272,
+     "iyi": 12816
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.03
+    },
+    "dayanak": "Plan bolum 0 ve derinlik C.2: rakip betikler 19-89 USD. Baz 1 satis x 4.272 TL (89 USD x 48), iyi 3. Satis sayisi icin kaynakta dogrudan kanit yok; kanal notu 30 ulasim, %3 donusum (~1 satis). Degisken maliyet iyzico %4,29 + 0,25 TL. Kod satisi dusuk fiyatli sayiliyor."
+   },
+   "deney": {
+    "varsayim": "Pazar yerinde ya da depoda Türkçe iş kurallı Django QR menü kodunu 89 USD'ye alacak geliştirici var",
+    "yontem": "Temiz kod, kilavuz ve demo ile depo README'sini ac, Telegram'a izinli bir gonderi; 90 gunde satis say; CodeCanyon yalniz sonucsuzsa",
+    "sure_gun": 90,
+    "maliyet_saat": 50,
+    "maliyet_tl": 500,
+    "basari_olcutu": "90 günde en az 2 ödeme",
+    "birakma_olcutu": "90 günde ödeme yoksa listeyi kapat, kurulum paketine odaklan",
+    "sonraki_dilim": "Alıcılardan ücretli uyarlama ya da kurulum talebi topla ve A seçeneğine yönlendir"
+   },
+   "etiketler": {
+    "segment": "Django bilen serbest geliştirici ve girişimci",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Django, DRF, Celery",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "Claude plani bolum 0, 4: Laravel QR menu betikleri 19-89 USD, 2 bin satisa kadar; kodun tek basina fiyati dusuk. Derinlik C.2: CodeCanyon listelemesi 3/10 puan, plan yalniz 90 gun sonucsuzsa one koyuyor; Django Turkiye Telegram 661 uye. Ödeme ve çok kiracılı kısım yok. Ödeyen müşteri yok; kanal hacmi bilinmiyor."
+  }
+ ]
+}

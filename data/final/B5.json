@@ -1,0 +1,665 @@
+{
+ "kriter": "B5",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Semt matbaası, mali müşavir ve restoran işletmecisi grupları ortak adayı olarak sayılıyor; hiçbiriyle temas kurulmadı."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Zincirler UFRAD ve franchise fuarı çevresinde toplanıyor; dernekle ya da bir aracıyla erişim kurulmadı."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Restoran müşterisi olan ajanslar yalnız tip olarak anılıyor; ajans topluluğu ya da aracı adlandırılmadı."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Bireysel alıcı dağınık; diaspora dernekleri ve harita büroları yönlendirici olabilir ama hiçbiriyle erişim kurulmadı."
+  },
+  "parselq-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Pilot ilçelerde ofisler birbirini tanıyor; TÜGEM ve TEMFED üye dernekleri adlı, sunum için erişim henüz kurulmadı."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışmanlık ofisleri için yerel meslek eğitimi fikri var; eğitim sahibi, dernek ya da isimli ortak yok."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "45 TTO ve teknopark bültenleri KOBİ'leri topluyor, mali müşavir oda webinarı yedek; hiçbir ortakla görüşülmedi."
+  },
+  "destektesvik-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı mali müşavirler oda çatısında yoğun; oda eğitim komisyonu ve TESMER webinarı adlı ortak kanal, başvuru henüz yapılmadı."
+  },
+  "destektesvik-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı oda, OSB ve teknopark yönetimleri; hedef kurumlar adlandırılmadı, erişim ilişkisi doğrulanmadı."
+  },
+  "asgari-iscilik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yüklenicinin mali müşaviri ve SGK danışmanı aracı, odalar proje belgesinde sayılı; hiçbir ortakla görüşme yapılmadı."
+  },
+  "asgari-iscilik-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı mali müşavir büroları oda üyesi ve yoğun bağlı; dört büyük odanın eğitim webinarı adlı kanal, başvuru henüz yok."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Yükleniciye mali müşavir odası webinarı ve teknik ofis üzerinden ulaşılacak; oda ya da ortakla temas kurulmadı."
+  },
+  "zincir-danismanligi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Zincirler UFRAD ve franchise portallarında toplu; ilişki tek zincirle sınırlı, dernek ya da aracıyla erişim yok."
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Yaklaşık 30 zincir UFRAD listesi ve fuarlarla birbirine bağlı; derneğe ya da aracı danışmana erişim kurulmadı."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "POS bayisi ve franchise danışmanı ortaklığı ile UFRAD yedek kanalda; gelir payı varsayım, ortak görüşmesi yok."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Satıcılar 3.200 üyeli Telegram grubunda ve WhatsApp gruplarında toplu; gruba erişim doğrulanmadı, aracı tanımsız."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Danışman aracı 5-30 müşterisine taşıyan aracı konumunda, mali müşavir yönlendirmesi yedek; topluluk ve erişim kurulmadı."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı Telegram satıcı grubu ile ajans ve mali müşavir aracı adayı; hiçbir ortakla görüşme yok."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Satıcılar Telegram ve satıcı gruplarında toplu, mali müşavir yönlendirebilir; gruplara erişim kurulmadı."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Telegram ve WhatsApp satıcı grupları ile mali müşavir yönlendirmesi sayılıyor; erişim ve ortak görüşmesi yok."
+  },
+  "titanlar-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı il ticaret ve esnaf odalarının eğitim birimleri; odalar adlı ama hiçbirine teklif gitmedi, ilişki yok."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Üreticiler OSB sanayici derneklerinde toplu, dış ticaret danışmanı yönlendirebilir; dernek ve danışmanla temas yok."
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 1,
+   "g": "İhracatçı birliği akademileri ve OSB dernekleri adlı ortak kanal; seminer önerisi henüz gönderilmedi."
+  },
+  "kurumsal-site-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı ajans ve geliştiriciler dağınık; yalnız küresel Astro topluluk sunucusu var, öneren bir aracı yok."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Tekstil üreticileri aynı bölgelerde yoğun; İHKİB Akademi, MESİAD ve mali müşavir adlı ama ortak görüşmesi yapılmadı."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "İHKİB Akademi oturumu ve mali müşavir yönlendirmesi adlı kanal; üreticiler kümeli, ortaklarla erişim kurulmadı."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Kumaş üreticileri fuar katılımcı listeleri ve İHKİB Akademi çevresinde toplu; ortak erişimi henüz yok."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajanslar R10.net, WordPress Türkiye Slack ve 1.441 üyeli Meetup'ta toplu; hosting bayileri aracı, erişim kurulmadı."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mağaza sahipleri R10.net bölümü ve satıcı gruplarında; grup adları belirsiz, PSP ya da ajans aracılığı kurulmadı."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans çevresi, R10.net ve WordPress Türkiye Slack var; ajans müşterisine taşıyabilir, aracı erişimi kurulmadı."
+  },
+  "qral-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Bilgi çalışanları dağınık; Obsidian forumu ve Reddit büyük ama anonim, ürünü önerecek aracı yok."
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Öğretmenler eTwinning ve büyük öğretmen sayfalarında, okulda zümrede bağlı; yönetici izni ve erişim kurulmadı."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Araştırma yapan danışmanlar küçük ve dağınık; meslektaşa şablon paylaşımı dışında topluluk ya da aracı adlandırılmadı."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Eğitmenler Kodluyoruz ve Türkçe yazılım Discord topluluklarında görünür; erişim kurulmadı, öneren aracı yok."
+  },
+  "frontend-atlasi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Öğrenenler Kodluyoruz ve 49 bin üyeli Discord'da toplu; topluluk var ama erişim ve aracı kurulmadı."
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Eğitmenler aynı Discord topluluklarında ve kurucunun eğitim çevresinde; erişim kurulmadı, aracı yok."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "PERYÖN şubeleri, OSB ve oda eğitim komisyonları yedek kanalda adlı; hiçbirine erişim kurulmadı."
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Bireysel yöneticiler dağınık; eğitmen lisansı için eğitim kurumu fikri var, görüşme ve topluluk yok."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Facilitatörler arası referans fikri var; topluluk ya da ortak adlandırılmadı, isim listesi yok."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucular kuluçka ve TTO'larda toplu, 147 uygulayıcı kuruluş ve melek ağları adlı; atölye teklifi henüz gitmedi."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Kuluçka merkezi ve uygulayıcı kuruluşlar girişimcileri toplayan adlı ortak; atölye planı var, erişim kurulmadı."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı kuluçka ve TTO yöneticileri sayılı, adlı ve birbirini tanıyan niş; melek ağları ve etkinlikler ortak, temas yok."
+  },
+  "vize-operasyon-a": {
+   "p": 3,
+   "k": 1,
+   "g": "TÜRSAB bölge kurulları, acente WhatsApp grupları ve mali müşavir sayılıyor; üyelerin vize acentesi olduğu doğrulanmadı."
+  },
+  "vize-operasyon-b": {
+   "p": 3,
+   "k": 1,
+   "g": "TÜRSAB bölge kurulu eğitim yüzeyi ortak kanal; paylaşım için ev sahibi izni gerekiyor ve alınmadı."
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Bireysel başvurucular dağınık; seyahat acentesi beyaz etiket ortaklığı yalnız fikir, görüşme yok."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Girişimler BiGG yürütücüleri ve kuluçkalarda toplu, kuruluşlar adlı; webinar için erişim henüz kurulmadı."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Mühendislik liderleri dağınık; geliştirici toplulukları adlandırılmadı, ortak ya da aracı görüşmesi yok."
+  },
+  "software-factory-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajanslar IAB Türkiye ve Reklamcılar Derneği üyeliğiyle bağlı; dernek ya da ajansla ortaklık görüşmesi yapılmadı."
+  },
+  "strateji-simulatoru-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı 147 uygulayıcı kuruluş kamuya açık listede, sayılı ve birbirini tanıyan niş; teknokent ağı ortak, temas yok."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Üniversite girişimcilik kulüpleri ve kuluçka duyuruları adayları toplar; kulüp adlandırılmadı, erişim yok."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut müşterilerin mali müşavirleri ve ortak seminer yedek kanalda; mali müşavirle görüşme yapılmadı."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "r/ClaudeAI ve r/macapps büyük ama anonim; karşılıklı bağlantı için tamamlayıcı araç yazarları adlı, temas yok."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Küçük takımlar dağınık; takım içi tavsiye dışında aracı yok, kurucunun çevresindeki takımlar belgelenmedi."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Açık kaynak orkestratör projeleri küçük ve birbirini izleyen niş; PR ve yazar bağlantısı planlı, erişim kurulmadı."
+  },
+  "actionplan-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Solo geliştiriciler dağınık; Reddit toplulukları büyük ama anonim, ürünü önerecek aracı ya da ortak yok."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans proje liderleri dağınık; ajans lideri toplulukları adlandırılmadı, pazar yeri listelemesi yok."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkçe geliştirici çevresi ve eğitmen ortaklığı yalnız yedek fikir; topluluk adı ve erişim yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Reddit toplulukları anonim; orkestratör projeleri ve tamamlayıcı araçlar entegrasyon ortağı adayı, temas yok."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahipleri WhatsApp grupları, Webrazzi ve IAB Türkiye çevresinde; üye sayıları doğrulanmadı, erişim yok."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı kitlesi tanımsız; adlandırılmış topluluk, hedef ya da aracı yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Frontend Istanbul ve React Istanbul toplulukları adlı; üye sayısı doğrulanmadı, erişim kurulmadı."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı frontend topluluklarında konuşma ve ajans aracılığı planlı; hiçbir toplulukla ya da ajansla görüşülmedi."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahipleri frontend topluluklarında, ajans kendi müşterisine taşıyabilir; ortak görüşmesi yok."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kafe sahipleri için esnaf odası ve bayi kanalı proje belgesinde sayılı; ortakla erişim yok, bayi payı varsayım."
+  },
+  "aicommandcard-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Kommunity React Turkey 1.025, Discord 5.889 üyeli topluluklar adlı; erişim ve ajans aracılığı kurulmadı."
+  },
+  "atonota-denetim-a": {
+   "p": 3,
+   "k": 1,
+   "g": "WP Türkiye topluluğu 9,8 bin takipçili, iş ortağı kodu planlı; toplulukla erişim henüz kurulmadı."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajanslar WP Türkiye çevresinde, serbest geliştirici ortak kodu ve barındırma ortaklığı planlı; kimseyle görüşülmedi."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans ilişkisi doğrulanmadı; bakım aracı kullanan ajanslara yanaşma fikri var, topluluk ya da ortak adı yok."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "İhracatçı üreticiler birlik çevresinde; mali müşavir ve ihracat danışmanı yönlendirmesi aday, görüşme yapılmadı."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Katalog ajansları dağınık; küresel Astro topluluğu ve danışman tanışmaları dışında aracı adlandırılmadı."
+  },
+  "b2b-bilesenler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Geliştiriciler dağınık; küresel Astro Discord ve awesome listesi var, öneren bir aracı yok."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kafe sahipleri için mali müşavir ve POS bayisi ortak fikri var; grup adları doğrulanamadı, görüşme yok."
+  },
+  "banner-post-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcılar üç mevcut müşteri ve dağınık küçük işletmeler; dernek, grup ya da aracı adlandırılmadı."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Küçük ajanslar birbirini tanıyabilir ama topluluk, dernek ya da ortak adlandırılmadı; isim listesi yok."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Hosting satıcısı ve mali müşavirle paylı ortaklık ile ajans dizinleri sayılı; hiçbir ortakla erişim kurulmadı."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tanıdık ajans çevresi, hosting ve mali müşavir ortakları ile ajans toplulukları anılıyor; erişim kurulmadı."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans toplulukları ve tanıdık ajans çevresi anılıyor; topluluk adı belirsiz, aracı ortakla görüşme yok."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurumsal site yapan yaklaşık 10 ortak ajans gelir payıyla aracı adayı; hiçbir ajansla görüşme yapılmadı."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Butik ajanslar birbirini tanıyan çevre, ortak site ajansları pay karşılığı aracı adayı; erişim kurulmadı."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Bağımsız danışmanlar dağınık; tanıdık danışman yönlendirmesi varsayım, topluluk adlandırılmadı."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Seed öncesi kurucular kuluçka merkezi ve mentör ağında toplu; merkez adlandırılmadı, ortak görüşmesi yok."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajanslar birbirine rakip ve dağınık; kurucunun ajans ağı belgelenmedi, ajans topluluğu doğrulanmadı."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Çok müşterili bordro ve mali müşavir ofisleri doğal aracı; ofis adlandırılmadı, görüşme ve ağ belgesi yok."
+  },
+  "ddd-renderer-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Türkçe geliştirici toplulukları (Patika, Kodluyoruz, DevNot) adlı; üye sayıları ve erişim doğrulanmadı."
+  },
+  "ddd-renderer-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yurt dışı teknik liderler dağınık; küresel forum ve ADR dizinleri anonim, bağımsız mimar ağı kurulmadı."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yazılım evleri ve bağımsız mimarlar lead payıyla aracı adayı; hiçbir mimar ya da yazılım eviyle görüşülmedi."
+  },
+  "devpanel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Teknik liderler dağınık; kurucunun ağı belgelenmedi, topluluk adları varsayım, aracı görüşmesi yok."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Küçük ajans ve frontend ekipleri dağınık; form kütüphanesi issue sayfaları dışında topluluk ya da aracı yok."
+  },
+  "devpanel-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Bağımsız geliştiriciler dağınık; mağaza ve duyuru sitesi dışında topluluk, ortak ya da aracı adlandırılmadı."
+  },
+  "e-menum-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Django Türkiye 661 üye, Python Türkiye 4.121 abone ve ajans dizinleri adlı; gruplara erişim kurulmadı."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Restoran ajansı ve POS bayii çok şubeli markalara doğal aracı; ortaklar adlandırılmadı, görüşme yok."
+  },
+  "e-menum-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı Django geliştiricileri 661 üyeli Django Türkiye grubunda toplu; yönetici izni alınmadı, aracı yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Solo geliştiriciler yaklaşık 9.700 takipçili WordPress Türkiye çevresinde; kurala uygun paylaşım izni alınmadı."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı WordPress Türkiye topluluğu ve kurucunun geliştirici çevresi var; toplulukla erişim kurulmadı."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Küçük ajanslar WordPress Türkiye çevresinde birbirini tanır; ajans listesi, ilişki ve ortak görüşmesi yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Site teslim eden ajans ortakları kendi müşterisine önerebilecek aracı; ajanslarla ortak görüşmesi yapılmadı."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Frontend Türkiye ve Kommunity grupları adlı; üye sayıları doğrulanmadı, erişim ve aracı kurulmadı."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "SaaS ekipleri dağınık; bu segment için dernek, grup ya da aracı adlandırılmadı, isim listesi yok."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Küme ve sanayi bölgesi yöneticileri birlik ve oda etkinliklerinde buluşuyor; ortak görüşmesi yapılmadı."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Girişim kurucuları kuluçka merkezleri ve topluluklarda toplu; adlar ve üye sayıları doğrulanmadı, erişim yok."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yazılım ajansları yüzde 15 yönlendirme payıyla aracı adayı; 10 ajans henüz adlandırılmadı, görüşme yok."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 0,
+   "g": "KOBİ yöneticileri dağınık; işletme kulübü ve eğitmen aracılığı fikir düzeyinde, grup adı ve erişim yok."
+  },
+  "lifeos-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Bağımsız çalışanlar dağınık; hedef topluluk adlandırılmadı, ürünü önerecek ortak ya da aracı yok."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı hipotez düzeyinde ve dağınık; hedef topluluk adlandırılmadı, aracı yok."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Emlak ofisleri birbirini tanıyor; TÜGEM ile yerel dernek ve odalar adlı, sunum için erişim kurulmadı."
+  },
+  "luquit-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Freelancer ve küçük ajanslar dağınık; React toplulukları adlandırılmadı, ortak ya da aracı yok."
+  },
+  "metaframer-kernel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Solo SaaS kurucuları dağınık; r/node ve r/PostgreSQL anonim topluluklar, öneren aracı ya da ortak yok."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Istanbul Coders ve Yazılımcı Mekanı Discord toplulukları ile meetup'lar adlı; erişim ve ortak görüşmesi yok."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "SaaS mühendisleri dağınık; sistem entegratörü aracılığı yalnız fikir, küresel kullanıcı forumları anonim."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yan girişimciler dağınık; topluluk grupları adlandırılmadı, mali müşavir aracılığı görüşmesiz fikir."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajanslar dijital reklamcılık derneği etkinliklerinde bir araya geliyor; erişim yok, mali müşavir payı varsayım."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Girişimci çevresi dağınık; topluluk grupları adlandırılmadı, ortak kanal doğrulanmadı."
+  },
+  "projector-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Türkçe geliştiriciler 49 bin üyeli Discord topluluğunda toplu; erişim kurulmadı, öneren aracı yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Teknokent ve yazılım topluluğu yöneticileri firma günü için aracı adayı; adlar varsayım, görüşme yapılmadı."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Teknik danışmanlık firmaları dağınık; dernek, topluluk ya da ortak somut olarak adlandırılmadı."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Solo kurucular dağınık; mentor ve muhasebeci ortak fikri var, adlar doğrulanmadı, kimseyle görüşülmedi."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kuluçka ağı yoğun ve mentor aracı olabilir; programlar adlandırılmadı, sayı doğrulanamadı, erişim yok."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Okurlar dağınık; sözlük ve Reddit okur başlıkları anonim, katkı kuralları belirsiz, öneren aracı yok."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans imzayı kendi müşterisine taşıyan aracı, mevcut ilişkide bir ajans var; ajans toplulukları adsız, erişim yok."
+  },
+  "signator-b": {
+   "p": 2,
+   "k": 0,
+   "g": "KOBİ'ler dağınık; mali müşavir odası duyurusu yalnız fikir, erişim ve ortak görüşmesi yok."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Küçük şirketler dağınık; ajansın onboarding teslimine ek kalem fikri var, ajans ağı kurulmadı."
+  },
+  "volley-tap-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Voleybol kulüpleri il temsilcilikleri çevresinde bağlı, butik ajans aracı adayı; hiçbirine erişim kurulmadı."
+  },
+  "volley-tap-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Oyuncular dağınık ve ödeme yapmıyor; portal tek aracı ama kabulü rekabetli, alıcı ağı yok."
+  },
+  "volley-tap-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oyuncular dağınık; Reddit ve itch.io toplulukları anonim, ürünü önerecek aracı yok."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Mağaza sahipleri WooCommerce Türkiye topluluklarında, ajans aracı olabilir; topluluk adları ve erişim doğrulanmadı."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajanslar WordPress Türkiye topluluklarında toplu ve 10 mağazaya taşır; ajans listesi ve görüşme yok."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Göç yapan mağazalar dağınık; ajans teslimi yalnız fikir, topluluk ve ortak adlandırılmadı."
+  },
+  "egitim-demolari-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Öğretmen paylaşım toplulukları ve zümre ağı var; kaynakta topluluk adı yok, erişim ve aracı görüşmesi yok."
+  },
+  "egitim-demolari-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Eğitim veren danışmanlar içeriği kendi müşterisine yeniden dağıtabilecek aracı; hiçbiriyle görüşme yapılmadı."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İki mevcut ilişki dışında mali müşavir ve ajans tanıdıkları ikinci derece kanal; erişim kurulmadı."
+  },
+  "baz-secenekler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Django barındırabilen ajanslar aynı kod tabanı için adı geçen Django ve Python Türkiye gruplarında; erişim yok."
+  },
+  "baz-secenekler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı tek kamu programı; TTO duyuruları ve kamu portalı ortak kanal, erişim ve uygunluk doğrulanmadı."
+  }
+ }
+}

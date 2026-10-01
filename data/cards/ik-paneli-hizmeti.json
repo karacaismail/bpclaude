@@ -1,0 +1,343 @@
+{
+ "slug": "ik-paneli-hizmeti",
+ "baslik": "İK paneli arayüz hizmeti",
+ "ozet": "İK paneli biçiminde üretilmiş, birkaç günde yazılmış bir arayüz demosunun bileşen kitinden, markasız bir 'satış demosu 7 günde' hizmeti ya da puantaj mutabakatı kurulum hizmeti türetmek. Kod ve marka üçüncü tarafındır; yazılı izin yok, arka uç yok, ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Statik arayüz demosu: onlarca sayfa, yüzlerce test, sahte veri üreteci, 3 tema (iş planı §0, §2)",
+   "Bileşenler: komuta kartı, filtreli veri tablosu, AI simülasyonu, ne-olur simülatörü",
+   "Fiyat ve paket taslağı: 45 / 90 / 130 bin ₺ sabit paketler (iş planı §5)",
+   "Hizmet kiti yaklaşık %40, demo altyapısı yaklaşık %70 hazır (iş planı §2)",
+   "Teslim edilmiş iki ilgisiz müşteri işi (sunum, kurumsal site); müşteri izni alınmadı, referans sayılmaz"
+  ],
+  "yok": [
+   "Kod ve marka üçüncü tarafa ait; yazılı muvafakat ya da kitin markasız yeniden üretimi yok",
+   "Arka uç, bordro ve puantaj hesap motoru yok; yanıtlar simülasyon",
+   "Markasız vitrin demo, fiyat sayfası, keşif formu, sözleşme şablonu yok",
+   "Ödeme hesabı (sanal POS ya da havale düzeni) açılmadı",
+   "Hedef alıcı isim listesi yok; görüşülmüş alıcı yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Ürünün kendisi üçüncü tarafındır ve arka uç 12-18 ay uzaktadır; bugün satılabilir tek biçim kitten türeyen 'SaaS satış demosu 7 günde' hizmetidir (45-130 bin ₺ sabit paket). İkincil yol: açık kaynak İK çekirdeği üzerinde KOBİ aboneliği.",
+  "gpt": "Geniş İK işletim sistemi yerine dar bir iş: PDKS ve izin dışa aktarımlarını aynı ay için mutabık puantaj istisna özetine çevirmek; 6.000 ₺ kurulum ve ayda 4.000 ₺. Gerçek deterministik arka uç henüz kanıtlanmadı.",
+  "ayrisma": "Claude hizmeti arayüz demosu üretimi olarak (alıcı: kurucu ve ajans) görür; GPT aynı panelden alıcısı vardiyalı işletme olan bir puantaj istisna hizmeti çıkarır. Birincisi bugün üretilebilir, ikincisi arka uç ister.",
+  "birlesik": "Her iki çalışma da hizmetin üçüncü tarafın kodu ve markası üzerinde izinsiz satılamayacağında birleşir. Demo hizmeti en küçük satılabilir kapsamdır; puantaj hizmeti 8 haftayı aşan ayrı bir üründür."
+ },
+ "analist_gorusu": "En gerçekçi yol: yazılı izin ya da markasız yeniden üretimle sabit fiyatlı demo paketi, önce ajans ve mevcut ilişkilere. Puantaj hizmeti arka uç ve KVKK yükü nedeniyle 6 aya sığmaz; yan seçenek olarak tutulur.",
+ "secenekler": [
+  {
+   "id": "ik-paneli-hizmeti-a",
+   "ad": "SaaS satış demosu 7 günde (sabit paket)",
+   "tur": "hizmet",
+   "musteri": "Ürünü henüz kodlanmamış seed öncesi SaaS kurucusu; yatırımcı görüşmesine tarih almış ekip",
+   "is": "Yatırımcıya ve ilk müşteriye 'çalışır gibi' gösterebileceği, kendi markalı, testli, telefonda açılan tıklanabilir bir demo elde etmek",
+   "tetikleyici": "Yatırımcı görüşmesi tarihinin netleşmesi ya da ilk pilot müşterinin 'ürünü görebilir miyim' demesi",
+   "teklif": "Markasız kitten 7 iş gününde 25-35 ekranlı demo, 3 tema, sahte veri, AI simülasyonu, 2 revizyon, kod devri; sabit fiyat",
+   "fiyat": "Lite 45.000 ₺ (3 iş günü), Pro 90.000 ₺ (7 iş günü), Pro + Sunum 130.000 ₺; %50 peşin, KDV hariç",
+   "kanal_birincil": "Kurucunun LinkedIn doğrudan mesajı ve kişisel içerik (haftada 25 kurucu ve ajans yöneticisine elle yazılmış mesaj)",
+   "kanal_yedek": "Mevcut ilişkiler (önceki sunum hizmeti müşterileri, rapor alanlar) ve kuluçka merkezi mentör ağı",
+   "ilk_adim": "Hedef listesi (15 kurucu, 40 ajans) çıkar; 1 vitrin demo hazırla; 10 mevcut ilişkiyi ara; ilk 25 mesajı gönder",
+   "ilk_kapsam": "Markasız kitin ayrı depoda yeniden üretimi, bir vitrin demo, fiyat sayfası, keşif formu ve tek sayfalık sözleşme; Lite paketi ile ilk satış",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Kod ve marka üçüncü bir şirkete ait; yazılı izin yok, yazılı izin yok; ticari kullanım izin alınana dek yapılmaz (iş planı §0, §5.1)"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Sahte veriyle KVKK riski düşük; sözleşme şablonu, fatura düzeni ve rekabet yasağı maddesi hukukçu ve mali müşavir teyidi ister"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve sanal POS yolu belli (iş planı §5); hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (kurucu, ajans satış müdürü); 20 kişilik isim listesi henüz çıkarılmadı (derinlik C.3 hafta 1)"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal LinkedIn mesajı, yedek mevcut ilişkiler ve kuluçka ağı adlı; ilk adım tanımlı (derinlik C.2)"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor kaynakta yaklaşık 150 saat; 20 saatlik haftada 7,5 hafta, izin ya da yeniden üretim aksarsa 8 haftayı zorlar; ölçülmedi (derinlik D.8)"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 12.000 ₺ (hukukçu şablon, alan adı); 50.000 ₺ tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Üç sabit kapsamlı ve sabit fiyatlı paket; 2 revizyon sınırı yazılı (iş planı §5)"
+    }
+   },
+   "kapi_duzeltme": "G1: yazılı muvafakat al ya da kiti ortak kod, ad ve veri olmadan sıfırdan yeniden üret. G6: ilk 3 hafta efor ölçülür. G2, G3, G4 hukukçu, hesap açılışı ve isim listesi ile geçer.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 90000,
+    "degisken_maliyet_tl": 3000,
+    "sabit_gider_aylik_tl": 11000,
+    "baslangic_nakit_tl": 12000,
+    "kalan_efor_saat": {
+     "min": 100,
+     "beklenen": 150,
+     "max": 190
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 45,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 135000,
+     "iyi": 270000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.2
+    },
+    "dayanak": "Derinlik D.8: markasız kit ve hizmet kiti 19 iş günü, yaklaşık 150 saat. C.3: baz 90 günde 1 proje, ikinci satış 12. hafta; plan §6 Pro için 40 saat üretim. Baz: 1 Lite + 1 Pro = 135 bin ₺ tahsil. İyi: 3 Pro = 270 bin ₺. Dönüşüm kanıtsız varsayım; keşiften ödemeye plan 3/8 ile 2/10, üst sınır %20."
+   },
+   "deney": {
+    "varsayim": "Kurucu ve ajanslar yatırım görüşmesi öncesi demo için sabit fiyatla peşin ödeme yapar",
+    "yontem": "Bir markasız vitrin demo yap; 40 elle yazılmış mesaj ve 10 mevcut ilişki araması; ücretsiz tek ekranlık örnek sun; Lite teklifi gönder",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 2000,
+    "basari_olcutu": "En az 3 keşif görüşmesi ve 1 ücretli peşinat (Lite ya da üstü)",
+    "birakma_olcutu": "40 mesaj ve 10 aramadan 0 keşif ya da 3 teklifte 0 peşinat",
+    "sonraki_dilim": "Pro paketi ve ajanslara ayda 1 demo beyaz etiket teklifi"
+   },
+   "etiketler": {
+    "segment": "Seed öncesi SaaS kurucusu ve yazılım evi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Astro, React, sahte veri üreteci",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "İş planı §0-§2: onlarca sayfa, yüzlerce test, birkaç gün; hizmet kiti %40 hazır. §5: fiyatlar; §3.2: pazar tahmini varsayım. Derinlik A.2 ve A.7: Figma ajansı 60-200 bin ₺ ve AI üretici fiyatı varsayım ve bir dış kaynak. Ödeyen müşteri yok; mevcut ilişkiler 10-15 kişi (derinlik C.2). Kod ve marka üçüncü tarafa ait, yazılı izin alınana dek ticari kullanım yapılmaz. İki teslim edilmiş işte müşteri izni alınmadı (derinlik A.6); referans sayılmaz."
+  },
+  {
+   "id": "ik-paneli-hizmeti-b",
+   "ad": "Ajanslara beyaz etiket aylık demo paketi",
+   "tur": "hizmet",
+   "musteri": "5-30 kişilik İstanbul merkezli yazılım evi ve dijital ajans; satış müdürü ve ortak birlikte karar verir",
+   "is": "Teklif aşamasında müşteriyi canlı demoyla ikna edip rakip ajansı geçmek; teklif başına tasarımcı gününü azaltmak",
+   "tetikleyici": "Büyük teklif öncesi ya da kaybedilen bir ihale; ayda 4-6 tekrarlayan teklif",
+   "teklif": "Müşterinin markasıyla 3 günde Lite demo; ajans adıyla, hizmet sağlayıcı görünmeden; ayda 1 demo taahhüdü, kod devri",
+   "fiyat": "Ajans fiyatı Lite 36.000 ₺ (liste 45.000 ₺ eksi %20); demo başına, KDV hariç; %50 peşin",
+   "kanal_birincil": "Kurucunun LinkedIn doğrudan mesajı: 25 ajans satış ve iş geliştirme yöneticisi, haftada, elle yazılmış",
+   "kanal_yedek": "Kuluçka merkezi ve teknopark ağlarında 20 dakikalık atölye; yeni şirket kuran girişimlere mali müşavir ofisleri",
+   "ilk_adim": "40 ajanslık liste çıkar; markasız bir vitrin demo hazırla; 5 ajansa ayda 1 demo teklifini elle yaz",
+   "ilk_kapsam": "Lite kapsamı: 8-10 ekran, 1 tema, sahte veri, yayın; beyaz etiket alt bilgi kapalı; teslimde kısa devir notu",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Kod ve marka üçüncü bir şirkete ait; yazılı izin ya da sıfırdan yeniden üretim yok; yazılı izin durumu belgelenecek.1)"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Beyaz etiket sözleşmesi, kod devri ve komisyon hukuka uygunluğu hukukçu teyidi ister; sahte veri KVKK riskini düşürür"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "B2B havale ve fatura yolu belli; sanal POS ve fatura düzeni kurulmadı, mali müşavir teyidi bekliyor"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (ajans sahibi, satış müdürü); isim listesi henüz yok, 40 ajans listesi planda"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "LinkedIn mesajı birincil, kuluçka ağı yedek; ilk adım adlı (derinlik C.2, C.7)"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Ajans satış döngüsü ve ayda 1 demo taahhüdünün kabulü ölçülmedi; ilk tahsilat 45-120 gün"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 12.000 ₺; tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsamlı ve sabit fiyatlı Lite paketi; revizyon sınırı yazılı"
+    }
+   },
+   "kapi_duzeltme": "G1 yazılı izin ya da sıfırdan kit ile çözülür. G2 hukukçu, G3 hesap açılışı, G4 ajans listesi, G6 ilk 5 ajans görüşmesinde ölçülerek test olmaktan çıkar.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 36000,
+    "degisken_maliyet_tl": 2500,
+    "sabit_gider_aylik_tl": 11000,
+    "baslangic_nakit_tl": 12000,
+    "kalan_efor_saat": {
+     "min": 100,
+     "beklenen": 150,
+     "max": 190
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 26,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 36000,
+     "iyi": 180000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 5
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "Derinlik C.2 ve C.7: 5 ajansa ayda 1 demo, %40 deneme varsayımı; ajans fiyatı 36 bin ₺. Aynı kit için D.8: yaklaşık 150 saat. Lite 3 iş günü üretim ve keşif yaklaşık 26 saat. Baz: bir ajans 1 demo, 36 bin ₺. İyi: iki ajans toplam 5 demo, 180 bin ₺. Ajans ağı belgesiz, dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Ajanslar teklif başına canlı demo için ayda 1 taahhütle ödeme yapar",
+    "yontem": "5 ajansa 'ilk demoda %20 indirim, ajans adıyla' teklifini elle gönder; kabul edene ücretli deneme demosu hazırla",
+    "sure_gun": 30,
+    "maliyet_saat": 30,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "20 görüşmeden en az 2 ajans deneme ister, 1 ajans ödeme yapar",
+    "birakma_olcutu": "20 ajans mesajından 0 yanıt ya da 3 deneme görüşmesinde 0 peşinat",
+    "sonraki_dilim": "Ajansın müşterisi için ikinci demo ve yıllık ajans anlaşması"
+   },
+   "etiketler": {
+    "segment": "Yazılım evi ve dijital ajans (5-30 kişi)",
+    "kanal_turu": "ortak",
+    "teknoloji": "Astro, React, sahte veri üreteci",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "Derinlik B.2: beachhead olarak ajans seçilmiş; ayda 4-6 teklif, kazanma oranı artışı varsayım. A.8: 0,4 ay geri ödeme varsayım hesabı. C.7: ajans ortaklığı, ortak teklifi. Ajans isim listesi, görüşmesi ya da ödeme yok; kurucunun ajans ağı belgelenmedi. Kod ve marka üçüncü tarafa ait; yazılı izin durumu belgelenecek."
+  },
+  {
+   "id": "ik-paneli-hizmeti-c",
+   "ad": "Puantaj mutabakatı kurulum ve dönem hizmeti",
+   "tur": "hizmet",
+   "musteri": "100+ çalışanlı vardiyalı işletme (en az iki hareket ve izin kaynağı) ve çok müşterili bordro danışmanı",
+   "is": "PDKS ve izin dışa aktarımlarını aynı ay için mutabık puantaj özetine çevirmek; eksik ve çakışan hareketi bulmak",
+   "tetikleyici": "Aylık bordro kapanışı; eksik çıkış ve vardiya çakışması kapanışı geciktirdiğinde",
+   "teklif": "Tek format için kurulum ve eşleme, her dönem istisna listesi, mevcut bordroya dışa aktarma; yeni sistem göçü yok",
+   "fiyat": "Kurulum 6.000 ₺ + işletme başına ayda 4.000 ₺ (GPT deney paketi); KDV hariç",
+   "kanal_birincil": "Mali müşavir ve bordro danışmanı ofisleri: sentetik gece vardiyası kontrol listesi ve bir izinli müşteride pilot",
+   "kanal_yedek": "PDKS kurulum ve entegratör firmaları: tek format CSV denetleyici; ücretsiz sentetik örnek önizleme",
+   "ilk_adim": "Bir PDKS dışa aktarım biçimi seç; sentetik gece vardiyası örnekleri yaz; 1 danışman ofisiyle pilot görüşmesi iste",
+   "ilk_kapsam": "Tek format içe aktarma, eşleme ve reddedilen satır raporu, deterministik çakışma kuralları, dönem kilidi ve bordroya dışa aktarma",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Panel kodu ve markası üçüncü şirkete ait; bu hizmetin hesap kodu hiç yok, kod yazılacaksa izinle ya da sıfırdan"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Gerçek çalışan verisi KVKK, veri sorumlusu ve silme politikası ister; hukuki bordro sonucu iddia edilmez; hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura düzeni belli; hesap açılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (bordro sorumlusu, danışman); isim listesi ve mevcut ilişki belgelenmedi"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Danışman ve entegratör kanalı fikir düzeyinde; somut ofis ya da dizin adlandırılmadı"
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Arka uç yok; içe aktarma, motor, kilit ve dışa aktarma için 120-400 saat (analist tahmini, kaynakta saat yok); ilk tahsilat 4-7 ay"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Yaklaşık 25.000 ₺ (hukukçu, uzman incelemesi, barındırma); tavanın altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Özel eşleme ayda 6 saate çıkarsa katkı 80 ₺'ye düşer (GPT dosyası); kapsam sınırı yazılı değil"
+    }
+   },
+   "kapi_duzeltme": "G6: ilk ücretli kapsamı tek dışa aktarım biçimine ve dönem özetine indir; G1 ve G2 izin ve hukukçu ile; G5 için bir danışman ofisini adla seç.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 4000,
+    "degisken_maliyet_tl": 1220,
+    "sabit_gider_aylik_tl": 2000,
+    "baslangic_nakit_tl": 25000,
+    "kalan_efor_saat": {
+     "min": 120,
+     "beklenen": 240,
+     "max": 400
+    },
+    "ilk_tahsilat_gun": {
+     "min": 120,
+     "max": 210
+    },
+    "satis_basina_kurucu_saati": 25,
+    "musteri_basina_aylik_destek_dk": 90,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 14000,
+     "iyi": 32000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 7
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.1
+    },
+    "dayanak": "GPT dosyası ücretli paket: 6.000 ₺ kurulum, 4.000 ₺/ay, destek 1,5 saat x 600, altyapı 200, %3 tahsilat. Baz: 1 pilot, kurulum + 2 ay = 14.000 ₺. İyi: 2 pilot, 2 kurulum + 5 ay = 32.000 ₺. Dönüşüm kanıtsız varsayım; kalan efor analist tahmini: kaynakta saat yok, iş planı §2 yalnız tam arka ucu 3 kişiyle 12-18 ay verir."
+   },
+   "deney": {
+    "varsayim": "Bordro ofisi ve işletme, tek format puantaj istisna çıktısı için aylık ödeme yapar",
+    "yontem": "Sentetik gece vardiyası verisiyle ücretsiz CSV denetleyici yayımla; 2 danışman ofisine pilot ve 3 PDKS entegratörüne format görüşmesi iste",
+    "sure_gun": 30,
+    "maliyet_saat": 30,
+    "maliyet_tl": 500,
+    "basari_olcutu": "En az 1 ofis kendi gerçek dışa aktarım biçimini paylaşır ve ücretli pilot kurulumunu kabul eder",
+    "birakma_olcutu": "5 ofis ve entegratör görüşmesinden 0 gerçek biçim paylaşımı ya da sorun Excel ile zaten çözülmüş",
+    "sonraki_dilim": "İkinci dönem kapanışı ve aynı ofisin ikinci müşterisi"
+   },
+   "etiketler": {
+    "segment": "Vardiyalı işletme ve bordro danışmanı",
+    "kanal_turu": "ortak",
+    "teknoloji": "Astro, React, CSV içe aktarma, deterministik motor",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT stratejisi (hedef kullanıcılar, ücretli paket, 30-60-90 gün): dar iş puantaj istisna özeti; arka uç henüz kanıtlanmadı, yeni HRMS yazmak istenmiyor. İş planı §2: bordro ve arka uç 12-18 ay, 3 kişilik ekip varsayımı. Rakipler: bulut İK ürünleri ve Excel; ödeyen müşteri, pilot ya da alıcı isim listesi yok; kurucunun İK bordro ağı belgelenmedi."
+  }
+ ]
+}

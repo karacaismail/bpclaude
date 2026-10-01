@@ -1,0 +1,59 @@
+{
+ "slug": "metaframer-kernel",
+ "kararlar": [
+  {
+   "itiraz": "Kart A ilk_kapsam mevcut dilimi geniş gösteriyor; kit kapsamı yüzde 35 varsayım, kernel yüzde 5-8, depo NO_GO",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart özeti ve bugun alanı tek çalışan dilimi, demo yokluğunu ve NO_GO bayraklarını açıkça yazıyor; ilk_kapsam hedef kapsamdır, mevcut durum iddiası değil."
+  },
+  {
+   "itiraz": "Kart B iç pilot ekibini ilişki sayıyor; ödeyen ya da bağımsız ajans değil, B1 ve A6 kanıtı sayılmaz",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart yalnız mevcut ilişkiyi belirtip ödeyen müşteri ve ajans listesi olmadığını yazıyor; brif ad vermeden ilişkinin gerekçede söylenmesini ister. Puan ayrı adımda."
+  },
+  {
+   "itiraz": "Kart C kalan eforu yalnız demo ve belge 40-80 saat; sözleşme ve entegrasyon eforu dahil değil",
+   "karar": "kismen",
+   "degisiklik": "metaframer-kernel-c kalan_efor_saat 40/70/120 iken 50/90/150 oldu; dayanak güncellendi (sözleşme ve sandbox payı eklendi).",
+   "gerekce": "Kaynak yalnız 40-80 saat veriyor; sözleşme ve sandbox payı temkinle eklendi. Müşteri entegrasyonu satış sonrası teslim olduğundan hariç."
+  },
+  {
+   "itiraz": "metaframer-kernel-a G6 kaldi olmalı: beklenen 200 saat, 20 saat/hafta ile 10 hafta",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Plan çıkarmayı 4-8 hafta ve 8. hafta demo kriteriyle veriyor; aralık 110-300 saat 8 hafta çizgisini (160 saat) kapsıyor. Kaynaklar çelişince temkinli durum test."
+  },
+  {
+   "itiraz": "metaframer-kernel-b G6 kaldi olmalı: beklenen 230 saat, 11-12 hafta",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Aralık 140-330 saat 160 saat çizgisini kapsıyor; atölye payı kaynakta varsayım, satış döngüsü ölçülmedi. Kaynak kaldiyı kesinleştirmiyor; temkinli durum test."
+  },
+  {
+   "itiraz": "metaframer-kernel-a alti_ay_odeme_adedi baz 20 yerine 8-10 olmalı",
+   "karar": "kismen",
+   "degisiklik": "baz odeme/musteri 20 iken 12, tahsilat 171.840 iken 103.104; iyi 50 iken 30 (429.600 iken 257.760); dayanak güncellendi.",
+   "gerekce": "Plan satışı yayından sayar; 8-10 hafta çıkarma sonrası pencere ~3,5 ay ve dönüşüm kanıtsız. 8-10 kaynaksız, 20 fazla iyimser; iyi 50 de pencereyi aşıyordu."
+  },
+  {
+   "itiraz": "metaframer-kernel-b alti_ay_odeme_adedi baz 2 yerine 0-1 olmalı",
+   "karar": "kabul",
+   "degisiklik": "baz odeme/musteri 2 iken 1, tahsilat 80.000 iken 40.000; iyi 5 iken 3 (200.000 iken 120.000); dayanak güncellendi.",
+   "gerekce": "Kaynak 3 ajansa teklif ve yüzde 33 dönüşüm veriyor, bu 1 paket eder; ajans listesi ve ödeyen yok."
+  },
+  {
+   "itiraz": "metaframer-kernel-c alti_ay_odeme_adedi baz 1 yerine 0 olmalı",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kartın kendi dönüşüm aralığı (10 görüşme x yüzde 5-15) yaklaşık 1 satış veriyor; kötü senaryo zaten 0. Kanıtsızlık dayanakta belirtilmiş."
+  },
+  {
+   "itiraz": "Kendi taramam: metaframer-kernel-b G8 gecti, ama kapi_duzeltme atölye kapsamının yazılı sınırlanmasını gerektiriyor",
+   "karar": "kabul",
+   "degisiklik": "metaframer-kernel-b G8 gecti iken test; not ve kapi_duzeltme güncellendi.",
+   "gerekce": "G8 tanımına göre kapsam sınırı yazılı değilse test; atölye şemaya uyarlama özel işe kayabilir."
+  }
+ ]
+}

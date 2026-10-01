@@ -1,0 +1,345 @@
+{
+ "slug": "zabuno",
+ "baslik": "Zabuno (QR menü ve sipariş yazılımı)",
+ "ozet": "Zabuno, kafe ve restoranların menüsünü sürümlü yayınlayan, basılı QR kod üreten ve masadan sipariş alan çok kiracılı web ürünüdür. Ürün canlı, ödeyen müşteri sıfır; aylık abonelik planlı, kartla canlı tahsilat henüz kapalı.",
+ "bugun": {
+  "var": [
+   "Canlı ürün: menü yazma, numaralı yayın, QR kart, misafir sayfası, masadan sipariş",
+   "Fotoğraftan yapay zekâ ile menü taslağı ve CSV içe/dışa aktarma",
+   "Rol ve izin matrisi, çoklu şube, analitik, KVKK dışa aktarma ve silme araçları",
+   "Fiyat sayfası canlı: Starter 0, Restaurant 499, Team 999 TL/ay",
+   "Numaralı fatura ve abonelik yaşam döngüsü kodda tamam; havale ile tahsilat yolu açık",
+   "Yayınlanmış yasal metinler, güven sayfaları ve durum sayfası"
+  ],
+  "yok": [
+   "Ödeyen müşteri ve gerçek serviste ölçülmüş kullanım kanıtı",
+   "Türkçe ana sayfa (kurumsal sitede açılış sayfası henüz hazırlanıyor ekranında)",
+   "Merkezden yayın ve şube fiyat istisnası (zincir modülü, 4-6 aylık iş)",
+   "Ürün adı çevirisi ve POS entegrasyonu",
+   "Hukukçu incelemesi ve operasyonel hazırlık girdileri tamamlanmadı",
+   "Kartla canlı tahsilat ve e-arşiv entegrasyonu"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Koşullu devam: önce hazırlık girdileri, sonra 5-10 kafeyle kapalı pilot ve çok şubeli kahve zincirinde 3 şube pilotu; 90. günde 10 ödeyen ve imzalı zincir pilotu yoksa geliştirme dondurulur.",
+  "gpt": "Medya ve restoran panel kayıtları yalnız tasarım teslimi sayılır; ücretli öneri sınırlı kit, uyarlama ya da hizmettir. Tekrar kullanım görülmeden abonelik veya geniş platforma geçilmez; kanal ve ödeme doğrulanmadı.",
+  "ayrisma": "Claude abonelikli QR menü ürününü ve zincir hattını satmayı önerir; GPT kaydı çalışan ürün saymaz, yalnız sabit kapsamlı kit veya hizmeti ve tekrar eşiğini ister.",
+  "birlesik": "Önce en küçük abonelik paketi gerçek serviste kanıtlanmalı; zincir planı ancak pilot sonrası, kit ve uyarlama hizmeti ise yalnız bir ajans ya da restoran talebi doğrulanırsa denenmeli."
+ },
+ "analist_gorusu": "En gerçekçi yol: tek şubeli kafelere concierge kurulumlu aylık abonelik. Zincir hattı 6 aya sığmaz, kit hizmetinde talep kanıtı yok. Sınırlayıcı etken tutar: 3000 dolar için yüzlerce abone-ay gerekir.",
+ "secenekler": [
+  {
+   "id": "zabuno-a",
+   "ad": "Kafe aboneliği: kurulum dahil Restaurant planı",
+   "tur": "yazılım ürünü",
+   "musteri": "İstanbul'da 20-50 masalı, menüsünü sahibi yöneten tek şubeli kafe ve pastaneler",
+   "is": "Fiyat değişince menüyü yeniden bastırmadan masadaki QR menüyü güncellemek, yönetmeliğe uyumlu liste göstermek",
+   "tetikleyici": "Zam sonrası menü baskı faturası, yeni açılış, karekodla fiyat listesini tanıyan yönetmelik haberi",
+   "teklif": "Fotoğraftan 30 dakikada kurulum, 40 QR kart hediye, ilk ay ücretsiz; sonra Restaurant planı, havale ile",
+   "fiyat": "Restaurant 499 TL/ay (KDV dahil varsayımı, net 416 TL); Team 999 TL/ay; Starter 0 TL",
+   "kanal_birincil": "Kadıköy, Beşiktaş, Şişli kafelerine WhatsApp ve yüz yüze semt turu (haftada 8 ziyaret)",
+   "kanal_yedek": "Semt matbaaları, mali müşavir ofisleri, restoran işletmecisi Facebook grupları ve yönetmelik rehberi",
+   "ilk_adim": "Kurumsal sitede Türkçe ana sayfayı açmak, menü yönetimi hatalarını denetlemek, 20 kafelik liste çıkarmak",
+   "ilk_kapsam": "Mevcut Restaurant planı; havale ile tahsilat, elle plan ataması, GİB portalından elle e-arşiv fatura; kurulum kurucu eliyle",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Depo public ama lisans dosyası yok; kod ekibi ile hak devri ve bağımlılık lisansları teyit bekliyor."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Yasal metinler hukukçu incelemesinde; KVKK kapsamındaki veri aktarımı ve barındırma dayanağı hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve elle e-arşiv yolu belli; satıcı kimliği, KDV oranı ve sanal POS canlı kipi açılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; yazılı 20 isimlik liste yok, hafta 1-2 için planlı."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal ve ilk adım adlı; matbaa, mali müşavir ve grup kanalları yedek."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Menü silme, yeniden adlandırma ve görünürlük gibi pilot öncesi maddelerin kod durumu doğrulanmadı."
+    },
+    "G7": {
+     "durum": "test",
+     "not": "Hukukçu 40000 TL (varsayım) ve kartlar ≈43000 TL; ilk tahsilata kadar aylık sabit gider eklenince 50000 TL tavan aşılabilir; hesap yeniden yapılmalı."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı katalog planını alır; kurulum sabit kapsamlı (fotoğraf, menü, 40 kart)."
+    }
+   },
+   "kapi_duzeltme": "G1: lisansı sahiple netleştir. G2: hukukçu teyidi, aktarım dayanağı. G3: satıcı bilgileri, KDV. G4: 20 kişilik liste. G6: 2 saatlik kod denetimi. G7: hukukçu kapsamı, aylık giderli nakit hesabı.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 416,
+    "degisken_maliyet_tl": 20,
+    "sabit_gider_aylik_tl": 3600,
+    "baslangic_nakit_tl": 43000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 70,
+     "max": 130
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 3328,
+     "baz": 11648,
+     "iyi": 33280
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 8,
+     "baz": 28,
+     "iyi": 80
+    },
+    "alti_ay_musteri": {
+     "kotu": 4,
+     "baz": 12,
+     "iyi": 30
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.08
+    },
+    "dayanak": "Net fiyat 499/1,2 = 416 TL. İlk ay ücretsiz: ilk havale 45-75. gün. Plan 5 yeni ödeyen/ay kanıtsız; baz ayda 3 ödeyen, 3. aydan itibaren: 12 müşteri, 28 abone-ay (x416) %5 churn dahil. Dönüşüm %5-8 varsayım, kanıtsız. Sabit gider altyapı ve e-arşiv; araç abonelikleri hariç."
+   },
+   "deney": {
+    "varsayim": "Kafe sahibi, ücretsiz ay sonunda 499 TL/ay Restaurant planı için havale yapar.",
+    "yontem": "Kadıköy, Beşiktaş ve Şişli'de 20 kafeyi ziyaret et; 8'ine ücretsiz kurulum yap; 30. günde ödeme iste ve kayıt tut.",
+    "sure_gun": 45,
+    "maliyet_saat": 40,
+    "maliyet_tl": 4800,
+    "basari_olcutu": "8 kurulumdan en az 3 kafe ilk ay sonunda ödeme yapar (havale kaydı)",
+    "birakma_olcutu": "8 kurulumdan 1 veya hiç ödeme yoksa abonelik teklifini bırak, fiyat ve paketi yeniden kur",
+    "sonraki_dilim": "Başarıda matbaa ve mali müşavir ortaklarını ekle; ödeyen sayısı 10'a çıkınca zincir pilotuna geç."
+   },
+   "etiketler": {
+    "segment": "Tek şubeli kafe ve pastane, İstanbul",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Laravel, React, PostgreSQL",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı §0, §2: ürün canlı, ödeyen müşteri 0; §4: rakipler 175-250 TL (Menulux, Restomenum), MONU 249 TL; §5 fiyat ve havale yolu; §7.2 ilk 10 müşteri elle; §8 baz senaryo. Derinlik dosyası A.8: 40 masalık yıllık baskı maliyeti varsayımı. GPT dosyaları bu seçeneği doğrulamaz. Ödeme isteği kanıtı yok."
+  },
+  {
+   "id": "zabuno-b",
+   "ad": "Zincir planı: çok şubeli kahve zinciri pilotu",
+   "tur": "yazılım ürünü",
+   "musteri": "10-100 şubeli kahve ve yeme-içme zincirleri; ilk aday çok şubeli bir kahve zinciri (mevcut danışmanlık ilişkisi)",
+   "is": "Şubelerin aynı menüyü ve fiyatı göstermesini merkezden onaylı yayınla sağlamak, şube bazında ölçmek",
+   "tetikleyici": "Yeni franchise sözleşmesi, marka standardı denetimi, şubeler arası fiyat tutarsızlığı şikâyeti",
+   "teklif": "3 şubede 60 gün ücretsiz pilot, ardından yıllık sözleşmeli Zincir planı; DPA ve hizmet seviyesi metinleri hazır",
+   "fiyat": "Öneri (katalogda yok): zincir paketi 6.373 TL/ay (net 5.311 TL), şube sayısına göre kademeli",
+   "kanal_birincil": "Mevcut danışmanlık ilişkisi üzerinden pazarlama yöneticisine e-posta ve toplantı",
+   "kanal_yedek": "UFRAD üyeleri, franchise fuarı, LinkedIn'de pazarlama ve franchise yöneticileri",
+   "ilk_adim": "3 şube pilot teklifini yazılı gönder; pilot kapsamını mevcut çoklu şube özellikleriyle sınırla",
+   "ilk_kapsam": "Pilot: şube başına menü ve kod (mevcut). Ücretli kapsam: merkezden onaylı yayın, şube fiyat istisnası, karşılaştırma raporu (henüz yok)",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Lisans dosyası yok; hak sahipliği ve bağımlılık lisansları teyit bekliyor."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Zincir satın alması için DPA ve KVKK yurt dışı aktarım dayanağı hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Aylık fatura ve havale yolu belli; satıcı bilgileri ve vergi girdileri tamamlanmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; ismen tek mevcut ilişki var, 20 zincir listesi yok."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Mevcut ilişki ana kanal; dernek, fuar ve LinkedIn yedek ve adlı."
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Merkez yayın modülü yaklaşık 21 gün; pilot ve satın alma döngüsüyle ilk tahsilat 6 ayı zorlar."
+    },
+    "G7": {
+     "durum": "test",
+     "not": "Hukukçu 40000 TL varsayım; ilk tahsilat 4-8 ay sürerse aylık sabit gider eklenince 50000 TL tavan aşılabilir; hesap yapılmadı."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Çeviri ve POS entegrasyonu istekleri özel iş doğurabilir; kapsam sınırı yazılmadı."
+    }
+   },
+   "kapi_duzeltme": "G6: pilotu mevcut özelliklerle ücretli yap veya modülü 8 haftaya böl. G8: kapsam sınırını sözleşmeye yaz. G2: hukukçu teyidi. G7: aylık giderli nakit hesabını yap.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 5311,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 3600,
+    "baslangic_nakit_tl": 40000,
+    "kalan_efor_saat": {
+     "min": 120,
+     "beklenen": 200,
+     "max": 300
+    },
+    "ilk_tahsilat_gun": {
+     "min": 120,
+     "max": 240
+    },
+    "satis_basina_kurucu_saati": 40,
+    "musteri_basina_aylik_destek_dk": 240,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 15933
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan §5: zincir paketi 6373 TL/ay, KDV hariç 5311 TL. Yazılı onay yok; 60 gün ücretsiz pilot, 6-10 hafta karar süresi ve 21 günlük merkez yayın modülü: baz senaryoda 6. ay sonuna dek fatura yok (plan §8 3. ay iyimser). İyi: 4. aydan 3 ödeme. Dönüşüm kanıtsız, tek aday."
+   },
+   "deney": {
+    "varsayim": "Zincir pazarlama yöneticisi, merkezden yayın ve şube karşılaştırması için pilot sonunda yıllık sözleşme imzalar.",
+    "yontem": "2 sayfalık teklifi ve 3 şube pilot planını yazılı gönder; 20 dakikalık toplantı yap; ilk 60 gün ölçüm kriterlerini ortak yaz.",
+    "sure_gun": 30,
+    "maliyet_saat": 15,
+    "maliyet_tl": 0,
+    "basari_olcutu": "Yazılı 3 şube pilot onayı ve ücretli kapsam için fiyat konuşması",
+    "birakma_olcutu": "30 günde yazılı pilot onayı veya imza takvimi yoksa zincir hattını beklemeye al",
+    "sonraki_dilim": "Onayda yalnız merkezden onaylı yayın dilimini 8 haftada yaz; diğer modülleri sözleşmeye bağla."
+   },
+   "etiketler": {
+    "segment": "10-100 şubeli kahve ve yeme-içme zinciri",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Laravel, React, PostgreSQL",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı §2 ikinci ürün hattı: çoklu şube var, merkezden yayın ve istisna yok; §5 Zincir planı öneri; §7.2 pilot; §8 baz senaryoda zincir 3. aydan; §10 yurt dışı aktarım riski. Derinlik dosyası B.3 karar süreci 6-10 hafta, D.2 efor günleri. Zincir sözleşmesi, yazılı pilot onayı ve ödeme yok; GPT dosyaları bu hattı doğrulamaz."
+  },
+  {
+   "id": "zabuno-c",
+   "ad": "Restoran paneli modül uyarlama hizmeti",
+   "tur": "hizmet",
+   "musteri": "Restoran operasyon sahibi veya restoran müşterisi olan ajans; panel modülünü kendi verisine bağlamak isteyen",
+   "is": "Statik panel tasarımını tipli veriye ve izin akışına bağlamak; medya seçimi ve yayın onayını netleştirmek",
+   "tetikleyici": "Tasarım teslimi sonrası çalışan modüle ihtiyaç; bir ajansın restoran projesinde tek modülün hızla bitirilmesi",
+   "teklif": "Sabit kapsamlı tek modül uyarlaması: medya onayı veya menü işlem paneli, tipli veri, izin kontrolü, 2 hafta teslim",
+   "fiyat": "30.000 TL sabit paket (varsayım: 40 saat x eşik saat ücreti); kaynakta fiyat yok",
+   "kanal_birincil": "Anonim, izinli panel örneğiyle restoran müşterisi olan ajanslara kurucu doğrudan teklif",
+   "kanal_yedek": "Zabuno restoran müşterilerine ürün içi ve WhatsApp üzerinden uyarlama önerisi",
+   "ilk_adim": "Anonim, sentetik bir medya onayı demosu ve tek sayfalık kapsam yaz",
+   "ilk_kapsam": "Tek modül: medya seçimi ve yayın onayı akışı, tipli veri ve izin ayrımı; mevcut tasarım teslimi temel alınır",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Tasarım teslim dosyalarının hak sahipliği ve yeniden kullanım izni doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Anonim demo kişisel veri içermez; ücretli uyarlama müşteri verisine bağlanınca KVKK işleme doğar, veri işleme sözleşmesi ve hukukçu teyidi gerekir."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Hizmet için havale ve fatura yolu belli; satıcı bilgileri hazır değil."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Hedef rol hipotez; ismen ajans veya restoran listesi yok."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Ajans panel örneği kanal fikri; somut ajans veya dizin adı verilmedi."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Modül kapsamı belirsiz; kalan efor ve satış döngüsü ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Anonim demo ve teklif için nakit gideri neredeyse yok."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kapsam sınırı yazılı değil; her ajans ayrı entegrasyon isteyebilir."
+    }
+   },
+   "kapi_duzeltme": "G4, G5: 20 ajans ve restoran listesi. G8: tek modül için sabit kapsam ve fiyat yaz. G1: tasarım dosyalarının hakkını doğrula. G2: uyarlamayı anonim veriyle sınırla ya da veri işleme sözleşmesi ekle.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 30000,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 0,
+    "baslangic_nakit_tl": 500,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 100,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 30000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.05
+    },
+    "dayanak": "Kaynakta fiyat yok; 30000 TL = 40 saat x eşik saat ücreti, kanıtsız varsayım. 20 teklifte %1-5 dönüşümle beklenen satış 0,2-1; GPT dosyası kanalın talep getirdiğini doğrulamadı: baz 0, iyi 1 satış. Efor 60-160 saat. Alan adı ve fatura için küçük nakit."
+   },
+   "deney": {
+    "varsayim": "Bir ajans veya restoran, anonim demoyu görünce tek modül için sabit paketi satın alır.",
+    "yontem": "Sentetik medya onayı demosunu ve kapsam sayfasını hazırla; 20 ajansa kısa teklif gönder; yanıtları ve fiyat tepkilerini kaydet.",
+    "sure_gun": 21,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "20 teklifte en az 2 görüşme ve 1 yazılı fiyat ya da ön ödeme niyeti",
+    "birakma_olcutu": "20 tekliften hiç görüşme çıkmazsa hizmet hattını bırak",
+    "sonraki_dilim": "Talep varsa aynı modülü şablon kit olarak paketle; tekrar eden sipariş görülünce abonelik düşün."
+   },
+   "etiketler": {
+    "segment": "Restoran müşterisi olan ajans, restoran operasyon sahibi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "React, tipli veri, izin akışı",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT medya paneli ve restoran handoff dosyaları: iş önerisi yalnız gözlenen tasarım kapsamıyla sınırlı; kaynak adı çalışan uygulama ya da ücretli talep kanıtı değil; ücretli öneri sınırlı kit, uyarlama ya da hizmet; kanalın kullanıcı veya ödeme getirdiği doğrulanmadı; tekrarlı kullanım görülmeden abonelik yok. Claude planında bu biçim yoktur."
+  }
+ ]
+}

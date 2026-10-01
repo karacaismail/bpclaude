@@ -1,0 +1,343 @@
+{
+ "slug": "b2b-bilesenler",
+ "baslik": "B2B ürün sayfası ve animasyon bileşenleri",
+ "ozet": "Kurucunun 12 tasarım yaklaşımlı B2B ürün detay sayfası denemesi ile yaklaşık 780 animasyon demosu. En gerçekçi yol bağımsız ürün değil, ihracatçı üretici sitesine eklenen hazır ürün sayfası ve hareket bloklarıdır. Ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "12 tasarım yaklaşımlı, 320 px'ten başlayan, 4 dilli (sağdan sola yazım dahil) ürün detay demosu ve 6 belgelik tasarım seti",
+   "Yaklaşık 780 GSAP ve Lottie HTML demosu; iki kopya birbirinden ayrışmış",
+   "25 küçük arayüz parçası ve 16 admin paneli denemesi",
+   "Kurucunun kendi kurumsal site hizmetinde canlı çok dilli teslim ve mevcut site müşterisi ilişkileri",
+   "GSAP artık tüm eklentileriyle ücretsiz; bloklar lisanssız gömülebilir"
+  ],
+  "yok": [
+   "Ödeme yapan müşteri, ön ödeme ya da yazılı fiyat kabulü",
+   "Derlenmiş (Astro, Tailwind) üretim çıktısı; demo tarayıcıda derleniyor",
+   "Medya ve animasyon dosyası lisans envanteri; lisansı doğrulanacak içerik kümesi",
+   "Hazır bloklar için sözleşme ve teklif şablonu",
+   "Ürün sayfası için ölçülmüş yabancı alıcı dönüşümü"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Bağımsız şablon ve animasyon ürünü için ticari sunum Hayır. En gerçekçi biçim kurumsal site hizmetine ek 15-25 bin ₺ ürün sayfası bloğu ve 8-12 bin ₺ hareket paketi; animasyon sitesi ücretsiz lead aracı.",
+  "gpt": "Geniş platform yerine müşteri başına dar çıktı: tek ürün için iki mobil alıcı görünümü. Animasyon tarafında lisanslı küçük animasyonu erişilebilir arayüze eklemek. Fiyat, trafik ve ödeme talebi doğrulanmadı.",
+  "ayrisma": "Claude hazır bloğu mevcut site müşterisine ek satır olarak görür ve rakam verir. GPT alıcıyı B2B katalog ajansı ve frontend ekibi sayar, rakam vermez; kanıt görülene dek abonelik ve platformu reddeder.",
+  "birlesik": "İkisi de bağımsız platform ve abonelik değil, sabit kapsamlı dar paket der; lisans ve içerik temizliği ön koşul. Ücretli şablon satışı ancak küçük, sınırlı bir deney olabilir."
+ },
+ "analist_gorusu": "En hızlı para, mevcut site müşterisine ek paket olarak satılan iki paradigmalı ürün sayfası bloğundadır; animasyon sitesi gelir değil güven ve lead katmanıdır.",
+ "secenekler": [
+  {
+   "id": "b2b-bilesenler-a",
+   "ad": "Site paketine ek: ürün sayfası ve hareket blokları",
+   "tur": "hizmet",
+   "musteri": "İhracat yapan üretici KOBİ; kurucunun kurumsal site hizmetinin mevcut ve yeni müşterisi",
+   "is": "Yabancı alıcının ürün sayfasında minimum sipariş, kademeli fiyat ve teklif formunu kendi dilinde görüp teklif istemesi",
+   "tetikleyici": "Yeni site teklifi ya da sitenin çok dilli yenilenmesi; yabancı alıcıdan gelen ürün bilgisi talebi",
+   "teklif": "Site paketine ek: 2 paradigmalı ürün detay bloğu, 5 dil, teklif formu, 320 px kabul testi; ayrı hareket paketi (hero, sayaç, galeri)",
+   "fiyat": "Ürün sayfası bloğu 20.000 ₺ + KDV; hareket paketi 10.000 ₺ + KDV; tek seferlik, %50 avans",
+   "kanal_birincil": "Kurucunun mevcut site müşterileri ve kurumsal site teklifine eklenen blok satırı (önce/sonra ekran görüntüsüyle)",
+   "kanal_yedek": "LinkedIn'de '12 ürün sayfası yaklaşımı' yazısı; mali müşavir ve ihracat danışmanı yönlendirmesi",
+   "ilk_adim": "Medya ve animasyon lisans envanterini çıkar, lisansı doğrulanmayan içeriği çıkar; ilk iki paradigmayı Astro'ya taşı; mevcut müşterilere 2 teklif gönder",
+   "ilk_kapsam": "Mevcut yayındaki bir üretici sitesinde 2 paradigmalı (klasik ve B2B satış masası) ürün sayfası, 5 dil, teklif formu, ölçülmüş 320 px ve hız raporu",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; ama stok görsel, video, 3B model ve Lottie dosyalarının lisansı tek tek doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Teklif formu kişisel veri toplar; aydınlatma metni, veri işleyen rolü ve hizmet ihracı için mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "gecti",
+     "not": "Yurt içi müşteriden havale/EFT ve e-fatura, mevcut site hizmetiyle aynı düzen"
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Alıcı tipi net; belgede mevcut site müşterisi ilişkileri (3 üretici) yazılı; hedefin tamamı için 20 isimlik liste yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal mevcut müşteriler ve teklif satırı; yedek LinkedIn ve danışman yönlendirmesi; ilk adım belli"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 60-140 saat, 8 haftanın altı; ama blok satışının döngüsü site teklifine bağlı ve ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 9.000 ₺ (medya lisansı, alan adı), 50.000 ₺ tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit paradigma sayısı, dil ve revizyon sınırı, sabit fiyat; özel geliştirme paket dışı saatlik"
+    }
+   },
+   "kapi_duzeltme": "G1: medya envanteri, yer tutucu görsel, lisansı belirsiz dosyaları dışarıda bırakmak. G2: hukukçu ve mali müşavir teyidi. G6: ilk 5 teklifte döngüyü ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 20000,
+    "degisken_maliyet_tl": 1500,
+    "sabit_gider_aylik_tl": 750,
+    "baslangic_nakit_tl": 9000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 90,
+     "max": 140
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 5,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 30000,
+     "iyi": 60000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.25
+    },
+    "dayanak": "Plan 5, 6, 8 ve derinlik C.3: blok 15-25 bin ₺, hareket 8-12 bin ₺ (orta değerler). Plan 12 ayda 2-4 site der; ilk 6 ayda baz 1 blok + 1 hareket paketi (aynı müşteri), iyi 2+2 (2 müşteri), kötü 0. İlk teklif plana göre 7. hafta, kapanış 1-2 hafta; ilk tahsilat en erken 60. gün. Dönüşüm plan teklif kabul varsayımı %25, kanıtsız."
+   },
+   "deney": {
+    "varsayim": "Mevcut site müşterisi, önce/sonra ekran görüntüsünü görünce site paketine 20.000 ₺'lik ürün sayfası bloğunu ekletir",
+    "yontem": "2 paradigmayı bir yayındaki üretici sitesinde gerçek ürünle göster; 5 mevcut müşteriye ve açık tekliflere blok satırı ekle; kabul, itiraz ve süre kaydet",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 0,
+    "basari_olcutu": "5 tekliften en az 1 yazılı kabul ya da avans",
+    "birakma_olcutu": "5 tekliften 0 kabul ve fiyat itirazı bloğa değil sitenin kendisine",
+    "sonraki_dilim": "Başarıda 4 paradigmaya ve 20 hareket bloğuna genişle; MIT açık kaynak blok deposu yayınla"
+   },
+   "etiketler": {
+    "segment": "İhracatçı üretici KOBİ",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Astro, Tailwind, GSAP",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Derinlik belgesi B.2: en yakın segment mevcut site müşterisi ve ek edinme maliyeti sıfıra yakın. Plan 1 ve 5: tek dilli sayfa, katalog PDF, ajans ürün sayfası 20-40 bin ₺ (varsayım). Plan 2: demo tarayıcıda derleniyor, port ve lisans temizliği gerekli. Ödeyen müşteri yok; fiyat kabulü yok. Derinlik A.8: müşteri getirisi varsayım."
+  },
+  {
+   "id": "b2b-bilesenler-b",
+   "ad": "Tek ürün, iki mobil alıcı görünümü (sabit paket)",
+   "tur": "hizmet",
+   "musteri": "B2B katalog ajansı ya da B2B e-ticaret frontend ekibi; karar verici proje sorumlusu",
+   "is": "Tek ürünün sayfasını yabancı dilde ve sağdan sola yazımla, iki alıcı tipi (kurumsal ve bireysel) için telefonda doğru göstermek",
+   "tetikleyici": "Yeni katalog ya da pazar yeri projesinde ürün sayfası tasarım kararı; Arapça ya da Almanca alıcıya açılma",
+   "teklif": "1 ürün, 2 mobil alıcı görünümü, dil ve para birimi biçimi, sağdan sola yazım, 1 revizyon, çalışan sayfa ve kaynak kod; 5 iş günü",
+   "fiyat": "12.000 ₺ + KDV, tek seferlik, %50 avans; ek ürün görünümü 4.000 ₺",
+   "kanal_birincil": "Kurucunun LinkedIn profili ve herkese açık B2B ürün sayfası karşılaştırma demosu",
+   "kanal_yedek": "Astro Discord ve r/astrojs gösterimi; awesome-astro listesine PR; mali müşavir ve danışman tanışmaları",
+   "ilk_adim": "Karşılaştırma demosuna 2 görünümü temiz, lisanslı medyayla yerleştir; 20 ajans ve ekip belirle; 10'una kişiye özel örnek gönder",
+   "ilk_kapsam": "Lisanslı yer tutucu medyayla tek ürünün 2 mobil görünümü, 3 dilde ve sağdan sola yazımla; 320 px ve odak testi yeşil",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; demodaki stok görsel, video ve 3B model teslime girmeyecek, yer tutucu şart; lisans envanteri yok"
+    },
+    "G2": {
+     "durum": "gecti",
+     "not": "Teslim sayfa ve kaynak kod; kişisel veri toplamıyor, sabit kapsamlı hizmet sözleşmesi yeterli"
+    },
+    "G3": {
+     "durum": "gecti",
+     "not": "Yurt içi ajanstan havale/EFT ve e-fatura; mevcut hizmet düzeniyle aynı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi (ajans, ekip) belli; belgelerde adı geçen mevcut ilişki yok, 20 isimlik liste yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanallar adlı (LinkedIn, Astro Discord, awesome-astro) ama ajansa ulaşan somut dizin, grup ya da ortak adlandırılmadı; 20 ajans listesi yok"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 30-80 saat, 8 haftanın altı; ajans satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 3.000 ₺ (alan adı, görsel), tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Tek ürün, iki görünüm, tek revizyon, sabit fiyat; fazlası ek ürün fiyatıyla"
+    }
+   },
+   "kapi_duzeltme": "G1: yer tutucu medya ve envanter. G4: 20 ajans ve ekip listesi çıkar. G5: ajansa ulaşan somut dizin, grup ya da ortak adlandır. G6: ilk 10 temasta yanıt ve karar süresini ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 12000,
+    "degisken_maliyet_tl": 600,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 50,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 40,
+     "max": 130
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 12000,
+     "iyi": 36000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.03
+    },
+    "dayanak": "GPT dosyası: ilk ücretli sonuç iki mobil alıcı görünümü, fiyat verilmemiş. Fiyat Claude planı 5: ajans ürün sayfası 20-40 bin ₺ (varsayım) altında 12.000 ₺ olarak kuruldu. Soğuk temas, ilişki ve kanıt yok: dönüşüm %1-3, baz 1 satış, iyi 3, kötü 0."
+   },
+   "deney": {
+    "varsayim": "Ajans ya da ekip, tek ürünlük iki görünüm örneğini 12.000 ₺'ye satın alır",
+    "yontem": "10 ajans ve ekibe kişiye özel, kendi ürünlerinden birinin örnek görünümünü gönder; yanıt, görüşme ve fiyat tepkisini kaydet",
+    "sure_gun": 21,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "10 temastan en az 1 ücretli görüşme ve 1 avans",
+    "birakma_olcutu": "10 temastan 0 görüşme ve fiyat itirazı yok, ilgisizlik var",
+    "sonraki_dilim": "Başarıda ek ürün görünümü satışına ve bloklar paketine geç"
+   },
+   "etiketler": {
+    "segment": "B2B katalog ajansı ve frontend ekibi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Astro, Tailwind",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "GPT ürün sayfası belgesi: ilk ücretli çıktı tek ürün iki mobil görünüm; runtime, gelir, trafik, ödeme talebi doğrulanmadı. Claude planı 1: ajans ürün sayfası 20-40 bin ₺ varsayım; derinlik B.1: ajans segmenti ulaşılabilirlik 3, rekabet 4. Ödeyen müşteri ve fiyat kabulü yok; belgelerde ajans ilişkisi yazılı değil."
+  },
+  {
+   "id": "b2b-bilesenler-c",
+   "ad": "Astro ve Tailwind ürün sayfası şablonu (kod satışı)",
+   "tur": "kod satışı",
+   "musteri": "Bireysel Astro ve Tailwind geliştiricisi ya da küçük ajans",
+   "is": "Sıfırdan kurmadan B2B ürün sayfası şablonuyla ihracatçı müşteri sitesi çıkarmak",
+   "tetikleyici": "Müşteri için çok dilli ürün sayfası ihtiyacı; ücretsiz şablonların sağdan sola yazımı desteklememesi",
+   "teklif": "4 paradigmalı Astro ve Tailwind şablon, 5 dil, sağdan sola yazım, kademeli fiyat ve teklif formu, lisans metni; destek yok",
+   "fiyat": "49 $ (2.352 ₺) kişisel, 149 $ ekip lisansı; tek seferlik",
+   "kanal_birincil": "Lemon Squeezy mağazası; bağlantı animasyon sitesi, GitHub MIT bloklar ve LinkedIn yazısından",
+   "kanal_yedek": "ThemeForest yazar başvurusu; Astro temalar galerisi ve awesome-astro listesi",
+   "ilk_adim": "Medya ve animasyon lisans temizliği; 4 paradigmayı derlenmiş Astro'ya taşı; Lemon Squeezy hesabı aç ve test ödemesi yap",
+   "ilk_kapsam": "4 paradigmalı şablon, yer tutucu medya, kurulum belgesi, demo sitesi, ticari lisans metni ve ücretsiz örnek sürüm",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; stok görsel, video, 3B model ve Lottie lisansı doğrulanmadı; satılan pakete giremez, yer tutucu gerekir"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Dijital ürün iade ve cayma metni, hizmet ihracı ve vergi için mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yol belli (yasal satıcı hizmeti Lemon Squeezy); hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (geliştirici); isim listesi ve mevcut ilişki belgelerde yok, ücretsiz alternatifler var"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Mağaza, demo sitesi, açık kaynak depo ve topluluk listeleri adlı; ilk adımlar belli"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Port ve temizlik 90-180 saat, ortalama 6-7 hafta; sınır 8 haftaya yakın, ilk satış ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 9.000 ₺ (medya lisansı, alan adı), tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı şablonu alır; destek ve özel geliştirme paket dışı"
+    }
+   },
+   "kapi_duzeltme": "G1: lisans envanteri ve yer tutucu medya. G2: mali müşavir teyidi. G3: Lemon Squeezy hesabı ve test ödemesi. G4: hedef geliştirici ve ajans listesi. G6: önce 2 paradigma ile yayınla.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 2352,
+    "degisken_maliyet_tl": 142,
+    "sabit_gider_aylik_tl": 750,
+    "baslangic_nakit_tl": 9000,
+    "kalan_efor_saat": {
+     "min": 90,
+     "beklenen": 130,
+     "max": 180
+    },
+    "ilk_tahsilat_gun": {
+     "min": 90,
+     "max": 180
+    },
+    "satis_basina_kurucu_saati": 0.5,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 4704,
+     "iyi": 18816
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 8
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 8
+    },
+    "donusum_orani": {
+     "dusuk": 0.005,
+     "yuksek": 0.02
+    },
+    "dayanak": "Plan 2, 5, 6, 8: 49 $ x 48 = 2.352 ₺; kesinti %5 + 0,50 $ (yaklaşık 142 ₺). Plan yıllık 5/25/100 satış; ilk 3-4 ay port ve temizlik, yeni yazar, ücretsiz alternatifler var, planın hükmü Hayır; kalan 2-3 ayda 0/2/8. Dönüşüm varsayım, kanıtsız."
+   },
+   "deney": {
+    "varsayim": "Ücretsiz alternatifler varken geliştiriciler 49 $'a B2B ürün sayfası şablonu alır",
+    "yontem": "Yalnız 2 paradigmalı ücretsiz sürümü ve 4 paradigmalı ücretli sürümü yayınla; bağlantıyı 3 toplulukta paylaş; indirme ve satış say",
+    "sure_gun": 45,
+    "maliyet_saat": 40,
+    "maliyet_tl": 0,
+    "basari_olcutu": "45 günde en az 3 ücretli satış",
+    "birakma_olcutu": "45 günde 0 satış ve ücretsiz indirme 100'ün altında",
+    "sonraki_dilim": "Başarıda ekip lisansı ve ek paradigma paketi; başarısızlıkta depoyu arşivle"
+   },
+   "etiketler": {
+    "segment": "Astro ve Tailwind geliştiricisi",
+    "kanal_turu": "pazar yeri",
+    "teknoloji": "Astro, Tailwind",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "Claude planı 3.2 ve 6: yeni yazar yıllık 25-100 satış varsayımı, 1,2-4,9 bin dolar; başabaş 63-94 satış; planın hükmü Hayır. Fiyat çapası Metronic 49 $ ve 120 binden çok satış; GSAP ücretsiz. GPT dosyaları: şablon satışı için ödeme talebi kanıtı yok, lisans ve varlık hakları doğrulanmadı. Ödeyen müşteri yok."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "slug": "kurucu-sunum-hizmeti",
+ "secenekler": {
+  "kurucu-sunum-hizmeti-a": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 20,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Pilot Standart proje yaklaşık 54 saat (site 20, model 16, rapor 8, revizyon ve PDF 10; yapay zekâ hızlanması dahil) x 3 pilot / 8 ödeme; varsayım. Revizyonlar teslimde, destek 60 dk."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "satis_basina_kurucu_saati": 4,
+   "teslim_saat_odeme_basina": 12,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Fiyat 12 saatlik emek bedelinden türetildi (GPT notu): rapor, düzeltilmiş rakam seti, 1 revizyon ve 45 dk görüşme teslimde. Karttaki 4 saat satış, 30 dk destek."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 30,
+   "musteri_basina_aylik_destek_dk": 150,
+   "not": "Pilot yıl: 10 girişim parametreleme 10, kurulum 8, 2 eğitim hazırlık ve oturum 12 saat; varsayım. Baz senaryoda ödeme 0. Karttaki 150 dk destek korundu."
+  }
+ }
+}

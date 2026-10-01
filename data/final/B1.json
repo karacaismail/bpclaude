@@ -1,0 +1,665 @@
+{
+ "kriter": "B1",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 2,
+   "k": 0,
+   "g": "20 kafelik liste yazılmadı; semt turu soğuk temas. Belgeli tek ilişki bir zincir, hedefteki tek şubeli kafe değil."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 2,
+   "g": "Tek sıcak ilişki: çok şubeli zincirle süren danışmanlık. Diğer zincirler için 20 isimlik liste yok; UFRAD üyeleri soğuk."
+  },
+  "zabuno-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans ya da restoran operasyon sahibi için isim ve ilişki belgelerde yok; teklif soğuk gidecek."
+  },
+  "parselq-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Bireysel arsa alıcısı ismen sayılamaz; alıcı arama ve forum başlıklarından gelecek, doğrudan erişim yok."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Pilot ilçelerde herkese açık kaynaklardan ofisler sayılabilir ama 20 isim yazılmadı; emlak ofisiyle belgeli ilişki yok, WhatsApp teması soğuk."
+  },
+  "parselq-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Danışmanlık ofisi adı yok; strateji önce gerçek bir ortak ilişkisi gerektiğini söylüyor, erişim garantisi verilmiyor."
+  },
+  "destektesvik-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kurucu ağında üç üretici KOBİ anılıyor, 20 kişilik liste yok; 45 TTO kamuya açık listede ama ilişki kurulmadı."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "20 büro ismi yok; anılan mali müşavir çevresi için ilişki ve hak sahipliği netleşmeden kullanılamıyor."
+  },
+  "destektesvik-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Hedef oda, OSB ve teknopark yönetimleri adlandırılmadı; erişim ilişkisi doğrulanmadı, soğuk teklif."
+  },
+  "asgari-iscilik-a": {
+   "p": 2,
+   "k": 2,
+   "g": "Teklif sürecindeki tek inşaat firması dışında isim yok; ilişki üçüncü taraf bir şirketin onayına bağlı, ihale ilanı listesi soğuk."
+  },
+  "asgari-iscilik-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Mevcut ilişkideki firmanın mali müşaviri dışında büro adı yok; 20 isimlik liste çıkarılmadı, oda webinarı başvuru aşamasında."
+  },
+  "asgari-iscilik-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Tek mevcut ilişki ve mali müşaviri var; ihale ilanlarından yüklenici listesi çıkarılabilir ama çıkarılmadı, e-posta soğuk."
+  },
+  "zincir-danismanligi-a": {
+   "p": 2,
+   "k": 2,
+   "g": "Tek alıcı: önceki sunumları teslim edilmiş sıcak ilişki. 20-50 alıcı ölçeğinde ağ tek zincirle sınırlı; tek ilişkili seçeneklerle aynı puan."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Yaklaşık 30 zincir UFRAD listesinden sayıldı ama kişi eşlemesi ve tanışıklık yok; sıcak ilişki yalnız tek zincirde."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 2,
+   "g": "Aynı tek zincir ilişkisi; operasyon direktörüyle temas henüz kurulmadı, yedekteki POS bayileri ve UFRAD soğuk."
+  },
+  "kar-pusulasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Birkaç tanıdık satıcı anılıyor (10 görüşme hedefi); 20 isimlik liste yok, 3.200 üyeli Telegram grubu soğuk kitle."
+  },
+  "kar-pusulasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "E-ticaret danışmanı isim listesi yok; eğitim programının mezunu henüz yok, LinkedIn mesajları soğuk."
+  },
+  "kar-pusulasi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı tanıdık satıcı çevresi; 5 izinli dosya hedefi var ama 20 isim yok, eğitim programı katılımcı sayısı belgesiz."
+  },
+  "titanlar-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun satıcı ağı ve izleyici kitlesi belgelenmedi; birkaç tanıdık satıcı dışında isim yok, webinar ve grup mesajları soğuk."
+  },
+  "titanlar-b": {
+   "p": 2,
+   "k": 0,
+   "g": "20 satıcı ismi yok; satıcı grupları adlı ama kişi listesi yok, erişim birkaç tanıdık satıcı ve soğuk grup mesajıyla sınırlı."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oda eğitim birimleriyle ilişki belgelenmedi, 20 kurum adı yok; ikincil alıcı üretici KOBİ'lerde birkaç mevcut ilişki var."
+  },
+  "kurumsal-site-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Üretici listesi herkese açık kaynaklardan derlenecek, kitle soğuk; OSB dernekleri ve danışman yönlendirmesi henüz kurulmadı."
+  },
+  "kurumsal-site-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Küçük yeni ihracatçı segmenti dağınık; isim listesi yok, alıcılar seminerle üretilecek."
+  },
+  "kurumsal-site-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans ve geliştirici ismen sayılmıyor; depo ve topluluk duyurusu anonim kitleye gidiyor."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "İşi yapılmış iki üretici ilişkisi ve 20 hedef üretici var; hedef üreticiler soğuk, doğrudan tanıdık iki firma."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı iki mevcut üretici ilişkisi ve 20 adlı üretici; isimlerin çoğu soğuk, satış-pazarlama yöneticilerine LinkedIn teması yeni."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "20 kumaş üreticisi hedef listede ama hepsi soğuk e-posta; doğrudan tanıdık tek mevcut site müşterisi."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun çevresindeki siteler ve ajans çevresi anılıyor; 15 ajans adayı henüz adlandırılmadı, görüşme sayısı 0."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Mağaza sahibi isim listesi yok; alıcı arama ve eklenti dizininden gelecek, satıcı grupları soğuk."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun çevresindeki siteler ve ajans çevresi mevcut ilişki sayılıyor ama isim ve sayı yazılı değil; 10 teklif planlı."
+  },
+  "qral-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı anonim mağaza kullanıcısı; 20 isim yok, kurucunun bu kitleyle doğrudan ilişkisi belgelenmedi."
+  },
+  "qral-b": {
+   "p": 1,
+   "k": 0,
+   "g": "İsimli öğretmen ya da okul listesi yok; topluluklar yabancı, 5 öğretmen yalnız plan varsayımı."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun kendi ürün ekibi ve ajans çevresi doğrudan ama araştırma analisti isimleri çıkarılmadı; 5 analistlik deney planlı."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "30 eğitmenlik liste henüz çıkmadı; eğitim programı çevresinden birkaç tanıdık dışında LinkedIn teması soğuk."
+  },
+  "frontend-atlasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Öğrenenler dağınık ve anonim; isim listesi yok, alıcı arama ve Discord üzerinden gelecek."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı eğitmen kitlesi: liste yazılmadı, birkaç mevcut eğitim ilişkisi var, geri kalanı soğuk LinkedIn."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Mevcut müşteri ve üretici ilişkilerinden 6 şirket sayılıyor; 20 isim yok, İK dernekleri ve oda komisyonları soğuk."
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Bireysel alıcı aramayla gelecek; isim listesi yok, yalnız mevcut KOBİ ilişkileri ve bir girişimci programı çevresi ilk alıcı adayı."
+  },
+  "karar-kitabi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Facilitatör ya da danışman ekibi için isim listesi ve mevcut ilişki belgelerde yok."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kuluçka ve TTO'lar adıyla listeli ama başvuran kurucularla doğrudan ilişki belgelenmedi; 50 kişilik hedef listesi yok."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Atölye yapılacak kuluçka merkezleri adlı ama ilişki kurulmadı; kuruculara erişim bu kurumların ev sahipliğine bağlı, isim listesi yok."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 1,
+   "g": "14 kuluçka ve 16 TTO adıyla sayıldı; program yöneticileriyle tanışıklık belgelenmedi, e-posta ve LinkedIn teması soğuk."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Belgelerde acente ilişkisi yok; dizinde 2.669 kayıt var, 60 acentelik liste ve üç semtte ofis ziyareti planlı, temas soğuk."
+  },
+  "vize-operasyon-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Mevcut acente ilişkisi olup olmadığı bilinmiyor; isim listesi yok, bölge kurulu paylaşımı için izin alınmadı."
+  },
+  "vize-operasyon-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Bireysel başvurucu ismen sayılamaz; alıcı yalnız aramayla gelecek, doğrudan erişim yok."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun ürün çevresinden pilot adayları anılıyor ama isim yok; 50 girişimlik liste planlı, BiGG yürütücüleriyle ilişki kurulmadı."
+  },
+  "software-factory-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Engineering lead isim listesi ve mevcut ilişki belgelenmedi; dış kullanıcı yok, kanal anonim katalog."
+  },
+  "software-factory-c": {
+   "p": 1,
+   "k": 0,
+   "g": "40 ajanslık liste yalnız planlı; ajans kurucularıyla tanışıklık belgelenmedi, LinkedIn mesajları soğuk."
+  },
+  "strateji-simulatoru-a": {
+   "p": 2,
+   "k": 1,
+   "g": "147 uygulayıcı kuruluş kamuya açık listede adlı ama kurucunun bu kurumlarla doğrudan ilişkisi belgelenmedi; e-posta soğuk."
+  },
+  "strateji-simulatoru-b": {
+   "p": 2,
+   "k": 0,
+   "g": "İlk kanal mevcut hibe danışmanlığı müşterileri ama sayı ve isim belgesiz; bireysel aday kitlesinin kalanı arama ve kulüplerden, soğuk."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı kurucunun mevcut danışmanlık müşterileri: doğrudan tanıdık, 20 isim listeden çıkarılacak; müşteri sayısı kurucu beyanı, doğrulanmadı."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Küçük bir geliştirici çevresi anılıyor, 20 isim yok; alıcıların çoğu Show HN ve Reddit'ten gelecek anonim kitle."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun çevresindeki birkaç küçük geliştirici takımı anılıyor; 20 takım adı listelenmedi, kurulum talebi kanıtı yok."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Hedef orkestratör projeleri adlı ve kamuya açık ama sayıca az; proje sahipleriyle ilişki yok, temas PR ve sorun kaydıyla."
+  },
+  "actionplan-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Yalnız kurucunun kod ekibi ve bildiği 2 dış ekip adlı; 20 test kullanıcısı henüz seçilmedi, kalanı soğuk topluluk."
+  },
+  "actionplan-b": {
+   "p": 1,
+   "k": 0,
+   "g": "20 ajans proje lideri adı listelenmedi; belgelerde ajans müşteri listesi ve ilişki yok."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 0,
+   "g": "10 tanıdık denemeci planlanıyor ama isim yazılı değil; ürün yöneticisi ağı belgelenmedi, kalanı YouTube ve X kitlesi."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Beta için iç çevreden 5 kişi var, 5 gönüllü henüz bulunmadı; 20 isim yok, davetli kaydı yok."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans sahibi listesi ve mevcut ajans ilişkisi belgelerde yok; persona kurgusal, LinkedIn listesi soğuk."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı adlandırılmadı; kimin ödeyeceği belli değil, isim ve ilişki yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 2,
+   "k": 1,
+   "g": "İlk liste yaklaşık 13 kişi: bir iç ilişki, 2 tanıdık ekip ve 10 frontend lideri; 20 isim yazılı değil, okur kitlesi anonim."
+  },
+  "ai-first-tasarim-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Bir iş projesi ekibi ve 2 tanıdık ekip doğrudan; 10 frontend liderine mesaj planlı, 20 alıcı adı belgelenmedi."
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "5 aday ajans için ölçüt var ama isim yok; doğrudan ilişki 2 tanıdık ekiple sınırlı."
+  },
+  "aicommandcard-a": {
+   "p": 2,
+   "k": 1,
+   "g": "A 4, B 3 verdi; ikisinin altı seçildi: ismen yalnız 5 pilot kafe ve tek zincir var, ürün hesap sayısı doğrulanmadı; 20 tanıdık belgesi yok, kafe aboneliğiyle aynı durum."
+  },
+  "aicommandcard-b": {
+   "p": 1,
+   "k": 0,
+   "g": "20 ajans ve ekip adı yok; alıcılar topluluk üyeleri, kişisel ağdaki ajanslar belgelenmedi."
+  },
+  "atonota-denetim-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Yaklaşık 10 mevcut bakım müşterisi yalnız ilk kurulum ve vaka kaynağı, hedef alıcı değil; 20 KOBİ adı yok, alıcı dizinden gelecek."
+  },
+  "atonota-denetim-b": {
+   "p": 1,
+   "k": 0,
+   "g": "30 ajanslık liste herkese açık portföylerden çıkarılacak, henüz yok; belgelerde mevcut ajans ilişkisi geçmiyor."
+  },
+  "atonota-denetim-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans ilişkisi doğrulanmadı; isim listesi yok, ilk kabul kaydı için bile bir ajans bulunması gerekiyor."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı kurucunun mevcut kurumsal site müşterileri: doğrudan ulaşılır ve ek satış; sayı 20'nin altında, ismen liste yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Belgelerde ajans ilişkisi yazılı değil; 20 ajans ve ekip henüz belirlenmedi, soğuk liste."
+  },
+  "b2b-bilesenler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı anonim bireysel geliştirici; isim listesi ve ilişki yok, satış mağaza trafiğine bağlı."
+  },
+  "banner-post-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Alıcı ürünün mevcut kullanıcısı ama hesap sayısı doğrulanmadı; ismen 5 pilot kafe ve tek zincir ilişkisi var, 20 isim yok."
+  },
+  "banner-post-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Doğrudan teklif verilecek 3 mevcut müşteri adlı; ilişki sıcak ama liste kısa, 20 isim yok."
+  },
+  "banner-post-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans kreatif operasyon sorumlusu için isim ve ilişki belgelerde yok; tek izinli alıcı bile henüz seçilmedi."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Tanıdık ağdan 3 pilot ajans adayı anılıyor; 20 isim yok, ayda 50 LinkedIn mesajı soğuk."
+  },
+  "karar-sihirbazi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Tanıdık ajans çevresinden 3 aday var; 20 isimlik liste yok, kalan ajans sahipleri LinkedIn'den elle seçilecek."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Kit teklifi 3 tanıdık ajansa gidecek; bunun dışında isim yok, 20 alıcı sayılamıyor."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yaklaşık 8 mevcut site müşterisi doğrudan, 15 LinkedIn adayı soğuk: 20 isme yaklaşılıyor ama liste yazılı değil, sunum ihtiyacı kanıtsız."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Butik ajans isim listesi yok; mevcut ilişkiler ajans değil, haftada 15 LinkedIn notu soğuk."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Danışman ve analist ismi ya da ağı belgelerde yok; LinkedIn notları soğuk."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 1,
+   "g": "10-15 mevcut ilişki var ama bunların seed öncesi SaaS kurucusu olduğu belgesiz; hedef liste (15 kurucu, 40 ajans) henüz çıkarılmadı."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "40 ajanslık liste planlı, isim yok; kurucunun ajans ağı belgelenmedi, LinkedIn mesajları soğuk."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Vardiyalı işletme ve bordro danışmanı için isim listesi yok; kurucunun İK ve bordro ağı belgelenmedi."
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 0,
+   "g": "E-kitap alıcı listesi henüz hipotez, 200 okuyucu varsayım; erişim kurucunun sınırlı teknik ağı ve LinkedIn duyurusuyla."
+  },
+  "ddd-renderer-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Yurt dışındaki teknik lider ve mimarlar için isim listesi yok; alıcı depo ve makale trafiğinden gelecek."
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 1,
+   "g": "İlk değerlendirme kurucunun kendi iki ürününde ücretsiz yapılacak; ödeyecek teknik lider için 20 isim yok, 5 görüşme planlı."
+  },
+  "devpanel-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurucunun gerçek ağı belgelerde yok; 20 hedef kişilik liste henüz yazılmadı, LinkedIn yazışması soğuk."
+  },
+  "devpanel-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans frontend liderleri için isim listesi yok; kanal kütüphane sorun sayfalarında anonim yanıt."
+  },
+  "devpanel-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Şablon alıcısı anonim; kurucunun bu kitlede ağı yok, depo 0 yıldız, satış mağaza trafiğine bağlı."
+  },
+  "e-menum-a": {
+   "p": 1,
+   "k": 0,
+   "g": "40 ajans ve geliştirici listesi yalnız planlı; destek kuyruğundan gelen ajans ilişkisi varsayım, Telegram ve LinkedIn soğuk."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Belgeli tek ilişki bir kahve zinciri; mevcut ilişkilerden 20 çok şubeli marka listesi henüz çıkarılmadı."
+  },
+  "e-menum-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kod alıcısı ismen bilinmiyor; depo ve Telegram grubu duyurusu yönetici iznine bağlı, liste yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "10-15 kişilik mevcut geliştirici çevresi belgede geçiyor; 20 isim yok, eklenti geliştirdikleri doğrulanmadı."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı 10-15 kişilik geliştirici çevresi elle davet edilecek; 20 isim yok, kalan alıcı pano trafiğinden."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "20 ajansın ismen listesi çıkarılmadı; ajans ilişkisi belgelenmedi, LinkedIn mesajı soğuk."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı mevcut kurumsal site müşterileri ve ajans ortakları: yılda 6-10 projelik doğrudan ilişki; 20 isimlik liste yazılı değil."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcılar site okurları ve arama trafiği; doğrudan ulaşılacak isim yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 1,
+   "k": 0,
+   "g": "20 Türk SaaS ekibi ismen listelenmedi; belgelerde SaaS ekibiyle mevcut ilişki yok, LinkedIn soğuk."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "30 küme ve sanayi bölgesi yöneticisi listesi kamuya açık kaynaklardan çıkarılacak, henüz yok; mevcut üretici ilişkileri yalnız yan kanal."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "5 tanıdık toptancı adsız anılıyor; 10 girişimci ve 20 isimlik liste yok, kuluçka atölyeleri kurulmadı."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Mevcut üretici müşterileri anılıyor ama portal ihtiyaçları doğrulanmadı; 10 ajans ve kurumsal alıcı listesi henüz adlandırılmadı."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 0,
+   "g": "10 tanıdık işletme sahibiyle kapalı pilot planlı, isimler yazılı değil; kalan alıcı LinkedIn takipçisi ve mağaza araması."
+  },
+  "lifeos-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Freelancer ağı ve isim listesi belgelerde yok; 5 kişilik pilot için aday belirlenmedi."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı rolü bile hipotez; geliştirici topluluğu adlandırılmadı, isim listesi yok."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 1,
+   "g": "3 tanıdık emlak ofisi doğrudan, ortak ağda 5-10 ofis ikinci derece; 20 isimlik liste yok, hiçbir ofisle görüşme yapılmadı."
+  },
+  "luquit-b": {
+   "p": 1,
+   "k": 0,
+   "g": "React ajansı ve serbest geliştirici ağı belgelerde yok; 10 denemeci seçilmedi, kanal anonim depo."
+  },
+  "metaframer-kernel-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kişi listesi yok; 20 kişisel mesaj yalnız hedef, isimler çıkarılmadı. İç pilot ekibi alıcı değil; kitle Show HN ve Reddit'te anonim."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "İç pilot için bir kod ekibiyle mevcut ilişki var; 10 ajans adı demo sonrası çıkarılacak, liste yok."
+  },
+  "metaframer-kernel-c": {
+   "p": 1,
+   "k": 0,
+   "g": "B2B SaaS şirketlerinde isim listesi ve ilişki yok; 5 şirket mühendisine sandbox teklifi soğuk."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Çevrede yaklaşık 10 girişimci anılıyor, isimler yazılı değil; ana alıcı kitlesi aramadan gelecek."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "30 ajans ve stratejist listesi çıkarılmadı; tanıdık ajans belgelenmedi, LinkedIn mesajı soğuk."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Teklif çevredeki yaklaşık 10 girişimciye gidecek; isim listesi yok, 20 alıcı sayılamıyor."
+  },
+  "projector-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun teknik ağı var ama sayısı belgesiz; 20 okur ismi yok, 30 teknik lidere mesaj ve bülten henüz kurulmadı."
+  },
+  "projector-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Birkaç mevcut yazılım evi ilişkisi belgede anılıyor; 30 firmalık liste çıkarılmadı, kalan teknik müdürlere mesaj soğuk."
+  },
+  "projector-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Teknik danışmanlık firması isim listesi ve ilişki yok; 5 firmaya pilot teklifi soğuk."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Çevrede yaklaşık 10 kurucu ve boyutu doğrulanmamış bir ön kayıt listesi var; 20 alıcılık adlı liste yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "10 programın adlı listesi çıkarılmadı; program yöneticileriyle mevcut ilişki belgelenmedi."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Okur dağınık ve anonim; isim listesi olamaz, erişim yalnız arama ve topluluk katkısıyla."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Mevcut ilişkilerde yalnız bir ajans var; 20 ajans ismi yok, kalan ajanslara ayda 10 soğuk e-posta."
+  },
+  "signator-b": {
+   "p": 2,
+   "k": 1,
+   "g": "5-15 mevcut ilişki yalnız yedek kanal; ana alıcı kitlesi aramadan gelecek KOBİ'ler, ismen sayılamıyor."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Teklif doğrudan 5-15 mevcut danışmanlık ve kurumsal site ilişkisine gidiyor; hepsi tanıdık ama 20 isim yok."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "3-5 mevcut ilişki aday sayılıyor; 10 kulüp ve marka listesi planlı, 20 isim yok, kalan temas soğuk mesaj."
+  },
+  "volley-tap-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Gelir portal reklam payı; oyuncu anonim, portal editörüyle ilişki yok, kabul belirsiz."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Oyuncular anonim; isim listesi yok, tanıtım yapılmadı, erişim itch.io etiketleri ve Reddit gönderisi."
+  },
+  "woocommnts-a": {
+   "p": 2,
+   "k": 0,
+   "g": "20 mağaza ismi yok; 5 pilot mağaza yalnız planda, e-ticaret programı ve diğer ürün çevresi dolaylı ve belgesiz."
+  },
+  "woocommnts-b": {
+   "p": 1,
+   "k": 0,
+   "g": "20 ajans listesi çıkarılmadı; kurucunun çevresi ajansa değil mağaza kitlesine yakın, görüşme yok."
+  },
+  "woocommnts-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Göç yapan mağaza ismi yok; izinli veri istenecek 3 mağaza belirlenmedi, kanal herkese açık örnek paket."
+  },
+  "egitim-demolari-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Adlandırılmış öğretmen listesi ve paylaşım kanalı yok; öğretmen ağı belgede yazılı değil."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kanal kurucunun doğrudan tanıdığı ekip liderleri ama isim ve sayı belgede yok; tek ekiple ücretsiz mini ders planlı."
+  },
+  "baz-secenekler-a": {
+   "p": 2,
+   "k": 2,
+   "g": "Belgeli iki mevcut ilişki var (bir zincir, bir inşaat firması), ikisine de iş teslim edilmiş; bunların dışında isim yok."
+  },
+  "baz-secenekler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "40 ajanslık liste henüz çıkarılmadı; ajans ilişkisi yok, destek kuyruğu talepleri varsayım."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı tek bir kamu programı; isim listesi ve doğrudan erişim kavramı uymuyor, çağrı tarihi belli değil."
+  }
+ }
+}

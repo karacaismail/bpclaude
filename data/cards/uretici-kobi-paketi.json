@@ -1,0 +1,343 @@
+{
+ "slug": "uretici-kobi-paketi",
+ "baslik": "Üretici KOBİ dijital başlangıç paketi",
+ "ozet": "Kendi markasıyla online satışa çıkmak isteyen üretici KOBİ'lere (tekstil, iç giyim, aksesuar, mobilya) sabit kapsamlı hizmet: 20 rakip analizi, pazar yeri kârlılık modeli ve simülatör, kurumsal site, açılış planı. İki üretici KOBİ için yapılmış işler var; ödeyen müşteri 0.",
+ "bugun": {
+  "var": [
+   "İki üretici KOBİ için yapılmış işler: kurumsal site, rakip raporu, interaktif simülasyon sayfası",
+   "Kanal bazlı katkı marjı ve başabaş sepet hesabı; 2026 oranlarıyla örnek hesap yazılı",
+   "Canlı, çok dilli bir kurumsal site kalıbı mevcut",
+   "Kurucunun e-ticaret eğitimi ve fiyat hesaplayıcı aracı aynı hedef kitleye hitap ediyor",
+   "Paket, fiyat ve satış mesajı taslakları planda yazılı"
+  ],
+  "yok": [
+   "Ödeyen müşteri yok; ön ödeme, yazılı niyet ya da fiyat görüşmesi kaydı yok",
+   "Anonim fizibilite şablonu, teklif, sözleşme ve sunum henüz hazır değil",
+   "Mevcut simülasyon markalı, veri koda gömülü, veri kaynakları ve lisansları gözden geçirilecek",
+   "Mobilya ve aksesuar varyantı yok; hesaplayıcı aracın formül düzeltmesi bekliyor",
+   "Sözleşme, KDV ve e-Arşiv düzeni için avukat ve mali müşavir teyidi alınmadı"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Plan, üretici KOBİ'ye tek paket önerir: fizibilite, 2-3 dilli site, açılış planı; 35.000-150.000 ₺, 2-4 hafta, isteğe bağlı aylık takip ve 749 ₺ şablon. 12 ay baz hedefi 6 paket; 4-8 haftalık satış döngüsünü ve ödeyen müşteri yokluğunu not eder.",
+  "gpt": "GPT çalışması üç ayrı küçük teslim önerir: izinli 10 ürünle katalog ve tek teklif formu, tek koleksiyonlu numune ve teklif sitesi, tek gelir modeli ve üç senaryolu karar raporu. Ücretli talep kanıtı yok; abonelik tekrar kullanım görülmeden önerilmez.",
+  "ayrisma": "Claude geniş bir paket ve pazar yeri kârlılığı çerçevesi kurar, gelir rakamı verir. GPT kapsamı daraltır, her teslimi ayrı sınar, ulaşma kanalını doğrulanmamış sayar ve gelir rakamı vermez; yalnız eksik kabul kontrollerini yazar.",
+  "birlesik": "Küçük, sabit kapsamlı teslimle başlanır: iki mevcut ilişkiye ve 20 hedef üreticiye kişiselleştirilmiş hesap gönderilir; site ve katalog ilk ödemeden sonra kurulur. Abonelik ertelenir; gelir iddiası ödeme olmadan kanıt sayılmaz."
+ },
+ "analist_gorusu": "En gerçekçi yol sabit kapsamlı Başlangıç paketini mevcut iki ilişkiye teklif etmek; 35.000 ₺'lik fizibilite en küçük giriş olarak yanında durur. Hedefe 3 satışla yaklaşılır; ödeme gelene kadar tüm gelir rakamları senaryodur.",
+ "secenekler": [
+  {
+   "id": "uretici-kobi-paketi-a",
+   "ad": "Başlangıç paketi: fizibilite, vitrin site, açılış planı",
+   "tur": "hizmet",
+   "musteri": "Tekstil, iç giyim ya da aksesuar üreten 20-100 çalışanlı KOBİ; kararı kurucu ya da patron verir; kendi markasıyla pazar yerine çıkmayı düşünüyor.",
+   "is": "Markayla online satışa çıkmadan önce hangi fiyat ve kanalda zarar etmeden satacağını bilmek, alıcıya kurumsal görünmek, açılış planını hazır almak.",
+   "tetikleyici": "Fason siparişin düşmesi, pazar yerinde zarar eden sipariş, fuar öncesi marka kararı, alıcının web sitesi sorusu.",
+   "teklif": "Sabit kapsam: 20 rakip analizi, kanal bazlı kârlılık modeli ve simülatör, 2 dilli kurumsal site, pazar yeri açılış planı; 15 iş günü, 1 revizyon, sonuç taahhüdü yok.",
+   "fiyat": "90.000 ₺ + KDV; %50 avans, %50 teslimde; ayrı ayrı alınırsa 100.000 ₺",
+   "kanal_birincil": "Kurucu satışı: iki mevcut üretici ilişkisine ve 20 hedef üreticiye kişiselleştirilmiş 1 sayfalık pazar yeri hesabı",
+   "kanal_yedek": "İHKİB Akademi ve MESİAD seminerleri, Texhibition ve IFCO katılımcı listeleri, mali müşavir yönlendirmesi",
+   "ilk_adim": "Bu hafta iki mevcut ilişkiye Başlangıç paketi teklifi ve 30 dakikalık canlı simülatör seansı gönder",
+   "ilk_kapsam": "Tek ürün grubu, tek müşteri: kendi maliyetiyle çalışan simülatör, 20 rakip tablosu, 2 dilli 5 sayfalık vitrin site, 30 günlük açılış kontrol listesi; lansman planı ve takip hariç.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Üçüncü taraf bileşen lisansları ve veri kaynakları gözden geçirilmeli; anonim referans için yazılı izin alınacak."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Danışmanlık sözleşmesi, sonuç taahhüdü yok maddesi ve KDV/e-Arşiv düzeni avukat ve mali müşavir teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "B2B için havale ve fatura yolu belli; fatura düzeni teyit edilmedi, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Alıcı tipi net; iki mevcut ilişki var ve 20 hedef üretici listelenmiş."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil ve yedek kanal adlı: mevcut ilişki, dernek ve fuar listeleri, mali müşavir."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 8 haftanın altında; satış döngüsü 4-8 hafta ve ölçülmedi, 15 iş günlük teslim kapasiteyi zorlayabilir."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 15.000 ₺ hukuk ve kurulum; sabit giderle birlikte 50.000 ₺ tavanın altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Kapsam, süre, tek revizyon ve fiyat yazılı; site kalıbı sabit, dil ve sayfa sayısı sınırlı."
+    }
+   },
+   "kapi_duzeltme": "G1 izin ve bileşen taraması; G2-G3 avukat ve mali müşavir teyidi, ilk havale; G6 ilk pilot teslimde süreyi ölç.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 90000,
+    "degisken_maliyet_tl": 8000,
+    "sabit_gider_aylik_tl": 9300,
+    "baslangic_nakit_tl": 15000,
+    "kalan_efor_saat": {
+     "min": 55,
+     "beklenen": 75,
+     "max": 110
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 100
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 90,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 90000,
+     "iyi": 270000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.3
+    },
+    "dayanak": "Fiyat plan 5. bölüm; değişken maliyet paket başına 8.000 ₺; sabit gider 6.300 + pazarlama 3.000 ₺/ay. Plan 12 ay baz 6 paket (Başlangıç payı %45), 4-8 hafta döngü ve 15 iş günü teslimle 6 ayda baz 1 satış, iyi 3; ödeme avans+teslim. Dönüşüm düşük sınırı varsayım, yüksek sınır planın sıcak ağ hedefidir (%30-35), gözlenmemiştir."
+   },
+   "deney": {
+    "varsayim": "Mevcut iki üretici ya da 20 adlı üreticiden en az biri, kendi maliyetiyle yapılan canlı hesaptan sonra 90.000 ₺ avans öder.",
+    "yontem": "5 görüşme: 30 dk canlı simülatör seansı, ardından 1 sayfa teklif ve %50 avans talebi; 35.000 ₺'lik giriş ayrıca sunulur; itiraz, süre ve karar verici kaydedilir.",
+    "sure_gun": 30,
+    "maliyet_saat": 25,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "30 günde en az 1 avans ödemesi ya da imzalı teklif; 5 seanstan en az 2 teklif talebi.",
+    "birakma_olcutu": "30 günde 5 seanstan hiç teklif talebi gelmezse paketi 35.000 ₺'lik fizibiliteye indir.",
+    "sonraki_dilim": "İlk avans gelirse paketi teslim et, 60 gün sonra ölçülmüş vaka ve aylık takip teklifi hazırla."
+   },
+   "etiketler": {
+    "segment": "Üretici KOBİ: tekstil, iç giyim, aksesuar",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Statik site kalıbı, tek HTML simülatör, tablo modeli",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Plan 2, 5, 6 ve 8. bölümler: paket içeriği, 90.000 ₺ fiyat, paket başına 8.000 ₺ doğrudan maliyet, 12 ay baz 6 paket. Plan 7. bölüm: iki mevcut müşteri ilişkisi, 20 üreticilik hedef listesi, sıcak ağda %35 kapanış hedefi. Derinlik ekinde varlık durumu: simülasyon %90, site kalıbı hazır, teklif ve sözleşme yok. GPT dosyaları: ücretli talep kanıtı yok; ödeyen müşteri 0."
+  },
+  {
+   "id": "uretici-kobi-paketi-b",
+   "ad": "Fizibilite paketi: rakip analizi, kârlılık modeli, simülatör",
+   "tur": "hizmet",
+   "musteri": "Pazar yerinde zarar eden ya da çıkmaya hazırlanan üretici KOBİ; satış-pazarlama yöneticisi hazırlar, patron tek toplantıda onaylar.",
+   "is": "Pazar yerine çıkmadan ya da çıktıktan sonra 'kaça satmalıyım, hangi sepette kâr kalır' sorusuna sayıyla cevap almak ve patrona rapor sunmak.",
+   "tetikleyici": "Çeyrek sonu zarar raporu, patronun 'kapatalım mı' sorusu, komisyon ya da kargo tarifesi değişikliği, destek başvurusu için iş planı ihtiyacı.",
+   "teklif": "5-7 iş günü: pazar büyüklüğü, 20 rakip analizi, kanal bazlı katkı marjı, başabaş sepet, 3 yıllık simülatör, 90 gün bütçesi, 15 slayt; 1 revizyon, sonuç taahhüdü yok.",
+   "fiyat": "35.000 ₺ + KDV; keşif sonrası %50 avans iadesiz, kalan teslimde",
+   "kanal_birincil": "Kurucu satışı: mevcut iki üretici ilişkisi ve satış-pazarlama yöneticilerine LinkedIn üzerinden 30 dakikalık ücretsiz başabaş seansı",
+   "kanal_yedek": "Mali müşavir yönlendirmesi, İHKİB Akademi oturumu, ücretsiz başabaş sepet hesaplayıcısı ile e-posta toplama",
+   "ilk_adim": "Kendi maliyetleriyle 3 ürünün başabaş sepetini gösteren 30 dakikalık seansı ilk 5 adaya teklif et",
+   "ilk_kapsam": "Tek ürün grubu ve iki kanal (Trendyol, Hepsiburada): kendi maliyetiyle çalışan simülatör, 20 rakip tablosu, kanal bazlı katkı marjı, 15 slayt; site ve lansman planı hariç.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Veri kaynakları kamu kaynaklarıyla doğrulanmalı; iki müşteriden anonim referans izni yazılı değil."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Danışmanlık sözleşmesi, sonuç taahhüdü yok maddesi ve KDV/e-Arşiv düzeni avukat ve mali müşavir teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "B2B için havale ve fatura yolu belli; fatura düzeni teyit edilmedi, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Alıcı tipi net; iki mevcut ilişki var ve 20 hedef üretici listelenmiş."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil ve yedek kanal adlı: mevcut ilişki, LinkedIn, mali müşavir, dernek ve ücretsiz hesaplayıcı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 55 saat, 3 haftadan kısa; ancak plan satış döngüsünü 4-8 hafta veriyor ve döngü ölçülmedi; ilk tahsilat 6 aya sığması beklenir, sınanmadı."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 15.000 ₺ hukuk ve kurulum; sabit giderle birlikte 50.000 ₺ tavanın altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam ve fiyat; müşteri maliyet verisi girişi dışında özel geliştirme yok; mobilya varyantı ayrı iş."
+    }
+   },
+   "kapi_duzeltme": "G1 anonim referans izni ve kamu veri kaynakları; G2-G3 sözleşme ve fatura teyidi, ilk havale; G6 ilk 5 görüşmede teklif-avans süresini ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 35000,
+    "degisken_maliyet_tl": 3500,
+    "sabit_gider_aylik_tl": 9300,
+    "baslangic_nakit_tl": 15000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 55,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 6,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 70000,
+     "iyi": 175000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 5
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 5
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.35
+    },
+    "dayanak": "Fiyat plan 5. bölüm Fizibilite 35.000 ₺; değişken maliyet satış başına veri ve sunum 3.500 ₺; sabit gider 9.300 ₺/ay. Plan döngüsü 4-8 hafta: ilk avans en erken ~35. gün. Baz 2 satış (plan 120 günde 2 pilot hedefi), iyi 5 (plan 12 ay iyimser 10 paketin 6 aylık gecikmeli payı). %35 sıcak ağ hedefidir, gözlenmemiştir; düşük sınır varsayım."
+   },
+   "deney": {
+    "varsayim": "Pazar yerinde zarar eden üretici, kendi maliyetleriyle gösterilen başabaş hesabı için 35.000 ₺ öder.",
+    "yontem": "10 yönetici ya da patrona 30 dk ücretsiz seans; seans sonunda 1 sayfa teklif ve avans talebi; başabaş sepetin ilk seansta sürpriz olup olmadığı not edilir.",
+    "sure_gun": 21,
+    "maliyet_saat": 20,
+    "maliyet_tl": 500,
+    "basari_olcutu": "21 günde 1 avans ödemesi ya da 2 yazılı teklif kabulü; seansların yarısı teklif ister.",
+    "birakma_olcutu": "10 seansta teklif talebi gelmezse ücretli rapor yerine ücretsiz hesaplayıcı ve müşavir kanalına geç.",
+    "sonraki_dilim": "İlk avans gelince raporu 5-7 günde teslim et; Başlangıç paketine yükseltme teklifi sun."
+   },
+   "etiketler": {
+    "segment": "Pazar yerinde satan üretici KOBİ",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Tek HTML simülatör, tablo modeli, sunum",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Plan 5-6. bölüm: Fizibilite 35.000 ₺, ajans denetimi 15.000-60.000 ₺ bandı, 2026 oranlarıyla 350 ₺ sepette yaklaşık 32 ₺ katkı, 250 ₺ altı zarar. Derinlik eki: acı tablosu ve geri ödeme örnekleri (varsayımlı). GPT: karar raporu için tek gelir modeli, üç senaryo ve izinli küçük fixture öneriliyor. Ödeyen müşteri 0."
+  },
+  {
+   "id": "uretici-kobi-paketi-c",
+   "ad": "Katalog ve teklif formu sitesi (kumaş üreticisi)",
+   "tur": "hizmet",
+   "musteri": "Kumaş üreticisi; satış ekibi kullanır, fabrika sahibi öder; ürün bilgisi, sertifika ve kapasiteyi alıcıya dağınık veriyor.",
+   "is": "Ziyaretçiyi katalog incelemesinden nitelikli numune ve teklif isteğine götürmek; teknik bilgi, sertifika ve teslim koşulunu tek yerde vermek.",
+   "tetikleyici": "Fuar öncesi, alıcının web sitesi ya da teknik föy istemesi, dağınık e-posta teklifleri, fason siparişin düşmesi.",
+   "teklif": "Tek koleksiyon, 10 ürün için teknik özellik sayfası, numune ve teklif formu, 2 dil; kurulum ve ilk katalog güncellemesi; 3 hafta, sabit kapsam.",
+   "fiyat": "45.000 ₺ + KDV (varsayım; ajans web bandı 150.000-450.000 ₺ altında); %50 avans; güncelleme ayrı",
+   "kanal_birincil": "Kurucu satışı: herkese açık kaynaklarla derlenen 20 kumaş üreticisine, sitelerinde gözlenen eksikle kişiselleştirilmiş e-posta",
+   "kanal_yedek": "Texhibition ve IFCO katılımcı e-postaları, İHKİB Akademi, mevcut e-posta tekliflerine katalog bağlantısı",
+   "ilk_adim": "5 üreticiye eksik teknik föy bulgusunu ve örnek sayfayı içeren mini rapor gönder",
+   "ilk_kapsam": "Tek koleksiyon, 10 ürün, tek teklif formu, 2 dilli statik site; izinli örnek ürünle hazırlanmış anonim demo; sipariş, CRM ve ödeme yok.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Üçüncü taraf UI paket lisansı belirsiz; ürün verisi ve görseller müşteriden izinle gelmeli; kod kurucuda."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Form kişisel veri toplar: aydınlatma metni, ticari ileti onayı ve sözleşme avukat teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli; hesap ve e-Arşiv düzeni teyit edilmedi, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Alıcı üretici sahibi; 20 hedef kumaş üreticisi listelenmiş; bir mevcut site müşterisi var."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal (20 üretici e-postası) ve yedek fuar listeleri adlı; arama trafiği bilinmiyor."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 70 saat; izinli ürün verisi ve teknik föy müşteriden gelene dek süre belirsiz."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 15.000 ₺ hukuk ve kurulum; sabit giderle birlikte 50.000 ₺ tavanın altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Form ve sayfa kapsamı yazılı değil; GPT formdaki adımları işletmeyle ele almayı öneriyor, özelleştirme riski var."
+    }
+   },
+   "kapi_duzeltme": "G1-G3 teyit ve ilk havale; G6 izinli 10 ürün verisini ilk görüşmede iste; G8 form alanlarını 8 alana ve 1 revizyona sabitle.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 45000,
+    "degisken_maliyet_tl": 4500,
+    "sabit_gider_aylik_tl": 9300,
+    "baslangic_nakit_tl": 15000,
+    "kalan_efor_saat": {
+     "min": 50,
+     "beklenen": 70,
+     "max": 110
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 6,
+    "musteri_basina_aylik_destek_dk": 90,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 45000,
+     "iyi": 135000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.1
+    },
+    "dayanak": "Fiyat varsayım: planda site ve açılış planı birlikte yaklaşık 65.000 ₺ (ayrı ayrı 100.000 ₺ eksi 35.000 ₺ fizibilite); ajans web bandı 150.000-450.000 ₺. Maliyet satış başına redaksiyon 3.000 + yayın 1.500 ₺; sabit gider 9.300 ₺/ay. Baz 1 satış, iyi 3; soğuk e-postayla 45.000 ₺ satışı sınanmadı, dönüşüm oranları varsayım (üst sınır sıcak ağ hedefinin altında)."
+   },
+   "deney": {
+    "varsayim": "Üretici, ürün ve teklif bilgisini tek sayfada toplayan katalog sitesi için 45.000 ₺ öder.",
+    "yontem": "20 üreticiye eksik teknik föy bulgusu ve örnek sayfa gönder; yanıt verenle 30 dk görüş; izinli bir ürünle ücretsiz mini sayfa hazırla, sonra teklif ver.",
+    "sure_gun": 30,
+    "maliyet_saat": 30,
+    "maliyet_tl": 0,
+    "basari_olcutu": "30 günde 3 görüşme ve 1 yazılı teklif talebi.",
+    "birakma_olcutu": "20 e-postadan hiç yanıt gelmezse bu seçeneği bırak, A ya da B ile devam et.",
+    "sonraki_dilim": "İlk avanstan sonra tek koleksiyon sitesini kur; aylık katalog güncelleme fiyatını ölç."
+   },
+   "etiketler": {
+    "segment": "Kumaş üreticisi (B2B)",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Statik site, form, teknik özellik sayfaları",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyaları: tek koleksiyon sitesi ve 10 ürünlü katalog önerisi, mevcut satış kanıtı yok, trafik bilinmiyor. Plan: 20 kumaş üreticisinin sitesinde vaka çalışması ve teknik föy yok (kurucu gözlemi); site kalıbı canlı ve çok dilli; ürün, koleksiyon ve teknik föy sayfaları henüz yok (derinlik eki D.2). Ödeyen müşteri 0."
+  }
+ ]
+}

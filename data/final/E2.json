@@ -1,0 +1,665 @@
+{
+ "kriter": "E2",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 2,
+   "k": 1,
+   "g": "MONU ücretsiz planı ve POS içi ücretsiz QR menü temel işi görüyor, rakipler 175-250 TL; fark sürümlü yayın ve masadan sipariş, kafe sahibine anlatılmalı."
+  },
+  "zabuno-b": {
+   "p": 1,
+   "k": 1,
+   "g": "POS içi QR menü ücretsiz, rakipte sınırsız şube 2.499 TL ve merkezi menü var; ayırt edici merkezden onaylı yayın üründe henüz yok. Aynı ürünün diğer kartıyla eşitlendi."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans modülü kendi ekibi, serbest çalışan ya da yapay zekâ ile yazabilir; sabit kapsam ve 2 hafta teslim farkı için kanıt yok."
+  },
+  "parselq-a": {
+   "p": 2,
+   "k": 1,
+   "g": "TKGM parseli ücretsiz gösteriyor, Eder Mi 3 ücretsiz sorgu veriyor, genel yapay zekâ belge özetliyor; tek parsel alıcısına imar ve risk yorumu farkı anlatılmalı."
+  },
+  "parselq-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Canva ya da elle hazırlanan kartta imar özeti, mesafe tablosu, deprem sınıfı ve QR parsel sayfası yok; fark gerçek ama ofise anlatılmalı, rakamla gösterilmedi."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Sheets, PDF ve genel yapay zekâ ile ofisin kendi uzmanı güçlü ikame; kaynak ve doğrulayıcı izi farkı rakamla gösterilmedi."
+  },
+  "destektesvik-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Resmi portal ücretsiz ama kişiselleştirmiyor, Teşvik Rotası 500-2.600 TL, yapay zekâ ile arama kolay; uzman onayı farkı bugün doğrulanmış veriyle desteklenmiyor."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 1,
+   "g": "TeşvikAra 839 TL/ay ile çok şirket yönetimi sunuyor, bürolar Excel ve resmi portalla idare ediyor; fark yalnız kaynak ve tarih izi."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum üyesini ücretsiz resmi portala yönlendirebilir ya da hiçbir şey yapmaz; toplu üye taraması farkı tahmin, rakamla gösterilmedi."
+  },
+  "asgari-iscilik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Hakediş ve bordro araçları bu hesabı yapmıyor; Excel tablosu ve SGK danışmanı bugünkü ikame. Taşeron bazlı kuruş kabulü farkı gösterimle anlatılmalı."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Mali müşavir yazılımında inşaat modülü yok, hakediş araçları 99-146 bin TL; Excel ve yapay zekâ ikame. Mevzuat güncelleme farkı anlatılmalı."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcının kendi Excel tablosu, yapay zekâ ve danışman ikame; kaynak hücreli, uzman teyitli bulgu raporu farkı var, dosya başı kayıp rakamla gösterilmedi."
+  },
+  "zincir-danismanligi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans, iç ekip, platform satıcısı ve hiçbir şey yapmama seçenekleri var; platformdan bağımsız karar, kabul ölçütü ve sabit fiyat farkı anlatılmalı."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajanslar ön denetimi ücretsiz veriyor, yapay zekâ araçları benzer rapor üretiyor; 30.000 TL'lik raporun farkı zayıf."
+  },
+  "zincir-danismanligi-c": {
+   "p": 1,
+   "k": 1,
+   "g": "POS içi QR menü ücretsiz, rakip plan sınırsız şube için 2.499 TL; 6.373 TL'lik teklifin merkezden yayın farkı henüz teslim edilmedi."
+  },
+  "kar-pusulasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "15'ten çok ücretsiz hesaplayıcı ve Excel aynı kâr hesabını yapıyor; Pro'nun farkı toplu Excel ve oran değişim bildirimi, Karpanel ücretli rakip."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Rakip paneller satıcıya satıyor; danışmana müşteri profili ve logolu rapor ücretsiz araçlarda yok. Excel esnek ikame, fark anlatılmalı."
+  },
+  "kar-pusulasi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Excel, mali müşavir, pazar yeri paneli ve yapay zekâ ile dosya analizi güçlü ikame; fark satır kontrolü ve üç fiyat deneyi."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ücretsiz akademiler ve kayıtlı kurslar bilgiyi veriyor; ödev, yazılı geri bildirim ve 20 kişilik canlı kohort farkı var ama alıcıya anlatılmalı."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ücretsiz hesaplayıcılar ve yapay zekâ hesabın bir kısmını karşılıyor; ürün bazlı yazılı plan ve kişiye özel karar farkı anlatılmalı."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Bakanlık e-ticaret etkinlikleri ve oda akademileri kuruma ücretsiz eğitim veriyor; fark 60 gün mentor ve katılımcı raporu."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans çok dilli işte 180 bin TL ve üzeri istiyor; site kurucular, yapay zekâ ve hiçbir şey yapmama ikame. 3 dil, taşıma haritası ve 15 gün farkı anlatılmalı."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Serbest çalışan 10-25 bin TL, site kurucular ve yapay zekâ araçları 2 dilli vitrin siteyi ucuza çıkarıyor; 45.000 TL'nin farkı zayıf."
+  },
+  "kurumsal-site-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ücretsiz ve ücretli Astro temaları var, yapay zekâ ile sıfırdan üretim mümkün; RTL, 5 dil ve B2B sayfa tipleri farkı sınanmadı."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ücretsiz hesaplayıcı, tablo ve yapay zekâ kârlılık hesabını kısmen yapıyor; hesap, site ve açılış planının tek pakette gelmesi fark, anlatılmalı."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ücretsiz komisyon hesaplayıcıları ve yapay zekâ başabaşı hesaplar; 20 rakip analizi ve kendi maliyetiyle simülatör farkı örnek sepet hesabıyla anlatılabiliyor."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Genel site şablonları, PDF katalog ve e-postayla teklif göndermek bugünkü yeterli ikame; teknik föy ve teklif formu farkı anlatılmalı."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ücretsiz KVKK eklentileri 10 kurulumun altında, CookieYes yalnız çerez bandı; rıza kaydı ve başvuru panosu farkı var, Word metniyle yetinen ajansa anlatılmalı."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 2,
+   "k": 1,
+   "g": "iyzico, PayTR ve Param'ın ücretsiz eklentileri taksit tablosunu gösteriyor; fark kapıda ödeme kuralı, o da ödemelerin yüzde 3,5'i."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Kurulum mevcut ücretsiz araçlarla yapılıyor; ajans aynı işi kendisi kurabilir, yapay zekâ metni üretir. Fark sabit fiyat ve 5 günde teslim."
+  },
+  "qral-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Tab Copy, Obsidian Web Clipper ve tarayıcının yerleşik QR'ı ücretsiz aynı işi görüyor; ücretli kardeş uzantı 141 kullanıcıda kalmış."
+  },
+  "qral-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Tek QR ücretsiz sitelerde var; numaralı toplu A4 sınıf sayfası küçük bir fark, şablon araçları ve yapay zekâ yakın."
+  },
+  "qral-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Yer imi, elle Markdown ve ücretsiz yapay zekâ aynı kaynak kaydını aynı sürede veriyor; ücretli kısım yalnız şablon kurulum emeği."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Eğitmen kendi promptlarını yazabilir; Astro temaları ve Notion şablonları yarı çözüm. Fark hazır ders sözleşmesi ve üretim süreci, anlatılmalı."
+  },
+  "frontend-atlasi-b": {
+   "p": 1,
+   "k": 1,
+   "g": "BTK Akademi, Patika, MDN ve YouTube aynı alıştırmayı ücretsiz veriyor; ürünün kendi ders sitesi de ücretsiz, paket farkı çözüm dosyasıyla sınırlı."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Eğitmen kodlama ajanıyla dersi ve laboratuvarı kendisi üretebilir; fark kaynak tablosu ve kabul ölçütlü teslim, kanıtsız."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Genel eğitim ve ücretsiz yapay zekâ yöntemi anlatıyor; şirketin iki gerçek kararı ve 30 gün takip farkı var, rakamla gösterilmedi."
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz bloglar yüzeysel ama yapay zekâ aynı çalışma kâğıdını üretiyor, ürünün kendi sitesi de ücretsiz; fark Türkiye vakası."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ücretsiz yapay zekâ ve Notion şablonları oturum özetini çıkarıyor; fark varsayım kaydı ve gözden geçirme tarihi izi, kanıtsız."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yapay zekâ ve slayt ajansları sunumu ucuzlattı; canlı Sheets modeli ve rakam doğrulama farkı var, Türkçe muadil bulunamadı, kurucuya anlatılmalı."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 1,
+   "g": "ChatGPT ve Excel rakam çelişkisini ücretsiz bulabiliyor; fark kaynak tablosu ve yöntem, tek vakadaki çelişkiler dışında gösterilemiyor."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Kuluçka kendi slayt şablonunu ve ücretsiz araçları kullanıyor; parametreli doğrulayıcının Türkçe muadili bulunamadı, bütçe itirazına karşı anlatılmalı."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Acenteler Excel ve WhatsApp ile çalışıyor, iHMK CRM ve Ahoraclario hazır rakip; fark KVKK saklama-imha ve ülke şablonu."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Acentenin kendi Sheet'i, mesajlaşma, dış asistan ve genel CRM'ler ikame; kaynaklı eksik belge kuralı farkı anlatılmalı."
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 1,
+   "g": "ChatGPT ve ücretsiz evrak listeleri işin çoğunu görüyor; yüklenen belgede tutarsızlık kontrolü ve Türkiye şablonu farkı 299 TL için zayıf."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans, serbest geliştirici ve yapay zekâ prototip araçları seçenek; sabit fiyat ve test-CI kanıt paketi farkı teknik olmayan kurucuya anlatılmalı."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Kestra, LangSmith, Superset ve mevcut CI benzer kaydı tutuyor; fark yalnız kabul koşuluna bağlı makbuz, saat tasarrufu gözlenmedi."
+  },
+  "software-factory-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans bugün serbest geliştirici ve alt yüklenici kullanıyor; kanıt paketi ve marj koruması farkı var ama görüşmesiz varsayım, anlatılmalı."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 1,
+   "g": "ChatGPT ve Excel ücretsiz ön eleme yapar; yayımlı kapı ölçeği, tekrarlanabilir sonuç ve kurum markalı Türkçe araç farkı anlatılmalı."
+  },
+  "strateji-simulatoru-b": {
+   "p": 2,
+   "k": 1,
+   "g": "ChatGPT ücretsiz ve ikna edici bir değerlendirme veriyor; planın kendisi bunu rapor satışının en önemli kısıtı sayıyor."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ücretsiz araç ve ChatGPT sonucu veriyor; kapı gerekçelerinin bir saatlik görüşmede yorumlanması insan farkı, anlatılmalı."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz açık çekirdek ve ücretsiz izleyiciler (ccusage, Stats, Activity Monitor) sorunun çoğunu çözüyor; Pro farkı menü çubuğu görünürlüğü."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz rapor aracı, Activity Monitor ve beklenen yerleşik düzeltme ikame; destekli kurulum ve geri alma doğrulaması farkı için talep kanıtı yok."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Orkestratör kabul mantığını kendisi yazabilir ya da ücretsiz çekirdeği kullanır; sponsorluk karşılığı fark öncelikli düzeltme."
+  },
+  "actionplan-a": {
+   "p": 1,
+   "k": 1,
+   "g": "task-master ve spec-kit ücretsiz, toplulukları çok daha büyük ve aynı görev kırılımını yapıyor; görsel bağımlılık grafiği farkı sınanmadı."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Linear, Plane, GitBook ve GitHub kontrolleri kabul kaydını yarı yarıya karşılıyor; sürümlü kapsam farkı anlatılmalı."
+  },
+  "actionplan-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Genel yapay zekâ sohbeti ve İngilizce ücretsiz şablonlar aynı görev kalıbını Türkçe de üretiyor; ayırt edici bir fark yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 2,
+   "k": 1,
+   "g": "ccusage ve CodexBar token ve maliyeti ücretsiz veriyor; fark bellek baskısıyla aynı ekranda görmek, pano ayrı satılmıyor."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 1,
+   "g": "ccusage çıktısı ve Excel ile elle proje dağıtımı ayda birkaç saat; proje eşleme ve CSV farkı için geçiş nedeni zayıf."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Genel grafik ve izleme araçlarının ücretsiz karşılığı çok; tek bekleme kartının farkı rakamla gösterilemiyor, talep doğrulanmadı."
+  },
+  "ai-first-tasarim-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz İngilizce kaynaklar ve yapay zekâ ile öğrenme yaygın; Türkçe anlatım ve çalışan Storybook örneği tek fark."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İç ekip ve serbest çalışan yolu daha yavaş ve pahalı varsayılıyor, yapay zekâ kısmen ikame; sabit fiyat ve 2 hafta farkı anlatılmalı, rakamlar varsayım."
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın en kolay seçeneği hiçbir şey yapmamak ya da kendi şablonu ve lint; kabul dosyası farkı rakamla gösterilmedi."
+  },
+  "aicommandcard-a": {
+   "p": 2,
+   "k": 0,
+   "g": "ChatGPT menü metnini ve yorum yanıtını ücretsiz yazıyor; fark panel içinde önizle, onayla, geri al akışı, getiri hesabı varsayım."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Vercel AI Elements ve assistant-ui ücretsiz, ekip sıfırdan da yazabilir; fark erişilebilir tek yüzey ve 5 günde hazır teslim."
+  },
+  "atonota-denetim-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Site Kit ücretsiz ve 5 milyon kurulumlu, PageSpeed ve çevrimiçi tarayıcılar benzer işi yapıyor; fark Türkçe düzeltme listesi ve çerez bandı kontrolü."
+  },
+  "atonota-denetim-b": {
+   "p": 2,
+   "k": 1,
+   "g": "ManageWP rapor ekliyor, Looker şablonları ücretsiz, AgencyAnalytics pahalı; pazarlama sağlığı raporu farkı ücretsiz rakiplere karşı tek başına yetmiyor."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Ticket panosu, Notion, ManageWP ve MainWP ikame; müşteri kabul kaydı farkı rakiplerle kıyaslanmadı."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "PDF katalog, tek dilli sayfa ve yapay zekâ site üreticisi ikame; minimum sipariş, kademeli fiyat ve sağdan sola yazımlı B2B sayfa farkı anlatılmalı."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ücretsiz şablonlar, yapay zekâ üreticileri ve ajansın kendi kodlaması aynı sayfayı çıkarıyor; iki alıcı görünümü farkı rakamsız."
+  },
+  "b2b-bilesenler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Ücretsiz Tailwind örnekleri, ücretsiz GSAP ve yapay zekâ üreticileri aynı şablonu veriyor; plan bu satışa kendisi hayır diyor."
+  },
+  "banner-post-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Canva ücretsiz katmanı ve yapay zekâ görseli üretiyor; menü verisine bağlı otomatik güncelleme tek fark, ayrı satılmıyor."
+  },
+  "banner-post-b": {
+   "p": 2,
+   "k": 1,
+   "g": "İşletme Canva ile kendisi yapabilir, hizmetin kendisi de Canva ile üretiliyor; fark hazır marka seti ve 48 saat teslim."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Canva'da toplu varyant ve elle çoğaltma mümkün, Bannerbear ve Placid 49 dolar/ay; CSV ile toplu üretim farkı dar."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Tally ücretsiz form veriyor, ChatGPT teklif taslağı yazıyor; teknik yığın önerisi ve logolu PDF farkı anlatılmalı."
+  },
+  "karar-sihirbazi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "ChatGPT ve blog içeriği ucuza benzer gerekçe üretiyor; 60 dakikalık çalıştay ve yazılı savunma farkı var, kanıtsız."
+  },
+  "karar-sihirbazi-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Aynı motor açık kaynak ve ücretsiz, Tally da ücretsiz; ücretli kısım yalnız çeviri ve kurulum emeği."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Canva, Gamma, Pitch (10-20 avro) ve Beautiful.ai ucuz ve hızlı; fark katalogdan toplu yenileme ve Türkçe yazım denetimi, anlatılmalı."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Canva marka kiti, Beautiful.ai ekip planı ve ajansın kendi tasarımcısı güçlü ikame; fark toplu üretim ve denetim."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Danışmanın kendi PowerPoint'i, Gamma ve Canva beş slaytı çıkarıyor; fark yeni veriyle tekrar üretim, beş slayt için dar."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Yapay zekâ arayüz üreticileri ve serbest çalışanlar tıklanabilir demoyu ucuza çıkarıyor; testli, Türkçe ve sabit tarihli teslim farkı kanıtsız."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajansın kendi tasarımcısı, Figma ve yapay zekâ üreticileri bugünkü seçenek; yüzde 20 indirim fark değil fiyat rekabeti."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Excel, PDKS satıcısı ve bulut İK ürünleri (Kolay İK, Logo) puantajı görüyor; çok kaynaklı mutabakat farkı kanıtlanmadı."
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Structurizr, LikeC4 ve yapay zekâ ücretsiz mimari belge üretiyor; Türkçe şablon ve kontrol listesi tek fark."
+  },
+  "ddd-renderer-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Ücretsiz LikeC4 ve Structurizr çekirdek vaadi İngilizce alıcı için karşılıyor; fark yalnız şablon ve ADR bütünlüğü."
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz araç, yapay zekâ ve ekibin elle belgesi ilk modeli çıkarabilir; dış gözle sınır ve sahipsiz modül raporu farkı rakamsız."
+  },
+  "devpanel-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Refine ve shadcn ücretsiz, yapay zekâ ajanları birkaç günde panel üretiyor; testli onay, denetim günlüğü ve yetki deseni farkı anlatılmalı."
+  },
+  "devpanel-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Ücretsiz form kütüphaneleri ve yapay zekâ ajanları 20 alanlı formu çıkarıyor; kaynak dosya da rekabeti ağır buluyor."
+  },
+  "devpanel-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Refine, shadcn ve AdminLTE ücretsiz, Metronic 49 dolar ve 120 bin satış; plan şablon farkının alıcının aradığı şey olmadığını söylüyor."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 1,
+   "g": "19-89 dolarlık hazır betikler ve ajansın kendi uyarlaması güçlü ikame; fark Türkçe iş kuralları ve test paketi, anlatılmalı."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz PDF içe aktarma ve reklamlı ücretsiz QR paketleri var; onaylı çok şubeli yayın farkı ölçülmedi, üründe çalıştığı kanıtsız."
+  },
+  "e-menum-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Laravel QR menü betikleri 19-89 dolar ve açık kaynak seçenekler aynı çekirdeği veriyor; fark Türkçe iş kuralı ve 1.324 test."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Genel yapay zekâ, forumlar ve ücretsiz fikir veritabanları işi kısmen görüyor; fark kaynak etiketi ve girilmez kategori listesi."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Ücretsiz yapay zekâ istemleri ve fikir veritabanları paketi kopyalanabilir kılıyor; panonun kendisi de ücretsiz."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans kendi tablosu ve genel yapay zekâyla fikir puanlayabilir; koltuk ve yıllık görüşme farkı varsayım."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Çeviri yönetim araçları arayüzü test etmiyor, KOBİ elle geziyor; Playwright ve yapay zekâ ücretsiz ama kullanmak ekip ister. Kanıtlı bulgu dosyası farkı anlatılmalı."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 2,
+   "k": 1,
+   "g": "W3C rehberleri ve çeviri aracı blogları ücretsiz, yapay zekâ benzer liste üretir; fark Türkçe ve kabul ölçütlü 60 madde."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz Playwright, Storybook ve elle sahte dil en güçlü ikame; hazır CI kapısı kurulum emeğini azaltır ama fark kanıtlanmadı."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Rehber herkese açık ve ücretsiz olacak, yapay zekâ ve serbest danışman benzer belgeyi çıkarır; fark paket bütünlüğü, anlatılmalı."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ücretsiz rehber, Sheets, yapay zekâ ve kurucunun kendi görüşmeleri güçlü ikame; fark gerçek teklif yanıtı verisi."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajanslar yazılım satıp bayi sorusunu yanıtlamıyor, ücretsiz rehber ekran ve backlog vermiyor; fark var ama iç ekip seçeneğine karşı anlatılmalı."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz LinkedIn içerikleri, Notion şablonları ve yapay zekâ benzer çalışma kâğıdını veriyor; fark Türkçe ve günlük ritim. Aynı kâğıt paketiyle eşitlendi."
+  },
+  "lifeos-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Mevcut ücretsiz zaman izleyiciler ve elle CSV aynı haftalık dökümü veriyor; yerel gizlilik farkı sınanmadı, rakip karşılaştırması yapılmadı."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Açık kaynak Tabliss ve ücretsiz şablonlar aynı iskeleti veriyor, yapay zekâ saniyeler içinde üretir; kit farkı belge ve test."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Excel ve WhatsApp ücretsiz, iki yerel emlak CRM'i aynı fiyat bandında, genel CRM'lerin ücretsiz planı var; plan fiyatın ayırt etmediğini kabul ediyor."
+  },
+  "luquit-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Radix, shadcn ve 6,3 bin yıldızlı ücretsiz cam paketi aynı bileşenleri veriyor; ücretli fark olan entegrasyon süresi ölçülmedi."
+  },
+  "metaframer-kernel-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Supabase RLS ücretsiz, elle yazım ve yapay zekâ üretimi güçlü ikame; audit ve outbox dahil hazır temel farkı anlatılmalı."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans kendi şablonunu ve ekibini kullanabilir, yapay zekâ ile yazmak ucuz; negatif test kanıtı farkı anlatılmalı."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 1,
+   "g": "OpenFGA, Cerbos, Supabase ve şirket içi yazım güçlü alternatif; yanlış kiracı negatif testli yazma farkı anlatılmalı."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Namelix ve Lean Domain Search ücretsiz, yapay zekâ sohbeti de ad üretiyor; fark yalnız Türkçe okunuş puanı ve marka sınıfı bağlantısı."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Namelix ücretsiz, ajans Excel ve slaytla teslim ediyor; fark gerekçeli CSV ve PDF teslim şablonu."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Namelix, Lean Domain Search ve yapay zekâ ücretsiz ad ve boşluk veriyor; fark elle güncel doğrulama ve okunuş notu."
+  },
+  "projector-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz İngilizce kaynaklar ve yapay zekâ konuyu kısmen karşılıyor; Türkçe gerekçeli karar kaydı akışı fark, anlatılmalı."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İç anlatım, ücretsiz kaynak ve yapay zekâ kısmi ikame; ekibin kendi modül haritası üzerinde Türkçe atölye az bulunuyor, tasarruf rakamı varsayım."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Docusaurus ücretsiz, GitBook içe aktarma, geçmiş ve rol sağlıyor (65 dolar/site/ay); kaynak ve sürüm izi farkı tek başına savunma değil."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz Canvas, 9 dolardan başlayan Notion şablonları ve yapay zekâ ile plan yazmak kolay; fark Türkçe ve kanıt etiketi."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Mentorlar kendi şablonunu, Canvas PDF'ini ve Notion'u kullanıyor; ortak kanıt dili ve ritim kartı farkı varsayım."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekşi Sözlük, 1000Kitap ve mağaza yorumları ücretsiz ama dağınık; künyede çevirmen güveni ve kaçınılacak baskı farkı var, okura anlatılmalı."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 1,
+   "g": "HubSpot imza üreticisi ücretsiz, yapay zekâ HTML imza yazıyor; fark CSV ile toplu üretim, Türkçe ve KVKK altbilgisi."
+  },
+  "signator-b": {
+   "p": 2,
+   "k": 1,
+   "g": "HubSpot ücretsiz, Signitic 19 çalışana kadar ücretsiz; fark Türkçe arayüz, KVKK altbilgisi ve CSV."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Gmail yardım sayfaları ve ücretsiz editörler imzayı kurduruyor; fark istemci kontrollü doğru kurulum teslimi."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Instagram anketi, çekiliş formu, şablon oyun platformu ve hiçbir şey yapmama kolay ikame; markalı oyun farkı anlatılmalı, fiyat karşılaştırması varsayım."
+  },
+  "volley-tap-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Portallarda binlerce ücretsiz voleybol ve kafa topu oyunu var; plan oyunun yeni bir ihtiyaç çözmediğini söylüyor."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ücretsiz portal oyunları ve itch.io'daki ücretsiz oyunlar aynı eğlenceyi veriyor; 3 dolarlık premium yalnız hipotez."
+  },
+  "woocommnts-a": {
+   "p": 2,
+   "k": 1,
+   "g": "PayTR ve diğer geçitlerin ücretsiz eklentileri taksit tablosunu gösteriyor; geçitten bağımsızlık ve kapıda ödeme kuralı dar bir fark. Aynı ürünün diğer kartıyla eşitlendi."
+  },
+  "woocommnts-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajans geçidin ücretsiz eklentisini ya da kendi kod parçasını kullanıyor; 10 siteye tek lisans farkı dar, tasarruf rakamı varsayım."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretsiz CusRev güçlü alternatif ve elle göç mümkün; ücretli fark doğru ürüne eşleme ve tekrar kontrolü."
+  },
+  "egitim-demolari-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Ücretsiz ders materyalleri ve yapay zekâ ile soru üretimi aynı işi görüyor; doğrulanmış cevap anahtarı farkı rakamsız."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ücretsiz çevik içerik ve yapay zekâ bol; fark ekibin kendi teslim sorununa uyarlama, rakamla gösterilmedi."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans, serbest geliştirici, kadrolu çalışan ve yapay zekâ araçları seçenek; teslim edilmiş analiz ve alan bilgisi farkı var, anlatılmalı."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 1,
+   "g": "CodeCanyon betikleri 19-89 dolar ve binlerce satış; Türkçe iş kuralı ve test farkı ajansa anlatılmalı."
+  },
+  "baz-secenekler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Melek yatırım ve diğer pay karşılığı fonlar alternatif; yaklaşık yüzde 3 payla 1.350.000 TL ucuz sermaye, fark program koşullarında."
+  }
+ }
+}

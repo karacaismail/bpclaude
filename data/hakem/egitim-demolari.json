@@ -1,0 +1,59 @@
+{
+ "slug": "egitim-demolari",
+ "kararlar": [
+  {
+   "itiraz": "A kartı: 600 TL, 20 soru, 3 senaryo ve etkileşimli demo kaynakta yok; kit kapsamı kurucu varsayımı",
+   "karar": "kismen",
+   "degisiklik": "teklif: etkileşimli demo bağlantısı idi, statik demo ve varsayım notu oldu; fiyata (varsayım) eklendi",
+   "gerekce": "20 soru yalnız matematik oyunu taslağında, senaryo oyun kuramı taslağında var; fiyat ve kapsam kaynaksız, varsayım olarak işaretlendi."
+  },
+  {
+   "itiraz": "A alıcısı ebeveyn yalnız matematik oyunu taslağında; öğretmen toplulukları ve pazar yerleri kaynakta adlandırılmamış",
+   "karar": "kismen",
+   "degisiklik": "kanal_yedek: pazar yerleri vardı; kaynakta yok, varsayım notu ile içerik sayfası ve eğitmen referansı oldu",
+   "gerekce": "Ebeveyn matematik oyunu taslağında geçer; öğretmen paylaşımı kaynakta var ama topluluk adlı değil (G5 zaten test). Pazar yeri kaynaksızdı."
+  },
+  {
+   "itiraz": "B atölyesinin 6000 TL fiyatı ve 3 prensip kapsamı kaynakta yok; hedef rol öğretmen ve eğitim sağlayıcı",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "3 prensip ve tek ekip senaryosu kaynakta var; ekip lideri ve danışman alıcı olarak yazılı. Fiyat zaten dayanakta varsayım denmiş."
+  },
+  {
+   "itiraz": "Kart altı varlığı tek aile sayıyor; kaynak her varlığın paketinin ayrı ve ilk teslimin tek oyunla sınırlı olduğunu söylüyor",
+   "karar": "kismen",
+   "degisiklik": "iki_calisma.ayrisma ve birlesik: tek aile ifadesi yerine ayrı tek çıktılı paketler ve tek varlıkla ilk teslim yazıldı",
+   "gerekce": "Kaynak her varlığa ayrı çıktı verir ama aynı alıcı hipotezini kullanır; kart bu ayrımı belirginleştirmeliydi."
+  },
+  {
+   "itiraz": "A G8 test olmalı: kapsam belgesi, soru sayısı ve revizyon kapsamı kaynakta yazılı değil",
+   "karar": "kabul",
+   "degisiklik": "G8: gecti idi, test oldu; not ve kapi_duzeltme güncellendi",
+   "gerekce": "Kaynak sabit kapsam ve fiyatı tanımlamıyor; kaynak iki yönü desteklemiyorsa kapıda test seçilir."
+  },
+  {
+   "itiraz": "A G7 test olmalı: nakit ihtiyacı hesaplanmadı, uzman inceleme ücreti dahil değil",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart nakdi 3.000 TL hesaplıyor; uzman incelemesi eklense de tavan olan 50.000 TL'nin çok altında, gecti kalır."
+  },
+  {
+   "itiraz": "A alti_ay_odeme_adedi.baz 12 yüksek; 20 temasta %1-4 dönüşüm yaklaşık 1 ödeme verir",
+   "karar": "kabul",
+   "degisiklik": "odeme adedi baz 12 idi 3 oldu; iyi 30 idi 10; musteri aynı; tahsilat baz 7200 idi 1800; dayanak güncellendi",
+   "gerekce": "Ücretli talep, isim listesi ve kanal kanıtı yok; temkinli seçim düşük gelir. Baz 3 itirazın 2-5 aralığındadır."
+  },
+  {
+   "itiraz": "A alti_ay_tahsilat_tl.iyi 18000 yüksek; 30 satış için kanal erişimi kanıtsız",
+   "karar": "kabul",
+   "degisiklik": "tahsilat iyi 18000 idi 6000 oldu (10 ödeme x 600)",
+   "gerekce": "30 satış kaynaksız bir erişim varsayar; 10 satış itirazın alt sınırıyla uyumlu ve temkinli."
+  },
+  {
+   "itiraz": "B ilk_tahsilat_gun.min 30 yerine 45 olmalı; kurumsal atölye aktif satış ister",
+   "karar": "kabul",
+   "degisiklik": "ilk_tahsilat_gun.min 30 idi 45 oldu",
+   "gerekce": "Kaynak aktif satış gerektiğini söyler, süre vermez; belirsizde temkinli olan uzun süre seçildi."
+  }
+ ]
+}

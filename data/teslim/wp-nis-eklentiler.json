@@ -1,0 +1,23 @@
+{
+ "slug": "wp-nis-eklentiler",
+ "secenekler": {
+  "wp-nis-eklentiler-a": {
+   "satis_basina_kurucu_saati": 5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Kopyası satılan eklenti lisansı: müşteriye özel iş yok, teslim 0. Karttaki 5 saat satış ve 30 dk destek aynen korundu; varsayım."
+  },
+  "wp-nis-eklentiler-b": {
+   "satis_basina_kurucu_saati": 1.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Kopyası satılan eklenti lisansı: müşteriye özel iş yok, teslim 0. Karttaki 1,5 saat satış ve 20 dk destek aynen korundu; varsayım."
+  },
+  "wp-nis-eklentiler-c": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 4,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Karttaki dayanak: elle kurulum 3 saat/site, artı 1 saat revizyon; karttaki 5 saat satış kurulumu içerdiğinden satış 2 saate indi. Destek 15 dk aynen. Varsayım."
+  }
+ }
+}

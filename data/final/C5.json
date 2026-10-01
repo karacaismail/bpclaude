@@ -1,0 +1,665 @@
+{
+ "kriter": "C5",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Fiyat sayfası yayında ve ücretsiz plan kendi başına denenir; ödeme havale ve elle plan atamasıyla, temas gerektirir."
+  },
+  "zabuno-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Zincir planı yayındaki katalogda yok; fiyat teklifle iletilir, pilot, yıllık sözleşme ve veri işleme metni şart."
+  },
+  "zabuno-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Fiyat kaynakta yok, kurucu varsayımı; modül uyarlaması kapsam görüşmesi ve doğrudan teklifle satılır."
+  },
+  "parselq-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Paket fiyatları açık, form ve ödeme bağlantısı görüşmesiz; deneme yok, belge yükleme ve 48 saatte analist kontrollü teslim var."
+  },
+  "parselq-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Fiyat açık, 10 ücretsiz kart ve 7 gün deneme var; kartlar elle üretildiği için başlangıç ve ödeme WhatsApp temasıyla."
+  },
+  "parselq-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Rapor başı test fiyatı yayımlanmıyor; ofisle pilot, belge teslimi ve uzman onayı görüşmeyle yürür."
+  },
+  "destektesvik-a": {
+   "p": 2,
+   "k": 0,
+   "g": "2.990 TL sabit fiyat ve tam iade yazılı; fiyat sayfası yok, satış kısa nitelik görüşmesi ve teklif e-postasıyla."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aylık paket fiyatları yazılı ama demo ve 8 haftalık pilot şart, ödeme sayfası yok; benzer demo ile satılan aboneliklerle aynı puan."
+  },
+  "destektesvik-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurum yönetimine pilot teklifi, sponsorluk sözleşmesi ve kurum onayı gerekir; kendi kendine satın alma yolu yok."
+  },
+  "asgari-iscilik-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Aday firma teklif sürecinde: sunum, yazılı teklif, sözleşme ve üç aşamalı ödeme şart; ortak onayı gerekir."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Paket fiyatları açık, 30 gün ücretsiz deneme ve 14 gün iade var, abonelik akışı ilk kapsamda; satış webinar ve pilotla."
+  },
+  "asgari-iscilik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Dosya başı 10.000 TL sabit ve kapsam yazılı; dosya izni, kısa teşhis ve ödeme için görüşme gerekir, deneme yok."
+  },
+  "zincir-danismanligi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "180.000 TL paket genel müdür onayı, yazılı teklif, sözleşme ve üç taksit anlaşmasıyla satılır."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "30.000 TL sabit ve peşin, olgunluk testi kendi kendine yapılır; ücretli rapor mesaj, görüşme ve teklif gerektirir."
+  },
+  "zincir-danismanligi-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Zincir planı yayındaki katalogda yok; pilot, yıllık sözleşme ve genel müdür onayı şart. Aynı yapıdaki zincir planıyla aynı puan."
+  },
+  "kar-pusulasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz araç deneme işlevi görür, fiyat açık, ödeme bağlantısı görüşmesiz; lisans anahtarı ve teslim akışı kurucu eliyle kurulacak."
+  },
+  "kar-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Fiyat açık ve 60 gün deneme yazılı; ilk danışmanlara rapor elle hazırlanır, satış 20 dakikalık demoya bağlı."
+  },
+  "kar-pusulasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "1.000 TL sabit fiyat açık; dosya alışverişi, şablon uyumu ve ödeme için mesajlaşma gerekir, sipariş akışı yok."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Program fiyatı açık ve kayıt sitesi planlı; ödeme bağlantısı 20 dakikalık tanışma görüşmesinden sonra verilir."
+  },
+  "titanlar-b": {
+   "p": 2,
+   "k": 0,
+   "g": "İki paket fiyatı açık; satış birebir mesajla, Strateji paketi veri paylaşımı ve kapsam görüşmesi ister."
+  },
+  "titanlar-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurumlara teklif, sözleşme ve e-Fatura ile 30-60 gün vadeli satılır; eğitim birimi ve yönetim onayı gerekir."
+  },
+  "kurumsal-site-a": {
+   "p": 1,
+   "k": 0,
+   "g": "85.000 TL paket keşif, yazılı teklif, sözleşme ve yüzde 50 avansla satılır; patron ve ihracat müdürü onaylar."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Sabit şablon ve 45.000 TL fiyat görüşmesiz anlaşılır, ücretsiz denetim formu var; sipariş görüşme, avans ve sözleşme ister."
+  },
+  "kurumsal-site-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Üç lisans fiyatı açık, ödeme aracı mağazada görüşmesiz; deneme yalnız demo site, ücretsiz sürüm yok."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "90.000 TL paket canlı seans, yazılı teklif, sözleşme ve yüzde 50 avansla satılır; teklif şablonu henüz yok."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Keşif seansı sonrası iadesiz yüzde 50 avans ve teklif gerekir; B'nin andığı ücretsiz hesaplayıcı yalnız yedek kanal."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Fiyat varsayım; katalog kapsamı üreticiye göre belirlenir, teklif, ürün verisi ve yüzde 50 avans şart."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ücretsiz çekirdek ve açık lisans fiyatı var, Freemius ödeme planlı; ajans satışı demo ve görüşmeyle yürür."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz sürüm sınırsız, Pro fiyatı açık, Freemius ile görüşmesiz ödeme; lisans akışı kurulacak, bugün kod yok."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Site başı 2.500 TL sabit ve kapsam listesi yazılı; sipariş doğrudan teklif, site erişimi ve havale ile."
+  },
+  "qral-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz çekirdek, 4,99 euro açık fiyat ve görüşmesiz ödeme planlı; lisans anahtarı akışı kurucu eliyle kurulacak."
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık fiyat açık ve çekirdek ücretsiz; okul bütçesinden çok koltuklu alım fatura ve yazışma gerektirir."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "1.000 TL tek takım fiyatı yazılı; ekibin kendi formatı için kurulum görüşmesi ve doğrudan teklif gerekir."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit ve lisans fiyatı açık, site ücretsiz incelenir, 14 gün iade; eğitmen lisansı 20 dakikalık demo ve yazışmayla satılır."
+  },
+  "frontend-atlasi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Ücretsiz dersler deneme, 349 TL açık fiyat, hazır mağaza sayfasında görüşmesiz ödeme ve dosya teslimi, 14 gün iade."
+  },
+  "frontend-atlasi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Eğitmenin konusuna özel üretim: brif, tek sayfalık kapsam ve kabul sözleşmesi, havale; kapsam dışı iş ayrı teklif."
+  },
+  "karar-kitabi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Atölye ücretsiz ön oturum, pilot teklifi, yüzde 50 avans ve sözleşmeyle satılır; görüşmesiz alım yok."
+  },
+  "karar-kitabi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Ücretsiz yöntem sitesi deneme, paket fiyatları açık, hazır mağaza sayfasında görüşmesiz ödeme ve dosya teslimi."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kit 1.000 TL sabit, ücretsiz örnek kâğıt var; satış 30 dakikalık demo ve örnek çıktı görüşmesiyle."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Üç paket fiyatı yazılı ama brif, teklif, sözleşme ve üç taksitli ödeme anlaşması şart; pilotta indirim pazarlığı var."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "9.000 TL sabit ve peşin; satış ücretsiz atölyeden sonra, dosya paylaşımı ve yazışmayla, sipariş akışı yok."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurum lisansı demo, atölye, iki sayfalık sözleşme ve müdür onayıyla satılır; karar 1-3 ay sürer."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Paket fiyatları açık; ofis ziyareti, demo ve imzalı ücretsiz pilot şart, ücretli geçiş havale ve görüşmeyle."
+  },
+  "vize-operasyon-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurulum ve aylık ücret kurucu hipotezi, yayımlanmıyor; pilot sözleşmesi, veri izni ve görüşme şart."
+  },
+  "vize-operasyon-c": {
+   "p": 4,
+   "k": 0,
+   "g": "299/599 TL açık fiyat, yükleme ve barındırılan ödeme görüşmesiz; deneme yok ve akış bütünüyle kurucunun kuracağı sayfada."
+  },
+  "software-factory-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kapsam müşterinin hikâye listesine göre belirlenir; hikâye seansı, yazılı teklif, sözleşme ve yüzde 50 peşin şart."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ücretsiz Action kendi başına kurulup denenir, kurulum fiyat aralığı yazılı; ücretli kurulum görüşme ve repo erişimi ister."
+  },
+  "software-factory-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Toptan iskonto, rekabet etmeme maddesi ve ajans markalı teslim ortaklık görüşmesi ve sözleşmeyle kurulur."
+  },
+  "strateji-simulatoru-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurum lisansı demo, 3 aylık pilot teklifi, sözleşme ve kurum faturasıyla satılır; karar 1-3 ay."
+  },
+  "strateji-simulatoru-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Değerlendirme ücretsiz, rapor fiyatı açık, ödeme görüşmesiz tasarlandı; ödeme ve PDF teslim akışı kurucu eliyle kurulacak."
+  },
+  "strateji-simulatoru-c": {
+   "p": 2,
+   "k": 0,
+   "g": "1.500 TL tek paket fiyatı açık; satış kişisel e-posta teklifi ve havale ile, paketin kendisi 1 saatlik görüşme içerir."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Açık kaynak çekirdek ücretsiz, Pro fiyatı açık, ödeme sayfası görüşmesiz; lisans anahtarı akışı kurulacak."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "60 ve 200 dolar sabit fiyat, ücretsiz rapor aracı var; destekli kurulum randevu ve kapsam teyidi gerektirir."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Sponsorluk kademeleri açık ve GitHub Sponsors ile görüşmesiz ödenir; kurumsal sponsor entegrasyon için görüşme ister."
+  },
+  "actionplan-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Çekirdek ücretsiz ve açık kaynak, Pro 39 dolar açık, satış sayfası görüşmesiz; lisans anahtarı ve satıcı hesabı kurulacak."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum 400 dolar sabit, ücretsiz kabul şablonu var; pilot teklifi ve kurulum görüşmesi gerekir."
+  },
+  "actionplan-c": {
+   "p": 4,
+   "k": 0,
+   "g": "490 TL açık fiyat, tek sayfa satış ve 14 gün iade görüşmesiz; ücretsiz örnek yok, ödeme havale ya da sanal POS."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz statik rapor çekirdeği, Pro 19 dolar açık, görüşmesiz ödeme planlı; lisans akışı kurulacak, panel ayrı satılmaz."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aylık 1.500 TL sabit; satış kurucu mesajı ve 15 dakikalık demo ile, rapor elle teslim edilir, ödeme görüşmeyle."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı adlandırılmamış; müşterinin olay verisine özel adaptör kapsam görüşmesi, teklif ve kabule bağlı ödeme ister."
+  },
+  "ai-first-tasarim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "İlk bölüm ücretsiz, 399 TL açık fiyat, Shopier ile görüşmesiz ödeme; ön satış, kalan bölümler sonradan teslim edilir."
+  },
+  "ai-first-tasarim-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Atölye ve 120.000 TL kurulum demo, teklif, sözleşme ve e-fatura ile satılır; kapsam dışı iş ek fiyat."
+  },
+  "ai-first-tasarim-c": {
+   "p": 1,
+   "k": 0,
+   "g": "18.000 TL kurucu tahmini, yayımlanmış fiyat yok; ücretli pilot, kapsam görüşmesi ve sözleşme gerekir (B gerekçesi)."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Plan fiyatları yayında, 7 gün deneme ve ürün içi yükseltme planlı; Zabuno'da kartlı tahsilat kapalı, ödeme havale ve temasla."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "12.000 TL sabit ve fiyatlı paket sayfası planlı; müşterinin paneline bağlama kapsam görüşmesi ve teklif ister."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz puan kartı, Pro 1.990 TL açık, 14 gün iade, görüşmesiz alım tasarlandı; lisans doğrulama ve ödeme yolu kurulacak."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Fiyat açık, ücretsiz eklenti ve 3 sitede deneme var; lisans anahtarı elle verilir, satış 15 dakikalık demo ile."
+  },
+  "atonota-denetim-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Aylık 5.000 TL test varsayımı; elle yürütülen pilot, ajansla kapsam görüşmesi ve teklif şart."
+  },
+  "b2b-bilesenler-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Blok, site teklifine eklenen satır olarak satılır; teklif, görüşme ve yüzde 50 avans gerekir."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "12.000 TL sabit ve herkese açık demo var; sipariş kişiye özel örnek, görüşme ve yüzde 50 avansla."
+  },
+  "b2b-bilesenler-c": {
+   "p": 5,
+   "k": 0,
+   "g": "49 dolar açık fiyat, ücretsiz örnek sürüm ve demo site, hazır mağaza sayfasında görüşmesiz ödeme ve dosya teslimi."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Modül yayındaki 999 TL plana dahil, yükseltme ürün içinde; Zabuno tahsilatı kapalı, ödeme havale ve temasla."
+  },
+  "banner-post-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aylık 7.500 TL ve kurulum 5.000 TL sabit; satış mevcut müşteriye tek sayfa teklif, onay ve havale ile."
+  },
+  "banner-post-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Fiyat kaynaklarda yok, varsayım; izinli marka, brif ve kabul ölçütü görüşmeyle belirlenir."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Fiyatlar açık ve canlı demo var; 90 günlük pilot, 20 dakikalık demo ve kurulum şart, ödeme havale ve faturayla."
+  },
+  "karar-sihirbazi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "6.000 TL sabit fiyat ve beş seçimlik standart çıktı; 60 dakikalık çalıştay ve kabulde havale görüşme gerektirir."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "5.000 TL tek sefer fiyat açık; marka uyarlaması, kurulum ve 1 saat eğitim görüşme ve havale ister."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "15.000 TL sabit paket; ücretsiz 3 slaytlık örnek, teklif ve yüzde 50 peşin havale yazışmayla yürür."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum ve aylık fiyat sabit; ücretsiz pilot ay, birebir not ve kurulum görüşmesi gerekir, abonelik ödeme akışı yok."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "8.000 TL sabit ve ücretsiz 1 slaytlık örnek; kaynak dosya kontrolü ve revizyon için görüşme gerekir."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Üç sabit paket, fiyat sayfası ve keşif formu planlı; alım keşif görüşmesi, tek sayfalık sözleşme ve yüzde 50 peşin ister."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Demo başına 36.000 TL sabit ajans fiyatı; aylık taahhüt ve beyaz etiket koşulları görüşme ve anlaşma ister."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurulum ve aylık ücret deney fiyatı; biçim eşleme, veri paylaşımı ve danışman ofisiyle pilot görüşmesi şart."
+  },
+  "ddd-renderer-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz starter dosya, 149 TL açık fiyat, Shopier ile görüşmesiz; ön sipariş olarak satılır."
+  },
+  "ddd-renderer-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Açık çekirdek ve starter ücretsiz, 29/79 dolar açık fiyat, yasal satıcı ödeme sayfası ve 14 gün iade görüşmesiz."
+  },
+  "ddd-renderer-c": {
+   "p": 1,
+   "k": 0,
+   "g": "50.000 TL varsayım fiyat; görüşme, teklif, gizlilik sözleşmesi ve sistem erişimi gerekir."
+  },
+  "devpanel-a": {
+   "p": 1,
+   "k": 0,
+   "g": "36.000 TL paket demo, kapsam notu, teklif ve sözleşmeyle satılır; müşterinin projesine entegrasyon ister."
+  },
+  "devpanel-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Fiyat 300-1000 dolar aralığından teklifle belirlenir; müşterinin deposunda derleme için kapsam görüşmesi şart."
+  },
+  "devpanel-c": {
+   "p": 4,
+   "k": 0,
+   "g": "49 dolar açık fiyat, mağazada görüşmesiz ödeme ve dosya teslimi; ücretsiz sürüm yok, deneme yalnız demo."
+  },
+  "e-menum-a": {
+   "p": 1,
+   "k": 0,
+   "g": "25.000 TL kurulum demo, yazılı kapsam belgesi ve yüzde 50 ön ödemeyle satılır; ajansa özel 20 saat uyarlama içerir."
+  },
+  "e-menum-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Test fiyatı yayımlanmıyor; elle yürütülen hizmet demo, teklif ve marka sahibinin onayıyla başlar."
+  },
+  "e-menum-c": {
+   "p": 4,
+   "k": 0,
+   "g": "89 dolar açık fiyat ve destek içermeyen sabit paket görüşmesiz alınır; deneme yok, yalnız demo videosu ve kılavuz."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz pano ve bedava ilk sayı deneme, fiyat açık, satış sayfası görüşmesiz; abonelik ve e-posta teslim akışı kurulacak."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Ücretsiz pano deneme, 349 TL açık fiyat, ödeme sayfasında görüşmesiz alım ve indirilebilir paket, 7 gün iade."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yıllık 299 dolar açık; lisans 20 dakikalık tanışma görüşmesi, ortak onayı ve faturalı havale ile alınır."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 2,
+   "k": 0,
+   "g": "7.500 ve 15.000 TL paket fiyatları açık; ücretsiz 1 ekranlık mini denetim, tek sayfa teklif ve havale görüşmeyle."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Ücretsiz Atlas dersleri deneme, 299 TL açık fiyat, hazır mağaza sayfasında görüşmesiz ödeme ve PDF teslimi, 7 gün iade."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Pilot fiyatı yalnız teklif testi; ekibin deposuna erişim, tek akış kapsamı ve pilot teklifi görüşme ister."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 1,
+   "k": 0,
+   "g": "60.000 TL teşhis keşif görüşmesi, teklif PDF, sözleşme ve yüzde 40 peşinle satılır; kurul gündemi gerekir."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "20.000 TL sabit ve 5 sayfalık standart rapor; ücretsiz atölye, teklif ve yüzde 50 peşin için görüşme gerekir."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "250.000 TL paket ortak teklif, sözleşme, gizlilik metni ve aşamalı ödemeyle satılır; karar 6-10 hafta."
+  },
+  "lifeos-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Eklenti ücretsiz, paket fiyatı açık, alım görüşmesiz; ön sipariş bağlantısı ve Shopier ya da havale ile ödenir."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yerel eklenti ücretsiz denenir; 600 TL kurulum paketi analist varsayımı ve pilotla, yazışma gerektirerek satılır."
+  },
+  "lifeos-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Açık çekirdek ücretsiz, kit tek sayfada görüşmesiz alınabilir; 19 dolar fiyat analist varsayımı, ödeme yolu tanımsız."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Üç plan fiyatı açık ve 14 gün iade var; yüz yüze görüşme, demo ve ilk 3 ofise beta pilot şart."
+  },
+  "luquit-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Açık kaynak bileşenler ücretsiz denenir, kit 1.500 TL açık fiyat, hazır mağaza ödeme sayfasında görüşmesiz alım."
+  },
+  "metaframer-kernel-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Açık kaynak çekirdek ücretsiz, lisans fiyatı açık, 14 gün iade, görüşmesiz ödeme sayfası; ticari lisans akışı kurulacak."
+  },
+  "metaframer-kernel-b": {
+   "p": 1,
+   "k": 0,
+   "g": "40.000 TL paket atölye içerir; 20 dakikalık demo, teklif, iki onay ve havale ile fatura gerekir (B gerekçesi)."
+  },
+  "metaframer-kernel-c": {
+   "p": 1,
+   "k": 0,
+   "g": "72.000 TL paket sandbox erişimi, teklif ve sözleşme ister; yalnız ücretsiz test paketi kendi kendine denenir."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Günde 20 ücretsiz sorgu deneme, 199 TL açık fiyat, 7 gün iade, görüşmesiz ödeme; lisans anahtarı akışı kurulacak."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık 499 TL açık ve ücretsiz çekirdek kendi başına denenir; ajans alımı 10 dakikalık demo ve e-arşiv fatura yazışmasıyla."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "1.490 TL sabit paket ve ücretsiz örnek çıktı var; teklif mesajla gönderilir, ödeme elle alınır, sipariş formu yok."
+  },
+  "projector-a": {
+   "p": 4,
+   "k": 0,
+   "g": "İlk 3 bölüm ücretsiz, 349 TL açık fiyat, ödeme bağlantısı görüşmesiz; ön satış, kalan 7 bölüm sonradan yazılır."
+  },
+  "projector-b": {
+   "p": 1,
+   "k": 0,
+   "g": "35.000 TL atölye ön görüşme, ekibe özel yazılı teklif, sözleşme ve havale ile satılır."
+  },
+  "projector-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Fiyat 300-900 dolar sınama aralığı; pilot teklifi, kapsam görüşmesi ve doküman erişimi gerekir."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 5,
+   "k": 0,
+   "g": "İlk 3 küme ücretsiz deneme, 299 TL açık fiyat, hazır mağaza sayfasında görüşmesiz ödeme ve dosya teslimi, 14 gün iade."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "1.490 TL sabit ve ücretsiz örnek var; kurum lisansı doğrudan e-posta, teklif, 1 saatlik atölye ve havale ile."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 5,
+   "k": 1,
+   "g": "Site yayında ve ücretsiz, hesap gerekmez; okur kitabı mevcut mağazaların kendi ödeme akışında alır, görüşme yok."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık 4.990 TL açık ve ücretsiz bireysel araç kendi başına denenir; demo ve ilk müşteride birlikte kurulum şart."
+  },
+  "signator-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ekip paket fiyatları açık, ücretsiz bireysel araç ve 14 gün iade, Shopier bağlantısı görüşmesiz; ekip modu kurulacak."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 0,
+   "g": "1.000 TL teklif testi fiyatı; birebir teklif, çalışan listesi alışverişi ve elle teslim görüşme gerektirir."
+  },
+  "volley-tap-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Paketler demo görüşmesi, 1 sayfalık teklif ve yüzde 50 ön ödemeyle satılır; tema markaya göre uyarlanır (A gerekçesi)."
+  },
+  "volley-tap-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Oyuncu ödemez ve görüşmesiz oynar; gelir tarafında portalın yayımlanmış gönderim, SDK ve onay süreci var."
+  },
+  "volley-tap-c": {
+   "p": 4,
+   "k": 0,
+   "g": "İlk maç girişsiz ve ücretsiz, ödeme itch.io sayfasında görüşmesiz; 2-5 dolar premium fiyat henüz hipotez."
+  },
+  "woocommnts-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz çekirdek, Pro fiyatı açık, 14 gün iade, eklenti içi Pro kartı görüşmesiz; lisans anahtarı ve ödeme akışı kurulacak."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ücretsiz çekirdek denenir, 2.990 TL açık, iyzico ya da havale; ajansa satış e-posta ve birlikte kurulumla. Benzer ajans lisansıyla aynı puan."
+  },
+  "woocommnts-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Fiyat mağaza büyüklüğüne göre 3.000-8.000 TL aralığında teklifle; veri izni, deneme çalıştırması ve onay gerekir."
+  },
+  "egitim-demolari-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Paket fiyatı sabit ve ücretsiz örnek ders kendi başına incelenir; tahsilat hesabı yok, ödeme mesaj ve havale ile."
+  },
+  "egitim-demolari-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Atölye ekibin kendi senaryosuna uyarlanır; ücretsiz mini ders, teklif ve görüşme olmadan satın alınmaz."
+  },
+  "baz-secenekler-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Günlük ücret yazılı teklifle iletildi; gün paketi çıktı listesi, kabul ölçütü ve sözleşme görüşmesiyle satılır."
+  },
+  "baz-secenekler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurulum demo, kapsam belgesi ve sözleşmeyle satılır; ajansa göre uyarlama saati pazarlık konusu."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Satın alma değil başvuru: dosya, kamu programının değerlendirmesi ve pay sözleşmesi gerekir."
+  }
+ }
+}

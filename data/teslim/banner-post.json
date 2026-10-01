@@ -1,0 +1,23 @@
+{
+ "slug": "banner-post",
+ "secenekler": {
+  "banner-post-a": {
+   "satis_basina_kurucu_saati": 3,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Plan katmanına dahil yazılım modülü; müşteriye özel iş yok, teslim 0. Satış 3 saat ve destek 20 dk karttaki gibi."
+  },
+  "banner-post-b": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 8,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Aylık hizmet: kurucu brif, yönlendirme ve onay ayda 4 saat; 15 şablon kurulumu 15 saat ÷ 4 ödeme, yaklaşık 4. Üretim değişken maliyette. Karttaki 480 dk teslimdi; destek 60 dk (varsayım)."
+  },
+  "banner-post-c": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 16,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "10 görsel x 3 boyut = 30 çıktı; elle ya da betikle üretim, inceleme paketi ve dışa aktarma kiti 16 saat (varsayım). Karttaki 8 saat satışın bir kısmı teslimdi; satış 6 saat, destek 30 dk."
+  }
+ }
+}

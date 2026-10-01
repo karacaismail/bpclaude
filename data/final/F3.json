@@ -1,0 +1,665 @@
+{
+ "kriter": "F3",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Canlı üründe herkes aynı katalog planını kullanıyor; kurulum fotoğraftan sabit akışla, kurucu eliyle. Özel istek kanalı tanımlı değil."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Zincir planı katalogda yok; merkezden yayın ve şube istisnası yazılmadı, çeviri ve POS isteği özel iş doğurur. Aynı zincir teklifiyle aynı puan."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek modül sabit paket ama her alıcının verisi ve izin akışı ayrı entegrasyon ister; kapsam sınırı yazılı değil."
+  },
+  "parselq-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek 3 sayfalık şablon ve üç sabit paket; parsel ve belge çeşitliliği yalnız küçük istisna üretir, özel geliştirme yok."
+  },
+  "parselq-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek kart şablonu, iki sabit paket; ofis yalnız logo ve izin numarası girer."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her dosya farklı parsel, belge ve varsayım getirir; karar dosyası elle hazırlanır, kapsam sınırı yazılı değil."
+  },
+  "destektesvik-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Sabit 8 bölümlü rapor, sabit fiyat; başvuru yazılmaz. Şirket verisi dışında değişen bir şey yok."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Paket ve kota sabit; büro logolu rapor ve CSV biçimi büro başına yapılandırma ister."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum alıcısı logo, portal ve özel rapor ister; SSO ve portal kapsam dışı sayılsa da sınır sözleşmeye yazılmadı."
+  },
+  "asgari-iscilik-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek firmaya özgü senaryolarla yazılan uyum yazılımı; modül kapsamı yazılı ama kendi sunucu kurulumu ve ek köprü istekleri beklenir."
+  },
+  "asgari-iscilik-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Herkes aynı çok kiracılı ürünü ve sabit paketleri alır; mükellef ve şantiye farkı parametre tablosuyla çözülür. Ürün henüz yok."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kapsam ve fiyat sabit ama her müşterinin tablo yapısı farklı; kontrol elle yapılır, istisna rapor şablonuna sığdırılır."
+  },
+  "zincir-danismanligi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "11 kalemli sabit paket tek zincire özgü; planın kendi risk tablosu kapsam kaymasını olası sayar, entegrasyon kalemi dışa bağlı."
+  },
+  "zincir-danismanligi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Aynı denetim şablonu ve sabit fiyat; yalnız halka açık veri ve salt okunur erişim, özel geliştirme yok."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Zabuno zincir planıyla aynı teklif: merkezden yayın ve şube istisnası henüz yok, pilot elle yönetilir, çeviri ve POS isteği özel iş."
+  },
+  "kar-pusulasi-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Tek hesaplayıcı, tek Pro fiyatı; satıcı kendi verisini girer, müşteri başına yapılandırma ya da özel iş yok."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "25 profil ve 3 kullanıcı sabit; logolu rapor ve beyaz etiket isteği danışman başına yapılandırma doğurur."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "200 SKU ve 3 deney sabit, uymayan dosya kapsam dışı; yine de pazar yeri dosya biçimleri eşleme ister."
+  },
+  "titanlar-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kohortta herkes aynı program, ödev şablonu ve fiyatı alır; kişiye özel kısım yalnız VIP birebir oturumlarla sınırlı."
+  },
+  "titanlar-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Saat, çıktı şablonu ve fiyat sabit; satıcının verisi değişir, kapsam dışı istek yeni paket sayılır."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oda ve belediye alıcısı logo, rapor biçimi, oturum sayısı ve sözleşme eki ister; iki ayrı atölye içeriği var, sınır yazılı değil."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Sayfa listesi, revizyon ve süre sabit; her üreticinin içeriği ve dili kalıpta yapılandırılır, panel ve e-ticaret isteği reddedilir."
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek sabit şablon, 8-10 sayfa; site işinde içerik ve görsel müşteri başına yapılandırılır, fiyata duyarlı alıcı ek istek zorlar."
+  },
+  "kurumsal-site-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Herkes aynı markasız tema kaynağını indirir; özelleştirme satılmaz, paketler yalnız lisans genişliğinde ayrışır."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kapsam, süre ve tek revizyon yazılı; simülatör verisi ve site müşteri başına yapılandırılır, mobilya varyantı ayrı iş."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek ürün grubu, iki kanal, 15 slayt sabit; müşterinin maliyet verisi dışında değişen çıktı yok."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek koleksiyon, 10 ürün, tek form sabit; ürün alanları ve form adımları üreticiyle yapılandırılır. Diğer site paketleriyle aynı düzey."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Her ajans aynı eklentiyi kurar; farklar ayar ekranında çözülür, beyaz etiket ve özel iş kapsam dışı."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Çekirdek aynı ama Pro oran modülü ödeme kuruluşuna bağlı; başka kuruluş kullanan mağaza yeni modül ister."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Site başına aynı kurulum listesi, sabit fiyat, tek revizyon; hukuki görüş ve özel geliştirme kapsam dışı."
+  },
+  "qral-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Herkes aynı uzantıyı ve aynı ömür boyu lisansı alır; müşteri başına hiçbir yapılandırma yok."
+  },
+  "qral-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Aynı uzantı ve sabit yıllık paket; okul faturası ve koltuk sayısı gibi küçük istisnalar çıkar."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Her ekip kendi kaynak formatını ister; bu şablon ayarıyla çözülür, kurulum elle yapılır, sınır yazılı değil."
+  },
+  "frontend-atlasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Herkes aynı kiti ve lisansı alır; uyarlamayı eğitmen kılavuzla kendisi yapar, 90 günlük destek sınırlı istek getirir."
+  },
+  "frontend-atlasi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "24 laboratuvarın aynı dosyaları herkese satılır; kapsam ve fiyat sabit, özel istek yolu yok."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her eğitmenin konusu ayrı içerik üretimi demek; birim sabit görünse de iş her seferinde sıfırdan yazılır."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yarım gün, 10 yöntem sabit; her şirket kendi iki gerçek kararını getirir, ön çalışmayla uyarlanır."
+  },
+  "karar-kitabi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Tema paketi ve tam set herkese aynı dijital dosya; özel geliştirme ya da uyarlama yok."
+  },
+  "karar-kitabi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Üç çalışma kâğıdından oluşan kit herkese aynı; özel memo ayrı, sabit fiyatlı ve isteğe bağlı."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Bölüm sayısı, revizyon ve süre sabit; içerik, finans modeli ve hibe formatı her müşteride yeniden kurulur."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "10 rakam, 5 iş günü, tek revizyon; müşterinin dosya biçimi değişse de çıktı aynı tutarlılık raporu."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kuluçka alıcısı panel, tek oturum açma ve marka özelleştirmesi ister; yönetici paneli ikinci aşamada, sınır yazılı değil."
+  },
+  "vize-operasyon-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Üç sabit plan, herkes aynı panel; ülke evrak şablonları ürün içi yapılandırma, özel geliştirme sözü yok."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Her acentenin tablo kolonları ve ülke kuralı farklı; eşleme acenteye özel kurulur, sınır yazılı değil."
+  },
+  "vize-operasyon-c": {
+   "p": 4,
+   "k": 0,
+   "g": "İki sabit paket, herkes aynı rapor biçimini alır; ülke ve belge çeşitliliği küçük istisna üretir."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Her müşteri ayrı hikâye listesiyle ayrı bir uygulama yazdırır; paket boyutu ve değişiklik kuralı sabit, sözleşme şablonu henüz yok."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek depo, 20 iş ve izinli komut profili sınırı; her deponun test ve onay düzeni yapılandırmayla bağlanır."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın her müşterisi ayrı uygulama ve ek istek getirir; iletişim ajans üzerinden, kapsam şablonu yok."
+  },
+  "strateji-simulatoru-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurumlar özel soru seti, eşik ayarı ve jüri modu ister; paket yalnız logo, renk ve alt alan adı sunuyor, sınır sözleşmede yok."
+  },
+  "strateji-simulatoru-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Araç herkese aynı raporu üretir; iki sabit paket, kişiye özel iş yok."
+  },
+  "strateji-simulatoru-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Aynı araç çıktısı, 3 sayfalık şablon ve 1 saatlik görüşme; sabit teklif metni var, özel yazılım isteği doğmaz."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Herkes aynı menü çubuğu uygulamasını ve sabit fiyatı alır; müşteri başına yapılandırma yok. Gözlem paneliyle aynı ürün, aynı puan."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Kurulum oturumu ve teşhis raporu sabit kapsamlı; desteklenen sürüm listesi yazılı, özel iş kapsam dışı."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Sponsorluk kademeleri sabit; her orkestratör kısa bir entegrasyon uyarlaması ve öncelikli hata düzeltme bekler."
+  },
+  "actionplan-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Herkes aynı aracı ve aynı Pro şablon paketini alır; kullanıcı kendi projesini kendisi kurar."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek kaynaktan içe aktarma ve 3 teslimlik pilot sabit; ajansın kaynağı ve kabul düzeni uyarlama ister."
+  },
+  "actionplan-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Dört Türkçe şablon, sözlük ve video herkese aynı; özelleştirme ya da görüşme yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Panel Koruyucu Pro içinde herkese aynı sunulur; ayrı satış ve müşteriye özel iş yok."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor biçimi sabit; klasör ile proje eşleme kuralı her ajansta ayrı yapılandırılır, teslim elle."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her alıcı kendi olay şemasını getirir, adaptör ona göre yazılır; kapsam sınırı yazılı değil."
+  },
+  "ai-first-tasarim-a": {
+   "p": 5,
+   "k": 0,
+   "g": "E-kitap ve ekleri herkese aynı; özel istek ürünün parçası değil."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Atölye ve 2 haftalık kurulum sabit kapsamlı, kapsam dışı iş ek fiyatlı; her ekibin yığınına uyarlama gerekir."
+  },
+  "ai-first-tasarim-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek form, tek tablo, sabit fiyat; çıktı aynı yapıda kabul dosyası, fazlası paket dışı."
+  },
+  "aicommandcard-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Yapay zekâ katmanı plandaki herkese aynı iki eylem ve günlük kotayla gelir; işletmeye özel geliştirme yok."
+  },
+  "aicommandcard-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kart ve 4 durum sabit, tek revizyon; her müşterinin React paneli farklı olduğundan bağlama uyarlanır. Benzer entegrasyon paketleriyle aynı düzey."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Herkes aynı eklentiyi ve 7 kontrolü alır; tema ve eklenti çakışmaları küçük istisna üretir."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek paket, 25 site sınırı; ajanslar logolu PDF'te renk ve bölüm özelleştirmesi ister, yapılandırmayla karşılanır."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her ajansın kabul akışı ve revizyon alışkanlığı farklı; ret gerekçesi yeni kapsam doğurur, sınır yazılı değil."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İki paradigma ve 5 dil sabit; blok her üreticinin ürün verisi ve sitesine yapılandırılır, fazlası saatlik."
+  },
+  "b2b-bilesenler-b": {
+   "p": 4,
+   "k": 0,
+   "g": "1 ürün, 2 görünüm, 1 revizyon ve sabit fiyat; ek görünüm birim fiyatla, özel geliştirme yok."
+  },
+  "b2b-bilesenler-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Herkes aynı şablonu indirir; teklif açıkça destek içermiyor."
+  },
+  "banner-post-a": {
+   "p": 4,
+   "k": 0,
+   "g": "6 sabit şablon, logo ve renk ürün içinden; serbest düzenleme yok, özel şablon isteği küçük risk."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aylık görsel adedi ve teslim süresi sabit; her marka için 15 şablonluk set ayrı kurulur, ek istek ayrı fiyatlı."
+  },
+  "banner-post-c": {
+   "p": 3,
+   "k": 0,
+   "g": "10 görsel x 3 boyut sabit; her brifin markası ve varyantı ayrı uyarlanır, teslim elle ya da betikle."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Soru seti, logo ve alan adı kurulumda ajansa göre yapılandırılır; ürün ortak, özel istek riski sürer."
+  },
+  "karar-sihirbazi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek proje, beş seçim, 60 dakikalık çalıştay ve tek revizyon; çıktı şablonu aynı, yazılım işi yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit ortak; satılan şey marka uyarlaması ve soru seti ayarı, yani müşteri başına yapılandırma."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Paket ve 2 revizyon sabit; her marka için tema ve katalog okuma ayrı kurulur. Diğer markaya uyarlanan paketlerle aynı düzey."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ayda sınırsız sunum ve çok marka vaadi kapsamı açık bırakır; ajans müşterileri özel istek üretir."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek CSV ve 5 slayt sabit; şablon her danışmanın markasına ve verisine uyarlanır, 2 revizyon."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Üç sabit paket ve 2 revizyon; ekran listesi, marka ve sahte veri her kurucuya göre kitten yapılandırılır."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Lite kapsamı sabit; her demo ajansın müşterisinin markası ve ekranlarıyla yeniden yapılandırılır."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her işletmenin dışa aktarım biçimi ve vardiya istisnası farklı; eşleme müşteriye özel yazılır, sınır yazılı değil."
+  },
+  "ddd-renderer-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Üç şablonlu paket herkese aynı dosya; özel istek yolu yok."
+  },
+  "ddd-renderer-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Stil paketleri ve demet herkese aynı; açık çekirdek üstünde özel iş satılmıyor."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "3 gün ve 10 modül sınırı sabit; her sistemin yapısı farklı, model ona göre kurulur, fazlası ayrı teklif."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Üç desen ve 3 gün sabit; müşterinin React projesine uyarlama gerekir, desteklenen yığın yazılı değil."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Her form müşteriye özgü alan, koşul ve doğrulama getirir; 20 alan sınırı var ama iş her seferinde özel üretim."
+  },
+  "devpanel-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Herkes aynı 31 ekranlı şablonu alır; lisans tek proje, özel geliştirme sözü yok."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Paket 20 saat uyarlama içerir; ödeme bağlantısı ve marka isteği özel işe kayar, yazılı kapsam şablonu yok. Baz kod satışıyla aynı teklif."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Şube fiyatı, dil ve alerjen istisnaları markaya göre değişir; akış elle yürür, sınır yazılı değil. Zincir menü teklifleriyle aynı düzey."
+  },
+  "e-menum-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Kaynak kod ve belge herkese aynı; teklif açıkça destek ve uyarlama içermiyor."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Aylık sayı herkese aynı ve sabit biçimli; aboneye özel içerik yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 5,
+   "k": 0,
+   "g": "İndirilebilir paket herkese aynı; özelleştirme ve görüşme kapsam dışı."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Bülten ve paket ortak; yıllık 1 saatlik görüşmede ajansın kendi fikirleri puanlanır, bu kısım ajansa göre değişir."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 4,
+   "k": 0,
+   "g": "5 ekran x 2 dil, 3 iş günü, aynı bulgu dosyası biçimi; ek ekran birim fiyatla, geliştirme yok."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 5,
+   "k": 0,
+   "g": "60 maddelik PDF herkese aynı; özel istek ve istisna yolu yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her ekibin yığını ve rotası farklı; adaptör o ekibe göre yazılır, genelleştirme sonraya bırakılmış."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "2 hafta, 20 sayfalık karar belgesi ve aynı şablonlar; yazılım kapsam dışı, kümeye göre değişen yalnız veri."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "5 sayfa, 3 görüşme, tek kategori, 10 iş günü; çıktı biçimi sabit, özel yazılım yok."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "60-120 ekran ve iş listesi müşterinin markasına ve bayi yapısına göre üretilir; sınır sözleşmeye yazılmadı."
+  },
+  "lifeos-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Eklenti herkese aynı ve ücretsiz; çalışma kâğıdı paketi sabit dosya, özel iş yok."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Proje etiketi ve CSV şablonu her serbest çalışana göre ayarlanır; paket sınırı kaynakta yazılı değil."
+  },
+  "lifeos-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Kit herkese aynı testler, rehber ve metinlerden oluşur; uyarlama alıcıya ait."
+  },
+  "luquit-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Üç sabit plan, herkes aynı defter; portal entegrasyonu ve zincir istekleri bilinçli olarak dışarıda."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit ortak ama satılan fark entegrasyon ve destek; özel entegrasyon saatlik ayrılmış, kit sınırı yazılı değil."
+  },
+  "metaframer-kernel-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Herkes aynı kiti ve lisansı alır; özel geliştirme satılmıyor, uyarlama alıcının işi."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Lisans ortak; 1 günlük atölye ekibin şemasına uyarlanır, ajans ek istek getirebilir."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Entegrasyon her şirketin mevcut uygulamasına yazılır; çekirdek değişikliği gerekirse danışmanlığa döner, sınır yok."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Herkes aynı aracı ve 30 günlük paketi kullanır; sorguyu kullanıcı kendisi yapar."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek paket, tek teslim şablonu, 3 kullanıcı; beyaz etiket ve API isteği ileri sürüme bırakılmış."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 4,
+   "k": 0,
+   "g": "10 aday, aynı karar dosyası şablonu, tek revizyon; değişen yalnız müşterinin aday listesi."
+  },
+  "projector-a": {
+   "p": 5,
+   "k": 0,
+   "g": "E-kitap herkese aynı PDF ve EPUB; özel istek üretmez."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "2 günlük program sabit; çalışma ekibin kendi modül haritası üzerinde yürür. Benzer atölyelerle aynı düzey."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her külliyatın biçimi (Markdown, JSON, Word) farklı; içe aktarma müşteriye göre uyarlanır, sabit kapsam şartı yazılı değil."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 5,
+   "k": 0,
+   "g": "16 kümelik paket herkese aynı dosya; özel geliştirme yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Şablon ortak; ekip başı kopya, kurum adı ve 1 saatlik atölye kuruma göre ayarlanır, geliştirme gerektirmez."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 5,
+   "k": 1,
+   "g": "Site yayında ve her okur aynı künye sayfalarını kullanıyor; müşteriye özel hiçbir şey yok."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "25 alan ve 3 şablon sabit; her müşteri markası ayrı kurulur, alanlar elle yönetilir, ajans istisna ister."
+  },
+  "signator-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Herkes aynı ekip paketlerini ve 3 şablonu kullanır; marka ayarını müşteri kendisi yapar."
+  },
+  "signator-c": {
+   "p": 4,
+   "k": 0,
+   "g": "5 kişi, tek şablon, tek revizyon; özel CSS kapsam dışı. Sabit kurulum paketleriyle aynı düzey."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Üç paket var ama yazılı kapsam belgesi yok; kulüp maskot ve özel mod ister, tema şimdilik elle yapılır."
+  },
+  "volley-tap-b": {
+   "p": 5,
+   "k": 1,
+   "g": "Portalda herkes aynı oyunu oynar; portal tek yapı kabul eder, müşteriye özel sürüm yok."
+  },
+  "volley-tap-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Premium paket herkese aynı; etkinlik sürümü teklif dışında tutuluyor."
+  },
+  "woocommnts-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Herkes aynı eklentiyi alır; oranlar CSV ile, kurallar ayar ekranından; ödeme geçidinden bağımsız."
+  },
+  "woocommnts-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Aynı eklenti 10 siteye tek lisansla; ajansın farklı kuralları ayar ekranında çözülür, yalnız ilk mağaza birlikte kurulur."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her mağazanın kaynak verisi ve kimlik eşlemesi farklı; göç elle ve betikle uyarlanır, sınır yazılı değil. Benzer veri aktarma işleriyle aynı puan."
+  },
+  "egitim-demolari-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Rehber, 20 soru ve cevap anahtarı herkese aynı paket; özel iş yok."
+  },
+  "egitim-demolari-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mini ders ve 3 prensip sunumu sabit; yalnız ekip senaryosu uyarlanır. Kendi vakası üzerinde çalışan diğer atölyelerle aynı düzey."
+  },
+  "baz-secenekler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Gün paketi müşterinin o anki işine göre tanımlanır; çıktı listesi yazılsa da her iş özel, kapsam kayması riski yüksek."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum 20 saat uyarlama içerir; ajansın istekleri müşteriye göre değişir, sınır sözleşmeye yazılmadı."
+  },
+  "baz-secenekler-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Başvuru programın standart dosya biçimiyle yapılır; karşı taraf özel istek üretmez, yalnız çağrı koşulları değişebilir."
+  }
+ }
+}

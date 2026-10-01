@@ -1,0 +1,23 @@
+{
+ "slug": "e-menum",
+ "secenekler": {
+  "e-menum-a": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 20,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Proje toplamı 40 saat (20 saat uyarlama, kurulum, marka, dil, KVKK metni, demo) / 2 ödeme; karttaki 40 saat satış teslimi içeriyordu; destek 30 gün düzeltme dahil."
+  },
+  "e-menum-b": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 9,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Aylık elle yürütülen içerik, fark, alerjen ve QR işi yaklaşık 8 saat; kurulum ayı 12 saat, ortalama 9 saat/ödeme; karttaki 120 dk hizmeti içeriyordu, varsayım."
+  },
+  "e-menum-c": {
+   "satis_basina_kurucu_saati": 1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Kopyası satılan kod paketi, müşteriye özel iş yok; teslim 0. Destek yok denmesine rağmen 15 dk kart değeri korundu (soru ve kurulum yazışması)."
+  }
+ }
+}

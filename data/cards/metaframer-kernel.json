@@ -1,0 +1,341 @@
+{
+ "slug": "metaframer-kernel",
+ "baslik": "Çok kiracılı SaaS arka uç başlangıç kiti (metaframer-kernel)",
+ "ozet": "Postgres tabanlı çok kiracılı SaaS temeli (satır düzeyi güvenlik, imzalı kiracı bağlamı, ekleme-yalnız audit, outbox) için lisanslı başlangıç kiti; bugün çalışan tek dilim var, demo ve paketleme yok.",
+ "bugun": {
+  "var": [
+   "Postgres 16 üzerinde RLS (ENABLE + FORCE), imzalı kiracı bağlamı, ekleme-yalnız audit, outbox claim ve yetki karar kaydı",
+   "Tek çalışan dilim: müşteri kaydı oluşturma ve üretilmiş TypeScript istemci",
+   "Python ve JS ASGI host örnekleri; 6.470 satır kaynak, 41.705 satır test",
+   "AGPL-3.0 lisanslı depo, 338 commit; iç pilot için kod ekibi"
+  ],
+  "yok": [
+   "Çalışan demo (docker compose up), README ve ilk 30 dakika rehberi",
+   "Outbox işçi döngüsü, yeniden deneme ve ölü mektup kuyruğu",
+   "Fiyat sayfası, ödeme hesabı ve ticari lisans metni",
+   "Ödeyen müşteri, referans ve kişi listesi"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Vizyonu bırakıp planlı çıkarma işiyle kit satılsın: 149 ve 349 dolarlık lisans, Türkçe kurs, atölye. 12 ayda 80 kit ve 40 kurs baz hedef; sunum yalnız demo çıkınca.",
+  "gpt": "Ürün yapay zekâ önerisini yetki, sürüm ve tek işlemle denetlenebilir yazmaya bağlayan güvenlik katmanı; ilk gelir tek eylem entegrasyonu için 1000-3000 dolarlık paket, ücretsiz test paketiyle.",
+  "ayrisma": "Claude bireysel geliştiriciye ve ajansa tek seferlik kit satar; GPT 10-60 geliştiricili SaaS şirketine yapay zekâ yazma eylemi güvenliği ve hizmet paketi önerir.",
+  "birlesik": "İkisi de çalışan dar dilim, açık kaynak çekirdek ve demo olmadan satışı reddeder; ilk satış küçük, sabit kapsamlı ve kanıtlı olmalı. Platform vizyonu satılmaz."
+ },
+ "analist_gorusu": "En gerçekçi yol: 14 günlük demo ve README ile kiti çıkarıp küçük ajanslara sabit paketle satmak; 6 ayda birkaç bin dolar mümkün ama ilk ödeme 2 aydan önce gelmez.",
+ "secenekler": [
+  {
+   "id": "metaframer-kernel-a",
+   "ad": "tenantkit lisanslı kit (Solo ve Team, küresel)",
+   "tur": "kod satışı",
+   "musteri": "Yeni B2B SaaS kuran solo geliştirici ve 2-5 kişilik ekipler (Node, Python, Postgres)",
+   "is": "Çok kiracılı izolasyon, audit ve outbox temelini ilk günde kurup ürün işine dönmek",
+   "tetikleyici": "Yeni SaaS projesinin başlangıcı; ilk pilot müşterinin veriler karışmıyor mu sorusu",
+   "teklif": "Açık kaynak çekirdek ücretsiz; ticari lisans: Solo 1 geliştirici, Team 5 geliştirici, 12 ay güncelleme, 14 gün iade",
+   "fiyat": "Solo 149 USD, Team 349 USD tek seferlik; ilk 10 müşteriye yüzde 50 kurucu indirimi",
+   "kanal_birincil": "GitHub deposu ve README, Show HN gönderisi, r/node ve r/PostgreSQL gönderileri",
+   "kanal_yedek": "dev.to teknik yazı, Product Hunt, Indie Hackers, awesome-postgres listesi, 20 kişisel mesaj",
+   "ilk_adim": "docker compose up ile çalışan demo, README ve ücretsiz çekirdek yayını; Lemon Squeezy hesabı açıp test ödemesi",
+   "ilk_kapsam": "Mevcut RLS, imzalı bağlam, audit, outbox claim, müşteri örnek modülü; compose, make drill, README, ilk 30 dakika rehberi, lisans ve fiyat sayfası",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda ve AGPL; ticari lisans için tek yazar olmak gerekir, yazar listesi doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KDV, e-Arşiv ve cayma metni mali müşavir ve hukukçu teyidi bekliyor; kit sertifika vaadi vermez."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yurt dışı satış için Lemon Squeezy planlı; hesap açılmadı, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (solo kurucu, küçük ekip) ama 20 kişilik isim listesi yok."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "GitHub, Show HN, r/node adıyla ve ilk adımıyla tanımlı; yedek kanallar listeli."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Beklenen 200 saat, 20 saat/hafta ile 10 hafta; sınırın üstünde, ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 12 bin TL; tavanın çok altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı kiti alır; özel geliştirme satılmaz."
+    }
+   },
+   "kapi_duzeltme": "Yazar listesini çıkar; Lemon Squeezy hesabı ve test ödemesi; 20 isimlik liste; 2 haftalık denemede kalan eforu ölç, kapsamı L1 ile sınırla.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 8592,
+    "degisken_maliyet_tl": 460,
+    "sabit_gider_aylik_tl": 5500,
+    "baslangic_nakit_tl": 12000,
+    "kalan_efor_saat": {
+     "min": 110,
+     "beklenen": 200,
+     "max": 300
+    },
+    "ilk_tahsilat_gun": {
+     "min": 50,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 2,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 17184,
+     "baz": 103104,
+     "iyi": 257760
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 2,
+     "baz": 12,
+     "iyi": 30
+    },
+    "alti_ay_musteri": {
+     "kotu": 2,
+     "baz": 12,
+     "iyi": 30
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.05
+    },
+    "dayanak": "Plan 5 ve 6: yüzde 85 Solo + yüzde 15 Team karması 179 USD x 48 = 8592 TL; MoR yüzde 5 + 0,5 USD, iade yüzde 5. Plan satışı yayından sayar (2. ay 10, 3. ay 25 lisans hedefi); 8-10 hafta çıkarma ve ilk tahsilat gecikmesiyle pencere ~3,5 ay: kanıtsız hedefin yarısı baz 12, iyi 30. Kurucu indirimi modelde yok. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Küçük SaaS ekipleri bedava çekirdek varken izolasyon ve audit temeli için lisans öder",
+    "yontem": "Demo ve README yayınla; 20 kişiye kişisel mesaj, 10 kişiyle 20 dakikalık demo; ön sipariş ya da yazılı niyet iste; Show HN denemesi",
+    "sure_gun": 21,
+    "maliyet_saat": 60,
+    "maliyet_tl": 1500,
+    "basari_olcutu": "En az 100 depo yıldızı ve en az 3 kişiden ön ödeme ya da ücretli lisans niyeti",
+    "birakma_olcutu": "21 günde ön ödeme yok ve demo çalıştıran 15 kişiden az",
+    "sonraki_dilim": "Lemon Squeezy sayfası ve ilk 10 kurucu lisansı; sonra outbox işçisi"
+   },
+   "etiketler": {
+    "segment": "Solo SaaS kurucusu, küçük ekip",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Postgres, Node, Python",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 0 ve 2: depo bayrakları NO_GO, demo yok, kernel kapsamında %5-8. Plan 4: rakipler Supabase, Tenancy for Laravel, ShipFast (8.427 müşteri) fiyatları 199-379 USD. Plan 3: gelir ve alıcı sayıları varsayımdır. Derinlik belgesi A.4: RLS, imzalı bağlam, audit, outbox var; relay tek geçişli. Ödeyen müşteri yok."
+  },
+  {
+   "id": "metaframer-kernel-b",
+   "ad": "Ajans paketi: Team lisansı ve 1 günlük atölye (Türkiye)",
+   "tur": "kod satışı",
+   "musteri": "Türkiye'de 2-5 kişilik backend ekibi olan yazılım evi ve ajans",
+   "is": "Her müşteri projesinde aynı denetlenebilir çok kiracılı çekirdeği kullanmak ve güvenlik anketine test kanıtıyla cevap vermek",
+   "tetikleyici": "Yeni B2B portal sözleşmesi; müşterinin güvenlik anketi ya da denetim talebi",
+   "teklif": "Team lisansı (5 geliştirici, 12 ay güncelleme) ve ekibinizin şemasına uyarlanan 1 günlük atölye; sabit kapsam, havale ve fatura",
+   "fiyat": "40.000 TL + KDV paket (Team lisansı 16.752 TL, atölye 25.000 TL değerinde)",
+   "kanal_birincil": "LinkedIn'de yazılım evi liderlerine doğrudan mesaj; Istanbul Coders ve Yazılımcı Mekanı Discord toplulukları",
+   "kanal_yedek": "Ankara ve İstanbul yazılım meetup'ları, Ekşicode Telegram grupları, iç pilot ekibinin vaka notu",
+   "ilk_adim": "Demo yayınlandıktan sonra 10 ajansın adını çıkar, 20 dakikalık demo görüşmesi iste; iç pilot ekibinden alıntı al",
+   "ilk_kapsam": "Seçenek A kapsamı artı 1 günlük atölye müfredatı, güvenlik anketi cevap şablonu ve Team lisans metni; havale ve fatura düzeni",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda ve AGPL; Team lisansı için yazar listesi ve lisans metni doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Lisans sözleşmesi, KDV ve fatura biçimi mali müşavir ve hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura ya da sanal POS yolu belli; hesap açılmadı, test ödemesi yok."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net ama ajans adları ilk iki haftada çıkarılacak; liste yok."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "LinkedIn, Istanbul Coders, Yazılımcı Mekanı adlı; ilk adım ve yedek kanal var."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kit artı atölye hazırlığı beklenen 230 saat, 11-12 hafta; ajans satış döngüsü ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 12 bin TL; tavanın altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Tek paket ve sabit fiyat var ama atölyenin şemaya uyarlama kapsamı yazılı sınırlanmadı; özel geliştirmeye kayabilir."
+    }
+   },
+   "kapi_duzeltme": "A seçeneğinin kapılarını kapat; 10 ajans adı çıkar; havale ve fatura düzenini mali müşavirle netleştir; atölye kapsamını yazılı sınırla (G8).",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 40000,
+    "degisken_maliyet_tl": 1800,
+    "sabit_gider_aylik_tl": 3000,
+    "baslangic_nakit_tl": 12000,
+    "kalan_efor_saat": {
+     "min": 140,
+     "beklenen": 230,
+     "max": 330
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 30,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 40000,
+     "iyi": 120000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "Plan 5 ve 8: Team 349 USD x 48 = 16.752 TL, atölye 25.000 TL, paket indirimli 40.000 TL. Derinlik belgesi C.7: 3 ajansa teklif ve yüzde 33 dönüşüm = 1 paket; Team görüşme dönüşümü yüzde 15. Ajans listesi yok; 8-10 haftalık çıkarma sonrası 6 ayda baz 1, iyi 3 (üç teklifin tamamı). Dönüşüm varsayımdır, kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Ajans backend ekipleri güvenlik anketi acısı için sabit fiyatlı paket öder",
+    "yontem": "Demoyu 10 ajansa göster; güvenlik anketi cevap şablonunu ücretsiz ver; atölye ve Team paketi için yazılı teklif gönder",
+    "sure_gun": 28,
+    "maliyet_saat": 40,
+    "maliyet_tl": 500,
+    "basari_olcutu": "En az 3 ajansla demo görüşmesi ve en az 1 yazılı teklif kabulü ya da ön ödeme",
+    "birakma_olcutu": "10 ajans görüşmesinde teklif kabulü yok ve anket acısı en fazla 2 ajansta doğrulandı",
+    "sonraki_dilim": "İlk ajansla atölye; sonra Frappe danışmanlarına denetim listesi"
+   },
+   "etiketler": {
+    "segment": "Yazılım evi, ajans backend ekibi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Postgres, Python, Node",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Derinlik belgesi B.3 ve C.7: ajans personası, tek kişi öneren iki onaylı karar, 1-2 hafta döngü, 20.000 TL altı bütçe eşiği (varsayım). Plan 3.1: Team lisansı ve kurumsal atölye fiyatı varsayımdır. Belgelerde iç pilot için kod ekibiyle mevcut ilişki var; ödeyen müşteri ve ajans listesi yok."
+  },
+  {
+   "id": "metaframer-kernel-c",
+   "ad": "Tek eylem çok kiracılı güvenlik entegrasyon paketi",
+   "tur": "hizmet",
+   "musteri": "10-60 geliştiricili çok kiracılı B2B SaaS şirketinin kıdemli mühendisi ve CTO'su",
+   "is": "Yapay zekâ önerisiyle yapılan tek bir yazma eylemini yanlış kiracıya yazmadan, yetki ve audit kaydıyla atomik işlemek",
+   "tetikleyici": "İlk yapay zekâ destekli yazma özelliğinin müşteriye verilmesi",
+   "teklif": "Mevcut uygulamada tek eylem için sandbox entegrasyonu, yanlış kiracı ve tekrar istek negatif testleri, makbuz çıktısı; sabit kapsam",
+   "fiyat": "1.500 USD sabit paket (yaklaşık 72.000 TL); ücretsiz test paketi ön adım",
+   "kanal_birincil": "GitHub'da açık örnek adaptör ve yanlış kiracı test paketi; OpenFGA ve Cerbos kullanıcılarının sorularında paylaşım",
+   "kanal_yedek": "Sistem entegratörlerine LinkedIn mesajı, GitHub Action olarak test paketi, teknik yazı",
+   "ilk_adim": "Müşteri kaydı eylemi için örnek adaptör ve 3 yanlış bağlam testini yayınla; 5 şirketin mühendisine sandbox teklifi gönder",
+   "ilk_kapsam": "Tek eylem tanımı, kiracı ve yetki bağlamı bağdaştırıcısı, 3 negatif test, makbuz görünümü, geri alma notu; bir mevcut uygulamada 1-2 haftalık entegrasyon",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda ve AGPL; hizmette müşteri kodu ve lisans yükümlülüğü yazılı değil."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Sorumluluk sınırı ve sözleşme hukukçu teyidi bekliyor; sertifika vaadi yok."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli; hesap ve fatura düzeni hazır değil."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net ama isim listesi yok; kıdemli mühendis, CTO ve güvenlik sorumlusu ayrı kişiler."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanallar adlı ama somut hedef ve ilgili başlıklar belirlenmedi; sahte talep yok."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Demo ve belge 40-80 saat; satış döngüsü üç onaylı ve ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi 0-50 USD civarı; tavanın çok altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Tek eylem sabit paket; her kurulum çekirdek değişikliği isterse danışmanlığa döner, sınır yazılı değil."
+    }
+   },
+   "kapi_duzeltme": "Kapsamı tek eylem ve tek yığınla yazılı sınırla; sorumluluk sınırlı sözleşme şablonu; 20 hedef şirket listesi; ilgili başlıkları adlandır.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 72000,
+    "degisken_maliyet_tl": 1100,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 4000,
+    "kalan_efor_saat": {
+     "min": 50,
+     "beklenen": 90,
+     "max": 150
+    },
+    "ilk_tahsilat_gun": {
+     "min": 30,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 50,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 72000,
+     "iyi": 216000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "GPT kernel dosyası: ilk paket 1000-3000 USD hipotezi; orta değer 1.500 USD x 48 = 72.000 TL. Demo ve belge 40-80 saat; sözleşme şablonu ve sandbox hazırlığı için 10-30 saat eklendi (varsayım). Müşteri entegrasyonu satış sonrası teslimdir, hariç. Baz 1 satış (10 görüşme x yüzde 5-15), kötü 0. Kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Küçük SaaS şirketleri tek eylem güvenlik entegrasyonu için sabit paket öder",
+    "yontem": "Açık örnek ve negatif test paketini yayınla; 10 şirketin mühendisiyle 15 dakikalık görüşme; tek eylem sandbox teklifi ve fiyat sor",
+    "sure_gun": 21,
+    "maliyet_saat": 70,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 2 şirketin sandbox denemesi ve en az 1 yazılı paket niyeti ya da ön ödeme",
+    "birakma_olcutu": "10 görüşmede sandbox denemesi yok ya da her şirket çekirdek fork istiyor",
+    "sonraki_dilim": "İlk müşteride 1-2 haftalık entegrasyon, sonra ikinci eylem ve adaptör şablonu"
+   },
+   "etiketler": {
+    "segment": "10-60 geliştiricili B2B SaaS",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Postgres, Node, Python",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT kernel dosyası: persona tablosu, pilot P0 kabul ölçütleri, ücretli paket hipotezi; bunlar doğrulanmış talep değil. Rakipler Supabase, OpenFGA, Cerbos, Temporal fiyatları kamuya açık. Depo bayrakları kernelReady false. Ödeyen müşteri ve isim listesi yok; GPT TAM üretmemiş."
+  }
+ ]
+}

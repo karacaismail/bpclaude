@@ -1,0 +1,65 @@
+{
+ "slug": "baz-secenekler",
+ "kararlar": [
+  {
+   "itiraz": "Seçenek B tetikleyici (yönetmelik değişikliği) kaynakta doğrulanmamış; kart kesin sunuyor.",
+   "karar": "kabul",
+   "degisiklik": "B tetikleyici: kesin ifade 'iddiası (metin doğrulanmadı)' oldu.",
+   "gerekce": "E-menum planı bölüm 1: yönetmelik metni bu planda doğrulanmadı; karşılaştırma dosyası da doğrulamıyor."
+  },
+  {
+   "itiraz": "A: 6.000 ₺ günlük ücretin dayanağı yok; yazılı teklif yalnız 4.000 ₺, 180.000 ₺ paket imzasız.",
+   "karar": "kabul",
+   "degisiklik": "A fiyat: 6.000 ₺ hedef/kanıtsız olarak işaretlendi; kanıt notuna eklendi; net fiyat finans itirazıyla düzeltildi.",
+   "gerekce": "SGK planı bölüm 5: yazılı 4.000 ₺, 6.000 ₺ varsayım; kahve zinciri teklifi imzasız."
+  },
+  {
+   "itiraz": "C hibe değil pay karşılığı yatırım; satış kriterleri fon veren için zorlama (puan sorunu).",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart zaten hibe değil, seyreltici yatırım diyor; puan konusu bu adımda ele alınmaz."
+  },
+  {
+   "itiraz": "C kanalı: çağrı kapalı ve tarih yok; adlı kanal erişilebilir kanal değil.",
+   "karar": "kabul",
+   "degisiklik": "G5 gecti iken test oldu; notu ve kapi_duzeltme güncellendi.",
+   "gerekce": "Karşılaştırma dosyası bölüm A: çağrı kapandı, sonraki tarih bulunamadı; G5 test tanımı."
+  },
+  {
+   "itiraz": "C G6: ilk tahsilat üst sınırı 240 gün 6 ayı aşıyor; kaldi olmalı.",
+   "karar": "ret",
+   "degisiklik": "G6 test kaldı; yalnız not güncellendi (üst sınır 6 ayı aşar, belirsiz).",
+   "gerekce": "Sonraki çağrı tarihi bilinmiyor; kaldı için döngünün 6 ayı aşması gösterilmeli, belirsizlik test."
+  },
+  {
+   "itiraz": "C G5: kanal adlı ama çağrı kapalı, tarih yok; gecti olmamalı.",
+   "karar": "kabul",
+   "degisiklik": "G5 gecti iken test oldu; notu güncellendi.",
+   "gerekce": "Somut hedef adlı ama erişim yok; çağrı kapalı, tarih belirsiz."
+  },
+  {
+   "itiraz": "A ödeme adedi baz 30, iyi 60: dayanak aylık fatura diyor, gün adedi ödeme sayılmış.",
+   "karar": "kabul",
+   "degisiklik": "net fiyat 6.000 iken 20.000 (aylık 5 gün); ödeme adedi 8/30/60 iken 1/4/8; müşteri 1/1/2.",
+   "gerekce": "Aylık fatura ile 30-60 gün tahsilat gecikmesi: ödeme sayısı gün sayısı değil."
+  },
+  {
+   "itiraz": "A baz tahsilat 160.000 ₺; ikinci müşteride 6.000 ₺ ödemesi kanıtsız, baz 32-80 bin olmalı.",
+   "karar": "kabul",
+   "degisiklik": "tahsilat kötü/baz/iyi 32/160/336 bin iken 20/80/160 bin; yalnız yazılı 4.000 ₺ esas alındı.",
+   "gerekce": "6.000 ₺ varsayım; temkinli kural: düşük gelir. 4 aylık fatura x 20.000 ₺ = 80.000 ₺."
+  },
+  {
+   "itiraz": "C iyi tahsilat 1.350.000 ₺: pay karşılığı fon gelir değil, 110-240 gün 6 ayı aşabilir.",
+   "karar": "kabul",
+   "degisiklik": "iyi tahsilat 1.350.000 iken 0 (ödeme adedi ve müşteri 0).",
+   "gerekce": "Çağrı kapalı, tarih yok; en erken 110 gün sürüyor; pay karşılığı fon satış geliri sayılmaz."
+  },
+  {
+   "itiraz": "B dönüşüm üst sınırı 0,1 iyimser; 0,05 olmalı.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "E-menum planı bölüm 3: görüşmeden 4 anlaşma (%10) varsayım olarak yazılı; kart bunu varsayım diye işaretliyor."
+  }
+ ]
+}

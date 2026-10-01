@@ -1,0 +1,23 @@
+{
+ "slug": "ik-paneli-hizmeti",
+ "secenekler": {
+  "ik-paneli-hizmeti-a": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Karttaki 45 saat satış 40 saat üretimi içeriyordu; üretim teslime taşındı. Baz 1 Lite (3 gün, 24 saat) ve 1 Pro (7 gün, 56 saat); ödeme başına ortalama 40."
+  },
+  "ik-paneli-hizmeti-b": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 24,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Lite 3 iş günü, 24 saat. Karttaki 26 saatlik üretim ve keşif ayrıştırıldı; keşif, teklif ve sözleşme 6 saat satışta. Ajans kanalında ayda 1 demo taahhüdü ek aylık teslim sayılmadı."
+  },
+  "ik-paneli-hizmeti-c": {
+   "satis_basina_kurucu_saati": 25,
+   "teslim_saat_odeme_basina": 6,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: kurulum ve eşleme 12 saat, aylık istisna listesi ve dışa aktarma 3 saat; (12+2x3)/3 ödeme. Karttaki 90 dk hizmet dakikası teslime, 30 dk yazışma destekte. Taşeron sayılmadı."
+  }
+ }
+}

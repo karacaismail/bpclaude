@@ -1,0 +1,59 @@
+{
+  "slug": "aicommandcard",
+  "kararlar": [
+    {
+      "itiraz": "B fiyatı 12.000 ₺ iki kaynakta yok; baz 1 satış buna dayanıyor",
+      "karar": "kismen",
+      "degisiklik": "B alti_ay_tahsilat/odeme/musteri baz 12000/1/1 idi, 0 oldu; fiyat varsayım olarak kaldı",
+      "gerekce": "Kaynaklarda fiyat yok, talep doğrulanmadı; temkinli kural gereği baz satış çıkarıldı."
+    },
+    {
+      "itiraz": "B birincil kanal React Türkiye grubu yalnız 122 üye; dönüşüm kanıtsız",
+      "karar": "kismen",
+      "degisiklik": "B kanal_birincil Telegram idi, GitHub/Storybook, r/reactjs ve Kommunity (1.025 üye) oldu; Telegram yedeğe taşındı",
+      "gerekce": "Kaynak 122 üyeyi doğruluyor; daha geniş kanallar da kaynakta var. Dönüşüm kanıtsızlığı baz 0 ile işlendi."
+    },
+    {
+      "itiraz": "A zincir pilotu kaynakta 3 ay ücretsiz; kart 1 ay diyor; zincir sözleşmesi üst planda",
+      "karar": "kismen",
+      "degisiklik": "A kanal_yedek ve kanit_notlari: zincire 3 ay ücretsiz deneme, zincir sözleşmesi ayrı üst planda, ek gelir getirmeyebilir",
+      "gerekce": "Kaynak zincir için 3 ay, 5 pilot kafe için 1 ay diyor; kart ilk_adim doğru, yedek kanal eksikti."
+    },
+    {
+      "itiraz": "A ücretli hesap sayısı doğrulanmamış, 20 isimlik liste yok; G4 gecti sayılmış",
+      "karar": "kabul",
+      "degisiklik": "A G4 gecti idi, test oldu; kapi_duzeltme'ye hesap sayımı ve 20 isim listesi eklendi",
+      "gerekce": "G4 gecti için isim listesi ya da belgelenmiş ilişki gerekir; hesap sayısı kaynakta varsayım."
+    },
+    {
+      "itiraz": "B G6 test olmalı: satış döngüsü ölçülmedi, ilk tahsilat 120 güne uzanıyor",
+      "karar": "kabul",
+      "degisiklik": "B G6 gecti idi, test oldu; kapi_duzeltme'ye satış döngüsü ölçümü eklendi",
+      "gerekce": "G6 test tanımı satış döngüsü ölçülmediğini kapsar; kart notu da bunu itiraf ediyor."
+    },
+    {
+      "itiraz": "A baz 6 ödeme 3 müşteri; plan ilk 5 hesabı 9. ayda veriyor",
+      "karar": "kabul",
+      "degisiklik": "A baz tahsilat/ödeme/müşteri 3000/6/3 idi, 0/0/0 oldu; iyi 9500/19/10 idi, 2500/5/2 oldu",
+      "gerekce": "Plan baz ilk yükseltmeyi 9. aya koyuyor; karttaki 4-6. ay hesapları kaynakta yok."
+    },
+    {
+      "itiraz": "A ilk_tahsilat_gun min 70 kısa; 120 saatlik iş 15 haftanın üstünde",
+      "karar": "kismen",
+      "degisiklik": "A ilk_tahsilat_gun min 70/max 130 idi, 105/210 oldu",
+      "gerekce": "Plan haftada 6-8 saat öngörür: 80-208 saat 10-26 hafta eder, pilot ve deneme eklenir."
+    },
+    {
+      "itiraz": "B baz 1 satış iyimser; 20 mesajın %1-5 dönüşümü 0,2-1 satış",
+      "karar": "kabul",
+      "degisiklik": "B baz 1 satış/12000 idi, 0 oldu",
+      "gerekce": "Beklenen değer 1'in altında ve talep kanıtı yok; temkinli seçim düşük gelir."
+    },
+    {
+      "itiraz": "B iyi senaryo 3 satış 36.000 ₺ kanıtsız iyimser",
+      "karar": "kabul",
+      "degisiklik": "B iyi 3 satış/36000 idi, 2 satış/24000 oldu",
+      "gerekce": "20 mesajda %5 dönüşüm 1 satış verir; ek kanallarla 2 satış üst sınır kabul edildi."
+    }
+  ]
+}

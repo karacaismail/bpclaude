@@ -1,0 +1,665 @@
+{
+ "kriter": "A2",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Zam sonrası menü baskısı ve yeni açılış tekrarlıyor; yönetmelik karekodu yöntem olarak tanıyor ama zorunlu kılmıyor, geçiş ertelenebilir."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Fiyat güncellemesi ve yeni franchise sözleşmesi tekrarlayan olay; karekod yönetmelikte yalnız tanınan yöntem, tarihli zorunluluk yok."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tetikleyici ajansın restoran projesinde tek modülü bitirme ihtiyacı; düzensiz gelen müşteri işi, tarihli ya da tekrarlayan olay yok."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kapora istenmesi ve yaz öncesi diaspora alım dönemi tekrarlayan olaylar; rapor almak zorunlu değil, alıcı erteleyebilir."
+  },
+  "parselq-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mart-Mayıs sezon öncesi portföy tazeleme her yıl tekrarlıyor; kart almak zorunlu değil, ertelenebilir."
+  },
+  "parselq-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Haftalık alıcı görüşmesi öncesi hazırlık ve ayda 5-30 dosya tekrarlıyor; son tarih ya da mevzuat baskısı yok."
+  },
+  "destektesvik-a": {
+   "p": 4,
+   "k": 1,
+   "g": "TÜBİTAK 1501 ve 1507 çağrı kapanışları takvimde tarihli; başvuru gönüllü olduğu için tam zorunluluk değil."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Çağrı dönemlerinde mükellef soruları tekrarlıyor; büro başvuranın kendisi değil, tarama aboneliğini erteleyebilir."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Çağrı öncesi üye bilgilendirmesi kurum için yalnız bir fırsat; karar yıllık bütçe planına bağlı, zorlayan olay yok."
+  },
+  "asgari-iscilik-a": {
+   "p": 5,
+   "k": 1,
+   "g": "2026 SGK genelgesi tabloyu günceldışı bıraktı; eksik işçilik tebliğinde bir aylık süre ve kilitlenen teminat ertelenemeyen tarihli zorunluluk."
+  },
+  "asgari-iscilik-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Genelge sonrası tablo yenileme ve tebliğdeki bir aylık süre tarihli; büro yükümlünün kendisi değil ve olay her mükellefte aynı anda yaşanmıyor."
+  },
+  "asgari-iscilik-c": {
+   "p": 5,
+   "k": 1,
+   "g": "Genelge sonrası hesabı yenileme, bir aylık tebliğ süresi ve ilişiksizlik belgesi öncesi kontrol; yüklenici için mevzuata bağlı tarihli zorunluluk."
+  },
+  "zincir-danismanligi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kasım-Aralık hediye sezonu ve iş devri planı tekrarlayan, tarihli olaylar; zorunluluk yok, karar ertelenebiliyor. B ile aynı okuma."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Denetim kendiliğinden tetikleyici değil; yeni sezon bütçesi ya da ajans değişikliği yalnız dolaylı fırsat."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Fiyat güncelleme dönemi tekrarlıyor ve yönetmelik karekodu yöntem sayıyor; zorunluluk ya da ceza baskısı yok. Aynı zincir planıyla eş puan."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Komisyon ve kargo tarifesi 2026'da dört kez değişti; tekrarlayan olay ama satıcı hesabı erteleyebiliyor."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Tarife değişimi (2026'da dört kez) ve yeni müşteri alımı tekrarlıyor; danışman için sabit tarihli zorunluluk yok."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Tarife değişimi, kampanya sonrası zarar şüphesi ve dönem sonu gözden geçirme tekrarlıyor; rapor ertelenebilir."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 1,
+   "g": "2026'da dört tarife değişikliği ve zararlı ay sonu tekrarlayan olaylar; eğitime başlamak için tarihli zorunluluk yok."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Zararlı ay sonu ve tarife değişikliği tekrarlıyor; danışmanlık almak ertelenebilir, tarihli zorunluluk yok."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Faaliyet raporu ve proje takvimi yıllık döngü; atölye için doğrudan zorlayan olay yok, eğitim ertelenebilir."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Fuar öncesi hazırlık ve alıcı denetimi tekrarlayan olaylar; site yenilemek zorunlu değil, ertelenebilir. Aynı tetikleyicili üretici seçenekleriyle eş puan."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 0,
+   "g": "İhracata yeni başlama ya da alıcının site sorusu bir kerelik ve dolaylı; tarihli ya da tekrarlayan olay yok."
+  },
+  "kurumsal-site-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tetikleyici ajansa gelen çok dilli site işi ve kısa teslim süresi; olay var ama düzensiz. Müşteri işiyle tetiklenen diğer seçeneklerle eş puan."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Fuar tarihleri, fason sipariş düşüşü ve tarife değişimi tekrarlayan olaylar; zorunlu son tarih yok, paket ertelenebilir."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Çeyrek sonu zarar raporu, tarife değişikliği ve destek başvurusu için iş planı ihtiyacı tekrarlıyor; ertelenebilir."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Fuar öncesi ve alıcının teknik föy istemesi tekrarlayan olaylar; zorunlu tarih yok. Fuar tetikleyicili diğer site seçenekleriyle eş puan."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "KVKK ceza haberleri ve müşteri sorusu tekrarlıyor; yükümlülük sürekli ama ajans için tarihli son tarih yok."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Sepet terki ve güncelleme sonrası bozulan tablo düzensiz olaylar; tarihli zorunluluk yok, ücretsiz sürümle ertelenir."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "KVKK ceza haberi ve ajansın müşteriye uyum kalemi sunması tekrarlıyor; kurulum için tarihli zorunluluk yok."
+  },
+  "qral-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Günde 10-20 bağlantı yapıştırma alışkanlığı var ama satın almayı tetikleyen olay yok; kartın kendisi tarih ve zorunluluk olmadığını yazıyor."
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Eylül ve şubat dönem başı materyal hazırlığı tekrarlıyor; öğretmen için zorunlu değil, ertelenebilir."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor teslimi tekrarlayan olay; kaynak biçimlendirme şablonu için tarihli zorunluluk yok."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Her yeni dönemde müfredat yeniden yazılıyor; tekrarlayan ama ertelenebilir. Dönem başı tetikleyicili diğer seçeneklerle eş puan."
+  },
+  "frontend-atlasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İş başvurusu ve mülakat öncesi portföy ihtiyacı kişiye özel tarihli olay; paket almak zorunlu değil, ertelenebilir."
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yeni kurs ya da modül tarihi tekrarlayan olay; üretimi dışarıdan almak zorunlu değil, ertelenebilir."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yıllık eğitim planı yalnız bir fırsat; atölyeyi doğrudan zorlayan tarihli olay ya da son tarih yok."
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Önceliklendirme ya da teklif karşılaştırma anı düzensiz; zorunlu tarih yok, ücretsiz site ihtiyacı karşılıyor."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Her karar oturumu sonrası toparlama işi ayda 2-10 kez tekrarlıyor; kit almak ertelenebilir."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 4,
+   "k": 1,
+   "g": "KOSGEB ve BİGG çağrı takvimi tarihli, hazırlık penceresi 4-6 hafta; başvuru gönüllü. Çağrı tarihli diğer başvuran seçenekleriyle eş puan."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Çağrı kapanmadan 2-4 hafta önce ve demo günü öncesi ihtiyaç doğuyor; tarih dışarıdan sabit, denetim almak gönüllü."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Yeni dönem planı ve demo günü her dönem tekrarlıyor; kurum lisansı ertelenebilir, zorunluluk yok."
+  },
+  "vize-operasyon-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Şubat-Mayıs yoğun sezonu, personel ayrılması ve kaçan randevu tekrarlıyor; panele geçiş ertelenebilir."
+  },
+  "vize-operasyon-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yoğun dönemde geciken dosyalar ve tekrar tekrar eksik bilgi sorma her sezon yineleniyor; tarihli zorunluluk yok. Aynı alıcılı panel seçeneğiyle eş puan."
+  },
+  "vize-operasyon-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Randevu, uçuş ve otel tarihi netleşince evrakın o güne hazır olması gerekiyor; tarih dışarıdan sabit ama rapor almak gönüllü."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yatırımcı toplantısı ya da program rapor tarihi kuruma özel tarihli olay; zorunlu değil, ertelenebilir."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 0,
+   "g": "İnceleme kuyruğunun uzaması süregelen sıkıntı; satın almayı zorlayan tarihli ya da belirgin olay yok."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Büyük müşteriden uygulama talebi düzensiz geliyor; ajans işi geri çevirebilir. Müşteri işiyle tetiklenen diğer ajans seçenekleriyle eş puan."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yeni çağrı ve ön kuluçka dönemi takvimli ve tekrarlı; kurum pilotu bütçe dönemine bağlı, ertelenebilir."
+  },
+  "strateji-simulatoru-b": {
+   "p": 4,
+   "k": 1,
+   "g": "KOSGEB ve BİGG başvuru dönemleri tarihli; başvuru ve rapor gönüllü. Çağrı tarihli diğer başvuran seçenekleriyle eş puan."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Hibe başvurusu, banka kredi görüşmesi ve ürün hattı kararı öncesi ihtiyaç doğuyor; olaylar müşteriye özel, ertelenebilir."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Makine donması yineleniyor ve kamuya açık şikâyet kayıtları var; tarihli zorunluluk yok, ücretsiz çekirdek ertelemeyi kolaylaştırıyor."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Tetikleyici aynı donma şikâyetinin ikinci kez gelmesi ya da sürüm güncellemesi; düzensiz, tarihsiz."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Sponsorluk için şimdi ödeme yaptıran olay yok; donma şikâyetleri yalnız dolaylı, karar süresiz ertelenebilir."
+  },
+  "actionplan-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni proje başlangıcı ya da boşa giden ajan oturumu düzensiz olay; zorunlu tarih yok."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşterinin teslimde 'bunu istemedim' demesi ve yeniden açılan iş her teslimde yinelenebiliyor; tarihli zorunluluk yok."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 0,
+   "g": "İlk yan projeyi başlatmak bir kerelik ve kişinin kendi belirlediği an; tarihli tetikleyici yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Makine donması ya da abonelik limitine çarpma rastgele olay; tarihli zorunluluk yok."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ay başı fatura günü her ay tekrarlıyor ama yapay zekâ maliyetini projeye paylaştırmak zorunlu değil; A ile aynı okuma."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Takılı kalan ajan işinin gecikmesi rastgele bir olay; düzenli ya da tarihli tetikleyici yok, alıcı da belirsiz."
+  },
+  "ai-first-tasarim-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yöneticiden yapay zekâ özelliği talebi ya da iş görüşmesi düzensiz; rehber almak için tarihli zorunluluk yok."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yönetimden yapay zekâ özelliği baskısı, erişilebilirlik şartı ve çeyrek bütçesi tekrarlıyor; tarihi belli zorunluluk yok."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Teslim öncesi kabul ve müşteri incelemesinde reddedilen arayüz her teslimde yineleniyor; ertelenebilir. Teslim kabulü tetikleyicili seçeneklerle eş puan."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yeni sezon menüsü, olumsuz yorum ve zam kararı tekrarlıyor; üst plana geçiş ertelenebilir."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ürün sahibinden gelen panele yapay zekâ ekleme talebi düzensiz; demo baskısı var ama tarihli zorunluluk yok."
+  },
+  "atonota-denetim-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni kampanya öncesi kontrol ve çerez bandı haberleri dolaylı; tarihli zorunluluk yok, ücretsiz sürüm yetiyor."
+  },
+  "atonota-denetim-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ay sonu rapor haftası ve sözleşmedeki aylık rapor maddesi her ay müşteriye teslim gerektiriyor; yasal değil, sözleşmeye bağlı."
+  },
+  "atonota-denetim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Küçük revizyon talepleri ve retainer yenileme görüşmesi tekrarlıyor; kabul kaydı için tarihli zorunluluk yok."
+  },
+  "b2b-bilesenler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Tetikleyici yeni site teklifi ya da yenileme; blok, site işine bağlı dolaylı bir ek, kendi tarihli olayı yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni katalog ya da pazar yeri projesinde tasarım kararı düzensiz gelen iş; tarihli zorunluluk yok."
+  },
+  "b2b-bilesenler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Müşteri için çok dilli ürün sayfası işi çıkınca ihtiyaç doğuyor; düzensiz, ücretsiz şablonlar ertelemeyi kolaylaştırıyor."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Menü ve fiyat değişikliği, günlük kampanya ve yeni ürün tekrarlıyor; görsel modülü ertelenebilir."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aylık içerik takvimi ve kampanya dönemi tekrarlıyor; takvimi işletme kendi belirliyor, zorunluluk yok."
+  },
+  "banner-post-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kampanya dönemleri ve çok ürünlü müşteri brifi ajansta tekrarlıyor; toplu üretim paketi ertelenebilir."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Her yeni fiyat talebi ajans için tekrarlayan olay; araç olmadan da teklif yazılabildiği için ertelenebilir."
+  },
+  "karar-sihirbazi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni proje teklifi öncesi teknoloji seçimi düzensiz; alıcı kararı kendisi verebiliyor, tarih yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın yeni sitesini yayına alması bir kerelik olay; keşif formu kiti için zorunluluk yok."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Zam sonrası fiyat güncellemesi, fuar kaydı ve franchise başvuru dönemi tekrarlıyor; sunum yenilemek ertelenebilir."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Sekiz müşteriye her ay kampanya sunumu yetiştirmek ajansın aylık müşteri teslimi; yasal değil, müşteri taahhüdüne bağlı."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşteri raporu teslim tarihi ve yeni veriyle tekrar hazırlık yineleniyor; ertelenebilir. Rapor teslimi tetikleyicili seçeneklerle eş puan."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yatırımcı görüşmesi tarihinin netleşmesi ya da pilot müşterinin ürünü görmek istemesi kuruma özel olay; zorunlu değil, ertelenebilir."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans ayda 4-6 teklif veriyor; büyük teklif öncesi demo ihtiyacı tekrarlıyor ama demo şart değil, ertelenebilir."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Aylık bordro kapanışı her ay tekrarlayan zorunlu iş; eksik çıkış ve vardiya çakışması kapanışı geciktiriyor. Aciliyet ölçülmedi, kanıt varsayım."
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Tetikleyici e-kitabı bitirme ya da ilk modüler monolit görevi; bir kerelik, tarihli zorunluluk yok."
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İşe alım dalgası, büyük refactor öncesi ve mimari gözden geçirme büyüyen ekipte tekrarlıyor; şablon almak ertelenebilir."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "İşe alım dalgası, refactor öncesi ve sahiplik çakışması tekrarlayan olaylar; değerlendirme ertelenebilir. Aynı tetikleyicili şablon paketiyle eş puan."
+  },
+  "devpanel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Müşteri denetim sorusu ya da yanlış toplu silme olayı düzensiz; tarihsiz, ekip kendi yazarak erteleyebilir."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni arka ofis formu teklifi düzensiz gelen iş; tarihli zorunluluk yok."
+  },
+  "devpanel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni müşteri paneli ya da yan proje başlangıcı düzensiz bir olay; zorunluluk yok. Proje başlangıcıyla tetiklenen diğer şablon seçenekleriyle eş puan."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Müşterisinden QR menü talebi gelmesi ajans için düzensiz iş; tarihsiz, hazır betiklerle ertelenebilir."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ayda en az iki fiyat ya da ürün değişimi ve yeni sezon menüsü tekrarlıyor; düzenleme baskısı doğrulanmadı."
+  },
+  "e-menum-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Bir restoran müşterisinin QR menü talebi gelince bakılıyor; düzensiz ve tarihsiz."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni eklenti kararı öncesi hafta sonu ya da başarısız lansman düzensiz olay; abonelik için zorlayıcı tarih yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni eklenti kararı öncesi hafta sonu bir kerelik an; tarihli zorunluluk yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Hizmet işinde sessiz dönem ya da çeyrek planlama yalnız bir fırsat; ürün hattı kararını zorlayan olay yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yeni dilin yayına alınması ve çeviri tesliminden sonra bozulan arayüz her dilde yineleniyor; erişilebilirlik tarihi doğrulanmadı."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Projeye ilk kez dil ya da RTL eklenmesi geliştirici için bir kerelik olay; kontrol listesi almak ertelenebilir."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Her yeni dil sürümünde çeviri dosyası gelince son dakika düzeltmeleri yineleniyor; tarihli zorunluluk yok."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Genel kurul gündemi, pahalı ajans teklifi ve hibe çağrısı tekrarlayan olaylar; teşhis almak zorunlu değil, ertelenebilir."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Melek yatırımcı toplantısı ve hızlandırıcı başvurusu kuruma özel tarihli olaylar; rapor almak ertelenebilir."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekim-Kasım bütçe planlaması, bayi kaybı ve rakibin portal açması tekrarlayan olaylar; tarihli zorunluluk yok."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Karar yorgunluğu ve büyüme kararı dönemi belirsiz; sınav haftası yalnız ikincil kitle için, zorlayan olay yok."
+  },
+  "lifeos-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Hafta sonu fatura ya da teslim ve müşterinin haftalık rapor istemesi her hafta müşteriye teslim gerektiriyor; yasal zorunluluk değil."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Birincil alıcı olan rutin takipçisi için satın almayı tetikleyen olay yok; yazılan başlangıç anı yalnız ikincil geliştirici varsayımına ait."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Portal paketi yenileme faturası, kaçan müşteri ve yeni danışman alımı tekrarlıyor; deftere geçiş ertelenebilir. Benzer ofis paneli seçeneğiyle eş puan."
+  },
+  "luquit-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni müşteri projesinin başlangıcı düzensiz olay; kit almak zorunlu değil."
+  },
+  "metaframer-kernel-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Yeni SaaS projesinin başlangıcı düzensiz ve kimse zorunlu kılmıyor; proje başlangıcıyla tetiklenen diğer kit seçenekleriyle eş puan."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Her yeni B2B portal sözleşmesinde müşterinin güvenlik anketi ya da denetim talebi yineleniyor; tarihli zorunluluk yok."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "İlk yapay zekâ destekli yazma özelliğinin müşteriye verilmesi bir kerelik olay; tarihi belli zorunluluk yok."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Lansman ve marka başvurusu öncesi ad seçimi kişinin kendi tarihli olayı; yılda 1-2 kez, ertelenebilir. Aynı tetikleyicili elle teslimle eş puan."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Her yeni müşteri brifi ad aramasını tetikliyor; tekrarlayan ama düzensiz, zorunlu tarih yok."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Lansman ya da marka başvurusu öncesi ad kararı ve seçilen adın .com'unun dolu çıkması; tarih kişiye özel, ertelenebilir."
+  },
+  "projector-a": {
+   "p": 2,
+   "k": 0,
+   "g": "İşyerinde çok kiracılı mimariye geçiş ya da mülakat daveti düzensiz; kitap almak için tarihli zorunluluk yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Büyük çok kiracılı müşteri sözleşmesi, yeni geliştirici katılımı ve Aralık-Ocak eğitim bütçesi tekrarlıyor; ertelenebilir."
+  },
+  "projector-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Proje kapanışı ve müşteriye teslim her projede yineleniyor; portal için tarihli zorunluluk yok."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni bir ürün ya da fikre başlama anı kişinin kendi belirlediği düzensiz olay; tarihli zorunluluk yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yeni dönem başlangıcı ve dönem sonu çıktı raporu her dönem tekrarlıyor; lisans ertelenebilir."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Klasik kitap almadan önce çeviri sorusunu aramak düzensiz bir an; zorunluluk yok, alım ertelenebilir."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yeni kurumsal kimlik ya da site teslimi ve müşterinin imza talebi ajansta her projede yineleniyor; ertelenebilir."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İşe alım dalgası ve logo görünmüyor geri bildirimi tekrarlıyor; zorunlu tarih yok. Aynı tetikleyicili kurulum paketiyle eş puan."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yeni çalışan ile logo, unvan ya da telefon değişimi tekrarlayan olaylar; kurulum ertelenebilir."
+  },
+  "volley-tap-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Sezon açılışı ve maç günü takvimli, tekrarlayan olaylar; kampanya oyunu zorunlu değil, ertelenebilir."
+  },
+  "volley-tap-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Tetikleyici yok; oyuncu portal öneri listesinde canı isteyince bir oyun dener, ödeme de yapmaz."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Arkadaşla rövanş isteği anlık heves; ödeme yaptıran tarihli ya da tekrarlayan olay yok."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kampanya dönemleri (11.11, Black Friday) ve kapıda ödeme iadesi yaşanan hafta tekrarlıyor; mevzuat tarihi yok, ertelenebilir."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans yılda 10-30 mağaza kuruyor; her yeni kurulum ve blok ödeme sayfasına geçiş tekrarlayan olay, ertelenebilir."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Katalog göçü mağaza için bir kerelik olay; tekrarlamıyor ve ertelenebilir. Bir kerelik tetikleyicili diğer seçeneklerle eş puan."
+  },
+  "egitim-demolari-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Haftalık ders hazırlığı ve yeni dönem ya da konu başlangıcı tekrarlıyor; paket almak zorunlu değil."
+  },
+  "egitim-demolari-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yeni ekip kurulumu, onboarding dönemi ve süreç değişimi tekrarlayan olaylar; atölye için tarihli zorunluluk yok."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yıl sonu e-ticaret sezonu ve mevzuat değişikliği sonrası güncelleme ihtiyacı tekrarlıyor; iki alıcı da işi erteleyebilir."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yönetmelik değişikliği iddiasının metni doğrulanmadı; ajansa restoran talebi düzensiz geliyor, tarihli zorunluluk yok."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Çağrı penceresi dönemsel ama 2026-1 kapandı ve sonraki çağrı tarihi bilinmiyor; bugün şimdi dedirten tarih yok."
+  }
+ }
+}

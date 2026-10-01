@@ -1,0 +1,665 @@
+{
+ "kriter": "B2",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 1,
+   "g": "QR menü aramaları var ve 20'den çok marka aynı sorguda yarışıyor; hacim ölçülmedi, Türkçe ana sayfa henüz yayında değil."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Genel QR menü araması var ama zincir alıcısı satıcıyı ilişki ve teklifle seçiyor; zincire özel sorgu için veri yok."
+  },
+  "zabuno-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans ya da restoran panel modülü uyarlamasını aramıyor; pazar yeri ya da dizin adlandırılmadı, satış doğrudan teklifle."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İmar durumu sorgulama türü aramalar var, ücretli rakip raporlar aynı sorguda; hacim tahmin, ölçülmedi."
+  },
+  "parselq-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Emlakçı arsa güven kartını aramıyor; pazar yeri ya da dizin yok, keşif WhatsApp mesajı ve dernek sunumuna bağlı."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışmanlık ofisi karar dosyasını adıyla aramıyor; yalnız belge kontrol listesi şablonu araması olası, niyet ölçülmedi."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 0,
+   "g": "KOBİ programı adıyla arıyor (TÜBİTAK 1507 gibi); hacim ölçülmedi, rakip siteler yoğun, program sayfaları henüz yok."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Arama terimleri tek tek KOBİ sorguları; mali müşavirin portföy tarama aracı aradığı belgelenmedi, keşif oda webinarı."
+  },
+  "destektesvik-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Oda ve OSB yönetimi üye taraması hizmetini aramıyor; pazar yeri yok, keşif kurucunun doğrudan teklifine bağlı."
+  },
+  "asgari-iscilik-a": {
+   "p": 1,
+   "k": 0,
+   "g": "İnşaat firması özel yazılım projesini arayarak almıyor; pazar yeri yok, satış mevcut ilişkiden yürüyor."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Asgari işçilik hesaplama adıyla aranıyor, rakip hesaplayıcılar var; arama hacmi ölçülmedi."
+  },
+  "asgari-iscilik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı hesaplamayı arıyor, uzman teyitli dosya kontrol raporunu değil; keşif ücretsiz hesaplayıcıdan dolaylı, hacim ölçülmedi."
+  },
+  "zincir-danismanligi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Zincir yönetimi 90 günlük dijital paketi aramıyor; iş ilişkiyle satılıyor, arama hacmi küçük tahmin edildi."
+  },
+  "zincir-danismanligi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Pazarlama müdürü zincir denetimini adıyla aramıyor; olgunluk testi sayfası yok, satış LinkedIn mesajıyla."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Genel QR menü araması var ama zincir alıcısı ilişkiyle alıyor; merkezden yayın sorgusu için veri yok."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Satıcı komisyon ve kâr hesaplama arıyor; 15'ten çok ücretsiz rakip araç aynı sorguda, 30-60 bin/ay hacim doğrulanmadı."
+  },
+  "kar-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışman müşteri paneli aramıyor; yalnız satıcıya dönük hesaplayıcı aramaları üzerinden dolaylı keşif olası."
+  },
+  "kar-pusulasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Satıcı hesaplayıcı arıyor, SKU katkı raporu hizmetini değil; rapora geçiş ücretsiz araç çıktısı üzerinden varsayım."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 0,
+   "g": "E-ticaret eğitimi aranıyor ama ücretsiz akademiler ve üniversite programları yoğun; hacim verisi yok, alan adı yayında değil."
+  },
+  "titanlar-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Satıcı kâr ve komisyon hesaplayıcı arıyor, ücretli kâr teşhisi danışmanlığını değil; ücretsiz araçlar baskın, hacim yok."
+  },
+  "titanlar-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Oda ve belediye eğitim birimi atölyeyi arayarak almıyor; satış teklif ve ziyaretle, pazar yeri yok."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Web sitesi yaptırma aranıyor ama ajans ve site kurucu rekabeti yoğun; anahtar kelime hacimleri doğrulanamadı."
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yeni ihracatçı site arıyor, serbest çalışan pazar yerlerinde talep var; fiyat rekabeti yoğun, hacim ölçülmedi."
+  },
+  "kurumsal-site-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Astro sanayi teması nişi küçük; benzer ürün satış verisi bulunamadı, satış mağazası keşif sağlayan bir pazar yeri değil."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Üretici paketi adıyla aramıyor; kârlılık hesabı araması olası ama hacim tahmin, pazar yeri kategorisi yok."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı komisyon ve başabaş hesaplayıcı arayabilir, fizibilite paketini değil; hacim verisi yok, keşif dolaylı."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Genel web tasarım araması var ama kumaş üreticisinin katalog sitesi paketini aradığına dair veri yok; satış kişisel e-postayla."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 2,
+   "k": 1,
+   "g": "KVKK eklentisi araması olası ama wordpress.org'daki KVKK eklentilerinin hepsi 10 kurulumun altında; hacim bilinmiyor."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Mağaza sahibi wordpress.org ve aramada taksit tablosunu adıyla arıyor; ödeme eklentileri 3.000-10.000 kurulumlu, hacim ölçülmedi."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "R10.net ücretli WordPress işleri bölümü ve Bionluk hazır pazar; KVKK kurulum hizmetinin orada arandığı ölçülmedi."
+  },
+  "qral-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Mağazada bağlantıyı Markdown olarak kopyalama aranıyor, rakipler 100 bin ile 1 milyon kullanıcılı; hepsi ücretsiz, hacim yok."
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Öğretmen QR kod üretici arıyor ama ücretsiz siteler yoğun; sınıf QR sayfası sorgusunun hacmi doğrulanmadı."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Araştırma ekibi şablon paketini aramıyor; yalnız mağazadaki kopyalama aramalarından dolaylı keşif olası, kanıt yok."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Eğitmen eğitim sitesi kitini adıyla aramıyor; tema pazarında benzer Astro paketleri var ama niş, Türkçe hacim ölçülmedi."
+  },
+  "frontend-atlasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Öğrenen Türkçe frontend konularını arıyor; ücretsiz kaynak rekabeti yoğun, hacim ölçülmedi, site yayında değil."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Eğitmen ders üretim hizmetini aramıyor; pazar yerlerinde eğitim talebi var ama bu iş için kategori doğrulanmadı."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Şirket karar atölyesini adıyla aramıyor; kurumsal eğitim pazar yeri kategorisi var ama satış mevcut ilişkiden."
+  },
+  "karar-kitabi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "SWOT, Pareto gibi yöntem adları aranıyor; nasıl yapılır sorguları rekabetli, hacim ölçülmedi, gerçek yollu sayfalar yok."
+  },
+  "karar-kitabi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Facilitatör karar memosu kitini aramıyor; şablon galerisi ücretli satışa elverişli bulunmadı, keşif danışman referansı."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "KOSGEB iş planı ve yatırımcı sunumu hazırlama aranıyor; ajans rekabeti yoğun, hacim tahmin, ölçülmedi."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kimse rakam tutarlılığı denetimini adıyla aramıyor; yalnız yatırımcı sunumu hazırlama aramasından dolaylı keşif olası."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kuluçka ve TTO program yöneticisi bu lisansı aramıyor; dizin ya da pazar yeri yok, satış doğrudan e-posta ve atölyeyle."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Vize takip programı araması planda düşük hacimli sayılıyor; acentelerin panel aradığına dair veri yok, dizin kaydı talep değil."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Acente doğrulama pilotunu aramıyor; yalnız evrak kontrol Excel şablonu aramasından dolaylı keşif, organik trafik bilinmiyor."
+  },
+  "vize-operasyon-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Başvurucu ülke evrak listesini adıyla arıyor; acente ve ücretsiz içerik rekabeti yoğun, arama hacmi doğrulanamadı."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Girişimler MVP yaptıracak ekibi arıyor, Clutch ve Bionluk hazır dizin; rekabet yoğun, anahtar kelime hacmi doğrulanamadı."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 1,
+   "g": "GitHub Marketplace ve blueprint kataloğu aranabilir yüzey ama paket yok; ücretli kurulum hizmeti adıyla aranmıyor."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansların pazar yerlerinde alt yüklenici aradığı varsayım; hacim ve dizin verisi yok, satış LinkedIn mesajıyla."
+  },
+  "strateji-simulatoru-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kuluçka ve uygulayıcı kuruluş ön eleme aracını aramıyor; pazar yeri yok, keşif kurucunun e-postasına bağlı."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 0,
+   "g": "KOSGEB iş planı nasıl hazırlanır türü aramalar var; rakip içerik ve genel yapay zekâ sohbeti yoğun, hacim doğrulanmadı."
+  },
+  "strateji-simulatoru-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Mevcut danışmanlık müşterisi bu raporu aramıyor; keşif tümüyle kurucunun kişisel e-postasına bağlı."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici bellek sorununu adıyla arıyor, kamuya açık şikâyet kayıtları var; ücretsiz rakipler güçlü, hacim ölçülmedi."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Sorun giderme araması olası ama destekli kurulum hizmeti adıyla aranmıyor; hacim ölçülmedi, pazar yeri yok."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Orkestratör projeleri sponsorluk ya da kabul API'si aramıyor; keşif elle açılan PR ve sorun kaydıyla."
+  },
+  "actionplan-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajanla çalışan geliştirici görev kırılım aracını GitHub ve toplulukta arıyor; ücretsiz rakipler yaygın, hacim bilinmiyor."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans lideri kabul kurulumunu adıyla aramıyor; proje aracı mağazası olası yüzey ama uygulama listeli değil."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkçe ajan görev şablonu araması ölçülmedi; keşif video ve sosyal medyaya bağlı, niyet düşük."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici ajan maliyet aracını arıyor, ücretsiz rakipler 18-22 bin yıldızlı; rekabet yoğun, arama hacmi doğrulanamadı."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans sahibi proje bazlı yapay zekâ maliyet raporunu aramıyor; pazar yeri ya da dizin yok, satış LinkedIn mesajıyla."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Operasyon sorumlusu iş izleme kartı kurulumunu aramıyor; hedef alıcı ve dizin adlandırılmadı."
+  },
+  "ai-first-tasarim-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkçe tasarım sistemi rehberi araması ölçülmedi; npm ve GitHub keşfi var ama e-kitap için pazar yeri yok."
+  },
+  "ai-first-tasarim-b": {
+   "p": 1,
+   "k": 0,
+   "g": "CTO atölye ve kurulum hizmetini arama ya da pazar yerinde aramıyor; keşif kurucunun LinkedIn ağına bağlı."
+  },
+  "ai-first-tasarim-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans form ve tablo kabul dosyası paketini aramıyor; keşif ücretsiz örnek ve kurucu ağıyla sınırlı."
+  },
+  "aicommandcard-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kafe sahibi menü yazımı için yapay zekâ katmanını dışarıda aramıyor; keşif yalnız ürün içi duyuruyla."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 1,
+   "g": "React bileşeni npm ve GitHub'da aranıyor ama entegrasyon hizmeti adıyla aranmıyor; rekabet yoğun, hacim bilinmiyor."
+  },
+  "atonota-denetim-a": {
+   "p": 3,
+   "k": 1,
+   "g": "wordpress.org dizininde site sağlığı ve SEO eklentisi aranıyor; 70 bin eklenti arasında rekabet yoğun, hacim bilinmiyor."
+  },
+  "atonota-denetim-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans aylık rapor aracı arayabilir ama hacim doğrulanmadı; ajans lisansı kategorisi yok, satış birebir görüşmeyle."
+  },
+  "atonota-denetim-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans müşteri kabul kaydı hizmetini aramıyor; pazar yeri ya da dizin kategorisi yok, ajans ilişkisi doğrulanmadı."
+  },
+  "b2b-bilesenler-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Üretici ürün sayfası bloğunu aramıyor; satış mevcut site müşterisine teklif satırı olarak, pazar yeri yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans tek ürün iki görünüm paketini aramıyor; LinkedIn ve topluluk gösterimi arama kaynaklı keşif değil."
+  },
+  "b2b-bilesenler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Şablon pazar yerlerinde tema kategorisi aranıyor; ürün sayfası alt niş, rekabet yoğun, hacim doğrulanamadı."
+  },
+  "banner-post-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Restoran görsel modülünü adıyla aramıyor; post şablonu rehber aramaları olası ama hazır şablon rekabeti yoğun, hacim yok."
+  },
+  "banner-post-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Kaynakta bu hizmet için arama ya da pazar yeri yolu tanımlı değil; satış üç mevcut müşteriye doğrudan teklifle."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Toplu görsel üretim API'leri için pazar var ama küçük ajansın bu paketi aradığına dair veri yok; satış doğrudan mesajla."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans keşif formu aracını adıyla aramıyor; ücretsiz ve yabancı form araçları yoğun, arama hacmi doğrulanamadı."
+  },
+  "karar-sihirbazi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans stack karar dosyası hizmetini aramıyor; pazar yeri ya da dizin kategorisi yok, satış birebir mesajla."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Proje keşif formu araması varsayım; içerik sayfası planlı, hacim doğrulanamadı, ücretsiz rakipler var."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurumsal sunum tasarımı araması olası ama kaynak arama kanalını zayıf puanlıyor; hacim ve pazar yeri bilinmiyor."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Butik ajans sunum üretim aboneliğini arama ya da pazar yerinde aramıyor; satış LinkedIn notuyla."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışman karar dosyası üretimini aramıyor; yalnız ücretsiz örnek slayt ve şablon aramasından keşif olası, kanal doğrulanmadı."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun yatırımcı demosu hizmetini adıyla aradığı bilinmiyor; anahtar kelime hacimleri doğrulanamadı, yapay zekâ üreticileri hazır seçenek."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans beyaz etiket demo paketini arama ya da dizinde aramıyor; pazar yeri yok, satış elle yazılan mesajla."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Puantaj yazılımı aranıyor ama mutabakat kurulum hizmetinin adıyla arandığı kanıtlanmadı; hacim yok, bulut İK rakipleri yoğun."
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkçe modüler monolit şablonu aramasının hacmi doğrulanmadı; keşif e-kitap alıcı listesine bağlı, pazar yeri yok."
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mimari diyagram ve ADR araçları İngilizce aranıyor; ücretsiz rakipler güçlü, rekabet yoğun, hacim doğrulanmadı."
+  },
+  "ddd-renderer-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Teknik lider mimari değerlendirme hizmetini arayarak almıyor; pazar yeri ve dizin yok, satış mevcut ilişki ve LinkedIn ile."
+  },
+  "devpanel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "İç araç alternatifi aramaları var ama hacim doğrulanamadı; entegrasyon paketi adıyla aranmıyor, depo görünür değil."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Form kütüphanesi sorun sayfalarında soru soranlar var ama ücretli entegrasyon arayan değiller; hacim bilinmiyor."
+  },
+  "devpanel-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Yönetim paneli şablonu pazar yerlerinde aranıyor, lider rakip 120 bin satışlı; rekabet yoğun, yeni satıcı görünmüyor."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Beyaz etiket QR menü araması ayda 10-100 düzeyinde tahmin ediliyor; Django için pazar yeri yok, satış kişisel mesajla."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Çok şubeli marka menü yönetimini arayabilir ama görünürlük bilinmiyor; fiyat kontrol listesi içeriği yalnız plan."
+  },
+  "e-menum-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Betik pazar yerinde QR menü kategorisi aranıyor, rakipler 2 bin satışa ulaşmış; Django kategorisi dar, ürün listeli değil."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "28 ekosistem sayfasıyla arama planlı ama sayfalar yayında değil; geliştiricinin fırsat bülteni aradığı ölçülmedi."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Keşif paketi pano sayfalarından yönlendirmeyle bulunacak; pano yayında değil, arama hacmi ölçülmedi."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajans ürün hattı fırsat paketini dizinde ya da aramada aramıyor; satış LinkedIn kişisel mesajıyla."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı çok dilli site denetimini adıyla aramıyor, pazar yeri yok; ilgili anahtar kelimelerin hacmi doğrulanamadı."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Çok dilli arayüz konuları niş bir Türkçe sorgu; modül yayında değil, ayda 3.000 ziyaret varsayım, ücretsiz içerik güçlü."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Eylem mağazası aranabilir yüzey ama listelenmek trafik getirmiyor; SaaS ekibinin bu pilotu aradığına dair veri yok."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Küme yöneticisi teşhis paketini adıyla aramıyor; rehber içeriğiyle arama keşfi varsayım, anahtar kelime hacmi doğrulanamadı."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucu doğrulama raporunu adıyla aramıyor; ücretsiz rehber araması olası, hacim bilinmiyor, keşif atölye ve toplulukla."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurumsal ekip bayi portalı yazılımı arayabilir ama strateji paketini aramıyor; anahtar kelime hacmi doğrulanamadı."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Mağazada yöntem kartı eklentisi araması düşük niyetli; Türkçe arama hacmi ölçülmedi, keşif LinkedIn gönderisine bağlı."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Bağımsız çalışan mağazada zaman izleyici arıyor; rekabet yoğun, hacim ölçülmedi, eklenti yayında değil."
+  },
+  "lifeos-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni sekme şablonu GitHub ve mağazada aranabilir ama ücretli kit için arama kanıtı yok; ücretsiz seçenek çok."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Emlak CRM aramaları var ve yerel rakipler aynı sorgularda görünüyor; hacim doğrulanamadı, rekabet yoğun."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 1,
+   "g": "React cam arayüz bileşeni npm ve GitHub'da aranıyor, ücretsiz rakip 6,3 bin yıldızlı; paket yayımlanmadı, hacim bilinmiyor."
+  },
+  "metaframer-kernel-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Çok kiracılı Postgres ve SaaS başlangıç kiti aranıyor, rakip kit binlerce müşterili; rekabet yoğun, hacim varsayım."
+  },
+  "metaframer-kernel-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Yazılım evi lisans ve atölye paketini arama ya da dizinde aramıyor; satış LinkedIn mesajı ve toplulukla."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yetkilendirme aracı kullanıcılarının soruları dolaylı keşif sağlayabilir; ücretli entegrasyon adıyla aranmıyor, hacim yok."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Boş alan adı bulma ve marka adı üretici aranıyor; Namelix gibi ücretsiz rakipler güçlü, Türkçe hacim doğrulanmadı."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans yıllık paketi adıyla aramıyor, pazar yeri yok; yalnız alan adı bulma aramalarından dolaylı keşif olası."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Elle karar dosyası hizmeti aranmıyor; alan adı bulma aramaları ve depodaki örnek dolaylı yüzey, satış kurucu ağıyla."
+  },
+  "projector-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkçe SaaS mimarisi araması niş; önizleme sitesi dizinli ama niyetli arama kanıtı yok, hacimlerin tümü varsayım."
+  },
+  "projector-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Yazılım evi ekip atölyesini arama ya da pazar yerinde aramıyor; satış mevcut ilişki ve kişisel mesajla."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Belge sitesi aracı kullanıcıları ücretsiz içe aktarıcıyı bulabilir; ücretli göç pilotu için arama ya da pazar yeri kanıtı yok."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Şablon pazar yerlerinde kurucu şablonu rakibi çok ama Türkçe karar şablonu araması doğrulanamadı; keşif kendi siteleriyle."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Kuluçka program yöneticisi mentor lisansını aramıyor; dizin ya da pazar yeri yok, satış doğrudan e-postayla."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Okur hangi çeviri sorusunu adıyla arıyor; hacim ve rekabet doğrulanmadı, ortaklık bağlantıları henüz yok."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans toplu imza aracını adıyla aramıyor; imza üretici aramalarından dolaylı keşif olası, hacim doğrulanmadı."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Gmail ve Outlook imza ekleme, imza oluşturucu aranıyor; ücretsiz ve köklü rakipler aynı sorguda, hacim doğrulanmadı."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum hizmeti adıyla aranmıyor; imza ekleme aramaları dolaylı yüzey ama ücretsiz yardım sayfaları karşılıyor."
+  },
+  "volley-tap-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kulüp ya da marka kampanya oyununu aramıyor; pazar yeri yok, satış kurucunun kişisel mesajıyla."
+  },
+  "volley-tap-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Oyuncu portalda spor ve iki oyunculu listelerinde oyun arıyor; rekabet yoğun, oynanış hacmi ve gelir payı bilinmiyor."
+  },
+  "volley-tap-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Oyuncu itch.io'da yerel çok oyunculu etiketlerinde arıyor; görünürlük garantisi yok, hacim bilinmiyor."
+  },
+  "woocommnts-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Mağaza sahibi wordpress.org'da taksit ve kapıda ödeme arıyor; 6 sonuç var, en büyüğü 3.000'den çok kurulumlu, hacim doğrulanmadı."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans müşteri mağazası için taksit eklentisini dizinde arıyor ama ajans paketi aranan bir kategori değil; hacim bilinmiyor."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Yorum göç aracı arayan var ama kategori küçük ve ücretsiz rakip öne çıkıyor; göç hizmeti için pazar yeri kanıtı yok."
+  },
+  "egitim-demolari-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Öğretmen ders materyali arar ama pazar yeri kaynakta yok, varsayım; hacim bilinmiyor, ücretsiz içerik yoğun."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekip lideri atölyeyi aramıyor; ücretsiz prensip demosu ve arama sayfası dolaylı yüzey, hacim ve niyet ölçülmedi."
+  },
+  "baz-secenekler-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Gün paketi arama motorunda ya da dizinde aranmıyor; satış iki mevcut ilişkiye yazılı teklifle."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Betik pazar yerinde QR menü kodu aranıyor ama kurucu orada değil; Django barındıran ajansın kurulumlu paket aradığı bilinmiyor."
+  },
+  "baz-secenekler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Resmi başvuru sistemi ve çağrı duyurusu herkese açık hazır kanal; çağrı kapalı, sonraki tarih bilinmiyor."
+  }
+ }
+}

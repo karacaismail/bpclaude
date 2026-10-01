@@ -1,0 +1,665 @@
+{
+ "kriter": "C3",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kafe sahibi tek başına 1-7 günde karar verir ama teklifte ilk ay ücretsiz; ilk temastan ödemeye yaklaşık 5 hafta. Ölçülmedi."
+  },
+  "zabuno-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Satın alma 6-10 hafta, üstüne 60 günlük ücretsiz pilot ve yıllık sözleşme; üç kademeli onay. Toplam 3 ayı aşar."
+  },
+  "zabuno-c": {
+   "p": 3,
+   "k": 0,
+   "g": "30.000 TL'lik tek modül işi; soğuk ajansa demo, kapsam ve teklif adımı var, karar ajans sahibinde. Tahmin 2-6 hafta, ölçülmedi."
+  },
+  "parselq-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Bireysel alıcı tek karar verir; ücretsiz ön kontrol yanıtından sonra 1-3 günde ödeme bağlantısıyla sipariş. Ön kontrol adımı elle."
+  },
+  "parselq-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ofis sahibi tek karar verir; WhatsApp görüşmesi, ücretsiz kartlar ve 7 günlük deneme sonrası 7-10 günde ödeme. Ölçülmedi."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ortak ofis ilişkisi, yetkili pilot, uzman onayı ve ikinci teslim gerekir; döngü 4-8 hafta ve çok adımlı. Ofis adı henüz yok."
+  },
+  "destektesvik-a": {
+   "p": 4,
+   "k": 0,
+   "g": "KOBİ kurucusu ya da finans sorumlusu tek karar verir; nitelik 1-3 gün, kapanış yaklaşık 1 hafta; çağrı tarihi kararı hızlandırır."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Büro sahibi tek karar verir ama teklif 8 hafta ücretsiz pilotla başlar; ödeme kararı pilot sonuna kalır, döngü 2-3 ay."
+  },
+  "destektesvik-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Oda, OSB ya da üniversite satın alması 3-6 ay; yönetim kurulu düzeyinde onay ve 8 haftalık pilot şartı var."
+  },
+  "asgari-iscilik-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Teklif sürecindeki tek adayda karar 1-3 ay; mali işler, genel müdür ve ortak onayı gerekiyor. 3 ayı aşmadığı için 2."
+  },
+  "asgari-iscilik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ücretsiz pilot ve iade penceresi bitmeden ödeme yok; mali müşavir bürosu kararı pilot sonrasına kalır, döngü 2 ayı buluyor."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "10.000 TL'lik dosya kontrolü; ücretsiz kısa teşhis, izinli dosya paylaşımı ve teklif adımı var; tek onay olası, 2-6 hafta."
+  },
+  "zincir-danismanligi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Onay genel müdürde, muhatap onaylayan kişi değil; 180.000 TL için sözleşme şablonları hazır değil ve kabul edilmiş teklif kaydı yok."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Soğuk zincire LinkedIn mesajı, ön denetim, görüşme ve yazılı teklif; pazarlama müdürü bütçe için üst onay arar. Döngü ölçülmedi."
+  },
+  "zincir-danismanligi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "60 gün ücretsiz pilot, ardından genel müdür kararı ve yıllık sözleşme; abonelik ayrıca 90 günlük paketin imzasına bağlı."
+  },
+  "kar-pusulasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Satıcı kendi kararıyla alır: bireysel 1-3 gün, KOBİ 1-2 hafta; onay zinciri yok. İlk satışlar birebir ekran paylaşımıyla."
+  },
+  "kar-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışman tek karar verir ama satış demo ve 60 gün ücretsiz denemeyle başlar; ödeme deneme sonuna kalır, döngü 2-3 ay."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "1.000 TL'lik rapor için dosya izni ve teslim gerekir; sahip ve mali müşavir sürece girer. Tahmin 2-6 hafta, ölçülmedi."
+  },
+  "titanlar-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Webinar, 20 dakikalık görüşme ve ödeme bağlantısı; 7 günlük erken kayıt penceresi, tek karar verici. İlk temastan ödemeye 1-2 hafta."
+  },
+  "titanlar-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Satıcı tek karar verir; görüşme sonrası aynı gün teklif, karar 3-7 gün. Strateji paketinde 2 haftaya uzayabilir; ölçülmedi."
+  },
+  "titanlar-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Oda ve belediyede teklif, genel sekreter ve yönetim kurulu onayı 1-3 ay; üstüne 30-60 gün vade. Ödeme 3 ayı aşar."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 0,
+   "g": "85.000 TL için patron ve ihracat müdürü onaylar; plan teklif sonrası 2-4 haftada imza hedefliyor. Soğuk kanalda ölçülmedi."
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Patron tek karar verir ama 45.000 TL için denetim raporu, teklif ve yüzde 50 avans adımı var; tahmin 1-3 hafta, ölçülmedi."
+  },
+  "kurumsal-site-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici ya da ajans kaynak kodu kendi kartıyla, görüşmesiz alır; onay zinciri yok. Hiç satış gözlenmedi."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "90.000 TL için patron ve aile onayı, yüzde 50 avans; planın kendi tahmini 4-8 hafta ve ilk görüşmede kapanmıyor."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yönetici hazırlar, patron tek toplantıda onaylar; 35.000 TL için keşif ve avans adımı var. Tahmin 2-3 hafta, ölçülmedi."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Satış ekibi kullanır, fabrika sahibi öder; soğuk e-posta, görüşme ve yüzde 50 avans. Varsayım 3-6 hafta, ölçüm yok."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans kendi karar verir ama henüz yazılmamış eklenti için demo ve beta güveni gerekir; yıllık lisans kararı 2 haftadan uzun sürer."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Mağaza sahibi kendi kartıyla, görüşmesiz alır; önce ücretsiz sürümü dener, yıllık Pro kararı 1-7 gün. Onay zinciri yok."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 4,
+   "k": 0,
+   "g": "2.500 TL'lik sabit kurulum; mevcut ilişkide mağaza 1-3 gün, ajans 7-14 günde karar verir. Tek teklif yeter; sınanmadı."
+  },
+  "qral-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Bireysel kullanıcı mağazadan yaklaşık 5 euroluk Pro lisansını tek tıkla, görüşmesiz alır; onay zinciri yok. Dönüşüm ölçülmedi."
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Öğretmen cebinden ödemeye isteksiz; hedef okul ya da zümre bütçesi, bu da dönem başına bağlı onay ister. Tahmin 2-6 hafta."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "1.000 TL'lik şablon paketi; ekip lideri ve alıntıyı denetleyen editör onaylar, önce kısa deney yapılır. Tahmin 2-6 hafta."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Eğitmen tek karar verir ama soğuk LinkedIn teması, yanıt, 20 dakikalık demo ve ödeme adımları var. Tahmin 2-6 hafta, ölçülmedi."
+  },
+  "frontend-atlasi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Öğrenen ders sayfasından 349 TL'lik paketi tek ziyarette, görüşmesiz alır; onay zinciri yok. Site yayında değil, ölçüm yok."
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "4.800 TL'lik iş için brif, kapsam ve kabul sözleşmesi, ödeme kabule bağlı; eğitmen tek karar verir. Tahmin 2-6 hafta."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurumsal atölye: ücretsiz ön oturum, teklif ve sahip ile İK onayı; kapanış 4-8 hafta. Hak teyidi kapısı kapanmadan teklif de yapılamaz."
+  },
+  "karar-kitabi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Bireysel alıcı 199-799 TL'lik paketi satış sayfasından görüşmesiz alır; onay zinciri yok. Satış sayfası henüz açılmadı."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Facilitatör kendi karar verir ama 30 dakikalık demo ve izinli örnek çıktı görmek ister; tahmin 2-6 hafta, isim listesi yok."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucu yaklaşık 1 haftada, KOBİ sahibi 2-4 haftada karar verir; 25-75 bin TL üç taksit ve sözleşme ister. Satış geçmişi yok."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "9.000 TL sabit rapor; ücretsiz atölyeden sonra kurucu tek başına 1-2 haftada karar verir, peşin tek ödeme. Ölçülmedi."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kuluçka ve TTO'da karar 1-3 ay; program yöneticisi önerir, müdür onaylar, sözleşme ve veri metni istenir. 3 ayı aşmaz."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Acente sahibi tek karar verir ama ilk üç acente ücretsiz pilotla başlar; ücretli geçiş 60. günde, döngü 2-3 ay."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek acente ama başvurucu verisi için veri sözleşmesi ve KVKK incelemesi gerekir; kanıt deneyi 90 gün, döngü 2-3 ay."
+  },
+  "vize-operasyon-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Başvurucu belgeyi yükler, raporu görür ve aynı oturumda öder; onay zinciri ve görüşme yok. Ödeme akışı henüz kurulmadı."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Girişimde 1-2 karar verici; kaynaklar 14-30 gün ile 4-8 hafta arasında tahmin veriyor, sözleşme ve yüzde 50 peşin gerekir."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Önce ücretsiz dry-run, sonra ikinci iş ve 500 dolarlık kurulum teklifi; mühendislik lideri karar verir. Tahmin 2-6 hafta."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans sahibi karar verse de satış ajansın kendi müşteri işine ve rekabet etmeme maddeli sözleşmeye bağlı; iki onay zinciri var."
+  },
+  "strateji-simulatoru-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurum kararı 1-3 ay, ilk fatura 3-6 ay; teklif 3 ay ücretsiz pilotla başlar ve çok onaylı bütçe süreci var."
+  },
+  "strateji-simulatoru-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Aday 349 TL'lik raporu kendi kartıyla, görüşmesiz ve dakikalar içinde alır. A'nın gerekçesi çapaya uyuyor; B'nin 3'ü yalnız ölçüm yokluğuna dayanıyor."
+  },
+  "strateji-simulatoru-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Mevcut danışmanlık müşterisi 1.500 TL'lik paketi tek görüşme ve tek onayla alır; birkaç gün ile 2 hafta arası. Ölçülmedi."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 15 dolarlık tek seferlik lisansı ödeme sayfasından görüşmesiz alır; tek kişi karar verir. Henüz sınanmadı."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "60 dolarlık bireysel kurulum tek oturumda kapanır; 200 dolarlık takım paketi takım sorumlusunun tek onayını ister. Ölçülmedi."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Önce orkestratör projesinin PR'ı kabul etmesi, sonra şirketin sponsorluk onayı gerekir; iki ayrı karar ve belirsiz süre."
+  },
+  "actionplan-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Solo geliştirici 39 dolarlık Pro lisansı görüşmesiz, aynı gün alır; Team paketi 2-7 gün. Ödeme hesabı henüz açık değil."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans proje lideri karar verir ama 3 teslimlik pilot ve müşterisinin kabul sürecine girmesi gerekir. Tahmin 2-6 hafta."
+  },
+  "actionplan-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Bireysel alıcı 490 TL'lik şablon paketini satış sayfasından görüşmesiz alır; onay zinciri yok. Satış kaydı yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Pano ayrı satılmaz; geliştirici 19 dolarlık Pro lisansı tek başına, görüşmesiz alır. Onay zinciri yok, ölçülmedi."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahibi tek karar verir ama soğuk LinkedIn mesajı, demo ve ekibin kullanım dosyalarını paylaşması gerekir. Tahmin 2-6 hafta."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı tipi belli değil; 18.000 TL'lik proje kabule bağlı ödenir, onay zinciri bilinmiyor. Kısa döngü için dayanak yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 399 TL'lik e-kitabı ön satış sayfasından görüşmesiz alır; tek kişi karar verir. Satış döngüsü ölçülmedi."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Nitelik, demo ve teklif sonrası kapanış 1-3 hafta varsayılıyor; CTO onayı ve fatura düzeniyle 2-6 hafta. Ölçülmedi."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahibi tek karar verir ama 18.000 TL için kabul örneği, ücretli pilot ve sözleşme adımı var. Tahmin 2-6 hafta."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yükseltme uygulama içinde tek tıkla ama ilk beş pilot kafe 1 ay ücretsiz kullanır; zincirde 2-4 hafta. İlk ödeme 4-5 hafta sonra."
+  },
+  "aicommandcard-b": {
+   "p": 3,
+   "k": 0,
+   "g": "12.000 TL sabit paket; ajans ya da ekipte tek karar verici, soğuk topluluk temasından teklif ve ödemeye 2-6 hafta varsayımı."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Site sahibi ücretsiz puan kartını kurar, yıllık Pro'yu kendi kartıyla görüşmesiz alır; karar 1-3 gün. Ödeme hesabı açık değil."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahibi tek karar verir; 15 dakikalık demo, ilk 3 sitede ücretsiz deneme ve teklif. Varsayım 1-3 hafta, ölçülmedi."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans sahibi, proje yöneticisi ve ajansın müşterisi sürece girer; 30 gün elle pilot ve 90 günde iki retainer dönemi gerekir."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Blok, site teklifine ek satır olarak gider; mevcut müşteride karar 1-3 hafta ve genel müdür onayı. Site teklifine bağlı."
+  },
+  "b2b-bilesenler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "12.000 TL sabit paket; ajansta proje sorumlusu karar verir ama ilişki soğuk, örnek ve teklif adımı var. Tahmin 2-6 hafta."
+  },
+  "b2b-bilesenler-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 49 dolarlık şablonu mağazadan görüşmesiz, tek tıkla alır; onay zinciri yok. Hacim ve süre ölçülmedi."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Plan geçişi ürün içinden tek karar ama pilot kafelere ilk görseller elle ve ilk ay ücretsiz; ilk ödeme 4-5 hafta sonra."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Üç mevcut müşteriye birebir teklif; aylık 7.500 TL ve kurulum bedeli bütçe onayı ister. Teklif iletilmedi, tahmin 2-6 hafta."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın kreatif sorumlusu tek başına karar veremez; ajans onayı ve müşteri markasının izni gerekir. Döngü ölçülmedi."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans sahibi 1-7 günde karar verir ama teklif kurulumu bedava 90 günlük pilot; ilk ödeme pilot sonuna, 2-3 aya kalır."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahibi tek karar verir; mesaj, 60 dakikalık çalıştay, teslim ve kabulde ödeme. 14-45 gün tahmini kanıtsız."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "5.000 TL tek seferlik kit; ajans sahibi tek karar verir ama kurulum, marka uyarlaması ve kabulde ödeme var. Tahmin 1-4 hafta."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ücretsiz 3 slaytlık örnek, sonra teklif ve yüzde 50 peşin; ajans 3-10 gün, franchise veren 2-4 hafta ve genel müdür onayı."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahibi 3-10 günde karar verir ama ilk ay ücretsiz pilot ve tema kurulum teklifi ödemeyi 2-6 haftaya taşır."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Danışman tek karar verir ama müşteri verisini paylaşmadan önce örnek ve güven ister; 8.000 TL için tahmin 2-6 hafta."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucu tek karar verir; nitelik, keşif, teklif ve kapanış 1-3 hafta varsayılıyor. Sözleşme ve yüzde 50 peşin gerekir."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansta satış müdürü ve ortak birlikte karar verir; 1-3 hafta varsayımı, ayda 1 demo taahhüdü ek güven ister."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Gerçek çalışan verisi paylaşımı, bordro ve bilgi işlem onayı ile pilot dönemi gerekir; tek görüşmede karar yok, 2-3 ay."
+  },
+  "ddd-renderer-a": {
+   "p": 5,
+   "k": 0,
+   "g": "E-kitap okuru 149 TL'lik eki satış sayfasından görüşmesiz alır; kişisel karar, onay zinciri yok. Satış süresi ölçülmedi."
+  },
+  "ddd-renderer-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Şablon paketi kartla, görüşmesiz alınır; ancak kaynak, yurt dışındaki teknik lider için 1-3 hafta karar süresi veriyor. Onay zinciri yok."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "50.000 TL için gizlilik sözleşmesi ve teknik liderin üstünden onay gerekir; kaynak kapanışı 1-3 hafta varsayıyor, ölçülmedi."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "36.000 TL sabit paket; lead'den kapanışa 3-5 hafta, teknik lider ya da CTO tek onay. Kurucunun ağı belgelenmedi."
+  },
+  "devpanel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "20.000 TL tek form işi; ajansta frontend lideri karar verebilir, soğuk temastan ödemeye 2-6 hafta tahmini. Ölçülmedi."
+  },
+  "devpanel-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 49 dolarlık şablonu mağazadan görüşmesiz alır; tek kişi karar verir, fiyat sabit. Satış döngüsü ölçülmedi."
+  },
+  "e-menum-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansta tek karar verici; demo sonrası kapanış 7-14 gün öngörülüyor ama soğuk temas, kapsam belgesi ve ön ödemeyle 2-6 hafta."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Çok şubeli markada müdür, mutfak ve marka sahibi onaylar; iki pilot şube ve 30-90 günlük döngü. Tek görüşmede kapanmaz."
+  },
+  "e-menum-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 89 dolarlık kaynak kod paketini görüşmesiz, tek başına alır; onay zinciri yok. Kanal hacmi bilinmiyor."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Bülten kendi kendine alınır, onay zinciri yok; ama ilk sayı ücretsiz ve aylık olduğundan karar ilk sayıdan sonraya kalır."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici ücretsiz panodan paket sayfasına geçer, 349 TL'lik paketi görüşmesiz alır; tek karar, onay zinciri yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "20 dakikalık tanışma, yazılı teklif ve ajans ortağının onayı; 299 dolarlık yıllık lisans için 2-4 hafta. Ajans listesi yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Mevcut site müşterisine 7.500 TL'lik ek kalem; ücretsiz mini denetim sonrası tek karar vericiyle 3-10 gün. Satış geçmişi yok."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici ders sonunda 299 TL'lik PDF'i görüşmesiz alır; karar bireysel ve tek adımlı. Geçmiş satış kaydı yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Frontend lideri, QA ve bütçe sahibi sürece girer; depo erişimi için güvenlik onayı gerekir. Plan döngüyü uzun sayıyor: 1-3 ay."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Küme ya da kooperatifte yönetim kurulu onayı gerekir; 3-6 hafta varsayılsa da kurul gündemine bağlı ve çok onaylı."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Girişim kurucusu 20.000 TL'lik raporu atölye sonrası tek başına 3-7 günde karara bağlar; yüzde 50 peşin. Ölçülmedi."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "250.000 TL için genel müdür yardımcısı, satın alma ve hukuk onaylar; döngü 6-10 hafta. Pilot şartı olmadığı için 3 ayı aşmaz."
+  },
+  "lifeos-a": {
+   "p": 5,
+   "k": 0,
+   "g": "199 TL'lik çalışma kâğıdı paketi bağlantıdan görüşmesiz alınır; tek kişi karar verir. Ödeme akışı yok, sınanmadı."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Freelancer tek karar verir ama önce iki haftalık pilot, sonra 600 TL'lik kurulum teklifi; ilk temastan ödemeye 2-6 hafta."
+  },
+  "lifeos-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 19 dolarlık kiti tek sayfadan görüşmesiz alır; tek karar, onay zinciri yok. Satış geçmişi yok."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ofis sahibi 1-14 günde karar verir ama ilk üç ofis 2 ay ücretsiz pilotla başlar; çok ortaklı ofiste ortak onayı. Döngü 2-3 ay."
+  },
+  "luquit-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 1.500 TL'lik kiti açık bileşenleri deneyip ödeme sayfasından görüşmesiz alır; tek kişi karar verir. Ölçülmedi."
+  },
+  "metaframer-kernel-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Solo kurucu ticari lisansı kendi kartıyla, görüşmesiz alır; onay zinciri yok. Demo ve fiyat sayfası henüz yok, sınanmadı."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yazılım evinde bir kişi önerir, iki kişi onaylar; 40.000 TL için teklif, sözleşme ve fatura. Varsayım 1-2 hafta, ölçülmedi."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "CTO, kıdemli mühendis ve güvenlik incelemesi; sandbox erişimi ve sözleşme gerekir. 6 haftayı aşar, tek görüşmede kapanmaz."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Girişimci 199 TL'lik paketi ücretsiz kota bitince görüşmesiz alır; tek karar verici. Ödeme akışı henüz yok."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans demo ve fatura ister; karar verici 1-2 kişi, soğuk LinkedIn mesajından ödemeye 2-6 hafta. Ölçülmedi."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Girişimci tek karar verir; tanıdık çevreye 1.490 TL'lik teklif mesajla gider, karar günler içinde. Sınanmadı."
+  },
+  "projector-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 349 TL'lik e-kitabı kendi kartıyla, görüşmesiz alır; tek onay. A'nın bireysel karar gerekçesi seçildi; B'nin 3'ü yalnız ölçüm yokluğuna dayanıyor."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Teknik lider ve ortağı birlikte karar verir; teklif görüşmesi sonrası 2-4 hafta. Referans yokluğu süreyi uzatabilir."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışmanlık firmasının onayı, müşteri belgeleri için işleme sözleşmesi ve pilot kapsam görüşmesi gerekir; döngü ölçülmedi."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Solo kurucu 299 TL'lik şablonu ürün kutusundaki bağlantıdan görüşmesiz alır; onay zinciri yok. Ürün sayfası kurulmadı."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Mentor önerir, program yöneticisi onaylar ve kurum faturası ister; plan ilk lisansı 90. günde öngörüyor."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Okur kitabı dakikalar içinde alır ama gelir mağaza ortaklık programının başvuruyu onaylamasına bağlı; tek dış onay var."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansta iki kişi onaylar, karar 3-14 gün; demo ve ilk müşteride ücretsiz deneme adımıyla 2-6 hafta. Ölçülmedi."
+  },
+  "signator-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Self-servis yıllık paket; idari sorumlu arama ve denemeden sonra şirket onayını 3-10 günde alır. Tek onay, ölçülmedi."
+  },
+  "signator-c": {
+   "p": 4,
+   "k": 0,
+   "g": "1.000 TL'lik kurulum paketi; mevcut ilişkide birebir teklif, tek karar verici, günler içinde kapanır. Ölçülmedi."
+  },
+  "volley-tap-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kulüpte karar 1-2 hafta, markada 3-6 hafta; bir ya da iki onay, yüzde 50 ön ödeme. Demo henüz hazır değil."
+  },
+  "volley-tap-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Satış görüşmesi yok; tek kapı portal incelemesi, yayımlanan süre 7-21 gün. Ret olasılığı var, ödeme eşiği ayrıca bekletir."
+  },
+  "volley-tap-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Oyuncu ilk maçtan sonra 3 dolarlık paketi kendi kararıyla, görüşmesiz alır; onay zinciri yok. Ödeme doğrulanmadı."
+  },
+  "woocommnts-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Mağaza sahibi önce ücretsiz çekirdeği dener, yıllık Pro'yu kendi öder; karar 1-3 gün, onay zinciri yok. Varsayım."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans tek karar vericiyle önce deneyerek 1-2 haftada karar verir; ilk mağazada birlikte kurulum adımıyla 2-6 hafta."
+  },
+  "woocommnts-c": {
+   "p": 3,
+   "k": 0,
+   "g": "4.000 TL'lik tek göç; veri izni, deneme çalıştırması ve teklif gerekir, karar verici tek. Tahmin 2-6 hafta."
+  },
+  "egitim-demolari-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Öğretmen 600 TL'lik paketi tek başına alır; karar ücretsiz örnek dersi denedikten sonra. Tahsilat hesabı açık değil."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekip lideri tek başına ödeyemez, bütçe onayı gerekir; kaynak aktif kurumsal satış diyor ve süre tahmini vermiyor."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İki mevcut ilişkiye 20.000 TL'lik gün paketi; yetkili onayı ve fatura vadesiyle 2-6 hafta. İmza kaydı yok."
+  },
+  "baz-secenekler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Soğuk ajansa mesaj, demo, kapsam belgesi ve ön ödeme; tek karar verici, demo sonrası 7-14 gün. Satış başına 40 saat emek."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Karar çağrı takvimine bağlı: başvuru penceresi, jüri değerlendirmesi ve 2 ayı aşan sonuç süresi. Komite onayı, 3 aydan uzun."
+  }
+ }
+}

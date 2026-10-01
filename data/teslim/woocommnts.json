@@ -1,0 +1,23 @@
+{
+ "slug": "woocommnts",
+ "secenekler": {
+  "woocommnts-a": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Kopyası satılan eklenti lisansı: lisans anahtarı otomatik, müşteriye özel iş yok, teslim 0. Satış 2 saat ve destek 10 dk karttaki gibi korundu."
+  },
+  "woocommnts-b": {
+   "satis_basina_kurucu_saati": 4,
+   "teslim_saat_odeme_basina": 4,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Ajans lisansında ilk mağazada birlikte kurulum ve oran kopyalama 4 saat (varsayım). Satış 4 saat: 20 ajanslık liste, görüşme, teklif. Destek 30 dk öncelikli destek."
+  },
+  "woocommnts-c": {
+   "satis_basina_kurucu_saati": 3,
+   "teslim_saat_odeme_basina": 16,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Sabit kapsamlı tek göç: eşleme tablosu, deneme, tekrar kontrolü, yayın ve geri alma 16 saat; araç yalnız hızlandırır. Karttaki 8 saatin teslim kısmı taşındı; satış 3 saat."
+  }
+ }
+}

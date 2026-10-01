@@ -1,0 +1,42 @@
+[
+ {
+  "katman": "Gerçek macOS Safari",
+  "durum": "not_run",
+  "not": "WebKit motoru Playwright ile koştu; gerçek Safari sürücüsü sistem ayarı gerektirdiği için çalıştırılmadı."
+ },
+ {
+  "katman": "Gerçek iOS Safari (cihaz)",
+  "durum": "not_run",
+  "not": "Yalnız WebKit dokunmatik emülasyonu koştu. Sanal klavye ve güvenli alan gerçek cihazda denenmedi."
+ },
+ {
+  "katman": "Gerçek Android Chrome (cihaz)",
+  "durum": "not_run",
+  "not": "Yalnız Chromium dokunmatik emülasyonu koştu."
+ },
+ {
+  "katman": "Ekran okuyucu ile elle denetim",
+  "durum": "not_run",
+  "not": "VoiceOver, NVDA ya da TalkBack ile denenmedi; axe ve belge yapısı testleri otomatik koştu."
+ },
+ {
+  "katman": "Zorunlu renk kipi (gerçek işletim sistemi)",
+  "durum": "not_run",
+  "not": "Chromium emülasyonu otomatik testte; Windows yüksek karşıtlıkta denenmedi."
+ },
+ {
+  "katman": "Sürekli tümleştirme (CI)",
+  "durum": "not_run",
+  "not": "Kurulmadı; testler yalnız yerelde koştu. Yerel geçiş, CI geçişi değildir."
+ },
+ {
+  "katman": "Ağ izolasyonu (koşullu paket)",
+  "durum": "not_applicable",
+  "not": "Tek profil vardır: bir stil dosyası ve bir betik. Koşullu ya da gizlenmiş ek paket yoktur; istek sayısı testle sınırlandı."
+ },
+ {
+  "katman": "Görsel referansların sahibi tarafından onayı",
+  "durum": "not_run",
+  "not": "Referanslar ilk kez bu teslimde üretildi. Test düzeneğinden kaynaklanan iki hatalı referans düzeltildi; önce ve sonra görüntüleri gerekçesiyle qa/referans-degisiklikleri altında. Depo sahibinin incelemesi bekliyor."
+ }
+]

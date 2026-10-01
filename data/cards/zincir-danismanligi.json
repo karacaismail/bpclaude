@@ -1,0 +1,345 @@
+{
+ "slug": "zincir-danismanligi",
+ "baslik": "Kahve zinciri için dijital dönüşüm danışmanlığı",
+ "ozet": "çok şubeli bir kahve zincirine sabit fiyatlı 90 günlük dijital satış sistemi paketi; ardından aylık yönetim ve şube menüleri için Zabuno. Hazır analiz belgeleri var, teklif iletilmedi, ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Yayında dijital denetim ve eylem panosu (güncel veriyle yeniden ölçülmeli)",
+   "Denetim ve strateji sunumları ile Türkiye kahve pazarı analizi belgesi",
+   "Devir planı, görev tanımı ve kontrol-raporlama belgeleri",
+   "Platform karşılaştırma ve karar sunumu taslakları",
+   "Zabuno (kurucunun QR menü ürünü) canlı",
+   "Zincirin dijital pazarlama lideriyle mevcut çalışma ilişkisi"
+  ],
+  "yok": [
+   "Hizmet sözleşmesi, veri işleme sözleşmesi ve hizmet seviyesi şablonları",
+   "Erişim envanteri ve devir tutanağı şablonu",
+   "Ölçüm kurulumu için hazır dataLayer sözlüğü ve GTM dışa aktarma dosyası",
+   "POS ile e-ticaret entegrasyonu için kabul testi betiği",
+   "Şube sayfası üreticisi ve dijital olgunluk testi sayfası",
+   "Teklifin iletildiğine ya da kabul edildiğine dair kanıt"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Somut müşteriye 90 günlük sabit fiyatlı paket (180.000 TL), sonra aylık 45.000 TL yönetim ve Zabuno; diğer zincirlere 30.000 TL denetim raporu. Tek müşteri bağımlılığı ve kurucu saati darboğaz olarak yazılmış.",
+  "gpt": "Varlığı dar, anonim bir kanal bütçe ve ölçüm raporuna indirger; ödeme talebi, gelir ve çalışan uygulama doğrulanmamış. Lisans ayrıca doğrulanmalı; tekrar kullanım görülmeden abonelik ya da geniş platform yok. İkinci dosya kapsamı bilinmediği için ürünleştirmeyi reddeder.",
+  "ayrisma": "Claude belirli bir alıcıya yüksek fiyatlı teklif ve kapsamlı paket kurar; GPT satış ve ödeme kanıtı olmadan yalnız küçük, izinli, anonim bir çıktıyı denemeyi önerir ve genişlemeyi kanıta bağlar.",
+  "birlesik": "İlk adım kapsamı küçük, kabul ölçütlü ücretli çıktı olmalı: mevcut ilişkiye yazılı teklif ve diğer zincirlere ucuz denetim raporu. Abonelik ve ürünleşme tekrar eden talep görülünce gelir."
+ },
+ "analist_gorusu": "En gerçekçi yol mevcut ilişkiye bu hafta yazılı 90 günlük teklif vermek; imza gelmezse 30.000 TL denetim raporuna inip diğer zincirleri denemek. Zabuno pilotu bu teklifin kalemi olarak gider.",
+ "secenekler": [
+  {
+   "id": "zincir-danismanligi-a",
+   "ad": "90 günlük dijital satış sistemi paketi (çok şubeli zincir)",
+   "tur": "hizmet",
+   "musteri": "çok şubeli bir kahve zinciri: onay genel müdürde, muhatap dijital pazarlama lideri",
+   "is": "Site, e-ticaret mağazası, uygulama ve POS aynı veriyi görmüyor; reklam ölçülemiyor ve platform kararı netleşmeli.",
+   "tetikleyici": "Kasım-Aralık hediye sezonu, ekip değişikliği ve platform kararı ihtiyacı.",
+   "teklif": "90 günde platform kararı, ölçüm kurulumu, yerel SEO, entegrasyon yönetimi, 3 test kampanyası ve devir; kabul ölçütlü, haftalık rapor, sonuç garantisi yok.",
+   "fiyat": "180.000 TL + KDV; 3 taksit (imzada %40, 30. gün %30, 90. gün %30); sonra aylık 45.000 TL + KDV",
+   "kanal_birincil": "Mevcut ilişki: zincirin dijital pazarlama lideri; 2 sayfalık teklif ve 20 dakikalık görüşme",
+   "kanal_yedek": "UFRAD üye listesi ve franchise portalları üzerinden diğer zincirlere LinkedIn mesajı",
+   "ilk_adim": "Bu hafta genel müdüre hitaben 2 sayfalık teklifi gönder; önceki teklifin akıbetini 20 dakikalık görüşmede sor.",
+   "ilk_kapsam": "Erişim devri, imzalı platform karar notu ve ölçüm omurgası (6 olay, 2 piksel); 30. gün kabulüyle ikinci taksit.",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Teslim belgeleri müşteriye, metodoloji ve pano kodu kurucuya ait; üçüncü taraf kod satılmıyor."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kurucu KVKK veri işleyen; sözleşme, veri işleme sözleşmesi ve SLA yazılmadı, hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşiv/e-fatura planlı; mükellefiyet türü mali müşavirle teyit edilmedi."
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Alıcı tipi net (zincir genel müdürü); mevcut çalışma ilişkisi belgelerde var, 30 zincirlik liste ikinci kanal."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal mevcut ilişki ve teklif görüşmesi; yedek UFRAD ve portal listesi adlı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Teklif iletilmedi; yanıt süresi ve genel müdür onayı ölçülmedi, önceki girişimlerden kabul kaydı yok; efor 3 gün ama 45 gün tahsilat doğrulanmadı."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit yaklaşık 15.000 TL (hukukçu ve alt yüklenici); tavanın altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "11 kalemlik kapsam tablosu var ama sözleşme eki yok; entegrasyon kalemi API doğrulamasına bağlı."
+    }
+   },
+   "kapi_duzeltme": "Hukukçu sözleşme, veri işleme ve SLA metnini yazar; mali müşavir fatura türünü teyit eder; kapsam tablosu sözleşme eki olur; teklif iletilip yanıt süresi ölçülür.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 180000,
+    "degisken_maliyet_tl": 16200,
+    "sabit_gider_aylik_tl": 7000,
+    "baslangic_nakit_tl": 15000,
+    "kalan_efor_saat": {
+     "min": 16,
+     "beklenen": 24,
+     "max": 40
+    },
+    "ilk_tahsilat_gun": {
+     "min": 14,
+     "max": 45
+    },
+    "satis_basina_kurucu_saati": 10,
+    "musteri_basina_aylik_destek_dk": 2080,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 270000,
+     "iyi": 405000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 5,
+     "iyi": 6
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.3,
+     "yuksek": 0.6
+    },
+    "dayanak": "Plan 5 ve 8: taksit 72.000 imzada, 54.000 30. gün, 54.000 90. gün; aylık yönetim 91. günden peşin. İmza 14-45 gün gecikirse 6 ayda 2-3 aylık ödeme düşer. Baz 180.000 + 2 x 45.000 = 270.000 (5 ödeme); iyi 75.000'lik genişletilmiş paketle 405.000; kötü imza yok. Dönüşüm kanıtsız. Değişken maliyet gelirin %30'u: 81.000 / 5 = 16.200."
+   },
+   "deney": {
+    "varsayim": "Genel müdür 180.000 TL sabit fiyatı ve kabul ölçütlü üç taksiti onaylar.",
+    "yontem": "Genel müdüre 2 sayfalık teklif; 20 dakikalık görüşme; 2 hafta geçerlilik; taslak sözleşme ve kabul ekiyle imza istenir.",
+    "sure_gun": 14,
+    "maliyet_saat": 12,
+    "maliyet_tl": 0,
+    "basari_olcutu": "Teklif imzalanır ve ilk taksit olan 72.000 TL tahsil edilir.",
+    "birakma_olcutu": "14 günde yazılı yanıt yok ya da fiyat reddi; kapsamı küçük denetim raporuna indir.",
+    "sonraki_dilim": "30. gün ölçüm kabulüyle ikinci taksit; ardından aylık yönetim ve Zabuno çok sayıda şube teklifi."
+   },
+   "etiketler": {
+    "segment": "20-60 şubeli kahve zinciri",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "GTM, GA4, e-ticaret ve POS entegrasyonu",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 0, 2, 5, 7 ve 10: 90 günlük 11 kalemli paket 180.000 TL; mevcut ilişkiyle üç sunum ve pazar analizi önceden teslim edilmiş; önceki platform tekliflerinin kabulüne dair kanıt yok, ödeyen müşteri 0. GPT dosyası ödeme talebini doğrulanmamış sayar. Sözleşme, veri işleme ve SLA metinleri yok (derinlik D.8)."
+  },
+  {
+   "id": "zincir-danismanligi-b",
+   "ad": "Kahve zinciri dijital denetim raporu (2 hafta)",
+   "tur": "hizmet",
+   "musteri": "20-60 şubeli, kendi teknoloji ekibi olmayan kahve ve yeme-içme zincirinin pazarlama müdürü",
+   "is": "Mağaza, site, uygulama ve POS verisi birleşmiyor; reklamın neyi getirdiği bilinmiyor; 90 günlük net bir iş sırası isteniyor.",
+   "tetikleyici": "Yeni sezon bütçesi, ajans değişikliği ya da platform teklifi alınması; denetim kendiliğinden bir tetikleyici değil.",
+   "teklif": "2 haftada ölçüm, SEO, yerel arama, sosyal, e-ticaret ve rakip denetimi ile 90 günlük program; ücret programa mahsup edilir.",
+   "fiyat": "30.000 TL + KDV, peşin",
+   "kanal_birincil": "UFRAD üye listesi ve franchise portallarından seçilen 30 zincire ayda 10 LinkedIn mesajı",
+   "kanal_yedek": "Kendi kendine dijital olgunluk testi (10 soru) ve e-posta karşılığı rapor; franchise ve HOSTECH fuar ziyaretleri",
+   "ilk_adim": "30 zincirlik listeyi çıkar; ön denetim şablonunu ve olgunluk testini hazırla; ilk 10 mesajı gönder.",
+   "ilk_kapsam": "1 sayfalık ön denetim şablonu ve 2 haftalık rapor şablonu; yalnız halka açık veri ve salt okunur erişimle.",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Rapor kurucunun kendi metodolojisi ve şablonudur; üçüncü taraf kod ya da veri satılmıyor."
+    },
+    "G2": {
+     "durum": "gecti",
+     "not": "Halka açık veriyle çalışır; kişisel veri işlenmez; kısa hizmet şartları yeterli."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşiv planlı; mükellefiyet türü mali müşavirle teyit edilmedi."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (pazarlama müdürü); yaklaşık 30 zincir sayıldı ama kişi ve iletişim eşlemesi yok."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal UFRAD ve portal listesi, ilk adım 10 mesaj; yedek olgunluk testi ve fuarlar."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Teslim 2 hafta, hazırlık 40 saat; soğuk satışta döngü ölçülmedi, ilk tahsilat 30-150 gün."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 5.000 TL (araç ve seyahat); tavanın çok altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsamlı ve sabit fiyatlı rapor; özel geliştirme yok."
+    }
+   },
+   "kapi_duzeltme": "Mali müşavir fatura türünü teyit eder; 30 zincirin iletişim listesi çıkarılır; ilk 10 mesajla satış döngüsü ölçülür.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 30000,
+    "degisken_maliyet_tl": 5000,
+    "sabit_gider_aylik_tl": 3000,
+    "baslangic_nakit_tl": 5000,
+    "kalan_efor_saat": {
+     "min": 24,
+     "beklenen": 40,
+     "max": 60
+    },
+    "ilk_tahsilat_gun": {
+     "min": 30,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 24,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 30000,
+     "iyi": 60000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.08
+    },
+    "dayanak": "Plan 5 ve 7: denetim 30.000 TL peşin; ay 4-6 hedefi 2 rapor, ama vaka hikayesi 90. günden sonra çıkar. Baz 1 satış (soğuk liste, referans yok); iyi 2 (30 mesajda %8 üst sınırı yaklaşık 2,4), kötü 0. Dönüşüm aralığı varsayım; ilk tahsilat 30-150 gün. Değişken maliyet rapor başına araç ve seyahat payı."
+   },
+   "deney": {
+    "varsayim": "Soğuk ulaşılan zincir pazarlama müdürü, tanışıklık olmadan 30.000 TL ödeyerek denetim ister.",
+    "yontem": "30 zincirden 20'sine ön denetim özeti içeren kısa mesaj ve olgunluk testi bağlantısı; ilgilenene 20 dakikalık görüşme ve yazılı teklif.",
+    "sure_gun": 28,
+    "maliyet_saat": 20,
+    "maliyet_tl": 0,
+    "basari_olcutu": "20 mesajdan en az 3 görüşme ve 1 ödenen rapor.",
+    "birakma_olcutu": "28 günde 0 görüşme; mesaj metni ya da kanal değiştirilir.",
+    "sonraki_dilim": "Rapor satılırsa 90 günlük program teklifi ve vaka izni."
+   },
+   "etiketler": {
+    "segment": "20-60 şubeli kahve zinciri",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "GA4, GTM, halka açık veri",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Plan 3, 5 ve 7: yaklaşık 30 ulaşılabilir zincir, 70 operatör; rapor 30.000 TL ve 90 günlük programa mahsup. Ödeyen müşteri yok; ilişki yalnız tek zincirde. GPT dosyası dar, anonim bir rapor çıktısını önerir ve ödeme talebini doğrulanmamış sayar; ajanslar ücretsiz denetim verebilir."
+  },
+  {
+   "id": "zincir-danismanligi-c",
+   "ad": "Merkezden yönetilen şube QR menüsü (Zabuno zincir planı)",
+   "tur": "yazılım ürünü",
+   "musteri": "çok şubeli bir kahve zinciri: operasyon ve franchise direktörü, onay genel müdürde",
+   "is": "şubelerde tutarlı fiyat listesi ve masada karekod; fiyat değişince yeniden baskı yapmamak.",
+   "tetikleyici": "Fiyat etiketi yönetmeliğinde karekodla fiyat listesi yöntemi ve şube başına baskı maliyeti; fiyat güncelleme dönemi.",
+   "teklif": "3 şubede 60 gün ücretsiz pilot; sonra tüm şubeler için merkezden yayın, şube istisnası ve TR/EN misafir sayfası.",
+   "fiyat": "Pilot 0 TL; sonra bütün şubeler için 6.373 TL + KDV/ay, yıllık sözleşme",
+   "kanal_birincil": "Mevcut ilişki: operasyon direktörü ve dijital pazarlama lideri; pilot, 90 günlük paketin bir kalemi",
+   "kanal_yedek": "POS bayileri ve franchise danışmanlarıyla ortaklık (gelir payı varsayım); UFRAD",
+   "ilk_adim": "Teklife pilot kalemini ekle; pilot için üç farklı şube tipinden menü CSV dosyalarını iste.",
+   "ilk_kapsam": "3 şube QR menüsü ve TR/EN sayfa; merkezden yayın yazılımı henüz yok (Faz 4), pilotta elle yönetilir.",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Zabuno kurucunun kendi ürünü; müşteri menü içeriğini sağlar, hak çatışması görünmüyor."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Fiyat etiketi yönetmeliği uyumu ve veri işleme sözleşmesi hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Aylık fatura ve havale planlı; fatura türü mali müşavirle teyit edilmedi."
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Alıcı tipi net (zincir operasyonu); mevcut ilişki belgelenmiş, tek isim."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Kanal mevcut ilişki ve 90 günlük paket içinde pilot; yedek POS bayileri ve UFRAD adlı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Pilot kurulum 1 gün ama merkezden yayın eforu belgelerde yok; ilk tahsilat pilottan sonra 75-150 gün."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı yaklaşık 2.000 TL (kart baskısı, altyapı); tavanın altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Şube istisnası ve merkezden yayın henüz yazılmadı; kapsam sınırı sözleşmede yok."
+    }
+   },
+   "kapi_duzeltme": "Merkezden yayın kapsamı ve eforu yazılır; pilotta ölçülür; hukukçu ve mali müşavir teyidi alınır; kapsam sınırı sözleşmeye girer.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 6373,
+    "degisken_maliyet_tl": 955,
+    "sabit_gider_aylik_tl": 1000,
+    "baslangic_nakit_tl": 2000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 80,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 75,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 12746,
+     "iyi": 25492
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.2,
+     "yuksek": 0.5
+    },
+    "dayanak": "Plan 5: Zabuno zincir fiyatı 6.373 TL/ay. Pilot 60 gün ücretsiz ve 90 günlük paketin kalemi; ücretli abonelik A imzasına ve genel müdür kararına bağlı. İlk tahsilat 75-150. gün; baz 2 abone-ay (12.746 TL), iyi 4 ay. Merkezden yayın (Faz 4) eforu belgelerde yok, efor temkinli. Dönüşüm varsayım; değişken maliyet yaklaşık %15."
+   },
+   "deney": {
+    "varsayim": "Genel müdür ücretsiz pilot sonrası bütün şubeler için aylık ücret öder.",
+    "yontem": "3 şubede 60 gün QR menü; şube başına tarama ve fiyat güncelleme süresi ölçülür; 60. günde çok sayıda şube teklifi verilir.",
+    "sure_gun": 60,
+    "maliyet_saat": 12,
+    "maliyet_tl": 500,
+    "basari_olcutu": "Şube başına en az 500 tarama ve yazılı çok sayıda şube kararı.",
+    "birakma_olcutu": "Şube başına 250 taramanın altında ya da genel müdür ücretli plana geçmez.",
+    "sonraki_dilim": "çok sayıda şube sözleşmesi; ikinci zincir pilotu."
+   },
+   "etiketler": {
+    "segment": "20-60 şubeli kahve zinciri",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Zabuno QR menü, CSV",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan 5 ve derinlik A.2, D.8: ürün canlı, pilot kurulumu 1 gün; merkezden yayın teslim edilmedi. Şube baskı maliyeti (şube sayısı x şube başı maliyet x 4 baskı) varsayım. Rakip QR menü planları ucuz (sınırsız şube 2.499 TL) ve POS içi QR menü ücretsiz. Ödeyen müşteri yok; ürün adı çevirisi eksik. Pilot 90 günlük paketin kalemi; ücretli abonelik ayrı satış değil, A imzasına bağlı."
+  }
+ ]
+}

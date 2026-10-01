@@ -1,0 +1,665 @@
+{
+ "kriter": "C6",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Menü fotoğrafı ya da CSV ile 30 dakikada kurulum; entegrasyon ve veri taşıma yok, yalnız masalara QR kart konur."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Pilot için şube menü CSV'si ve QR kart yeter, POS entegrasyonu yok; zincir veri işleme sözleşmesi ve veri konumu sorar. Aynı teklifin diğer kartıyla eşitlendi."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Panel modülü alıcının kendi verisine ve izin akışına bağlanır; kod ve veri erişimi ile entegrasyon gerekir."
+  },
+  "parselq-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Alıcı yalnız ada/parsel girer, varsa imar belgesini yükler; entegrasyon ve sistem değişikliği yok."
+  },
+  "parselq-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ofis ada/parsel, logo ve izin numarası girer; kart ilana görsel olarak eklenir, sistem değişikliği yok."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ofis, müşterisine ait gizli proje belgelerini paylaşır; kişisel veri teyidi ve güven incelemesi gerekir, entegrasyon yok."
+  },
+  "destektesvik-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Şirket yalnız 13 profil olgusunu formda verir; entegrasyon, veri taşıma ve güvenlik incelemesi yok."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Büro mükellef listesini CSV ile yükler; üçüncü kişi verisi için veri işleme protokolü gerekir, entegrasyon yok."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum üye verisini davetle açar; KVKK protokolü, logo izni ve kurum onayı gerekir, teknik entegrasyon yok."
+  },
+  "asgari-iscilik-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Taşeron ve işçilik verisi yeni yazılıma taşınır, müşteri ortamına kurulum ve KVKK sözleşmesi gerekir; üç bariyer birlikte."
+  },
+  "asgari-iscilik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Büro mükellef ve şantiye verisini CSV ile aktarır; üçüncü kişi verisi için KVKK protokolü ve güven incelemesi gerekir."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşteri tek hesap dosyasını maskeleyerek paylaşır; sistem erişimi ve entegrasyon yok, tek seferlik dosya girişi yeter."
+  },
+  "zincir-danismanligi-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Bütün hesapların erişim devri, POS ve e-ticaret entegrasyonu ile veri işleme sözleşmesi gerekir; üç bariyer birlikte."
+  },
+  "zincir-danismanligi-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Denetim halka açık veri ve salt okunur erişimle yapılır; entegrasyon ve veri taşıma yok."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Üç şube için menü CSV'si ve QR kart yeter, POS'tan bağımsız; zincir veri işleme sözleşmesi ister. Aynı teklifin diğer kartıyla eşitlendi."
+  },
+  "kar-pusulasi-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Tarayıcıda yerel çalışır, kurulum ve hesap yok; Pro için yalnız ürün listesi Excel'i yüklenir."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Danışman 25 müşteri profilini bulut hesaba girer; müşteri ticari verisi için sözleşme sorusu var, entegrasyon yok."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Satıcı maliyet ve komisyon dosyasını şablona göre paylaşır; tek dosya girişi, sistem erişimi yok. Maliyet verisi paylaşılan diğer hizmetlerle eşitlendi."
+  },
+  "titanlar-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Katılımcı sistem değiştirmez, veri vermez; yalnız haftada iki akşam ayırır ve kendi pazar yeri mağazasını açar."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Satıcı ürün bazlı maliyet, komisyon ve kargo rakamlarını paylaşır; sistem değişikliği ve entegrasyon yok."
+  },
+  "titanlar-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Atölye sistem istemez; kurum katılımcı listesini KVKK ekiyle verir ve 60 gün katılımcı bazlı izleme yapılır."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Logo, ürün listesi, sertifika ve alan adı erişimi verilir; eski site adresleri yeni siteye taşınır, güvenlik incelemesi yok."
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Logo, ürün listesi ve 20 görsel verilir; alan adı yönlendirmesi gerekir, entegrasyon yok."
+  },
+  "kurumsal-site-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Geliştirici Astro kalıbını kendi projesine uyarlar; veri taşıma yok ama depo, derleme ve içerik uyarlaması alıcıda."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Üretici maliyet ve fiyat verisini, görsel ve logoyu paylaşır; site için içerik verir, sistem değişikliği yok."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Üretici ürün maliyeti, fiyat ve kargo verisini paylaşır; entegrasyon ve güvenlik incelemesi yok."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Üretici 10 ürünün teknik bilgisini, görselini ve sertifikasını verir; alan adı ayarı gerekir, CRM ve ödeme bağlantısı yok."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Mevcut WordPress sitesine eklenti kurulur; metin ve form seçimi dışında veri girişi ve entegrasyon yok."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mağaza PSP oranlarını ve kart ailelerini girer; eklenti ürün ve ödeme sayfasına dokunur, sınırlı kurulum."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulumu kurucu yapar; alıcı siteye yönetici erişimi verir, ödeme ve form ayarlarına dokunulur."
+  },
+  "qral-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Tek tarayıcı uzantısı kurulur; sunucu ve veri taşıma yok, izin kapsamı dar."
+  },
+  "qral-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Öğretmen tek uzantı kurar, öğrenci verisi alınmaz; okul cihazında BT onayı gerekebilir."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip kendi kaynak formatını verir, şablon her üyenin tarayıcısına elle kurulur; veri taşıma yok."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Eğitmen kiti kendi alan adında yayına alır; Astro kurulumu ve kodlama ajanı gerekir, veri taşıma yok."
+  },
+  "frontend-atlasi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Öğrenen yalnız görev ve çözüm dosyalarını indirir; kurulum, veri girişi ve inceleme yok."
+  },
+  "frontend-atlasi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Eğitmen yalnız konu, kaynak ve kısa brif verir; sistem ve veri erişimi yok. Logo ve içerik verilen diğer hizmetlerle eşitlendi."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Atölye yazılım istemez; şirket iki gerçek kararının kayıtlarını gizlilik sözleşmesiyle paylaşır."
+  },
+  "karar-kitabi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "PDF form ve tablo indirilir; sistem değişikliği, veri paylaşımı ve inceleme yok."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit yerel çalışır ama gizli oturum notları çalışma kâğıdına işlenir; özel memo hizmetinde not paylaşılır."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucu finans ve kadro verisini paylaşır, model Google Sheets'e taşınır; veri işleme sözleşmesi ve güven sorusu doğar."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucu hazır sunum, model ve formunu tek sefer iletir; gizlilik sözleşmesi yeter, entegrasyon ve sistem erişimi yok."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Program 10 girişimin finans verisini şablona aktartır; kurum veri işleme sözleşmesi ve güvenlik incelemesi isteyebilir."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Acente Excel ve WhatsApp düzeninden panele geçer, pasaport verisini aktarır; KVKK incelemesi gerekir."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Acente başvuru tablosuna salt okunur erişim verir, kolonlar eşlenir; pasaport verisi için veri sözleşmesi gerekir."
+  },
+  "vize-operasyon-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Başvurucu kendi belgelerini yükler, kurulum ve entegrasyon yok; pasaport ve banka belgesi için güven çekincesi var."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 0,
+   "g": "A 4, B 2: müşteri yalnız hikâye listesi verir ve veri sentetik (A haklı), ama teslim müşteri sunucusuna kurulur ve erişim ister (B haklı); orta puan."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Müşteri depoya erişim ve izinli komut profili verir, kendi model anahtarını bağlar; güvenlik incelemesi beklenir."
+  },
+  "software-factory-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans hikâye listesi verir, teslim son müşterinin sunucusuna kurulur; veri taşıma yok. A seçeneğiyle aynı olgu, aynı puan."
+  },
+  "strateji-simulatoru-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Statik araç kurum logosu ve alt alan adıyla yayınlanır; veri tarayıcıda kalır, entegrasyon ve veri taşıma yok."
+  },
+  "strateji-simulatoru-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Tarayıcıda hesapsız çalışır, veri cihazda kalır; aday 32 soruya kendi rakamlarıyla yanıt verir."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Müşteri geri ödeme, nakit ve kapasite rakamlarını danışmanla paylaşır; kurulum ve entegrasyon yok."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Mac'e arka plan hizmeti kurulur ve ayar değişir; süreç sonlandıran araç güven ister, veri taşıma ve ağ yok."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Rapor-yalnız mod bariyeri düşürür ama uzaktan kurulum oturumu ve makine teşhis çıktısı paylaşımı gerekir."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Orkestratör koduna küçük bir çağrı eklenir; kullanıcının makinesinde koruyucunun kurulu olması ve sürüm uyumu gerekir."
+  },
+  "actionplan-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Hesapsız, tarayıcıda yerel çalışır; ekip iş planını mevcut aracının yanında yeni bir araca girer ya da CSV ile alır."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın iş takip kaynağından içe aktarma yapılır, müşterisine ait kapsam verisi işlenir; veri rolü ve güven sorusu doğar."
+  },
+  "actionplan-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Şablon ve video araç gerektirmeden okunur; sistem, veri girişi ve inceleme yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Panel yerel günlükleri okur, ağ yok; ancak Koruyucu Pro içinde satılır ve aynı arka plan kurulumunu ister. Koruyucu ile eşitlendi."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Her geliştirici kullanım dosyasını dışa aktarır, klasörler projelere eşlenir; sunucu ve entegrasyon yok."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı kendi ajan olay verisini adaptöre bağlar; anlık görüntü sözleşmesine göre entegrasyon gerekir."
+  },
+  "ai-first-tasarim-a": {
+   "p": 5,
+   "k": 0,
+   "g": "E-kitap okunur, örnek depo isteğe bağlı kurulur; veri paylaşımı, entegrasyon ve inceleme yok."
+  },
+  "ai-first-tasarim-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekibin deposuna, CI ve Storybook yapısına girilir; gizlilik sözleşmesi ve güvenlik sorusu beklenir."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans tek form ve tek tablonun ekran ve token bilgisini paylaşır; depo erişimi şart değil, gizlilik sözleşmesi gerekir."
+  },
+  "aicommandcard-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Mevcut Zabuno paneline eklenir, kurulum ve veri taşıma yok; yorum verisi için aydınlatma metni gerekir."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kart müşterinin React kod tabanına bağlanır; depo erişimi ve kod incelemesi gerekir."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Salt okunur eklenti mevcut siteye kurulur; yalnız hız ölçümü için adres gönderimine onay verilir."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans eklentiyi her müşteri sitesine ayrı kurar ve müşteriden onay alır; veri taşıma yok."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın müşteri sitelerine bağlayıcı ve misafir erişimi kurulur; erişim ve güvenlik incelemesi beklenir."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Bloklar mevcut siteye eklenir; üretici ürün verisi, kademeli fiyat ve çeviri metinlerini verir, taşıma yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans teslim edilen sayfayı ve kaynak kodu kendi yığınına alır; ürün bilgisi verir, veri taşıma yok."
+  },
+  "b2b-bilesenler-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Geliştirici şablonu kendi Astro projesine uyarlar; token, dil ve medya değişimi alıcıda."
+  },
+  "banner-post-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Menü verisi zaten Zabuno'da; işletme yalnız logo ve renk girer, yeni entegrasyon yok."
+  },
+  "banner-post-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Müşteri logo, renk ve aylık içerik bilgisini verir; sistem erişimi ve entegrasyon yok."
+  },
+  "banner-post-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans, müşterisine ait izinli marka varlıklarını ve içerik CSV'sini hazırlayıp verir; entegrasyon yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Denetim yayındaki ya da hazırlık ortamındaki sayfalardan yapılır; bağlantı ve gizlilik sözleşmesi yeter, veri taşıma yok."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 5,
+   "k": 0,
+   "g": "PDF kontrol listesi indirilip uygulanır; kurulum, veri paylaşımı ve inceleme yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekibin deposuna, CI hattına ve mesaj dosyalarına erişilir, adaptör kurulur; gizlilik şartı ve güvenlik sorusu doğar."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Form ajans sitesine gömülür ve webhook bağlanır; gelen talep sahiplerinin verisi için veri işleme sözleşmesi gerekir."
+  },
+  "karar-sihirbazi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ajans 60 dakikalık çalıştayda yalnız proje bilgisini anlatır; yazılım, entegrasyon ve kişisel veri yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Statik form ajans sitesine gömülür, arka uç ve veri saklama yok; kurulumu ve marka uyarlamasını kurucu yapar."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Müşteri katalog, logo ve renk kodunu verir; sistem değişikliği, kişisel veri ve entegrasyon yok."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans her müşteri markası için tema girdilerini ve aylık sunum verisini verir; üçüncü taraf marka izni gerekir, entegrasyon yok."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Danışman müşterisine ait izinli tek CSV ya da JSON dosyasını paylaşır; gizlilik şartı gerekir, sistem erişimi yok."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Demo sahte veriyle çalışır; kurucu yalnız marka ve ekran içeriğini verir, sistem ve veri taşıma yok."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Demo sahte veriyle çalışır; ajans müşterisinin marka bilgisini verir, sistem ve veri taşıma yok."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Çalışan hareket ve izin dışa aktarımları içe alınıp eşlenir; personel verisi için KVKK ve BT onayı gerekir, sistem göçü yok."
+  },
+  "ddd-renderer-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Şablon ve kontrol listesi dosyaları indirilir; siteyi görmek için Node kurulumu gerekir, veri taşıma yok."
+  },
+  "ddd-renderer-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Şablon paketi indirilir, ekip kendi mimari JSON'unu doldurur; Node kurulumu dışında entegrasyon yok."
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekip mevcut sisteminin modül, veri sahipliği ve karar bilgisini açar; gizlilik sözleşmesi ve inceleme gerekir."
+  },
+  "devpanel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Bileşenler müşterinin React projesine entegre edilir; depo erişimi ve kod incelemesi gerekir."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Form çıktısı müşterinin deposunda derlenir; mevcut paket sürümüne uyum ve depo erişimi gerekir."
+  },
+  "devpanel-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Geliştirici 31 ekranlı şablonu kendi projesine alır ve arka ucuna bağlar; veri taşıma yok. Diğer şablon satışlarıyla eşitlendi."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans kendi sunucusunu, alan adını ve ödeme hesabını getirir; kodu inceler ve ödeme bağlantısını kurar."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Menü PDF ve CSV içe aktarılır, ürün ve şube eşlenir; alerjen onayı ve QR yönlendirmesi değişir."
+  },
+  "e-menum-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı Django çekirdeğini kendi sunucusuna kurar; ödeme entegrasyonunu ve veri girişini kendi yapar."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Bülten e-postayla gelir; sistem değişikliği, veri girişi ve inceleme yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Form, şablon ve JSON dosyaları indirilir; entegrasyon, veri taşıma ve inceleme yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Bülten, indirilen paket ve yılda bir görüşme; sistem ve veri bariyeri yok. Fatura ve sözleşme adımı bu kriterin konusu değil."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kurum yalnız üye sayısı ve kategori bilgisini verir; sistem değişikliği ve entegrasyon yok."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucu üç yetkiliyle görüşme ayarlar, kategori maliyetini ve anonim teklif yanıtlarını paylaşır; sistem değişikliği yok."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurumsal ekip bayi verisini maskeleyerek paylaşır; gizlilik sözleşmesi ve hukuk incelemesi gerekir, sistem değişikliği yok."
+  },
+  "lifeos-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Ücretli ürün indirilen PDF ve Notion çalışma kâğıdı; eklenti ücretsiz, sunucusuz ve dar izinli."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Uzantı tarayıcı etkinliğini kaydetme izni ister; veri yerel kalır, entegrasyon yok ama gözetim çekincesi doğar."
+  },
+  "lifeos-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Geliştirici başlangıç şablonunu yeni projesine alır; kit test, rehber ve metinden oluşur, mevcut sistem değişmez."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ofis ilan ve müşteri kayıtlarını Excel ve WhatsApp'tan elle taşır; ilk sürümde içe aktarma yok, KVKK sözleşmesi gerekir."
+  },
+  "luquit-b": {
+   "p": 4,
+   "k": 0,
+   "g": "İki yolculuğun kaynak kodu mevcut React projesine kopyalanır; yalnız bağımlılık ve sürüm uyumu kontrol edilir."
+  },
+  "metaframer-kernel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Geliştirici kiti yeni projesinin Postgres şemasına kurar; mevcut veri taşınmaz, kurulum ve uyarlama alıcıda."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans kiti yeni projelerine kurar, atölyede kendi şemasına uyarlar; mevcut sistem taşınmaz."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Canlı uygulamanın kiracı ve yetki bağlamına adaptör yazılır; kod erişimi ve güvenlik incelemesi gerekir, veri göçü yok."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Tarayıcıda kayıtsız çalışır; kullanıcı yalnız ad adayı yazar, veri taşıma ve inceleme yok."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Tarayıcı aracı, entegrasyon yok; ajans üç kullanıcı açar ve teslim şablonu alışkanlığını değiştirir."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Müşteri yalnız 10 ad adayını mesajla gönderir; kurulum, sistem ve inceleme yok."
+  },
+  "projector-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Okuyucu PDF ya da EPUB dosyasını indirir; kurulum, veri paylaşımı ve inceleme yok."
+  },
+  "projector-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Yazılım kurulmaz; ekip atölyede kendi modül haritasını paylaşır, sınırlı gizlilik beklentisi var."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Firma müşterisine teslim ettiği 30 belgeyi portala aktarır; kaynak ve sürüm eşlenir, veri işleme sözleşmesi gerekir."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Markdown ve Notion paketi indirilir; kurucu kendi kararlarını ve bütçesini kendi dosyasına girer, veri dışarı çıkmaz."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Aynı Markdown paketi ekip başı kopyalanır, veri ekiplerde kalır; bir saatlik atölye dışında kurulum yok. Bireysel sürümle eşitlendi."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Okur siteyi açar ve mağaza bağlantısına tıklar; hesap, veri girişi ve inceleme yok."
+  },
+  "signator-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ajans müşterisinin çalışan listesini CSV ile, logoyu dosyayla verir; imza posta istemcisine yapıştırılır, entegrasyon yok."
+  },
+  "signator-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Şirket çalışan CSV'si ve logo yükler; her çalışan imzayı kendi istemcisine yapıştırır, entegrasyon yok. Diğer iki imza seçeneğiyle eşitlendi."
+  },
+  "signator-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Müşteri 5 kişilik listeyi ve logoyu verir; kurulum notuyla imza istemciye eklenir, sistem değişikliği yok."
+  },
+  "volley-tap-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kulüp yalnız logo, renk ve kullanım izni verir; oyun kişisel veri toplamaz, isteğe bağlı alan adı ayarı var."
+  },
+  "volley-tap-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Oyuncuya bariyer yok; geliri ödeyen portal SDK entegrasyonu, yaş derecelendirmesi ve boyut sınırıyla gönderim incelemesi ister."
+  },
+  "volley-tap-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Oyun tarayıcıda hesapsız açılır; kurulum, veri ve entegrasyon yok."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Mağaza banka oranlarını CSV ile girer; eklenti ürün ve ödeme sayfasına eklenir, blok uyumu sınanmadı."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans her mağazaya eklentiyi kurar ve oran CSV'sini kopyalar; önce kendi test ortamında dener."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Müşteri yorumları mağazaya taşınır ve ürünlere eşlenir; site erişimi ve yorum sahiplerinin verisi için sözleşme gerekir."
+  },
+  "egitim-demolari-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Öğretmen PDF ve statik demoyu derste açar; çocuk verisi toplanmaz, kurulum ve entegrasyon yok."
+  },
+  "egitim-demolari-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Tarayıcı sunumu, kurulum yok; ekip yalnız bir gerçek teslim sorununu anlatır. Diğer ekip atölyeleriyle eşitlendi."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ölçüm kurulumu için mevcut hesaplara erişim ve veri izni verilir; yeni sistem ya da veri taşıma yok."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans Django çekirdeğini kendi sunucusunda barındırır ve ödeme sağlayıcısını kendi bağlar."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Fon şirket yapısı, girişim rozeti, pay sözleşmesi ve izleme raporu ister; başvuru ön inceleme ve değerlendirmeden geçer."
+  }
+ }
+}

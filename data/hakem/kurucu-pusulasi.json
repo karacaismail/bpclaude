@@ -1,0 +1,41 @@
+{
+ "slug": "kurucu-pusulasi",
+ "kararlar": [
+  {
+   "itiraz": "Kitap Atlası künye sayısı: kart 170 diyor, kaynak tabloda 78 kodlu satır; 565 doğrulanamadı",
+   "karar": "kismen",
+   "degisiklik": "bugun.var ve C kanit_notlari: 170 künye 'yaklaşık' idi; belge 170, tabloda 78 satır ve doğrulanamayan sayı notu eklendi",
+   "gerekce": "README 170 diyor ama sayım 78; kesin sayı yazmak yanıltıcı, belirsizlik açıkça belirtildi."
+  },
+  {
+   "itiraz": "Şablon L1 kalan iş kaynakta 8-9 iş günü; kart 4 iş günü ve 32 saat diyor",
+   "karar": "kabul",
+   "degisiklik": "A G6 notu 4 iş günü iken 8-9 iş günü; kanit_notlari ve dayanak güncellendi",
+   "gerekce": "Derinlik D.2 L1 toplamı 8,75 gün; D.8 şablon tarafı 6 gün artı ürün sayfası ve PDF. 4 gün kaynakla çelişiyor."
+  },
+  {
+   "itiraz": "Kişisel veri ayrıştırma ve hak teyidi yalnız bir kapı notu sayılıyor; GPT bunu ön koşul yapar",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart ilk_adim, ilk_kapsam ve birlesik hükmünde ayrıştırmayı zaten ilk iş yapıyor; ek değişiklik gerekmedi (G1 kararıyla ayrıca güçlendi)."
+  },
+  {
+   "itiraz": "A, G1 test olmalı: GPT içerik hakkı ve kişisel içerik ayrıştırması doğrulanmadan gecti verilmesini kabul etmez",
+   "karar": "kabul",
+   "degisiklik": "A G1 gecti iken test; not ve kapi_duzeltme güncellendi. Aynı içerik nedeniyle B G1 de gecti iken test yapıldı",
+   "gerekce": "Kartın kendi birleşik hükmü hak teyidini ön koşul sayıyor; yazılı teyit yok, belirsizlikte temkinli test."
+  },
+  {
+   "itiraz": "A kalan_efor_saat: beklenen 32 saat; D.8 L1 işleri yaklaşık 70 saat; beklenen en az 60, max 80",
+   "karar": "kabul",
+   "degisiklik": "kalan_efor_saat 20/32/48 iken 40/64/80; ilk_tahsilat 25-45 iken 35-60 gün; 6 ay ödeme 6/30/60 iken 5/25/50, tahsilat 1245/6225/12450",
+   "gerekce": "D.2 ve D.8 toplamı 8-9 iş günü, yaklaşık 64 saat; gecikme baz satış adedini düşürür, tahsilat adet x 249 ile tutarlı."
+  },
+  {
+   "itiraz": "C alti_ay_tahsilat_tl baz 600 fazla; trafik 8-12 haftada başlar, 6 ayda baz yaklaşık 150 TL",
+   "karar": "kabul",
+   "degisiklik": "tahsilat 0/600/2500 iken 0/144/600; ödeme adedi 0/2/6 iken 0/12/50; ilk_tahsilat 60-150 iken 90-180 gün",
+   "gerekce": "Yıl sonu 470 TL/ay hedefi ilk 6 ayda ulaşılmaz; ödeme eşiği geciktirir; tahsilat adet x 12 TL ile tutarlı hale getirildi."
+  }
+ ]
+}

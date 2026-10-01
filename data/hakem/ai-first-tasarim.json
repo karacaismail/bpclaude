@@ -1,0 +1,35 @@
+{
+  "slug": "ai-first-tasarim",
+  "kararlar": [
+    {
+      "itiraz": "A baz 45 satış kartın kendi varsayımı; plan yıl 1 için 150 diyor, 6 ayda 45 hiçbir trafik ya da dönüşüm verisine dayanmıyor.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Plan yıl 1 baz 150, ilk 6 ay hedefi 100; ilk ödeme 9. haftada, satış 3.-6. aylarda. 45 plandan temkinli türetildi, dayanak varsayım olduğunu söylüyor."
+    },
+    {
+      "itiraz": "C fiyatı (18.000 TL, 12 saat) kaynakta yok; 120.000 TL / 2 hafta oranından türetilmiş kurucu tahmini, kanıt kodu 0 olmalı.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart fiyatın kaynakta olmadığını dayanak ve kanıt notunda zaten belirtiyor; kanıt kodu puan dosyasının konusu, kart alanı değil."
+    },
+    {
+      "itiraz": "B kartı 'bileşen npm'e ve Storybook yayına alınacak' diyor; plan paketlemeyi %0 ve yayını yok sayıyor; ilk adım henüz yapılmadı.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "İlk adım gelecek eylemdir; kart npm ve yayının olmadığını bugun.yok altında yazıyor, G6 ve efor 13 iş günü paketleme emeğini içeriyor."
+    },
+    {
+      "itiraz": "ai-first-tasarim-a, alti_ay_tahsilat baz 14.963 TL: 45 satış kanıtsız; planın yıl 1 baz 150 satışının üçte biri, ön satış 9. haftada başlıyor.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "9. hafta gecikmesi ve yıllık rakamın ilk 6 aya kırpılması zaten uygulanmış; 332,5 x 45 tutarlı. Kanıtsızlık dayanakta açık, rakam plandan düşük."
+    },
+    {
+      "itiraz": "ai-first-tasarim-b, alti_ay_tahsilat baz 25.000 TL: planın baz yıl 1 danışmanlık sayısı 0; atölye satışı ancak 4.-6. aylarda teklif, iyimser.",
+      "karar": "kabul",
+      "degisiklik": "B finans: tahsilat baz 25000 -> 0, iyi 145000 -> 25000; ödeme adedi ve müşteri baz 1 -> 0, iyi 2 -> 1; dayanak güncellendi.",
+      "gerekce": "Plan baz yıl 1 gelirinde atölye ve danışmanlık yok; atölye yalnız teklif aşamasında. Temkinli ilke gereği baz 0, kurulum 6 ayda beklenmez."
+    }
+  ]
+}

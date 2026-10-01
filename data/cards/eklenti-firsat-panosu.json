@@ -1,0 +1,342 @@
+{
+  "slug": "eklenti-firsat-panosu",
+  "baslik": "Eklenti ekosistemi fırsat panosu ve bülteni",
+  "ozet": "28 eklenti ekosistemini aynı şablonla puanlayan ücretsiz pano, aylık ücretli fırsat bülteni ve tek seferlik keşif paketi; alıcı eklenti geliştiren solo geliştirici ve küçük ajans. Metodoloji ve pano taslağı var, çalışan ürün, yayın ve ödeyen müşteri yok.",
+  "bugun": {
+    "var": [
+      "Eklenti ekosistemleri için metodoloji ve keşif formu belgeleri (yaklaşık 28 bin kelime)",
+      "28 ekosistemlik tek dosya pano taslağı; hücreler kaynaksız tahmin içeriyor",
+      "Teknoloji yığını kararı: FastAPI, HTMX, ECharts, PostgreSQL (yalnız karar)",
+      "Fiyat, kanal ve 90 günlük takvim planı yazılı"
+    ],
+    "yok": [
+      "Çalışan uygulama ya da yayında pano yok",
+      "Ödeme hesabı (yurt dışı satıcı hizmeti, sanal POS) açılmadı",
+      "Abone listesi ve ödeyen müşteri yok",
+      "Hücre bazında kaynak etiketi ve lisans/provenans doğrulaması yok",
+      "Hedef alıcı isim listesi yok"
+    ],
+    "odeyen_musteri": 0
+  },
+  "iki_calisma": {
+    "claude": "Koşullu sunum: ücretsiz pano, aylık bülten (399 TL/ay) ve 349 TL keşif paketi; 90 günde 1.000 abone ve 20 ücretli abone kanıtı yoksa araç dahili kalır. Baz senaryo 12 ayda yaklaşık 550 bin TL.",
+    "gpt": "Bağımsız çalışan ürün ya da gelir varlığı değil; ödeme isteği bilinmiyor. İlk teslim tek ekosistem keşfi veya kategori worksheet'i; lisans ve provenans doğrulanmadan fiyat ya da süre uydurulmaz.",
+    "ayrisma": "Claude planı panoya, bültene ve rakam taşıyan fiyat ve gelir senaryolarına gidiyor; GPT çalışması kaynak ve lisans doğrulaması bitmeden fiyat vermiyor, ilk ürünü dar bir worksheet olarak görüyor.",
+    "birlesik": "Ortak hüküm: önce kaynaklı ve lisansı net küçük bir paket, sonra bülten. Abonelik ve ajans lisansı, tekrar kullanım ve ödeme isteği görülmeden büyütülmez."
+  },
+  "analist_gorusu": "En gerçekçi yol ücretsiz pano ve kaynak etiketi ile başlayıp küçük keşif paketini satmak, bülteni kanıt geldikçe açmak. Veri kaynaksız ve ödeme isteği sıfır; sürekli abonelik ilk 6 ayda hedefi taşımaz.",
+  "secenekler": [
+    {
+      "id": "eklenti-firsat-panosu-a",
+      "ad": "Bülten Pro: aylık eklenti fırsat bülteni",
+      "tur": "içerik",
+      "musteri": "Eklenti ve uzantı geliştiren, Türkiye'de çalışan solo geliştirici; kendi kartıyla ya da havaleyle öder",
+      "is": "Bu ay hangi eklenti ekosisteminde ve alt kategoride ürün yapılacağını kaynaklı biçimde seçmek, yanlış nişe ay harcamamak",
+      "tetikleyici": "Yeni eklenti kararı öncesi hafta sonu; başarısız bir lansman sonrası ürün seçimi",
+      "teklif": "Ücretsiz pano; ücretli bültende ayda 5 puanlı fırsat kartı, 1 girilmez kategori ve ekosistem derinliği; ilk sayı bedava",
+      "fiyat": "399 TL/ay veya 3.490 TL/yıl; yurt dışı alıcıya 12 USD/ay; 7 gün koşulsuz iade",
+      "kanal_birincil": "28 ekosistem sayfasıyla arama ve açık veri deposu; ilk 10 alıcı kurucunun mevcut geliştirici çevresinden",
+      "kanal_yedek": "LinkedIn gönderileri ve WordPress Türkiye topluluğunda kurala uygun özet paylaşımı",
+      "ilk_adim": "Panodaki 28 ekosistem hücresine kaynak ya da tahmin etiketi ekleyip panoyu yayınlamak",
+      "ilk_kapsam": "Kaynaklı pano, e-posta kaydı, çift onay, ilk ücretsiz sayı ve ücretli bülten satış sayfası; tek kurucu ve sabit biçimli aylık sayı",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "İçerik yapay zekâ araştırmasına dayanıyor; kaynak, provenans ve açık veri lisansı doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Bülten ticari ileti sayılabilir; KVKK aydınlatması, çift onay ve ileti izni hukukçu teyidi bekliyor."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Yurt dışı satıcı hizmeti ve sanal POS yolu belli ama hesap açılmadı, test ödemesi yok."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; 20 kişilik isim listesi yok, yalnız 10-15 kişilik mevcut çevre belgede var."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Birincil kanal (28 sayfa ve açık veri deposu) ile yedek kanallar adlı ve ilk adım tanımlı."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor yaklaşık 40 saat; kaynak kurucu zamanını haftada 4-6 saat veriyor, bu 7-10 hafta eder ve 8 hafta sınırına dayanır; ilk tahsilat yaklaşık 10. hafta."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "İlk tahsilata kadar yaklaşık 6.000 TL (alan adı, araç, hukuk teyidi); tavanın çok altında."
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Teklif sabit biçimli (5 kart, 1 girilmez kategori); ama abonenin istediği ekosistemin sonraki sayıda işlenmesi vaadi var, yazılı kapsam sınırı yok."
+        }
+      },
+      "kapi_duzeltme": "G1: kaynak etiketi ve lisans seçimi (kurucu onayıyla). G2: hukukçu teyidi. G3: hesap, test ödemesi. G4: 20 kişilik liste. G6: haftalık takvim. G8: ekosistem isteği sayısını yazılı sınırla.",
+      "finans": {
+        "satis_tipi": "aylık abonelik",
+        "net_fiyat_tl": 399,
+        "degisken_maliyet_tl": 50,
+        "sabit_gider_aylik_tl": 4500,
+        "baslangic_nakit_tl": 6000,
+        "kalan_efor_saat": {
+          "min": 24,
+          "beklenen": 40,
+          "max": 70
+        },
+        "ilk_tahsilat_gun": {
+          "min": 63,
+          "max": 100
+        },
+        "satis_basina_kurucu_saati": 0.5,
+        "musteri_basina_aylik_destek_dk": 10,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 2394,
+          "baz": 13167,
+          "iyi": 65037
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 6,
+          "baz": 33,
+          "iyi": 163
+        },
+        "alti_ay_musteri": {
+          "kotu": 2,
+          "baz": 12,
+          "iyi": 60
+        },
+        "donusum_orani": {
+          "dusuk": 0.02,
+          "yuksek": 0.05
+        },
+        "dayanak": "Plan 5, 6, 8 ve C.8: ücretli açılış 10. hafta; baz 6. ay sonunda 12 abone (plan 20 hedefi iyimser sayıldı), abone-ay 4+7+10+12=33; iyi: 20 ve 60 abone, abone-ay 163. Kötü: 2 abone. Sabit gider plan 6: araçlar, mali müşavir payı, alan adı ≈ 4.500 TL/ay. Dönüşüm varsayım, kanıt yok."
+      },
+      "deney": {
+        "varsayim": "Türkiye'deki solo eklenti geliştiricisi aylık 399 TL'yi kaynaklı fırsat kartları için öder",
+        "yontem": "Panoyu yayınla, ilk sayıyı ücretsiz yolla, 3. sayıda ücretli bölümü 399 TL ile ön satışa aç; 10-15 kişilik çevreyi elle davet et.",
+        "sure_gun": 60,
+        "maliyet_saat": 40,
+        "maliyet_tl": 6000,
+        "basari_olcutu": "60 günde 300 ücretsiz abone ve en az 5 ücretli abone",
+        "birakma_olcutu": "60 günde 150 abone altı ve 0 ücretli; bülten dahili araştırma defterine döner",
+        "sonraki_dilim": "Kapıyı geçerse İngilizce sürüm ve ajans lisansı pilotu"
+      },
+      "etiketler": {
+        "segment": "TR solo eklenti geliştiricisi",
+        "kanal_turu": "içerik",
+        "teknoloji": "statik site, e-posta aracı, ödeme sayfası",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "Plan 2, 5, 6, 8 ve ek belge A.5, C.2, C.8: ödeyen müşteri 0, pano hücreleri kaynaksız tahmin, yayın yok. Rakipler ücretli (trend aracı 39-249 USD/ay), reddit tabanlı bir araç 30.11.2025'te kapandı. GPT çalışması ödeme isteğini bilinmiyor sayıyor. Kurucunun mevcut geliştirici çevresi belgede adıyla geçiyor. Alıcı havuzu (TR solo geliştirici sayısı, 83 bin küresel geliştirici) kaynakta kaynaksız VARSAYIM."
+    },
+    {
+      "id": "eklenti-firsat-panosu-b",
+      "ad": "Keşif Paketi: tek seferlik eklenti fırsat seti",
+      "tur": "içerik",
+      "musteri": "Kendi eklenti araştırmasını yapmak isteyen geliştirici; Türkiye'de ya da yurt dışında, kendi kartıyla öder",
+      "is": "Tek bir ekosistemde ya da kategoride ürün yapmadan önce fırsatı kendi başına, standart çerçeveyle puanlamak",
+      "tetikleyici": "Yeni eklenti kararı öncesi hafta sonu; ücretsiz panoyu görüp kendi fikrini puanlamak isteme",
+      "teklif": "Keşif formu, istem şablonu, puanlama çerçevesi, pano verisi (JSON) ve 3 doldurulmuş örnek; indirilebilir paket",
+      "fiyat": "349 TL tek seferlik; yurt dışı alıcıya 29 USD; 7 gün koşulsuz iade",
+      "kanal_birincil": "Panonun 28 ekosistem sayfaları ve açık veri deposu üzerinden paket sayfasına yönlendirme",
+      "kanal_yedek": "Product Hunt lansmanı ve LinkedIn gönderileri; kurucunun çevresine elle davet",
+      "ilk_adim": "Paketi PDF ve Markdown olarak toplayıp ödeme sayfasında satışa açmak",
+      "ilk_kapsam": "Form, istem şablonu, çerçeve, pano JSON'u ve 3 örnek; sabit içerik, özelleştirme ve görüşme yok",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "İçerik kurucuya ait ama kaynak ve yapay zekâ üretimi provenansı ile veri lisansı doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Dijital içerik cayma istisnası, KDV ve e-arşiv fatura mali müşavir teyidi bekliyor."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Yurt içi için sanal POS ya da havale, yurt dışı için yasal satıcı hizmeti; hesap açılmadı."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; isim listesi yok, yalnız 10-15 kişilik mevcut çevre var."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "28 sayfa ve açık veri deposu adlı; yedek olarak Product Hunt ve LinkedIn tanımlı."
+        },
+        "G6": {
+          "durum": "gecti",
+          "not": "Paket yaklaşık yarım gün, kaynak etiketi ve ödeme sayfasıyla toplam yaklaşık 20 saat; ilk tahsilat 7. hafta."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "İlk tahsilata kadar yaklaşık 3.000 TL (alan adı, hukuk ve muhasebe teyidi)."
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Herkes aynı sabit paketi indirir; özelleştirme ve görüşme kapsam dışı."
+        }
+      },
+      "kapi_duzeltme": "G1: kaynak etiketi ve lisans onayı. G2: mali müşavir teyidi. G3: hesap açıp test ödemesi. G4: 20 kişilik isim listesi.",
+      "finans": {
+        "satis_tipi": "tek seferlik",
+        "net_fiyat_tl": 349,
+        "degisken_maliyet_tl": 15,
+        "sabit_gider_aylik_tl": 300,
+        "baslangic_nakit_tl": 3000,
+        "kalan_efor_saat": {
+          "min": 12,
+          "beklenen": 20,
+          "max": 36
+        },
+        "ilk_tahsilat_gun": {
+          "min": 45,
+          "max": 75
+        },
+        "satis_basina_kurucu_saati": 0.25,
+        "musteri_basina_aylik_destek_dk": 3,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 1047,
+          "baz": 6980,
+          "iyi": 15705
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 3,
+          "baz": 20,
+          "iyi": 45
+        },
+        "alti_ay_musteri": {
+          "kotu": 3,
+          "baz": 20,
+          "iyi": 45
+        },
+        "donusum_orani": {
+          "dusuk": 0.02,
+          "yuksek": 0.04
+        },
+        "dayanak": "Plan 5 ve C.3: paket satışı 7. haftada; plan 90. gün eşiği 30 paket iyimser sayıldı, baz 20 (20x349), iyi 45, kötü 3. Dönüşüm plan varsayımı (kanıt yok). Aynı kitleyi bülten de hedefler, iki seçenek toplanırken örtüşme düşülmeli. Komisyon yaklaşık 15 TL."
+      },
+      "deney": {
+        "varsayim": "Geliştirici ücretsiz panoyu gördükten sonra paketi 349 TL'ye satın alır",
+        "yontem": "Panoyu yayınla, paket sayfasını aç, ilk 30 gün çevreyi ve LinkedIn'i kullan; paket sayfası ziyaretini ve satın almayı say.",
+        "sure_gun": 45,
+        "maliyet_saat": 20,
+        "maliyet_tl": 3000,
+        "basari_olcutu": "45 günde en az 5 ödeme",
+        "birakma_olcutu": "45 günde 0 ödeme ve 500 pano ziyaretinin altı; paket ücretsiz lead magnet olur",
+        "sonraki_dilim": "Satış varsa bülten ücretli bölümünü aç"
+      },
+      "etiketler": {
+        "segment": "Eklenti geliştiricisi, kendi araştırmasını yapan",
+        "kanal_turu": "arama",
+        "teknoloji": "statik site, PDF ve JSON paketi",
+        "regulasyon": "mevzuata bağlı"
+      },
+      "kanit_notlari": "Plan 2, 5, 8 ve ek belge A.4, D.2: paket %70 yazılmış, çalışan ürün yok, ödeyen müşteri 0. Ücretsiz seçenekler (rakip fikir veritabanı, genel yapay zekâ istemleri) paketi kopyalanabilir kılıyor. GPT çalışması dar worksheet ve sınırlı kit önerisiyle uyumlu; lisans ve provenans doğrulaması şart. Mevcut çevre belgede adıyla geçiyor."
+    },
+    {
+      "id": "eklenti-firsat-panosu-c",
+      "ad": "Ajans lisansı: ürün hattı fırsat paketi",
+      "tur": "hizmet",
+      "musteri": "WooCommerce ve Shopify işi yapan 2-5 kişilik web ajansı kurucusu; ortakla onaylar, faturalı havale öder",
+      "is": "Hizmet gelirine eklenti ürünü eklemek için ekibe sunulabilir, puanlı ve kaynaklı fırsat listesi hazırlamak",
+      "tetikleyici": "Hizmet işinde sessiz dönem ya da çeyrek planlama toplantısı",
+      "teklif": "3 koltuk bülten, keşif paketi, 20 dakikalık tanışma ve yılda 1 saatlik görüşmede ajansın fikirlerini aynı çerçevede puanlama",
+      "fiyat": "299 USD/yıl peşin (yaklaşık 14.352 TL); yıllık yenileme",
+      "kanal_birincil": "LinkedIn'de 20 ajansa kişisel mesaj ve 20 dakikalık görüşme",
+      "kanal_yedek": "WordPress Türkiye topluluğu ve küçük geliştirici bültenleriyle yer değişimi",
+      "ilk_adim": "Hedef 20 ajansın ismen listesini çıkarmak ve ilk 10'a kişisel mesaj göndermek",
+      "ilk_kapsam": "Bülten Pro içeriği, keşif paketi, 3 koltuk ve yılda 1 saat görüşme; sabit kapsam, ek geliştirme yok",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kaynak, yapay zekâ provenansı ve veri lisansı doğrulanmadı; ajansa yeniden dağıtım hakkı netleşmeli."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Lisans sözleşmesi, e-arşiv fatura ve KVKK metinleri mali müşavir ve hukukçu teyidi bekliyor."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Yurt içi faturalı havale ya da yurt dışı satıcı hizmeti yolu belli; hesap açılmadı."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; ajans isim listesi yok, ilişki belgelenmemiş."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "LinkedIn kişisel mesaj ve topluluk kanalı adlı; ilk adım ve yedek kanal tanımlı."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor yaklaşık 50 saat; ilk tahsilat 3-5 ay beklentisi ama satış döngüsü ölçülmedi, ajans ilişkisi belgelenmemiş."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "İlk tahsilata kadar yaklaşık 8.000 TL (alan adı, hukuk ve muhasebe teyidi, sözleşme şablonu)."
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Fikir puanlama görüşmesinin kapsamı ve sayısı yazılı değil; ajansa özel istek üretebilir."
+        }
+      },
+      "kapi_duzeltme": "G1 ve G2: kaynak ve sözleşme teyidi. G3: hesap, test ödemesi. G4: 20 ajans listesi. G6: 10 görüşmeyle döngüyü ölç. G8: görüşmeyi 3 fikir ve 1 saatle yazılı sınırla.",
+      "finans": {
+        "satis_tipi": "yıllık peşin",
+        "net_fiyat_tl": 14352,
+        "degisken_maliyet_tl": 1050,
+        "sabit_gider_aylik_tl": 0,
+        "baslangic_nakit_tl": 8000,
+        "kalan_efor_saat": {
+          "min": 30,
+          "beklenen": 50,
+          "max": 80
+        },
+        "ilk_tahsilat_gun": {
+          "min": 75,
+          "max": 150
+        },
+        "satis_basina_kurucu_saati": 4,
+        "musteri_basina_aylik_destek_dk": 30,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 14352,
+          "iyi": 43056
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "donusum_orani": {
+          "dusuk": 0.03,
+          "yuksek": 0.15
+        },
+        "dayanak": "Plan 5, 11 ve C.2/C.5: 299 USD x 48 = 14.352 TL; plan 6. ay hedefi 3 ajans lisansı (iyi); planın 12 aylık baz senaryosu yalnız 2 lisans, ilk tahsilat gecikmesiyle 6 ayda baz 1; kötü 0. Dönüşüm %15 plan varsayımı, kanıt yok. Sabit gider A'da sayıldı."
+      },
+      "deney": {
+        "varsayim": "Küçük ajans kurucusu yıllık yaklaşık 14 bin TL'yi puanlı fırsat listesi ve 3 koltuk için peşin öder",
+        "yontem": "20 ajansı ismen listele, 10'una kişisel mesaj at, 20 dakikalık görüşmede ajansın bir fikrini çerçeveyle puanla, teklifi yazılı sun.",
+        "sure_gun": 30,
+        "maliyet_saat": 14,
+        "maliyet_tl": 0,
+        "basari_olcutu": "10 mesajdan en az 2 görüşme ve 1 yazılı fiyat teklifi yanıtı",
+        "birakma_olcutu": "10 mesajdan 0 görüşme ya da 3 görüşmede sıfır fiyat ilgisi",
+        "sonraki_dilim": "İlgi varsa 3 ajansla ücretli pilot; yoksa ajans lisansını bırak"
+      },
+      "etiketler": {
+        "segment": "Küçük web ajansı, WooCommerce ve Shopify",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "bülten, paket, görüşme",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "Plan 3.1, 5 ve ek belge B.3, C.5, A.8: ajans personası ve 299 USD lisans varsayım; ajans listesi, ilişki ve ödeme yok. Ürün hattı kararı için ekip zamanı tasarrufu varsayımla hesaplandı. GPT çalışması ücretli öneriyi sınırlı kit ve hizmetle sınırlıyor; abonelik ve geniş platform tekrar kullanım görülmeden önerilmiyor. Ajans sayısı (3.000-5.000) ve 15 bin TL onay eşiği kaynakta kaynaksız VARSAYIM."
+    }
+  ]
+}

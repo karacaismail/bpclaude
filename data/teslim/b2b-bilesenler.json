@@ -1,0 +1,23 @@
+{
+ "slug": "b2b-bilesenler",
+ "secenekler": {
+  "b2b-bilesenler-a": {
+   "satis_basina_kurucu_saati": 5,
+   "teslim_saat_odeme_basina": 34,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Ödeme birimi iki kalem: ürün sayfası bloğu yaklaşık 48 saat, hareket paketi yaklaşık 20 saat; ortalama 34 (5 dil, form, 320 px testi; yapay zekâ hızlanması dahil, varsayım)."
+  },
+  "b2b-bilesenler-b": {
+   "satis_basina_kurucu_saati": 5,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "5 iş günü sabit paket = 40 saat; tek ürün, 2 mobil görünüm, 3 dil ve sağdan sola yazım, 1 revizyon. Karttaki 8 saat satışın bir kısmı teslimdi; satış 5 saat."
+  },
+  "b2b-bilesenler-c": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Kod şablonu kopyası satılıyor; müşteriye özel iş yok, teslim 0. Destek yok denmiş ama kurulum soruları için 15 dk bırakıldı. Satış emeği karttaki gibi."
+  }
+ }
+}

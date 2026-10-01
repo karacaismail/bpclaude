@@ -1,0 +1,341 @@
+{
+ "slug": "volley-tap",
+ "baslik": "Volley Tap (HTML5 arcade oyunu)",
+ "ozet": "Tek günde yazılmış, aynı cihazda iki kişilik Phaser 3 voleybol arcade oyunu. Hedef: spor kulübü ve markalara kampanya oyunu, ayrıca portal ve itch.io yayını. Yapay zekâ rakip, portal SDK'sı ve ödeyen müşteri yok; tamamlanma yaklaşık %35.",
+ "bugun": {
+  "var": [
+   "Phaser 3 + Vite PWA; 1v1 aynı cihaz, dokunmatik ve klavye girişi, skor ve servis sistemi",
+   "Sahneler: menü, maç, sonuç; ses, çarpışma, girdi sistemleri; yaklaşık 1.800 satır TypeScript",
+   "İki çalışma da kodu temiz ve küçük buluyor; sahne ve sistem ayrımı var"
+  ],
+  "yok": [
+   "Yapay zekâ rakip, mod, portal SDK'sı ve İngilizce arayüz",
+   "7,6 MiB arka plan görseli ve 10 MB kaynak haritası portal sınırlarına aykırı",
+   "Gerçek analitik, oynanış verisi ve oynanmış kalite denetimi",
+   "Marka için tema dosyası, kampanya paneli, referans",
+   "Ödeme hesabı, fiyat sayfası, müşteri görüşmesi"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Oyun pazarlamasız satılamaz: portal geliri aylık onlarca dolar, fırsat maliyetiyle geri ödenmez; ticari sunum 'hayır'. Koşullu yol: oynanabilir demodan sonra spor kulübü ve markaya 25 bin liralık kampanya oyunu.",
+  "gpt": "Tek oyunculu eğlence ve ücretli kanıt yok; analitik gerçek değil. Reklamsız yol: itch.io demo, 2-5 dolarlık premium paket ve etkinlik için 150-500 dolarlık özel sürüm; 90 günde 100 demo oturumu hedefi.",
+  "ayrisma": "Claude B2B kampanya satışını ve portal yayınını vitrin olarak öne alıyor; GPT oyuncuya doğrudan premium satışı ve geliştirici şablonunu deniyor, portalı ikincil görüyor. Claude yüksek, GPT çok düşük fiyat ölçeği öneriyor.",
+  "birlesik": "İkisi de bugün satılabilir ürün olmadığında birleşiyor: önce AI rakip ve hafif sürüm, sonra küçük etkinlik ya da marka sürümü. Ödeme kanıtı gelene dek venture ölçeği ya da büyük yatırım yok."
+ },
+ "analist_gorusu": "En gerçekçi yol spor kulübü ve markaya sabit paketli kampanya oyunu; portal yayını bunun vitrini. Tek başına portal geliri nakit hedefine yaklaşmaz.",
+ "secenekler": [
+  {
+   "id": "volley-tap-a",
+   "ad": "Kulüp ve markalara sabit paketli kampanya oyunu",
+   "tur": "hizmet",
+   "musteri": "Voleybol kulübü ya da bölgesel marka ve ajansın sosyal medya ve pazarlama sorumlusu",
+   "is": "Maç günü, sezon açılışı ya da yaz kampanyası için paylaşılabilir, kurulumsuz, veri toplamayan marka oyunu",
+   "tetikleyici": "Sezon açılışı, sponsor talebi, kampanya takvimi; ajans teklifinin pahalı ve yavaş kalması",
+   "teklif": "Kulüp renkleri ve logosuyla 2 haftada teslim, kişisel veri toplamaz, kampanya sonu oynanış raporu, %50 ön ödeme",
+   "fiyat": "25.000 TL + KDV (15.000 tema ve logo; 40.000 çoklu mod ve 3 ay güncelleme); barındırma ayda 1.500 TL",
+   "kanal_birincil": "Kurucunun mevcut ilişkileri ve LinkedIn ile Instagram'dan kişisel mesaj (haftada 15)",
+   "kanal_yedek": "Butik dijital ajanslara beyaz etiketli şablon; il voleybol temsilcilikleri",
+   "ilk_adim": "AI rakipli demo çıkar; 10 kulüp ve marka listesi yap; mevcut ilişkilerden 3 kişiyle demo görüşmesi iste",
+   "ilk_kapsam": "AI rakip, katmanlı hafif varlıklar, 320-390 px dokunmatik, skor paylaşım ekranı, elle tema (renk, logo); tema dosyası ve panel sonra",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Phaser MIT, kod kurucuda; ses ve görsel lisansı ve kulüp logosu izni doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Oyun veri toplamıyor, ama analitik kancası kapatılmalı; vergi ve fatura mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-Arşiv fatura yolu belli; bu iş için fatura düzeni ve test tahsilatı doğrulanmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (kulüp, marka, ajans); 20 isimlik liste yok, planda 10 marka listesi öngörülüyor"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "LinkedIn, Instagram, mevcut ilişkiler adlı; yedek olarak ajans ortaklığı ve il temsilcilikleri var"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "İki belge 80-120 ile yaklaşık 130 saat veriyor; kulüp satış döngüsü 1-6 hafta ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Ses lisansı, alan adı ve teyit için yaklaşık 6.000 TL; tavanın çok altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Üç sabit paket var ama yazılı kapsam sınırı yok; özel maskot istekleri ayrı projeye dönebilir"
+    }
+   },
+   "kapi_duzeltme": "Lisans listesi ve kulüp logo izin metni hazırla; analitiği kapat ve mali müşavire sor; kapsam belgesi yaz; 20 kulüp ve marka ismini listele.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 25000,
+    "degisken_maliyet_tl": 1500,
+    "sabit_gider_aylik_tl": 250,
+    "baslangic_nakit_tl": 6000,
+    "kalan_efor_saat": {
+     "min": 80,
+     "beklenen": 120,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 63,
+     "max": 180
+    },
+    "satis_basina_kurucu_saati": 34,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 25000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.25
+    },
+    "dayanak": "Plan 5, 6, 8, 11 ve derinlik C.3: 25.000 TL paket. Plan 8 baz senaryoda ilk yıl B2B 0 ve pilot 6. ay hedefi, bu yüzden 6 ayda baz 0. İyi: 1 satış (25.000 TL, plan 8 iyimser). İlk teklif 9. hafta (gün 63), %50 ön ödeme. Dönüşüm: teklif-imza %25 plan varsayımı, alt sınır varsayım; ödeyen müşteri yok."
+   },
+   "deney": {
+    "varsayim": "Bir kulüp ya da marka, gerçek oyun demosunu görünce sabit 15-25 bin liralık paketi ön ödemeyle alır",
+    "yontem": "AI rakipli demo hazır olunca 10 kulüp ve marka yöneticisine kişisel mesajla 15 dakikalık demo ve 1 sayfalık teklif sun",
+    "sure_gun": 45,
+    "maliyet_saat": 70,
+    "maliyet_tl": 500,
+    "basari_olcutu": "10 temastan en az 3 demo ve 1 yazılı teklif yanıtı; ilk 60 günde 1 ön ödeme ya da imzalı pilot",
+    "birakma_olcutu": "10 temas ve 4 demodan sonra fiyat kabul eden ya da ön ödeme yapan yok",
+    "sonraki_dilim": "Pilot tema dosyası ve kampanya paneli; sonra ajans beyaz etiketli paket"
+   },
+   "etiketler": {
+    "segment": "Spor kulüpleri ve bölgesel markalar",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Phaser 3, Vite, PWA",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 5: üç paket 15.000, 25.000, 40.000 TL; plan 6: teslim 25 saat, brüt marj %58; derinlik A.2 ajans özel oyun fiyatı doğrulanmadı (varsayım). Ödeyen müşteri 0, referans yok. Kod 1v1 çalışıyor, AI rakip ve tema yok (derinlik D.2). Beachhead kulüp ödeme gücü varsayım (derinlik B.2)."
+  },
+  {
+   "id": "volley-tap-b",
+   "ad": "CrazyGames ve Yandex Games portal reklam geliri",
+   "tur": "yazılım ürünü",
+   "musteri": "Portal oyuncusu (13-25, mobil tarayıcı); oyuncu ödemez, gelir portalın reklam payıdır ve pay ile eCPM yayımlanmamıştır",
+   "is": "1-3 dakikalık, kurulumsuz, telefonda 1v1 ya da bilgisayara karşı eğlence",
+   "tetikleyici": "Oyuncu portalda spor ve 2 oyunculu listelerinde yeni oyun arar; tetikleyici portal öneri listesi",
+   "teklif": "Ücretsiz oyun; AI rakipli, 3 dakikalık maç, TR ve EN, 5 MB altında açılış; gelir reklam payı ve aylık ödeme",
+   "fiyat": "Oyuncuya ücretsiz; reklam payı portalın belirlediği oran (Poki 50/50, diğerleri yayımlanmıyor)",
+   "kanal_birincil": "CrazyGames açık gönderim ve Basic Launch (7-21 gün)",
+   "kanal_yedek": "Yandex Games konsolu; Poki playtest başvurusu (kabulde münhasırlık kararı)",
+   "ilk_adim": "AI rakip, varlık sıkıştırma ve SDK ile gönderilebilir sürüm çıkar; CrazyGames Basic Launch'a gönder",
+   "ilk_kapsam": "AI rakip, 2 mod, 2 MB altında varlıklar, kaynak haritasız yapı, CrazyGames SDK, TR ve EN, 320-390 px testi",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Phaser MIT ve kod kurucuda; ses ve görsel lisansı ve portal sözleşme hükümleri doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Reklam SDK'sı çerez ve izleme getirir; yurt dışı portal gelirinin vergisi mali müşavir teyidi bekler"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "CrazyGames havale, ACH ve PayPal ile öder; hesap açılmadı, 100 EUR eşik var"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Gelir portal reklam payından; pay ve eCPM yayımlanmamış, 68 USD/ay yalnız senaryo; oyuncu ödemez, 20 isimlik liste uygulanmıyor"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "CrazyGames açık gönderim birincil, Yandex Games yedek; ilk adım ve kabul kuralları adlı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 110-130 saat; Basic Launch sonrası ödeme gecikmesi ve kabul belirsiz"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Ses lisansı ve alan adı için yaklaşık 4.000 TL"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı oyunu oynar; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Ses ve görsel lisans envanteri çıkar; portal sözleşmesini oku; mali müşavire hizmet ihracı sor; CrazyGames geliştirici hesabı ve ödeme bilgisini aç.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 3264,
+    "degisken_maliyet_tl": 100,
+    "sabit_gider_aylik_tl": 100,
+    "baslangic_nakit_tl": 4000,
+    "kalan_efor_saat": {
+     "min": 80,
+     "beklenen": 110,
+     "max": 130
+    },
+    "ilk_tahsilat_gun": {
+     "min": 75,
+     "max": 180
+    },
+    "satis_basina_kurucu_saati": 0,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 6500
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.5
+    },
+    "dayanak": "Plan 3.2, 8 ve 11: günde 2.000 oynanışta ayda 68 USD (3.264 TL; eCPM ve pay varsayım). Plan 11 6. ayda ancak 68 USD/ay hedefler; Full Launch, 1 ay ödeme gecikmesi ve 100 EUR eşik nedeniyle baz 0. İyi: gelir 3. aydan başlar, 1 ödeme yaklaşık 136 USD (6.500 TL). Oran: Full Launch kabulü, varsayım."
+   },
+   "deney": {
+    "varsayim": "CrazyGames Basic Launch'ta ortalama oturum 3 dakika ve tekrar oynama %25'e ulaşır, Full Launch alır",
+    "yontem": "Gönderilebilir sürümü CrazyGames'e gönder; 7-21 gün QA ve metrik raporunu oku; sonra Yandex'e gönder",
+    "sure_gun": 45,
+    "maliyet_saat": 110,
+    "maliyet_tl": 4000,
+    "basari_olcutu": "Oturum 3 dk ve tekrar oynama %25 üstü; Full Launch onayı",
+    "birakma_olcutu": "Basic Launch metrikleri hedefin yarısının altında ya da Full Launch reddi",
+    "sonraki_dilim": "Yandex gönderimi; oynanış verisine göre iki mod; B2B demosu için portal kanıtı"
+   },
+   "etiketler": {
+    "segment": "Mobil tarayıcı oyuncusu ve oyun portalları",
+    "kanal_turu": "pazar yeri",
+    "teknoloji": "Phaser 3, CrazyGames SDK",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 0, 3.2, 8: yayımlanmış eCPM yok, günde 2.000 oynanışta aylık 60-70 USD; plan 6: geri ödeme 40 aydan uzun, fırsat maliyetiyle geri ödenmez. CrazyGames 50 MB, SDK ve PEGI 12 şartı koyuyor; 100 EUR eşik. Mevcut 7,6 MiB görsel ve kaynak haritası uyumsuz. Ödeyen müşteri yok."
+  },
+  {
+   "id": "volley-tap-c",
+   "ad": "itch.io tarayıcı demo ve ücretli premium paket",
+   "tur": "yazılım ürünü",
+   "musteri": "16 yaş üstü rahat oyuncu; aynı ekranda oynayan iki arkadaş; ikincil olarak küçük etkinlik düzenleyicisi",
+   "is": "Açıklama okumadan, iki kişi tek ekranda kısa voleybol maçı yapmak; etkinlikte markalı maç",
+   "tetikleyici": "Arkadaşıyla rövanş isteği; paylaşılan klip; etkinlik düzenleyicisinin markalı maç ihtiyacı",
+   "teklif": "Girişsiz ücretsiz ilk maç; tam sürüm ve arena/görünüm paketi için 3 dolarlık premium hipotezi; etkinlik sürümü sinyal yok, teklif dışı",
+   "fiyat": "2-5 dolar premium hipotezi (3 dolar yaklaşık 144 TL); etkinlik sürümü (150-500 dolar) yalnız hipotez, henüz fiyatlanmadı",
+   "kanal_birincil": "itch.io tarayıcı demo sayfası, spor ve yerel çok oyunculu etiketleriyle",
+   "kanal_yedek": "Reddit r/playmygame ve r/WebGames (kural gözeten haftada bir gönderi); 20 saniyelik klip",
+   "ilk_adim": "320 px kontrol, öğretici, duraklat, ekran dönüşü sürekliliği ve itch demo sayfası; ilk 20 oyuncuyla ölçüm",
+   "ilk_kapsam": "P0: kontroller, öğretici, rematch, yön değişimi; P1: itch demo, kapak, premium paket, destek ve iade bilgisi",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; ses ve görsel lisansı doğrulanmadı, varlık envanteri bağlanmalı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "itch ödeme ve vergi yükü, yurt dışı gelirin beyanı mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "itch ödeme modeli belli ama Türkiye'ye ödeme hesabı açılmadı, test satışı yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı oyuncu tipi belli; ödeyecek oyuncuların isim listesi yok, ücretsiz alternatif çok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "itch demo ve etiketler birincil, Reddit yedek; ilk adım klip ve demo"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "GPT 16-32 saat; ilk tahsilat itch yayınından sonra haftalar içinde"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "GPT'ye göre 0-20 dolar nakit; yaklaşık 500 TL"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı premium paketi alır; etkinlik özel sürümü ayrı ve sınırlı"
+    }
+   },
+   "kapi_duzeltme": "Varlık lisans envanteri çıkar; itch ödeme hesabını aç; mali müşavire sor; 100 gönüllü demo oturumu ve 5 gönüllü ödemeyle fiyatı sına.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 144,
+    "degisken_maliyet_tl": 40,
+    "sabit_gider_aylik_tl": 0,
+    "baslangic_nakit_tl": 500,
+    "kalan_efor_saat": {
+     "min": 16,
+     "beklenen": 32,
+     "max": 48
+    },
+    "ilk_tahsilat_gun": {
+     "min": 21,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 1,
+    "musteri_basina_aylik_destek_dk": 5,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 430,
+     "iyi": 1440
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 10
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 10
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.05
+    },
+    "dayanak": "GPT dosyası: 3 dolar premium (48 TL/USD, 144 TL); 90 günde 100 demo oturumu ve 5 gönüllü ödeme (%5) yalnız karar eşiği, kanıt değil. Baz 3 satış (%1-2 dönüşüm varsayımı), iyi 10 satış (%5 hedefin 6 aya yayılması). Etkinlik sürümü gelir saymadım; sinyal yok."
+   },
+   "deney": {
+    "varsayim": "Ücretsiz ilk maçı bitiren ve rövanş oynayan oyuncu 2-5 dolarlık premium paketi satın alır",
+    "yontem": "itch tarayıcı demosunu yayınla, 20 saniyelik klibi paylaş; ilk maç tamamlama, rematch ve ödeme verisini izinli ve anonim olay olarak ölç",
+    "sure_gun": 90,
+    "maliyet_saat": 32,
+    "maliyet_tl": 500,
+    "basari_olcutu": "100 demo oturumu, en az 30 bitmiş maç, 5 gönüllü ödeme",
+    "birakma_olcutu": "100 oturumda 30'dan az bitmiş maç ve sıfır ödeme",
+    "sonraki_dilim": "Düşük rövanşta kontrol ve fizik iyileştirmesi; ödeme gelirse içerik paketi ve etkinlik sürümü"
+   },
+   "etiketler": {
+    "segment": "Rahat oyuncu ve yerel çok oyunculu arkadaşlar",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Phaser 3, itch.io tarayıcı demo",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "GPT dosyası: tek segment hipotezi (iki kişi, tek ekran); ödeme, gerçek analitik, kohort ve portal yayını doğrulanmadı; test dosyası yok. Fiyat 2-5 dolar ve 150-500 dolar etkinlik sürümü yalnız hipotez. Claude planında bu biçim yok; planın itch.io'yu anmaması fark. Ödeyen müşteri yok."
+  }
+ ]
+}

@@ -1,0 +1,344 @@
+{
+ "slug": "devpanel",
+ "baslik": "Geliştirici paneli desenleri (devpanel)",
+ "ozet": "Altı paralel prototipten oluşan AI-first yönetim paneli ailesinden sınanmış desenler (isimle onay, denetim günlüğü, yetki matrisi, AI diff onayı) çıkarılır; geliştirici ekiplere sabit kapsamlı paket olarak sunulur. Ödeyen müşteri yok, veri sahte.",
+ "bugun": {
+  "var": [
+   "Bir React 19 prototipinde 31 ekran, 24 test dosyasında 116 kontrat testi",
+   "Altı paralel varyant; toplam yaklaşık 66,9 bin satır kaynak",
+   "Sekiz kullanılabilir desen: ConfirmDanger, AuditLog, PermissionMatrix, SchemaDiffViewer vb.",
+   "Kurucunun herkese açık deposu (31 commit, 0 yıldız)",
+   "Retool, Refine, shadcn ve Metronic fiyatları ile karşılaştırma masa başında yapıldı"
+  ],
+  "yok": [
+   "Ödeyen ya da pilot müşteri",
+   "Lisans dosyası; bağımlılık ve lisans uyumu doğrulanmadı",
+   "Gerçek backend ve kalıcı depolama; tüm veri sahte",
+   "Paketlenmiş npm paketi, Storybook ve canlı demo",
+   "Seçilmiş tek canonical varyant; toparlanması gereken bekleyen değişiklikler",
+   "Ödeme hesabı (sanal POS ya da yasal satıcı) açılmadı"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Ticari sunum yapılamaz: ürün yok, veri sahte, şablon pazarı doygun (Metronic 49 $, 120 bin satış). Tek değer iç desen kütüphanesi; komşu biçim açık kaynak desenler ve en çok 3 günlük danışmanlık, yıllık şablon geliri 300-6000 $.",
+  "gpt": "Altı-dokuz varyant yeni startup sayılmaz; önce tek canonical seçilmeli. İlk dar vaat: 20 alanlı iç form şemasını JSON ve React çıktısına dönüştürmek; tek form entegrasyonu 300-1000 $, şablon 29-99 $. AI işlevlerinin bir kısmı simülasyon.",
+  "ayrisma": "Claude paneli güvenlik ve denetim desenleri (onay, audit, yetki) olarak konumlar; GPT form şeması dışa aktarımı olarak. Claude şablon satışını eler; GPT küratörlü şablonu sınanacak fiyat sayar.",
+  "birlesik": "Önce tek varyant seçilip arşivlenmeli ve MIT onaylanmalı. En makul ticari yol sabit kapsamlı paket entegrasyon hizmeti; şablon ve AI vaadi kanıtsız. Ödeyen müşteri yok."
+ },
+ "analist_gorusu": "Ürün satmak yerine, deseni zaten kullanacak bir ekibe 3 günlük sabit fiyatlı entegrasyon satmak; kurucunun kendi ürünündeki kullanım henüz yok, planlı 90 günlük çalışmayla kanıtlanırsa referans olur. Şablon pazarı ucuz ve doygun.",
+ "secenekler": [
+  {
+   "id": "devpanel-a",
+   "ad": "3 günlük onay, denetim ve yetki entegrasyon paketi",
+   "tur": "hizmet",
+   "musteri": "10-50 kişilik SaaS ya da fintech ekibinde iç araç geliştiricisi ya da teknik lider; React ile yönetim paneli yazan ekip",
+   "is": "Panelde yıkıcı işlem onayı, değiştirilemez denetim günlüğü ve yetki matrisini sıfırdan yazmadan, test edilmiş bileşenlerle kurmak",
+   "tetikleyici": "Müşteri denetim sorusu, yanlış toplu silme olayı ya da ekibe yeni bir süperadmin ekranı isteği",
+   "teklif": "Üç iş günü, sabit kapsam: isimle onay, denetim günlüğü ve yetki matrisi bileşenleri müşterinin React 19 projesine entegre edilir, testle teslim",
+   "fiyat": "36.000 ₺ + KDV sabit (3 gün x 12.000 ₺); en çok 3 günlük paket",
+   "kanal_birincil": "LinkedIn'de 20 hedef geliştirici ve teknik liderle tek tek yazışma (kurucunun ağı belgelenmedi); planlı dev.to ve GitHub yazıları",
+   "kanal_yedek": "Hacker News Show HN ve r/reactjs gönderisi; Zabuno'daki kullanım vakası, planlı 90 günlük çalışma tamamlanınca",
+   "ilk_adim": "Kurucunun bildiği 20 hedef kişinin listesini çıkarmak ve ilk 10 kişiye 3 günlük paket teklifini kişisel mesajla göndermek",
+   "ilk_kapsam": "Tek varyant seçilir, üç desen paketlenir: isimle onay, denetim günlüğü, yetki matrisi; MIT lisans onayı, dürüst README ve 90 saniyelik demo.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucunun herkese açık deposunda ama lisans dosyası yok; bağımlılık lisansları ve ajan SDK bağımlılığı doğrulanmadı."
+    },
+    "G2": {
+     "durum": "gecti",
+     "not": "Sabit kapsamlı yazılım hizmeti; KVKK engeli yok, fatura mali müşavirle kesilir (plan 10. bölüm, ek C.5)."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşiv fatura yolu planda belli; bu hizmet için hesap ve fatura düzeni teyit edilmedi."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (iç araç geliştiricisi); 20 kişilik isim listesi henüz yazılmadı."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil: tek tek LinkedIn mesajı; yedek: Show HN, dev.to ve Zabuno vakası; ilk adım adlı (ek C.2, C.5)."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 40-90 saat (3-5 hafta) sığıyor; ancak satış döngüsü ölçülmedi, ilk tahsilat 60-150 gün tahmini ve benzer satış geçmişi yok."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit 2.000 ₺ civarı; tavan 50.000 ₺ altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "3 günlük sabit paket var; desteklenen yığın (yalnız React 19) yazılı değil, müşteri özel isteği riski."
+    }
+   },
+   "kapi_duzeltme": "MIT lisansı kurucu onayıyla eklenir, bağımlılıklar taranır; hesap ve fatura düzeni teyit edilir; 20 isim listesi çıkarılır; kapsam yalnız React 19 yazılır; satış döngüsü ölçülür.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 36000,
+    "degisken_maliyet_tl": 500,
+    "sabit_gider_aylik_tl": 400,
+    "baslangic_nakit_tl": 2000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 60,
+     "max": 90
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 10,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 36000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan ek C.5: 12.000 ₺/gün, en çok 3 gün = 36.000 ₺ (varsayım). Kaynakta 90 günde 3 görüşme ve en az 1 kapanış yalnız eşik; tahmin değil. Ödeyen ve ağ kanıtı yok, dönüşüm varsayım: baz 0, iyi 1 satış. Paketleme 40-90 saat, ilk tahsilat 60-150 gün."
+   },
+   "deney": {
+    "varsayim": "Bir geliştirici ekibi, açık kaynak desenlerin varlığına rağmen entegrasyon için 36.000 ₺ öder",
+    "yontem": "20 hedef kişiye tek tek mesaj, 3 görüşme, görüşmede demo ve yazılı 1 sayfalık kapsam ve fiyat teklifi",
+    "sure_gun": 14,
+    "maliyet_saat": 12,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 3 görüşme ve 1 yazılı niyet, ön ödeme ya da ücretli pilot kabulü",
+    "birakma_olcutu": "20 mesajdan sonra 0 görüşme ya da fiyat konuşulduğunda hiç ilgi yok",
+    "sonraki_dilim": "Başarılıysa 3 desenli paketi npm ve Storybook ile yayımla; ikinci müşteride aynı paketi tekrarla"
+   },
+   "etiketler": {
+    "segment": "SaaS ve fintech iç araç ekipleri",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "React 19, TypeScript, Tailwind",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Plan 0. ve 7.2 bölümleri: ödeyen müşteri yok, veri sahte, 116 test, 31 ekran. Ek A.8: Retool 12 kullanıcıda yaklaşık 114.540 ₺/yıl; sıfırdan yazım 80 saat varsayımı. Ek C.5 danışmanlık süreci ve fiyat. Kurucunun gerçek ağı belgede yok. GPT ailesi dosyası: AI işlevleri kısmen simülasyon; Retool Team 10 $ builder."
+  },
+  {
+   "id": "devpanel-b",
+   "ad": "20 alanlı form şemasından JSON ve React dışa aktarım işi",
+   "tur": "hizmet",
+   "musteri": "3-15 kişilik ajansın frontend lideri ya da SaaS ekibinde frontend mühendisi; tekrarlanan arka ofis formu yazan ekip",
+   "is": "Operasyon sahibinin Excel başlıklarını doğrulama ve koşullu alanlarla sürümlü şemaya ve çalışan React formuna çevirmek",
+   "tetikleyici": "Müşteri için yeni bir arka ofis formu teklifi ya da aynı kuralın iki ekranda farklı çalışması",
+   "teklif": "Tek formluk sabit kapsamlı entegrasyon: en çok 20 alan, koşul ve doğrulama, JSON şema, React çıktısı, 320 piksel ve klavye testi, müşterinin deposunda derleme",
+   "fiyat": "20.000 ₺ + KDV (yaklaşık 417 $, GPT çalışmasındaki 300-1000 $ aralığı)",
+   "kanal_birincil": "Form kütüphanelerinin GitHub issue sayfalarında ilgili sorulara örnekle yanıt; LinkedIn'de tek tek ajans liderleri",
+   "kanal_yedek": "dev.to yazısı ve ücretsiz 3 alanlı koşullu form demosu (Storybook)",
+   "ilk_adim": "3 alanlı koşullu form demosunu ve dışa aktarım örneğini yayımlamak, ilgili issue başlıklarına örnekle yanıt vermek",
+   "ilk_kapsam": "Önkoşul: tek canonical varyant seçimi. Tek şema biçimi, CSV içe aktarım, koşul editörü, JSON ve React dışa aktarımı, gidiş-dönüş testi; 20 alanlı örnek form kayıpsız çalışır.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Varyantların ve bağımlı paketlerin hak durumu doğrulanacak; SDK bağımlılığı çıkarılmalı."
+    },
+    "G2": {
+     "durum": "gecti",
+     "not": "Yazılım hizmeti; kişisel veri işlenmez, sentetik örnek kullanılır (GPT ailesi dosyası)."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yurt içi için havale ve fatura düzeni belli ama hesap açılmadı; yurt dışı için yasal satıcı hesabı yok."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (ajans frontend lideri); ismen 20 kişilik liste yok."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "GitHub issue ve LinkedIn adlı ama somut hedef depo ve grup listelenmedi."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Dışa aktarıcı yok; GPT ailesi dosyası 32-64 saat der, kapsam kanıtsız; satış döngüsü ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı yaklaşık 1.500 ₺; tavanın çok altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Her form müşteriye özgü koşul getirir; en çok 20 alan sınırı yazılı ama desteklenen yığın tanımsız."
+    }
+   },
+   "kapi_duzeltme": "Hak sahipliği ve lisans taraması yapılır; hesap ve fatura düzeni kurulur; hedef depo ve ajans listesi çıkarılır; dışa aktarıcı 20 alanlı örnekte çalıştırılıp süre ölçülür; kapsam yazılır.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 20000,
+    "degisken_maliyet_tl": 300,
+    "sabit_gider_aylik_tl": 400,
+    "baslangic_nakit_tl": 1500,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 64,
+     "max": 110
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 12,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 40000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 2
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.08
+    },
+    "dayanak": "GPT ailesi dosyası: tek form entegrasyonu 300-1000 $; orta nokta 417 $ x 48 = 20.000 ₺. Dışa aktarıcı yok, canonical seçilmedi; 2 ücretli entegrasyon yalnız 90 günlük hedef. Ücretsiz kütüphaneler var: baz 0, iyi 2 satış. Efor 32-64 saat, belirsizlikle üst sınır 110."
+   },
+   "deney": {
+    "varsayim": "Ajans frontend liderleri, form dışa aktarımı için ücretsiz form kütüphaneleri varken para öder",
+    "yontem": "3 alanlı koşullu form demosu yayımla, 10 kişiye 20 alanlı örneğin dışa aktarımını göster, fiyatlı teklif sun",
+    "sure_gun": 21,
+    "maliyet_saat": 20,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 2 kişi kendi formunu isteyip fiyatı kabul eder ya da ön ödeme yapar",
+    "birakma_olcutu": "10 gösterimden sonra 0 fiyat kabulü; ücretsiz kütüphane yeterli bulunuyor",
+    "sonraki_dilim": "Tek müşteri başarılıysa küratörlü şablon paketi; yoksa seçenek bırakılır"
+   },
+   "etiketler": {
+    "segment": "Ajanslar ve SaaS frontend ekipleri",
+    "kanal_turu": "topluluk",
+    "teknoloji": "React 19, JSON şema, TypeScript",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "GPT ailesi dosyası: ilk dar vaat 20 alanlı form, tek form entegrasyonu 300-1000 $, şablon 29-99 $; 90 günde 10 dışa aktarım ve 2 ücretli entegrasyon hedefi. AI işlevlerinin bir kısmı simülasyon, dışa aktarıcı yok. Retool Team 10 $ builder; ücretsiz form kütüphaneleri rekabeti ağır. Ödeyen müşteri yok."
+  },
+  {
+   "id": "devpanel-c",
+   "ad": "Yönetim paneli şablonu, 49 $ lisans",
+   "tur": "kod satışı",
+   "musteri": "Bağımsız geliştirici ve küçük ajans; hazır yönetim paneli şablonu arayan",
+   "is": "Sıfırdan panel yazmadan hazır ekran ve davranış desenlerini kendi projesine almak",
+   "tetikleyici": "Yeni bir müşteri paneli ya da yan proje başlangıcı",
+   "teklif": "Tek varyantın 31 ekranı (sahte veri, yaklaşık %60 tıklanabilir prototip), token sistemi, tema editörü ve README; tek proje lisansı, uzatılmış lisans 199 $",
+   "fiyat": "49 $ (2.352 ₺) tek proje; 199 $ uzatılmış",
+   "kanal_birincil": "Lemon Squeezy mağazası; GitHub deposu ve Hacker News Show HN gönderisi ile trafik",
+   "kanal_yedek": "Gumroad Discover ve dev.to yazıları",
+   "ilk_adim": "Mağaza hesabını açmak, 90 saniyelik demo ve canlı örnekle ilk tanıtım gönderisi",
+   "ilk_kapsam": "Tek varyant temizlenir, lisans metni, dokümantasyon, demo sitesi ve paketleme; yaklaşık 80-120 saatlik iş.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Varyant adları kişi adı, lisans dosyası yok, bir varyantta ajan SDK bağımlılığı var; temizlik gerekir."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Hizmet ihracı KDV istisnası mali müşavirle doğrulanacak; lisans metni gerekli."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Lemon Squeezy yasal satıcı yolu belli ama hesap açılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli ama ismen liste yok; plan, 49 $ üstü ödeyecek alıcıyı da göstermiyor."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Lemon Squeezy, Show HN, Gumroad Discover ve dev.to adlı; ancak plan ayda 0-5 satış bekliyor."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Paketleme 80-120 saat (4-6 hafta); organik satış döngüsü ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit 1.500 ₺ civarı."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı şablonu alır; özel geliştirme sözü verilmez."
+    }
+   },
+   "kapi_duzeltme": "Varyant adları temizlenir, lisans ve bağımlılık taraması yapılır; mağaza hesabı açılıp test ödemesi yapılır; vergi teyidi alınır. Başabaş 78 satış, bu pencerede ulaşılmaz.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 2352,
+    "degisken_maliyet_tl": 142,
+    "sabit_gider_aylik_tl": 400,
+    "baslangic_nakit_tl": 1500,
+    "kalan_efor_saat": {
+     "min": 80,
+     "beklenen": 100,
+     "max": 120
+    },
+    "ilk_tahsilat_gun": {
+     "min": 50,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 0.5,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 14112,
+     "iyi": 58800
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 25
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 25
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.03
+    },
+    "dayanak": "Plan 5 ve 8. bölüm: 49 $ x 48 = 2.352 ₺; platform kesintisi %5 + 0,50 $ yaklaşık 142 ₺. Plan 12 aylık adet kötü 6, baz 30, iyi 120; organik satış ayda 0-5 (varsayım), paketleme sonrası 4-5 ay kaldığından 6 ayda 0/6/25 alındı. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Tanınmamış bir satıcının şablonuna geliştiriciler ücretsiz Refine, shadcn ve ücretli Metronic varken 49 $ öder",
+    "yontem": "Paketlemeden önce 90 saniyelik demo ve ön satış sayfası yayımla; Show HN ve dev.to ile trafik çek, ön sipariş say",
+    "sure_gun": 21,
+    "maliyet_saat": 12,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 5 ön sipariş ya da ödeme",
+    "birakma_olcutu": "21 günde 0 ön sipariş",
+    "sonraki_dilim": "Başarılıysa paketleme tamamlanır, uzatılmış lisans eklenir"
+   },
+   "etiketler": {
+    "segment": "Bağımsız geliştirici ve küçük ajans",
+    "kanal_turu": "pazar yeri",
+    "teknoloji": "React 19, Vite, Tailwind v4",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Plan 3.2 ve 8: Metronic 49 $ ile 120.362 satış, yeni satıcı yıl 1 için 30-100 adet varsayımı; 36 ayda başabaş yok. Plan 4: Refine ve shadcn ücretsiz, Retool 5-15 $ kullanıcı başı. Plan 'önerilmez' diyor; ürün farkı alıcının aradığı şey değil. Ödeyen müşteri yok."
+  }
+ ]
+}

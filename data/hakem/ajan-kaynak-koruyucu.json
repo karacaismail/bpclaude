@@ -1,0 +1,59 @@
+{
+ "slug": "ajan-kaynak-koruyucu",
+ "kararlar": [
+  {
+   "itiraz": "A efor 60-140 saat iyimser; plan MVP tablosu 20+ iş günü sayıyor, G6 test olmalı",
+   "karar": "kabul",
+   "degisiklik": "A G6 gecti->test; kalan_efor 60/90/140->100/144/200 saat; ilk_tahsilat max 90->105 gün; kapi_duzeltme güncellendi",
+   "gerekce": "Plan MVP kalemleri 18 iş günü (~144 saat); 20 saat/haftada 8 haftaya yakın, üst sınır aşar; satış döngüsü ölçülmedi."
+  },
+  {
+   "itiraz": "Çekirdek hazır sayılıyor; GPT testlerin yeniden çalıştırılmadığını, lisansın doğrulanmadığını söylüyor",
+   "karar": "kismen",
+   "degisiklik": "ozet 'büyük ölçüde hazır' -> 'yazılmış, testleri yeniden çalıştırılmadı'; bugun.var test kanıtı maddesine yeniden çalıştırılmadı notu eklendi",
+   "gerekce": "Claude planı Ağustos 2026 yeşil kanıt kaydı veriyor, GPT yeniden doğrulanmadığını belirtiyor; lisans G1 test ve bugun.yok'ta zaten açık."
+  },
+  {
+   "itiraz": "C sponsorluk 3 ay x 64 $ baz sayılmış; plan bu geliri baz gelire koymamış (stratejik)",
+   "karar": "kabul",
+   "degisiklik": "C baz tahsilat 12.000->2.304 TL (yalnız bireysel sponsor), iyi 30.000->26.880; net_fiyat 3.072->384; adet/müşteri ve dayanak güncellendi",
+   "gerekce": "Plan orkestratör segmentini gelir saymadı; ccusage ortalaması küçük sponsor; kurumsal 64 $ yalnız iyi senaryoda kaldı."
+  },
+  {
+   "itiraz": "A G7 test: 48.700 TL tavana çok yakın, kur ve cihaz fiyatı aşabilir, kalemler doğrulanmadı",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Plan kalemleri 864 $ x 48 = yaklaşık 41.500 TL; cihaz %20 pahalı olsa da tavan altı. Yalnız not ve baslangic_nakit 48.700->41.500 kaynakla uyumlu hale getirildi."
+  },
+  {
+   "itiraz": "C G4 kaldi: alıcının ödeme isteği düşük, isim listesi yok, kimin ödeyeceği belirsiz",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Plan sponsorluk kademelerini ve sponsorluk kaynağı olarak orkestratör/geliştiriciyi tanımlıyor; alıcı tipi belli, isim listesi eksik: test tanımına uyar."
+  },
+  {
+   "itiraz": "A baz tahsilat 62.000 TL iyimser; sponsor dönüşümü yüzde 1'in çok altında ve ödeyen müşteri 0 iken 98 ödeme varsayılmış",
+   "karar": "kismen",
+   "degisiklik": "A baz 62.000->47.376 TL, ödeme 98->74, müşteri 80->62; kötü ve iyi aynı",
+   "gerekce": "Plan baz rakamı 2,5 satış ayına orantılandı; talep kanıtı yok. Sponsor payı zaten yüzde 1'in çok altında düzeyi; 10-25 bin ret."
+  },
+  {
+   "itiraz": "A donusum_orani 0,01-0,03 yerine 0,001-0,005 olmalı (benzer araçlarda yüzde 1'in çok altında)",
+   "karar": "kismen",
+   "degisiklik": "A donusum_orani 0,01-0,03 -> 0,005-0,02; dayanak güncellendi",
+   "gerekce": "0,12 sponsor dönüşümü, Pro satın alma değil; plan Pro için yüzde 2 varsayıyor ama kanıtsız, alt sınır düşürüldü."
+  },
+  {
+   "itiraz": "B baz ödeme adedi 10 iyimser; GPT eşiği 90 günde 2 ücretli talep, talep kanıtı yok",
+   "karar": "kabul",
+   "degisiklik": "B baz ödeme 10->4, tahsilat 42.240->18.240 TL, müşteri 4; iyi 25->12 ödeme, 105.600->54.720 TL; dayanak güncellendi",
+   "gerekce": "GPT yalnız 90 günde 2 ücretli talep eşiğini veriyor (6 ayda yaklaşık 4); 10 satış kaynaksız."
+  },
+  {
+   "itiraz": "Hakem taraması: C G6 gecti, ama not satış döngüsünün uzun olabileceğini söylüyor",
+   "karar": "kabul",
+   "degisiklik": "C G6 gecti->test; kapi_duzeltme'ye döngü ölçümü eklendi",
+   "gerekce": "G6 tanımı: satış döngüsü ölçülmediyse test; kurumsal sponsor döngüsü kaynakta yok."
+  }
+ ]
+}

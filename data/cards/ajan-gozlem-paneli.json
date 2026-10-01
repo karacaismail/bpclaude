@@ -1,0 +1,342 @@
+{
+ "slug": "ajan-gozlem-paneli",
+ "baslik": "Ajan gözlem paneli",
+ "ozet": "Claude Code ve Codex oturumlarının token maliyetini ve Mac bellek baskısını tek ekranda gösteren yerel, ağsız panel. Bugün yalnız sabit veriyle çalışan 519 satırlık görsel iskelet; gerçek veri katmanı, ödeyen müşteri ve satış kanalı yok.",
+ "bugun": {
+  "var": [
+   "React ile çizgi ve çubuk grafik ile akış şeması iskeleti (519 satır)",
+   "Kaynak kodda sabit örnek veri; iç denetimde düşük hazırlık puanı",
+   "Ürün planı: Koruyucu Pro'nun içine Gözlem Paneli olarak katlama",
+   "Veri katmanı tasarımı: Claude ve Codex oturum günlüğü alanları belgelenmiş"
+  ],
+  "yok": [
+   "Gerçek veri okuyucusu (Claude, Codex, koruyucu durumu)",
+   "Test, görsel kimlik ve tasarım tokenları",
+   "Dış sermaye taahhüdü",
+   "Tahsilat hesabı ve fiyat sayfası",
+   "Ödeyen müşteri ya da beta kullanıcısı kaydı"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Panoyu tek başına ürün saymıyor: ücretsiz rakipler dolu, doğrudan gelir yılda birkaç bin dolar. Öneri: koruyucunun Pro paketine gömmek, 10 iş günü, ücretsiz çekirdekte statik rapor.",
+  "gpt": "İlk alıcı hipotezi yapay zekâ işlerini izleyen operatör. Üç dar seçenek: anlık görüntü arayüz entegrasyonu, demo şablonu, kurulum hizmeti. Talep doğrulanmadı; 7 günlük fixture deneyi, tekrar talep yoksa geniş ürün ertelenir.",
+  "ayrisma": "Claude geliştirici ajan maliyeti ve bellek için bir Pro özelliği öneriyor; GPT iş izleme operatörüne sabit kapsamlı kit ya da hizmet öneriyor. Alıcı tipi farklı; GPT'de abonelik tekrar kullanıma bağlı.",
+  "birlesik": "Ayrı SaaS yapılmaz; ödeme önce bir Pro özelliğinde ya da sabit kapsamlı küçük pakette aranır. Panonun doğrudan geliri düşük; talep kanıtı yok, önce küçük ve ücretli bir deney gerekir."
+ },
+ "analist_gorusu": "En gerçekçi yol A: koruyucu Pro içinde, ücretsiz statik rapor vitrinli özellik. Tek başına geliri zayıf; B ajans için sabit kapsamlı elle hizmet olarak ilk parayı daha hızlı sınar.",
+ "secenekler": [
+  {
+   "id": "ajan-gozlem-paneli-a",
+   "ad": "Koruyucu Pro içinde Gözlem Paneli (tek seferlik lisans)",
+   "tur": "yazılım ürünü",
+   "musteri": "16 GB Mac'te Claude Code ve Codex'i yan yana kullanan bağımsız geliştirici",
+   "is": "Ne kadar harcadım ve makine bir ajan daha kaldırır mı sorusunu, parayı ve belleği tek ekranda görmek",
+   "tetikleyici": "Ajan çalışırken makinenin donması ya da abonelik limitine beklenmedik çarpma",
+   "teklif": "Ücretsiz statik rapor çekirdeği; Pro'da canlı panel, bütçe uyarısı ve karantina listesi",
+   "fiyat": "Koruyucu Pro 19 USD tek seferlik (912 TL), lansmanda 15 USD; pano ayrı satılmaz, Pro'ya katkısı sayılır",
+   "kanal_birincil": "GitHub deposu ve Show HN gönderisi; panel görseli README'nin ilk görseli",
+   "kanal_yedek": "Reddit r/ClaudeAI ve r/macapps gönderileri; Homebrew tap; orkestratör projelerine entegrasyon PR'ı",
+   "ilk_adim": "Beta için iç çevreden 5 kişi ile 5 gönüllüyü bulup davet etmek; statik raporu verip ccusage ile sayı paritesini sınamak",
+   "ilk_kapsam": "Claude ve Codex okuyucuları, fiyat tablosu, ücretsiz statik HTML rapor, Pro menü çubuğu paneli; Gemini ve iç marka ibareleri kaldırılmış",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; fiyat tablosu verisinin kullanım koşulu doğrulanmadı"
+    },
+    "G2": {
+     "durum": "gecti",
+     "not": "Prompt metni okunmaz, ağ yok; tahmini eşdeğer maliyet etiketi yeterli"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yurt dışı satıcı hizmeti planlı ama hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 10 beta hedefi planlı ama davetli henüz yok, 20 kişilik isim listesi yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal ve yedekler adlı; ilk adım beta daveti"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Panel için 60 saat; Pro uygulamasının kalan eforu bu belgelerde ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 5.500 TL, tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı ürünü alır; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Satıcı hizmeti hesabını açıp test ödemesi yapmak; 20 hedef geliştirici listesi çıkarmak; Pro uygulamasının kalan eforunu saat olarak yazmak; fiyat verisi lisansını okumak.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 720,
+    "degisken_maliyet_tl": 60,
+    "sabit_gider_aylik_tl": 450,
+    "baslangic_nakit_tl": 5500,
+    "kalan_efor_saat": {
+     "min": 45,
+     "beklenen": 60,
+     "max": 100
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 0.5,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 4320,
+     "iyi": 8640
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 12
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.03
+    },
+    "dayanak": "Pano ayrı satılmaz; katkı = ek Pro satışı. Plan 8. bölüm baz yıl 1: 25 ek Pro, iyimser 40. Ödeme hesabı yok, ilk tahsilat 60-120 gün; 6 ayda baz 6, iyi 12 ek Pro. Net 15 USD lansman x 48 = 720 TL; komisyon yüzde 5 + 0,5 USD ≈ 60 TL. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Geliştiriciler ücretsiz ccusage varken bellek ve maliyet birlikteliği için 19 USD öder",
+    "yontem": "İç çevreden 5 kişi ve 5 gönüllüyü bul, statik raporu ver, Pro ön sipariş bağlantısı ve fiyat sayfası aç, kurulum ve ön sipariş say",
+    "sure_gun": 21,
+    "maliyet_saat": 30,
+    "maliyet_tl": 0,
+    "basari_olcutu": "10 davetliden en az 3 kişi 19 USD ön sipariş verir",
+    "birakma_olcutu": "21 günde 0 ön sipariş ve ccusage paritesi yüzde 2 içinde değil",
+    "sonraki_dilim": "Pro menü çubuğu paneli ve bütçe uyarısı"
+   },
+   "etiketler": {
+    "segment": "Bağımsız geliştirici, 16 GB Mac",
+    "kanal_turu": "topluluk",
+    "teknoloji": "React, ECharts, Python çekirdek",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı 0 ve 3-6. bölümler: ücretsiz rakipler (ccusage 18,8 bin, CodexBar 22,1 bin yıldız) var, pano ayrı satılmıyor, doğrudan gelir yılda birkaç bin dolar. Derinlik belgesi C.8 ve A.2: beta ve kanal hedefleri varsayım. Ödeyen müşteri 0; kod yalnız görsel iskelet. Plan 7.2: beta daveti hedefi 5 iç çevre ve 5 gönüllü; davetli henüz yok."
+  },
+  {
+   "id": "ajan-gozlem-paneli-b",
+   "ad": "Ajanslar için aylık proje bazlı yapay zekâ maliyet raporu",
+   "tur": "hizmet",
+   "musteri": "Müşterilerine yazılım teslim eden 5-20 kişilik web ve uygulama ajansı sahibi",
+   "is": "Ay sonunda ekibin yapay zekâ harcamasını projelere paylaştırıp faturaya ya da marj tablosuna yansıtmak",
+   "tetikleyici": "Ay başı fatura günü ya da müşterinin yapay zekâ kullanımı ve maliyeti sorusu",
+   "teklif": "Ekibin dışa aktardığı kullanım dosyalarından aylık proje bazlı maliyet raporu ve CSV; ham günlük müşteriye gitmez",
+   "fiyat": "1.500 TL aylık, en çok 5 geliştirici, en çok 15 proje",
+   "kanal_birincil": "LinkedIn'de ajans sahiplerine kurucu mesajı ve 15 dakikalık demo",
+   "kanal_yedek": "İstanbul ajans sahipleri WhatsApp grupları; Webrazzi bülteni ve etkinlikleri; IAB Türkiye üye ağı",
+   "ilk_adim": "Kurucu kendi proje verisiyle örnek rapor çıkarıp 20 ajans sahibi listesi hazırlar ve 5'ine yazar",
+   "ilk_kapsam": "Claude ve Codex okuyucuları, çalışma klasörü ile proje eşleme, aylık CSV ve redakte rapor; kurucu elle teslim eder, panel gerekmez",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; fiyat tablosu verisinin kullanım koşulu doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri ekibinin kullanım verisi işlenecek; KVKK metni için hukukçu teyidi gerekir"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura düzeni belli ama hesap ve fatura akışı denenmedi"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli ama kaynakta kurgusal persona ve varsayım; ajans listesi ve mevcut ilişki yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanallar adlı ama hedef grup ve bülten somutlaşmadı, erişim yok"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Yaklaşık 44 saat; ilk tahsilat 75-120 günde gerçekçi, 6 aya sığar"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 1.500 TL"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam ve sabit fiyatlı paket; kapsam dışı özel iş alınmaz"
+    }
+   },
+   "kapi_duzeltme": "Hukukçuyla işleme metnini teyit etmek; 20 ajansı adlandırmak ve gruplara girişi kurmak; fatura akışını ilk satıştan önce denemek; fiyat verisi lisansını okumak.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 1500,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 450,
+    "baslangic_nakit_tl": 1500,
+    "kalan_efor_saat": {
+     "min": 32,
+     "beklenen": 44,
+     "max": 70
+    },
+    "ilk_tahsilat_gun": {
+     "min": 75,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 10,
+    "musteri_basina_aylik_destek_dk": 180,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 3000,
+     "iyi": 12000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 8
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.08
+    },
+    "dayanak": "Fiyat, ajansın elle dağıtıma harcadığı ayda 3 saat (3.000 TL, derinlik belgesi A.2, varsayım) değerinin yarısı; plan Ekip planı (49-99 USD yıllık) farklı üründür, referans değil. Ajans ilişkisi yok: baz 1 ajans x 2 abone-ay, iyi 3 ajans, 8 abone-ay. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Ajans sahipleri proje bazlı yapay zekâ maliyeti için aylık ücret öder",
+    "yontem": "20 ajans sahibine örnek rapor ve 1.500 TL aylık teklif gönder, 5 demo yap, ilk raporu elle teslim et",
+    "sure_gun": 30,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "20 mesajdan en az 5 demo ve en az 1 ücretli abonelik",
+    "birakma_olcutu": "30 günde 0 demo ya da 0 ödeme niyeti",
+    "sonraki_dilim": "Paketi 5 ajansa sat, sonra ekip dışa aktarım dosyalarını birleştiren araç"
+   },
+   "etiketler": {
+    "segment": "5-20 kişilik yazılım ajansı",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Python okuyucu, CSV, statik rapor",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Derinlik belgesi B.3 ve A.2: ajans personası ve elle toplama maliyeti varsayım; Persona 3 kurgusal ve isim doğrulanmadı. İş planı 5. bölüm ekip planı 49-99 USD yıllık ve 12. aydan sonra. Gerçek ajans ilişkisi ya da ödeyen müşteri belgelerde yok."
+  },
+  {
+   "id": "ajan-gozlem-paneli-c",
+   "ad": "Yapay zekâ iş izleme kartı kurulum paketi",
+   "tur": "hizmet",
+   "musteri": "Yapay zekâ işlerini ve ajanlarını çalıştıran, bekleyen işi görmek isteyen operasyon sorumlusu",
+   "is": "Bekleyen, bayat ve bilinmeyen durumdaki ajan işlerini tek kartta görünür kılmak",
+   "tetikleyici": "Takılı kalan ya da bayat bir ajan işinin fark edilmeden gecikmesi",
+   "teklif": "Anonim gerçek anlık görüntü sözleşmesine bağlı tek bekleme kartı ve olay adaptörü; kabule bağlı ödeme",
+   "fiyat": "18.000 TL tek seferlik sabit paket",
+   "kanal_birincil": "Kamuya açık, anonim telemetri örneği ve hikâye sayfası (henüz adlandırılmış hedef yok)",
+   "kanal_yedek": "Mevcut ilişkilerden birebir tanıtım; yapay zekâ operasyonu topluluk gönderisi",
+   "ilk_adim": "Üç durumlu örnek veriyi bağlayıp bayat ve bilinmeyen durumu gösteren kartı yayımlamak",
+   "ilk_kapsam": "Tek bekleme kartı, belgelenmiş olay adaptörü, üç durum örneği, bayat ve bilinmeyen durum gösterimi; canlı telemetri, giriş ve kalıcılık yok",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Kod ve örnek veri kurucuya ait; bağımlılıklar açık kaynak"
+    },
+    "G2": {
+     "durum": "gecti",
+     "not": "Anonim örnek veri; kişisel veri ve lisanslı faaliyet yok"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Alıcı ve ödeme yolu belirsiz; hesap, fatura düzeni ve test ödemesi yok"
+    },
+    "G4": {
+     "durum": "kaldi",
+     "not": "Alıcı yalnız hipotez; iki belgede de doğrulanmış alıcı ya da isim yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanal fikri var ama somut grup ya da dizin adlandırılmadı"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Yaklaşık 35 saat; 7 günlük deney sonrası satılabilir"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı yok denecek kadar az"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kurulum ve uyarlama sınırı yazılı değil, her alıcı özel istek getirebilir"
+    }
+   },
+   "kapi_duzeltme": "Önce somut alıcı tipini ve 20 kişilik listeyi çıkarmak; kapsam sınırını yazmak; kanal olarak adlı bir topluluk seçmek; hesap ve fatura düzenini kurmak.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 18000,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 0,
+    "baslangic_nakit_tl": 500,
+    "kalan_efor_saat": {
+     "min": 25,
+     "beklenen": 35,
+     "max": 60
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 12,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 18000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.05
+    },
+    "dayanak": "GPT belgesi tutar vermiyor, talep kanıtı yok, gelir uydurmuyor. Fiyat 24 saat x eşik saat ücretinden türetilen varsayımdır. Baz 0 satış; iyi senaryoda 1 satış. Ödeme hesabı ve alıcı yok, ilk tahsilat 45-150 gün. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Bir operatör bekleyen işi görünür kılan sabit kapsamlı kart için ödeme yapar",
+    "yontem": "7 günde üç durum örneğini bağla, kartı ve çıktıyı yayımla, 5 operatörden kabul ve ret nedenini yazılı al",
+    "sure_gun": 14,
+    "maliyet_saat": 35,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 1 operatör tekrar kullanım ya da ücretli uyarlama talep eder",
+    "birakma_olcutu": "5 görüşmede 0 tekrar talebi",
+    "sonraki_dilim": "Ücretli tek uyarlama; tekrar talep varsa küçük kit"
+   },
+   "etiketler": {
+    "segment": "Yapay zekâ operasyon sorumlusu",
+    "kanal_turu": "içerik",
+    "teknoloji": "React, olay adaptörü",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "GPT belgesi: alıcı hipotezi, üç dar seçenek, doğrulanmış talep ve kanıt yok; engeller canlı telemetri, giriş, kalıcılık, lisans yok; ücretsiz grafik karşılığı çok. Gelir uydurulmamış. Claude planı bu biçimi ürün saymıyor."
+  }
+ ]
+}

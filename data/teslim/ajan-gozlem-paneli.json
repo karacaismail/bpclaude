@@ -1,0 +1,23 @@
+{
+ "slug": "ajan-gozlem-paneli",
+ "secenekler": {
+  "ajan-gozlem-paneli-a": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Pro lisansına katkı; kopyası satılan ürün, müşteriye özel iş yok, teslim 0. Karttaki değerler korundu."
+  },
+  "ajan-gozlem-paneli-b": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 3,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Aylık elle teslim: okuyucu çalıştırma, proje eşleme, redakte rapor ve CSV yaklaşık 3 saat/ay (varsayım). Karttaki 180 dk teslimi içerdiği için 30 dk desteğe indirildi."
+  },
+  "ajan-gozlem-paneli-c": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 24,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Fiyat 24 saatlik iş üzerinden türetildi, teslim 24 saat (varsayım). Baz senaryoda satış yok. Destek 60 dk yarısına indirildi."
+  }
+ }
+}

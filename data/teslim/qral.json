@@ -1,0 +1,23 @@
+{
+ "slug": "qral",
+ "secenekler": {
+  "qral-a": {
+   "satis_basina_kurucu_saati": 0.25,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "Kopyası satılan lisans; müşteriye özel iş yok, teslim 0 (karttaki 0,25 saat satış, 5 dk yalnız destek). Kurulum otomatik; varsayım."
+  },
+  "qral-b": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Yıllık lisans, sınıf QR sayfası üründe hazır; müşteriye özel iş yok, teslim 0. Karttaki 2 saat öğretmen görüşmesi satışta, 15 dk destek; varsayım."
+  },
+  "qral-c": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 16,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Kartta 8-16 saat şablon uyarlama ve 3 site doğrulama; üst sınır, yapay zekâ hızlanması sayılmadı. Kurulum teslimde; 30 dk yalnız aylık yazışma desteği."
+  }
+ }
+}

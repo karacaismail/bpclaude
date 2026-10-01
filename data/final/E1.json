@@ -1,0 +1,665 @@
+{
+ "kriter": "E1",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu canlı QR menü ürününü kendi yazdı, rakip ve yönetmeliği biliyor; tek şubeli kafelerde tanıdık ya da itibar yok, semt turu sıfırdan başlıyor."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ürün kurucunun, çok şubeli bir kahve zinciriyle çalışma ilişkisi var; ilişki tek zincirle sınırlı, franchise ve zincir operasyonunda itibar yok."
+  },
+  "zabuno-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucu restoran panelini ürün sahibi olarak tanıyor; restoran müşterili ajanslarla ilişki belgelerde yok. Aynı durumdaki kod tabanı kurulum satışıyla aynı puan."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İki yıllık alan araştırması, 39 dosyalık korpus ve veri modeli alan bilgisini gösteriyor; arsa alanında itibar, referans ya da uzman ağı belgelenmedi."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Alan araştırmayla tanınıyor ama pilot ilçelerdeki emlak ofisleriyle ilişki ya da itibar yok; temas ofislere doğrudan soğuk mesajla başlıyor."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "İmar, hukuk ve değerleme onayı dış uzmandan gelecek; danışmanlık ofisi ilişkisi henüz adsız, kurucunun bu alıcıda itibarı belgelenmedi."
+  },
+  "destektesvik-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kural motoru ve strateji korpusu var ama üç programın verisi uzman doğrulaması bekliyor; kurucunun mesleki unvanı yok, uzmanlar sözleşmesiz."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucu mali müşavir ya da teşvik danışmanı değil; büro ve oda çevresinde ilişki belgelenmedi, program verisi dış uzman onayına bağlı."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oda, OSB ve teknopark yönetimleriyle ilişki doğrulanmadı, hedef kurumlar adlandırılmadı; alan bilgisi uzman onayı bekleyen veriye dayanıyor."
+  },
+  "asgari-iscilik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Hesap kuralları belgelenmiş ve teklif sürecinde bir inşaat firmasıyla ilişki var; ilişki tek ve üçüncü tarafa bağlı, bağımsız SGK uzman doğrulaması yok."
+  },
+  "asgari-iscilik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Mevzuat modellemesi var ama bağımsız uzman teyidi yok; inşaat mükellefli mali müşavir bürolarında ilişki ya da itibar belgelenmedi."
+  },
+  "asgari-iscilik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kontrol raporu uzman onayına dayanıyor ve uzman dışarıdan gelecek; kurucunun bu alanda belgelenmiş uzmanlığı ve yüklenici ağı yok."
+  },
+  "zincir-danismanligi-a": {
+   "p": 4,
+   "k": 2,
+   "g": "Alıcı, kurucunun üç sunum ve pazar analizi teslim ettiği çok şubeli zincir; çalışma ilişkisi sürüyor. Sektörde daha geniş itibar ve ağ yok."
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 2,
+   "g": "Kurucu alanı tek zincire teslim ettiği denetim ve pazar analiziyle tanıyor; hedef 30 zincirde tanıdık, vaka ya da itibar yok, temas soğuk mesajla."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "QR menü ürünü kurucunun ve aynı zincirle ilişkisi var; merkezden yayın yazılmadı, zincir operasyonunda itibar yok. Zabuno zincir planıyla aynı puan."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu dört modlu kâr hesaplayıcıyı yazdı ve güncel tarifeleri belgeledi; satıcılık geçmişi ve isimli alıcı listesi yok, eğitim kohortu başlamadı."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Hesap alanını aracı yazarak tanıyor; e-ticaret danışmanı ve ajanslarla ilişki belgelenmedi. A'nın 4'ü için gereken mevcut alıcı ilişkisi kartta yok."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "İki üretici için kanal bazlı katkı marjı hesabı yapmış, hesaplayıcı kendi kodu; satıcı referansı ve doğrulanmış erişim yok."
+  },
+  "titanlar-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Müfredat yazılı ama e-ticaret satıcılığı geçmişi, izleyici kitlesi ve ağ belgelenmedi; sitedeki kanıtsız iddialar eğitmen itibarını desteklemiyor."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 1,
+   "g": "İş, hesaplayıcının ve iki üretici için yapılan katkı marjı analizinin aynısı; satıcı referansı ve ağ yok. SKU katkı raporu hizmetiyle aynı durum."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Çevik sunum seti hazır ama oda, esnaf odası ve belediye eğitim birimleriyle ilişki ve kurumsal eğitim referansı belgelenmedi."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 2,
+   "g": "Canlı çok dilli üretici sitesi ve bir kurumsal site teslim edildi, rakip site karşılaştırması var; OSB ve sanayici çevresinde ağ ve itibar sınırlı."
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 2,
+   "g": "Teslim edilmiş iki üretici sitesi alan bilgisini gösteriyor; mikro ihracatçı segmentinde tanıdık, referans izni ya da birlik ilişkisi yok."
+  },
+  "kurumsal-site-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Kalıbı gerçek müşteri sitelerinde kullanan kurucu alıcıyla aynı işi yapıyor; tema pazarında ve Astro topluluğunda itibar ve ağ yok."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 4,
+   "k": 2,
+   "g": "Paketin kalemleri (site, rakip raporu, simülasyon) iki üretici için daha önce yapıldı ve ilk teklif bu iki ilişkiye gidiyor; sektörde geniş itibar yok."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 4,
+   "k": 2,
+   "g": "Rakip analizi ve kârlılık modeli iki üretici için yapılmış, ilk alıcılar bu iki mevcut ilişki; daha geniş ağ ve ücretli referans yok."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 2,
+   "g": "Bir üretici için site ve rakip raporu yapıldı; hedef 20 üreticiye temas soğuk e-postayla, ağ ve ödeyen referans yok."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu küçük WordPress ve WooCommerce depoları yayımladı, işi kendisi yapıyor; KVKK hukuku dışarıdan teyit ister, ajans isim listesi ve görüşme yok."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 1,
+   "g": "WooCommerce eklenti geliştirmeyi yayımlanmış depolarıyla tanıyor; mağaza sahipleriyle ve ödeme kuruluşlarıyla ilişki yok."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurulumu kendisi yapabiliyor, çevredeki müşteri siteleri ve ajans çevresi var ama isim listesi yok; KVKK hukukunda uzman değil."
+  },
+  "qral-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Uzantıyı yazdı ama mağazada yayını, kullanıcısı ve not alma ya da yapay zekâ topluluklarında itibarı yok; hiçbir kullanıcıyla görüşülmedi."
+  },
+  "qral-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Eğitim alanında geçmiş iş, öğretmen çevresi ya da tek bir öğretmen görüşmesi yok; sınıf QR sayfası da henüz yapılmadı, alan dışarıdan tahmin ediliyor."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Araştırma ekiplerinin alıntı ve kaynak düzeni kurucunun belgelenmiş alanı değil; ilişki kendi ürün ekibi ve ajans çevresiyle sınırlı."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "160 dersi ve üretim sürecini kurucu yaptı; 30 eğitmenlik liste henüz çıkmadı, eğitmen çevresinde itibar yok, bağımsız doğrulanmış ders 0."
+  },
+  "frontend-atlasi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "İçerik ve 24 laboratuvar kurucunun; öğrenen kitlesinde tanınırlık ve izleyici yok, site yayında değil."
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ders ve laboratuvar üretimini 160 dersle kendisi yapmış; eğitmenlerle ilişki sınırlı, teslim referansı yok."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk alıcılar kurucunun mevcut üretici ilişkileri ve yöntem içeriğini kendisi yazdı; atölye yürütme geçmişi ve referansı belgelenmedi."
+  },
+  "karar-kitabi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "128 yöntemin Türkçe içeriğini kurucu üretti; yönetici kitlesinde itibar ve izleyici yok. Aynı içerik ve kitleye dayanan yan panel seçeneğiyle aynı puan."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Facilitatörlük kurucunun pratiği değil; bu çevrede ilişki ve isim listesi yok, yalnız yöntem içeriğini biliyor."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yığını ve teşvik envanterini tek vakada kendisi kurdu; hibe danışmanlığı referansı, kuluçka ilişkisi ve 50 kişilik hedef liste yok."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek vakada çelişkileri bulan doğrulayıcıyı ve yöntemi kurucu yazdı; başvurucu çevresinde itibar ve referans izni yok."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Girişim ve hibe dosyası alanını kendi vakasından biliyor; kuluçka ve TTO yöneticileriyle ilişki yok. Diğer kuluçka lisansı seçenekleriyle aynı durum."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kapsam belgesi ve yarım arka uç var ama vize acentesi işletme deneyimi ve tek bir acente ilişkisi belgelerde yok; kod hiç çalıştırılmadı."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Acente operasyonu masa başı kapsamla biliniyor; pilot yapılacak acente ilişkisi yok, kanal için gereken ev sahibi izni alınmadı."
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Evrak kuralları belgeden derlenmiş, vize danışmanlığı pratiği yok; başvurucu kitlesinde tanınırlık ve içerik geçmişi belgelenmedi."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Teslim hattını kurucu kurdu ve iki küçük gerçek teslim yaptı; CTO'suz girişimlerde referans, vaka ve isim listesi yok."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajan PR akışını kendi hattında her gün kullanıyor; ekip yöneten mühendislik liderleriyle ilişki ve dış kullanıcı yok. Kendi akışından doğan diğer araçlarla aynı puan."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Hattı biliyor ama geliştiricisiz tasarım ajanslarının iş düzenini tanıdığına dair kayıt yok; ajans ilişkisi sıfır, temas soğuk LinkedIn mesajı."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Hibe ve başvuru hazırlığını danışmanlık işinden tanıyor, 32 soruluk aracı yazdı; uygulayıcı kuruluş ve kuluçka yöneticileriyle ilişki belgelerde yok."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Başvuru alanını danışmanlık işinden biliyor; bireysel girişimci adaylarına erişim mevcut müşterilerle sınırlı, ağın boyutu belgesiz."
+  },
+  "strateji-simulatoru-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcılar kurucunun hibe, teşvik ve sunum danışmanlığı verdiği mevcut müşteriler; müşteri sayısı kurucu beyanı, alanda geniş itibar belgelenmedi."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Sorunu kendi ajan akışında yaşadı, 16 GB Mac rehberi ve 150 testli çekirdeği yazdı; açık depo, topluluk itibarı ve izleyici henüz yok."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Teşhis ve kurulum yolunu kendi rehberiyle belgeledi; takım müşterisi ağı çevresindeki birkaç küçük ekiple sınırlı."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Orkestratörleri kullanıcı olarak tanıyor ve kabul API'sini yazdı; orkestratör sahipleriyle ilişki kurulmadı, PR ve sponsor profili henüz açılmadı."
+  },
+  "actionplan-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Araç kurucunun kendi ajan akışından doğdu (476 işleme), canlı demo yayında; dış kullanıcı ve geliştirici topluluğunda itibar yok."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans proje yönetimi ve müşteri kabul süreci kurucunun belgelenmiş pratiği değil; ajans müşteri listesi yok, yalnız aracı biliyor."
+  },
+  "actionplan-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Türkçe ajan görev yazımını kendi akışından biliyor ve ürün yöneticisi çevresi var; Türkçe içerikte izleyici ve itibar kanıtı yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucu iki ajan aracını yan yana kullanan alıcı profilinin kendisi; panel yalnız görsel iskelet, beta davetlisi ve topluluk itibarı yok."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansların maliyeti projeye paylaştırma işini dışarıdan tahmin ediyor; persona kurgusal, gerçek ajans ilişkisi belgelerde yok."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı rolü yalnız hipotez ve adlandırılmış hedef yok; kurucunun yapay zekâ operasyonu yürüten ekiplerle ilişkisi belgelenmedi."
+  },
+  "ai-first-tasarim-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Token hattını ve 94 dosyalık bileşeni kurucu yazdı, yöntem 85 belgede; yazar itibarı, izleyici ve alıcı listesi yok."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tasarım sistemi kurulumunu kendi kodunda yaptı, canlı kullanım yalnız iç beyan; kurumsal atölye ya da danışmanlık referansı yok."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kabul dosyasının konusu olan token ve durum sözleşmesini kendi hattında uyguluyor; ajans sahipleriyle ilişki LinkedIn ağıyla sınırlı, referans yok."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Menü ürünü ve bileşen kurucunun; ancak ürünün ödeyen kafesi yok, pilot kafeler henüz seçilmedi. Aynı kafe kitlesine dayanan Zabuno seçenekleriyle aynı puan (A ve B 4)."
+  },
+  "aicommandcard-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Bileşeni yazdı, herkese açık depo ve demo var, bir iş projesinde kullanıldı; ajans ve React ekiplerinde ağ ve itibar belgelenmedi."
+  },
+  "atonota-denetim-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yaklaşık 10 kurumsal siteye bakım veriyor ve elle bir denetim yaptı; eklenti dizininde yayını, yorumu ve kullanıcı kitlesi yok."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Aylık site bakımını kendisi yaptığı için ajansın rapor yükünü tanıyor; 30 ajanslık liste çıkmadı, ajans görüşmesi kaydı yok."
+  },
+  "atonota-denetim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Bakım hizmetinden revizyon ve kabul sorununu tanıyor; ajans ilişkisi doğrulanmadı, kabul akışı işinde geçmiş teslim yok."
+  },
+  "b2b-bilesenler-a": {
+   "p": 4,
+   "k": 2,
+   "g": "Alıcılar kurucunun çok dilli siteyi canlı teslim ettiği mevcut site müşterileri; blok aynı işin eki. Sektörde daha geniş itibar ve referans izni yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Çok dilli ve sağdan sola ürün sayfasını canlı teslimden biliyor; B2B katalog ajanslarıyla ilişki belgelerde yok, 20 ajans henüz belirlenmedi."
+  },
+  "b2b-bilesenler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcıyla aynı işi yapıyor: Astro ile ihracatçı sitesi teslim etti; şablon pazarında yeni yazar, itibar ve izleyici yok. Astro sanayi temasıyla aynı durum."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Zabuno'yu kurucu canlıya aldı, menü verisi elinde; ödeyen kafe yok, görsel üretim kodu sıfır. Aynı kafe kitlesindeki seçeneklerle aynı puan."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcılar mevcut kurumsal site müşterileri ve bir zincir, ilişki doğrudan; sosyal görsel üretiminde geçmiş iş ve referans belgelenmedi."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansların kreatif operasyonu kurucunun pratiği değil; ajans alıcı listesi ve ilişkisi yok, üretim hattı da henüz yazılmadı."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurumsal site ve yazılım işi satarken keşif ve teklif yükünü kendisi yaşıyor, soru bankasını yazdı; ajans ağı üç tanıdıkla sınırlı, itibar belgesiz."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Stack kararlarını kendi projelerinde veriyor, 100 soruluk bankayı yazdı; ajanslara mimari danışmanlık referansı yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Form motoru ve profiller kurucunun, canlı demo açık; tanıdık ajans çevresi dar, referans ve görüşme kaydı yok."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "İlk alıcılar mevcut kurumsal site müşterileri ve 10 destelik üretim betiklerini kurucu yazdı; sunum hizmetinde kendi adına referans yok."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Butik reklam ajanslarının sunum üretim düzenini tanıdığına dair kayıt yok; ajans ilişkisi ve isim listesi yok, ortak ajans fikri sınanmadı."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Bağımsız danışman ve analist çevresinde ilişki ve isim yok; kurucu sunum üretimini biliyor, danışmanın rapor işini dışarıdan tanıyor."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "onlarca sayfalık demoyu birkaç günde üretti, kendisi de kurucu; yaklaşık 10-15 mevcut ilişki var ama izinli referans ve hedef liste yok."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Demo üretimini biliyor ve kendisi de yazılım hizmeti satıyor; ajans satış yöneticileriyle ilişki belgelenmedi, 40 ajanslık liste yok."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Puantaj ve bordro alanında uzmanlık, hesap motoru ya da bordro danışmanı ağı yok; eldeki yalnız simülasyonlu arayüz. B'nin 1'i çapaya uyuyor."
+  },
+  "ddd-renderer-a": {
+   "p": 3,
+   "k": 1,
+   "g": "197 içerik kümesini ve yedi katmanlı modeli kurucu yazdı; okur kitlesi 200 kişi varsayımı, dış kullanıcı sıfır. A'nın 4'ü için gereken kanıtlı kitle yok."
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 1,
+   "g": "İçeriği yazan kurucu alanı biliyor (B'nin 2'si bunu saymıyor); yurt dışında ağ, itibar ve dış kullanıcı yok (A'nın 4'ü bunu gerektirir). Küresel geliştirici kitleriyle aynı puan."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Modellemeyi kendi iki ürününde yaptı; mimari değerlendirme için ücretli referans ve vaka yok, teknik lider ağı sınırlı."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Onay, denetim günlüğü ve yetki desenlerini 116 kontrat testiyle yazdı; herkese açık depo 0 yıldız, SaaS ve fintech ekiplerinde ağ belgelenmedi."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Form şeması işi kurucunun kanıtlı alanı değil, dışa aktarıcı henüz yok; ajans ve frontend liderleriyle ilişki belgelerde geçmiyor."
+  },
+  "devpanel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekranlar sahte verili prototip; şablon pazarında satıcı geçmişi, izleyici ve itibar yok, plan da bu biçimi önermiyor."
+  },
+  "e-menum-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu aynı pazarda canlı QR menü ürünü işletiyor, 120 bin satırlık kod kendisinin; restoran müşterili ajanslarla ilişki ve 40 ajanslık liste yok."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 1,
+   "g": "QR menü alanını canlı ürününden biliyor, bir zincirle ilişkisi var; çok şubeli markalarda ağ dar, onaylı yayın akışı çalışır kanıtsız."
+  },
+  "e-menum-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Kodu yazan kurucu Django ve restoran alanını tanıyor; kod pazarında satıcı geçmişi ve geliştirici topluluğunda itibar yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Eklenti geliştiriyor ve 28 ekosistem yöntemini yazdı, ilk alıcılar kendi geliştirici çevresi; pano hücreleri kaynaksız tahmin, kamuya açık itibar yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Keşif formunu ve puanlama çerçevesini kurucu yazdı, alıcıyla aynı işi yapıyor; yayın, abone listesi ve itibar yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans listesi ve ilişkisi yok, ajans personası varsayım; kurucu yöntemi biliyor ama ajansın ürün hattı kararını dışarıdan tanıyor."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 4,
+   "k": 2,
+   "g": "Kuralları çok dilli bir kurumsal sitede uyguladı ve ilk alıcılar o site hizmetinin mevcut müşterileri; yayımlanmış vaka ve geniş itibar yok. Ek blok satışıyla aynı durum."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 3,
+   "k": 1,
+   "g": "940 satırlık rehberi yazdı ve iki projede uyguladı; atıflar doğrulanmadı, okur kitlesi ve geliştirici topluluğunda itibar yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Yerelleştirme hatalarını kendi projelerinde çözdü; Türk SaaS ekipleriyle ilişki ve 20 isimlik liste yok. Soğuk SaaS ekiplerine satılan diğer paketlerle aynı puan."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Soğuk başlangıç yöntemini 70 belgede işledi ve ilgili bir B2B pazar yerini tanıyor; küme ve sanayi bölgesi yöneticilerinde ilişki, referans ve vaka yok."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 1,
+   "g": "B2B pazar yeri alanını ve birkaç toptancıyı tanıyor; girişim kurucusu çevresinde itibar, vaka ve isim listesi yok."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Yöntem ve yarım ekran seti var, mevcut üretici müşterileri kanal; kurumsal bayi ağı projelerinde referans yok, ajans ortakları henüz adsız."
+  },
+  "lifeos-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yöntem içeriğinin sahibi ve yönetici kitlesine LinkedIn'den erişiyor; izleyici büyüklüğü belgesiz, kullanıcı görüşmesi ve mağaza yayını yok."
+  },
+  "lifeos-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Bağımsız çalışanların zaman kaydı ve müşteri raporu işi kurucunun belgelenmiş alanı değil; hedef topluluk henüz adlandırılmadı."
+  },
+  "lifeos-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Uzantı kodu var ama mağazada yayın yok, alıcı rolü hipotez, hedef grup adsız; rutin takipçisi kitlesinde ilişki ve itibar yok."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Emlak ve parsel hattından tanıdık ofisler var, 14 bin satırlık paneli yazdı; emlak ofisi işletme deneyimi ve hiçbir ofisle fiyat görüşmesi yok."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kütüphaneyi ve erişilebilirlik testlerini kendisi yazdı, alıcıyla aynı işi yapıyor; npm yayını, kullanıcı ve geliştirici topluluğunda itibar yok."
+  },
+  "metaframer-kernel-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Çekirdeği 338 işlemeyle kurucu yazdı, mimariyi derin biliyor; küresel geliştirici topluluğunda ağ, itibar ve kişi listesi yok."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Çekirdeği biliyor ve iç pilot için bir kod ekibiyle ilişkisi var; Türkiye'deki yazılım evlerinde ajans listesi ve referans yok."
+  },
+  "metaframer-kernel-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Kiracı izolasyonu ve audit konusunu kendi kodundan biliyor; 10-60 geliştiricili SaaS şirketlerinde ilişki ve isim listesi yok. Soğuk SaaS ekibi paketleriyle aynı puan."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kendi markası için 950 adayı eleyip listeyi yayımladı; marka alanında uzman değil, çevresindeki girişimciler dışında ağ yok."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansların ve marka stratejistlerinin ad bulma işini pratikten tanımıyor; 30 ajanslık liste çıkmadı, ilişki belgelenmedi."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 1,
+   "g": "950 adaylık seçimi kendi ürünleri için yaptı ve ilk alıcılar çevresindeki girişimciler; marka danışmanlığında itibar ve referans yok."
+  },
+  "projector-a": {
+   "p": 3,
+   "k": 1,
+   "g": "315 sayfalık külliyatı kurucu yazdı, önizleme sitesi açık; içerik ham, yazar itibarı ve okur kitlesi kanıtı yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Külliyatın yazarı ve mevcut yazılım evi ilişkileri var; eğitmen referansı ve ilk atölye teslimi yok."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Teknik danışmanlık firmalarının teslim düzenini tanıdığına dair kayıt ve ilişki yok; kurucu yalnız kendi görüntüleyicisini biliyor."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Şablon kurucunun kendi karar dosyasından türedi, alıcı profili kendisi; kitle kendi sitelerinin doğrulanmamış trafiği, 20 kişilik isim listesi yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Girişim karar dosyasını kendi vakasından biliyor; kuluçka ve teknokent yöneticileriyle ilişki ve referans yok. Diğer kuluçka lisansı seçenekleriyle aynı puan."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "170 künyeyi kurucu derledi, site yayında; künyelerin yaklaşık yüzde 30'u doğrulandı, çeviri alanında uzman itibarı ve okur kitlesi belgelenmedi."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 0,
+   "g": "İmza alanında geçmiş iş yok, araç 520 satırlık yerel sürüm; ajanslarla ilişki tek bir tanıdık ajansla sınırlı, temas soğuk e-posta."
+  },
+  "signator-b": {
+   "p": 2,
+   "k": 0,
+   "g": "KOBİ'lerin idari işler sorumlularına erişim yalnız aramadan bekleniyor; imza ve istemci uyumluluğunda belgelenmiş uzmanlık yok."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Alıcılar kurucunun mevcut danışmanlık ve kurumsal site ilişkileri, erişim doğrudan; imza kurulumunda geçmiş iş yok. Mevcut müşteriye yeni iş satan seçeneklerle aynı puan."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Oyunu yazdı ama spor kulübü ve marka pazarlamasında geçmiş iş, referans ve kulüp ağı yok; 10 kulüplük liste henüz çıkmadı."
+  },
+  "volley-tap-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek günde yazılmış ilk oyun; portal gönderim süreci, SDK ve gelir payı konusunda deneyim yok, oyun yayıncılığında tanınırlık yok."
+  },
+  "volley-tap-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oyunun kodunu biliyor; itch.io ve rahat oyuncu topluluklarında yayın geçmişi, izleyici ve oynanış verisi yok."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 1,
+   "g": "WooCommerce eklentisi geliştiriyor ve e-ticaret programı aynı mağaza kitlesine yakın; eklenti dizininde yayını ve pilot mağaza ilişkisi yok."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Mağaza kurulum işini eklenti geliştiricisi olarak tanıyor; ajans listesi, görüşme ve ilişki yok. Ajans KVKK lisansıyla aynı durum, aynı puan."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yorum göçü kurucunun yaptığı bir iş değil, içe aktarıcı simülasyon; göç yapan mağaza ya da ajansla ilişki belgelenmedi."
+  },
+  "egitim-demolari-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Öğretmenlik ya da ders tasarımı geçmişi, öğretmen listesi ve tamamlanmış ders ürünü yok; kapsam kurucu varsayımı, içerik uzman incelemesi istiyor."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Çevik prensip sunum seti hazır ve kurucu ekip liderleri tanıyor; koçluk ya da atölye referansı yok, öğrenme etkisi ölçülmedi."
+  },
+  "baz-secenekler-a": {
+   "p": 4,
+   "k": 2,
+   "g": "Alıcılar iki mevcut ilişki: zincire sunum ve analiz, inşaat firmasına yazılı teklif teslim edildi; bu ikisinin dışında ağ dar."
+  },
+  "baz-secenekler-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı pazarda canlı ürün işleten kurucu kodu yazdı (B'nin 2'si bunu saymıyor); 40 ajanslık liste ve ilişki yok (A'nın 4'ü bunu gerektirir). Aynı satışın diğer kartıyla aynı puan."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun kamu fonuna başvuru geçmişi, girişim rozeti ve şirket yapısı yok; çağrı duyurusunu okumuş, süreci dışarıdan tanıyor."
+  }
+ }
+}

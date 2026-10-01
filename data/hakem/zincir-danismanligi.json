@@ -1,0 +1,65 @@
+{
+  "slug": "zincir-danismanligi",
+  "kararlar": [
+    {
+      "itiraz": "Kart A: önceki üç sunumun ücretli olduğuna dair kayıt yok; ilişki kanıtı ödeme kanıtı değil (A6 puanı).",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kartta zaten ödeyen müşteri 0 ve ödeme kanıtı yok yazıyor; konu puanlamaya ait, kart düzeltmesi gerekmiyor."
+    },
+    {
+      "itiraz": "Kart C: pilot 90 günlük paketin kalemi; ayrı satış değil, A imzasına bağlı; bağımsız ilk tahsilat iddiası tutmaz.",
+      "karar": "kismen",
+      "degisiklik": "C finans dayanak ve kanit_notlari: A imzasına bağlılık yazıldı; baz tahsilat 19.119 TL iken 12.746 TL (2 abone-ay) oldu.",
+      "gerekce": "Plan 5 pilotu A paketinin kalemi sayıyor; bağımlılık kartta eksikti. Puanlar bu adımda değiştirilmedi."
+    },
+    {
+      "itiraz": "Kart C: merkezden yayın yazılımı yok (Faz 4); 60 günlük pilot elle yönetilir; kapsam teslim edilmemiş.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart zaten Faz 4 ve elle yönetimi yazıyor; G8 ve G6 test durumunda. Eforla ilgili kısım C kalan eforunda ele alındı."
+    },
+    {
+      "itiraz": "A G6 test: teklif iletilmedi, yanıt süresi ve onay zinciri ölçülmedi; 45 gün iddiası kanıtsız.",
+      "karar": "kabul",
+      "degisiklik": "A G6 gecti idi, test oldu; not ve kapi_duzeltme güncellendi.",
+      "gerekce": "G6 tanımı: satış döngüsü ölçülmediyse test. Kaynakta teklif iletimi ve geçmiş kabul kanıtı yok."
+    },
+    {
+      "itiraz": "C G4 test: tek isim var, 20 hedef alıcı sayılmadı; mevcut ilişki ikinci zincir için kanıt değil.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "G4 gecti tanımı mevcut ilişki belgelenmişse yeterli; ilişki planda belgeli ve A ile aynı alıcı. Durum gecti kaldı."
+    },
+    {
+      "itiraz": "A degisken_maliyet_tl 15.750; dayanak gelirin %30'unu (54.000) söylüyor; maliyet düşük, marj iyimser.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "15.750 ödeme başına: 6 ödemede 94.500 = baz gelirin %30'u; alan tanımına uyuyor. Baz düşünce 16.200 oldu (diğer itirazla)."
+    },
+    {
+      "itiraz": "A baz tahsilat 315.000: tek imza ve 3 aylık yönetime dayanıyor; ödeyen müşteri 0; baz iyimser.",
+      "karar": "kabul",
+      "degisiklik": "baz tahsilat 315.000 -> 270.000; ödeme adedi 6 -> 5; değişken maliyet 15.750 -> 16.200; dayanak güncellendi.",
+      "gerekce": "İmza 14-45 gün gecikebilir; 6 ayda 3 yerine 2 aylık yönetim ödemesi temkinli. Plan 8 baz B ayını 1. yıl için varsayıyor."
+    },
+    {
+      "itiraz": "B baz 1 satış; soğuk 20 mesajla %2-8 yaklaşık 0,4-1,6 satış; iyi 3 satış iyimser; tahsilat 30-150 gün.",
+      "karar": "kismen",
+      "degisiklik": "iyi tahsilat 90.000 -> 60.000; iyi ödeme adedi 3 -> 2; iyi müşteri 3 -> 2; baz 1 aynı; dayanak güncellendi.",
+      "gerekce": "30 zincire %8 ile yaklaşık 2,4 satış üst sınır; 3 satış kaynakla desteklenmiyor. Baz 1 aralığın içinde."
+    },
+    {
+      "itiraz": "C kalan_efor_saat min 16: merkezden yayın yok (Faz 4); 16 saat iyimser, beklenen 48 bile düşük kalabilir.",
+      "karar": "kabul",
+      "degisiklik": "kalan efor min/beklenen/max 16/48/100 -> 40/80/160; dayanak güncellendi.",
+      "gerekce": "Belgelerde merkezden yayın eforu yok; pilot kurulumu 1 gün. Kaynak desteklemeyince yüksek efor seçildi."
+    },
+    {
+      "itiraz": "C baz 19.119 TL: 60 gün ücretsiz pilot, 90. gün karar; 3 aylık ödeme A imzasına bağlı; baz iyimser.",
+      "karar": "kabul",
+      "degisiklik": "baz tahsilat 19.119 -> 12.746 TL; ödeme adedi 3 -> 2; dayanak güncellendi.",
+      "gerekce": "İlk tahsilat 75-150. gün ve A imzasına bağlı; 6 ayda 3 ödeme iyimser. İyi 4 ödeme (75. günden) tutarlı kaldı."
+    }
+  ]
+}

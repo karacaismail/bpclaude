@@ -1,0 +1,71 @@
+{
+ "slug": "kar-pusulasi",
+ "kararlar": [
+  {
+   "itiraz": "Karpanel icin odeyen alici var denmis; plan yalniz fiyat listesi veriyor, odeyen sayisi belgesiz (talep kaniti E1).",
+   "karar": "kabul",
+   "degisiklik": "A ve C kanit_notlari: 'odeyen alici var' ifadesi 'fiyat listesi; odeyen sayisi belgesiz' olarak duzeltildi.",
+   "gerekce": "Planda Karpanel icin yalniz paket fiyatlari var; odeyen kisi sayisi ya da kaydi yok."
+  },
+  {
+   "itiraz": "Egitim programi katilimcilari yedek kanal; kaynakta mezun ya da katilimci sayisi yok, kanal erisimi kanitsiz.",
+   "karar": "kismen",
+   "degisiklik": "A, B, C kanal_yedek: egitim programi ilk kohort baslamadi, katilimci sayisi belgesiz notu eklendi. G5 gecti kaldi.",
+   "gerekce": "Kanal kaynakta adli (ders, kohort plani) ama sayi yok; G5 birincil kanal ve ilk adimla zaten saglaniyor."
+  },
+  {
+   "itiraz": "Telegram grubu 3.200 uye; gonderi basina 200-400 goruntulenme varsayim, erisim orani dogrulanmadi.",
+   "karar": "kabul",
+   "degisiklik": "A kanit_notlari: goruntulenme varsayim, erisim dogrulanmadi notu eklendi.",
+   "gerekce": "Derinlik C.2 bu rakami VARSAYIM C1 diye isaretliyor; kanit olarak sunulamaz. Kapi durumu degismez."
+  },
+  {
+   "itiraz": "Kart kodu MIT diyor; eski surumde bilesen lisansi teyit bekliyor, depo yerelle uyusmuyor; G1 tum secenekler icin test.",
+   "karar": "kabul",
+   "degisiklik": "bugun.var MIT maddesine uyusmazlik ve bilesen lisansi notu notu eklendi; A ve B G1 zaten test, C icin asagida.",
+   "gerekce": "Plan D4 ve risk tablosu: depo uyusmuyor, Bilesen lisanslari teyit bekliyor."
+  },
+  {
+   "itiraz": "kar-pusulasi-c G1: motor MIT ama eski surum üçüncü taraf bileşen iceriyor, depo uyusmuyor; gecti denemez.",
+   "karar": "kabul",
+   "degisiklik": "C G1 gecti idi, test oldu; kapi_duzeltme depo temizligini icerecek sekilde guncellendi.",
+   "gerekce": "Ayni motor ve depo kullaniliyor; hak durumu tek surum dogrulanmadan teyitli degil."
+  },
+  {
+   "itiraz": "kar-pusulasi-c G6: motor formul hatasi duzeltilmeden rapor guvenilmez; 20-60 saat bunu iceriyor mu belirsiz.",
+   "karar": "kabul",
+   "degisiklik": "C G6 gecti idi, test oldu; kalan efor 20/35/60 idi, 30/50/90 oldu; ilk tahsilat min 35.",
+   "gerekce": "GPT dosyasi motorun duzeltme gerektirdigini soyluyor; efor tahmininde dahil oldugu belgede yok, temkinli secildi."
+  },
+  {
+   "itiraz": "kar-pusulasi-c G8: musteri dosya bicimi farkli; esleme istisna uretir, kapsam siniri esleme icin yazili degil.",
+   "karar": "kabul",
+   "degisiklik": "C G8 gecti idi, test oldu; ilk_kapsam yalniz hazir sablondaki dosya olacak sekilde daraltildi; kapi_duzeltme guncellendi.",
+   "gerekce": "GPT dosyasinda esleme basarisi %80 altinda kapsam daraltilir deniyor; sinir yazili degildi."
+  },
+  {
+   "itiraz": "kar-pusulasi-a odeme adedi baz: kartta 30, sence 12-15; odeyen yok, donusum varsayim, ilk tahsilat 5 hafta sonra.",
+   "karar": "kismen",
+   "degisiklik": "A baz 30 idi, 20 oldu (10 Pro, 10 Kurucu); tahsilat baz 17472 idi, 12480 oldu; musteri ve dayanak guncellendi.",
+   "gerekce": "Plan 60. gunde 10 Kurucu satisi ve ay 4-6 icin 8 Pro/ay diyor; 5 hafta gecikmeyle 12-15 degil 20 destekleniyor, kanit yok."
+  },
+  {
+   "itiraz": "kar-pusulasi-a odeme adedi iyi: kartta 80, sence 40; plan 6 ayda 80 iyimser.",
+   "karar": "kabul",
+   "degisiklik": "A iyi 80 idi, 40 oldu (25 Pro, 15 Kurucu); tahsilat iyi 45760 idi, 22880 oldu; analist_gorusu %32 yerine %16.",
+   "gerekce": "Plan yil 1 icin 123 Pro veriyor; 6 ayda 80 Pro hedefi ilk 4 haftalik MVP ve gecikme dusulunce iyimser."
+  },
+  {
+   "itiraz": "kar-pusulasi-c ilk_tahsilat_gun.min: kartta 21, sence 35; motor duzeltmesi ve izinli dosya toplama once gerekir.",
+   "karar": "kabul",
+   "degisiklik": "C ilk_tahsilat_gun min 21 idi, 35 oldu (max 60 ayni).",
+   "gerekce": "GPT 30 gunde 5 izinli dosya, 60 gunde ucretli alici diyor; 21 gunde tahsilat bu siraya uymuyor."
+  },
+  {
+   "itiraz": "kar-pusulasi-c odeme adedi baz: kartta 8, sence 4; kaynak 90 gunde 5 alici hedefi koyuyor, kanit yok.",
+   "karar": "kismen",
+   "degisiklik": "C baz 8 idi, 5 oldu; iyi 20 idi, 12 oldu (kendi taramam); tahsilat baz 6664 idi 4165, iyi 16660 idi 9996.",
+   "gerekce": "Kaynak hedefi 5 alici; hedefin ustu baz desteklenmiyor, 4 icin ayri dayanak yok. Iyi 12 temkinli secildi."
+  }
+ ]
+}

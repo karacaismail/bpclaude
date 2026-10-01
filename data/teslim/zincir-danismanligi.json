@@ -1,0 +1,23 @@
+{
+ "slug": "zincir-danismanligi",
+ "secenekler": {
+  "zincir-danismanligi-a": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 49,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Varsayım: 90 günlük paket 176 saat (karar, ölçüm, SEO, entegrasyon, 3 kampanya, 13 haftalık rapor, devir) + 2 aylık yönetim x 35 saat; 5 ödemeye bölündü. Karttaki 2080 dk aylık yönetimdi."
+  },
+  "zincir-danismanligi-b": {
+   "satis_basina_kurucu_saati": 24,
+   "teslim_saat_odeme_basina": 24,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: 2 haftalık denetim 24 saat (ölçüm, SEO, yerel arama, sosyal, e-ticaret, rakip; yalnız halka açık veri); yapay zekâ ile yarıya indirilmedi, kapsam geniş."
+  },
+  "zincir-danismanligi-c": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 10,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Varsayım: aylık 10 saat; merkezden yayın yazılımı yok, şubeler elle yönetilir (8 saat) ve pilot payı 2 saat. Satış 8 saatten pilot kurulumu ayrıldı."
+  }
+ }
+}

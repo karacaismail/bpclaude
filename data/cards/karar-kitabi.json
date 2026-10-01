@@ -1,0 +1,343 @@
+{
+ "slug": "karar-kitabi",
+ "baslik": "Karar Kitabı / Yöntem Atlası",
+ "ozet": "128 karar ve strateji yöntemini Türkçe, Türkiye örnekleriyle anlatan tek sayfa uygulama; KOBİ yöneticilerine çalışma kâğıdı ve atölye satmayı hedefler. Site canlı; satış öncesi içerik hakları ve özgünlük teyidi şart.",
+ "bugun": {
+  "var": [
+   "128 yöntem x Kavram/Uygulama/Vaka, 15 tema, Türkiye örnekli içerik (384 sayfa)",
+   "Çalışan tek sayfa uygulama, grafikler ve JSON/Markdown dışa aktarma",
+   "Erişilebilirlik ve tarayıcı testi altyapısı olan ayrı bir Astro sitesi",
+   "Yöntemlerin ERP/CRM özelliklerine eşlemesi (12 özellik)",
+   "Atölye teslim şablonu ve fiyat taslağı (belgede yazılı)"
+  ],
+  "yok": [
+   "İçerik hakları ve özgünlük teyidi bekliyor",
+   "Çalışma kâğıdı, satış sayfası, ödeme ve fatura düzeni",
+   "Arama ve gerçek yollu sayfalar (şu an hash yönlendirme)",
+   "Karar günlüğü uygulaması",
+   "Referans, pilot ya da ödeme kaydı"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Önce 4-6 haftalık içerik özgünleştirme ve hak teyidi (ad, yapı, sıra, birincil kaynaktan yeniden yazım); sonra ücretsiz atlas, 199-799 TL kâğıt paketleri ve 19.900 TL atölye. 12 ayda baz 175 bin TL; yarısı kurumsal atölyeden.",
+  "gpt": "Kitap özetini yeniden satma; üç özgün worksheet (seçenek, varsayım, gözden geçirme günlüğü) ile facilitatörlere karar memosu kiti sat (1.000 TL kit, 4.000 TL özel memo). Müşteri çalışma alanı ve hak durumu teyitsiz.",
+  "ayrisma": "Claude geniş içerik atlası ve kurumsal atölyeyi, GPT dar ve özgün bir facilitatör kitini öne çıkarıyor. İkisi de içerik haklarını ön koşul sayıyor; GPT ücretsiz AI ve Notion farkını ödeme kapısı yapıyor.",
+  "birlesik": "Hak temizliği olmadan satış yok. İlk para en olası olarak mevcut ilişkilerdeki yarım günlük atölyeden gelir; bireysel kâğıt satışı küçük ve yavaştır, facilitatör kiti ise sınanmamış üçüncü seçenektir."
+ },
+ "analist_gorusu": "En gerçekçi yol mevcut ilişkilerdeki iki pilot atölye: bireysel kâğıt satışı 6 ayda küçük kalır, facilitatör kiti ağsız ve sınanmamış. Hepsi önce hak teyidinden geçmeli.",
+ "secenekler": [
+  {
+   "id": "karar-kitabi-a",
+   "ad": "Yarım günlük kurumsal karar atölyesi",
+   "tur": "hizmet",
+   "musteri": "50-250 çalışanlı üretici KOBİ'lerin yönetim ekibi (sahip, İK/eğitim, operasyon yöneticisi); kurucunun mevcut ilişkileri",
+   "is": "Şirketin iki gerçek kararını (tedarikçi seçimi, tekrarlayan iade gibi) yöntemle ele alıp gerekçeli sonuca bağlamak",
+   "tetikleyici": "Yıllık eğitim planındaki karar verme başlığı; tekrarlayan kalite ya da teslimat sorunu; teklif karşılaştırma dönemi",
+   "teklif": "Ön çalışma (1 saat), yarım gün atölye (10 yöntem, 2 gerçek karar), 30 gün karar günlüğü takibi; doldurulmuş kâğıtlar teslim edilir",
+   "fiyat": "19.900 TL + KDV; ilk iki pilot müşteriye 9.900 TL + KDV (referans karşılığı); %50 avans",
+   "kanal_birincil": "Kurucunun mevcut müşteri ve üretici ilişkileri; 6 şirkete tekil pilot teklif e-postası",
+   "kanal_yedek": "İnsan kaynakları dernekleri etkinliği (PERYÖN şubeleri), OSB ve oda eğitim komisyonları, LinkedIn yazıları",
+   "ilk_adim": "Hak teyidi kapısı kapanınca 6 şirkete kişisel pilot teklifi gönder; 45 dakikalık ücretsiz ön oturum iste",
+   "ilk_kapsam": "Yöntem başına tek sayfa kâğıt (10 adet), 2 sayfa karar brifi şablonu, atölye sunumu, karar günlüğü kayıt şablonu (elektronik tablo); yazılım yok",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "10 yaygın yöntem serbest; ama içerik ve sıra kitabı izliyor, yeniden yazım ve avukat notu bitmeden hak temiz sayılmaz"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Telif konusunda avukat, KDV ve fatura için mali müşavir teyidi bekleniyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-fatura yolu belli; faturalama düzeni mevcut şirket üzerinden varsayım, teyit edilmedi"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net, mevcut ilişkiler var; ama 20 isimlik liste yok, belgede 6 şirket geçiyor"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal mevcut ilişkiler, yedek dernek ve oda komisyonları; ilk adım yazılı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Hazırlık 4-5 hafta görünüyor ama kurumsal satış döngüsü ölçülmedi; ilk tahsilat 3. ayda"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 18 bin TL (avukat, marka, alan adı, kâğıt tasarımı); tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsamlı, sabit fiyatlı paket; yazılım geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Atölye içeriğini yaygın yöntemlerden yeniden yaz, avukat notunu al, mali müşavirle faturayı netleştir, 20 isimlik şirket listesi çıkar.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 19900,
+    "degisken_maliyet_tl": 4500,
+    "sabit_gider_aylik_tl": 1250,
+    "baslangic_nakit_tl": 18000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 90,
+     "max": 140
+    },
+    "ilk_tahsilat_gun": {
+     "min": 75,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 20,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 19800,
+     "iyi": 39700
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.33
+    },
+    "dayanak": "Plan 5, 6, 8: pilot 9.900 TL x 2 (ay 4 ve 6) = 19.800 baz; iyi senaryo +1 tam fiyat 19.900. Ilk tahsilat: hak teyidi 4-6 hafta, sonra teklif, on oturum ve avans; 75 gunden once degil. Plan 6 donusumu 10 teklifte 1 satis; 6 teklifte 2 pilot hedeftir, kanitsiz varsayim. Degisken maliyet plandaki 4.500 TL."
+   },
+   "deney": {
+    "varsayim": "Mevcut ilişkilerdeki üretici KOBİ'ler iki gerçek kararı için 9.900 TL pilot atölyeye avans yatırır",
+    "yontem": "Hak teyidi kapısı sonrası 6 şirkete tekil teklif; 45 dakikalık ücretsiz ön oturumda bir kâğıt canlı doldurulur; yazılı teklif ve %50 avans istenir.",
+    "sure_gun": 45,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "6 teklifte en az 1 avans ödemesi ya da imzalı pilot; 2 pilot kesinleşirse devam",
+    "birakma_olcutu": "6 teklif ve 3 ön oturum sonunda ödeme yok: atölyeyi eğitmen lisansına daralt",
+    "sonraki_dilim": "Pilot sonrası anonim karar kaydı ile 20 şirkete tam fiyat teklifi"
+   },
+   "etiketler": {
+    "segment": "Üretici KOBİ yönetim ekipleri",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Elektronik tablo ve PDF kâğıt; yazılım yok",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan 5 ve 8: atölye fiyatı 19.900 TL (pilot 9.900); Plan 3.1 ve B.2: ilk alıcılar mevcut üretici KOBİ ilişkileri ve zincir müşterileri. Plan 4: kurumsal eğitim bandı 1.000-11.000 TL (Armut). Ödeyen müşteri yok; kâğıt şablonları yazılı değil; satış döngüsü ölçülmedi. Plan 10: hak teyidi kapısı kapanmadan teklif yapılmaz."
+  },
+  {
+   "id": "karar-kitabi-b",
+   "ad": "Tema çalışma kâğıdı paketleri ve tam set",
+   "tur": "içerik",
+   "musteri": "KOBİ sahibi, ekip lideri ve orta kademe yönetici; ikincil olarak işletme eğitmeni (lisans)",
+   "is": "Karar yöntemini Türkçe, Türkiye örneğiyle öğrenip doldurulabilir kâğıtla işe uygulamak",
+   "tetikleyici": "Önceliklendirme, teklif karşılaştırma ya da tekrarlayan sorun anı; yöntem adıyla arama",
+   "teklif": "Ücretsiz yöntem sitesi; ücretli tema paketi (PDF form, tablo/Notion sürümü, örnek vaka, video); tam set ve eğitmen lisansı",
+   "fiyat": "Tema paketi 199 TL, tam set 799 TL, eğitmen lisansı 2.990 TL (KDV dahil)",
+   "kanal_birincil": "Yöntem adı aramaları için yaklaşık 380 sayfa (Pagefind aramalı, Astro statik site)",
+   "kanal_yedek": "LinkedIn haftalık yazı, kurucunun diğer ürünlerinden çapraz bağlantı, e-posta bülteni",
+   "ilk_adim": "Adı değiştir, kaynak envanterini çıkar, kaynak envanterini çıkar; ilk 3 tema paketini Shopier'de aç",
+   "ilk_kapsam": "hak teyidi, 3 tema paketi (teklif karşılaştırma, kök neden, önceliklendirme), satış sayfası, Shopier ve e-Arşiv; 12 tema sonra",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Mevcut içeriğin özgünleştirilmesi ve üçüncü taraf kaynakların haklarının teyidi bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Telif ve marka araştırması için avukat, dijital KDV ve e-Arşiv için mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ve yurt dışı için yasal satıcı hizmeti planlı; hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli; ismen 20 alıcı listesi yok, bireysel arama trafiğine bağlı"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Arama birincil, LinkedIn ve çapraz bağlantı yedek; ilk adım yazılı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Temizlik ve yayın yaklaşık 70 iş günü ajan emeği; kurucu saati ve ilk satış süresi belirsiz"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 25 bin TL; tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı dijital paketi alır; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "G1: yeni ad, seçki ve sıranın değişmesi, her yöntemin birincil kaynaktan yeniden yazımı, kaynak hak teyidi ve avukat notu; sonra G2-G4 teyidi.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 166,
+    "degisken_maliyet_tl": 16,
+    "sabit_gider_aylik_tl": 1250,
+    "baslangic_nakit_tl": 25000,
+    "kalan_efor_saat": {
+     "min": 80,
+     "beklenen": 120,
+     "max": 200
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 0.1,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 3800,
+     "baz": 8476,
+     "iyi": 25400
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 17,
+     "baz": 25,
+     "iyi": 89
+    },
+    "alti_ay_musteri": {
+     "kotu": 15,
+     "baz": 22,
+     "iyi": 75
+    },
+    "donusum_orani": {
+     "dusuk": 0.004,
+     "yuksek": 0.05
+    },
+    "dayanak": "Plan 8 ay 3-6 akisi (75 paket, 12 set, 2 lisans = 25,4 bin TL) arama siralamasi 9. ayda varsayildigi icin iyi senaryoya alindi. Baz yalnizca portfoy baglantisi, LinkedIn ve kurucu fiyatli ilk paketlerden: 20 paket x 166 + 4 set x 666 + 1 lisans x 2.492 = 8.476. Kotu: 15 paket, 2 set. Donusum plan V6 (%0,4) ve %5; kanitsiz varsayim."
+   },
+   "deney": {
+    "varsayim": "Yöntem adı aramasıyla gelen KOBİ yöneticisi 199 TL'lik kâğıt paketi için ödeme yapar",
+    "yontem": "Temizlenmiş 3 yöntem sayfası ve 3 ücretsiz kâğıt yayımla; Search Console'da gösterim ve tıklamayı izle; kâğıt paketini Shopier'de aç.",
+    "sure_gun": 60,
+    "maliyet_saat": 60,
+    "maliyet_tl": 15000,
+    "basari_olcutu": "60 günde 300 gösterim/gün, 10 paket satışı ya da 50 e-posta kaydı",
+    "birakma_olcutu": "90 günde 10 satış yok: bireysel ürün ücretsiz içerik ve atölyeye daralır",
+    "sonraki_dilim": "Satış varsa 12 tema paketini ve tam seti ekle"
+   },
+   "etiketler": {
+    "segment": "KOBİ yöneticileri, eğitmenler",
+    "kanal_turu": "arama",
+    "teknoloji": "Astro, Pagefind, PDF form, tablo/Notion",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan 1 ve 4: yöntem kitaplarına ilgi sınırlı (tek perakendeci satış verisi); strateji kurslarında 1.606 ve 1.236 öğrenci; ücretsiz bloglar yüzeysel. Plan 3.2: SOM 130-330 bin TL/yıl, gelirin yarısı kurumsal. Plan 6: reklam CAC 150-300 TL, paket net 158 TL, ücretli kanal çalışmaz. Arama hacmi ölçülmedi; ödeyen yok."
+  },
+  {
+   "id": "karar-kitabi-c",
+   "ad": "Facilitatör için özgün karar memosu kiti",
+   "tur": "içerik",
+   "musteri": "Bağımsız ürün/strateji facilitatörü ya da 2-10 kişilik danışman ekibi; ayda 2-10 karar oturumu",
+   "is": "Oturum notlarını seçenek, varsayım, karar ve gözden geçirme tarihi içeren özgün bir karar memosuna çevirmek",
+   "tetikleyici": "Her karar oturumu sonrası yaklaşık 2 saatlik toparlama; müşteriye teslim edilecek çıktı",
+   "teklif": "Üç özgün worksheet (seçenek karşılaştırma, varsayım kaydı, gözden geçirme günlüğü) ve memo dışa aktarma; istenirse özel memo hizmeti",
+   "fiyat": "Kit 1.000 TL; özel memo 4.000 TL (KDV durumu kaynakta belirtilmemiş; hariç varsayıldı)",
+   "kanal_birincil": "Danışmanlar arası referans: facilitatörlere 30 dakikalık demo ve izinli, gizli verisiz örnek çıktı",
+   "kanal_yedek": "İki anonim örnekli ücretsiz özgün worksheet; kurucunun diğer ürünlerinin çıktılarına bağlı memo paketi",
+   "ilk_adim": "İçerik hakları envanterini çıkar; üç özgün worksheet ve iki anonim karar örneğini hazırla; 5 facilitatöre demo ayarla",
+   "ilk_kapsam": "Üç worksheet, mevcut dışa aktarma kodundan JSON/Markdown memo ve elle hazırlanan PDF; çalışma alanı, paylaşım ve SSO yok",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Üç yeni özgün worksheet yazılacak; içerik hakları envanteri ve mevcut kod parçalarının uyumu doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Özgün içerik düşük risk; gizli oturum notları için kişisel veri ve KDV teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Ödeme hesabı ve fatura düzeni kurulmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; facilitatör isim listesi yok, belgede mevcut ilişki geçmiyor"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Referans ve ücretsiz worksheet fikri var; somut grup, topluluk ya da ortak adlandırılmadı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Worksheet ve memo çıktısı için efor yazılı değil; 90 günlük deney var, ilk tahsilat belirsiz"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Gereken nakit yaklaşık 8 bin TL (hukuki kontrol, alan adı); tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Kit herkese aynı; özel memo sabit saatli ve sabit fiyatlı"
+    }
+   },
+   "kapi_duzeltme": "Hak envanterini bitir, 20 facilitatörlük isim listesi ve adlı bir topluluk ya da ortak bul, kit için ödeme hesabını aç, worksheet eforunu yaz.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 833,
+    "degisken_maliyet_tl": 450,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 70,
+     "max": 120
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 5,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 1666,
+     "iyi": 8300
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 7
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 6
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "GPT dosyasi: kit 1.000 TL (KDV haric 833), ozel memo 4.000 TL. Kaynak satis adedi vermiyor; 30. gun hak envanteri ve worksheet, 60. gun bes deneme. Temkinli baz: 2 kit x 833 = 1.666; iyi: 6 kit + 1 memo = 8.300. Isim listesi, odeme hesabi ve yapay zeka farki kanitsiz; donusum varsayim."
+   },
+   "deney": {
+    "varsayim": "On facilitatör kendi Notion ve ücretsiz AI düzenine karşı gerçek bir fark ve ödeme nedeni görür",
+    "yontem": "Aynı ham notlardan hem ücretsiz AI ve Notion ile hem kit worksheet'leriyle memo üret; bir hafta sonra kaynak, varsayım ve gözden geçirme tarihi izini karşılaştır.",
+    "sure_gun": 60,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "5 deneyden en az 2 facilitatör ücretli kit ya da özel memo için ödeme yapar",
+    "birakma_olcutu": "10 nitelikli facilitatör fark ya da ödeme bulmazsa kit iç araç olarak kalır",
+    "sonraki_dilim": "İki sponsor eski memoyu yeniden açarsa sürüm farkı ve gözden geçirme günlüğü paketi"
+   },
+   "etiketler": {
+    "segment": "Bağımsız facilitatör ve küçük danışmanlıklar",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Mevcut TypeScript dışa aktarma; PDF",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyası: ekonomik tez özgün karar notu; yapılandırılmış dışa aktarma gerçek varlık, müşteri çalışma alanı ve içerik hakları teyitsiz; güncel rakip fiyatları doğrulanmadı. Claude planı bu biçimi ayrı seçenek yapmıyor. Plan 4: Notion şablonları 29-79 USD. Ödeyen yok, isim listesi yok."
+  }
+ ]
+}

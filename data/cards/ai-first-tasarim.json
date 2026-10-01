@@ -1,0 +1,343 @@
+{
+ "slug": "ai-first-tasarim",
+ "baslik": "Yapay zekâ öncelikli tasarım sistemi rehberi",
+ "ozet": "Kurumsal mimari platformu vizyonundan geriye kalan tasarım sistemi temeli (token hattı, yapay zekâ komut kartı bileşeni, Storybook) ve 85 belgelik yöntem birikimi; Türkçe rehber, kurulum hizmeti ve ajans paketi olarak satılabilir. Ödeyen müşteri yok, ürün paketlenmedi.",
+ "bugun": {
+  "var": [
+   "Token hattı: JSON'dan CSS, TS, Figma, antd, ECharts çıktısı; build ve doğrulama çalışıyor",
+   "Yapay zekâ komut kartı bileşeni (tek DOM düğümlü morph, durum makinesi, 12 hikaye dosyası)",
+   "94 TS/TSX dosyası, 6.806 satır; Storybook ve 6 kontrat test dosyası",
+   "A-F varyant yöntemi, 12 mikro-eksen, prompt katalogları: yaklaşık 85 belge, dağınık",
+   "Bileşenin başka bir iş projesinde canlı kullanıldığı iç beyan (plan §1)"
+  ],
+  "yok": [
+   "Ödeyen müşteri, ön ödeme ya da yazılı niyet",
+   "npm paketi, lisans dosyası, yayınlanmış Storybook",
+   "Yayın kalitesinde rehber metni (içerik yaklaşık %70, yayın kalitesi %20)",
+   "Teklif şablonu, ödeme hesabı, 20 kişilik alıcı listesi",
+   "Depoda toparlanması gereken bekleyen değişiklikler (acil bakım)"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Kurumsal mimari platformuna hayır (6-18 ay satış, 8 M ₺ MVP varsayımı). Komşu biçim: MIT bileşen paketi (gelir 0) + 399 ₺ Türkçe rehber + 25.000 ₺ atölye + 120.000 ₺ kurulum danışmanlığı. Baz 12 ay: 150 rehber, 0 danışmanlık.",
+  "gpt": "Bağımsız gelir ürünü olduğu kanıtlanmadı. Ajans ve SaaS ekibine sabit kapsamlı görev paketi: tek form ve tek tablo için durum, token, izinli etkileşim ve test kabul dosyası; ücretli kurulum ya da denetim paketi.",
+  "ayrisma": "Claude çalışması alıcıyı Türk frontend lideri, öğrenen geliştirici ve CTO görür; gelir rehber ve hizmetten. GPT çalışması alıcıyı ajans ve ürün ekibi görür; çıktı küçük bir kabul dosyası. Fiyat ve ağ kanıtı ikisinde de yok.",
+  "birlesik": "Platform değil dar paket: kendi ürününe ihtiyaç duyan ekibe sabit kapsamlı, ölçülebilir teslim. İlk satışlar rehber ve kabul dosyası paketinden, daha büyük para kurulum hizmetinden gelebilir; hiçbiri sınanmadı."
+ },
+ "analist_gorusu": "En gerçekçi yol önce rehberi (A) ve yanında kurulum hizmetini (B) yayınlamak. Ajansa kabul dosyası paketi (C) en küçük, tek başına satılabilir kapsam; 6 ayda 3000 USD için en az bir hizmet satışı gerekir.",
+ "secenekler": [
+  {
+   "id": "ai-first-tasarim-a",
+   "ad": "Türkçe yapay zekâ öncelikli tasarım sistemi rehberi (e-kitap)",
+   "tur": "içerik",
+   "musteri": "Türkçe öğrenen frontend geliştiriciler ve tasarım sistemi sahibi frontend liderleri",
+   "is": "Token, varyant matrisi ve yapay zekâ komut yüzeyini Türkçe, çalışan Storybook örnekleriyle kurmayı öğrenmek",
+   "tetikleyici": "Yöneticiden yapay zekâ özelliği talebi, iş görüşmesinde tasarım sistemi sorusu, yeni marka teması",
+   "teklif": "10 bölümlük Türkçe e-kitap, prompt katalogları, çalışan Storybook örneği; ilk bölüm ücretsiz, 14 gün iade",
+   "fiyat": "399 ₺ KDV dahil (332,5 ₺ net); toplu ajans lisansı 10 koltuk 2.500 ₺",
+   "kanal_birincil": "GitHub deposu ve Storybook demosu, LinkedIn yazı dizisi, Show HN ve r/reactjs lansmanı",
+   "kanal_yedek": "Frontend Istanbul ve React Istanbul toplulukları, kendi Frontend Atlası alıcı listesi, bülten",
+   "ilk_adim": "bekleyen değişiklikleri toparla, ilk bölümü ücretsiz yayınla, Shopier ön satış sayfasını aç",
+   "ilk_kapsam": "Bölüm 1-5 ve çalışan örnek; ön satış ile ilk 10 alıcıya %40 indirimli satış, kalan bölümler sonradan",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Metin ve kod kurucunun; lisans dosyası yok, bağımlılık lisans taraması yapılmadı, başka bir iş projesindeki kullanımın hak durumu doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Cayma istisnası, KDV, e-Arşiv ve bülten izni için mali müşavir ve hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ve yurt dışı için Lemon Squeezy yolu belli, hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; plan yalnız yaklaşık 13 kişilik ilk liste sayıyor, 20 isim yazılı değil"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal ve ilk adım adlı; topluluklar, bülten ve kendi alıcı listesi yedek"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kod ve içerik toplam yaklaşık 40 iş günü, haftada 10 saat; ilk ön satış 9. hafta, satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı yaklaşık 15.000 ₺ (editör, kapak, video), tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı e-kitabı alır, özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Lisans dosyasını ve bağımlılık taramasını yaz, hukukçu teyidi al, Shopier hesabını aç ve test ödemesi yap, 20 kişilik alıcı listesini yaz, kalan efor tahminini ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 332.5,
+    "degisken_maliyet_tl": 14,
+    "sabit_gider_aylik_tl": 1700,
+    "baslangic_nakit_tl": 15000,
+    "kalan_efor_saat": {
+     "min": 70,
+     "beklenen": 110,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 55,
+     "max": 100
+    },
+    "satis_basina_kurucu_saati": 0.1,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 2660,
+     "baz": 14963,
+     "iyi": 33250
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 8,
+     "baz": 45,
+     "iyi": 100
+    },
+    "alti_ay_musteri": {
+     "kotu": 8,
+     "baz": 45,
+     "iyi": 100
+    },
+    "donusum_orani": {
+     "dusuk": 0.005,
+     "yuksek": 0.04
+    },
+    "dayanak": "Claude planı §5-6 ve §8: 399 ₺ KDV dahil, net 332,5 ₺, baz yıl 1 için 150 rehber. İlk ödeme 9. hafta ön satış; ilk 6 ayda satış yalnız 3.-6. aylar, baz 45 (yıllık 150'nin iyimser payı düşürüldü). Dönüşüm plan hedefi (%4) ve npm için %0,5; kanıt yok, varsayım."
+   },
+   "deney": {
+    "varsayim": "Türk frontend geliştiriciler Türkçe tasarım sistemi rehberine 399 ₺ ödemeye hazır",
+    "yontem": "Ücretsiz bölüm 1'i ve ön satış sayfasını yayınla; LinkedIn dizisi, Show HN ve topluluk paylaşımı; ilk 10 alıcıya %40 indirimli ön satış.",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "30 günde en az 10 ödeme ve ücretsiz bölümden satın almaya en az %2 dönüşüm",
+    "birakma_olcutu": "30 günde 3'ten az ödeme; dönüşüm %1'in altında",
+    "sonraki_dilim": "Başarılıysa bölüm 6-10'u yaz ve İngilizce sürüm; değilse içeriği kurulum hizmetine (B) bağla"
+   },
+   "etiketler": {
+    "segment": "Türk frontend geliştirici ve lider",
+    "kanal_turu": "içerik",
+    "teknoloji": "React, Storybook, token hattı",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Claude planı §1-2, §5-6, §8 ve derinlik dosyası A.2, B.1-B.3, C.2-C.3: rehber içeriği yaklaşık %70 hazır ama yayın kalitesinde %20; ödeyen müşteri 0. Talep işareti masa başı: haftalık 2,27 milyon indirmeli açık kaynak sohbet arayüzü kütüphanesi, çeviri teknik kitaplar 322-679 ₺. GPT dosyaları rehberi ayrı ürün saymaz, yalnız kabul dosyası paketini önerir."
+  },
+  {
+   "id": "ai-first-tasarim-b",
+   "ad": "Ekip atölyesi ve 2 haftalık tasarım sistemi kurulumu",
+   "tur": "hizmet",
+   "musteri": "15-60 kişilik yazılım şirketinin CTO'su ya da mühendislik müdürü; 5-30 kişilik ürün ekibinin lideri",
+   "is": "Tasarım sistemi hattını (token, Storybook, CI) ve yapay zekâ komut yüzeyini ilk 3 bileşenle işe yarar hale getirmek",
+   "tetikleyici": "Yönetimden yapay zekâ özelliği baskısı, erişilebilirlik şartı, frontend ayrılığı, yeni çeyrek bütçesi",
+   "teklif": "1 günlük atölye 25.000 ₺; yükseltme olarak 2 haftalık sabit kapsamlı kurulum 120.000 ₺: token hattı, 3 bileşen, Storybook yayını",
+   "fiyat": "Atölye 25.000 ₺ + KDV; kurulum 120.000 ₺ + KDV; kapsam dışı iş ek fiyat",
+   "kanal_birincil": "Kurucunun LinkedIn ağı, açık kaynak bileşenin Storybook demosu, mevcut tanıdık ekipler",
+   "kanal_yedek": "Frontend Istanbul ve React Istanbul'da 15 dk konuşma, rehber (A) alıcıları, yazılım ajansları",
+   "ilk_adim": "Bileşeni npm'e ve Storybook'u herkese açık yayına al, 10 frontend liderine kişisel mesajla demo öner",
+   "ilk_kapsam": "Önce atölye (1 gün, ekibin kendi ekranında token çıkarma); ilgi varsa 2 haftalık kurulum teklifi, sabit kapsamlı",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucunun ama lisans dosyası ve bağımlılık taraması yok; ticari danışmanlık altında MIT paket kullanımı netleşmeli"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Gizlilik sözleşmesi, hizmet sözleşmesi ve e-fatura düzeni hukukçu ve mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli; ticari hesap ve fatura kesim düzeni bu iş için doğrulanmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; plan yaklaşık 50 aday şirket varsayıyor, isim listesi ve mevcut ilişki belgelenmedi"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "LinkedIn ağı ve demo birincil, topluluk konuşması ve ajanslar yedek; ilk adım adlı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Bileşen paketi ve demo yaklaşık 13 iş günü; satış döngüsü planda 1-3 hafta ama ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Hukuki şablon ve araç yaklaşık 8.000 ₺, tavanın çok altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Sabit kapsam ve ek fiyat kuralı planda var, yazılı teklif şablonu ve kapsam sınırı yok"
+    }
+   },
+   "kapi_duzeltme": "Teklif ve kapsam şablonu yaz, sözleşme taslağını hukukçuya onaylat, 20 hedef şirketin isim listesini çıkar, lisans dosyasını ekle, iş takvimini ölç.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 25000,
+    "degisken_maliyet_tl": 5000,
+    "sabit_gider_aylik_tl": 1000,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 90,
+     "max": 140
+    },
+    "ilk_tahsilat_gun": {
+     "min": 75,
+     "max": 180
+    },
+    "satis_basina_kurucu_saati": 25,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 25000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "Claude planı §5, §8 ve derinlik dosyası A.8, C.5, D.8: atölye 25.000 ₺, kurulum 120.000 ₺ (ikisi de varsayım). Plan baz yıl 1 gelirinde danışmanlık ve atölye yok (0); 6 ayda en çok 1 atölye (25.000 ₺) iyi senaryo, kurulum 6 ayda beklenmez. Dönüşüm planın %20 hedefine dayanır, kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Bir yazılım ekibi tek kurucudan atölye ya da kurulum satın almaya güvenir ve 25.000 ₺ ödeyebilir",
+    "yontem": "Kişisel ağdaki 10 frontend liderine 20 dk demo öner; ilgilenene 1 sayfalık atölye teklifi gönder, 24 saatte yanıt iste.",
+    "sure_gun": 45,
+    "maliyet_saat": 35,
+    "maliyet_tl": 0,
+    "basari_olcutu": "45 günde en az 4 demo, 1 yazılı teklif yanıtı ve 1 atölye için ön ödeme ya da imzalı niyet",
+    "birakma_olcutu": "45 günde 10 görüşmeden hiç demo ya da teklif talebi çıkmıyor",
+    "sonraki_dilim": "Atölye satılırsa teslim et, vakayı yayınla ve 2 haftalık kurulum teklif et"
+   },
+   "etiketler": {
+    "segment": "Yazılım şirketi CTO'su, frontend lideri",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "React, Storybook, token hattı",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Claude planı §2, §5, §6, §8 ve derinlik dosyası A.2, A.8, B.3, C.5: kıdemli freelancer 2 haftası 100-150 bin ₺ (varsayım), iç ekip yolu 180.000 ₺ (varsayım). Satış döngüsü 1-3 hafta, CTO yetkisi 150 bin ₺ altı varsayım. Referans olarak başka bir iş projesindeki canlı kullanım iç beyan; ödeyen müşteri 0, plan baz yıl 1'de danışmanlık sayısını 0 alıyor."
+  },
+  {
+   "id": "ai-first-tasarim-c",
+   "ad": "Ajansa sabit fiyatlı form ve tablo kabul dosyası paketi",
+   "tur": "hizmet",
+   "musteri": "Yapay zekâ ile arayüz geliştiren yazılım ajansı sahibi ya da küçük SaaS ürün ekibi",
+   "is": "Aynı ekranın farklı token ve davranışla tekrar üretilmesini önlemek: tek form ve tek tablo için sözleşmeli kabul dosyası",
+   "tetikleyici": "Çok ajanla geliştirme sırasında ekran tutarsızlığı, müşteri incelemesinde reddedilen arayüz, teslim öncesi kabul",
+   "teklif": "Tek form ve tek tablo için durum, token, izinli etkileşim ve test kabul dosyası; ücretli kurulum ve denetim",
+   "fiyat": "18.000 ₺ + KDV sabit paket (yaklaşık 12 saat, saat başı 1.500 ₺ varsayımı)",
+   "kanal_birincil": "Kurucunun LinkedIn ağında ajans sahipleri; ücretsiz kabul örneği ve öncesi-sonrası ekran demosu",
+   "kanal_yedek": "Frontend Istanbul ve React Istanbul toplulukları, rehber (A) alıcıları",
+   "ilk_adim": "Aynı formun iki ayrı üretimini ve kabul dosyasıyla üçüncü üretimini gösteren anonim örneği hazırla",
+   "ilk_kapsam": "Tek form ve tek tablo kabul dosyası; bir ajansla ücretli pilot, rehber şablonları ve token hattı hazır malzeme",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Şablon ve token hattı kurucunun; lisans dosyası yok, anonim örnek için müşteri ekranı izni gerekecek"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Sözleşme ve gizlilik metni, müşteri kodu ve ekranıyla çalışma için hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli, hesap ve fatura düzeni bu iş için doğrulanmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (ajans, küçük SaaS); plan 5 aday ajans kriteri koyuyor, isimler yazılmadı"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "LinkedIn ağı ve topluluk adlı ama hedef ajanslar adlandırılmadı; GPT çalışması satış emeği gerektiğini söylüyor"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kabul dosyası şablonu ve örnek yaklaşık 4-6 iş günü; satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı yaklaşık 3.000 ₺, tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Tek form, tek tablo, sabit fiyat ve sabit çıktı; özel geliştirme paket dışında"
+    }
+   },
+   "kapi_duzeltme": "Anonim örneği ve fiyatlı teklif şablonunu hazırla, 20 hedef ajansı adlandır, sözleşmeyi hukukçuya onaylat, hesap ve fatura düzenini kur.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 18000,
+    "degisken_maliyet_tl": 1000,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 50,
+     "max": 90
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 12,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 18000,
+     "iyi": 72000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 4
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 4
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.15
+    },
+    "dayanak": "GPT dosyası (tek form, tek tablo kabul dosyası, ücretli kurulum ve denetim) ve Claude planı §2, §5: fiyat bu belgelerde yok, 120.000 ₺ / 2 hafta oranından saat başı 1.500 ₺ ve 12 saatlik paket varsayıldı. Baz 6 ayda 1 satış, iyi 4; dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Ajanslar tek form ve tabloluk dar kabul dosyasına 18.000 ₺ öder",
+    "yontem": "Aynı formun iki farklı üretimini ve kabul dosyasıyla farkın azaldığı üçüncü üretimi anonim örnek yap; 10 ajans sahibine göster, ücretli pilot öner.",
+    "sure_gun": 30,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "30 günde 3 ajansla görüşme ve 1 yazılı pilot niyeti ya da ön ödeme",
+    "birakma_olcutu": "10 gösterimden hiçbiri fiyat ya da pilot sormuyor",
+    "sonraki_dilim": "Pilot satılırsa ikinci ekran paketi ve ajans başına toplu fiyat; satılmazsa rehbere (A) ek bölüm yap"
+   },
+   "etiketler": {
+    "segment": "Yazılım ajansı ve küçük SaaS ekibi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "React, Storybook, kabul testi",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "GPT iş fikri belgesi: alıcı çok ajanla geliştirirken tutarlılık kaybeden ekip; kabul örneği ve ajans ortaklığı satış emeği gerektirir, bağımsız gelir ürünü kanıtlanmadı. Claude derinlik dosyası C.7 ajans ortaklığını (toplu rehber 2.500 ₺) ve S4 segmentini (800-1.200 ajans, varsayım) verir. Fiyat kurucu tahminidir; ödeyen müşteri 0."
+  }
+ ]
+}

@@ -1,0 +1,342 @@
+{
+  "slug": "banner-post",
+  "baslik": "Banner ve gönderi üretim sistemi",
+  "ozet": "Tarayıcıda çalışan banner ve gönderi üretici için yalnız belgeler var, kod yok. Üç ticari biçim: Zabuno içine menü verisinden kampanya görseli modülü, sabit kapsamlı sosyal görsel hizmet paketi, ajanslara toplu görsel üretim paketi.",
+  "bugun": {
+    "var": [
+      "17 belgelik gereksinim, tech stack ve dışa aktarma belge seti; 54 bileşen türü, 8 kategori",
+      "Zabuno canlı; fiyat sayfası, tenant ve menü verisi hazır (planda altyapı yaklaşık %80)",
+      "Tasarım dili ve bileşen listesi şablon kataloğuna çevrilebilir",
+      "Brief, şema ve dışa aktarma örneği belge düzeyinde mevcut"
+    ],
+    "yok": [
+      "Çalışan render hattı ve şablon motoru; kod sıfır",
+      "Ödeme isteği testi; problem doğrulama fazı tamamlanmadı",
+      "Zabuno tahsilatı henüz açık değil",
+      "Lisans doğrulaması (yazı tipi, stok görsel, arka plan modeli)",
+      "Ajans alıcı isim listesi"
+    ],
+    "odeyen_musteri": 0
+  },
+  "iki_calisma": {
+    "claude": "Bağımsız editör hayır (Canva, Adobe Express, Snappa, Bannerbear, Placid karşısında dağıtım yok). Zabuno özelliği koşullu evet, hizmet paketi evet; kâr planı yıl 1 baz 675 bin ₺.",
+    "gpt": "Alıcı hipotezi çok ürün postu hazırlayan ajans; ilk ücretli sonuç izinli markadan üç boyutta on görsel. Canva klonu açılmaz; çalışan renderer ve ödeme talebi doğrulanmadı.",
+    "ayrisma": "Claude alıcıyı Zabuno restoranları ve mevcut web müşterileri olarak görür, menü verisine bağlar. GPT alıcıyı ajans yapar, CSV ile toplu üretim sunar. Claude fiyat verir, GPT vermez.",
+    "birlesik": "Bağımsız editör yapılmaz. Önce dar, sabit kapsamlı, elle teslim edilebilir çıktı satılır; tekrar kullanım görülmeden abonelik ve platform kurulmaz."
+  },
+  "analist_gorusu": "En gerçekçi yol B: bugün Canva ile elle teslim edilebilen sabit paket; kod gerekmez, mevcut müşterilere satılır. A Zabuno tahsilatına bağlı, C ise alıcı listesi ve renderer olmadan satılamaz.",
+  "secenekler": [
+    {
+      "id": "banner-post-a",
+      "ad": "Zabuno içinde kampanya görseli modülü",
+      "tur": "eklenti",
+      "musteri": "Zabuno'yu kullanan kafe ve restoran sahipleri; 1 şubeli, Instagram'ı kendi yönetiyor",
+      "is": "Menü verisinden Instagram postu, masa standı ve QR afişi üretmek; fiyat değişince görseli güncel tutmak",
+      "tetikleyici": "Menü ya da fiyat değişikliği, günlük kampanya, yeni ürün",
+      "teklif": "6 şablon, logo ve renk tokenları, PNG ve PDF dışa aktarma; modül ₺999 plana dahil",
+      "fiyat": "₺500 plan farkı; ₺499 plandan ₺999 plana geçiş (ayda)",
+      "kanal_birincil": "Zabuno ürün içi: menü kaydı sonrası görsel üret çağrısı ve pilot restoranlara WhatsApp",
+      "kanal_yedek": "Zabuno rehber sayfaları (restoran instagram post şablonu, masa standı qr menü afişi)",
+      "ilk_adim": "Zabuno tahsilatını açmak; 5 pilot kafeye ilk 3 görseli elle üretip göndermek",
+      "ilk_kapsam": "6 şablon + PNG dışa aktarma (Instagram kare, hikaye, Facebook kapak, masa standı A6, QR afiş A4, günün menüsü); PDF ve animasyon sonra",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuya ait; yazı tipi, stok görsel ve Lottie lisansları doğrulanmadı"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Reklam Yönetmeliği ve Fiyat Etiketi uyumu, KVKK ek metni teyit bekliyor"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "iyzico entegrasyonu planda hazır diyor; Zabuno tahsilatı açılmadı, test ödemesi yok"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; bir kahve zinciri ve 5 pilot kafe planda anılıyor ama 20 hedef alıcı ismen sayılmadı, ilişki belgelenmedi"
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Ürün içi çağrı birincil, rehber sayfaları yedek; ilk adım adlı"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Planda 39 adam-gün L1 eksiği (3-4 hafta için iki paralel kol); tek kurucu için 8 haftayı aşabilir; ilk tahsilat Zabuno tahsilat açılışına bağlı"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Tasarımcı 2 gün yaklaşık ₺10-15 bin; tavanın altında"
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Herkes aynı 6 şablonu alır; serbest düzenleme kapsam dışı"
+        }
+      },
+      "kapi_duzeltme": "20 pilot ve zincir alıcı ismen listelenmeli; Zabuno tahsilat tarihi netleşmeli; yazı tipi ve stok lisans listesi çıkarılmalı; fiyat beyanı ve KVKK metni teyit edilmeli.",
+      "finans": {
+        "satis_tipi": "aylık abonelik",
+        "net_fiyat_tl": 500,
+        "degisken_maliyet_tl": 10,
+        "sabit_gider_aylik_tl": 3000,
+        "baslangic_nakit_tl": 15000,
+        "kalan_efor_saat": {
+          "min": 160,
+          "beklenen": 250,
+          "max": 320
+        },
+        "ilk_tahsilat_gun": {
+          "min": 60,
+          "max": 150
+        },
+        "satis_basina_kurucu_saati": 3,
+        "musteri_basina_aylik_destek_dk": 20,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 7500,
+          "iyi": 22500
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 15,
+          "iyi": 45
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 8,
+          "iyi": 15
+        },
+        "donusum_orani": {
+          "dusuk": 0.1,
+          "yuksek": 0.25
+        },
+        "dayanak": "Plan 5-6, ek D.8: plan farkı ₺500/ay (ayrı satılmaz, ₺499'dan ₺999'a geçişi tetikler; geçiş oranı kanıtsız), render ₺10/ay. L1 eksiği 39 adam-gün, kurucu payı 160-320 saat. Modül ay 3-4'te çıkar, pilotlara ilk ay ücretsiz; ek C.8 tablosu 2/5/8 ücretli: 2+5+8=15 abone-ay x 500 = 7.500 baz; iyi 15 kullanıcı x 3 ay = 22.500."
+      },
+      "deney": {
+        "varsayim": "Pilot restoranlar menüden üretilen görsel için ₺500 daha fazla ödemeye razı olur",
+        "yontem": "5 pilot kafeye ilk 3 görseli elle üretip gönder; kullanım ve ₺999 plan teklifine yanıt kaydet",
+        "sure_gun": 21,
+        "maliyet_saat": 15,
+        "maliyet_tl": 0,
+        "basari_olcutu": "5 kafeden en az 2'si görseli kullanır ve ücretli plana geçmeyi yazılı kabul eder",
+        "birakma_olcutu": "Hiçbiri 21 günde görseli paylaşmaz ya da plan geçişini reddeder",
+        "sonraki_dilim": "6 şablon + PNG modülünü kod olarak yaz, PDF masa standını ekle"
+      },
+      "etiketler": {
+        "segment": "kafe ve restoran",
+        "kanal_turu": "ürün içi",
+        "teknoloji": "React, html-to-image, Chromium render",
+        "regulasyon": "mevzuata bağlı"
+      },
+      "kanit_notlari": "Plan 0, 2, 3.2, 5, 6, 8; ek D.8, C.8: Zabuno canlı, altyapı yaklaşık %80, modül %0; L1 eksiği 39 adam-gün; Zabuno tahsilatı açık değil; modül ayrı satılmaz, plan geçişini tetikler; pilotlara ilk ay ücretsiz. Ödeyen müşteri 0, ödeme isteği test edilmemiş, geçiş oranı varsayım. GPT çalışması Zabuno'yu anmaz, çalışan renderer yok der."
+    },
+    {
+      "id": "banner-post-b",
+      "ad": "Sosyal görsel hizmet paketi (sabit kapsam)",
+      "tur": "hizmet",
+      "musteri": "Mevcut kurumsal site müşterileri ve bir kahve zinciri; sosyal medya görselini kendi yapan küçük işletme",
+      "is": "Marka şablon seti ve düzenli sosyal görsel üretimi; bugün elle ya da ajansla yapılıyor",
+      "tetikleyici": "Aylık içerik takvimi, kampanya dönemi, kurumsal site tesliminden sonra marka tutarlılığı ihtiyacı",
+      "teklif": "15 şablon, ayda 12 görsel ve 4 hikaye, 48 saat teslim; Canva ile üretilir",
+      "fiyat": "Ayda ₺7.500, kurulum ₺5.000 (kurucu varsayımı, teklif iletilmedi); ilk ay memnuniyet garantisi",
+      "kanal_birincil": "Kurucu satışı: 3 mevcut müşteriye doğrudan teklif",
+      "kanal_yedek": "Kurumsal site tesliminde ek paket olarak sunmak ve Zabuno müşterilerine WhatsApp",
+      "ilk_adim": "3 mevcut müşteriye örnek 3 görsel ve tek sayfa teklif göndermek",
+      "ilk_kapsam": "15 şablonluk marka seti kurulumu ve ilk ay 12 görsel + 4 hikaye; sabit kapsam, ek istek ayrı fiyat",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Canva şablon ve stok görsel lisansının müşteriye teslimdeki kullanım koşulu doğrulanmadı"
+        },
+        "G2": {
+          "durum": "gecti",
+          "not": "Fiyat ve indirim beyanı işletmenin sorumluluğunda; şablonda KDV dahildir alanı yeterli"
+        },
+        "G3": {
+          "durum": "gecti",
+          "not": "Havale/EFT ve e-arşiv fatura yolu planda tanımlı; sanal POS gerekmiyor"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi belli, 3 mevcut müşteri var; 20 isimlik liste yok"
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Birincil kanal mevcut müşteriler, yedek tesliminde ek paket; ilk adım adlı"
+        },
+        "G6": {
+          "durum": "gecti",
+          "not": "Elle hemen sunulabilir; 1 haftadan az hazırlık, ilk tahsilat 2-6 hafta"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "İlk tahsilata kadar nakit yaklaşık ₺5.000; tavanın altında"
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Sabit kapsam ve sabit fiyat; aylık 12 görsel sınırı yazılı"
+        }
+      },
+      "kapi_duzeltme": "Canva ticari kullanım ve stok lisansı yazılı doğrulanmalı; 20 hedef işletme listesi çıkarılmalı.",
+      "finans": {
+        "satis_tipi": "aylık abonelik",
+        "net_fiyat_tl": 7500,
+        "degisken_maliyet_tl": 4800,
+        "sabit_gider_aylik_tl": 500,
+        "baslangic_nakit_tl": 5000,
+        "kalan_efor_saat": {
+          "min": 10,
+          "beklenen": 20,
+          "max": 40
+        },
+        "ilk_tahsilat_gun": {
+          "min": 14,
+          "max": 45
+        },
+        "satis_basina_kurucu_saati": 6,
+        "musteri_basina_aylik_destek_dk": 480,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 35000,
+          "iyi": 85000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 4,
+          "iyi": 10
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 2
+        },
+        "donusum_orani": {
+          "dusuk": 0.1,
+          "yuksek": 0.3
+        },
+        "dayanak": "Plan 5-6, 8: ₺7.500/ay, kurulum ₺5.000, üretim ₺4.800/ay. Fiyat kurucu varsayımı, 3 teklif henüz iletilmedi, ödeyen 0. 3 teklif x 0,1-0,3 dönüşüm = beklenen 1'in altı; baz 1 müşteri x 4 abone-ay = 30.000 + 5.000 kurulum = 35.000; iyi 2 müşteri 10 abone-ay + 2 kurulum = 85.000."
+      },
+      "deney": {
+        "varsayim": "Mevcut müşteriler ayda ₺7.500 ödemeye razı olur",
+        "yontem": "3 müşteriye 3 örnek görsel ve teklif gönder; yanıtı ve itirazı kaydet",
+        "sure_gun": 14,
+        "maliyet_saat": 12,
+        "maliyet_tl": 0,
+        "basari_olcutu": "3 müşteriden en az 1'i yazılı onay verir ve ilk ay ödemesini yapar",
+        "birakma_olcutu": "3 müşteri de 14 günde fiyatı reddeder ya da yanıt vermez",
+        "sonraki_dilim": "Şablon setini genişlet; ikinci ve üçüncü müşteriye sat"
+      },
+      "etiketler": {
+        "segment": "küçük işletme, kurumsal site müşterisi",
+        "kanal_turu": "mevcut müşteri",
+        "teknoloji": "Canva",
+        "regulasyon": "yok"
+      },
+      "kanit_notlari": "Plan 2 Senaryo D, 5, 6, 7.2, 9: Canva ile belge gerektirmeden bugün satılabilir; üretim 8 saat/ay, brüt marj yaklaşık %36. Teklif 3 mevcut müşteriye yapılacak ama henüz iletilmedi; ödeyen müşteri 0, 7.500 ₺/ay fiyat kurucu varsayımı. Ajans yönetim paketi 5-15 bin ₺ bandı varsayım. GPT çalışması dar hizmeti destekler."
+    },
+    {
+      "id": "banner-post-c",
+      "ad": "Ajanslara toplu banner paketi (CSV)",
+      "tur": "hizmet",
+      "musteri": "Çok ürün postu hazırlayan küçük ajans; kreatif operasyon sorumlusu (büyük ajans Claude planında anti-persona)",
+      "is": "Aynı briefin boyut ve içerik varyantlarını elle çoğaltmak",
+      "tetikleyici": "Kampanya dönemi, çok ürünlü müşteri brifi, aynı gün birden çok boyut teslimi",
+      "teklif": "İzinli markadan üç boyutta on görsel; CSV girdisiyle toplu üretim ve dışa aktarma kiti",
+      "fiyat": "Pilot paket ₺6.000 tek seferlik (varsayım; kaynaklarda fiyat yok)",
+      "kanal_birincil": "Kurucu satışı: ajans kreatif operasyon sorumlularına doğrudan mesaj",
+      "kanal_yedek": "Herkese açık brief ve teslim örneği sayfası",
+      "ilk_adim": "Tek izinli alıcı ve tek marka seçmek; ilk iki günde kabul ölçütünü yazmak",
+      "ilk_kapsam": "Tek brief, 10 görsel x 3 boyut, review paketi ve dışa aktarma kiti; renderer olmadan elle ya da betikle",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Yazı tipi ve medya lisansı ile marka varlık hakları doğrulanmadı"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Marka izni ve görsel haklar yazılı teyit bekliyor"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve fatura yolu belli; hesap ve fiyat metni hazır değil"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi ajans; isim listesi yok"
+        },
+        "G5": {
+          "durum": "test",
+          "not": "Kanal fikri var, hedef ajans ya da grup adlandırılmadı"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Renderer yok; kalan efor 20-100 saat, satış döngüsü ölçülmedi"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Nakit ihtiyacı küçük; tavanın çok altında"
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Sabit çıktı: 10 görsel x 3 boyut, sabit paket"
+        }
+      },
+      "kapi_duzeltme": "Alıcı ajans listesi, lisans doğrulaması ve fiyat testi gerekir; kapsam elle teslimle sınırlı tutulmalı.",
+      "finans": {
+        "satis_tipi": "tek seferlik",
+        "net_fiyat_tl": 6000,
+        "degisken_maliyet_tl": 1000,
+        "sabit_gider_aylik_tl": 0,
+        "baslangic_nakit_tl": 2000,
+        "kalan_efor_saat": {
+          "min": 20,
+          "beklenen": 50,
+          "max": 100
+        },
+        "ilk_tahsilat_gun": {
+          "min": 21,
+          "max": 90
+        },
+        "satis_basina_kurucu_saati": 8,
+        "musteri_basina_aylik_destek_dk": 60,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 6000,
+          "iyi": 18000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "donusum_orani": {
+          "dusuk": 0.02,
+          "yuksek": 0.1
+        },
+        "dayanak": "GPT dosyası: ücretli çıktı izinli markadan üç boyutta on görsel; fiyat yok, ₺6.000 varsayım (Plan 5 hizmet birimi). Ajans listesi yok, dönüşüm 0,02-0,10 kanıtsız: baz 1 satış, iyi 3, kötü 0."
+      },
+      "deney": {
+        "varsayim": "Bir ajans, tek briefin varyantları için tek seferlik ücret öder",
+        "yontem": "Tek izinli marka seç; 10 görsel x 3 boyut örnek paketi hazırla; kabul, tekrar talebi ve ret nedenini kaydet",
+        "sure_gun": 7,
+        "maliyet_saat": 20,
+        "maliyet_tl": 0,
+        "basari_olcutu": "Ajans paketi kullanır ve ikinci bir brief ya da ödeme ister",
+        "birakma_olcutu": "Üç ajanstan hiçbiri ödeme ya da ikinci brief talep etmez",
+        "sonraki_dilim": "CSV toplu üretim betiğini yaz; abonelik ancak tekrar görülürse"
+      },
+      "etiketler": {
+        "segment": "ajans, kreatif operasyon",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "CSV, şablon dışa aktarma",
+        "regulasyon": "yok"
+      },
+      "kanit_notlari": "GPT çalışması: alıcı hipotezi ajans; çalışan runtime, gelir, trafik ve ödeme talebi doğrulanmadı; ilk ücretli sonuç üç boyutta on görsel; brief, şema, dışa aktarma örneği var, renderer yok. Claude planı büyük ajansı anti-persona sayar, küçük ajansı ayrıca ele almaz. Ödeyen müşteri 0; fiyat varsayım."
+    }
+  ]
+}

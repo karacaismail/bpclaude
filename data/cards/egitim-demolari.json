@@ -1,0 +1,237 @@
+{
+  "slug": "egitim-demolari",
+  "baslik": "Etkileşimli eğitim içeriği demoları",
+  "ozet": "Oyun kuramı, ikilem, matematik ve çevik prensip temalı altı taslak varlığın, öğretmen ve eğitmenlere satılacak tek konulu ders paketlerine ve ekip atölyelerine çevrilmesi. Bugün ödeyen müşteri ve tamamlanmış oynanabilir ürün yok.",
+  "bugun": {
+    "var": [
+      "Altı ayrı eğitim temalı taslak varlık (oyun kuramı, ikilem, matematik, çevik prensip sunum seti)",
+      "Çevik prensip için tarayıcı sunum seti ve kontrolcü akışı tanımlı",
+      "Matematik oyunu için komut taslakları, ikilem için tasarım kayıtları"
+    ],
+    "yok": [
+      "Ödeyen müşteri ve ücretli pilot",
+      "Tamamlanmış oynanabilir oyun ya da canlı ürün kanıtı",
+      "Ölçülmüş öğrenme etkisi",
+      "Adlandırılmış öğretmen listesi ya da paylaşım kanalı",
+      "Açılmış tahsilat hesabı"
+    ],
+    "odeyen_musteri": 0
+  },
+  "iki_calisma": {
+    "claude": "Claude çalışmasında bu aile ayrı ele alınmadı",
+    "gpt": "Her varlık için ürün yerine tek konulu ders ya da etkinlik paketi (rehber, örnek sonuç, çalışma sayfası) ücretli kit ya da uyarlama olarak önerilir; abonelik ve platform ertelenir.",
+    "ayrisma": "Karşılaştırma yapılamaz; yalnız GPT çalışması var. GPT her varlığa ayrı, tek çıktılı ders ya da etkinlik paketi tanımlar ama hepsini aynı eğitmen alıcısına bağlar; varlıklar arası ayrı talep kanıtı yoktur.",
+    "birlesik": "Tek kaynak hükmü: ilk teslim tek varlık ve tek kazanımla sınırlı bir ders paketi olsun; diğer varlıklar ayrı paket adayıdır. Ödeme kanıtı gelmeden platform ya da abonelik kurma."
+  },
+  "analist_gorusu": "En gerçekçi yol bir kazanımlı, doğrulanmış ve sabit fiyatlı ders paketini eğitmenlere havale ile satmak; ekip atölyesi ise yüksek fiyatlı ama aktif satış isteyen ikinci yol.",
+  "secenekler": [
+    {
+      "id": "egitim-demolari-a",
+      "ad": "Tek kazanımlı ders paketi (rehber ve cevap anahtarı)",
+      "tur": "içerik",
+      "musteri": "Ortaokul ve lise öğretmenleri, özel ders veren eğitmenler, ebeveynler",
+      "is": "Tek bir kazanım ya da kavram için hazır, doğrulanmış ders etkinliği ve açıklamalı çözüm hazırlamak",
+      "tetikleyici": "Haftalık ders hazırlığı; yeni dönem ya da konu başlangıcı",
+      "teklif": "PDF ve statik demo bağlantısı: öğretmen rehberi, 3 senaryo sonucu, 20 doğrulanmış soru ve cevap anahtarı (kapsam ve adetler kurucu varsayımı)",
+      "fiyat": "600 TL tek seferlik paket (varsayım); 3 paket 1.500 TL",
+      "kanal_birincil": "Öğretmen paylaşım toplulukları ve eğitmen grupları (ücretsiz örnek ders ile)",
+      "kanal_yedek": "Kurucunun içerik sayfası ve eğitmen referansları; pazar yeri kaynakta yok, varsayım",
+      "ilk_adim": "Tek kazanım seçip ücretsiz örnek dersi hazırlamak ve 20 öğretmene göndermek",
+      "ilk_kapsam": "Bir kazanım için rehber, 20 soru ve anahtar ile örnek sonuç; çocuk verisi toplamayan statik demo",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kaynak yalnız kurucunun varlıkları; bağımlılık lisansları ve içerik hakları doğrulanmadı"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Çocuk verisi toplanmıyor; içerik doğruluğu için uzman incelemesi gerekli"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve fatura yolu belli; hesap ve sanal POS açılmadı"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net (öğretmen, eğitmen); 20 isimlik liste yok"
+        },
+        "G5": {
+          "durum": "test",
+          "not": "Kanal fikri var ama somut grup ve topluluk adlandırılmadı"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor 8 haftanın altında ama satış döngüsü ölçülmedi"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi birkaç bin TL; tavanın çok altında"
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Sabit kapsam ve fiyat önerisi kartta var; kapsam belgesi, soru sayısı ve revizyon sınırı kaynakta yazılı değil"
+        }
+      },
+      "kapi_duzeltme": "Paket kapsamını ve revizyon sınırını yaz; hak ve lisans taraması yap; kanal listesini 20 isme tamamla; hesap aç ve test ödemesi yap; satış döngüsünü ilk 10 temasta ölç.",
+      "finans": {
+        "satis_tipi": "tek seferlik",
+        "net_fiyat_tl": 600,
+        "degisken_maliyet_tl": 30,
+        "sabit_gider_aylik_tl": 150,
+        "baslangic_nakit_tl": 3000,
+        "kalan_efor_saat": {
+          "min": 50,
+          "beklenen": 90,
+          "max": 140
+        },
+        "ilk_tahsilat_gun": {
+          "min": 21,
+          "max": 75
+        },
+        "satis_basina_kurucu_saati": 1.5,
+        "musteri_basina_aylik_destek_dk": 10,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 1800,
+          "iyi": 6000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 3,
+          "iyi": 10
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 3,
+          "iyi": 10
+        },
+        "donusum_orani": {
+          "dusuk": 0.01,
+          "yuksek": 0.04
+        },
+        "dayanak": "GPT dosyalarında fiyat yok; 600 TL varsayım. Ücretli talep, isim listesi ve kanal kanıtı yok: 20 temasta %1-4 dönüşüm 0-1 ödeme verir; baz 3 paket, iyi 10 (tahsilat = adet x 600), kötü 0. Tüm rakamlar varsayımdır; ilk tahsilat 3-10 hafta."
+      },
+      "deney": {
+        "varsayim": "Öğretmenler ücretsiz örnekten sonra tek kazanım paketi için 600 TL öder",
+        "yontem": "Bir kazanım için ücretsiz örnek ders paylaş; 20 öğretmene fiyatlı paketi sun; 3 haftada talep ve ödeme say.",
+        "sure_gun": 21,
+        "maliyet_saat": 40,
+        "maliyet_tl": 500,
+        "basari_olcutu": "20 temastan en az 2 ödeme ya da yazılı ön sipariş",
+        "birakma_olcutu": "20 temasta sıfır ödeme ve sıfır fiyat talebi",
+        "sonraki_dilim": "Başarılırsa ikinci kazanım ve 3'lü paket"
+      },
+      "etiketler": {
+        "segment": "Öğretmen ve eğitmen",
+        "kanal_turu": "topluluk",
+        "teknoloji": "Statik web demo ve PDF",
+        "regulasyon": "yok"
+      },
+      "kanit_notlari": "Kaynak: GPT çalışması, altı varlığın strateji dosyaları. Tüm dosyalar canlı ürün ve ücretli talep kanıtının olmadığını, öğrenme etkisinin ölçülmediğini söyler. Önerilen ilk teslim ders paketi ve cevap anahtarıdır; abonelik ve platform tekrar kullanım görülmeden önerilmez."
+    },
+    {
+      "id": "egitim-demolari-b",
+      "ad": "Ekip atölyesi: prensipleri kendi işine uyarlama",
+      "tur": "hizmet",
+      "musteri": "Yazılım ve ürün ekip liderleri, çevik koçluk yapan danışmanlar, eğitim sağlayıcılar",
+      "is": "Yeni ekibe soyut prensipleri kendi haftalık teslim problemi üzerinden öğretmek, eylem kaydı çıkarmak",
+      "tetikleyici": "Yeni ekip kurulumu, onboarding dönemi, süreç değişimi",
+      "teklif": "20 dakikalık mini ders, 3 prensip sunumu, tek gerçek ekip senaryosu, çalışma sayfası ve eylem kaydı",
+      "fiyat": "6.000 TL sabit atölye paketi",
+      "kanal_birincil": "Kurucunun doğrudan tanıdığı ekip liderleri ve eğitim veren danışmanlar",
+      "kanal_yedek": "Ücretsiz prensip demosu ve arama sayfası; eğitim partnerleri tekrar dağıtır",
+      "ilk_adim": "Bir ekipten tek sorun toplayıp 20 dakikalık ücretsiz mini ders uygulamak",
+      "ilk_kapsam": "3 prensip için sunum, çalışma sayfası ve ekip senaryosuna uyarlanmış eylem kaydı",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Sunum seti kurucuda; lisans uyumu ve örnek izni doğrulanmadı"
+        },
+        "G2": {
+          "durum": "gecti",
+          "not": "Kişisel veri ve mevzuat engeli yok; anonim örnek kullanılır"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve fatura yolu belli; hesap açılmadı"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; 20 isimlik liste belgede yok"
+        },
+        "G5": {
+          "durum": "test",
+          "not": "Doğrudan satış ve arama sayfası var ama somut hedef adlandırılmadı"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor makul; kurumsal satış döngüsü ölçülmedi"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi birkaç yüz TL; tavanın çok altında"
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Ekip uyarlaması kapsam sınırı yazılı değil; sabit paket tanımlanmalı"
+        }
+      },
+      "kapi_duzeltme": "Paket kapsamını ve revizyon sınırını yaz; kanal listesini 20 isme tamamla; hesap aç; lisans taraması yap.",
+      "finans": {
+        "satis_tipi": "proje",
+        "net_fiyat_tl": 6000,
+        "degisken_maliyet_tl": 0,
+        "sabit_gider_aylik_tl": 0,
+        "baslangic_nakit_tl": 1000,
+        "kalan_efor_saat": {
+          "min": 25,
+          "beklenen": 45,
+          "max": 80
+        },
+        "ilk_tahsilat_gun": {
+          "min": 45,
+          "max": 90
+        },
+        "satis_basina_kurucu_saati": 12,
+        "musteri_basina_aylik_destek_dk": 30,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 6000,
+          "iyi": 24000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 4
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 4
+        },
+        "donusum_orani": {
+          "dusuk": 0.02,
+          "yuksek": 0.1
+        },
+        "dayanak": "GPT dosyasında fiyat yok; 6.000 TL varsayım (hazırlık ve uyarlama saatine göre). Baz 1 atölye, iyi 4, kötü 0; kurumsal ekip satışı yavaş olduğu için iyimser yuvarlama yapılmadı. Tüm rakamlar kanıtsız varsayımdır."
+      },
+      "deney": {
+        "varsayim": "Bir ekip lideri kendi problemine uyarlanmış atölye için ödeme yapar",
+        "yontem": "Bir ekipten tek sorun topla, 20 dakikalık ücretsiz mini ders uygula, sonunda yazılan eylem değişimini ve atölye teklifini sun.",
+        "sure_gun": 30,
+        "maliyet_saat": 25,
+        "maliyet_tl": 0,
+        "basari_olcutu": "En az 1 ekip ücretli atölyeyi kabul eder",
+        "birakma_olcutu": "5 ekip görüşmesinde sıfır ücretli teklif kabulü",
+        "sonraki_dilim": "Başarılırsa ikinci ekip ve 3 prensiplik tekrar paketi"
+      },
+      "etiketler": {
+        "segment": "Ekip liderleri ve çevik danışmanlar",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "Tarayıcı sunum seti",
+        "regulasyon": "yok"
+      },
+      "kanit_notlari": "Kaynak: GPT çalışması, çevik prensip stratejisi dosyası. Dosya bunun eğitim materyali olduğunu, öğrenme etkisinin ölçülmediğini ve kurumsal atölyenin aktif satış gerektirdiğini söyler. Ücretli talep kanıtı yok; kabul için özel kontrol bir ekipten mini ders denemesidir."
+    }
+  ]
+}

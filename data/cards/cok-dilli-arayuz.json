@@ -1,0 +1,343 @@
+{
+ "slug": "cok-dilli-arayuz",
+ "baslik": "Çok dilli arayüz rehberi ve denetimi",
+ "ozet": "Çeviri geldiğinde kırılan arayüzleri (taşma, RTL, tarih ve sayı biçimi, çoğul) yakalayan Türkçe rehber; ilk satılabilir biçim sabit fiyatlı denetim paketidir. Bugün rehber ve elle uygulanmış süreç var, ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Standartlara dayalı Türkçe rehber (yaklaşık 940 satır): ICU, Intl, RTL, pseudo-locale, WCAG 2.2, CI",
+   "Aynı kurallar çok dilli bir kurumsal sitede ve kurucunun TR/EN ürününde elle uygulandı",
+   "Frontend Atlası altyapısı hazır (160 ders, GitHub Pages iş akışı)",
+   "Mevcut kurumsal site hizmetinden 6-10 proje/yıl ilişki; denetim ek kalem olarak eklenebilir",
+   "Fiyat ve paket taslağı: 299 ₺ PDF, 7.500 ve 15.000 ₺ denetim"
+  ],
+  "yok": [
+   "Ödeyen müşteri, ön ödeme ya da yazılı niyet",
+   "Çalışan lint aracı, GitHub Action ya da paketlenmiş denetim şablonu",
+   "PDF, teklif, sözleşme ve sorumluluk reddi şablonu",
+   "Rehberde 63 kaynak artığı; atıflar yayın öncesi doğrulanmadı",
+   "Yayımlanmış vaka yazısı ve ismen listelenmiş 20 hedef alıcı"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Rehber ürün değil; ilk gerçekçi biçim kurumsal site müşterilerine ve ajanslara satılan sabit fiyatlı denetim ve 299 ₺ kontrol listesi. Atlas modülü ve açık kaynak lint aracı lead kaynağı; yan gelir.",
+  "gpt": "Bugün çalışan CLI ya da CI ürünü yok. Ürün adayı SaaS ekiplerine kaynak konumlu QA paketi; ücretli pilot 150-600 USD ya da 19-49 USD/ay. En güçlü ikame Playwright/Storybook ve elle pseudo-locale.",
+  "ayrisma": "Claude hizmet ve içerik üzerinden ajans ve ihracatçıya gider, yazılımı destekleyici sayar. GPT SaaS ekibini ve yazılım paketini öne alır, hizmeti yedek rota görür. Claude 7.500 ₺ denetim fiyatlar, GPT pilot fiyatlar.",
+  "birlesik": "Ödeme kanıtı olmadığı için önce en küçük sabit kapsamlı denetim satılır; kaynak konumlu otomasyon ancak ücretsiz ikameye karşı daha kısa kurulum gösterirse ücretli ürün olur."
+ },
+ "analist_gorusu": "En gerçekçi yol, mevcut kurumsal site müşterilerine 7.500 ₺'lik sabit denetim ekidir: ilişki var, kurulum yok. Şablon, teklif ve sorumluluk reddi henüz yok; kabul oranı ve döngü varsayımdır. PDF ve SaaS pilotu ikinci dalgadır.",
+ "secenekler": [
+  {
+   "id": "cok-dilli-arayuz-a",
+   "ad": "Çok dilli site denetimi: sabit fiyatlı paket",
+   "tur": "hizmet",
+   "musteri": "Çok dilli (3-5 dil) kurumsal site yaptıran ihracatçı KOBİ'ler ve bu siteleri teslim eden ajanslar; mevcut site hizmeti müşterileri önce.",
+   "is": "Çeviri gelmeden ya da gelince taşan düğme, bozuk RTL, yanlış tarih ve sayı biçimi ile çevrilmeyen hata metnini kanıtlı bulgu listesiyle bulmak.",
+   "tetikleyici": "Yeni dilin yayına alınması ya da çeviri tesliminden sonra arayüzün bozuk görünmesi; müşterinin 'çeviri kötü' itirazı.",
+   "teklif": "5 kritik ekran x 2 dil, masaüstü ve 320 px; ekran görüntülü bulgu dosyası, kabul ölçütü, düzeltme sırası; 3 iş günü; 14 gün yeniden kontrol.",
+   "fiyat": "Temel 7.500 ₺ (5 ekran, 2 dil); Kapsamlı 15.000 ₺ (10 ekran, 3 dil, RTL, çalıştay).",
+   "kanal_birincil": "Mevcut kurumsal site hizmeti müşterileri ve ajans ortakları: tekil mesaj ve ücretsiz 1 ekranlık mini denetim",
+   "kanal_yedek": "LinkedIn'de anonim vaka yazıları ve tanışılan kişilere tekil mesaj; Atlas modülünden gelen talepler",
+   "ilk_adim": "Bu hafta 3 mevcut müşteriye 1 sayfalık teklif ve 1 ekranlık ücretsiz mini denetim sun; denetim şablonunu hazırla.",
+   "ilk_kapsam": "Playwright ile 320 px, %200 zoom, RTL ve pseudo-locale denetim şablonu; bulgu dosyası ve tek sayfa teklif; sözleşmede uyum garantisi verilmediğini yazan sorumluluk reddi.",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Rehber, süreç ve şablonlar kurucuya ait; denetimde yalnız açık kaynak test araçları kullanılır."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri ekranları için gizlilik ve sorumluluk reddi sözleşmesi yok; hukukçu gözden geçirmesi bekleniyor."
+    },
+    "G3": {
+     "durum": "gecti",
+     "not": "Havale ve e-arşiv fatura, mevcut site hizmetinin tahsilat düzeniyle yürür; yeni kalem eklenecek."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net, ama ismen listelenmiş 20 hedef yok; belgelenmiş ilişki yalnız 4-10 proje."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal mevcut müşteriler ve ajanslar, ilk adım mini denetim; LinkedIn yedek."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 20-45 saat, 8 haftanın altında; ama ödeyen müşteri yok, 3-10 günlük satış döngüsü varsayım, ilk tahsilat ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 3.000 ₺, tavan 50.000 ₺'nin çok altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam, sabit fiyat ve sabit teslim süresi; özel geliştirme yok."
+    }
+   },
+   "kapi_duzeltme": "G2: sorumluluk reddi ve gizlilik maddeli sözleşme şablonunu hukukçuya okut. G4: 20 hedef alıcıyı isim listesine yaz. G6: 3 teklifle satış döngüsünü ölç.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 7500,
+    "degisken_maliyet_tl": 1500,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 20,
+     "beklenen": 32,
+     "max": 45
+    },
+    "ilk_tahsilat_gun": {
+     "min": 30,
+     "max": 60
+    },
+    "satis_basina_kurucu_saati": 16,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 22500,
+     "iyi": 52500
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 5
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 5
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "Plan 5, 6, 8: Temel 7.500 ₺, Kapsamlı 15.000 ₺; 12 ayda baz 6 denetim, ilk 2 ay ilk satış. Baz 3 x 7.500; iyi 3 Temel + 2 Kapsamlı. Satış başına yaklaşık 2 gün (16 saat; plan 8). Dönüşüm varsayımdır; anadil kontrolü 1.500 ₺ değişken."
+   },
+   "deney": {
+    "varsayim": "Mevcut site müşterileri ve ajanslar, çeviri sonrası hataları önlemek için 7.500 ₺ sabit denetimi ek kalem olarak satın alır.",
+    "yontem": "3 mevcut müşteriye 1 sayfalık teklif; 3 ücretsiz 1 ekranlık mini denetim; ilgilenenlere Temel paket teklifi; yanıtları ve itirazları kaydet.",
+    "sure_gun": 21,
+    "maliyet_saat": 20,
+    "maliyet_tl": 0,
+    "basari_olcutu": "21 günde en az 1 ödeme ya da imzalı kabul; 3 teklifin en az 2'sinde fiyat konuşulmuş olması",
+    "birakma_olcutu": "3 teklif ve 3 mini denetimde hiç yazılı niyet yok ya da fiyat itirazı 2'den fazla kişide aynı",
+    "sonraki_dilim": "İlk ödeme gelirse vaka yazısı ve ajans ortak paketi; Kapsamlı 15.000 ₺ paketi."
+   },
+   "etiketler": {
+    "segment": "İhracatçı KOBİ ve çok dilli site ajansı",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Playwright, pseudo-locale, CSS logical properties",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 1-2: rehber ve elle uygulanmış süreç var, dışarıdan ödeme isteği test edilmedi. Plan 3.2: mevcut ilişkilerden yılda 6-10 proje, denetim eki kabulü %50 varsayım. Derinlik dosyası A.8: müşteri ROI 5-8 ay geri ödeme, varsayım. Rakip TMS araçları (Lokalise, Phrase) çeviri yönetimine odaklanır; arayüz denetimi ana işleri değil. Ödeyen müşteri 0."
+  },
+  {
+   "id": "cok-dilli-arayuz-b",
+   "ad": "Kontrol listesi PDF ve ücretsiz Atlas modülü",
+   "tur": "içerik",
+   "musteri": "Çok dilli projeye ilk kez giren bağımsız geliştiriciler ve küçük ajans ekipleri; Frontend Atlası okurları.",
+   "is": "Çok dilli arayüzde neyin nasıl kontrol edileceğini bilmek; kabul ölçütlü 60 maddelik listeyle projeyi kendi başına denetlemek.",
+   "tetikleyici": "Projeye yeni dil ya da RTL eklenmesi; çeviri sonrası taşma ve eksik anahtar sorunları.",
+   "teklif": "60 maddelik Türkçe kontrol listesi, puanlama şablonu, pseudo-locale ve CI örnekleri; Atlas'taki ücretsiz derslere bağlı; 7 gün iade.",
+   "fiyat": "299 ₺ KDV dahil (yaklaşık 249 ₺ net); İngilizce sürüm 9 USD (sonraki dilim).",
+   "kanal_birincil": "Frontend Atlası 'Çok dilli arayüz' modülü: arama ile gelen okurlar, ders sonunda PDF sunumu",
+   "kanal_yedek": "Frontend Türkiye ve Kommunity topluluk cevapları; GitHub ve dev.to yazıları; LinkedIn yazıları",
+   "ilk_adim": "Rehberdeki 63 kaynak artığını temizle, atıfları doğrula, Atlas'a ilk 4 dersi yayımla.",
+   "ilk_kapsam": "Temizlenmiş rehber, 60 maddelik PDF, 4-8 Atlas dersi, Shopier satış sayfası; iade koşulları ve sorumluluk reddi satış sayfasında.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Rehber yapay zekâ destekli araştırma; 63 kaynak artığı ve atıflar doğrulanmadan PDF yayımlanmamalı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Dijital içerikte cayma istisnası ve 2026 e-arşiv eşiği mali müşavir ve hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ve Lemon Squeezy yolu belli; hesap açılmadı, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (geliştirici); isim listesi yok, alıcı ağ trafiğine bağlı."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Atlas modülü adlı kanal, ilk adım ders yayını; topluluklar ve LinkedIn yedek."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 40-70 saat; ilk satış arama trafiğine bağlı, ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 1.500 ₺ (alan adı, ilk aylar sabit gider)."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı PDF'i alır; özel istek yok."
+    }
+   },
+   "kapi_duzeltme": "G1: 20 kaynağı doğrula, doğrulanamayanı sil. G2: satış sayfası metnini hukukçu ve mali müşavire okut. G3: Shopier hesabını aç, test ödemesi yap. G4/G6: trafik ve ilk 4 dersle ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 249,
+    "degisken_maliyet_tl": 10,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 1500,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 50,
+     "max": 70
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 0,
+    "musteri_basina_aylik_destek_dk": 5,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 1245,
+     "baz": 4980,
+     "iyi": 19920
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 5,
+     "baz": 20,
+     "iyi": 80
+    },
+    "alti_ay_musteri": {
+     "kotu": 5,
+     "baz": 20,
+     "iyi": 80
+    },
+    "donusum_orani": {
+     "dusuk": 0.003,
+     "yuksek": 0.01
+    },
+    "dayanak": "Plan 5, 6, 11: 299 ₺ KDV dahil, net yaklaşık 249 ₺; 6. ay hedefi 80 PDF (iyi). Modül yayında değil, arama trafiği gecikmeli ve hacim doğrulanmadı: baz 20, kötü 5. Dönüşüm %1 planda varsayım, düşük uç 0,3. Ödeme komisyonu yaklaşık %3 + 0,49 ₺."
+   },
+   "deney": {
+    "varsayim": "Atlas okurları ücretsiz derse ek olarak 299 ₺'lik Türkçe kontrol listesi satın alır.",
+    "yontem": "Atlas'a 4 ders ve PDF örnek bölümü koy; Shopier'da ön satış sayfası aç; ziyaret ve satın alma sayısını Umami ile ölç.",
+    "sure_gun": 30,
+    "maliyet_saat": 30,
+    "maliyet_tl": 500,
+    "basari_olcutu": "30 günde en az 10 ödeme; ziyaretçi dönüşümü %0,5 ve üzeri",
+    "birakma_olcutu": "1.000 ziyarete rağmen 3'ten az ödeme ya da satış sayfasından satın almaya 0 tıklama",
+    "sonraki_dilim": "İngilizce sürüm ve PDF alıcılarına mini denetim önerisi."
+   },
+   "etiketler": {
+    "segment": "Bağımsız geliştirici ve küçük ajans",
+    "kanal_turu": "arama",
+    "teknoloji": "Astro, MDX, Pandoc veya Typst",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan 3.2 ve 6: PDF dönüşümü %1, 3.000 ziyaret/ay ve 299 ₺ fiyat varsayımdır; anahtar kelime hacmi doğrulanmadı. Plan 5: ücretsiz W3C ve TMS blog içerikleri güçlü ikame. Plan 10: kaynak artıkları itibar riski. Ödeyen müşteri 0; kod ya da rehber ödeme isteği kanıtı değildir."
+  },
+  {
+   "id": "cok-dilli-arayuz-c",
+   "ad": "SaaS ekibine ücretli pilot: yerelleştirme QA kapısı",
+   "tur": "hizmet",
+   "musteri": "EN, DE ya da AR'a açılan 5-40 mühendisli Türk SaaS ekipleri: frontend lideri, QA ve yerelleştirme sorumlusu.",
+   "is": "Her sürümde çeviri sonrası taşma, eksik değişken, RTL ve erişilebilir ad hatalarını kaynak konumuyla yakalayan CI kapısını bir kritik akışta kurmak.",
+   "tetikleyici": "Yeni dil sürümü, çeviri dosyası gelince son dakika CSS düzeltmeleri ve aynı hataların sonraki sürümde geri gelmesi.",
+   "teklif": "Tek React ya da Storybook akışında JSON mesaj kontrolü, pseudo-locale, 320 px ve %200 zoom raporu, CI makbuzu; 2 hafta ücretli pilot.",
+   "fiyat": "Pilot 14.400 ₺ (300 USD) tek sefer; ekip desteği 19-49 USD/ay yalnız pilot sonrası test edilecek teklif.",
+   "kanal_birincil": "LinkedIn'de hedeflenen 20 Türk SaaS ekibine tekil mesaj ve ücretsiz 1 ekranlık mini denetim",
+   "kanal_yedek": "GitHub Actions Marketplace ve public 10 bozuk-10 sağlıklı fixture paketi; Frontend topluluk yazıları",
+   "ilk_adim": "20 SaaS ekibini isimle listele; özgün fixture paketini ve tek adapter için ilk raporu hazırla.",
+   "ilk_kapsam": "JSON mesaj import, mesaj birimi lint'i, uzun ve RTL sahte dil, tek React/Storybook adapter, 320 px ve %200 zoom taşma raporu, CI makbuzu.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Bağımlılık lisansları ve açık kaynak lisansı kullanıcı onayı bekliyor; kod kurucuya ait."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri repo ve ekranlarına erişim için gizlilik sözleşmesi ve sorumluluk reddi şablonu yok."
+    },
+    "G3": {
+     "durum": "gecti",
+     "not": "Havale ve e-arşiv fatura düzeniyle B2B pilot tahsil edilebilir."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (SaaS ekibi); 20 ekip henüz ismen listelenmedi, ilişki belgelenmedi."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "LinkedIn ve Marketplace adı geçiyor; ama hedef ekipler ve ortak grup adlandırılmadı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "İlk paket hazırlığı 24-48 saat, çalışan CLI ve adapter henüz yok; SaaS satın alma döngüsü ve adapter kapsamı ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 1.200 ₺; küçük araç gideri."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Pilot kapsamı tek akış, ama her ekibin yığını farklı; adapter sınırı yazılı değil."
+    }
+   },
+   "kapi_duzeltme": "G4/G5: 20 ekibi ve 3 topluluğu isimle yaz. G6/G8: pilotu tek React ya da Storybook akışıyla sınırla, kapsamı yazılı yap. G1/G2: lisansı ve sözleşmeyi onayla.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 14400,
+    "degisken_maliyet_tl": 500,
+    "sabit_gider_aylik_tl": 1200,
+    "baslangic_nakit_tl": 1200,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 70,
+     "max": 110
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 24,
+    "musteri_basina_aylik_destek_dk": 90,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 14400
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.1
+    },
+    "dayanak": "GPT dosyası: pilot 150-600 USD teklif testi (rakip fiyatı değil); 300 USD x 48 = 14.400 ₺. 24-48 saat yalnız ilk paket hazırlığı, çalışan CLI yok. İlişki ve liste yok, döngü uzun: baz 0, iyi 1. Dönüşüm varsayım: 20 mesajdan 3 yanıt."
+   },
+   "deney": {
+    "varsayim": "SaaS ekipleri ücretsiz Playwright, Storybook ve elle pseudo-locale yerine ücretli kaynak konumlu QA pilotu satın alır.",
+    "yontem": "20 ekibe tekil mesaj ve ücretsiz 1 ekranlık mini denetim; ilgilenene tek akışta pilot teklifi; ilk hata raporu ve itirazlar kaydedilir.",
+    "sure_gun": 45,
+    "maliyet_saat": 40,
+    "maliyet_tl": 0,
+    "basari_olcutu": "45 günde 1 ücretli pilot ya da yazılı fiyat niyeti; en az 3 ekipten yanıt",
+    "birakma_olcutu": "20 mesajda 3'ten az yanıt ve 0 pilot teklifi; ücretsiz ikame yeterli deniyorsa durdur",
+    "sonraki_dilim": "İlk pilot tekrar edilirse tek adapterli aylık ekip desteği ve GitHub Action."
+   },
+   "etiketler": {
+    "segment": "Türk SaaS ekibi (5-40 mühendis)",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "React, Storybook, Playwright, GitHub Actions",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyası: çalışan CLI ve CI ürünü yok; pilot 150-600 USD ve 19-49 USD/ay yalnız teklif testi, rakip fiyat değil. En güçlü ikame Playwright ve Storybook. Plan 3.1 ve 4: SaaS ikinci dalga; TMS araçları arayüz testi yapmaz. Ödeyen müşteri 0; ilişki ve isim listesi belgelerde yok."
+  }
+ ]
+}

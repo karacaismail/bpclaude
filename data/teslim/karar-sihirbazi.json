@@ -1,0 +1,23 @@
+{
+ "slug": "karar-sihirbazi",
+ "secenekler": {
+  "karar-sihirbazi-a": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 0.5,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Abonelik kopyası; müşteriye özel iş yalnız pilot ve Pro kurulumu, 3 müşteri için yaklaşık 6 saat, ödeme başına 0,5. Varsayım. Karttaki 12 saatin 2 saati kuruluma taşındı."
+  },
+  "karar-sihirbazi-b": {
+   "satis_basina_kurucu_saati": 14,
+   "teslim_saat_odeme_basina": 8,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Varsayım: 1 saat çalıştay, 2 hazırlık, 4 dosya yazımı, 1 revizyon; yapay zekâ hızlanması dahil. Karttaki 30 dk teslim sonrası yazışmaya inip 15 dk oldu."
+  },
+  "karar-sihirbazi-c": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 8,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: soru seti ve marka uyarlaması, kurulum 6 saat, 1 saat eğitim, 1 saat hazırlık. Motor yapımı kalan efor, müşteriye özel değil. Destek karttaki gibi."
+  }
+ }
+}

@@ -1,0 +1,665 @@
+{
+ "kriter": "A3",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 1,
+   "g": "20'den çok Türk QR menü markası kamuya açık fiyatla satıyor; kafe sahibi kategoriyi biliyor, arama hacmi ölçülmedi."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 0,
+   "g": "POS içinde ücretsiz QR menü var; zincirin merkezden yayın çözümü aradığına dair kayıt yok, ihtiyaç ilişkiyle anlatılacak."
+  },
+  "zabuno-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Panel modülü uyarlaması arayan ajans ya da operasyon sahibi hiçbir kaynakta görülmedi; alıcı ve sorun yalnız hipotez."
+  },
+  "parselq-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı satın alma öncesi bilgi arıyor; Endeksa ve Eder Mi gibi ücretli rapor araçları var. Arama hacmi ölçülmedi."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Emlak ofisi ilanı Canva ve sözlü anlatımla yürütüyor; kart diye bir çözüm aramıyor, değerini örnekle göstermek gerekiyor."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışmanlık ofisleri tablo, PDF ve mesajla çalışıyor; kaynak izli dosya arayışı kanıtlanmadı, arama niyeti ölçülmedi."
+  },
+  "destektesvik-a": {
+   "p": 4,
+   "k": 1,
+   "g": "KOBİ destek arıyor ve bugün danışmana ya da TeşvikAra, Teşvik Rotası gibi araçlara başvuruyor; arama hacmi ölçülmedi."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Oda eğitimleri konuyu işliyor, mükellef soruları geliyor; büronun portföy tarama aracı aradığına dair veri yok."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oda ve OSB yönetimi üye taraması aramıyor; talep belgesi yok, fikir kurucu teklifiyle anlatılacak."
+  },
+  "asgari-iscilik-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Aday inşaat firması teklif sürecinde ve tanıtım raporunu okudu; yazılı talep ya da başka satıcıdan teklif alındığı belgelenmedi."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Genelge sonrası tablo güncelleme ihtiyacı biliniyor; büro ve yüklenicinin araç aradığına dair kayıt ve arama hacmi yok."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yüklenici tablosunu yenilemek zorunda olduğunu biliyor ve danışmana başvuruyor; kontrol raporu arayışı ölçülmedi."
+  },
+  "zincir-danismanligi-a": {
+   "p": 4,
+   "k": 2,
+   "g": "Zincir aynı sorun için platform teklifleri almış; kabul edildiğine dair kanıt yok."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Zincirler denetimi kendiliğinden aramıyor; farkındalık olgunluk testiyle yaratılacak, ajanslar ücretsiz denetim veriyor."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Şubelerde fiyat tutarsızlığı şikâyeti var ama zincir merkezden yayın aramıyor; POS içi ücretsiz QR menü seçeneği duruyor."
+  },
+  "kar-pusulasi-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Satıcılar kâr hesabını arıyor: 15'ten çok ücretsiz hesaplayıcı ve ücretli Karpanel yayında; arama hacmi doğrulanmadı."
+  },
+  "kar-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışman kendi Excel'ini yeterli görüyor; rakip paneller satıcıya satıyor, danışmanın araç aradığına dair veri yok."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Satıcı zarar şüphesini biliyor, tek ürün hesaplayıcı ve entegratör paneli kullanıyor; toplu SKU raporu aramıyor."
+  },
+  "titanlar-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Başlayan satıcı eğitim arıyor: bir Udemy kursunda 16.848 öğrenci, ücretsiz akademiler ve özel ders ilanları var."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Satıcı zararını biliyor, ücretsiz hesaplayıcı ve forumlara bakıyor; ücretli kâr danışmanı aradığı doğrulanmadı."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Odalar ücretsiz e-eğitim ve bakanlık etkinlikleriyle yetiniyor; takipli ücretli atölye için talep ya da teklif isteği görülmedi."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 1,
+   "g": "İhracatçı eski sitenin eksiğini fuar ve alıcı sorusunda fark ediyor; site yenilemeyi etkin aradığı gösterilmedi."
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Küçük üretici 'web siteniz nerede' sorusuyla sorunu biliyor; serbest çalışan ve site kurucular var, etkin arama ölçülmedi."
+  },
+  "kurumsal-site-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Geliştirici ve ajans tema arar ama Astro sanayi teması nişi küçük; benzer ürünün satış ya da arama verisi bulunamadı."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Üretici pazar yerinde zarar ettiğini biliyor; paketi ya da benzerini aradığına dair arama ve teklif talebi verisi yok."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Zarar eden üretici 'kaça satmalıyım' sorusunu biliyor ama fizibilite diye aramıyor; ilgili arama hacmi tahmin."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Üreticilerin sitelerinde teknik föy genelde yok; üretici eksiği alıcı sorunca fark ediyor, önce bulguyu göstermek gerekiyor."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans KVKK yükünü biliyor ama dizindeki KVKK eklentileri 10 kurulumun altında; etkin arama ya da teklif talebi yok."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 5,
+   "k": 1,
+   "g": "Mağazalar bugün rakip kullanıyor: PSP taksit eklentileri 3.000-10.000 kurulumda; 'woocommerce taksit tablosu' adıyla aranıyor."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans ve mağaza uyum eksiğini ceza haberinden biliyor; kurulum hizmeti arayan sayısı ölçülmedi, teklif kurucudan gidiyor."
+  },
+  "qral-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Kullanıcı bu işi arayıp rakip kuruyor: Tab Copy 100.000, Obsidian Web Clipper 1 milyon kullanıcı. A ve B ödeme arayışına baktı; kriter çözüm arayışıdır."
+  },
+  "qral-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Öğretmenin toplu sınıf QR sayfası aradığına dair veri yok; ücretsiz QR siteleriyle idare ediyor, görüşme yapılmadı."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Analist yer imi, elle Markdown ve ücretsiz yapay zekâ özetini yeterli görüyor; şablon paketi arayışı yok."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Eğitmen müfredatı Notion ve belgelerde elle yazıyor; site üretim kiti aradığına dair arama ya da talep verisi yok."
+  },
+  "frontend-atlasi-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Öğrenen bugün kaynak arıyor ve kullanıyor: Patika 260 bin kayıt, Udemy kursunda 10 binden çok değerlendirme; paket adıyla arama yok."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Eğitmenin ders ve laboratuvar üretimini dışarıdan aradığı kanıtlanmadı; kaynak talep yok diyor."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kurumsal eğitim talebi Armut'ta görünüyor ama karar yöntemi atölyesi adıyla aranmıyor; ihtiyaç ön oturumla anlatılacak."
+  },
+  "karar-kitabi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Kitaplara ilgi sınırlı, strateji kurslarında binin üstünde öğrenci var; çalışma kâğıdı araması ölçülmedi."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Facilitatör Notion, Miro ve Word düzenini yeterli görüyor; memo kiti aramıyor, ücretsiz yapay zekâ da seçenek."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu sunum ve danışman arıyor (slayt 1.000-5.000 ₺, sunum 5-25 bin ₺); rakam tutarlılığı sorununu adıyla aramıyor."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucu dosyasındaki rakam çelişkisini çoğu kez bilmiyor; jüri sorusu ya da ücretsiz atölye gösterince fark ediyor."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Program yöneticisi mentör şablonuyla idare ediyor; standart doğrulayıcı aradığı belirsiz, 'bütçemiz yok' itirazı bekleniyor."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Acenteler Excel ve WhatsApp ile çalışıyor; iHMK CRM gibi rakipler var ama fiyat ve kullanım belgesiz, arayış verisi yok."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Acente eksik belge takibini Sheet ile çözüyor; doğrulama hizmeti aradığına dair talep yok, müşteri kullanımı doğrulanmadı."
+  },
+  "vize-operasyon-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Başvurucu evrak listesini etkin arıyor: sonuçlarda acente ve sigorta sayfaları, Ekşi Sözlük'te çok sayfalı başlıklar; hacim ölçülmedi."
+  },
+  "software-factory-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Teknik ortağı olmayan kurucu MVP için ajans teklifi alıyor ve AI prototip araçlarını deniyor; kanıt paketini adıyla aramıyor."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ekipler ajan çıktısını CI ve trace araçlarıyla izliyor; makbuz diye bir kategori aranmıyor, ücretsiz rakip çok."
+  },
+  "software-factory-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajanslar uygulama işi için Bionluk ve Upwork'te alt yüklenici arıyor; beyaz etiket kanıtlı kapasiteyi adıyla aramıyor."
+  },
+  "strateji-simulatoru-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kuluçka ve uygulayıcı kuruluşların ön eleme aracı aradığına dair kayıt yok; Türkçe doğrudan rakip de bulunamadı."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aday başvuru öncesi ret korkusunu biliyor ve cevabı ChatGPT'de arıyor; ücretli rapor araması doğrulanmadı."
+  },
+  "strateji-simulatoru-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Mevcut müşteriler hibeyi arıyor, kapı kontrolünü değil; ücretli değerlendirme talebi kaydı yok."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştiriciler bellek sorununu biliyor ve kamuya açık hata kaydı açıyor; yerleşik düzeltme bekliyor, ücretli araç aramıyor."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Takımın teşhis ve kurulum desteği aradığına dair veri yok; ücretsiz rapor aracı ve yerleşik düzeltme beklentisi var."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Orkestratör projeleri donma şikâyetini görüyor ama kabul API'si ya da sponsorluk aramıyor; segment planda gelir sayılmadı."
+  },
+  "actionplan-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Ajanla çalışan geliştirici görev kırılımı aracı arıyor ve ücretsiz task-master ile spec-kit'i kullanıyor; arama hacmi yok."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans lideri kapsam tartışmasını yaşıyor ama kabul kaydı çözümü aramıyor; sorunu adlandırmak kurucuya kalıyor."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı ajana ne isteyeceğini bilmiyor ve Türkçe şablon aramıyor; farkındalık videoyla oluşturulacak, hacim küçük."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Kitle maliyet görünürlüğünü arıyor: ücretsiz ccusage 18,8 bin, CodexBar 22,1 bin yıldız; yıldız kurulum sayısı değil."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajanslar harcamayı Excel ve ccusage ile topluyor; proje bazlı rapor aradığına dair veri yok, persona kurgusal."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı yalnız rol hipotezi; hiçbir belgede bekleyen ajan işini sorun sayan ya da çözüm arayan biri gösterilmedi."
+  },
+  "ai-first-tasarim-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yapay zekâ arayüz kütüphanesi haftada 2,27 milyon indiriliyor, konu aranıyor; Türkçe rehber araması sınanmadı."
+  },
+  "ai-first-tasarim-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekipler yapay zekâ yüzeyi ekliyor ama tasarım sistemi kurulumunu uzman bulamayınca erteliyor; teklif toplama kanıtı yok."
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans ekran tutarsızlığını yaşıyor ama kabul dosyası diye bir çözüm aramıyor; kaynak satış emeği gerektiğini söylüyor."
+  },
+  "aicommandcard-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kafe sahibi metni ChatGPT'ye yapıştırıp çözüyor; menü panelinde AI asistan arayan ya da isteyen kayıt yok."
+  },
+  "aicommandcard-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekipler AI arayüzünü ücretsiz kütüphaneyle çözüyor (assistant-ui 7,3 milyon, CopilotKit 1,9 milyon indirme); ücretli entegrasyon aranmıyor."
+  },
+  "atonota-denetim-a": {
+   "p": 2,
+   "k": 1,
+   "g": "KOBİ site sahibi denetim aramıyor; ücretsiz Site Kit 5 milyon kurulumda, sorunu reklam ölçülemeyince fark ediyor."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajanslar aylık raporu ManageWP ve AgencyAnalytics ile çıkarıyor; pazarlama sağlığı raporu arayışı kanıtlı değil."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans sınırsız revizyon yükünü yaşıyor ama kabul kaydı aramıyor; kaynak bunu hipotez sayıyor, anlatmak gerekecek."
+  },
+  "b2b-bilesenler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "İhracatçı ürün sayfası bloğunu aramıyor; ihtiyacı site yenilemesi sırasında kurucunun önerisiyle öğreniyor."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Katalog ajansı alıcı hipotezi; iki mobil görünümü dışarıdan aradığına dair talep ya da arama doğrulanmadı."
+  },
+  "b2b-bilesenler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici tema arıyor, Astro tema galerisi ücretli temaları listeliyor; B2B ürün sayfası alt nişinde arama verisi yok."
+  },
+  "banner-post-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Restoran görseli Canva'da elle yapıyor; menüye bağlı görsel modülü aramıyor, çağrı ürün içinden gidecek."
+  },
+  "banner-post-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Mevcut müşteriler sosyal görseli Canva ya da ajansla çözüyor; hizmet aramıyor, teklif kurucudan gidecek."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın toplu görsel üretimi aradığı hipotez; Bannerbear ve Placid var ama bu alıcının arayışına dair veri yok."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajanslar Tally ve ScoreApp gibi form araçlarını kullanıyor; teklif keşif sihirbazı aradığına dair arama ya da talep yok."
+  },
+  "karar-sihirbazi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans stack seçimini blog ve deneyimle yapıyor; yazılı karar dosyası aramıyor, kaynak talebi doğrulanmış saymıyor."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajanslar ücretsiz Tally ile form kuruyor; hazır keşif kiti arayan davranış yok, arama hacmi doğrulanamadı."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Pazarlama sorumlusu sunumu Canva ve yapay zekâ araçlarıyla güncelliyor; toplu set hizmeti aradığına dair talep yok."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajanslar sunumu Canva ve serbest tasarımcıyla çözüyor; üretim aboneliği arayışı yalnız persona varsayımı."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışman sunumu her veride elle yeniden hazırlıyor; alıcı rol hipotezi, çözüm arama ya da rakip kullanımı kanıtı yok."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu demo ihtiyacını biliyor; Figma, serbest çalışan ve AI üreticiyle çözüyor, hazır demo hizmeti araması ölçülmedi."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans teklif demosunu kendi tasarımcısıyla yapıyor; beyaz etiket demo aradığına dair liste, görüşme ya da talep yok."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Bordro sorumlusu eksik hareketi her ay Excel'de elle arıyor, sorunu biliyor; mutabakat hizmeti arayışı ölçülmedi."
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Okur konuyu öğrenmek istiyor ama şablon paketi aramıyor; birincil kanal olan e-kitap kitlesi 200 okur varsayımı."
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekipler mimari belge için ücretsiz Structurizr ve LikeC4 arıyor, IcePanel ücretli; ücretli şablon paketi aranmıyor."
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekip modül sınırı sorununu yaşıyor ama dış değerlendirme aramıyor, ücretsiz araçlara bakıyor; satışa kurucu gidecek."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekip onay ve denetim kodunu her projede yazıyor, ücretsiz Refine ve shadcn desenlerine bakıyor; ücretli entegrasyon aramıyor."
+  },
+  "devpanel-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ekipler form sorununu ücretsiz form kütüphaneleriyle çözüyor; şema dışa aktarım işini dışarıdan aradığına dair veri yok."
+  },
+  "devpanel-c": {
+   "p": 5,
+   "k": 1,
+   "g": "Geliştirici yönetim paneli şablonunu bugün arayıp satın alıyor: Metronic 49 $ ile 120.362 satış. B ürün farkına baktı; kriter arayıştır."
+  },
+  "e-menum-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans restoran işi için 19-89 USD betik alıp uyarlıyor; Django tabanlı kurulum arayan ajans sayısı kaynaksız."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Çok şubeli marka menüyü PDF ve ajans mesajıyla güncelliyor; onaylı yayın hizmeti aramıyor, arama görünürlüğü bilinmiyor."
+  },
+  "e-menum-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı pazar yerinde QR menü betiği arıyor; rakip betikler 1,8-2 bin satış. Betikler Laravel, Django arayan kanıtı yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici niş seçimini Reddit ve sezgiyle yapıyor; ücretli trend araçları (39-249 USD/ay) var, eklenti özelinde arama verisi yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici araştırmayı kendi yapıyor, ücretsiz istem ve fikir veritabanı kullanıyor; hazır keşif paketi aramıyor."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın ürün hattı fırsat listesi aradığı yalnız persona varsayımı; arama, teklif ya da ilişki kaydı yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı bozuk arayüzü çeviri hatası sanıyor; denetim aramıyor, sorun ücretsiz mini denetimle gösterilecek."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Geliştirici kontrol listesini etkin aramıyor; anahtar kelime hacmi doğrulanamadı, ücretsiz W3C içerikleri yeterli görülüyor."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "SaaS ekipleri taşmayı Playwright ve elle sahte dille çözdüğünü düşünüyor; QA kapısı arayışı bilinmiyor."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Küme yöneticisi kendi platform fikrinde ve ajanstan yazılım teklifi bekliyor; bağımsız teşhis ihtiyacını görmüyor."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucu işlem ve satıcı arıyor, doğrulama raporu değil; rapor için arama ya da talep kaydı yok."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip 'pazar yeri mi bayi portalı mı' sorusunu biliyor ve ajanstan yazılım teklifi alıyor; strateji paketi aramıyor."
+  },
+  "lifeos-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Yönetici günlük yöntem aracı diye bir ihtiyaç duymuyor; acı kanıtı ve görüşme yok, ihtiyaç LinkedIn dizisiyle oluşturulacak."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Bağımsız çalışan zaman kaydı sorununu biliyor ve izleyici kullanıyor; yerel CSV sürümü araması ve rakipler araştırılmadı."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Alıcı rolü hipotez; tek rutin şablon kiti arayan geliştirici ya da kullanıcı hiçbir kaynakta gösterilmedi."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 1,
+   "g": "İki yerel emlak CRM'i 499-599 TL bandında satılıyor, kategori biliniyor; ofisin etkin arayışı ve hiçbir görüşme yok."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştiriciler cam efekti ve erişilebilir bileşeni ücretsiz, 6,3 bin yıldızlı rakipten alıyor; ücretli kit aranmıyor."
+  },
+  "metaframer-kernel-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Geliştirici başlangıç kiti arayıp satın alıyor (ShipFast 8.427 müşteri); çok kiracılı kit araması hacimsiz."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajanslar kendi iç şablonunu kullanıyor; lisans ve atölye paketi için arama ya da teklif talebi kanıtı yok."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Şirketler OpenFGA ve Cerbos'u biliyor olabilir; tek eylemlik güvenlik entegrasyonu arayışı gösterilmedi, persona doğrulanmadı."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Ad arayan kurucu bugün kayıt kutuları, Namelix ve Lean Domain Search kullanıyor; Türkçe arama hacmi bilinmiyor."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans ad aşamasında ücretsiz araç ve elle slayt kullanıyor, sorunu biliyor; özel araç aradığına dair veri yok."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurucu ad arıyor ve Namelix gibi ücretsiz araçlara bakıyor; karar dosyasını hizmet olarak aramıyor."
+  },
+  "projector-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Geliştirici konuyu İngilizce kaynak ve çeviri kitaplardan (322-679 TL) öğreniyor; Türkçe e-kitap araması kaynaksız."
+  },
+  "projector-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yazılım evi ortak standart eksiğini yaşıyor ama atölye aramıyor; teklif talebi yok, bütçe ve tasarruf varsayım."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Danışmanlık firmaları teslimi ZIP, Word, Notion ve GitBook ile yapıyor; kaynaklı portal arayışı kanıtsız."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kurucu ücretsiz Notion şablonu ve Canvas PDF buluyor; Türkçe kanıt etiketli karar dosyası arandığı bilinmiyor."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Mentor ve program yöneticisi Canvas PDF ile idare ediyor; kurum lisansı arayışı yalnız persona anlatımı."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Okur 'hangi çeviri' sorusunu soruyor, forum başlıkları var; arama hacmi doğrulanamadı."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans imzayı ücretsiz HubSpot aracı ya da elle HTML ile veriyor; toplu imza aracı aradığı belgelenmedi."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 1,
+   "g": "KOBİ 'Outlook imza ekleme' türü rehber arıyor; WiseStamp, Exclaimer gibi ücretli rakipler var, Türkçe hacim doğrulanmadı."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Şirket imza kurulumunu hizmet olarak aramıyor; sorunu fark edince ücretsiz Gmail yardımına gidiyor."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kulüp ve marka mini oyun aramıyor; çekiliş ve ajans teklifiyle yetiniyor, talep varsayım."
+  },
+  "volley-tap-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Oyuncu portalın spor ve iki kişilik listelerinde oyun arıyor, portal açık gönderim alıyor; kategori kalabalık, hacim yok."
+  },
+  "volley-tap-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oyuncu itch.io'da kısa ücretsiz oyun arıyor; ücretli premium paket arayışı yok, ödeme ve analitik doğrulanmadı."
+  },
+  "woocommnts-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Mağazalar dizinde arayıp rakip kuruyor: taksit aramasında 6 sonuç, PayTR aracı 3.000+ kurulum. A ve B hacme baktı; rakip kullanımı çapa 5'tir."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans her mağazada taksit eklentisi seçip kuruyor, sorunu biliyor; çok siteli lisans aradığına dair görüşme yok."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Mağaza yorum eşleme hatasını göç sırasında fark ediyor; göç hizmeti aramıyor, ücretsiz CusRev seçenek."
+  },
+  "egitim-demolari-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Öğretmen haftalık ders hazırlığı yapıyor ama hazır paket aradığına dair arama ya da talep verisi kaynakta yok."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekip lideri atölye aramıyor; kaynak kurumsal atölyenin aktif satış gerektirdiğini söylüyor, talep sinyali yok."
+  },
+  "baz-secenekler-a": {
+   "p": 4,
+   "k": 2,
+   "g": "İki ilişkide de imza ya da yazılı talep yok."
+  },
+  "baz-secenekler-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajanslar bugün 19-89 USD betik alıp uyarlıyor; Django kurulumu arayan ajans kanıtı yok, satış kurucu mesajıyla."
+  },
+  "baz-secenekler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Program dönemsel çağrıyla girişim arıyor; 2026-1 çağrısı kapandı, sonraki çağrının tarihi bilinmiyor."
+  }
+ }
+}

@@ -1,0 +1,344 @@
+{
+ "slug": "kar-pusulasi",
+ "baslik": "Stratejik Kâr Pusulası (e-ticaret kârlılık aracı)",
+ "ozet": "Pazar yerinde (Trendyol, Hepsiburada, N11, Amazon TR) satan esnaf ve KOBİ'ye komisyon, kargo, KDV, stopaj, kampanya ve iade sonrası net kârı gösteren, tarayıcıda çalışan hesaplayıcı. Çalışan sürüm var; ücretsiz araç olarak yaklaşık %80, ücretli ürün olarak yaklaşık %50 tamam. Ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Çalışan PWA: 4 hesap modu, 5 pazar yeri karşılaştırması, başabaş ve hassasiyet analizi",
+   "Reçete (BOM) modülü, Excel/CSV dışa aktarma, çevrimdışı çalışma",
+   "Açık kaynak (MIT) depo, hesap motoru kurucunun kodu; public depo ile yerel sürümün eşitlenmesi ve bileşen lisanslarının teyidi bekliyor",
+   "Eylül 2026 komisyon ve kargo tarifeleri belgelenmiş, ürüne henüz işlenmemiş",
+   "Kurucunun e-ticaret eğitim programı ve danışmanlık çevresi (aynı kitle)"
+  ],
+  "yok": [
+   "Ödeyen müşteri, ön ödeme ya da yazılı ödeme niyeti",
+   "Test paketi; iki hesap modunda formül hatası düzeltilmedi",
+   "Tarihli ve kaynaklı oran veri seti (oranlar koda sabit gömülü, kargo eski)",
+   "Toplu Excel içe aktarma, bulut hesap, lisans ve ödeme akışı",
+   "Fatura düzeni, KVKK metinleri, kullanım koşulları",
+   "Doğrulanmış arama hacmi ve isimli alıcı listesi"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Ücretsiz çok pazar yerli araç ve programatik SEO ile kitle; ücretli Pro 499 TL/yıl, Kurucu Paketi 999 TL, danışman paneli 990 TL/ay, oran API'si 199 TL/ay. Baz yıl 1 geliri yaklaşık 105 bin TL; tek başına geçim sağlamaz, değeri eğitim ve danışmanlığa güven ve aday üretmesi.",
+  "gpt": "Tek ürün hesaplayıcıdan, 200 SKU'luk dosyada hangi ürünün katkı kaybettirdiğini açıklayan toplu analize geçiş; ilk ücretli rapor insan teslimi (tek seferlik 1.000 TL, aylık 1.500 TL varsayımı). Net kâr ve satış artışı garantisi verilmez; motor önce düzeltilmeli. El işi üretici modülü bağımsız gelir kanıtı değil.",
+  "ayrisma": "Claude planı bireysel satıcıya ucuz yıllık abonelik ve SEO ile hacim arar; GPT çalışması dar alıcıyla (50-500 SKU, ajans, mali müşavir) dosya bazlı, insan destekli ücretli rapor ve pilotla başlar. Claude daha iyimser fiyat ve kitle varsayar; GPT vergi ve kâr kesinliği iddiasından kaçınır.",
+  "birlesik": "Önce motor düzeltilip test edilmeli. En hızlı ödeme sinyali dosya bazlı sabit fiyatlı rapor ya da Kurucu Paketi ile alınır. Pro tek başına 6 ayda birkaç bin dolar getirmez; danışman paneli ve veri ürünü talep kanıtlanınca açılır."
+ },
+ "analist_gorusu": "Hiçbir seçenek 6 ayda 3000 dolara (144 bin TL) yaklaşmıyor; iyi senaryoda en çok yaklaşık %16. Gerçekçi yol: düzeltilmiş motorla Kurucu Paketi ve Pro'yu tanıdık satıcılara satmak, paralelde dosya raporuyla ilk ücreti sınamak.",
+ "secenekler": [
+  {
+   "id": "kar-pusulasi-a",
+   "ad": "Pro yıllık ve Kurucu Paketi (satıcıya yazılım)",
+   "tur": "yazılım ürünü",
+   "musteri": "Çok pazar yerinde satan 50-500 SKU'lu KOBİ ve yeni başlayan şahıs işletmesi satıcı",
+   "is": "Fiyatı koymadan önce komisyon, kargo, KDV, stopaj, kampanya ve iade sonrası net kârı ve başabaş fiyatı bilmek",
+   "tetikleyici": "Komisyon ya da kargo tarifesi değişimi (2026'da dört kez), zararlı ay, kampanya öncesi karar",
+   "teklif": "Pro: toplu Excel, PDF rapor, oran değişim bildirimi. Kurucu Paketi: ömür boyu Pro, ilk 100 kişiye",
+   "fiyat": "Pro 499 TL/yıl, Kurucu Paketi 999 TL tek sefer (KDV dahil); net 416 ve 832 TL",
+   "kanal_birincil": "Telegram 'E-Ticaret Türkiye' grubu (3.200 üye) ve tanıdık satıcılara birebir ekran paylaşımı",
+   "kanal_yedek": "Programatik SEO sayfaları, WhatsApp satıcı grupları; kurucunun eğitim programı (ilk kohort başlamadı, katılımcı sayısı belgesiz)",
+   "ilk_adim": "Formül hatasını düzelt, Eylül 2026 oranlarını tarihli dosyaya al, 10 tanıdık satıcıya 30 dk görüşme teklif et",
+   "ilk_kapsam": "Düzeltilmiş 4 mod, tarihli oran rozeti, toplu Excel içe aktarma, lisans anahtarı e-postası, ödeme bağlantısı",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Motor kurucunun MIT kodu; public depo ile yerel sürüm uyuşmuyor, eski sürüm üçüncü taraf bileşen içeriyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK, mesafeli satış ve e-Arşiv için mali müşavir ve hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ve sanal POS yolu belli; hesap açılmadı, fatura düzeni kurulmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (pazar yeri satıcısı); 20 kişilik isim listesi yok, yalnız 5 tanıdık satıcı anılıyor"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı (Telegram grubu), yedekler SEO ve WhatsApp grupları; ilk adım yazılı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 60-132 saat arası belirsiz; satış döngüsü ölçülmedi, ilk tahsilat 5-11 hafta"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 12 bin TL; tavan 50 bin TL altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı ürünü ve aynı sabit fiyatı alır; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Mali müşavirden fatura ve KVKK teyidi al, Shopier hesabını aç, depoyu tek sürüme indir, 20 satıcı adı listele, kalan işi saat saat yaz.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 416,
+    "degisken_maliyet_tl": 45,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 12000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 90,
+     "max": 132
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 1,
+    "musteri_basina_aylik_destek_dk": 5,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 1664,
+     "baz": 12480,
+     "iyi": 22880
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 3,
+     "baz": 20,
+     "iyi": 40
+    },
+    "alti_ay_musteri": {
+     "kotu": 3,
+     "baz": 20,
+     "iyi": 40
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.03
+    },
+    "dayanak": "Plan bölüm 5, 6, 8, 11: Pro 416, Kurucu Paketi 832 TL net. Baz: 10 Pro ve 10 Kurucu = 12.480 TL; plan 60. gün 10 Kurucu, ay 4-6 8 Pro/ay hızı 5 hafta gecikmeyle kısaltıldı. İyi: 25 Pro ve 15 Kurucu (plan 80 Pro hedefi iyimser bulundu). Dönüşüm %1-3 varsayım, kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Ücretsiz araçlar bolken satıcılar toplu Excel ve oran bildirimi için 499 TL/yıl ya da 999 TL tek sefer ödeyecek",
+    "yontem": "Düzeltilmiş motor ve tarihli oranlarla 10 tanıdık satıcıya 30 dk ekran paylaşımı; sonunda havale ya da Shopier ile Kurucu Paketi ön ödemesi istenir.",
+    "sure_gun": 28,
+    "maliyet_saat": 30,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "10 görüşmeden en az 3 ön ödeme ya da 5 yazılı ödeme niyeti",
+    "birakma_olcutu": "10 görüşmede 0 ön ödeme; Pro bırakılır, araç eğitim programı için ücretsiz kalır",
+    "sonraki_dilim": "Toplu Excel içe aktarma ve 20 programatik SEO sayfası"
+   },
+   "etiketler": {
+    "segment": "Pazar yeri satıcısı, 50-500 SKU KOBİ",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Tarayıcı PWA, JavaScript, istemci hesabı",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı bölüm 0-8: 15+ ücretsiz rakip araç, Karpanel 349-1.299 TL/ay (yalnız fiyat listesi; ödeyen sayısı belgesiz, kanıt E1), Trendyol 250 bin+ satıcı (AA), oran değişimi 2026'da dört kez. Bölüm 2: motor formül hatası, test yok. Derinlik dosyası A.8: fayda hesapları varsayım. Ödeyen müşteri yok; arama hacmi (30-60 bin/ay) doğrulanmadı; Telegram grubu 3.200 üye, gönderi başına 200-400 görüntülenme varsayım, erişim doğrulanmadı."
+  },
+  {
+   "id": "kar-pusulasi-b",
+   "ad": "Danışman ve ajans paneli (aylık abonelik)",
+   "tur": "yazılım ürünü",
+   "musteri": "5-30 müşteriye pazar yeri yönetimi veren serbest e-ticaret danışmanı ve küçük ajans",
+   "is": "Her müşteri için tarihli oranlarla fiyat raporu üretmek ve fiyat kararını müşteriye kanıtla anlatmak",
+   "tetikleyici": "Oran ya da tarife değişimi, yeni müşteri alımı, müşterinin fiyat kararına itirazı",
+   "teklif": "25 müşteri profili, logolu PDF rapor, 3 kullanıcılı ekip hesabı, öncelikli destek; 60 gün ücretsiz deneme",
+   "fiyat": "990 TL/ay ya da 7.900 TL/yıl (KDV dahil); aylık net 825 TL",
+   "kanal_birincil": "LinkedIn'de e-ticaret danışmanlarına kişisel mesaj ve 20 dakikalık demo",
+   "kanal_yedek": "Kurucunun eğitim programı ilk kohortu ve webinar katılımcıları (sayı belgesiz); mali müşavir yönlendirmesi",
+   "ilk_adim": "20 danışmana mesaj yaz, 5 demo yap, ilk iki danışman için raporu elle hazırla",
+   "ilk_kapsam": "Müşteri profili, müşteri bazlı rapor, logolu PDF, bulut hesap ve lisans; ödeme akışı",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Aynı motor ve kodlar kurucunun; bulut hesap için kullanılacak servislerin lisansları doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri verisi bulutta tutulacak: KVKK aydınlatma, veri işleyen sözleşmesi, e-Arşiv teyidi gerekir"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ya da iyzico yolu belli; şirket ve hesap yok, aylık tahsilat düzeni kurulmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (danışman); isim listesi yok, eğitim programı mezunu henüz yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "LinkedIn ve eğitim programı adlı, ilk adım yazılı; mali müşavir yönlendirmesi yedek"
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Panel, bulut hesap ve PDF için 120-240 saat; 8 haftanın üstünde, ilk tahsilat 60 gün denemeden sonra"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 15 bin TL; tavan altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı paketi alır: 25 profil, 3 kullanıcı; özel iş kapsam dışı yazılı"
+    }
+   },
+   "kapi_duzeltme": "Paneli yazmadan elle hazırlanmış raporla 2 danışmanı ücretli pilota al; kalan efor 8 haftaya inene kadar panel kodlanmaz. KVKK ve fatura teyidi alınır.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 825,
+    "degisken_maliyet_tl": 60,
+    "sabit_gider_aylik_tl": 2000,
+    "baslangic_nakit_tl": 15000,
+    "kalan_efor_saat": {
+     "min": 120,
+     "beklenen": 170,
+     "max": 240
+    },
+    "ilk_tahsilat_gun": {
+     "min": 105,
+     "max": 170
+    },
+    "satis_basina_kurucu_saati": 4,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 3300,
+     "iyi": 7425
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 4,
+     "iyi": 9
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan bölüm 5-6: 825 TL net aylık, 20 mesaj yaklaşık 2 demo, demo-ödeme %10. Panel L2 işi (yaklaşık 12 gün) ve ortak L1 tabanı kalan eforu belirler; alfa 60 gün ücretsiz olduğundan ilk ödeme 3,5-5,5 ay. Baz 2 danışman, 4 abone-ay; plan 6. ay hedefi (4 danışman) çok iyimser bulundu."
+   },
+   "deney": {
+    "varsayim": "Danışman, ücretsiz denemeden sonra 990 TL/ay'ı ödeyip müşterisine yansıtacak",
+    "yontem": "20 danışmana mesaj, 5 demo; panel yazılmadan 2 danışman için elle logolu PDF hazırla ve ilk ayı 990 TL ön ödemeyle teklif et.",
+    "sure_gun": 21,
+    "maliyet_saat": 20,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 2 danışman ilk ay için ön ödeme ya da yazılı ücretli pilot onayı verir",
+    "birakma_olcutu": "20 mesajdan 3'ten az demo ya da 0 ücretli pilot kabulü",
+    "sonraki_dilim": "Müşteri profili ve logolu PDF çekirdeği"
+   },
+   "etiketler": {
+    "segment": "E-ticaret danışmanı ve küçük ajans",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "PWA, bulut profil, PDF üretimi",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı bölüm 3.1, 6, 7.3: danışman en yüksek LTV (13.400 TL, varsayım); rakip paneller satıcıya satıyor, danışmana değil. Derinlik dosyası A.8: danışman geri ödemesi tasarruf değil müşteriye yansıtmaya dayanır; en az 5 müşteri şartı. Panel kodu yok (L2, yaklaşık 12 gün). Ödeyen danışman yok; fayda hesapları varsayım."
+  },
+  {
+   "id": "kar-pusulasi-c",
+   "ad": "SKU katkı raporu (sabit fiyatlı hizmet)",
+   "tur": "hizmet",
+   "musteri": "50-500 SKU'lu iki kanallı satıcı, e-ticaret ajansı ve onların mali müşaviri",
+   "is": "200 SKU'luk maliyet ve komisyon dosyasından hangi ürünün katkı kaybettiğini ve ilk üç fiyat deneyini öğrenmek",
+   "tetikleyici": "Oran ya da tarife değişimi, kampanya sonrası zarar şüphesi, dönem sonu fiyat gözden geçirme",
+   "teklif": "Gönderdiğiniz dosya için açıklamalı SKU katkı raporu, eksik veri listesi ve 3 fiyat deneyi; kâr ve satış garantisi yok",
+   "fiyat": "1.000 TL tek sefer rapor, 1.500 TL/ay üç rapor (KDV dahil sayıldı; tek sefer net 833 TL)",
+   "kanal_birincil": "Telegram 'E-Ticaret Türkiye' grubu ve ücretsiz tek ürün hesaplayıcı çıktısından rapor teklifi",
+   "kanal_yedek": "E-ticaret ajansları ve mali müşavirler; kurucunun eğitim programı katılımcıları (sayı belgesiz)",
+   "ilk_adim": "20 sentetik hesap örneği ve 50 SKU'luk örnek rapor hazırla, 5 izinli dosya iste",
+   "ilk_kapsam": "Elle teslim tek dönem raporu: 200 SKU'ya kadar, yalnız hazır şablondaki dosya (uymayan dosya kapsam dışı); katkı hesabı, eksik veri listesi ve 3 deney",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Motor kurucunun MIT kodu; ancak public depo yerelle uyuşmuyor, eski sürümde bileşen lisansı teyit bekliyor; tek sürüm doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri maliyet dosyası gizliliği, e-Arşiv ve vergi sonucu iddiası olmaması için teyit gerekir"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ya da Shopier yolu belli; hesap ve fatura düzeni yok, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (çok SKU'lu satıcı, ajans); 20 kişilik isim listesi yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Telegram grubu adlı, ajans ve mali müşavir yedek; ilk adım 5 izinli dosya"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 30-90 saat; motor formül düzeltmesi dahil mi belgede açık değil; ilk tahsilat 35-60 gün, satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 4 bin TL; tavan çok altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kapsam 200 SKU ve 3 deney sabit; ancak müşteri dosya biçimi farklılığı eşleme istisnası üretebilir, eşleme sınırı denenmedi"
+    }
+   },
+   "kapi_duzeltme": "Depoyu tek MIT sürüme indir, üçüncü taraf bileşen kalıntılarını temizle; motor düzeltmesini efora yaz; şablon kuralını 5 izinli dosyada dene; mali müşavir teyidi, 20 isim listesi, test ödemesi.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 833,
+    "degisken_maliyet_tl": 80,
+    "sabit_gider_aylik_tl": 850,
+    "baslangic_nakit_tl": 4000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 50,
+     "max": 90
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 60
+    },
+    "satis_basina_kurucu_saati": 2,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 833,
+     "baz": 4165,
+     "iyi": 9996
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 1,
+     "baz": 5,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 1,
+     "baz": 5,
+     "iyi": 12
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "GPT dosyası ücretli paket: tek seferlik 1.000 TL; KDV yazılmadığından dahil sayıldı, net 833 TL. Kaynak hedefi 60 günde 5 ücretli alıcı; baz bu hedefe (5), iyi 12 satışa indirildi. İlk tahsilat 30 günlük izinli dosya toplama sonrası (min 35). Motor düzeltmesi efora eklendi. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "50-500 SKU'lu satıcı, kendi dosyasının açıklamalı katkı raporu için 1.000 TL ödeyecek",
+    "yontem": "Telegram ve tanıdıklardan 5 izinli dosya; ilk 20 SKU ücretsiz gösterilir, tam 200 SKU raporu 1.000 TL ön ödemeyle teklif edilir.",
+    "sure_gun": 30,
+    "maliyet_saat": 20,
+    "maliyet_tl": 0,
+    "basari_olcutu": "5 izinli dosyadan en az 2 ücretli rapor; dosya eşleme başarısı %80 üstü",
+    "birakma_olcutu": "5 izinli dosyadan 0 ödeme ya da rapor başına inceleme 30 dakikayı aşıyor",
+    "sonraki_dilim": "Dönem karşılaştırması ve aylık abonelik; CSV eşleme aracı"
+   },
+   "etiketler": {
+    "segment": "50-500 SKU'lu satıcı, ajans, mali müşavir",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "CSV işleme, istemci hesabı, elle teslim",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyaları: ilk ücretli rapor insan teslimi, 1.000 TL tek sefer ve 1.500 TL/ay varsayımı, kanıt deneyi 30/60/90 gün; vergi ve satış artışı garantisi yok. Alıcı rolleri (operatör, sahip, mali müşavir) tablosu. Karpanel 349-1.299 TL/ay benzer işe ücretli paket sunulduğunu gösterir; ödeyen sayısı belgesiz. Ödeyen yok; ücret gerçek müşteri fiyatı değil."
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "slug": "lifeos",
+ "kararlar": [
+  {
+   "itiraz": "lifeos-c: kaynakta alıcı freelancer, geliştirici operatör; 19 USD kaynakta yok",
+   "karar": "kabul",
+   "degisiklik": "musteri alanı freelancer alıcı, geliştirici ikincil operatör oldu; fiyat varsayım diye işaretlendi; G4 note güncellendi",
+   "gerekce": "GPT habit dosyası geliştiriciyi operatör sayıyor; fiyat kaynakta yok."
+  },
+  {
+   "itiraz": "lifeos-c: ücretsiz açık çekirdek ile ücretli kit aynı içeriği sunuyor, kanibalizasyon",
+   "karar": "kabul",
+   "degisiklik": "teklif: açık çekirdek yalnız tek rutin; ücretli kit testler, rehber ve gizlilik metni paketi oldu",
+   "gerekce": "Kaynak ücretlinin ücretsizden farklı olması gerektiğini söylüyor; kart bunu ele almıyordu."
+  },
+  {
+   "itiraz": "lifeos-a: hak doğrulaması bekleniyor, G1 test",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Plan riski temizlik yapılmazsa yüksek sayar; temizlik planlı, kod kurucuda. Hak doğrulanmadı, G1 tanımına göre test."
+  },
+  {
+   "itiraz": "lifeos-b: 600 TL ve paket ayrıntıları kaynakta yok",
+   "karar": "kismen",
+   "degisiklik": "fiyat ve teklif metni, 600 TL ve paket kapsamının analist seçimi olduğunu belirtecek şekilde güncellendi; rakam aynı",
+   "gerekce": "GPT yalnız 300-1000 TL ve şablon ya da kurulum diyor; 600 aralık içinde, ayrıntı analist önerisi."
+  },
+  {
+   "itiraz": "lifeos-a: telif temizlik süresi 2-3 gün ile 4-6 hafta çelişiyor diye yazılmış, tek 2-3 gün görüldü",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Derinlik dosyası 2-3 günü plan, 4-6 haftayı Karar Kitabı planı tahmini diye yazıyor; çelişki kaynakta var."
+  },
+  {
+   "itiraz": "lifeos-c G2 test: satış metinleri hazır değil, sunucusuz olmak yetmez",
+   "karar": "kabul",
+   "degisiklik": "G2 gecti iken test oldu; not ve kapi_duzeltme satış metni ve teyit eklenerek güncellendi",
+   "gerekce": "G2 gecti için gereken metinler hazır olmalı; mesafeli satış ve e-Arşiv metinleri yok."
+  },
+  {
+   "itiraz": "lifeos-a G5 test: kanal sonucu ölçülmedi, grup ve dizin hedefleri belirsiz",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G5 gecti adlı birincil kanal, ilk adım ve yedek ister; LinkedIn profili, mağaza ve site adlı, yedek var. Ölçüm şart değil."
+  },
+  {
+   "itiraz": "lifeos-a ilk_tahsilat_gun.min 60 yerine 80-90 olmalı",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "90. gündeki 10 satış hedefi ilk satış değil; 4-6 hafta telif ve 40-60 saat kodla 60 gün alt sınır makul."
+  },
+  {
+   "itiraz": "lifeos-b alti_ay_odeme_adedi.baz 6 yerine 2-3; kaynakta yalnız 5 pilot ve 3 tekrar var",
+   "karar": "kabul",
+   "degisiklik": "baz ödeme ve müşteri 6 iken 3; baz tahsilat 3600 iken 1800; dayanak güncellendi",
+   "gerekce": "Kaynakta ödeme verisi yok; temkinli seçenek düşük gelir, 6 satış pilot tavanını aşıyordu."
+  },
+  {
+   "itiraz": "lifeos-c alti_ay_odeme_adedi.baz 4 yerine 0-2; fiyat ve talep kaynakta yok",
+   "karar": "kabul",
+   "degisiklik": "baz ödeme ve müşteri 4 iken 2; baz tahsilat 3648 iken 1824; dayanak güncellendi",
+   "gerekce": "Talep ve fiyat kaynakta yok, kod satışı talebi kanıtsız; temkinli düşük gelir seçildi."
+  }
+ ]
+}

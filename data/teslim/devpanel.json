@@ -1,0 +1,23 @@
+{
+ "slug": "devpanel",
+ "secenekler": {
+  "devpanel-a": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 24,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "3 iş günü sabit paket, 24 saat; müşterinin projesine entegrasyon ve test dahil. Satış ve destek korundu. Baz senaryoda ödeme 0, yalnız iyi senaryoda 1 satış."
+  },
+  "devpanel-b": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 16,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: 20 alanlı tek form, şema, React çıktısı, 320 piksel ve klavye testi 16 saat; yapay zekâ hızlanması dahil. Dışa aktarıcı yapımı kalan eforda. Baz ödeme 0."
+  },
+  "devpanel-c": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Kopyası satılan lisans; müşteriye özel iş yok, teslim 0. 80-120 saatlik paketleme kalan eforda. Satış ve destek korundu."
+  }
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "slug": "b2b-pazar-yeri-hizmeti",
+ "kararlar": [
+  {
+   "itiraz": "Kart B G1: sıfırdan yazım diyor ama yöntem ve belgeler üçüncü tarafın, yazılı izin yok; G1 kaldi olmalı",
+   "karar": "kabul",
+   "degisiklik": "B G1 test -> kaldi; not ve kapı düzeltmesi güncellendi; kalan efor 50/80/120, ilk tahsilat 45-100",
+   "gerekce": "Kaynak: izin yoksa tek yol sıfırdan yazım 3-4 hafta; kapı tanımı: izin yok = kaldi; A ile tutarlı"
+  },
+  {
+   "itiraz": "Kart GPT çalışmasını ucuz raporla özetliyor; GPT dosyalarında fiyat yok, 20.000 ₺ kart varsayımı",
+   "karar": "kabul",
+   "degisiklik": "iki_calisma gpt/ayrisma/birlesik ve analist_gorusu: 'ucuz' kaldırıldı, fiyat yok ve varsayım notu eklendi",
+   "gerekce": "GPT dosyalarında fiyat ve ücretli talep kanıtı yok; kaynakta olmayan nitelik yazılamaz"
+  },
+  {
+   "itiraz": "Kart C ve A'da markasız galeri ve belge hazır gibi; kaynakta markasız sürüm yok, set üçüncü taraf markalı ve yarım",
+   "karar": "kismen",
+   "degisiklik": "bugun.var ekran seti satırı markalı ve yarım diye düzeltildi; A ve C ilk_kapsam ve C ilk_adim: markasız belge henüz yok",
+   "gerekce": "Kart bugun.yok'ta zaten markasızlaştırılmadı diyordu; ama var ve ilk_kapsam metinleri hazır izlenimi veriyordu"
+  },
+  {
+   "itiraz": "Kart A'da 30 yönetici listesini kamuya açık sayıyor; kişi ve sayılar doğrulanamadı",
+   "karar": "kismen",
+   "degisiklik": "A G4 notu ve ilk_adim: liste kamuya açık kaynaklardan çıkarılıp doğrulanacak; G4 test kaldı",
+   "gerekce": "Plan kanalı kamuya açık kaynak diyor ama kişi ve sayı doğrulanmamış; kartta liste zaten yok denmişti"
+  },
+  {
+   "itiraz": "B G1 kaldi: yöntem üçüncü tarafın, yazılı izin yok; sıfırdan yazım 3-4 hafta ve sınanmadı",
+   "karar": "kabul",
+   "degisiklik": "B G1 durumu test -> kaldi (kart itirazıyla aynı değişiklik)",
+   "gerekce": "Kaynak 5.1: izinsiz tek yol sıfırdan yazım, 3-4 hafta; kapı tanımı kaldi"
+  },
+  {
+   "itiraz": "C G5 test: ajans ortakları adlandırılmadı, 10 ajans hedefi isimsiz",
+   "karar": "kabul",
+   "degisiklik": "C G5 gecti -> test; kapi_duzeltme ve ilk_adim güncellendi",
+   "gerekce": "Kaynakta yalnız ajans kategorisi ve 10 hedef var; G5 gecti somut adlı hedef ister"
+  },
+  {
+   "itiraz": "C G7 test: 180 günde 11.000 ₺/ay sabit gider ve değişken ~80 bin ₺ eder, tavan aşılabilir",
+   "karar": "kabul",
+   "degisiklik": "C G7 gecti -> test (başlangıç 15k + sabit gider, ilk tahsilat 75-180 gün: 42-81 bin ₺)",
+   "gerekce": "Hesap tavanı en kötü halde aşıyor; aynı yöntemle A G7 de gecti -> test (41-54 bin ₺)"
+  },
+  {
+   "itiraz": "A ilk_tahsilat_gun.min 45; izin/yeniden yazım ve satış döngüsü ile en az 90 gün gerçekçi",
+   "karar": "kabul",
+   "degisiklik": "A ilk_tahsilat_gun min 45 -> 84, max 120 aynı; dayanak güncellendi",
+   "gerekce": "Derinlik C.3 ilk satışı 12. haftada (84 gün) veriyor; 45 gün kaynakla çelişiyor"
+  },
+  {
+   "itiraz": "B fiyat ve baz: kaynakta fiyat yok; baz 1 satış, iyi 3 satış daha gerçekçi",
+   "karar": "kabul",
+   "degisiklik": "B tahsilat baz 60k -> 20k, iyi 120k -> 60k; ödeme adedi ve müşteri baz 1, iyi 3; dayanak güncellendi",
+   "gerekce": "Fiyat kaynaksız varsayım, ücretli talep yok; kaynak desteklemiyorsa düşük gelir seçilir (fiyat 20.000 ₺ varsayım olarak kaldı)"
+  },
+  {
+   "itiraz": "C alti_ay_tahsilat_tl.iyi 350.000 iyimser; döngü 6-10 hafta, ilk tahsilat 75-180 gün; 250.000 yeter",
+   "karar": "kabul",
+   "degisiklik": "C iyi tahsilat 350k -> 250k; iyi ödeme adedi 2 -> 1, iyi müşteri 2 -> 1; dayanak güncellendi",
+   "gerekce": "Persona 2 döngü 6-10 hafta; 6 ayda ikinci peşinat kanıtsız; tek satışın tamamı makul üst uç"
+  },
+  {
+   "itiraz": "Üç seçenek donusum_orani.yuksek iyimser; teklif yanıtı ve görüşme verisi yok, kaynakta kanıt değil varsayım",
+   "karar": "kabul",
+   "degisiklik": "yuksek: A 0,20 -> 0,10; B 0,10 -> 0,08; C 0,20 -> 0,10; A ve C dusuk 0,03; dayanak kanıtsız varsayım notu",
+   "gerekce": "Kaynaktaki %20 yalnız VARSAYIM etiketli; kanıt yokken temkinli alt aralık seçildi"
+  }
+ ]
+}

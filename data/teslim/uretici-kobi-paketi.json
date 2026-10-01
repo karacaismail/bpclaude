@@ -1,0 +1,23 @@
+{
+ "slug": "uretici-kobi-paketi",
+ "secenekler": {
+  "uretici-kobi-paketi-a": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 64,
+   "musteri_basina_aylik_destek_dk": 45,
+   "not": "Yaklaşık 64 saat: 20 rakip analizi, kanal modeli ve simülatör, 2 dilli 5 sayfalık site, açılış planı, revizyon; yapay zekâ ile çıplak 80 saatten indirildi. Destek 90 dk'dan 45'e indi. Varsayım."
+  },
+  "uretici-kobi-paketi-b": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 48,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Yaklaşık 48 saat (5-7 iş günü): pazar büyüklüğü, 20 rakip analizi, kanal marjı, 3 yıllık simülatör, bütçe, 15 slayt, sunum. Destek karttaki 60 dk'dan 30'a indi (sunum sonrası sorular). Varsayım."
+  },
+  "uretici-kobi-paketi-c": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Yaklaşık 40 saat: 10 ürün sayfası, 2 dil içerik girişi, form, kurulum, test ve revizyon; 3 hafta sabit kapsam. Destek 90 dk'dan 30'a indi (ilk katalog güncellemesi teslime sayıldı). Varsayım."
+  }
+ }
+}

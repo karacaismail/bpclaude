@@ -1,0 +1,23 @@
+{
+ "slug": "ddd-renderer",
+ "secenekler": {
+  "ddd-renderer-a": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Kopyası satılan e-kitap eki; müşteriye özel iş yok, teslim 0. Şablon üretimi kalan eforda. Karttaki satış ve destek değerleri korundu."
+  },
+  "ddd-renderer-b": {
+   "satis_basina_kurucu_saati": 1.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Kopyası satılan şablon paketi; müşteriye özel iş yok, teslim 0. 12 ay güncelleme müşteri başına değil ürün bakımı, kalan eforda. Satış ve destek korundu."
+  },
+  "ddd-renderer-c": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 24,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "3 iş günü sabit teslim, 24 saat; yapay zekâ ile hızlanma gün tabanının altına indirilmedi. Karttaki 36 saat 12 saat görüşme ve teklif, 24 saat teslim olarak ayrıldı. Baz ödeme 0."
+  }
+ }
+}

@@ -1,0 +1,343 @@
+{
+ "slug": "frontend-atlasi",
+ "baslik": "Frontend Atlası (eğitim içeriği)",
+ "ozet": "Türkçe, statik bir frontend eğitim ve referans sitesi (160 ders, 24 laboratuvar). Ücretsiz site trafik getirir; para, siteyi üreten kitin, laboratuvar paketinin ve eğitmen lisansının satışından gelir. Site yayında değil, ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "160 ders sayfası ve 160 canlı önizleme, 24 çalışır laboratuvar (Astro tabanlı statik site)",
+   "16 aşamalı üretim prompt seti, ders sözleşmesi, kabul ölçütleri ve kapsam JSON dosyaları",
+   "Salt okunur kod incelemesi sonucu yeşil; CI kalite akışı hazır",
+   "7.500 kelimelik çok dilli arayüz rehberi (kaynak artıkları temizlenecek)",
+   "Fiyat taslağı: 349 / 899 / 2.990 / 9.900 ₺ (KDV dahil)"
+  ],
+  "yok": [
+   "Yayın: uzak depo, alan adı ve canlı site yok",
+   "Bağımsız doğrulanmış ders sayısı 0 (kaynakların çoğu açılmadı)",
+   "Ödeme altyapısı, fatura düzeni, satış sayfası ve kit lisans metni yok",
+   "Hedef eğitmenlerin isim listesi ve ödeme niyeti kaydı yok",
+   "Gerçek cihaz (iOS Safari, Android) doğrulaması yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Ücretsiz site arama trafiği çeker; gelir kit (899 ₺), laboratuvar paketi (349 ₺), eğitmen lisansı (2.990 ₺) ve kurum lisansı (9.900 ₺/yıl) satışından gelir. İlk 12 ay baz gelir yaklaşık 173 bin ₺; küçük ama pazarlamasız bir bahis.",
+  "gpt": "Alıcı hipotezi frontend eğitmeni; ilk ücretli çıktı dar bir 'kaynaklı ders + laboratuvar + değerlendirme' birimi. Geniş platform ya da abonelik, tekrar kullanım görülmeden önerilmiyor; talep, gelir ve ödeme doğrulanmadı.",
+  "ayrisma": "Claude hacimli, arama destekli, çok paketli bir ürün satışı kurar. GPT, tek alıcı ve tek dar çıktıyla başlayıp ödeme ve tekrar talebini önce ölçmeyi, geniş ürünü sonraya bırakmayı ister.",
+  "birlesik": "Alıcı eğitmen. Önce eğitmene kit ve lisans satışı denenir, ödeme niyeti ölçülür. Ücretsiz site kanıt ve trafik varlığıdır, tek başına gelir getirmez. Hizmet birimi ikinci seçenek olarak sınanır."
+ },
+ "analist_gorusu": "En gerçekçi yol eğitmen lisansı ve kitin kurucu satışıyla başlamak: tek satış 8 paket satışına eşit ve arama trafiğine bağlı değil. Kurum lisansı döngüsü 6 aya sığmıyor; seçenek yapılmadı.",
+ "secenekler": [
+  {
+   "id": "frontend-atlasi-a",
+   "ad": "Eğitmen lisansı ve AI ile Eğitim Sitesi Kiti",
+   "tur": "içerik",
+   "musteri": "Türkçe frontend kursu veren eğitmen, bootcamp ve kurs üreticisi (kendi müfredat sitesi olmayan)",
+   "is": "Kendi markasıyla, ders sözleşmesine uygun ve laboratuvarlı bir müfredat sitesini 2-3 haftada üretmek",
+   "tetikleyici": "Yeni dönem müfredatının Notion ve belgelerde elle yeniden yazılması; öğrencilere canlı laboratuvar verme isteği",
+   "teklif": "Kit (prompt seti, sözleşme, şablon, kılavuz, video) ve eğitmen lisansı: öğrencilere kullanım, kendi alan adında yayın, 90 gün e-posta desteği",
+   "fiyat": "Kit 899 ₺, eğitmen lisansı 2.990 ₺ (KDV dahil); ilk 10 eğitmene kurucu fiyatı 1.990 ₺; 14 gün iade",
+   "kanal_birincil": "Udemy ve YouTube'da Türkçe frontend kursu olan 30 eğitmene LinkedIn bağlantısı ve yanıt sonrası e-posta; canlı site ve 20 dakikalık demo",
+   "kanal_yedek": "Kodluyoruz ve Türkiye Yazılımcılar Topluluğu Discord sunucuları, GitHub Türkçe kaynak listeleri, kurucunun mevcut eğitim programı ilişkileri",
+   "ilk_adim": "Hedef eğitmen listesini (30 kişi) çıkarmak, siteyi yayına almak ve satış sayfası ile ödeme yolunu kurmak",
+   "ilk_kapsam": "Mevcut siteden türeyen kit v1 (ZIP, uyarlama kılavuzu, 60 dakikalık ekran kaydı) ve sabit kapsamlı lisans metni; 20 ders dış doğrulamalı",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Ders metni özgün, bağımlılıklar MIT/Apache; kit kullanım hakkı lisans metni yok, açık kaynak depo kararı bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Cayma istisnası, KDV oranı, e-Arşiv ve ticari ileti izni mali müşavir ve hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ve Lemon Squeezy yolu belli ama hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (eğitmen); 30 kişilik liste henüz yazılmadı, yalnız birkaç mevcut ilişki var"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal ve ilk adım adlı; Discord, GitHub ve mevcut ilişkiler yedek"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan efor yaklaşık 60 saat (3 hafta); ilk satış plana göre 4-5. haftada"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 12.400 ₺ nakit; tavan 50.000 ₺ altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı kiti alır; lisans sabit kapsam ve sabit fiyat. Uyarlama özel iş sayılmaz, 90 gün e-posta ile sınırlı"
+    }
+   },
+   "kapi_duzeltme": "G1: kullanım hakkı metnini ve depo kararını kurucuyla netleştir. G2: mali müşavir teyidi. G3: Shopier hesabı aç, 1 test ödemesi yap. G4: 30 eğitmenin adını listele.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 2492,
+    "degisken_maliyet_tl": 150,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 12400,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 60,
+     "max": 90
+    },
+    "ilk_tahsilat_gun": {
+     "min": 28,
+     "max": 84
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 45,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 749,
+     "baz": 3156,
+     "iyi": 16600
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 1,
+     "baz": 3,
+     "iyi": 15
+    },
+    "alti_ay_musteri": {
+     "kotu": 1,
+     "baz": 3,
+     "iyi": 15
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "Net 2.492 ₺ lisans = 2.990/1,20. Baz: ödeyen müşteri ve 30 kişilik liste yok, bu yüzden 1 kurucu fiyatlı lisans (1.658 ₺) + 2 kit (749 ₺ x2) = 3.156 ₺. Kötü 1 kit; iyi 5 lisans + 10 kit. Dönüşüm plan C.5 varsayımı (görüşmeden %10-30), kanıt yok. Sabit gider: alan adı, muhasebe payı, e-Arşiv. Başlangıç nakdi planın en düşük kümülatif nakit noktası (12,4 bin ₺)."
+   },
+   "deney": {
+    "varsayim": "Eğitmenler kendi müfredat sitesi için kiti ve lisansı bu fiyatla ödemeye razı",
+    "yontem": "30 eğitmene LinkedIn ve yanıt sonrası e-posta; 20 dakikalık ekran demosu; kurucu fiyatlı lisansı yazılı teklifle sun, ön ödeme iste",
+    "sure_gun": 28,
+    "maliyet_saat": 30,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "28 günde en az 3 eğitmen görüşmesi ve 1 ödenmiş lisans ya da yazılı onay",
+    "birakma_olcutu": "30 temasta 0 görüşme ya da 3 görüşmede 0 fiyat kabulü",
+    "sonraki_dilim": "Kit v1 paketleme ve 20 derslik ikinci örnek site (uyarlanabilirlik kanıtı)"
+   },
+   "etiketler": {
+    "segment": "Frontend eğitmeni, bootcamp, kurs üreticisi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Astro, TypeScript, MDX, kodlama ajanı promptları",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 2, 5, 7 ve 8. bölüm: 160 ders, 24 laboratuvar, doğrulanmış ders 0, ödeyen müşteri 0. Plan 7.2: 30 eğitmen listesi henüz çıkmadı. Derinlik belgesi B.2: eğitmen en kolay ulaşılan, rakipsiz beachhead. GPT dosyası: alıcı hipotezi eğitmen, ödeme talebi doğrulanmadı. Rakip: Astro tema paketleri 99-199 $, Notion şablonları 29-79 $."
+  },
+  {
+   "id": "frontend-atlasi-b",
+   "ad": "Laboratuvar alıştırma paketi (öğrenenlere, arama ile)",
+   "tur": "içerik",
+   "musteri": "Frontend öğrenen: kariyer değiştiren, öğrenci, junior; portföy için çalışan laboratuvar arayan",
+   "is": "Mülakat ve portföy için 24 laboratuvarı görev, çözüm ve kabul ölçütüyle çalışıp kanıt üretmek",
+   "tetikleyici": "Bir bileşeni ne zaman seçeceğini aratması; iş başvurusu ve mülakat öncesi portföy ihtiyacı",
+   "teklif": "24 laboratuvar görevi, çözümü, kabul ölçütü ve portföy şablonu; ders sayfalarından ve videolardan satın alınır",
+   "fiyat": "349 ₺ (KDV dahil), 9 $ yurt dışı; bireysel kit 899 ₺; 14 gün iade",
+   "kanal_birincil": "Google aramasında 160 ders ve 24 laboratuvar sayfası; ders altı paket kutusu; Shopier satış sayfası",
+   "kanal_yedek": "YouTube laboratuvar videoları, Kodluyoruz ve Türkiye Yazılımcılar Topluluğu Discord, LinkedIn, GitHub Türkçe kaynak listeleri",
+   "ilk_adim": "Siteyi yayına almak, Search Console'u doğrulamak, Shopier satış sayfasını ve ödemeyi kurmak",
+   "ilk_kapsam": "24 görev, çözüm ve kabul ölçütü (MD/PDF) ile satış sayfası; ders altı kutular; ilk 20 ders dış doğrulamalı",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Çözümler ve ders metni özgün; açık kaynak depoda paket ücretsiz görünür, hak ve lisans metni kararı bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Dijital içerik KDV oranı, cayma istisnası ve e-Arşiv mali müşavirle teyit edilmeli; KVKK aydınlatma metni yazılacak"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ve Lemon Squeezy seçildi, hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (öğrenen) ama isim listesi yok; alıcılar dağınık, topluluk kanallarından aranacak"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal arama ve ders sayfaları, yedek topluluk ve video; ilk adım adlı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Efor yaklaşık 50 saat; ilk satış arama indekslenmesine bağlı (7-17. hafta), indeksleme süresi ve arama hacmi ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 8.000 ₺ (alan adı, 20 ders doğrulama); tavan altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı dosyaları alır; kapsam sabit, fiyat sabit"
+    }
+   },
+   "kapi_duzeltme": "G1: lisans ve depo kararı. G2: mali müşavir teyidi. G3: Shopier test ödemesi. G4: ilk 20 öğrenen adayı. G6: yayına al, Search Console ile indeksleme süresini ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 291,
+    "degisken_maliyet_tl": 23,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 35,
+     "beklenen": 50,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 49,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 0.1,
+    "musteri_basina_aylik_destek_dk": 5,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 1455,
+     "baz": 3492,
+     "iyi": 11640
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 5,
+     "baz": 12,
+     "iyi": 40
+    },
+    "alti_ay_musteri": {
+     "kotu": 5,
+     "baz": 12,
+     "iyi": 40
+    },
+    "donusum_orani": {
+     "dusuk": 0.003,
+     "yuksek": 0.01
+    },
+    "dayanak": "Net 291 ₺ = 349/1,20 (plan 6. bölüm). Site yayında değil, arama hacmi ölçülmedi; trafik 8-12 haftada oluşur ve paket 7-8. haftada çıkar. %0,3 dönüşümle 12 satış yaklaşık 4.000 ziyaret ister (plan 6. ay varsayımı 4.000/ay). Baz 12, kötü 5, iyi 40 (plan baz hızı). Dönüşüm varsayım, kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Öğrenenler ücretsiz dersler varken 349 ₺'lik çözümlü laboratuvar paketi için ödeme yapar",
+    "yontem": "Siteyi yayına al; 6 ders sayfasının altına paket kutusu koy; Discord'da 2 hafta cevap verip laboratuvarı paylaş; ön satış sayfası aç",
+    "sure_gun": 42,
+    "maliyet_saat": 40,
+    "maliyet_tl": 900,
+    "basari_olcutu": "42 günde 500+ ders sayfası ziyareti ve en az 3 paket satışı",
+    "birakma_olcutu": "1.000 ziyarette 0 satış",
+    "sonraki_dilim": "24 laboratuvarın tamamı ve 4 laboratuvar videosu"
+   },
+   "etiketler": {
+    "segment": "Kariyer değiştiren ve junior frontend öğrenen",
+    "kanal_turu": "içerik",
+    "teknoloji": "Astro statik site, Shopier",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 3 ve 5. bölüm: Patika 260 bin kayıt, BTK Akademi 2,75 milyon kullanıcı; öğrenenin ödeme isteği düşük, ücretsiz çok seçenek var. Plan 8: baz 6 ayda 40 paket planı arama trafiğine bağlı; Türkçe frontend arama hacmi ölçülmedi. Derinlik belgesi B.1: öğrenen segmenti ulaşılabilir ama bilet küçük. Ödeyen müşteri 0, sitede ödeme yok. Site yayında değil; arama kanalı bugün ölçülmüş sinyal vermiyor."
+  },
+  {
+   "id": "frontend-atlasi-c",
+   "ad": "Eğitmene sabit kapsamlı ders ve laboratuvar üretimi",
+   "tur": "hizmet",
+   "musteri": "Frontend eğitmeni ya da ajans prompt sahibi; kendi dersini kaynaklı, laboratuvarlı ve değerlendirmeli yayına alamıyor",
+   "is": "Tek bir ders, bir laboratuvar ve kabul ölçütlü değerlendirmeyi tutarlı, kaynaklı ve yayına hazır üretmek",
+   "tetikleyici": "Yeni kurs ya da modül tarihi; promptlardan tutarlı ders ve laboratuvar çıkaramama",
+   "teklif": "Eğitmenin konusu için kaynaklı bir ders, bir laboratuvar ve değerlendirme; kabul ölçütüne göre teslim, tek revizyon turu",
+   "fiyat": "4.800 ₺ (KDV dahil), havale ve e-Arşiv; kabule bağlı; kapsam dışı istek ayrı teklif",
+   "kanal_birincil": "Udemy ve YouTube'da Türkçe frontend kursu olan eğitmenlere LinkedIn ve yanıt sonrası e-posta; canlı site örnek ders",
+   "kanal_yedek": "Kodluyoruz ve Türkiye Yazılımcılar Topluluğu Discord, kurucunun mevcut eğitim programı ilişkileri, GitHub",
+   "ilk_adim": "Anonim bir örnek ders ve laboratuvar çıktısı hazırlamak; tek sayfalık kapsam ve kabul sözleşmesi yazmak",
+   "ilk_kapsam": "Bir ders, bir laboratuvar, 5 maddelik kabul ölçütü ve kaynak tablosu; tek revizyon; 10 iş günü teslim",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Üretilen çıktının mülkiyeti ve eğitmenin kendi kaynaklarının hakları sözleşmeyle yazılmalı; kit hakları kurucuda ama metin yok"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Hizmet sözleşmesi, KDV ve e-Arşiv için mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-Arşiv yolu belli; fatura entegrasyonu ve ilk fatura denenmedi"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; hedef eğitmen listesi yazılmadı, yalnız birkaç mevcut ilişki var"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal ve ilk adım adlı; yedek kanallar var"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Satılabilir kapsam için yaklaşık 25 saat; ilk tahsilat 3-11 hafta"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 4.000 ₺ (alan adı, mali müşavir); tavan altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kapsam ve revizyon sınırı yazılı değil; her eğitmenin konusu ayrı içerik ve doğrulama işi"
+    }
+   },
+   "kapi_duzeltme": "G1-G3: sözleşme ve fatura teyidi. G4: eğitmen listesi. G8: tek ders, tek laboratuvar, tek revizyon sınırını yazılı paket yap.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 4000,
+    "degisken_maliyet_tl": 700,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 4000,
+    "kalan_efor_saat": {
+     "min": 15,
+     "beklenen": 25,
+     "max": 40
+    },
+    "ilk_tahsilat_gun": {
+     "min": 21,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 10,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 8000,
+     "iyi": 16000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "Net 4.000 ₺ = 4.800/1,20; fiyat varsayım: planın Armut bandı (1.000-11.000 ₺ kurumsal eğitim talebi) alt-orta; plan bu birimi fiyatlamıyor, GPT dosyası fiyat vermiyor. Baz 2 satış (planın 6 ayda 2 eğitmen lisansı hızına eşit). Değişken: doğrulayıcı 300 ₺ ve API, komisyon yok (havale). Dönüşüm varsayım, kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Bir eğitmen tek ders ve laboratuvar üretimi için ön ödeme yapar",
+    "yontem": "Anonim örnek çıktıyı 10 eğitmene göster; ilgi gösterene tek sayfalık kapsam ve kabul ölçütü ver; ön ödemeli teklif iste",
+    "sure_gun": 21,
+    "maliyet_saat": 20,
+    "maliyet_tl": 0,
+    "basari_olcutu": "21 günde 1 yazılı teklif kabulü ya da ön ödeme",
+    "birakma_olcutu": "10 gösterimde 0 teklif talebi",
+    "sonraki_dilim": "Tekrar talebi görülürse 5 derslik modül paketi; yoksa kite dön"
+   },
+   "etiketler": {
+    "segment": "Frontend eğitmeni, ajans prompt sahibi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Astro, MDX, kodlama ajanı",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyası (frontend prompt paketi): alıcı hipotezi eğitmen, ilk ücretli sonuç kaynaklı ders+laboratuvar+değerlendirme; fiyat, satış ve talep yok. Claude planı bu birimi fiyatlamıyor, 10-12 saatlik haftalık kurucu zamanı ve kit odaklı. Armut kurumsal eğitim talepleri 1.000-11.000 ₺ (plan 5. bölüm). Ödeyen müşteri 0."
+  }
+ ]
+}

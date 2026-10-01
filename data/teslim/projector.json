@@ -1,0 +1,23 @@
+{
+ "slug": "projector",
+ "secenekler": {
+  "projector-a": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "E-kitap kopyası, müşteriye özel iş yok; yazım emeği kalan eforda. 5 dk yalnız satış sonrası destek. Teslim saati 0."
+  },
+  "projector-b": {
+   "satis_basina_kurucu_saati": 20,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "2 günlük atölye 16 saat artı karttaki yaklaşık 24 saat hazırlık; tam fiyatlı sabit paket. Satış 20 saat karttaki gibi korundu; hazırlık kalan eforla çakışabilir, varsayım."
+  },
+  "projector-c": {
+   "satis_basina_kurucu_saati": 25,
+   "teslim_saat_odeme_basina": 24,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "30 dokümanlık sabit kapsam: içe aktarma, rapor, portal ve dışa aktarma için 24 saat (kartta 16-32 saat aralığı); uzman kontrolü taşeron, sayılmadı. Satış 25 ve destek 60 korundu."
+  }
+ }
+}

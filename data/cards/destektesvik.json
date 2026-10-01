@@ -1,0 +1,344 @@
+{
+ "slug": "destektesvik",
+ "baslik": "DestekTeşvik (destek ve teşvik uygunluk platformu)",
+ "ozet": "KOBİ ve mali müşavirlerin hangi KOSGEB, TÜBİTAK ve kalkınma ajansı desteğine uygun olduğunu resmi kaynağa ve tarihe bağlı kurallarla gösteren yazılım. Motor ve testler hazır; program verisi doğrulanmamış, ödeyen müşteri ve ücretli rapor yok.",
+ "bugun": {
+  "var": [
+   "Kural motoru, kiracı izolasyonlu veri modeli, arayüz ve CI çalışıyor; 260 test geçtiği bildiriliyor",
+   "Yalnız 3 program verisi var; üçü de uzman doğrulaması bekliyor",
+   "Danışmanlık için 8 bölümlü rapor iskeleti ve 2.990 TL fiyat hipotezi yazılı",
+   "Strateji korpusu geniş: personalar, kanal envanteri, 90 günlük takvim, hukuk taslağı",
+   "TÜBİTAK 1501 ve 1507 ikinci çağrılarının tarihleri belli (26 Ekim, 11 Kasım 2026)"
+  ],
+  "yok": [
+   "Ödeyen müşteri, ücretli rapor, imzalı pilot ya da niyet mektubu yok",
+   "Uzman doğrulamalı program yok; sözleşmeli uzman yok",
+   "Fiyat sayfası, ödeme, e-arşiv, yayın öncesi operasyonel hazırlıklar yok",
+   "Herkese açık anonim ön kontrol ve sunucu tarafı program sayfaları yok",
+   "Arama hacmi ölçülmedi; operasyonel hazırlık eksikleri var",
+   "Üçüncü taraf ilişkilerin ve hak sahipliğinin yazılı netleşmesi yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Plan, program sayfaları ve ücretsiz ön kontrolle gelen KOBİ'ye elle üretilen 2.990 TL uzman onaylı rapor, sonra mali müşavir portföy paketi ve oda/OSB paketi önerir; 12 ay baz geliri yaklaşık 432 bin TL.",
+  "gpt": "İlk ödenebilir iş arama motoru değil; 3-15 kişilik danışman ofisinin firma profilini uzman onaylı, sürümlü program şartlarına karşı yeniden değerlendirmesidir. Test fiyatı 4.000 TL/ay, 20 dosya.",
+  "ayrisma": "Claude KOBİ'ye tek seferlik rapor ve arama trafiğiyle başlar; GPT ilk alıcıyı danışman ofisi yapar, aboneliği hizmetten sonra düşünür. Fiyat ve ilk alıcı farklı; ikisi de uzman doğrulanmış veriyi şart koşar.",
+  "birlesik": "Ortak hüküm: kod değil doğrulanmış veri eksik; ilk para elle teslim edilen, uzman onaylı, sabit kapsamlı çıktıdan gelir. Otomatik hibe vaadi ve doğrulanmamış program satışı yapılmaz."
+ },
+ "analist_gorusu": "En gerçekçi yol 1501/1507 kapanışlarına bağlı, elle teslim edilen sabit fiyatlı uzman onaylı rapordur; portföy ve kurumsal paketler önce bu çıktının ödenebildiğini kanıtlamalı.",
+ "secenekler": [
+  {
+   "id": "destektesvik-a",
+   "ad": "Uzman onaylı ön değerlendirme raporu (KOBİ)",
+   "tur": "hizmet",
+   "musteri": "Ar-Ge yapan teknoloji KOBİ'si ve 10-249 çalışanlı imalatçı; karar veren kurucu ya da finans sorumlusu",
+   "is": "Şirketine hangi KOSGEB, TÜBİTAK ya da ajans programının uygun olduğunu, eksik koşulu ve son tarihi kaynaklı öğrenmek",
+   "tetikleyici": "TÜBİTAK 1501 (26 Ekim) ve 1507 (11 Kasım 2026) çağrı kapanışları; yatırım kararı öncesi uygunluk sorusu",
+   "teklif": "48 saatte teslim, 5-8 programlık, kaynak ve tarihli gerekçeli, uzman kontrollü PDF rapor; başvuru yazılmaz, garanti verilmez",
+   "fiyat": "2.990 TL tek seferlik (KDV hariç); rapora başlanmadan tam iade",
+   "kanal_birincil": "Üniversite TTO'ları ve teknopark bültenleri (YÖK listesindeki 45 TTO); program ve çağrı sayfaları henüz yok",
+   "kanal_yedek": "Kurucunun mevcut KOBİ tanıdıkları, LinkedIn paylaşımları ve mali müşavir oda webinarları",
+   "ilk_adim": "1501 ve 1507 için 2 sözleşmeli uzmanla iki programı doğrula, rapor şablonunu yaz, 10 KOBİ'ye teklif gönder",
+   "ilk_kapsam": "Elle üretilen rapor: 4-5 doğrulanmış program (1501, 1507, KOSGEB Girişimci ve Kapasite Geliştirme), form, havale ya da sanal POS, e-arşiv; yazılım arayüzü gerekmez.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda ve depo açık; lisans seçimi, hakların şirkete devri ve hak beyanı yazılı değil"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Bilgi ve analiz hizmeti konumu, KVKK metinleri, sorumluluk sınırı avukat ve mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşiv ya da sanal POS yolu belli; hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; kurucu ağında üç KOBİ anılıyor ama 20 kişilik isim listesi yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Birincil kanal TTO ve teknopark bültenleri; hedef kurum seçilmedi, program sayfaları yok, ilk adım bu kanaldan geçmiyor"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 6 hafta ama uzman sözleşmesi ve satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "test",
+     "not": "Başlangıç nakdi ve 3 aylık gider toplamı 50.000 TL sınırında; bazı giderler ertelenirse altına iner"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit 8 bölümlü rapor, sabit fiyat; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "G1-G4: beyanı yazdır, lisansı seç, hesap aç, 20 isim yaz. G5: 5 TTO ya da teknoparkı adlandır. G6-G7: 4 program ve havale; bazı giderleri 6. aya ertele.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 2990,
+    "degisken_maliyet_tl": 2090,
+    "sabit_gider_aylik_tl": 8000,
+    "baslangic_nakit_tl": 30000,
+    "kalan_efor_saat": {
+     "min": 80,
+     "beklenen": 120,
+     "max": 200
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 14950,
+     "iyi": 59800
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 5,
+     "iyi": 20
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 5,
+     "iyi": 20
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.08
+    },
+    "dayanak": "Plan bölüm 5, 6, 8: fiyat 2.990 TL; rapor maliyeti uzman 1.500 + analist 500 + komisyon 90 = 2.090 TL (bölüm 6); sabit 8.000 TL/ay (altyapı, AI, pazarlama payı). Plan baz ay 4-6 için 10 rapor der; ödeme gecikmesi ve ölçülmemiş dönüşümle 5 alındı. İyi: 20 rapor."
+   },
+   "deney": {
+    "varsayim": "Kapanışa 4-6 hafta kala bir KOBİ kurucusu kaynaklı, uzman onaylı rapora 2.990 TL öder",
+    "yontem": "2 programı uzmanla doğrula, 10 KOBİ'ye (tanıdık, TTO ve teknopark üzerinden) rapor teklifi gönder, ilk 3 raporu elle teslim et, ödemeyi havale ile al.",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 12000,
+    "basari_olcutu": "10 tekliften en az 2 ödeme (5.980 TL) ve en az 1 TTO yanıtı",
+    "birakma_olcutu": "10 teklifte ödeme yok ve itiraz 'ücretsiz kaynak yeter' ise fiyat ve kapsam yeniden tasarlanır",
+    "sonraki_dilim": "10 rapora çık, 4 programı 15'e çıkar, izleme aboneliğini ve danışman pilotunu aç"
+   },
+   "etiketler": {
+    "segment": "Ar-Ge KOBİ'si, imalatçı KOBİ",
+    "kanal_turu": "ortak",
+    "teknoloji": "Python, kural motoru, PDF rapor",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan bölüm 1 ve 4: danışman 3.000-50.000 TL, Teşvik Rotası analiz 500-2.600 TL, TeşvikAra 839 TL/ay, resmi portal ücretsiz ama kişiselleştirmiyor. Derinlik dosyası A.8: 1507 üst limiti 3 milyon TL. Plan bölüm 16: ödeyen müşteri 0, 3 program doğrulanmamış. GPT v1: seed verisi uzman doğrulanmış hizmet olarak sunulamaz."
+  },
+  {
+   "id": "destektesvik-b",
+   "ad": "Mali müşavir ve danışman portföy tarama paketi",
+   "tur": "yazılım ürünü",
+   "musteri": "30-100 mükellefi olan mali müşavir bürosu ve 3-15 kişilik teşvik danışmanlığı ofisi",
+   "is": "Çağrı açılınca portföydeki şirketlerin hangi programa uygun olduğunu tek seferde, kaynaklı ve markalı raporla çıkarmak",
+   "tetikleyici": "Ocak-Şubat ve Temmuz-Ağustos çağrı dönemleri; mükelleflerden gelen 'bize uygun mu' soruları",
+   "teklif": "Aylık portföy taraması: 25 şirkete kadar toplu değerlendirme, değişiklik uyarısı, büro logolu 10 rapor/ay; 8 hafta ücretsiz pilot",
+   "fiyat": "2.990 TL/ay (25 şirket); 5.990 TL/ay (100 şirket); GPT testi 4.000 TL/ay, 20 dosya",
+   "kanal_birincil": "Mali müşavir odalarının eğitim komisyonları ve TESMER webinarları (İSMMMO, İZSMMMO gibi); çeyrekte 2 oda, 60 dakika",
+   "kanal_yedek": "Teşvik danışmanlarına LinkedIn ve herkese açık profil üzerinden tek mesajla ortaklık teklifi",
+   "ilk_adim": "İSMMMO ya da İZSMMMO eğitim komisyonuna 'portföyünüzü tarayın' webinarı için başvur",
+   "ilk_kapsam": "Tek kiracıda CSV ile 25 şirketlik toplu tarama, 8-15 doğrulanmış program, büro logolu PDF özet; rol ve çok kullanıcı yok.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; lisans, hak devri ve hak beyanı yazılı değil"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Mükellef verisi için veri işleyen protokolü ve meslek sınırı (bilgi ve analiz hizmeti) teyit bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Aylık tahsilat için sanal POS ya da havale yolu belli; hesap açılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; alıcı çevresi hak sahipliği ve ilişki netleşmeden kullanılamaz; isim listesi yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal oda eğitim komisyonları ve TESMER (İSMMMO, İZSMMMO adlı), yedek danışman ortaklığı; başvuru henüz yapılmadı"
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Toplu tarama ve 8-15 program ile kalan efor yaklaşık 10 hafta; 8 haftalık pilot nedeniyle ilk tahsilat 4-6 ay"
+    },
+    "G7": {
+     "durum": "kaldi",
+     "not": "Uzman doğrulaması, hukuk metni ve 4-6 aylık sabit gider toplamı 50.000 TL tavanını aşıyor"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit paket: şirket sayısı ve rapor kotası yazılı; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "G6-G7: A'nın raporunu önce sat, toplu taramayı yalnız 8 program ve CSV ile aç; uzman ücretini ilk ödemelere bağla; pilotu 4 haftaya indir.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 2990,
+    "degisken_maliyet_tl": 1000,
+    "sabit_gider_aylik_tl": 6000,
+    "baslangic_nakit_tl": 55000,
+    "kalan_efor_saat": {
+     "min": 160,
+     "beklenen": 210,
+     "max": 280
+    },
+    "ilk_tahsilat_gun": {
+     "min": 100,
+     "max": 180
+    },
+    "satis_basina_kurucu_saati": 10,
+    "musteri_basina_aylik_destek_dk": 24,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 26910
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 9
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 5
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "Plan bölüm 5, 6, 8: 2.990 TL/ay, doğrudan maliyet 1.000 TL; plan bölüm 8 ilk danışman ödemesini 7. aya koyar, bu yüzden 6 ayda baz 0. İyi: derinlik C.3 ödeme 5. aydan, 2 büro, 9 abone-ay. Pilot dönüşümü planda %40 hedef ve kanıtsız; %5-15 alındı."
+   },
+   "deney": {
+    "varsayim": "Bir mali müşavir portföy taramasına ve markalı rapora ayda 2.990 TL öder",
+    "yontem": "Bir oda webinarı ver, 2 büro ile 25 şirketlik CSV pilotu kur, çıktıyı elle üret, 4. haftada ücret teklifini ve markalı raporun müşteriye gidip gitmediğini sor.",
+    "sure_gun": 60,
+    "maliyet_saat": 60,
+    "maliyet_tl": 15000,
+    "basari_olcutu": "2 büro pilotu, bunlardan en az 1'i ücretli pakete geçer; en az 5 markalı rapor müşteriye gider",
+    "birakma_olcutu": "10 büro görüşmesinden 3'ten az pilot kabulü ya da hiçbir büro ücretli pakete geçmezse durdur",
+    "sonraki_dilim": "Pilot sonrası rol ve çok kullanıcı özelliklerini yaz, 10 ödeyen büro hedefine git"
+   },
+   "etiketler": {
+    "segment": "Mali müşavir bürosu, teşvik danışmanı",
+    "kanal_turu": "ortak",
+    "teknoloji": "Python, kural motoru, toplu tarama",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan bölüm 3 ve 5: 127 binden fazla mali müşavir, danışman paketi 2.990-9.990 TL/ay; birim ekonomi LTV/CAC yaklaşık 11 (varsayım). Derinlik dosyası D.8 #17: toplu tarama 4 gün, tam rol modeli 20 gün. GPT v1: çok müşterili ofis alanı önerilen geliştirme, bugün tek yetkili. Ödeyen büro 0."
+  },
+  {
+   "id": "destektesvik-c",
+   "ad": "Oda ve OSB üye taraması sponsorluk paketi",
+   "tur": "hizmet",
+   "musteri": "Ticaret ve sanayi odası, organize sanayi bölgesi ya da teknopark yönetimi (üyelerine hizmet sunan kurum)",
+   "is": "Üyelerine çağrı öncesi uygunluk taraması sunmak ve üye memnuniyetini ölçülebilir kılmak",
+   "tetikleyici": "Çağrı dönemi öncesi üye bilgilendirmesi; kurumun yıllık üye hizmeti ve bütçe planı",
+   "teklif": "20 üyelik 8 haftalık pilot, ardından yılda 2 toplu tarama, üyelere %30 rapor indirimi ve kurum işbirliği görünürlüğü",
+   "fiyat": "60.000 TL/yıl sponsorluk peşin ya da 9.990 TL/ay kurumsal paket (KDV hariç)",
+   "kanal_birincil": "Doğrudan kurucu satışı: oda ve OSB yönetimine pilot teklifi (hedef kurumlar henüz adlandırılmadı)",
+   "kanal_yedek": "Üniversite teknoloji transfer ofisleri ve teknopark yönetimlerine ücretsiz 20 firmalık tarama teklifi",
+   "ilk_adim": "Beş oda, OSB ya da TTO seç, her birine bir sayfalık pilot teklifi gönder",
+   "ilk_kapsam": "20 üyelik pilot: davet bağlantısıyla üye profili, anonim toplu özet, ücretli rapor indirimi; SSO, API ve portal yok.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; lisans, hak devri ve hak beyanı yazılı değil; kurum logosu kullanım izni gerekir"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kurum logosu ile resmi onay izlenimi riski ve üye verisi için KVKK protokolü teyit bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Kuruma havale ve e-fatura yolu belli; hesap açılmadı; kurum satın alma kuralları bilinmiyor"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (oda, OSB, TTO); sayıları doğrulanmadı, kurucunun adlandırılmış listesi yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanal kurucu satışı; hedef kurumlar adlandırılmadı, yedek olarak TTO fikri var"
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Kurumsal karar 3-6 ay; plan ilk anlaşmayı 6-12. aya koyar; kalan efor yaklaşık 9 hafta"
+    },
+    "G7": {
+     "durum": "test",
+     "not": "Nakit 47.000-62.000 TL aralığında; ilk tahsilat 4-9 ay; tavan sınırında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kurum özel logo, portal ve rapor isteyebilir; kapsam sınırı yazılı değil"
+    }
+   },
+   "kapi_duzeltme": "G6: yalnız ücretsiz pilotu 6 haftada başlat, para beklentisini A'nın üye raporlarından al. G4-G5: 5 kurumu adlandır. G8: pilot kapsamını tek sayfada sabitle.",
+   "finans": {
+    "satis_tipi": "yıllık peşin",
+    "net_fiyat_tl": 60000,
+    "degisken_maliyet_tl": 6000,
+    "sabit_gider_aylik_tl": 6000,
+    "baslangic_nakit_tl": 35000,
+    "kalan_efor_saat": {
+     "min": 120,
+     "beklenen": 180,
+     "max": 260
+    },
+    "ilk_tahsilat_gun": {
+     "min": 120,
+     "max": 270
+    },
+    "satis_basina_kurucu_saati": 40,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 60000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "Plan bölüm 5, 8, 11: kurum 9.990 TL/ay ya da 60.000 TL/yıl; sabit 6.000 TL/ay (altyapı 3.000 + AI araçları 3.000, pilot aynı ürünü kullanır). Kurumsal anlaşma 12. ay, iyimser 6. ay; karar 3-6 ay (derinlik B.3), baz 0; iyi tek sponsorluk. Dönüşüm kanıtsız."
+   },
+   "deney": {
+    "varsayim": "Bir oda ya da OSB üyelerine ücretsiz tarama için bütçe ayırır ve 60.000 TL öder",
+    "yontem": "5 kuruma pilot teklifi, kabul eden ile 20 üyelik 8 hafta tarama; üyelerin ücretli rapor alımı ve kurumun yenileme niyeti yazılı sorulur.",
+    "sure_gun": 70,
+    "maliyet_saat": 50,
+    "maliyet_tl": 5000,
+    "basari_olcutu": "En az 1 kurum pilotu kabul eder ve pilotta en az 5 ücretli rapor satılır",
+    "birakma_olcutu": "5 teklifte kabul yok ya da pilotta 5'ten az rapor çıkarsa kurumsal kanal ertelenir",
+    "sonraki_dilim": "Kurumsal paketi sabit kapsamlı yaz, ikinci kurum ve yıllık sözleşme görüşmesi"
+   },
+   "etiketler": {
+    "segment": "Oda, OSB, teknopark yönetimi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Python, kural motoru, anonim toplu özet",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan bölüm 5 ve 11: kurumsal paket kurgusu, pilot 20 üye, başarı ölçütü 5 ücretli rapor, anlaşma 12. ay. Derinlik dosyası B.3 persona 5: TTO bütçesi yok, üniversite satın alma 3-6 ay; oda ve OSB sayıları bu çalışmada doğrulanmadı. GPT v1: OSB ve teknopark erişim ilişkisi doğrulanmadı. Ödeyen kurum 0."
+  }
+ ]
+}

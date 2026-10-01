@@ -1,0 +1,238 @@
+{
+ "slug": "aicommandcard",
+ "baslik": "AiCommandCard bileşeni",
+ "ozet": "Kapalıyken arama çubuğu, açılınca komut kartları ve AI sorgu alanına dönüşen React bileşeni. İki yol var: kurucunun QR menü ürününde AI asistan katmanı ve sabit kapsamlı entegrasyon hizmeti. Bileşen %85 hazır, lisansı yok, ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Çalışan React bileşeni: 14 parça, Storybook hikayeleri, 14 test, 320 px düzeni",
+   "Herkese açık depo ve GitHub Pages demosu (40 commit)",
+   "Sohbet çekmecesinin yerine geçen tek AI yüzeyi, başka bir iş projesinde kullanıldı",
+   "Kurucunun QR menü ürününde ₺0/₺499/₺999 plan yapısı"
+  ],
+  "yok": [
+   "LICENSE dosyası: bugün açık kaynak değil",
+   "Paket derlemesi ve npm yayını (paket özel işaretli)",
+   "Bileşenin yazılı hak ve lisans belgesi",
+   "Menü ürününde AI entegrasyonu ve AI geçidi (%0)",
+   "Ödeme isteği kanıtı, pilot ya da referans"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Bileşen tek başına para getirmez, ücretsiz rakipler var. Para yolu menü ürününde ₺999 plan katmanı olarak AI asistan; Pro şablon paketi önerilmez. Baz senaryoda ilk yükseltme 9. ayda.",
+  "gpt": "Alıcı hipotezi AI arayüzü geliştiren ekip. Ücretli sonuç tek bileşenin kabul, ret, yükleme, hata durumlarıyla teslimi; kit, uyarlama ya da hizmet. Talep, fiyat ve ödeme doğrulanmadı.",
+  "ayrisma": "Claude çalışması asıl değeri kurucunun kendi ürününe gömülü AI özelliğinde görüyor; GPT çalışması dış geliştirici alıcıya dar, sabit çıktılı kit veya hizmet satmayı öneriyor.",
+  "birlesik": "Bileşeni önce lisanslayıp paketlemek, ücretli ilk adımı dar kapsamlı hizmet olarak denemek, AI asistanı pilotla sınamak. Geniş platform ya da abonelik tekrar kullanım görülmeden kurulmaz."
+ },
+ "analist_gorusu": "En gerçekçi yol menü ürününde AI asistan: müşteri hazır, kanal ürün içi. Ama 80-208 saatlik iş ve hukuk teyitleri var. Hizmet paketi daha küçük ve hızlı sınanır; birbirlerini besler.",
+ "secenekler": [
+  {
+   "id": "aicommandcard-a",
+   "ad": "QR menü ürününde AI asistan (₺999 plan katmanı)",
+   "tur": "yazılım ürünü",
+   "musteri": "Kurucunun QR menü ürünündeki ₺499 planlı kafe ve restoran sahipleri; 3-10 şubeli yerel zincirler",
+   "is": "Menü açıklaması, yorum yanıtı ve fiyat kararı için yazı yükünü azaltmak; yapay zekanın hiçbir şeyi onaysız değiştirmemesi",
+   "tetikleyici": "Yeni sezon menüsü, olumsuz yorum, zam kararı, 7 günlük denemenin sonunda kota dolması",
+   "teklif": "Üst çubuktaki kartla AI taslak: önizle, onayla, geri al. Günlük 50 istek ₺999 planda dahil; ₺499 planda 7 gün deneme",
+   "fiyat": "₺999/ay plan (₺500 fark); ek kota +1.000 istek ₺199/ay (varsayım)",
+   "kanal_birincil": "Menü ürününün uygulama içi duyurusu ve 5 pilot kafeyle yüz yüze görüşme",
+   "kanal_yedek": "Kahve zinciri şubeleri (3 ay ücretsiz deneme; zincir sözleşmesi ayrı üst planda, ek gelir olmayabilir); haftalık 'AI'nın yazdıkları' e-postası",
+   "ilk_adim": "5 pilot kafeye ücretsiz 1 ay: karta menü açıklaması önerisi ve yorum yanıtı taslağı ekle, kabul oranını ölç",
+   "ilk_kapsam": "Kart paneli üst çubuğuna girer; iki eylem (menü metni, yorum yanıtı); önizle-onayla-geri al; günlük kota; AI geçidi ve kullanım günlüğü",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Bileşenin hak ve lisans durumu belgelenecek. Menü ürünü kurucunun şirketinde"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Yorum verisi yurt dışı modele gidebilir; aydınlatma metni ve hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Sanal POS ile plan ödemesi var ya da açılıyor; AI planı için akış test edilmedi"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (mevcut ürün hesapları, pilot kafeler, kahve zinciri) ama ücretli hesap sayısı doğrulanmadı ve 20 hedef alıcının isim listesi belgede yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Uygulama içi duyuru, pilot ziyaret; yedek e-posta özeti ve zincir ilişkisi adlı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 80-208 saat; belgeler arasında fark var. Üst uçta 8 haftayı aşar"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi hukukçu ve pilot model maliyeti ile yaklaşık 11 bin ₺, tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı özelliği alır; plan ve kota sabit"
+    }
+   },
+   "kapi_duzeltme": "Bileşenin hak ve lisans durumunu yazılı belgele; hukukçuya yorum verisi akışını onaylat; ilk iki eylemle kapsamı 120 saatte sabitle; ücretli hesapları sayıp 20 hedef alıcıyı ismen listele.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 500,
+    "degisken_maliyet_tl": 82,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 11000,
+    "kalan_efor_saat": {
+     "min": 80,
+     "beklenen": 120,
+     "max": 208
+    },
+    "ilk_tahsilat_gun": {
+     "min": 105,
+     "max": 210
+    },
+    "satis_basina_kurucu_saati": 2,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 2500
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 5
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "Plan 5-6. bölüm: ₺500 plan farkı; değişken maliyet = model 60 + sanal POS %4,29 + 0,25 ₺ (varsayım). Plan baz senaryosu ilk yükseltmeyi 9. ayda veriyor, bu yüzden 6 ay baz 0. İlk tahsilat: 80-208 saat iş, haftada 8 saatle 70-182 gün, artı pilot ve deneme. İyi: 2 hesap, 5 ödeme. Dönüşüm %20 kanıtsız."
+   },
+   "deney": {
+    "varsayim": "Pilot kafe sahibi AI taslağını haftada en az bir kez kullanır ve ₺500 farkı ödemeye razıdır",
+    "yontem": "5 pilot kafe, 30 gün, 2 eylem açık; haftalık kullanım, kabul edilen taslak oranı ve yükseltme isteği ölçülür; ardından fiyat sorulur",
+    "sure_gun": 45,
+    "maliyet_saat": 60,
+    "maliyet_tl": 1500,
+    "basari_olcutu": "Haftalık aktif kullanım en az %50, kabul oranı %60, 5 pilottan en az 1 yazılı yükseltme niyeti",
+    "birakma_olcutu": "Haftalık kullanım %20 altı ya da hiç ödeme niyeti yok",
+    "sonraki_dilim": "Fiyat teklifi ve ne-olur eylemleri; genele açılış; ek kota satışı"
+   },
+   "etiketler": {
+    "segment": "Kafe ve restoran sahibi, küçük zincir",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "React, TypeScript, Laravel, model API",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 5. bölüm: ₺0/₺499/₺999 planlar, AI asistan ₺999 farkı. Plan 6: marj yaklaşık %86, model maliyeti varsayım. Derinlik dosyası D.8: ilk iki eylem 80-120 saat, tam L1 yaklaşık 208 saat. Ödeyen müşteri yok; ücretli hesap sayısı doğrulanmadı. Pilot ve zincir mevcut ilişki. Kahve zincirine plan 3 ay ücretsiz deneme öngörür; zincir sözleşmesi ayrı üst plandadır. Pilot kafelere 1 ay ücretsiz. 6 ay içinde ödeme beklenmez: plan baz 9. ay."
+  },
+  {
+   "id": "aicommandcard-b",
+   "ad": "Sabit kapsamlı AiCommandCard entegrasyon paketi",
+   "tur": "hizmet",
+   "musteri": "Yönetim paneline AI erişimi ekleyen ajanslar, serbest React geliştiricileri ve 3-10 kişilik ürün ekipleri",
+   "is": "Sohbet balonu yerine erişilebilir, kabul-ret-yükleme-hata durumlu tek AI yüzeyini 1 haftada kendi paneline bağlatmak",
+   "tetikleyici": "Ürün sahibinden gelen 'panele AI ekleyelim' talebi; müşteri demosu öncesi teslim süresi baskısı",
+   "teklif": "Kartı müşterinin React paneline bağla, 4 durum, klavye turu, 320 px kontrolü, 1 revizyon; 5 iş günü, sabit fiyat",
+   "fiyat": "12.000 ₺ tek seferlik (yaklaşık 250 $, varsayım); kapsam dışı iş ayrı teklif",
+   "kanal_birincil": "GitHub deposu ve Storybook demosu; r/reactjs gönderisi; Kommunity React Turkey topluluğu (1.025 üye)",
+   "kanal_yedek": "React Türkiye Telegram grubu (122 üye), Turkish Developers Discord (5.889 üye); LinkedIn'de 30 saniyelik kart videosu; kişisel ağdaki ajanslar",
+   "ilk_adim": "Lisansı onaylat, paketi derle, demo ve fiyatlı paket sayfasını yayımla; 20 ajans ve ekibe kısa mesaj gönder",
+   "ilk_kapsam": "Lisans ve paket derlemesi (5-6 gün), tek sayfalık paket tanımı, kabul listesi, örnek teslim; hizmet elle teslim edilir",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Bileşenin hak ve lisans durumu belgelenecek. Bağımlılıklar MIT. Lisans seçimi kullanıcı onayı bekler"
+    },
+    "G2": {
+     "durum": "gecti",
+     "not": "Kişisel veri işlemez; bileşen veri çekmez. Hizmet faturası mevcut düzenle kesilir"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli; hizmet ihracı vergi işleyişi mali müşavirle doğrulanmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli ama 20 isimlik liste yok; gerçek ağ belgelerde yazmıyor"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Telegram grubu, r/reactjs, Discord ve LinkedIn adlı; ilk adım tanımlı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 48 saat (2-3 hafta) ama satış döngüsü ölçülmedi ve ilk tahsilat 120 güne uzanıyor; süre kanıtı yok"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi 1.500 ₺: alan adı ve hesap açılışı"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam, sabit fiyat, bir revizyon; özel geliştirme paket dışı"
+    }
+   },
+   "kapi_duzeltme": "Fikri mülkiyet teyidini al; 20 hedef ajans ve ekibi ismen listele; mali müşavirle hizmet faturası yolunu doğrula; ilk 3 görüşmeyle satış döngüsünü ölç.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 12000,
+    "degisken_maliyet_tl": 250,
+    "sabit_gider_aylik_tl": 100,
+    "baslangic_nakit_tl": 1500,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 48,
+     "max": 70
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 24000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 2
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.05
+    },
+    "dayanak": "Fiyat kaynaksız varsayım: GPT dosyası rakam vermiyor, rakipler ücretsiz. Kalan efor D.8 tablosundan (5-6 gün). 20 mesajda %1-5 dönüşüm beklenen 0,2-1 satış; talep kanıtsız olduğundan baz 0, iyi 2 satış (24.000 ₺)."
+   },
+   "deney": {
+    "varsayim": "Bir ajans ya da ekip, ücretsiz paket varken bile hazır entegrasyon için sabit fiyat öder",
+    "yontem": "Paket sayfası ve demo yayımla; 20 ajans ve ekibe mesaj; ilgi gösterenle 15 dakikalık görüşme; yazılı teklif ve ön ödeme iste",
+    "sure_gun": 21,
+    "maliyet_saat": 15,
+    "maliyet_tl": 0,
+    "basari_olcutu": "20 mesajdan en az 3 yanıt ve 1 yazılı teklif kabulü ya da ön ödeme",
+    "birakma_olcutu": "20 mesajdan 0 yanıt ve yayınlardan sıfır ilgi",
+    "sonraki_dilim": "Ücretli şablon seti ya da ajans lisansı; yalnız tekrar talep görülürse"
+   },
+   "etiketler": {
+    "segment": "Ajans ve React ekipleri",
+    "kanal_turu": "topluluk",
+    "teknoloji": "React, TypeScript, Storybook",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "GPT dosyası: ilk ücretli sonuç tek bileşen, sınırlı kit ya da hizmet; talep ve ödeme doğrulanmadı. Claude planı: Pro şablon paketi önerilmez, ücretsiz rakipler var; npm indirme sayıları talep değil. Derinlik dosyası D.8: lisans ve derleme 5-6 gün. Ödeyen müşteri yok."
+  }
+ ]
+}

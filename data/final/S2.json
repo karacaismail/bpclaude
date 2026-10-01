@@ -1,0 +1,665 @@
+{
+ "kriter": "S2",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 1,
+   "k": 1,
+   "g": "20'den çok rakip 175-250 TL bandında, POS paketleri QR menüyü ücretsiz veriyor; tescilli veri ya da ağ etkisi yok, birkaç haftada kopyalanır."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Merkezden onaylı yayın ve şube istisnası henüz yazılmadı; rakipler sınırsız şubeyi ucuza, POS'lar ücretsiz veriyor. Yalnız biriken şube verisi sınırlı geçiş maliyeti yaratır."
+  },
+  "zabuno-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek modüllük uyarlama hizmeti; herhangi bir ajans ya da geliştirici aynı işi yapar, biriken veri ya da entegrasyon yok."
+  },
+  "parselq-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Açık veriden rapor; Endeksa ve Eder Mi benzerini satıyor. Tek fark elle girilen emsal ve analist kontrollü imar özetinin zamanla arşive dönüşmesi; bugün arşiv yok."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kart şablonu ve açık veri kolay kopyalanır, portal benzer kartı ücretsiz ekleyebilir; herkese açık parsel sayfaları ve QR döngüsü yalnız zayıf bir birikim sağlar."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kaynak ve tarih izli, uzman onaylı dosya imar bilgisi ister ama elle hizmettir; stok, veri sahipliği ya da entegrasyon yok, yöntem kopyalanabilir."
+  },
+  "destektesvik-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kamu kaynakları açık; danışmanlar, Teşvik Rotası ve TeşvikAra benzer işi yapıyor. Uzman doğrulamalı program verisi küçük fark, bugün 3 program ve doğrulanmamış."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kaynağa ve tarihe bağlı kural motoru ile büroda biriken portföy verisi mevzuat bilgisi ve geçiş maliyeti yaratır; program verisi henüz doğrulanmadı, kanıt varsayım."
+  },
+  "destektesvik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı kural motoru ve program verisi; kurum sözleşmesi ve üye profilleri bir miktar veri bağı kurar. Henüz anlaşma yok, ilişki yavaş kurulur."
+  },
+  "asgari-iscilik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "SGK asgari işçilik kuralları ve 12 kuruş senaryosu mevzuat uzmanlığı ister; taranan hakediş ve bordro araçları bu hesabı yapmıyor. Kod henüz yok, kurallar kamuya açık."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı mevzuat uzmanlığı ve parametre güncelleme düzeni; mükellef verisi platformda birikir. Hakediş araçları bu hesabı yapmıyor ama büyük satıcılar ekleyebilir; kod yok."
+  },
+  "asgari-iscilik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Elle ve uzman gözüyle dosya kontrolü; danışmanlar bugün dosya başı aynı işi yapıyor. Mevzuat bilgisi dışında yazılım, veri ya da entegrasyon üstünlüğü yok."
+  },
+  "zincir-danismanligi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Paketin kendisi ajanslarca kopyalanır; tek fark bu zincir için hazır denetim, pazar analizi ve mevcut erişim. Tescilli veri ya da entegrasyon yok."
+  },
+  "zincir-danismanligi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "İlişkisiz zincirlere denetim raporu; şablon ve yöntem kolay kopyalanır, ajanslar ücretsiz denetim veriyor, biriken veri yok."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı zincir planı: merkezden yayın yazılımı yok, rakipler sınırsız şubeyi 2.499 TL'ye, POS'lar ücretsiz veriyor; yalnız şube verisi sınırlı geçiş maliyeti yaratır."
+  },
+  "kar-pusulasi-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Hesap motoru MIT lisanslı açık kaynak, 15'ten çok ücretsiz rakip araç var, oranlar kamuya açık; birkaç haftada kopyalanır."
+  },
+  "kar-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Motor açık kaynak ve panel kopyalanır; ancak müşteri profilleri ve rapor geçmişi panelde birikerek danışmana sınırlı geçiş maliyeti yaratır. Panel kodu henüz yok."
+  },
+  "kar-pusulasi-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Şablon dosyadan elle rapor; ücretsiz hesaplayıcılar, Karpanel ve yapay zekâ aynı analizi verir, biriken veri ya da entegrasyon yok."
+  },
+  "titanlar-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Müfredat ve canlı ders kolay kopyalanır; üniversite sertifika programları, kayıtlı kurslar ve ücretsiz akademiler aynı kitleye hitap ediyor, tescilli varlık yok."
+  },
+  "titanlar-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Tablo şablonu ve kâr hesabı; ücretsiz hesaplayıcılar, özel ders verenler ve ajanslar aynı işi yapıyor, tescilli veri yok."
+  },
+  "titanlar-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Atölye içeriği ve sunumlar kolay kopyalanır; ücretsiz bakanlık etkinlikleri ve oda akademileri ikame, referans ya da sertifika ortaklığı henüz yok."
+  },
+  "kurumsal-site-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Statik Astro kalıbı; kurucu yüzlerce sayfayı yapay zekâ ile birkaç günde üretti, rakip ajans da aynı hızla kopyalar. Canlı referans dışında veri ya da ağ üstünlüğü yok."
+  },
+  "kurumsal-site-b": {
+   "p": 1,
+   "k": 1,
+   "g": "8-10 sayfalık giriş sitesi; serbest çalışanlar 10-25 bin TL'ye yapıyor, site kurucular ve yapay zekâ ikame; savunulacak varlık yok."
+  },
+  "kurumsal-site-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kaynak kod alıcıya teslim edilir ve herkese açık depoda durur; şablon kolay kopyalanır, veri ya da ağ etkisi yok."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Rakip analizi, simülatör ve vitrin site ajans ve yapay zekâ ile haftalar içinde yeniden üretilir; oran tablosu kamuya açık, tescilli veri yok."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Kârlılık modeli ve 20 rakip tablosu açık oranlarla kurulur; ajans denetimi ya da yapay zekâ birkaç haftada aynısını üretir."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Statik katalog ve teklif formu sitesi; ürün verisi müşteriye ait, ajans ve şablon araçları aynı işi yapar."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kod GPL olacak ve kopyalanabilir; koruma KVKK metin güncelliği, güncelleme ve destekten gelir. Dizindeki KVKK eklentileri 10 kurulumun altında; eklenti henüz yazılmadı."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 2,
+   "k": 1,
+   "g": "GPL kural motoru kopyalanır, ödeme kuruluşlarının resmi eklentileri taksiti ekleyebilir; birden çok sağlayıcının oran modülünü güncel tutmak sınırlı entegrasyon farkı."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Mevcut ücretsiz araçlarla elle kurulum; herhangi bir ajans ya da serbest geliştirici birkaç günde aynı hizmeti verir."
+  },
+  "qral-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Rakiplerin hepsi ücretsiz (Tab Copy, Obsidian Web Clipper); kopyalama şablonu ve QR birkaç haftada yazılır, veri ya da ağ üstünlüğü yok."
+  },
+  "qral-b": {
+   "p": 1,
+   "k": 1,
+   "g": "A4 sınıf QR sayfası basit bir özellik; ücretsiz QR araçları ve rakip uzantılar kolayca ekler, Türkçe içerik dışında fark yok."
+  },
+  "qral-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ekip şablonu elle kurulur; yer imi ve ücretsiz yapay zekâ aynı kaynak dökümünü verir, kolay kopyalanır."
+  },
+  "frontend-atlasi-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Kit prompt seti ve şablondan oluşur, site ücretsiz yayımlanır; kodlama ajanıyla haftalar içinde yeniden üretilir. Astro tema ve Notion şablonları rakip."
+  },
+  "frontend-atlasi-b": {
+   "p": 1,
+   "k": 1,
+   "g": "24 laboratuvar görevi ve çözümü kolay kopyalanır; Patika ve BTK Akademi gibi ücretsiz kaynaklar bol, yapay zekâ benzer alıştırmayı üretir."
+  },
+  "frontend-atlasi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek ders ve laboratuvar üretim hizmeti; yöntem ve promptlar kopyalanabilir, biriken veri ya da entegrasyon yok."
+  },
+  "karar-kitabi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Karar yöntemleri kamuya açık bilgi; eğitim şirketleri ve yapay zekâ aynı yarım günlük atölyeyi kurabilir, tescilli içerik ya da veri yok."
+  },
+  "karar-kitabi-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Yöntem içeriği kamuya açık, ücretsiz bloglar ve yapay zekâ benzer çalışma kâğıdını üretir; birkaç haftada kopyalanır."
+  },
+  "karar-kitabi-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Üç worksheet ve memo dışa aktarma; Notion şablonları 29-79 USD'ye benzerini sunuyor, yapay zekâ ile kolay kopyalanır."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yapay zekâ slayt ve modeli kolay üretir; fark tek projede çalışan 106 metrikli doğrulayıcı, canlı Sheets hattı ve doğrulanmış teşvik envanteri. Şablon henüz genel değil."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "On kritik rakamın tutarlılık raporu; yapay zekâ ve elektronik tablo aynı kontrolü yapar, yöntem birkaç haftada kopyalanır."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Parametreli doğrulayıcı ve şablon bir miktar araç farkı verir; kurum ilişkisi henüz yok, yapay zekâ şablonları ve ücretsiz araçlar farkı daraltır."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 1,
+   "g": "iHMK CRM, Ahoraclario ve Sys-R benzer panel sunuyor; ülke şablonları ve panelde biriken dosya verisi sınırlı geçiş maliyeti yaratır. Kod hiç çalıştırılmadı."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ülke ve vize türüne göre kaynaklı kural kaydı ile Sheet eşlemesi sınırlı fark; kurallar kamuya açık, kayıt henüz yok ve kopyalanabilir."
+  },
+  "vize-operasyon-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Ücretsiz evrak listeleri ve ChatGPT aynı kontrolü yapıyor; Atlys ve iVisa gibi oyuncular Türkiye'ye uyarlayabilir, tescilli veri yok."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yaklaşık 99 modüllü, 215 test dosyalı teslim hattı ve kanıt alışkanlığı sınırlı fark; ajanslar ve yapay zekâ araçları hızla yaklaşır, tescilli veri yok."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı hat; kabul koşuluna bağlı makbuz tek fark. Superset, Kestra, LangSmith ve Temporal aynı alanda; uyumluluk ve başarısızlık külliyatı henüz yok."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı teslim hattı ajans markasıyla satılır; hat sınırlı fark ama ajans ilişkisi dışında bağ yok, müşteri doğrudan gelebilir."
+  },
+  "strateji-simulatoru-a": {
+   "p": 1,
+   "k": 0,
+   "g": "B seçeneğiyle aynı tek dosyalık 28 kurallı motor; veri tarayıcıda kalır, kohort verisi birikmez. White-label paket birkaç haftada kopyalanır."
+  },
+  "strateji-simulatoru-b": {
+   "p": 1,
+   "k": 1,
+   "g": "32 soruluk kural motoru ve PDF rapor birkaç haftada kopyalanır; ChatGPT benzer değerlendirmeyi ücretsiz üretir, veri avantajı yok."
+  },
+  "strateji-simulatoru-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Aynı araç ve bir saatlik yorum görüşmesi; yöntem kopyalanır, kurucunun mevcut müşteri ilişkisi dışında üstünlük yok."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Çekirdek açık kaynak olacak, yaklaşık 3.500 satır Python; ccusage, CodexBar ve Stats ücretsiz, üretici sorunu yerleşik olarak düzeltebilir."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Aynı açık çekirdek üstünde kurulum hizmeti; uyumluluk listesi ve teşhis tarifi kopyalanır, yerleşik düzeltme ya da ücretsiz araçlar değeri siler."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kabul API'si birkaç orkestratöre yerleşirse entegrasyon ve ağ etkisi doğar; bugün hiçbir entegrasyon yok ve yaklaşık 20 satırlık çağrı kolay kopyalanır."
+  },
+  "actionplan-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Çekirdek açık kaynak olacak; task-master ve spec-kit ücretsiz, Pro şablonlar kolay çoğaltılır, veri ya da ağ etkisi yok."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Sürümlü kapsam ve kanıt kaydı ajansta birikirse sınırlı bağ oluşur; bugün elle teslim, Linear, Plane ve GitHub kontrolleri benzerini ekleyebilir."
+  },
+  "actionplan-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Dört Türkçe şablon ve kısa video; ücretsiz İngilizce seçenekler ve yapay zekâ sohbetleri aynı işi görür, günler içinde kopyalanır."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Kod yalnız görsel iskelet; ccusage ve CodexBar gibi ücretsiz açık kaynak rakipler aynı günlükleri okuyor, birkaç haftada eşlenir."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Kullanım dosyalarından elle aylık rapor; ccusage çıktısı ve bir tablo betiğiyle kolay kopyalanır, veri üstünlüğü yok."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek bekleme kartı ve olay adaptörü; ücretsiz grafik ve pano bileşenleri çok, özel veri ya da entegrasyon yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 1,
+   "k": 0,
+   "g": "E-kitap ve prompt kataloğu; bileşen açık kaynak yayımlanacak, yapay zekâ içeriği özetler ve birkaç haftada benzeri yazılır."
+  },
+  "ai-first-tasarim-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Atölye ve kurulum kurucunun kıdemine dayanır; token hattı ve bileşen açık yayımlanacak, kıdemli serbest çalışanlar aynı kurulumu yapar."
+  },
+  "ai-first-tasarim-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek form ve tablo için kabul dosyası şablonu; ajans kendi şablonunu yapay zekâ ile birkaç günde çıkarır, veri avantajı yok."
+  },
+  "aicommandcard-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Model sağlayıcıları ve rakip menü araçları aynı yapay zekâyı ekleyebilir; yalnız ürün içi menü verisi ve onay geçmişi sınırlı fark. Entegrasyon henüz yok."
+  },
+  "aicommandcard-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Herkese açık depodaki bileşenin entegrasyon hizmeti; ücretsiz rakip bileşenler var, herhangi bir React geliştiricisi bir haftada yapar."
+  },
+  "atonota-denetim-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Site Kit, Yoast ve Rank Math benzer puan kartını ekleyebilir; Türkçe çerez ve KVKK kontrolü ile tarama geçmişi küçük fark. Eklenti henüz yok."
+  },
+  "atonota-denetim-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Logolu PDF otomasyonu kolay kopyalanır, bakım araçları 1-2 USD'ye rapor veriyor; 25 sitenin tarama geçmişi ve Türkçe kontroller sınırlı bağ yaratır."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kabul ve teslim kaydı biriktikçe ajansa özgü veri bağı doğabilir; bugün ürün yok, akış elle yürür ve bakım araçları benzer kaydı ekleyebilir."
+  },
+  "b2b-bilesenler-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Ürün sayfası ve hareket blokları; GSAP ücretsiz, yapay zekâ ve ajanslar bloğu kısa sürede kopyalar. Sipariş ve teklif alan bilgisi dışında koruma yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek ürünün iki mobil görünümü kaynak koduyla teslim edilir; ajans ya da yapay zekâ birkaç haftada aynısını üretir."
+  },
+  "b2b-bilesenler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Şablon kodu alıcıya gider; Metronic 49 USD ve ücretsiz şablonlar var, GSAP ücretsiz, veri ya da ağ etkisi yok."
+  },
+  "banner-post-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Şablonlar Canva ile kopyalanır; tek fark görselin Zabuno'daki menü ve fiyat verisine bağlı güncel kalması. Modül kodu henüz sıfır."
+  },
+  "banner-post-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Hizmet Canva ile üretilir; herhangi bir ajans ya da serbest tasarımcı aynı paketi verir, veri ya da entegrasyon avantajı yok."
+  },
+  "banner-post-c": {
+   "p": 1,
+   "k": 0,
+   "g": "CSV'den toplu görsel üretimi hazır tasarım araçlarında var; renderer yok, elle ya da betikle teslim kolay kopyalanır."
+  },
+  "karar-sihirbazi-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Koşullu form motoru MIT olarak duyurulmuş; Tally ücretsiz, ScoreApp 39-149 USD. Kural tabanlı öneri birkaç haftada kopyalanır, tescilli veri yok."
+  },
+  "karar-sihirbazi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Bir saatlik çalıştay ve beş seçimlik karar dosyası kişiye bağlı uzman emeği; yöntem ve soru bankası açık, kopyalanması kolay."
+  },
+  "karar-sihirbazi-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Motor açık kaynak, ücretli fark yalnız uyarlama emeği; Tally gibi ücretsiz form araçları aynı keşif formunu kurar."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Üretim çekirdeği 2-3 günde yeniden yazılabiliyor; Pitch, Beautiful.ai ve yapay zekâ sunum araçları marka kütüphanesi sunuyor, tescilli veri yok."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Aynı çekirdek, 2-3 günde yeniden yazılır; ajans kendi şablon hattını kurabilir, çok marka deposu henüz yok."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek CSV'den beş slayt; basit betik ve yapay zekâ sunum araçlarıyla kolay kopyalanır, tescilli veri yok."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Demo birkaç günde yazıldı; yapay zekâ üreticileri ve ajanslar benzer tıklanabilir demoyu aynı hızla çıkarır, veri ya da mevzuat üstünlüğü yok."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Aynı demo kiti ajans markasıyla; ajans kendi şablonunu çıkarabilir, yapay zekâ üreticileri yaklaşır, koruma yok."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Deterministik çakışma kuralları ve PDKS biçim eşlemeleri zamanla birikir; bugün arka uç yok, bulut İK ürünleri ve Excel yakın, alan ağı belgelenmedi."
+  },
+  "ddd-renderer-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Üç şablon ve kontrol listesi kolay kopyalanır; Structurizr ve LikeC4 ücretsiz, yapay zekâ benzer mimari şablonu üretir."
+  },
+  "ddd-renderer-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Çekirdek açık, şablonlar kopyalanır; en yakın rakip LikeC4 ücretsiz, fark yalnız şablon ve ADR bütünlüğü."
+  },
+  "ddd-renderer-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Üç günlük değerlendirme kurucunun alan bilgisine dayanır; model ve rapor şablonu kopyalanır, bağımsız mimarlar aynı hizmeti verir, referans yok."
+  },
+  "devpanel-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Desenler MIT ile açılacak; Refine ve shadcn ücretsiz, kodlama ajanları onay ve denetim günlüğü bileşenlerini günler içinde üretir."
+  },
+  "devpanel-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Form şeması ve React dışa aktarımı; ücretsiz form kütüphaneleri güçlü, dışa aktarıcı henüz yok, kodlama ajanları hızla kopyalar."
+  },
+  "devpanel-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Sahte verili 31 ekranlık şablon; Metronic 49 USD, Refine ve shadcn ücretsiz, şablon günler içinde kopyalanır."
+  },
+  "e-menum-a": {
+   "p": 1,
+   "k": 1,
+   "g": "120 bin satırlık testli çekirdek emek ister ama kaynak ajansa kurulur; rakip QR menü betikleri 19-89 USD'ye satılıyor, tescilli veri ya da ağ yok."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Onaylı çok şubeli yayın elle yürür, akışın çalıştığı kanıtsız; rakipler çok şubeli yönetim sunuyor. Şube verisi ve onay geçmişi biriktikçe sınırlı geçiş maliyeti oluşur."
+  },
+  "e-menum-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Kaynak kod ve belgeler alıcıya teslim edilir; benzer betikler 19-89 USD, tek fark Türkçe iş kuralları."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Pano hücreleri kaynaksız tahmin, özel veri yok; ücretli trend araçları ve yapay zekâ araştırması aynı fırsat listesini üretir."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 1,
+   "k": 1,
+   "g": "İndirilebilir form, istem şablonu ve JSON çoğaltılır; ücretsiz fikir veritabanları ve genel yapay zekâ istemleri paketi kopyalanabilir kılıyor."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Aynı bülten ve paket ile yılda bir saatlik görüşme; çerçeve ve içerik kopyalanır, özel veri yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Denetim kuralları açık standartlardan (ICU, WCAG) gelir; Playwright şablonu ve bulgu dosyası kolay kopyalanır, yapay zekâ benzer raporu üretir."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 1,
+   "k": 1,
+   "g": "60 maddelik liste; ücretsiz W3C ve çeviri aracı blog içerikleri güçlü ikame, yapay zekâ aynı listeyi çıkarır."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Müşterinin CI hattına bağlanan kapı ve fixture seti sınırlı entegrasyon bağı kurar; kurallar açık kaynak olacak, Playwright ve Storybook güçlü ikame, ürün yok."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Yöntem rehberi herkese açık yayımlanacak; teşhis belgesi danışman ya da yapay zekâ ile haftalar içinde üretilir, markasız sürüm ve tescilli veri yok."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Üç görüşme ve beş sayfalık rapor; herhangi bir danışman birkaç haftada aynı raporu çıkarır, veri üstünlüğü yok."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Ekran seti ve backlog yarım ve markasız değil; yöntem açık yayımlanacak, ajanslar ve yapay zekâ benzer seti üretir, entegrasyon ya da veri yok."
+  },
+  "lifeos-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Yöntem içerikleri kamuya açık bilgi, yan panel basit; Momentum, Tabliss ve Infinity ücretsiz ya da ucuz, haftalar içinde kopyalanır."
+  },
+  "lifeos-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Yerel zaman kaydı ve CSV dışa aktarma yaygın bir özellik; mevcut zaman izleyiciler aynı çıktıyı verir, veri kullanıcıda kalır."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Tek rutinli yeni sekme şablonu ve açık çekirdek saatler içinde kopyalanır; ücretsiz rakipler var, veri ya da ağ etkisi yok."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 1,
+   "g": "İki yerel emlak CRM'i aynı fiyat bandında, eşleştirme kural tabanlı ve kopyalanır; ofisin müşteri ve ilan verisi panelde birikir ama dosya olarak alınabilir. Sunucu tarafı yok."
+  },
+  "luquit-b": {
+   "p": 1,
+   "k": 1,
+   "g": "12 bileşenli cam arayüz seti; 6,3 bin yıldızlı ücretsiz rakip ve binlerce bileşenli paketler var, görünüm kolay kopyalanır."
+  },
+  "metaframer-kernel-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Çekirdek AGPL ile açık; yaklaşık 41 bin satırlık negatif test külliyatı ve RLS, audit, outbox birleşimi sınırlı fark. Supabase ve hazır başlangıç kitleri aynı işi çözüyor."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı kit ve test külliyatı, üstüne bir günlük atölye; yerel ilişki sınırlı bağ, kod açık kaynak ve atölye kopyalanabilir."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı çekirdek; yanlış kiracı ve tekrar istek negatif testleri müşteri uygulamasına entegre edilir. OpenFGA, Cerbos ve Temporal alanı kapsıyor, çekirdek hazır değil."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Boşluk verisi kamuya açık RDAP sorgusu; Namelix ve Lean Domain Search ücretsiz, Türkçe okunuş puanı birkaç haftada kopyalanır."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Aynı kamuya açık veri ve ücretsiz rakipler; teslim şablonu ve puan kuralları ajansı bağlamaz, kolay taklit edilir."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Elle RDAP sorgusu ve karşılaştırma dosyası; herkes yapabilir, yapay zekâ ile otomatikleşir, tescilli veri yok."
+  },
+  "projector-a": {
+   "p": 1,
+   "k": 1,
+   "g": "İçerik herkese açık önizleme sitesinde ve açık depoda, yayın kalitesi düşük; ücretsiz İngilizce kaynaklar ve yapay zekâ benzer kitabı üretir."
+  },
+  "projector-b": {
+   "p": 1,
+   "k": 0,
+   "g": "İki günlük atölye; içerik açık ve format kopyalanır, eğitmen itibarı ve referans henüz yok."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Kaynak bağlayıcı ve içe aktarılan külliyat müşteride geçiş maliyeti yaratabilir; GitBook ve ücretsiz Docusaurus aynı portalı kurar, barındırılan arama savunma değil."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Markdown ve Notion şablon paketi; benzer şablonlar pazarda çok, yapay zekâ ile birkaç günde yazılır, veri üstünlüğü yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Aynı şablon on kullanıcılı lisansla; içerik kopyalanır, kuluçka ilişkisi henüz kurulmadı, kalıcı bağ yok."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Künye ve çevirmen notları sitede herkese açık, doğrulanan pay küçük; yorum siteleri ve yapay zekâ benzer listeyi çıkarır."
+  },
+  "signator-a": {
+   "p": 1,
+   "k": 1,
+   "g": "HubSpot ücretsiz, WiseStamp, Exclaimer ve Signitic aynı işi yapıyor; tek fark Türkçe ve KVKK altbilgi kütüphanesi, birkaç haftada kopyalanır."
+  },
+  "signator-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Aynı küresel ve ücretsiz rakipler (Signitic 19 çalışana kadar ücretsiz); toplu CSV üretimi ve barındırılan görsel kolay kopyalanır."
+  },
+  "signator-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Beş kişilik elle imza kurulumu; herhangi bir ajans ya da BT sorumlusu ücretsiz rehberlerle aynı işi yapar."
+  },
+  "volley-tap-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek günde yazılmış basit 1v1 oyun ve elle tema; ajanslar ve yapay zekâ birkaç haftada benzerini çıkarır, veri ya da entegrasyon yok."
+  },
+  "volley-tap-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Basit arcade oyunu birkaç haftada kopyalanır; görünürlük portalın öneri listesine bağlı, marka, veri ya da ağ etkisi yok."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Aynı basit oyun ve görünüm paketi; hızla kopyalanır, marka ya da oyuncu verisi yok."
+  },
+  "woocommnts-a": {
+   "p": 2,
+   "k": 1,
+   "g": "GPL kural motoru kopyalanır, geçit sağlayıcıları ücretsiz sunabilir; dizindeki en büyük rakip tek geçide bağlı, çok geçitli oran güncellemesi sınırlı fark. Kod yok."
+  },
+  "woocommnts-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı eklenti on site lisansıyla; ajansın mağazalarına yayılan oran tablosu küçük bir bağ, kod GPL ve kopyalanabilir."
+  },
+  "woocommnts-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Elle ve betikle tek seferlik yorum göçü; ücretsiz CusRev güçlü alternatif, hizmet kolay kopyalanır."
+  },
+  "egitim-demolari-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Rehber, 20 soru ve cevap anahtarı; yapay zekâ benzer ders paketini üretir, tamamlanmış oynanabilir ürün ya da özgün veri yok."
+  },
+  "egitim-demolari-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Çevik prensip sunumları ve atölye formatı kamuya açık bilgiye dayanır; eğitim sağlayıcılar kolay kopyalar."
+  },
+  "baz-secenekler-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Gün bazlı emek satışı; herhangi bir danışman ya da ajans aynı işi verir. İki mevcut ilişki dışında veri, ürün ya da entegrasyon üstünlüğü yok."
+  },
+  "baz-secenekler-b": {
+   "p": 1,
+   "k": 1,
+   "g": "E-Menum kurulum paketiyle aynı kod tabanı; kaynak ajansa gider, CodeCanyon betikleri 19-89 USD'ye benzerini satıyor, savunma yalnız Türkçe iş kuralı."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Çağrı her girişime açık bir kamu programı; başvuru dosyası savunulabilir bir ürün ya da veri üstünlüğü oluşturmaz."
+  }
+ }
+}

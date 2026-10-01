@@ -1,0 +1,27 @@
+{
+ "eslenen": 110,
+ "kalan": 31,
+ "hukuki_etik_disarida": 3,
+ "gruplar": [
+  {
+   "ad": "Üçüncü taraf paketler ve içerik yönetim sistemleri",
+   "adet": 11,
+   "neden": "Kurucuya ait yazılım değil; iş fikri sayılmaz."
+  },
+  {
+   "ad": "Tanımlanamayan ya da boş klasörler",
+   "adet": 8,
+   "neden": "Ürün kimliği, alıcı ya da kanal belgelerden çıkarılamadı."
+  },
+  {
+   "ad": "Küçük bileşen, taslak ve deneme çalışmaları",
+   "adet": 9,
+   "neden": "Tek başına satılabilir kapsam yok; ödeyecek alıcı tanımlı değil."
+  },
+  {
+   "ad": "Hukuki ya da etik nedenle iş fikri sayılmayanlar",
+   "adet": 3,
+   "neden": "Belgeye alınmadı."
+  }
+ ]
+}

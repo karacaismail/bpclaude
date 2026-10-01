@@ -1,0 +1,344 @@
+{
+ "slug": "lifeos",
+ "baslik": "LifeOS (yeni sekme ve alışkanlık eklentisi)",
+ "ozet": "Aynı fikrin beş kopyası var, hiçbiri mağazada değil. En gerçekçi biçim: ücretsiz yan panel içerik eklentisi 'Günün Framework'ü'; gelir kurucunun Karar Kitabı çalışma kâğıdı paketlerinden gelir. Ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Yan panel eklentisi: günün yöntemi kartı ve gün seçici çalışıyor, 20 yöntem kayıtlı",
+   "Vanilla yeni sekme eklentisi: 12 bileşen, yaklaşık %60 tamam",
+   "React ile yarım kalmış yeniden yazım, yaklaşık %35",
+   "Yerel IndexedDB katmanı ve zaman kaydı temeli",
+   "Rakip fiyat ve kullanıcı verisi toplanmış (masa başı)"
+  ],
+  "yok": [
+   "Mağazada yayın yok, kullanıcı yok",
+   "128 yöntemlik yeniden yazılmış içerik yok (20 kayıt var)",
+   "Uyguladım işareti ve seri arayüzü yok",
+   "Telif gözden geçirmesi tamamlanmadı",
+   "Ödeme hesabı ve ödeme akışı yok",
+   "Yayın öncesi izin listesi sadeleştirilecek"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Bağımsız yeni sekme ürününün gelir tezi yok (12 ayda yaklaşık 2,4 bin USD). Tek anlamlı biçim: ücretsiz günün yöntemi eklentisi, geliri Karar Kitabı paketlerine akıtan huni; hak gözden geçirmesi ön koşul.",
+  "gpt": "Kaynakta kanıtlanan kapsamla sınırlı kalır. Habit için tek rutinli sade şablon, rapor tarafı için ölçüm tutarlılığı; LifeOS için freelancer haftalık çalışma kaydı ve yerel CSV dışa aktarma, ücretli şablon ya da kurulum 300-1000 TL.",
+  "ayrisma": "Claude içerik eklentisini huni yapar ve yeni sekmeyi eler; GPT içerik değil çalışma kaydı ve rapor çıktısını satar, yöntem içeriği ve telif konusuna girmez. Fiyat: paket 149-299 TL, GPT 300-1000 TL.",
+  "birlesik": "İkisi de eklentiyi tek başına abonelik ürünü saymaz; ücretli kısım küçük, sabit kapsamlı bir çıktıdır (paket, şablon ya da kurulum). Önce küçük ücretli çıktı denenir, sunucu ve sync sonra."
+ },
+ "analist_gorusu": "En hızlı ve düşük riskli yol A: eklenti ücretsiz, sabit fiyatlı paket kurucunun kendi kanalından satılır. Beklenti düşük kalmalı; hak gözden geçirmesi bitmeden hiçbir şey yayınlanmaz.",
+ "secenekler": [
+  {
+   "id": "lifeos-a",
+   "ad": "Günün Framework'ü: ücretsiz yan panel ve çalışma kâğıdı paketi",
+   "tur": "eklenti",
+   "musteri": "LinkedIn'de aktif KOBİ sahibi ve yöneticiler; ikincil olarak işletme öğrencileri ve eğitmenler",
+   "is": "Bildiği karar yöntemini (Eisenhower, SWOT, Pareto) gün içinde uygulamak; yönteme ait çalışma kâğıdına tek tıkla geçmek",
+   "tetikleyici": "Karar yorgunluğu, yatırım ya da büyüme kararı dönemi; sınav haftası (öğrenci)",
+   "teklif": "Eklenti ücretsiz ve izinsiz; yöntem başına çalışma kâğıdı paketi (3 yöntem, PDF ve Notion) sabit fiyatla satılır",
+   "fiyat": "199 TL paket (149-299 TL aralığı), KDV hariç; tek seferlik, Shopier ya da havale",
+   "kanal_birincil": "Kurucunun LinkedIn profilinde günlük 'günün yöntemi' gönderisi; Chrome Web Store araması; Karar Kitabı sitesinde kur bağlantısı",
+   "kanal_yedek": "Edge Add-ons, üniversite işletme kulübü grupları, bağımsız eğitmenlere özel bağlantı",
+   "ilk_adim": "10 tanıdık işletme sahibine kapalı pilot; LinkedIn'de 10 günlük yöntem serisi ve tek paket için ön sipariş bağlantısı",
+   "ilk_kapsam": "Tek paket (3 yöntem), 20 yöntemlik yan panel, 3 izin, gizlilik politikası, UTM'li çalışma kâğıdı bağlantısı; 128 yöntem sonra",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; içeriğin hak durumu gözden geçiriliyor; lisans seçilmedi"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Eklenti veri toplamaz; telif okuması, mesafeli satış ve e-Arşiv için hukukçu ve mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ve havale planlı; hesap açılışı ve test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (KOBİ yöneticisi); 20 kişilik isim listesi yok, yalnız 10 tanıdık pilot planlı"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal ve ilk adım adlı; Edge, öğrenci grupları ve eğitmen yolu yedek"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kod işi 40-60 saat; hak gözden geçirmesi süresi iki belgede 2-3 gün ile 4-6 hafta çelişiyor"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 5.500 TL (mağaza kaydı, hukukçu okuması); tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı eklentiyi ve sabit fiyatlı paketi alır; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Önce hak gözden geçirmesi ve hukukçu okuması bitirilir (G1, G2); Shopier hesabı açılıp test ödeme yapılır (G3); 20 kişilik isim listesi yazılır (G4); temizlik süresi tek sayıya indirilir (G6).",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 199,
+    "degisken_maliyet_tl": 6,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 5500,
+    "kalan_efor_saat": {
+     "min": 50,
+     "beklenen": 80,
+     "max": 140
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 1,
+    "musteri_basina_aylik_destek_dk": 5,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 5970,
+     "iyi": 15920
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 30,
+     "iyi": 80
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 30,
+     "iyi": 80
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.03
+    },
+    "dayanak": "Claude planı 11. bölüm: 90. günde 10 paket, 6. ayda aylık yaklaşık 1.500 TL katkı; baz 30 satış x 199 TL. Telif temizliği ve mağaza onayı nedeniyle ilk satış ay 2-4. Kötü: telif gecikmesi, 0 satış. Dönüşüm ziyaretçiden %2 (plan), varsayım."
+   },
+   "deney": {
+    "varsayim": "Yöneticiler günün yöntemi serisinden sonra 199 TL'lik çalışma kâğıdını satın alır",
+    "yontem": "LinkedIn'de 10 günlük günün yöntemi serisi; her gönderide tek ön sipariş bağlantısı (havale ile ödeme); 10 tanıdığa doğrudan mesaj",
+    "sure_gun": 14,
+    "maliyet_saat": 12,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 3 kişi 199 TL öder",
+    "birakma_olcutu": "14 günde 0 ödeme ve 10 mesajda 0 olumlu yanıt",
+    "sonraki_dilim": "Başarılıysa yan paneli 128 yönteme ve mağazaya taşı"
+   },
+   "etiketler": {
+    "segment": "KOBİ yöneticisi ve işletme öğrencisi",
+    "kanal_turu": "içerik",
+    "teknoloji": "Chrome MV3 yan panel, React",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Claude planı bölüm 0, 3.2, 5, 8: bağımsız yeni sekme gelir tezi yok, huni varsayımları 3.000 kullanıcı, tıklama %2,5, satın alma %2 (hepsi varsayım). Derinlik dosyası A.2: acı kanıtı kullanıcı görüşmesi yok. Rakipler Momentum, Tabliss, Infinity ücretsiz ya da ucuz. Ödeyen müşteri 0, görüşme kaydı yok."
+  },
+  {
+   "id": "lifeos-b",
+   "ad": "Freelancer haftalık çalışma kaydı: yerel CSV ve kurulum paketi",
+   "tur": "eklenti",
+   "musteri": "Müşterisine haftalık teslim ve fatura çıkaran bağımsız çalışan; ikincil olarak proje etiketli döküm isteyen küçük ajans",
+   "is": "Tarayıcıdaki etkinliği projeye bağlı, kendi onayladığı haftalık çalışma kaydına çevirip müşteriye izinli CSV özeti vermek",
+   "tetikleyici": "Hafta sonu fatura ya da teslim; müşteri proje yöneticisinin haftalık rapor istemesi",
+   "teklif": "Ücretsiz yerel eklenti; ücretli: sabit kapsamlı şablon ve kurulum paketi (kaynakta yalnız 'şablon ya da kurulum'; proje etiketi, CSV şablonu ve rehber analist önerisi)",
+   "fiyat": "600 TL tek seferlik, KDV hariç (kaynak aralığı 300-1000 TL; orta nokta analist seçimi)",
+   "kanal_birincil": "Chrome Web Store 'yerel haftalık çalışma kaydı dışa aktarma' listesi ve herkese açık sentetik haftalık örnek sayfa",
+   "kanal_yedek": "Freelancer'ın müşteriye verdiği izinli çıktı tarifi; bağımsız çalışan toplulukları (hedef grup henüz adlandırılmadı)",
+   "ilk_adim": "Beş freelancer ile iki haftalık pilot; kendi düzelttikleri haftayı CSV'ye aktarıp müşteriye vermeleri",
+   "ilk_kapsam": "Etkinlik, boşta süre, proje ve saat dilimi kaydı; elle düzeltme ve gerekçe; yerel CSV haftalık dışa aktarma; senkron ve ekip yok",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; bağımlılık lisansları doğrulanmadı; kaynakta çok alan hâlâ yer tutucu"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Çalışma kaydı kişisel veri; izin gerekçesi, KVKK aydınlatması ve gözetim sunulmaması teyit bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yurt dışı freelancer için MoR, yurt içi için sanal POS ya da havale; hesap açılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (freelancer); isim listesi yok, ilişki belgelenmedi"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Mağaza listesi ve örnek sayfa adlı; ama topluluk ya da dizin gibi somut hedef yok"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Süre, boşta ve düzeltme akışı yeniden yazılacak; yaklaşık 5 hafta, satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 1.500 TL (mağaza kaydı, alan adı, hukukçu okuması); tavanın altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kurulum paketinin sınırı yazılı değil; müşteri başına özel istek riski"
+    }
+   },
+   "kapi_duzeltme": "Hak ve lisans taraması yap; paket kapsamını ve fiyatını yazılı sabitle (G8); gizlilik metni ve hukukçu okuması al (G2); ödeme hesabı aç (G3); 20 kişilik freelancer listesi çıkar (G4, G5).",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 600,
+    "degisken_maliyet_tl": 70,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 1500,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 100,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 1800,
+     "iyi": 12000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 20
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 20
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.1
+    },
+    "dayanak": "GPT dosyası: ücretli şablon ya da kurulum 300-1000 TL, 5 freelancer pilotu, 90 günde 3 tekrar kullanım hedefi; ödeme verisi yok. Baz 3 satış x 600 TL (pilot tavanı altı); iyi 20. Dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Freelancer'lar kendi çıktısı müşteri tarafından kabul edilen haftalık CSV için 600 TL öder",
+    "yontem": "5 freelancer ile iki hafta pilot; ikinci hafta aynı dışa aktarma tekrar kullanılırsa kurulum paketi teklifi",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 0,
+    "basari_olcutu": "3 kullanıcı ikinci haftayı da dışa aktarır; en az 1 kişi öder",
+    "birakma_olcutu": "Pilotta 0 tekrar kullanım ya da düzeltme süresi 15 dakikayı aşıyor",
+    "sonraki_dilim": "Başarılıysa şablon karşılaştırmalı hafta ve çok projeli döküm"
+   },
+   "etiketler": {
+    "segment": "bağımsız çalışan ve küçük ajans",
+    "kanal_turu": "pazar yeri",
+    "teknoloji": "Chrome MV3, IndexedDB",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyası: kaynakta zaman ve depolama temeli var, sidepanel alanları yer tutucu; tam ürün hazır değil. Fiyat dayanağı GPT dosyasındaki 300-1000 TL varsayımı. Mevcut zaman izleyici fiyat karşılaştırması araştırılmamış. Claude planı bu zaman izleme kodunu ilk sürümün dışında tutmayı öneriyor. Ödeyen müşteri 0. Hakem: paket kapsamı ve 600 TL kaynakta yazılı değil; yalnız 300-1000 TL aralığı var."
+  },
+  {
+   "id": "lifeos-c",
+   "ad": "Tek rutin yeni sekme şablonu: açık çekirdek ve ücretli kit",
+   "tur": "kod satışı",
+   "musteri": "Bağımsız çalışan rutin takipçisi (alıcı hipotezi); eklenti geliştiricisi operatör, ikincil hipotez",
+   "is": "Çok özellikli araçlar yerine yeni sekmede tek günlük rutini tamamlatan sade, yerel kayıtlı bir başlangıç şablonu almak",
+   "tetikleyici": "Yeni bir eklenti ya da alışkanlık ürünü başlatma anı",
+   "teklif": "Açık çekirdek yalnız tek rutin akışı, ücretsiz; ücretli kit açık çekirdekte olmayan kabul testleri, mağaza gönderim rehberi ve gizlilik metni paketini içerir",
+   "fiyat": "19 USD (912 TL) tek seferlik, KDV hariç; kaynakta fiyat yok, analist varsayımı",
+   "kanal_birincil": "Herkese açık GitHub deposu ve demo; eklenti geliştiricilerinin topluluk gönderileri (hedef grup henüz adlandırılmadı)",
+   "kanal_yedek": "Chrome Web Store ücretsiz sürüm listesi, Product Hunt gönderisi",
+   "ilk_adim": "Beş kopyayı tek depoya indir, tek rutin akışını yaz, yerel saat sınırı ve silme testini geçir, ücretsiz sürümü yayınla",
+   "ilk_kapsam": "Tek rutin, yerel ilerleme kaydı, silme ve gün sınırı testleri, README ve mağaza rehberi; senkron ve rapor yok",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; açık kaynak lisansı kullanıcıyla netleşmedi, bağımlılık lisansları doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Sunucusuz, veri toplamıyor; ama mesafeli satış, iade ve e-Arşiv metinleri hazır değil, teyit bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yurt dışı satış için MoR hesabı planlı, açılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı rolü belirsiz: kaynak freelancer alıcı, geliştirici operatör diyor; tip net değil, liste yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "GitHub ve topluluk fikri var; somut dizin ya da grup adı yazılmadı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 90 saat civarı (beş kopyayı birleştirme dahil); satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 1.000 TL (mağaza kaydı, MoR kurulumu); tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı kiti alır; sabit kapsamlı paket"
+    }
+   },
+   "kapi_duzeltme": "Lisansı kullanıcıyla netleştir (G1); satış metinlerini hazırla, mali müşavir teyidi al (G2); MoR aç (G3); alıcı rolünü 10 görüşmeyle doğrula (G4, G5); efor planı yaz (G6).",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 912,
+    "degisken_maliyet_tl": 70,
+    "sabit_gider_aylik_tl": 0,
+    "baslangic_nakit_tl": 1000,
+    "kalan_efor_saat": {
+     "min": 50,
+     "beklenen": 90,
+     "max": 150
+    },
+    "ilk_tahsilat_gun": {
+     "min": 40,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 2,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 1824,
+     "iyi": 13680
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 15
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 15
+    },
+    "donusum_orani": {
+     "dusuk": 0.005,
+     "yuksek": 0.03
+    },
+    "dayanak": "GPT habit dosyası: düşük destekli şablon satışı, sınırlı kit; fiyat ve talep kaynakta yok. 19 USD x 48 TL varsayım. Claude planı: yeni sekmede gelir tezi yok. Baz 2 satış (temkinli, 2 x 912 TL); dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Eklenti geliştiricileri hazır tek rutin şablonuna 19 USD öder",
+    "yontem": "Açık çekirdeği yayınla; ücretli kit için tek sayfa ve MoR bağlantısı; 3 geliştirici topluluğu gönderisi",
+    "sure_gun": 21,
+    "maliyet_saat": 15,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 2 ödeme ve 50 depo yıldızı",
+    "birakma_olcutu": "21 günde 0 ödeme ve 20'den az depo ziyareti",
+    "sonraki_dilim": "Başarılıysa kit içeriğini ve ikinci şablonu genişlet"
+   },
+   "etiketler": {
+    "segment": "bağımsız geliştirici",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Chrome MV3, React, Vite",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "GPT habit dosyaları: kaynak gözlemi, canlı ürün doğrulanmadı; ücretli öneri sınırlı kit. Tekrarlı kullanım görülmeden abonelik yok. Claude planı bağımsız yeni sekme için gelir tezi görmüyor: Momentum, Tabliss ve Infinity ücretsiz ya da ucuz. Kod satışı talebi için kanıt yok. Ödeyen müşteri 0. Hakem: alıcı rolü kaynakta freelancer, eklenti geliştiricisi operatör; 19 USD analist varsayımı."
+  }
+ ]
+}

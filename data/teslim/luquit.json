@@ -1,0 +1,17 @@
+{
+ "slug": "luquit",
+ "secenekler": {
+  "luquit-a": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 2.4,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Abone kopyası; teslim yalnız pilot ofis başına yaklaşık 4 saatlik kurulum ve veri aktarımı (3 ofis x 4 saat ÷ 5 ödeme). Karttaki 10 saatin 4'ü kuruluma taşındı; varsayım."
+  },
+  "luquit-b": {
+   "satis_basina_kurucu_saati": 3,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 45,
+   "not": "Kopyası satılan kit, müşteriye özel iş yok; 12 saatlik özel entegrasyon taban fiyata dahil değil. 45 dk yalnız satış sonrası soru ve destek. Dayanak karttaki gibi."
+  }
+ }
+}

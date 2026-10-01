@@ -1,0 +1,65 @@
+{
+  "slug": "software-factory",
+  "kararlar": [
+    {
+      "itiraz": "A ilk tahsilat 28-75 gün erişilemez; 105 saat hazırlık haftada 20 saatle 5-6 hafta, ardından karar süreci",
+      "karar": "kabul",
+      "degisiklik": "A finans.ilk_tahsilat_gun 28-75 idi, 45-90 oldu; G6 notu ve dayanak güncellendi",
+      "gerekce": "105 saat / 20 saat = yaklaşık 37 gün; 28 gün haftada 20 saatle tutmuyor. Pilot adayları mevcut çevreden olduğundan 60+ yerine 45 alındı."
+    },
+    {
+      "itiraz": "A G4 notu tanıdık çevre diyor ama kaynakta isim listesi yok; yedek kanal olarak tanıdık çevre abartılı",
+      "karar": "kismen",
+      "degisiklik": "A kanal_yedek: 'Mevcut tanıdık çevre' idi, 'pilot adayları (ilişki var, isim listesi yok)' oldu",
+      "gerekce": "Plan 7.2 çevreden 3 pilot adayı öngörür ama isim listesi yazmaz; G4 notu zaten liste yok diyor. Yedek kanal ifadesi netleştirildi, G4 test kaldı."
+    },
+    {
+      "itiraz": "B ilk adım 24-40 saat ama G6 elle kurulum 60-170 saat; Action paketi yok, çelişki",
+      "karar": "kismen",
+      "degisiklik": "B ilk_adim ve G6 notu: 24-40 saat yalnız ücretsiz Action; ücretli kurulum kapsamı ayrı (60-170 saat) diye netleştirildi",
+      "gerekce": "GPT: 24-40 saat örnek, Action ve belge işidir; ücretli pilot P0 işleri ayrıdır. Gerçek çelişki yok, anlatım belirsizdi; G6 test kaldı."
+    },
+    {
+      "itiraz": "C marj yüzde 38-49 ve ajanslara satış fiyatı görüşmesiz varsayım; kartta güçlü anlatılıyor",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart kanit_notlarında bunların görüşmesiz varsayım olduğunu açıkça yazıyor; ozet ve finans marjı öne çıkarmıyor, ilk tahsilat 0 kötü senaryoda."
+    },
+    {
+      "itiraz": "A G6 test olmalı: satış döngüsü ve fon harcanabilirliği doğrulanmadı, 105 saat artı karar sınırda",
+      "karar": "kabul",
+      "degisiklik": "A G6: gecti idi, test oldu; not ve kapi_duzeltme güncellendi",
+      "gerekce": "Kriterde satış döngüsü ölçülmediyse test. Ödeyen müşteri yok, BiGG fon harcanabilirliği kartın kendi notunda doğrulanmamış."
+    },
+    {
+      "itiraz": "A G5 test olmalı: hiçbir kanalda ilk temas ya da yanıt yok; yedek tanıdık çevre belgesiz",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "G5 gecti ölçütü kanal ve ilk adımın adlı olması ve yedek kanalın bulunmasıdır; yanıt şartı yok. Yedek olarak adlı dizin ve ajans kanalları da var."
+    },
+    {
+      "itiraz": "B G5 test olmalı: Action ve blueprint henüz yok, kanal var olmayan pakete bağlı",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "G5 tanımı kanal ve ilk adımın adlı olmasını ister; ilk adım paketi yayımlamaktır. Pakete bağımlılık kartta not edildi, listeleme garantisi iddia edilmiyor; G6 zaten test."
+    },
+    {
+      "itiraz": "A alti_ay_tahsilat baz 390000 fazla; 150000-240000 olmalı (ödeyen yok, hazırlık, 4-8 hafta karar)",
+      "karar": "kismen",
+      "degisiklik": "A baz tahsilat 390000 idi 270000 oldu; baz ödeme 8 idi 7; dayanak güncellendi",
+      "gerekce": "3 pilot 150.000 kaynaklı; M'nin tam tahsilatı 6 ayda kanıtsız, yalnız %50 peşin sayıldı. Kötü ve iyi değişmedi."
+    },
+    {
+      "itiraz": "A ilk_tahsilat_gun min 28 yerine 60 olmalı",
+      "karar": "kismen",
+      "degisiklik": "A ilk_tahsilat_gun min 28 idi 45 oldu (max 75 idi 90)",
+      "gerekce": "105 saat hazırlık yaklaşık 37 gün; pilot adayları mevcut çevreden, bu yüzden 60 yerine 45. Plan C.3 depozitoyu hafta 4-6 gösteriyor."
+    },
+    {
+      "itiraz": "C ilk_tahsilat_gun 60 yerine 90 ve ödeme adedi 2 yerine 1 olmalı (üçlü sözleşme)",
+      "karar": "kismen",
+      "degisiklik": "C ilk_tahsilat_gun min 60 idi 75 oldu; dayanak güncellendi; ödeme adedi 2 kaldı",
+      "gerekce": "Plan ajans ilk işini hafta 9-12 verir (63-84 gün); 135 saat hazırlık ve üçlü sözleşme payıyla 75. Ödeme adedi: S için %50 peşin ve RC iki ödemedir, 6 aya sığar."
+    }
+  ]
+}

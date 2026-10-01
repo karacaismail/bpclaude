@@ -1,0 +1,343 @@
+{
+ "slug": "baz-secenekler",
+ "baslik": "Baz seçenekler: günlük danışmanlık, kod satışı, hibe başvurusu",
+ "ozet": "Karşılaştırma tabanı: kurucunun haftalık 20 saati için üç alternatif. Günlük ücretli danışmanlık ya da yazılım işi, mevcut bir Django kod tabanının ajanslara satışı, kamu destek programı başvurusu. Bugün üçünde de ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Haftalık 20 kurucu saati; eşik saat ücreti 500 ₺ (yazılı teklifteki günlük 4.000 ₺)",
+   "İki mevcut ilişki: bir kahve zinciri ve bir inşaat firması; ikisine de teklif ya da analiz teslim edilmiş",
+   "Bir inşaat firmasına yazılı günlük 4.000 ₺ birim ücretli yazılım teklifi",
+   "120 bin satırlık, 1.324 testli bir Django QR menü kod tabanı",
+   "TÜBİTAK 1812 ön tohum çağrısının duyurusu okundu (1.350.000 ₺, pay karşılığı)"
+  ],
+  "yok": [
+   "Ödeyen müşteri ve imzalı sözleşme",
+   "Hizmet sözleşmesi şablonu ve ödeme hesabı kurulumu",
+   "Kod tabanında ödeme entegrasyonu; iki kopya birleşmemiş",
+   "Bir sonraki destek çağrısının tarihi",
+   "Pay karşılığı destek için şirket yapısı ve girişim rozeti"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Planlar üç tabanı rakamla verir: yazılım işinde 4.000 ₺ günlük birim (piyasa 6.000-12.000 ₺ varsayım), kod kurulumu 15-25 bin ₺ + 6 bin ₺ bakım, ön tohum çağrısı 1.350.000 ₺ ve %3 pay. Kod satışı bağımsız ürün değil, hizmet saatiyle savunulur.",
+  "gpt": "Strateji dizini rakamları açık ticari hipotez sayar; gerçek gelir, müşteri ve trafik doğrulanmadı. Kod ve test dosyasının varlığı ürünün hazır olduğunu göstermez; ücretsiz yapay zekâ, Excel ve açık kaynak ikameleri farkı sınar.",
+  "ayrisma": "Claude fiyat ve tutar verir; GPT aynı rakamları kanıtsız hipotez olarak işaretler ve kodu satılabilir saymaz. Destek programı konusunda GPT dizininde sayısal dayanak yoktur; yalnız Claude karşılaştırma dosyasında çağrı tutarı vardır.",
+  "birlesik": "Üçünde de kanıt zayıf; 6 ayda nakde en yakın taban günlük ücrettir. Kod satışı düşük marjlı hizmete dönüşür. Destek çağrısı kapandı ve sonraki tarih bilinmiyor; bu pencerede gelir getirmez, ayrıca pay karşılığıdır."
+ },
+ "analist_gorusu": "Karşılaştırma ölçüsü olarak günlük ücret kalmalı: 24-30 gün 6.000 ₺'de hedefi karşılar. Her proje bu tabanı geçemiyorsa kurucu saatini projeye değil danışmanlığa vermelidir.",
+ "secenekler": [
+  {
+   "id": "baz-secenekler-a",
+   "ad": "Günlük ücretli danışmanlık ya da yazılım işi (aynı saatlerde)",
+   "tur": "hizmet",
+   "musteri": "Mevcut ilişkiler: bir kahve zinciri ve yazılım ihtiyacı olan bir inşaat firması",
+   "is": "Kurucunun saatini sabit çıktılı gün paketi olarak satmak: ölçüm kurulumu, entegrasyon yönetimi ya da küçük yazılım işi",
+   "tetikleyici": "Müşterinin sahipsiz kalan iş devri; yıl sonu e-ticaret sezonu; mevzuat değişikliği sonrası güncelleme ihtiyacı",
+   "teklif": "5 günlük paket: yazılı çıktı listesi, kabul ölçütü, 30 gün fesih; haftalık rapor. İkinci pakette aylık yönetime geçiş önerilir",
+   "fiyat": "Yazılı teklif 4.000 ₺/gün; 6.000 ₺/gün hedeftir, kanıtsız. 5 günlük aylık paket 20.000 ₺ + KDV (4.000 ₺/gün)",
+   "kanal_birincil": "Kurucu satışı: iki mevcut ilişkiye yazılı gün paketi teklifi",
+   "kanal_yedek": "Mali müşavir ve ajans tanıdıkları üzerinden ikinci derece tanıtım; LinkedIn kişisel mesaj",
+   "ilk_adim": "Tek sayfalık 5 günlük paket teklifi yaz ve iki mevcut ilişkiye gönder",
+   "ilk_kapsam": "Elle sunulur: ölçüm denetimi ve kurulum günü ya da küçük bir hakediş hesabı prototipi; yeni ürün gerekmez, teklif sayfası yeter.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Emek satışı; ama sözleşme ve fikri hak koşulları hukukçuyla teyit edilmedi."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Engel yok; hizmet sözleşmesi ve veri işleme şablonu henüz yazılmadı (plan: %0)."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşiv fatura yolu belli; hesap ve fatura şablonu için mali müşavir teyidi bekliyor."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (iki mevcut ilişki); 20 isimlik liste yok."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal kurucu satışı, ilk adım yazılı; yedek: ikinci derece tanıtım."
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan efor 16 saat civarı; ilk tahsilat 30-60 günde gerçekçi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit yaklaşık 2.000 ₺; tavanın çok altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Gün ücreti özel iş doğurur; kapsam sınırı yalnız sabit çıktılı gün paketiyle yazılabilir."
+    }
+   },
+   "kapi_duzeltme": "Sözleşme koşullarını oku; sözleşme ve fatura şablonunu mali müşavirle hazırla; yalnız sabit çıktılı 5 günlük paket sat; 20 isimlik liste çıkar.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 20000,
+    "degisken_maliyet_tl": 150,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 2000,
+    "kalan_efor_saat": {
+     "min": 8,
+     "beklenen": 16,
+     "max": 30
+    },
+    "ilk_tahsilat_gun": {
+     "min": 30,
+     "max": 60
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 20000,
+     "baz": 80000,
+     "iyi": 160000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 1,
+     "baz": 4,
+     "iyi": 8
+    },
+    "alti_ay_musteri": {
+     "kotu": 1,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "SGK uyum planı bölüm 5: yazılı teklif 4.000 ₺/gün; 6.000 ₺ ve piyasa 6.000-12.000 ₺ varsayım. Aylık fatura = 5 gün x 4.000 = 20.000 ₺, ilk tahsilat 30-60 gün: kötü 1, baz 4, iyi 8 ödeme (2. müşteri). Kahve zinciri 180.000 ₺ teklifi imzasız, sayılmadı. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "İki mevcut ilişkiden en az biri 5 günlük sabit çıktılı paketi 4.000-6.000 ₺/gün ile satın alır",
+    "yontem": "Tek sayfalık 5 günlük paket teklifini 5 kişiye (iki mevcut ilişki, üç ikinci derece) kişisel mesajla gönder; fiyat sorusunu aç sor.",
+    "sure_gun": 14,
+    "maliyet_saat": 6,
+    "maliyet_tl": 0,
+    "basari_olcutu": "Bir yazılı onay ya da avans; ya da fiyatı itirazsız kabul eden iki görüşme",
+    "birakma_olcutu": "21 gün içinde hiçbir kişiden fiyatlı yanıt gelmezse liste genişletilir, fiyat sorgulanır",
+    "sonraki_dilim": "İlk paketten sonra aylık yönetim ya da ikinci beş günlük paket; fiyat 6.000 ₺'ye çıkar"
+   },
+   "etiketler": {
+    "segment": "Mevcut ilişkiler: zincir ve inşaat firması",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Ölçüm kurulumu, entegrasyon, Python",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Kahve zinciri planı bölüm 7 ve 11: mevcut ilişki, teklif ya da analiz teslim edilmiş, teklif imzası yok. SGK uyum planı bölüm 5: günlük 4.000 ₺ teklifi yazılı, piyasa 6.000-12.000 ₺ varsayım. Hiçbir belgede ödeyen müşteri yok. GPT dizini: rakamlar hipotez, gelir doğrulanmadı. Fiyat: 6.000 ₺/gün yalnız varsayım; kahve zinciri paketi imzasız."
+  },
+  {
+   "id": "baz-secenekler-b",
+   "ad": "Mevcut Django kod tabanının ajanslara kurulumlu satışı",
+   "tur": "kod satışı",
+   "musteri": "Restoran müşterisine kendi markalı QR menü sunmak isteyen, Django barındırabilen küçük web ajansları",
+   "is": "Ajansın betik satın alıp 2-4 hafta uyarlama ve bakım riski taşımasını, test edilmiş Türkçe çekirdekle kısaltmak",
+   "tetikleyici": "Masada QR ile fiyat listesini resmi yöntem sayan yönetmelik değişikliği iddiası (metin doğrulanmadı) sonrası restoran talebi",
+   "teklif": "Kendi marka ve sunucuda Docker kurulumu, 2 dil, KVKK metni, 30 gün hata düzeltme; kullanım lisansı, yeniden satış yasak",
+   "fiyat": "15.000 ₺ kurulum; 25.000 ₺ kurulum + 20 saat uyarlama + ödeme bağlantısı; bakım 6.000 ₺/yıl; KDV hariç",
+   "kanal_birincil": "Kurucu satışı: restoran sitesi yapan 40 ajansa kişisel LinkedIn mesajı ve e-posta",
+   "kanal_yedek": "Zabuno destek kuyruğuna gelen ajans talepleri; kodun arşiv deposundaki iletişim notu",
+   "ilk_adim": "40 ajanslık listeyi çıkar; 'Django barındırabilir misiniz?' eleme sorusuyla ilk 10 mesajı gönder",
+   "ilk_kapsam": "İki kopyayı birleştir, yayın öncesi temizliği yap, ödeme sağlayıcı bağlantısını ekle, çok kiracılı ara katmanı aç; Docker kurulum rehberi yaz.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; bağımlılıklarda GPL taraması ve şablon metinlerinin hak gözden geçirmesi yapılmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK veri işleyen sözleşmesi, lisans metni ve sorumluluk sınırı hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Ajansa havale ve fatura planlı; hesap ve fatura şablonu doğrulanmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (ajans); isim listesi yok, 40 ajans henüz seçilmedi."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanal fikri var; ajans hedef grupları adlandırılmadı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 60 saat civarı; satış döngüsü ölçülmedi, dönüşüm 40 görüşmede 4 varsayım."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit yaklaşık 2.000 ₺ (demo sunucusu, alan adı)."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kapsam yazılı ama 20 saat uyarlama müşteriye göre değişir; sınır sözleşmeye yazılmalı."
+    }
+   },
+   "kapi_duzeltme": "GPL ve şablon taraması yap; hukukçuya lisans ve veri işleyen metni yazdır; 40 ajansı adlandır; uyarlamayı 20 saatle sınırla.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 20000,
+    "degisken_maliyet_tl": 3000,
+    "sabit_gider_aylik_tl": 250,
+    "baslangic_nakit_tl": 2000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 60,
+     "max": 100
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 40,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 20000,
+     "iyi": 45000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.025,
+     "yuksek": 0.1
+    },
+    "dayanak": "QR menü planı bölüm 5 ve 8: ortalama kurulum 20.000 ₺ (baz), 22.500 ₺ (iyi); 12 ayda baz 2 kurulum. 6. aya kadar kalan iş ve 4 haftalık teslimle ilk tahsilat gecikir: baz 1, iyi 2, kötü 0. Dönüşüm 4 anlaşma / 40 görüşme üst sınırı; varsayım."
+   },
+   "deney": {
+    "varsayim": "Ajanslar 19-89 USD'lik betik yerine 15.000-25.000 ₺'lik kurulumlu çekirdeği satın alır",
+    "yontem": "40 ajansa kişisel e-posta; ilgi çekenlere 20 dakikalık demo ve yazılı kapsam belgesi; ödeme sağlayıcısı ve %50 ön ödeme teklif et.",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "40 mesajdan en az 2 demo ve 1 yazılı kapsam belgesi ya da ön ödeme",
+    "birakma_olcutu": "40 mesajdan 0 demo talebi gelirse kodu arşivle ve modülleri Zabuno'ya taşı",
+    "sonraki_dilim": "İlk kurulum ödenirse 5 kurulumluk sıra; bakım sözleşmesi ve ödeme entegrasyonu şablonu"
+   },
+   "etiketler": {
+    "segment": "Küçük web ajansları (restoran işi yapan)",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Django 5, DRF, Celery, Docker",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "QR menü planı bölüm 0, 4, 5, 6, 8: 120 bin satır Python, 1.324 test; ödeme entegrasyonu yok, çok kiracılı ara katman kapalı, iki kopya ayrışmış; CodeCanyon betikleri 19-89 USD ve 1,8-2 bin satış; ödeyen müşteri yok. Plan arşivle ve Zabuno'ya taşı diyor. GPT dizini: kod varlığı hazırlık kanıtı değildir."
+  },
+  {
+   "id": "baz-secenekler-c",
+   "ad": "Kamu destek programı başvurusu: TÜBİTAK 1812 ön tohum yatırımı",
+   "tur": "diğer",
+   "musteri": "Kamu destek programı (fon veren): ön tohum aşamasında teknoloji girişimlerine pay karşılığı yatırım yapan program",
+   "is": "Bir proje için başvuru dosyası hazırlayıp pay karşılığı ön tohum fonu almak; hibe değil, seyreltici yatırım",
+   "tetikleyici": "Dönemsel çağrı penceresi; 2026-1 çağrısı Haziran-Temmuz'da kapandı, sonuçlar Eylül'de açıklandı",
+   "teklif": "Girişim başvurusu: proje, pazar ve ekip dosyası; programın 1.350.000 ₺ tutarını ve izlemede en çok aynı tutarda devam desteğini hedefler",
+   "fiyat": "1.350.000 ₺ karşılığı yaklaşık %3 pay; temiz teknoloji kolunda 2.250.000 ₺ karşılığı %5 pay",
+   "kanal_birincil": "TÜBİTAK 1812 başvuru sistemi, yeni çağrı duyurusu açıldığında",
+   "kanal_yedek": "Üniversite teknoloji transfer ofisi duyuruları; kamu yatırım destek portalındaki ücretsiz program listesi",
+   "ilk_adim": "Sonraki çağrı tarihini ve uygunluk şartlarını (şirket yapısı, girişim rozeti) yazılı doğrula",
+   "ilk_kapsam": "Seçilecek tek proje için başvuru dosyası: problem, ilk müşteri hipotezi, 6 aylık plan ve bütçe. Dosya hazırlığı 40-80 saattir.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Proje hakları kurucuda olmalı; bağımlılık lisansları ve üçüncü taraf hak talepleri doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Pay karşılığı sözleşme, şirket yapısı ve girişim rozeti şartı hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Ödeme kamudan şirket hesabına gelir; şirket yapısı ve hesap henüz yok."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Fon veren tipi net (tek program); alıcı listesi kavramı uymaz, uygunluk doğrulanmadı."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanal adlı (başvuru sistemi, TTO) ama çağrı kapalı ve sonraki tarih yok; kanala erişim henüz sağlanmadı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Dosya 40-80 saat; sonraki çağrı tarihi bilinmiyor, ilk tahsilat 110-240 gün (üst sınır 6 ayı aşar); belirsiz olduğu için test."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başvuru ücreti kaynakta yok; hukuk ve şirket kuruluşu için yaklaşık 25.000 ₺, tavanın altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Teslim yok; ama izleme raporları ve kilometre taşı yükümlülükleri kaynakta yok, belirsiz."
+    }
+   },
+   "kapi_duzeltme": "Çağrı tarihini ve rozet şartını doğrula (kanal ve süre için de); şirket yapısını hukukçuyla kur; proje haklarını yazılı güvenceye al; izleme yükümlülüklerini sözleşmeden oku.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 1350000,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 3000,
+    "baslangic_nakit_tl": 25000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 60,
+     "max": 100
+    },
+    "ilk_tahsilat_gun": {
+     "min": 110,
+     "max": 240
+    },
+    "satis_basina_kurucu_saati": 60,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "Karşılaştırma dosyası bölüm A: 2026-1 çağrısı 1.350.000 ₺, başvuru 15 Haz-3 Tem, destek 1 Eki (yaklaşık 110 gün); çağrı kapandı, sonraki tarih bulunamadı. Pay karşılığı fon gelir değildir; üç senaryo da 0. Kabul oranı kaynakta yok."
+   },
+   "deney": {
+    "varsayim": "Sonraki çağrı 6 ay içinde açılır ve proje uygunluk şartlarını (şirket yapısı, rozet) sağlar",
+    "yontem": "Resmi duyuruları ve şartnameyi oku; teknoloji transfer ofisine uygunluk sor; 2 sayfalık özet dosya hazırla.",
+    "sure_gun": 14,
+    "maliyet_saat": 12,
+    "maliyet_tl": 0,
+    "basari_olcutu": "Çağrı tarihi ve uygunluk şartları yazılı kaynakla doğrulanır; özet dosya hazır",
+    "birakma_olcutu": "60 gün içinde açık çağrı ya da uygunluk yoksa seçeneği beklemeye al",
+    "sonraki_dilim": "Çağrı açılırsa tam başvuru dosyası ve şirket kuruluşu; kabul sonrası izleme raporu"
+   },
+   "etiketler": {
+    "segment": "Kamu destek programı (ön tohum)",
+    "kanal_turu": "ortak",
+    "teknoloji": "Yok (başvuru dosyası)",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Karşılaştırma dosyası A: TÜBİTAK 1812 BiGG 2026-1, 1.350.000 ₺, yaklaşık %3 pay, hibe değil; takvim ve temiz teknoloji kolu 2.250.000 ₺ %5. Aynı dosya: sonraki çağrı tarihi, kabul oranı bulunamadı. Hakediş planı bölüm 14-18: şirket yapısı ve rozet henüz yok. Ödeyen müşteri 0; destek geliri satış değildir."
+  }
+ ]
+}

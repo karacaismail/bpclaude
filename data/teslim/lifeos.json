@@ -1,0 +1,23 @@
+{
+ "slug": "lifeos",
+ "secenekler": {
+  "lifeos-a": {
+   "satis_basina_kurucu_saati": 1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "Sabit çalışma kâğıdı paketi kopyası satılıyor, müşteriye özel iş yok; teslim 0. Kart değerleri korundu."
+  },
+  "lifeos-b": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 1,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Müşteri başına yaklaşık 1 saat kurulum desteği teslimden sayıldı; kartın 3 saatlik satış ve 20 dk destek değerinden ayrıştırıldı; kaynakta dayanak yok, varsayım."
+  },
+  "lifeos-c": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Açık çekirdek ve ücretli kit kopyası satılıyor, müşteriye özel iş yok; teslim 0. Kart değerleri korundu."
+  }
+ }
+}

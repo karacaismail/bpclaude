@@ -1,0 +1,23 @@
+{
+ "slug": "karar-kitabi",
+ "secenekler": {
+  "karar-kitabi-a": {
+   "satis_basina_kurucu_saati": 20,
+   "teslim_saat_odeme_basina": 19,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Ön çalışma 1, uyarlama ve hazırlık 6, atölye 4, doldurulmuş kâğıt ve brif 4, 30 gün günlük takibi 4 saat; varsayım. Takip teslime taşındı, destek 30 dk."
+  },
+  "karar-kitabi-b": {
+   "satis_basina_kurucu_saati": 0.1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Kopyası satılan tema paketleri; müşteriye özel iş yok, teslim 0. Karttaki 0,1 saat satış, 10 dk destek; varsayım. Eğitmen lisansı baz senaryoda 1 adet."
+  },
+  "karar-kitabi-c": {
+   "satis_basina_kurucu_saati": 5,
+   "teslim_saat_odeme_basina": 1,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Baz senaryoda yalnız kit satılır; elle hazırlanan PDF ve teslim ortalama 1 saat/ödeme; özel memo (iyi senaryo) ayrı iş, varsayım. 30 dk destek."
+  }
+ }
+}

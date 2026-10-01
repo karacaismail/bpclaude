@@ -1,0 +1,23 @@
+{
+ "slug": "software-factory",
+ "secenekler": {
+  "software-factory-a": {
+   "satis_basina_kurucu_saati": 16,
+   "teslim_saat_odeme_basina": 47,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "S paket 60 saat, M paket 150 saat (kapsam hikâye sayısından, yapay zekâ hızı dahil); 3 S + 1 M = 330 saat / 7 ödeme. Karttaki 240 dk teslim sonrası desteğe indirildi."
+  },
+  "software-factory-b": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 20,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Tek depo kurulumu: deneme çalıştırması, profil, 20 sınırlı iş incelemesi ve makbuz yaklaşık 20 saat (varsayım). Karttaki 180 dk kurulum yazışmasını da içeriyordu."
+  },
+  "software-factory-c": {
+   "satis_basina_kurucu_saati": 20,
+   "teslim_saat_odeme_basina": 30,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Ajans markalı S paket 60 saat; baz tek ajans, 2 ödeme, ödeme başına 30 saat. Üçlü sözleşme görüşmesi satışta; destek 240 dk teslim sonrasına indirildi."
+  }
+ }
+}

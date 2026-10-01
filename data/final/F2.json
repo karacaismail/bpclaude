@@ -1,0 +1,665 @@
+{
+ "kriter": "F2",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Fiyatı işletme sahibi kendi girer; yanlış fiyat gösterimi fiyat etiketi kuralı açısından sınırlı ve hemen düzeltilebilir zarar, ürün uyum garantisi vermiyor."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Merkezden yayındaki hata onlarca şubeye aynı anda yanlış fiyat taşır; şikâyet ve hizmet seviyesi taahhüdü doğar, ceza sınırlı."
+  },
+  "zabuno-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Modül müşterinin canlı verisine ve izin akışına bağlanır; izin ya da yayın onayı hatası sınırlı operasyonel zarar verir, ceza beklenmez."
+  },
+  "parselq-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Hatalı imar özeti arsa alım kararına girer ve alıcıya büyük zarar verebilir; bilgi notu ibaresi, analist kontrolü ve iade riski azaltır, kaldırmaz."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı imar özeti ilana girer; hata alıcıyı yanıltır ve EİDS ile taşınmaz ticareti kuralları nedeniyle ofise idari ceza riski doğurur."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Karar dosyasındaki hatalı imar ya da fiyat varsayımı ofisi ve alıcıyı zarara sokar; uzman onayı ve boş bırakma kuralı riski azaltır."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yanlış uygunluk sonucu boşa başvuru emeği ya da kaçan çağrı demek; ceza yok, rapor garanti vermiyor, zarar sınırlı."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Büro raporu kendi logosuyla çok mükellefe verir; hatalı sonuç mesleki sorumluluk ve itibar zararını çoğaltır."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum görünürlüğü sonucu resmi onay gibi gösterir; hatalı tarama çok üyeye yayılır ve kurumun itibarına zarar verir."
+  },
+  "asgari-iscilik-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Çıktı doğrudan kesinti ve prim rakamıdır; yanlış hesap fark prim ve gecikme zammı doğurur, ilişiksizlik ve hakedişi kilitler."
+  },
+  "asgari-iscilik-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Aynı hesap hatası birçok mükellef ve şantiyede fark prim ve gecikme zammına dönüşür; sigorta ve sorumluluk sınırı kurulmadı."
+  },
+  "asgari-iscilik-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Rapordaki yanlış rakam fark prime yol açabilir; ancak iş müşterinin kendi tablosunun uzman onaylı kontrolüdür, risk azalır."
+  },
+  "zincir-danismanligi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Sonuç garantisi yok; hatalı ölçüm kurulumu reklam bütçesini yanlış yönlendirir, veri işleme rolü yük getirir; zarar sınırlı."
+  },
+  "zincir-danismanligi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Halka açık veri ve salt okunur erişimle hazırlanan tavsiye raporu; hatalı bulgu en çok yanlış öncelik doğurur, ceza yok."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Pilotta elle yönetilen çok şubeli fiyat listesi; yanlış fiyat etiket-kasa şikâyeti ve yönetmelik sorunu doğurur, zarar sınırlı."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yanlış oran ya da formül satıcıya zararına fiyat koydurur; ceza doğurmaz, fiyat geri alınabilir; teyit uyarısı var."
+  },
+  "kar-pusulasi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Danışman raporu kendi logosuyla müşterisine sunar; hatalı kâr hesabı birçok müşterinin fiyat kararına ve danışmanın sorumluluğuna yansır."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Elle hazırlanan katkı raporu fiyat deneyine girdi olur; vergi ve satış garantisi verilmez, yanlış katkı sınırlı zarar."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Programda şirket türü, vergi ve fiyat anlatılır; yanlış bilgi katılımcıya sınırlı zarar verir, reklam mevzuatı ispat yükü getirir."
+  },
+  "titanlar-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yazılı fiyat, kampanya ve vergi planı doğrudan uygulanır; hatalı tavsiye satıcıya para kaybettirir, sözleşme ve sorumluluk sınırı yok."
+  },
+  "titanlar-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Bir günlük uygulamalı atölye ve ilerleme raporu; hatalı içerik ceza doğurmaz, risk kuruma verilen hedef beklentisiyle sınırlı."
+  },
+  "kurumsal-site-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Statik site; sertifika ve teknik iddia metinlerini müşteri verir ve onaylar, yanlış çeviri düzeltilebilir sınırlı zarar."
+  },
+  "kurumsal-site-b": {
+   "p": 4,
+   "k": 0,
+   "g": "8-10 sayfalık vitrin sitesi; içerik müşteri onaylı, hata ceza doğurmaz ve hemen düzeltilir."
+  },
+  "kurumsal-site-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kaynak kod satışı; içerik ve yayın alıcının sorumluluğunda, şablon hatası alıcı projesinde sınırlı yeniden iş doğurur."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kârlılık modeli ve simülatör lansman fiyatını belirler; hatalı oran zararına satış doğurabilir, sonuç taahhüdü yok."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Katkı marjı ve başabaş sepet rakamı patrona karar olarak sunulur; hatalı varsayım yanlış fiyat kararı, ceza yok."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Katalog ve teklif formu sitesi; ürün bilgisi müşteriden gelir, hata sınırlı; asıl yük formdaki kişisel veri metinleri."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Üretilen aydınlatma metni ve rıza kaydı eksikse site sahibine idari para cezası doğabilir; hukuki görüş değildir ibaresi tek koruma."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yanlış taksit tablosu ya da kapıda ödeme ek ücreti alışverişte şikâyet ve sınırlı zarar doğurur; oranı mağaza girer."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Kurulan aydınlatma metni, rıza kutusu ve çerez bandı hatalıysa işletmeye idari ceza riski; hizmet hukuki görüş vermiyor."
+  },
+  "qral-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Bağlantı ve başlık kopyalama aracı; hatalı biçim kullanıcıya ceza ya da parasal zarar doğurmaz."
+  },
+  "qral-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Sınıf QR sayfasındaki hatalı bağlantı yalnız ders akışını aksatır; öğrenci verisi yok, ceza ya da zarar riski yok."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yanlış erişim tarihi ya da alıntı müşteriye giden rapora girer; alıntıyı kullanıcı onaylar, telif ve doğruluk riski sınırlı."
+  },
+  "frontend-atlasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kit ve lisansla eğitmen kendi sitesini üretir; hatalı ders içeriği eğitmenin itibarını etkiler, parasal zarar ya da ceza yok."
+  },
+  "frontend-atlasi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Bireysel alıştırma paketi; hatalı görev ya da çözüm öğrenene ceza ya da parasal zarar doğurmaz."
+  },
+  "frontend-atlasi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Eğitmen adına üretilen ders hatalıysa itibar etkilenir; kabul ölçütü ve revizyon var, parasal zarar ya da ceza yok."
+  },
+  "karar-kitabi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Atölye yöntemi öğretir, kararı şirket verir; doğru karar garantisi yok, hatalı uygulama sınırlı ve dolaylı zarar."
+  },
+  "karar-kitabi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Çalışma kâğıdı gerçek kararda kullanılır ama kararı alıcı verir; hatalı örnek ceza doğurmaz, zarar dolaylı."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Memo danışmanın müşterisine karar kaydı olarak gider; yanlış belgelenen varsayım ve gizli oturum notu sınırlı zarar verir."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Model ve sunumdaki hatalı rakam hibe ya da yatırım başvurusunu zayıflatır; sonuç garanti edilmez, zarar başvuru kaybıyla sınırlı."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor düzeltilmiş rakam seti verir; yanlış düzeltme başvuruya taşınır, hibe sonucu garanti edilmez, zarar sınırlı."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Şablon ve doğrulayıcı; rakamı girişim kendi girer, kurum kullanır; kaçan çelişki mevcut durumu kötüleştirmez."
+  },
+  "vize-operasyon-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kaçan hatırlatma ya da eski evrak şablonu randevu ve dosya kaybına yol açabilir; yardımcı araç, garanti verilmez."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Yanlış kural eksik belgeyi kuyruğa çıkarmaz; başvuru reddi ve 90 € ücret kaybı doğar, operatör incelemesi riski azaltır."
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Rapor eksiği kaçırırsa başvurucu ret alır, 90 € ücreti ve seyahat planını kaybeder; vize garantisi yok, araya insan girmez."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Teslim edilen MVP hatası girişime yatırımcı ve kullanıcı önünde sınırlı zarar verir; kanıt paketi ve düzeltme süresi var."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Makbuz insan incelemesinin yerini kısmen alır; yanlış makbuz hatalı kodun onaylanmasına, yetki hatası müşteri deposuna zarara yol açar."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Hatalı teslim ajansın müşterisinde ortaya çıkar; üç taraflı zincirde kimin sorumlu olduğu yazılı değil."
+  },
+  "strateji-simulatoru-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Ön eleme aracı; nihai kararı kurum verir, tavsiye değildir uyarısı var, hatalı puan en çok bir fikrin yeniden incelenmesini gerektirir."
+  },
+  "strateji-simulatoru-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Rapor adayın kendi yanıtlarından üretilir; kabul garantisi yok, hatalı özet başvuru hazırlığını etkiler, ceza yok."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Rapor ve bir saatlik yorum yatırım ya da başvuru kararına doğrudan girdi olur; uyarıya karşın sınırlı parasal zarar mümkün."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Araç süreç sonlandırır; yanlış süreci kapatırsa kaydedilmemiş iş kaybolur, sorumluluk metni henüz yok."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ücretsiz katman yalnız rapor üretir; destekli kurulumda geri alma doğrulanır, yanlış teşhisin zararı sınırlı."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Kabul API'si yalnız tavsiye döner, sinyal göndermez; yanlış yanıt en çok bir ajanın geç ya da erken başlamasına yol açar."
+  },
+  "actionplan-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Çıktı ajan görev paketidir; kullanıcı gözden geçirir, hatalı görev tanımı yeniden iş doğurur, ceza ya da ciddi zarar yok."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kabul kaydı ajans ile müşterisi arasında dayanak olur; hatalı ya da eksik kayıt kapsam uyuşmazlığına yol açar, hukuki değeri belirsiz."
+  },
+  "actionplan-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Türkçe şablon seti ve kısa video; hatalı şablon alıcıya ceza ya da parasal zarar doğurmaz."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Maliyet tahmini eşdeğer etiketiyle gösterilir; yanlış sayı geliştiricinin kendi bütçe algısını etkiler, ceza yok."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor proje maliyetini müşteri faturasına ya da marj tablosuna taşır; yanlış paylaştırma fatura uyuşmazlığı doğurur."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek bekleme kartı görünürlük sağlar; yanlış durum gösterimi bir işin geç fark edilmesine yol açar, ceza yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Türkçe e-kitap ve örnek kod; hatalı anlatım okura ceza ya da parasal zarar doğurmaz."
+  },
+  "ai-first-tasarim-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Token hattı ve üç bileşen müşteri deposuna kurulur; hatalı kurulum yeniden iş doğurur, veri ya da ceza riski yok."
+  },
+  "ai-first-tasarim-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek form ve tek tablo için kabul dosyası; hatalı ölçüt ekranın yeniden yapılmasına yol açar, ceza ya da ciddi zarar yok."
+  },
+  "aicommandcard-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yapay zekâ taslağı menü metni ve fiyat kararına girer; yanlış fiyat ya da alerjen bilgisi yayınlanırsa sağlık ve şikâyet riski, onay adımı azaltır."
+  },
+  "aicommandcard-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Bileşen veri çekmez, yalnız geri çağrı üretir; entegrasyon hatası arayüz kusuru olarak kalır, zarar sınırlı."
+  },
+  "atonota-denetim-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Çerez bandı kontrolü uyum onayı gibi okunabilir; yanlış geçti sonucu site sahibinde yanlış güven yaratır, sorumluluk reddi planlı."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans logolu rapor müşteriye gider; hatalı puan ya da çerez ifadesi ajansı müşterisi karşısında zora sokar, zarar sınırlı."
+  },
+  "atonota-denetim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kabul kaydı faturalanan işin dayanağıdır; hatalı kayıt itiraz ve fatura anlaşmazlığı doğurur, pilot siteye yazmaz."
+  },
+  "b2b-bilesenler-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ürün sayfasındaki fiyat kademesi ve minimum sipariş müşteriden gelir; hata yanlış teklif talebine yol açar, form kişisel veri işler."
+  },
+  "b2b-bilesenler-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek ürünün iki mobil görünümü; kişisel veri toplamaz, dil ya da para birimi biçimi hatası düzeltilebilir sınırlı zarar."
+  },
+  "b2b-bilesenler-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Şablon alıcının sitesinde çalışır; fiyat kademesi ve form hatası alıcı sorumluluğunda sınırlı zarar, destek ve garanti yok."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Görsel fiyatın ikinci kopyasını basılı ve sosyal ortama taşır; menü değişince eskiyen fiyat etiket kuralı ve şikâyet riski doğurur."
+  },
+  "banner-post-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Görseller elle üretilir ve işletme onaylar; fiyat ve indirim beyanı işletmede, hatalı görsel yeniden yapılır."
+  },
+  "banner-post-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Toplu üretilen görseller ajansın müşterisi adına yayınlanır; izinsiz görsel ya da marka kullanımı hak ihlali ve sınırlı zarar doğurur."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Efor bandı ajansın teklifine temel olur; yanlış bant eksik fiyatlanan projeye yol açar, form müşteri adayı verisi işler."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Karar dosyası ajansın müşterisine savunulur; yanlış teknoloji seçimi projede maliyet doğurur, sorumluluk sınırı yazılı değil."
+  },
+  "karar-sihirbazi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Statik form ekranda kaba efor özeti verir, veri saklamaz; teklifi ajans kendi düzenler, zarar riski düşük."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Sunum katalog fiyatını müşterinin alıcılarına taşır; yanlış fiyatlı slayt marj kaybı ve itibar zararı doğurur, ceza yok."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansın müşterileri adına çok sayıda sunum üretilir; yanlış fiyat ya da marka hatası ajansı müşterisi karşısında zora sokar."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yönetici karar dosyasındaki rakam danışmanın müşterisine gider; veri doğrulaması kapsam dışı, yanlış rakam sınırlı zarar."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Sahte verili statik demo; ceza riski yok, tek risk yatırımcının demoyu çalışan ürün sanması ve beklenti hatası."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Sahte verili beyaz etiket demo; ceza yok, ajansın müşterisi demoyu ürün sanarsa beklenti uyuşmazlığı doğar."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yanlış eşlenen ya da kaçan hareket bordroya yanlış ücret olarak gider; hukuki bordro sonucu iddia edilmez ama işçilik alacağı riski doğar."
+  },
+  "ddd-renderer-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Mimari JSON şablonu, kontrol listesi ve rehber; hatalı şablon okura ceza ya da parasal zarar doğurmaz."
+  },
+  "ddd-renderer-b": {
+   "p": 5,
+   "k": 0,
+   "g": "İndirilebilir şablon ve karar kaydı taslakları; içerik niteliğinde, alıcıya ceza ya da zarar riski yok."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Değerlendirme müşterinin canlı sistemini modeller; hatalı sınır raporu yanlış mimari karara, kaynak erişimi gizlilik riskine yol açar."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıkıcı işlem onayı ve yetki matrisi müşterinin paneline girer; bileşen hatası yetkisiz işleme yol açabilir, kapsam üç desenle sınırlı."
+  },
+  "devpanel-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek formun şeması ve React çıktısı; hatalı koşul ya da doğrulama iç araçta yanlış girişe yol açar, API'yi müşteri bağlar."
+  },
+  "devpanel-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Sahte verili panel şablonu; alıcı kendi projesine uyarlar, hata alıcı sorumluluğunda sınırlı yeniden iş."
+  },
+  "e-menum-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek kiracılı kurulum sipariş ve rezervasyon verisi işler; hata ajansın müşterisinde sınırlı zarar, 30 gün düzeltme var, hizmet seviyesi yok."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Fiyat ve alerjen değişikliği kurucu eliyle yayınlanır; yanlış alerjen sağlık, yanlış şube fiyatı şikâyet riski doğurur, onay adımı azaltır."
+  },
+  "e-menum-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Desteksiz kaynak kod ve kullanım lisansı; çalıştırma ve veri sorumluluğu alıcıda, bilinen eksikler sayfası veriliyor."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Bülten fırsat kartı karar yardımıdır; kaynaksız tahmin yanlış nişe emek harcatabilir, garanti yok, ceza yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "İndirilebilir puanlama çerçevesi; puanı alıcı kendi verir, hatalı örnek en çok yanlış öncelik doğurur."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Görüşmede ajansın kendi fikirleri puanlanır ve ürün hattı kararına girer; yanlış yönlendirme ekip zamanına mal olur."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ekran görüntülü bulgu dosyası tavsiye niteliğinde; kaçan hata mevcut durumu kötüleştirmez, uyum garantisi verilmiyor."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Kontrol listesini alıcı kendi projesinde uygular; eksik madde bir kusurun kaçmasına yol açar, ceza doğurmaz."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kontrol sürüm hattına kapı olarak girer; yanlış alarm sürümü durdurur, kaçan hata canlıya çıkar; zarar sınırlı."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Karar belgesi devam ya da durdur ölçütü önerir, kararı kurum verir; yanlış öneri yön kaybı doğurur, ceza yok."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Beş sayfalık doğrulama raporu görüşme ve teklif yanıtına dayanır; yanlış sonuç kaynak kaybı yaratır, zarar sınırlı."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Strateji ve backlog geliştiriciye verilir ve büyük bütçeli karara temel olur; hatalı backlog maliyetli yeniden iş doğurur."
+  },
+  "lifeos-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz yan panel ve çalışma kâğıdı; yöntem anlatımı hatası kararı dolaylı etkiler, eklenti veri toplamaz."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Çalışma kaydı müşteri faturasına dayanak olur; yanlış süre fatura uyuşmazlığı doğurur, kaydı kullanıcı onaylar ve düzeltir."
+  },
+  "lifeos-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Tek rutinli yeni sekme şablonu, kayıt yerelde; hatalı kod alıcıya ceza ya da parasal zarar doğurmaz."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Komisyon ve kaparo kaydı ile müşteri verisi tutulur; kayıp ya da yanlış kayıt ofise sınırlı zarar, veri işleyen rolü yük getirir."
+  },
+  "luquit-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Arayüz kiti kişisel veri işlemez; erişilebilirlik iddiası yanlışsa ajansın projesinde yeniden iş ve itibar riski."
+  },
+  "metaframer-kernel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kitin vaadi kiracı izolasyonudur; açık varsa alıcının ürününde bir kiracının verisi diğerine sızar, garanti verilmemesi zararı azaltmaz."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans aynı çekirdeği müşteri projelerine kurar ve güvenlik anketini buna dayanarak yanıtlar; izolasyon hatası müşteriye yansır."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Entegrasyon canlı uygulamada yazma eylemini işler; yanlış kiracıya yazma veri ve kayıt zararı doğurur, negatif testler azaltır."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yanlış boş sonucu ya da marka alınabilir sanısı boşa alan adı ve başvuru masrafına yol açar; hukuki görüş değildir uyarısı planlı."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kısa listeyi ajans müşterisine teslim eder; yanlış boş ya da marka sonucu sınırlı masraf ve itibar zararı doğurur."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Elle hazırlanan karar dosyası ad seçimine temel olur; yanlış boşluk ya da marka notu sınırlı masraf doğurur, hukuki görüş değil."
+  },
+  "projector-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Mimari e-kitap; hatalı ya da çelişkili bölüm okura ceza ya da parasal zarar doğurmaz, 14 gün iade var."
+  },
+  "projector-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Atölye çıktısı ekibin kendi karar kaydıdır; yanlış mimari öneri ekipte yeniden iş doğurabilir, ceza yok."
+  },
+  "projector-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Portal danışmanın müşterisine teslim belgesidir; kaybolan ya da yanlış eşlenen doküman teslimi bozar, zarar sınırlı."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Karar ve bütçe şablonunu alıcı kendi doldurur; şablon hatası dolaylı etki yapar, ceza ya da doğrudan zarar yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Kurum ekiplerden karar belgesi toplar; şablon hatası belge tutarlılığını etkiler, hukuki ya da parasal zarar düşük."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Yanlış künye okura yanlış baskıyı aldırır, zarar bir kitap bedeli; ortaklık bağlantısı işaretleme yükümlülüğü var."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İmzadaki KVKK altbilgisi ajansın müşterisinde uyum sağlandı sanısı yaratabilir; hukukçu okuması yok, ceza doğrudan doğmaz."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 0,
+   "g": "KVKK altbilgi metni hazır sunulur; işletme bunu hukuki koruma sanabilir, kırık imza ise yalnız görsel kusur."
+  },
+  "signator-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Elle hazırlanan beş kişilik imza paketi; kırık logo ya da yanlış unvan görsel kusurdur, bir revizyonla düzeltilir."
+  },
+  "volley-tap-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Markalı kampanya oyunu kişisel veri toplamaz; oyun hatası kampanyada marka itibarını etkiler, logo izni markada."
+  },
+  "volley-tap-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Portalda ücretsiz oynanan oyun; ödeyen alıcı yok, hatalı oyun kimseye ceza ya da zarar doğurmaz."
+  },
+  "volley-tap-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Üç dolarlık eğlence oyunu; hata oyuncuya ceza ya da parasal zarar doğurmaz, iade bilgisi var."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yanlış taksit oranı ya da kapıda ödeme ek ücreti mağazaya şikâyet ve sınırlı zarar yazar; oranı mağaza kendi girer."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajans aynı taksit ve kapıda ödeme kuralını müşteri mağazalarına kurar; yanlış gösterim sınırlı zarar, oran girdisi mağazada."
+  },
+  "woocommnts-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yanlış ürüne bağlanan yorum alıcıyı yanıltır ve kişisel veri içerir; deneme çalıştırması, onaylı yayın ve geri alma zararı sınırlar."
+  },
+  "egitim-demolari-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Hatalı soru ya da cevap anahtarı sınıfta yanlış öğretime ve öğretmenin itibarına dokunur; ceza ya da parasal zarar yok."
+  },
+  "egitim-demolari-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Mini ders ve eylem kaydı ekibin kendi senaryosuna uygulanır; hatalı içerik ceza ya da ciddi zarar doğurmaz."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ölçüm kurulumu ya da küçük hesap prototipi müşterinin kararına girer; hata sınırlı zarar, sözleşme şablonu henüz yok."
+  },
+  "baz-secenekler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansın sunucusuna tek kiracılı kurulum sipariş ve kişisel veri işler; hata sınırlı zarar, 30 gün düzeltme, hukukçu teyidi yok."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Alıcı yok; başvurudaki hatalı beyan ve pay karşılığı fonun izleme yükümlülüğü kurucunun kendisine yük ve yaptırım riski getirir."
+  }
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "slug": "ai-first-tasarim",
+ "secenekler": {
+  "ai-first-tasarim-a": {
+   "satis_basina_kurucu_saati": 0.1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Kopyası satılan e-kitap; müşteriye özel iş yok, teslim 0. Karttaki 10 dk yalnız soru ve düzeltme desteği. Satış emeği ön satış yazışması (varsayım)."
+  },
+  "ai-first-tasarim-b": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 16,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Atölye 1 gün = 8 saat sunum + 8 saat hazırlık (varsayım). Karttaki 25 saat satış değil teslimi de içeriyordu; satışa 8 saat bırakıldı. Atölye sonrası destek 60 dk."
+  },
+  "ai-first-tasarim-c": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 16,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Fiyat 12 saatlik paket varsayımından; kapsam (form, tablo, durum, token, test) iyimser olmamak için 16 saate çıkarıldı. Karttaki 12 saat satışı değil teslimi içeriyordu; satış 6 saat, destek 30 dk."
+  }
+ }
+}

@@ -1,0 +1,343 @@
+{
+ "slug": "vize-operasyon",
+ "baslik": "Vize acentesi operasyon platformu",
+ "ozet": "Vize danışmanlık acentelerine dosya, evrak ve randevu hatırlatma takibi ile KVKK saklama-imha kayıtları sunan operasyon paneli; başvurucuya evrak kontrol raporu. Kod tabanı kısmen var, hiç çalıştırılmadı, ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Kısmen yazılmış arka uç: dosya durum makinesi, kredi defteri, Telegram bildirimi, şifreleme (çalıştırılmamış)",
+   "Kaynak belgelerde 10 ülke için kapsam, paket fiyatı ve 90 günlük pilot planı yazılı",
+   "Pazar verisi: 2025'te Türkiye'den 1.268.376 Schengen başvurusu, ret oranı yüzde 14,59",
+   "Rakipler adlı ve fiyatları kısmen belli (iHMK CRM, Ahoraclario, Sys-R)"
+  ],
+  "yok": [
+   "Ödeyen müşteri ve imzalı pilot",
+   "Çalışan arayüz (acente arayüzü yüzde 0)",
+   "Hiç çalıştırılmamış kod; mock'suz test yok",
+   "Evrak şablonları ve KVKK belge seti",
+   "Sanal POS hesabı ve test ödemesi",
+   "Belgelerde adı geçen acente ilişkisi yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Odak: acente paneli, belge kontrol asistanı ve duyuru aracı; baz senaryoda 12. ayda 20 acente. En gerçekçi yol 3 acenteyle 90 günlük pilot, ardından ücretli geçiş.",
+  "gpt": "Ücretli vaat garanti değil, acentenin eksiksiz başvuru verisi: Sheet içe aktarma, kaynaklı kural, eksik belge kuyruğu. İlk P0 tek acente; hipotez 5.000 ₺ kurulum + 3.000 ₺/ay.",
+  "ayrisma": "Claude geniş üç modüllü ürün ve B2C kolunu öne alır, 12 ödeyen acente hedefler; GPT dar tek acenteli doğrulama işini ve veri güvenini önce çözmeyi, kanıtsız ölçü vermemeyi savunur.",
+  "birlesik": "Garanti satılmaz; ilk ücretli iş dar kapsamlı acente dosya kontrolüdür. Veri güveni, KVKK ve kaynaklı kural önce gelir; 6 ayda en çok birkaç acente beklenir."
+ },
+ "analist_gorusu": "En gerçekçi yol dar kapsamlı acente pilotu: tek kanal, 3 acente, ücretli geçiş. B2C evrak kontrolü SEO beklediği için ayrı ve yavaş bir deney; 6 ayda hedefe ulaşması olası değil.",
+ "secenekler": [
+  {
+   "id": "vize-operasyon-a",
+   "ad": "Acente paneli: 90 günlük pilot, sonra abonelik",
+   "tur": "yazılım ürünü",
+   "musteri": "İstanbul'da 5-12 personelli, Almanya, İtalya, Fransa ve Yunanistan dosyası yapan vize danışmanlık acenteleri",
+   "is": "Dosya aşaması, evrak eksiği, randevu ve belge tarihlerini Excel ve WhatsApp yerine tek panelde izlemek; müşteriye durum bildirmek",
+   "tetikleyici": "Personel ayrılması, kaçan randevu veya ret şikayeti, müşterinin KVKK belgesi sorması, Şubat-Mayıs yoğun sezonu",
+   "teklif": "Ülke şablonlu evrak listesi, T-7/T-1 hatırlatma, Telegram bildirimi, tahsilat defteri, 90 gün saklama ve otomatik imha; 3 acentede ücretsiz pilot, 60. günde ücretli geçiş",
+   "fiyat": "Başlangıç 1.490, Standart 2.990, Pro 5.990 ₺/ay; pilot sonrası ilk yıl yüzde 30 indirimle Standart 2.093 ₺/ay",
+   "kanal_birincil": "Gayrettepe, Şişli, Mecidiyeköy ofis ziyareti ve elle WhatsApp mesajı; TÜRSAB bölge sunumu destekleyici (kurul başına yaklaşık 14 kişi)",
+   "kanal_yedek": "Acente WhatsApp grupları, mali müşavirler üzerinden ortak, bir vize acentesi dizin sitesi",
+   "ilk_adim": "60 acentelik isim listesi çıkar, 20 acenteye elle mesaj at, 10 demo yap, 3 pilot imzası al",
+   "ilk_kapsam": "İnce dilim: dosya kartı, durum makinesi, 3 ülke evrak şablonu, randevu girişi ve T-7/T-1 hatırlatma, Telegram, yönetim arayüzü; yaklaşık 20 kurucu günü",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucunun ama açık kaynak lisans seçilmedi; yönetim arayüzü yazılımının lisans koşulu teyit bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK danışmanı teyidi bekliyor: veri işleyen sözleşmesi, aydınlatma, saklama-imha; LLM kullanılırsa yurt dışı aktarım"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve sanal POS yolu belli; hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net, Armut dizininde 2.669 kayıt var; 20 acentelik isim listesi henüz yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Ofis ziyareti ve WhatsApp adlı; TÜRSAB erişimi dar (yaklaşık 70 kişi, vize acentesi payı doğrulanmadı); yedek kanallar var"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "İnce dilim planda 20 gün ama kod hiç çalıştırılmadı; satış döngüsü ölçülmedi, ücretli geçiş en erken 70. gün"
+    },
+    "G7": {
+     "durum": "test",
+     "not": "Kaynakta nakit hesabı yok; 45.000 ₺ analist tahmini, aylık sabit gider eklenince 150. günde tavanı aşabilir; hesap yapılmadı"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Üç sabit paket, dosya ve kullanıcı sınırı yazılı; herkes aynı ürünü alır, özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "G1 lisans kararı; G2 KVKK teyidi; G3 sanal POS/havale; G4 isim listesi; G6 kodu çalıştırıp 5 hafta ölç; G7 KVKK ve saha bütçesini teklifle kesinleştir.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 2093,
+    "degisken_maliyet_tl": 170,
+    "sabit_gider_aylik_tl": 4500,
+    "baslangic_nakit_tl": 45000,
+    "kalan_efor_saat": {
+     "min": 120,
+     "beklenen": 150,
+     "max": 260
+    },
+    "ilk_tahsilat_gun": {
+     "min": 75,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 14,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 10465,
+     "iyi": 20930
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 5,
+     "iyi": 10
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "donusum_orani": {
+     "dusuk": 0.08,
+     "yuksek": 0.25
+    },
+    "dayanak": "Plan 5 ve 7: Standart 2.990 ₺ x 0,7 = 2.093 ₺. Pilot 35. günde başlar, ücretli geçiş en erken 70-100. gün; planın başarı ölçütü 3 pilottan 2'si ücretli, sonuç değil hedef. Baz 2 acente x 2,5 ay = 5 ödeme; iyi 4 acente, 10 ödeme. Plan 12. ay 20 acente der; 6 ay için kesildi. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Acenteler dosya paneline ücret öder ve personeli haftada 5 gün kullanır",
+    "yontem": "İnce dilimi 3 acentede 60 gün ücretsiz çalıştır; kullanım günü, gönderilen hatırlatma ve kaçan tarih ölç; 35. günde yazılı ücretli geçiş ön teklifi ver",
+    "sure_gun": 90,
+    "maliyet_saat": 240,
+    "maliyet_tl": 45000,
+    "basari_olcutu": "3 pilottan en az 2'si ücretli ya da yazılı taahhütlü; haftalık aktif 5 gün; hatırlatma teslimi yüzde 98",
+    "birakma_olcutu": "60. günde ücretli geçişi kabul eden yok ya da kullanım haftada 3 günün altında",
+    "sonraki_dilim": "B2C evrak kontrolü ve SMS ile Standart paket; dışarıdan müşteri onboarding"
+   },
+   "etiketler": {
+    "segment": "İstanbul 5-12 personelli vize acenteleri",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "FastAPI, PostgreSQL, Directus, Telegram",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 3.2: 2.669 acente kaydı (dizin, aktif işletme değil). Plan 5: paketler. Plan 1 ve derinlik A.2: Excel ve WhatsApp ile çalışılıyor, ödeme niyeti yok; kaçan tarih kaybı varsayım. Rakipler iHMK CRM, Ahoraclario, Sys-R fiyat belirtmiyor. Derinlik D.2: kodun yaklaşık yüzde 30'u var, arayüz yüzde 0, çalıştırılmadı. Derinlik C.3: ince dilim 5 hafta, tam MVP yaklaşık 14 hafta. Derinlik C.5: TÜRSAB bölge kurulları yaklaşık 70 kişi; bunların vize acentesi olduğu doğrulanmadı. 45.000 ₺ nakit kaynakta hesaplanmış değil."
+  },
+  {
+   "id": "vize-operasyon-b",
+   "ad": "Acente Sheet doğrulama ve eksik belge kuyruğu (ücretli pilot)",
+   "tur": "hizmet",
+   "musteri": "Ayda 50-300 vize dosyası işleyen, 3-20 operatörlü tek bir acente; ilk müşteri tek acente",
+   "is": "Acentenin Sheet'teki başvuru satırlarını ülke ve vize türü kuralına göre doğrulamak, eksik ve tarih riskli dosyaları kuyruğa çıkarmak",
+   "tetikleyici": "Eksik bilgi için müşteriye tekrar tekrar sorma yükü, dosya sahipliği belirsizliği, yoğun dönemde geciken dosyalar",
+   "teklif": "Salt okunur Sheet içe aktarma, kaynaklı eksik belge kuralı, inceleme kuyruğu, düzeltme kaydı ve dosya dökümü; ilk P0 yalnız operatör kullanır",
+   "fiyat": "5.000 ₺ kurulum ve 100 dosyaya kadar 3.000 ₺/ay (kurucunun hipotezi)",
+   "kanal_birincil": "TÜRSAB bölge kurulu eğitim yüzeyi: ücretsiz şablon sunumu; paylaşım için ev sahibi izni gerekir, izin alınmadı",
+   "kanal_yedek": "Mevcut acente operasyon ilişkisi (varsa) ve evrak kontrol Excel şablonu rehberi ile arama",
+   "ilk_adim": "100 sentetik satırla 10 dakikalık ücretsiz ön kontrol hazırla; bölge kuruluyla paylaşım için izin iste",
+   "ilk_kapsam": "Salt okunur Sheet eşleme, ülke ve vize türü kural kaydı, eksik ve tarih kuyruğu, düzeltme gerekçesi, dosya dökümü; başvurucu girişi ve yazma sonraya",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucunun ama lisans seçilmedi; Sheets entegrasyon bağımlılıkları ve veri sözleşmesi teyit bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Pasaport verisi için veri işleyen sözleşmesi, erişim ve silme kuralı hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli; hesap ve fatura düzeni kurulmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (3-20 operatörlü acente); isim listesi yok, mevcut ilişkinin varlığı belgede bilinmiyor"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Birincil kanal ev sahibi iznine bağlı, izin yok; yedek mevcut ilişkinin varlığı belgede bilinmiyor, Excel şablonu aramasının hacmi bilinmiyor"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Beklenen yaklaşık 160 saat, 8 haftanın sınırında; kural kaydı ve denetim izi çalışmadı, döngü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Hukuk teyidi ve saha için yaklaşık 25.000 ₺; tavanın altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Her acentenin Sheet kolonları farklı; kolon eşleme ve kural kapsamı sınırı yazılı değil"
+    }
+   },
+   "kapi_duzeltme": "G1 lisans; G2 hukukçu teyidi; G3 havale ve fatura; G4 isim listesi; G5 bölge kurulundan yazılı izin ya da ilişki belgesi; G6 ilk dilimi ölç; G8 en çok 3 şablon, 2 kolon eşleme.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 3000,
+    "degisken_maliyet_tl": 300,
+    "sabit_gider_aylik_tl": 2500,
+    "baslangic_nakit_tl": 25000,
+    "kalan_efor_saat": {
+     "min": 100,
+     "beklenen": 160,
+     "max": 260
+    },
+    "ilk_tahsilat_gun": {
+     "min": 50,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 16,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 14000,
+     "iyi": 45000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 4,
+     "iyi": 13
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "GPT dosyası: 5.000 ₺ kurulum, 3.000 ₺/ay hipotez. Baz 1 acente: ilk ödeme ~90. gün, 5.000 + 3 aylık x 3.000 = 14.000 ₺ (izin ve ilişki doğrulanmadı). İyi 3 acente: 15.000 + 10 aylık x 3.000 = 45.000 ₺. Maliyet: OCR 200 + ödeme 90. Dönüşüm varsayım, saha verisi yok."
+   },
+   "deney": {
+    "varsayim": "Acente, eksik belge kuyruğu için kurulum ücreti ve aylık ücret öder; kural doğruluğu ve veri güveni yeterli bulunur",
+    "yontem": "20 izinli dosyayı salt okunur içe aktar, kural matrisini kaynaklarla çıkar; 3 acentede iki dönem kullandır; kabul edilen eksik belgeyi say",
+    "sure_gun": 90,
+    "maliyet_saat": 160,
+    "maliyet_tl": 25000,
+    "basari_olcutu": "Kabul edilen eksik kural oranı yüzde 90; aylık destek en çok 1 saat; en az 1 acente kurulum ücretini öder",
+    "birakma_olcutu": "60. günde hiçbir acente ücret taahhüdü vermez ya da kesin yanlış sonuç kural yayımını sürekli durdurur",
+    "sonraki_dilim": "Başvurucu bağlantısı, çok operatörlü roller ve yazma ucu; Seçenek A paneline birleşme"
+   },
+   "etiketler": {
+    "segment": "Tek acente, 3-20 operatör, 50-300 dosya/ay",
+    "kanal_turu": "ortak",
+    "teknoloji": "Python, Google Sheets, PostgreSQL",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyası: ilk segment ve P0 kapsamı, kurulum ve aylık fiyat hipotezi, katkı hesabı 1.310 ₺ ve destek varsayımı; müşteri kullanımı ve Sheets yazma atomikliği doğrulanmadı. Prepaid bakiye güvenliği çözülmeden kredi satışı yok. Rakipler TravelJoy ve Travefy CRM, bu işi sunduğu teyit edilmedi. Claude planı bu dar işi ayrı ürün saymıyor. Birincil kanal ev sahibi izni ister; izin alınmadı."
+  },
+  {
+   "id": "vize-operasyon-c",
+   "ad": "Başvurucu evrak kontrolü: 299/599 ₺ rapor, SEO ile",
+   "tur": "yazılım ürünü",
+   "musteri": "Acentesiz, ilk kez Schengen turist vizesine başvuran bireyler (Yunanistan, İtalya, Almanya ağırlıklı)",
+   "is": "Evrak listesinin eksik ya da tutarsız olup olmadığını yüklenen belgelerden öğrenmek; ret ve 90 € ücret kaybı korkusunu azaltmak",
+   "tetikleyici": "Otel, uçuş ve randevu tarihinin netleşmesi, tanıdığın ret alması, acentenin 3.000-6.000 ₺ istemesi",
+   "teklif": "Evrak Kontrol: eksik ve tutarsızlık raporu; Tam Dosya: form ve niyet mektubu taslağı ile 1 yeniden kontrol; vize garantisi yok",
+   "fiyat": "Evrak Kontrol 299 ₺, Tam Dosya 599 ₺ (KDV hariç); ortalama sepet 399 ₺",
+   "kanal_birincil": "Google araması: 'almanya vizesi evrak listesi 2026' tipi ülke sayfaları (30 sayfa, 10 ülke)",
+   "kanal_yedek": "Resmî duyuru Telegram bülteni, YouTube evrak videoları, seyahat acentesi beyaz etiket ortaklığı",
+   "ilk_adim": "Almanya, İtalya, Yunanistan, Fransa, Hollanda için 5 evrak listesi sayfası yaz ve Search Console'a ekle",
+   "ilk_kapsam": "Tek sayfa: belge yükle, kişisel veri maskele, rapor al, öde; 3 ülke şablonu; hosted ödeme; 320 px öncelikli",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucunun, lisans seçilmedi; evrak şablonları resmî kaynaklardan derleniyor, kullanım koşulu teyit bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Pasaport verisini yurt dışı model sağlayıcısına göndermek KVKK aktarımı; mesafeli satış ve cayma metinleri hazır değil"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "İyzico ya da PayTR ile tahsilat yolu belli; hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (bireysel başvurucu) ama ismen sayılabilecek liste yok; alıcı aramayla gelecek"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı (ülke evrak sayfaları, Google); yedek bülten, YouTube ve ortak acenteler adlı"
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Yaklaşık 190 saat, 9-10 hafta; sayfa, şablon, maskeleme ve ödeme gerekiyor; SEO sonucu 8-12 hafta sonra"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Hukuk metinleri ve alan adı için yaklaşık 20.000 ₺; tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "İki sabit kapsamlı ve sabit fiyatlı paket; herkes aynı rapor biçimini alır"
+    }
+   },
+   "kapi_duzeltme": "G6: ilk sürümü tek ülke şablonu ve elle ödeme bağlantısıyla 120 saate indir. G1: lisans ve kaynak kullanım teyidi. G2: hukukçu teyidi ve veri maskeleme. G3: sanal POS hesabı.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 399,
+    "degisken_maliyet_tl": 49,
+    "sabit_gider_aylik_tl": 2000,
+    "baslangic_nakit_tl": 20000,
+    "kalan_efor_saat": {
+     "min": 120,
+     "beklenen": 190,
+     "max": 330
+    },
+    "ilk_tahsilat_gun": {
+     "min": 70,
+     "max": 140
+    },
+    "satis_basina_kurucu_saati": 1.5,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 1995,
+     "baz": 5985,
+     "iyi": 15960
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 5,
+     "baz": 15,
+     "iyi": 40
+    },
+    "alti_ay_musteri": {
+     "kotu": 5,
+     "baz": 15,
+     "iyi": 40
+    },
+    "donusum_orani": {
+     "dusuk": 0.005,
+     "yuksek": 0.02
+    },
+    "dayanak": "Plan 5-6: sepet 399 ₺, maliyet 49 ₺. Kod 9-10 hafta, SEO sonucu 8-12 hafta sonra: ilk satış ~130-150. gün, 6 ayda yalnız 30-50 günlük satış penceresi. Baz 15 satış (5.985 ₺), iyi 40, kötü 5. Plan 12. ayda 80/ay der; kesildi. Pay ve dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Bireysel başvurucu, ChatGPT ve ücretsiz listeler varken 299-599 ₺ ödeyip yüklediği belgeyi kontrol ettirir",
+    "yontem": "5 ülke sayfası ve tek sayfa rapor akışını yayımla; 4 hafta Search Console tık ve ödeme dönüşümünü ölç; ilk 20 ödeme için iade ve fayda oyu topla",
+    "sure_gun": 90,
+    "maliyet_saat": 190,
+    "maliyet_tl": 20000,
+    "basari_olcutu": "Ziyaretçiden ödemeye en az yüzde 1; iade yüzde 5'in altında; ay 3'te 20 ücretli kontrol",
+    "birakma_olcutu": "Ay 3'te 5'ten az ödeme ya da iade yüzde 10'un üstünde",
+    "sonraki_dilim": "Acente beyaz etiket bağlantısı ve yeniden kontrol; Seçenek A müşterilerine kota olarak ekleme"
+   },
+   "etiketler": {
+    "segment": "İlk kez Schengen başvuran bireyler",
+    "kanal_turu": "arama",
+    "teknoloji": "Web, LLM API, hosted ödeme",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 3.2: 1.268.376 başvuru (2025), ret yüzde 14,59; bireysel pay yüzde 60 varsayım; arama hacmi doğrulanamadı. Plan 4: ChatGPT 20 $/ay ve ücretsiz listeler ikame; Atlys ve iVisa Türkiye'ye özgü değil. Derinlik A.8: 299 ₺ beklenen kayıp mantığıyla zayıf, sigorta gibi satılır. Derinlik C.2: SEO sonucu 8-12 hafta. Plan 6: katkı yaklaşık 350 ₺."
+  }
+ ]
+}

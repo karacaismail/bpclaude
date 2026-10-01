@@ -1,0 +1,47 @@
+{
+  "slug": "volley-tap",
+  "kararlar": [
+    {
+      "itiraz": "C: etkinlik sürümü (150-500 dolar) kaynakta yalnız hipotez, kart teklif metni satılabilir gibi sunuyor.",
+      "karar": "kabul",
+      "degisiklik": "C teklif ve fiyat: etkinlik sürümü teklif dışı, fiyat yalnız hipotez olarak yazıldı; premium da hipotez etiketli.",
+      "gerekce": "GPT dosyası fiyatları hipotez ve etkinlik talebi kanıtı yok diyor; sinyal yok."
+    },
+    {
+      "itiraz": "B: ödeyen taraf portal diye yazılmış; gelir yayımlanmamış paya ve eCPM varsayımına dayanıyor, 68 USD/ay yalnız senaryo.",
+      "karar": "kabul",
+      "degisiklik": "B musteri ve G4 notu: oyuncu ödemez, gelir portal reklam payı; pay ve eCPM yayımlanmamış, 68 USD/ay senaryo.",
+      "gerekce": "Plan 3.2 ve 8: eCPM ve pay varsayım; CrazyGames yüzdesi yayımlanmıyor."
+    },
+    {
+      "itiraz": "A, G5 test olmalı: mevcut ilişkiler 3-5 kişi, ajans 5 aday, il temsilcilikleri adlandırılmamış; yalnız LinkedIn ve Instagram adı var.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "G5 gecti tanımı birincil kanal, ilk adım ve yedek kanal ister; derinlik C.2 LinkedIn, Instagram, ajans ve il temsilciliklerini adlı hedefle veriyor. İsim listesi G4 konusu."
+    },
+    {
+      "itiraz": "A alti_ay_tahsilat baz 20000: ödeyen müşteri yok, plan baz senaryoda ilk yıl B2B 0; 20000 iyi senaryo olmalı.",
+      "karar": "kabul",
+      "degisiklik": "A tahsilat baz 20000 -> 0; iyi 45000 -> 25000; ödeme ve müşteri baz 1 -> 0, iyi 2 -> 1; dayanak güncellendi.",
+      "gerekce": "Plan 8 baz: ilk yıl B2B 0, plan 11 pilot 6. ay; iyimser 12 ayda tek 25.000 TL proje."
+    },
+    {
+      "itiraz": "A ilk_tahsilat_gun min 45 erken: demo yok, 80-160 saat efor ve görüşme gerekir; en erken 60-75 gün.",
+      "karar": "kabul",
+      "degisiklik": "A ilk_tahsilat_gun min 45 -> 63 (max 150 -> 180).",
+      "gerekce": "Derinlik C.3: ilk teklifler 9. haftada, %50 ön ödeme imzayla; pilot hedefi 6. ay."
+    },
+    {
+      "itiraz": "B alti_ay_tahsilat baz 6500 yüksek: Full Launch reddi, 100 EUR eşik ve gecikme var; baz 0, iyi 28800 ise 20.000 oynanış/gün varsayımı.",
+      "karar": "kabul",
+      "degisiklik": "B tahsilat baz 6500 -> 0, iyi 28800 -> 6500; ödeme baz 2 -> 0, iyi 3 -> 1; müşteri baz 1 -> 0, iyi 2 -> 1; dayanak güncellendi.",
+      "gerekce": "Plan 11 6. ayda ancak 68 USD/ay der; eşik ve gecikmeyle 6 ayda tahsilat baz 0. 675 USD/ay planda 6. aydan başlar."
+    },
+    {
+      "itiraz": "C donusum yuksek 0,05 ve baz 8 satış kaynaksız; ücretsiz ilk maç sonrası dönüşüm bence 0,01-0,02 ve baz 2-3 satış.",
+      "karar": "kismen",
+      "degisiklik": "C baz 8 -> 3 satış (tahsilat 1000 -> 430), iyi 30 -> 10 (4000 -> 1440); donusum_orani 0,01-0,05 kaldı, 0,05 hedef olarak etiketlendi.",
+      "gerekce": "GPT %5 yalnız karar eşiği (100 oturum, 5 ödeme); benchmark değil. Üst sınır hedef olarak kalır, baz temkinli."
+    }
+  ]
+}

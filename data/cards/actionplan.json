@@ -1,0 +1,344 @@
+{
+ "slug": "actionplan",
+ "baslik": "actionplan (yapay zekâya hazır iş kırılım aracı)",
+ "ozet": "Tarayıcıda çalışan, hesapsız bir iş kırılım (WBS) aracı: görevleri kabul ölçütlü ve bağımlılıklı paketlere çevirip Codex ve Claude Code gibi kodlama ajanlarına verir. Araç olarak çalışıyor ama dış kullanıcısı ve ödeyen müşterisi yok; ürünleşmesi için yeniden paketleme gerekiyor.",
+ "bugun": {
+  "var": [
+   "Çalışan React tabanlı araç: Board, Table, Graph görünümleri, kritik yol hesabı",
+   "Ajan görev paketi, geliştirici özeti ve kanıt yaması dışa aktarımları (kısmen genel)",
+   "CSV ve JSON içe/dışa aktarma; canlı demo sayfası yayında",
+   "Kaynak kodda uzun geçmiş (476 işleme) ve kurucunun kendi ajan akışından doğmuş kullanım",
+   "Planlı 14 günlük deneme tasarımı ve karar kapısı ölçütleri"
+  ],
+  "yok": [
+   "Dış kullanıcı ve ödeyen müşteri",
+   "Boş proje ve genel 3 seviyeli şema (veri kendi planına bağlı)",
+   "Ödeme hesabı, lisans anahtarı, fiyat sayfası",
+   "Linear/Jira içe aktarma eşlemesi, şablon galerisi, Türkçe paket",
+   "Açık kaynak lisans kararı ve temiz, hafif yeni depo",
+   "Ajans kabul akışı için kaynak adaptörü (Plane/GitHub import)"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Solo ajan geliştiriciye açık kaynak çekirdek + 39 $ tek seferlik Pro şablon/prompt paketi (Team 99 $, Türkçe paket 490 ₺). 2 haftalık deneme geçmezse iç araç. 12 ay baz 200 lisans.",
+  "gpt": "Vaat müşteri kabulü: kapsam sürümü, kabul kuralı ve kanıtı tek kayıtta. Alıcı 5-30 kişilik ajans proje lideri; fiyat 200-600 $ kurulum ya da 29-79 $ çalışma alanı/ay. Pilot: 3 ajans, 10 kabul.",
+  "ayrisma": "Claude görev-kırılımını ajana hazırlayan bireysel geliştirici aracı görür; GPT aynı koddan ajans-müşteri kabul belgesi çıkarır. Alıcı, fiyat modeli ve kanal tamamen farklı.",
+  "birlesik": "Her iki çalışma da bugünkü haliyle satışa hazır demiyor; ödeyen kanıtı yok, rakipler büyük ölçüde ücretsiz. Önce ucuz, sınırlı bir deneme: şablon paketi ve elle kabul paketi."
+ },
+ "analist_gorusu": "En gerçekçi yol önce sınırlı bir şablon paketi satmak: kod yeniden yazımı 7-9 hafta sürüyor, rakipler ücretsiz. Ajans kabul paketi elle teslim edilebilir ama alıcı ağı yok.",
+ "secenekler": [
+  {
+   "id": "actionplan-a",
+   "ad": "Ajan görev paketi: açık çekirdek ve Pro şablonlar",
+   "tur": "yazılım ürünü",
+   "musteri": "Codex ya da Claude Code ile ürün çıkaran solo geliştirici; küçük ekipler için Team paketi",
+   "is": "Büyük işi ajanın bitirebileceği görevlere bölmek; her göreve bağlam, kabul ölçütü, bağımlılık ve yapma listesi vermek",
+   "tetikleyici": "Yeni bir proje başlangıcı ya da ajan oturumunda boşa giden bir saat",
+   "teklif": "Çekirdek ücretsiz ve açık kaynak; Pro: şablonlar, Codex/Claude paketleri, içe aktarma, 12 ay güncelleme; Team: 5 kişi",
+   "fiyat": "Pro 39 USD tek seferlik; Team 99 USD; ilk 10 kişiye 19 USD kurucu fiyatı",
+   "kanal_birincil": "GitHub deposu ve canlı demo, Show HN gönderisi, r/ClaudeCode ve r/ChatGPTCoding gönderileri",
+   "kanal_yedek": "r/ClaudeAI, X'te paylaşım, awesome listeleri, Product Hunt, kurucunun bildiği 2 dış ekip",
+   "ilk_adim": "Yeni hafif depo, boş proje şablonu ve görev paketi dışa aktarmayı genelleştir; 20 test kullanıcısına davet gönder",
+   "ilk_kapsam": "Boş proje, 3 seviyeli şema, Board/Table/Graph, ajan görev paketi dışa aktarma, 4 şablon, lisans anahtarlı Pro satış sayfası",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait ama açık kaynak lisansı seçilmedi; bağımlılık lisansları ve marka kullanımı doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Telemetri yok, aydınlatma gerekir; KDV, cayma ve fatura düzeni mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yurt dışı satış için MoR hesabı planlı (Lemon Squeezy); hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (ajan kullanan geliştirici) ama 20 kişilik isim listesi yok; liste deneme haftasında çıkarılacak"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Adlı kanallar ve ilk adım var: GitHub, Show HN, r/ClaudeCode; yedek kanallar listeli"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kod taşıma ve yeniden yazım tahmini 7-9 hafta; sınırda, ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 10 bin TL (alan adı, logo, demo video); tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı ürünü ve aynı şablon paketini alır; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Lisans kararını kurucu onaylasın; MoR hesabını aç ve test ödemesi yap; 20 isimlik liste çıkar; 2 haftalık denemede kalan eforu ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 2160,
+    "degisken_maliyet_tl": 240,
+    "sabit_gider_aylik_tl": 5500,
+    "baslangic_nakit_tl": 10000,
+    "kalan_efor_saat": {
+     "min": 100,
+     "beklenen": 160,
+     "max": 240
+    },
+    "ilk_tahsilat_gun": {
+     "min": 50,
+     "max": 90
+    },
+    "satis_basina_kurucu_saati": 1.5,
+    "musteri_basina_aylik_destek_dk": 5,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 10800,
+     "baz": 97200,
+     "iyi": 259200
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 5,
+     "baz": 45,
+     "iyi": 120
+    },
+    "alti_ay_musteri": {
+     "kotu": 5,
+     "baz": 45,
+     "iyi": 120
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.08
+    },
+    "dayanak": "Plan 5 ve 6: Pro 39 USD, Team 99 USD, plan 90/10 karışımı ile ortalama 45 USD x 48 = 2160 TL (çıplak Pro 1872 TL); komisyon yüzde 5,5, iade yüzde 5 ile 240 TL. Yeniden yazım 7-9 hafta: ilk tahsilat en erken 50 gün. Plan 6. ay hedefi 120 lisans; baz 45 ve iyi 120. Dönüşüm varsayımdır."
+   },
+   "deney": {
+    "varsayim": "Ajan kullanan geliştiriciler görev paketi için çekirdek ücretsiz dururken Pro şablonlara para öder",
+    "yontem": "Boş proje ve paket dışa aktarmayı yayınla; 20 kişiye davet; 15 dakikalık görüşmeler; Pro için ödeme niyeti ve ön sipariş sor",
+    "sure_gun": 14,
+    "maliyet_saat": 40,
+    "maliyet_tl": 600,
+    "basari_olcutu": "En az 100 depo yıldızı ve en az 5 kişiden ön ödeme ya da yazılı ödeme niyeti",
+    "birakma_olcutu": "100 yıldızın altı ya da 5 niyetin altı: iç araç olarak bırak",
+    "sonraki_dilim": "Lemon Squeezy sayfası, ilk 10 lisans, 4 şablon ve Linear CSV içe aktarma"
+   },
+   "etiketler": {
+    "segment": "ajanla kodlayan solo geliştirici",
+    "kanal_turu": "topluluk",
+    "teknoloji": "React, TypeScript, Vite, tarayıcı içi JSON",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 1-3: araç yaklaşık yüzde 70 hazır, ürün olarak yüzde 0; iç hazırlık denetiminde düşük puan. Plan 5-6: Pro 39 USD, baz 200 lisans (12 ay). Derinlik dosyası A, C, D: rakipler task-master ve spec-kit ücretsiz; deneme 14 gün; kalan iş 27 gün. Ödeyen müşteri 0."
+  },
+  {
+   "id": "actionplan-b",
+   "ad": "Teslim kabul kurulumu: sürümlü kapsam ve kanıt paketi",
+   "tur": "hizmet",
+   "musteri": "5-30 kişilik yazılım ajansının proje lideri (alıcı); ajansın müşterisi kabul eden taraf",
+   "is": "Değişiklik talebinin kapsamını, kabul kuralını ve kanıtını sürümlü tek kayıtta tutmak; müşteri kabul ya da ret versin",
+   "tetikleyici": "Müşterinin 'ben bunu istemedim' demesi ya da teslim sonrası yeniden açılan iş",
+   "teklif": "Sabit kapsamlı kurulum: bir kaynaktan içe aktarma, kapsam sürüm farkı, kabul listesi, kanıt bağlantısı, salt-okunur paylaşım, 3 teslimde pilot",
+   "fiyat": "Kurulum 400 USD (19200 TL); sonrasında çalışma alanı başına 29-79 USD/ay hipotezi",
+   "kanal_birincil": "Plane Marketplace listelenmesi (henüz listeli değil) ve ücretsiz kabul şablonu denetleyen GitHub Action",
+   "kanal_yedek": "Kurucunun bildiği ajans ve yazılım ekipleri; ajans lideri toplulukları; yayınlanan anonim kabul örnekleri",
+   "ilk_adim": "Anonim 3 teslimlik kabul örneğini ve şablonu yayınla; 20 ajans proje liderinin adını listele; 3 ajansa pilot teklifi gönder",
+   "ilk_kapsam": "Elle teslim: kabul şablonu, kapsam sürüm tablosu, kanıt bağlantı listesi, salt-okunur paylaşım; araç yalnız mevcut dışa aktarma kadar",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; lisans ve bağımlılık uyumu doğrulanmadı; Plane ve GitHub kullanım koşulları okunmalı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Ajansın müşteri verisi işlenecek; KVKK rolü ve kabul kaydının hukuki değeri hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Türkiye'deki ajanslara havale ya da sanal POS ile fatura; hesap ve fatura düzeni hazır değil"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (ajans proje lideri); belgelerde adlandırılmış 20 kişilik liste yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Plane Marketplace ve GitHub Action adlı ama listelenme onayı araştırılmadı; somut ilk hedef yok"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Elle teslim yaklaşık 40 saat, 8 haftanın altında; ama satış döngüsü ölçülmedi, ajans alıcı listesi yok; ilk tahsilatın 6 aya sığması kanıtsız"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "GPT dosyası 0-25 USD nakit diyor; başlangıç nakdi 1000 TL civarı"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsamlı ve sabit fiyatlı paket; kaynak tek (Plane ya da GitHub), özel entegrasyon yok"
+    }
+   },
+   "kapi_duzeltme": "Kapsam sınırını yazılı yap; 20 ajans lideri listesi çıkar; satış döngüsünü 3 ajansla ölç; Plane Marketplace koşullarını araştır; hukukçudan KVKK görüşü al; havale ve fatura düzenini kur.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 19200,
+    "degisken_maliyet_tl": 500,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 25,
+     "beklenen": 40,
+     "max": 70
+    },
+    "ilk_tahsilat_gun": {
+     "min": 30,
+     "max": 100
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 19200,
+     "iyi": 57600
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.1
+    },
+    "dayanak": "GPT dosyası: 200-600 USD kurulum, pilot hedefi 3 ajans ve 10 kabul; 400 USD x 48 = 19200 TL. Ajans listesi, ilişki ve dönüşüm kanıtı yok: baz 1 ödeyen ajans, iyi 3 (pilot hedefi), kötü 0. Dönüşüm kanıtsızdır, varsayımdır. Destek ve sabit gider kurucunun tahminidir."
+   },
+   "deney": {
+    "varsayim": "Ajans proje liderleri müşteri kabul belgesi için kurulum ücreti öder",
+    "yontem": "Anonim 3 teslimlik örnek yayınla; 20 liderle görüş; 3 ajanstan ücretli pilot iste; kabul belgesinin müşteri tarafından açılıp açılmadığını ölç",
+    "sure_gun": 21,
+    "maliyet_saat": 30,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 1 ajans ücretli pilot kabul eder ve müşteri en az 5 kabul belgesini açar",
+    "birakma_olcutu": "20 görüşmede 0 ücretli niyet ya da müşteriler belgeleri açmıyor: iç QA aracı olarak bırak",
+    "sonraki_dilim": "Tek yönlü Plane ya da GitHub içe aktarma adaptörü ve çalışma alanı aboneliği"
+   },
+   "etiketler": {
+    "segment": "5-30 kişilik yazılım ajansı",
+    "kanal_turu": "pazar yeri",
+    "teknoloji": "React, kaynak adaptörü, CI kanıt bağlantısı",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT dosyası: persona ajans proje lideri, fiyat hipotezi 200-600 USD kurulum veya 29-79 USD/ay, pilot 3 ajans ve 10 kabul, ilk mühendislik 20-40 saat. Uygulama Plane Marketplace'te listeli değil; mevcut kod kullanım kanıtı değil. Rakipler: Linear, Plane, GitBook, GitHub kontrolleri. Belgelerde ajans müşteri listesi yok."
+  },
+  {
+   "id": "actionplan-c",
+   "ad": "Türkçe ajan görev şablon paketi",
+   "tur": "içerik",
+   "musteri": "Kod yazmayıp ajana iş veren Türkiye'deki ürün yöneticisi ve yeni başlayan geliştirici",
+   "is": "Ajana ne isteyeceğini bilmemek: görevi kabul ölçütlü, Türkçe ve doğru kalıpla yazmak",
+   "tetikleyici": "İlk yan projeyi başlatmak ya da bir Türkçe videoda görev paketi gösterimini görmek",
+   "teklif": "Türkçe şablon seti (SaaS MVP, eklenti, mobil, veri boru hattı), terim sözlüğü ve kısa eğitim videosu; araç gerekmeden okunur",
+   "fiyat": "490 TL tek seferlik; 14 gün iade",
+   "kanal_birincil": "Türkçe YouTube kısa videosu ve X Türkçe geliştirici topluluğu",
+   "kanal_yedek": "LinkedIn ürün yöneticisi ağı, Türkçe girişimcilik toplulukları, e-posta bülteni, eğitmenlerle paket ortaklığı",
+   "ilk_adim": "4 şablonu Türkçe yaz; 3 dakikalık ekran kaydı çek; 10 tanıdık denemeciye ücretsiz gönderip geri bildirim iste",
+   "ilk_kapsam": "4 Türkçe şablon, terim sözlüğü, 3 dakikalık video, tek sayfalık satış sayfası ve havale ya da sanal POS ile satış",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "İçerik kurucuya ait olacak; Codex ve Claude adları yalnız uyumluluk ifadesi; marka kullanımı doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Mesafeli satış, cayma ve fatura konuları mali müşavir teyidi bekliyor; kişisel veri işlenmez"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ya da havale planlı; hesap ve fatura düzeni açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (ürün yöneticisi, yeni geliştirici); 20 kişilik isim listesi belgelerde yok"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanal türü belli ama Türkçe kanal ve topluluk adları deneme sırasında doğrulanacak denmiş"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Araç gerekmeden 20-50 saatte hazır; ilk tahsilat 2-5 hafta"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Logo ve video kurgu dahil yaklaşık 8 bin TL; tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı sabit içeriği ve aynı fiyatı alır"
+    }
+   },
+   "kapi_duzeltme": "Mali müşavirden satış ve fatura düzeni teyidi al; ödeme hesabını aç ve test ödemesi yap; Türkçe kanal adlarını doğrula; 20 isimlik liste çıkar.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 490,
+    "degisken_maliyet_tl": 16,
+    "sabit_gider_aylik_tl": 100,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 20,
+     "beklenen": 32,
+     "max": 50
+    },
+    "ilk_tahsilat_gun": {
+     "min": 14,
+     "max": 45
+    },
+    "satis_basina_kurucu_saati": 0.1,
+    "musteri_basina_aylik_destek_dk": 3,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 1470,
+     "baz": 5880,
+     "iyi": 22050
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 3,
+     "baz": 12,
+     "iyi": 45
+    },
+    "alti_ay_musteri": {
+     "kotu": 3,
+     "baz": 12,
+     "iyi": 45
+    },
+    "donusum_orani": {
+     "dusuk": 0.003,
+     "yuksek": 0.01
+    },
+    "dayanak": "Plan 5 ve derinlik C.3: Türkçe paket 490 TL; hedef 10. haftada 10, 6. ayda 30 satış. Ödeme istekliliği 2/5, kitle ve kanal adları doğrulanmadı, dönüşüm kanıtsız: baz 12 (hedefin altında), iyi 45, kötü 3. Komisyon Shopier yüzde 2,99 + 0,49 TL. Dönüşüm varsayımdır."
+   },
+   "deney": {
+    "varsayim": "Türkiye'deki ajan kullanıcıları İngilizce ücretsiz şablon dururken Türkçe paket için 490 TL öder",
+    "yontem": "4 şablonu ve videoyu hazırla; 30 kişilik hedef listeye ön sipariş sayfası göster; ödemeyi havale ile al",
+    "sure_gun": 14,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "14 günde en az 5 ön ödeme",
+    "birakma_olcutu": "14 günde 2'den az ön ödeme: Türkçe paketi bırak",
+    "sonraki_dilim": "Şablon sayısını artır ve araç içinde sat; bülten ve eğitmen ortaklığı"
+   },
+   "etiketler": {
+    "segment": "Türkiye'deki ürün yöneticisi ve yeni geliştirici",
+    "kanal_turu": "içerik",
+    "teknoloji": "Markdown, video",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan 5: Türkçe paket 490 TL; derinlik B.2 ve C.2: Türkiye ikinci dalga, düşük rekabet ama ödeme isteği ve hacim küçük. Segment S4 ödeme istekliliği 2/5. İngilizce ücretsiz seçenekler (task-master, spec-kit) ve genel yapay zekâ sohbetleri ikame. Ödeyen müşteri 0."
+  }
+ ]
+}

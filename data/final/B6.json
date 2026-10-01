@@ -1,0 +1,665 @@
+{
+ "kriter": "B6",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ana kanal yüz yüze semt turu, platform kuralına tabi değil; matbaa, mali müşavir, Facebook grupları ve rehber ayrı türde yedekler; hiçbiri sınanmadı"
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Birincil kanal tek danışmanlık ilişkisi; UFRAD, fuar ve LinkedIn yedekleri adlı ama soğuk ve denenmedi"
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajanslara doğrudan teklifin hedefi adsız; yedek, ödeyen müşterisi olmayan Zabuno tabanı; ikisi de dar ve kanıtsız"
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Arama sayfaları, forum başlıkları, diaspora sayfaları, YouTube ve harita büroları ayrı platformlar; hepsi görünürlüğe ve platform kuralına bağlı"
+  },
+  "parselq-b": {
+   "p": 3,
+   "k": 0,
+   "g": "WhatsApp ile ofislere doğrudan temas ana kanal, emlak dernekleri sunumu yedek; hedef listesi ilan platformuna dolaylı bağlı"
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Birincil kanal henüz adı olmayan tek ortak ofis; yedek meslek eğitimi ve şablon belirsiz, arama niyeti ölçülmedi"
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "YÖK listesindeki 45 TTO ve teknopark bültenleri ana kanal; tanıdık KOBİ'ler, LinkedIn ve oda webinarı yedek; kurum kapısına bağlılık sürüyor"
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Birden çok mali müşavir odası webinarı ana kanal, danışmanlara LinkedIn ortaklık teklifi farklı türde yedek; oda kabulü şart"
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oda ve OSB yönetimine doğrudan satışta hedef kurumlar adlandırılmadı; yedek TTO taraması aynı kurumsal satın alma kapısına bağlı"
+  },
+  "asgari-iscilik-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Satış tek bir inşaat firması ilişkisine ve kod sahibi üçüncü taraf şirketin yazılı onayına tam bağlı; yedek liste soğuk"
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Dört mali müşavir odası webinarı ana kanal; hesaplayıcı, rehber, LinkedIn ve ihale ilanı e-postası yedek; oda kabulü ana kanalı belirler"
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Oda webinarı ve ihale ilanlarından yüklenici e-postası ana kanal; mevcut ilişki, rehber ve hesaplayıcı yedek; hiçbiri sınanmadı"
+  },
+  "zincir-danismanligi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Birincil kanal tek zincirdeki mevcut ilişki; UFRAD listesi ve LinkedIn yedeği adlı ama soğuk, denenmedi"
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Kamuya açık UFRAD üye listesinden 30 zincire LinkedIn mesajı ana kanal; olgunluk testi ve fuar ziyaretleri farklı türde yedek"
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Pilot tek zincirdeki ilişkiye ve 90 günlük teklifin kabulüne bağlı; POS bayisi ve danışman ortaklığı varsayım düzeyinde"
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "3.200 üyeli Telegram grubu ve tanıdık satıcılar ana kanal; SEO sayfaları ve WhatsApp grupları yedek; grup yöneticisi kuralına açık"
+  },
+  "kar-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal LinkedIn kişisel mesajı; yedek eğitim kohortu başlamadı, mali müşavir yönlendirmesi kurulmadı"
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Telegram grubu ve kendi hesaplayıcı çıktısı ana kanal; ajans ve mali müşavir yönlendirmesi farklı türde yedek, sınanmadı"
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Webinar kayıtları LinkedIn ve satıcı gruplarından beslenir; araç içi bağlantı ve tedarikçi ağı yedek ama ağ belgelenmedi"
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Telegram ve WhatsApp satıcı grupları ile LinkedIn ana kanal; araç içi bağlantı, webinar ve mali müşavir yedek; grup kuralı riski var"
+  },
+  "titanlar-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Dört ildeki odalara e-posta ve ziyaretle doğrudan teklif; LinkedIn üretici ağı ve üniversite merkezleri yedek; platform kuralına bağlı değil"
+  },
+  "kurumsal-site-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ana kanal OSB saha günleri, platform kuralına tabi değil; fuar listesi e-postası, birlik semineri ve danışman yönlendirmesi ayrı türde yedekler"
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Birlik ve OSB derneği seminerleri ana kanal, ev sahibi kabulü şart; denetim formu, WhatsApp ve mevcut ilişkiler yedek"
+  },
+  "kurumsal-site-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Satış tek ödeme aracısı mağazasından geçer; depo, Astro topluluğu ve Product Hunt görünürlüğe bağlı; ajans teklifi adsız"
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İki mevcut ilişki ve 20 hedef üreticiye kurucu satışı ana kanal; seminer, fuar listeleri ve mali müşavir yedek; platforma bağlı değil, sınanmadı"
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İki mevcut ilişki ve LinkedIn seansı ana kanal; mali müşavir, akademi oturumu ve hesaplayıcı ile e-posta toplama yedek"
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "20 hedef üreticiye kişisel e-posta ana kanal; fuar listeleri de e-posta, akademi yedek; ticari ileti kuralı her ikisini etkiler"
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "R10.net, WordPress Türkiye Slack ve meetup'ta kurucu satışı ana kanal; wordpress.org listesi ve hosting blogları ayrı yedek"
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Satış ağırlıkla Google araması ve wordpress.org listesine bağlı; sıralama ya da dizin kuralı değişirse durur, grup yedekleri zayıf"
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut müşteri siteleri ve ajans çevresi ana kanal; R10.net, Bionluk ve Slack farklı türde yedek"
+  },
+  "qral-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Chrome Web Store ana kanal, henüz yayında değil; Edge ve Firefox mağazaları, Obsidian forumu, Reddit ve GitHub yedek"
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Adlı öğretmen toplulukları ve eğitim blogları ana kanal; Reddit, YouTube ve Chrome Web Store yedek; grup yöneticisi iznine bağlı"
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Satış kurucunun dar ilişki çevresine bağlı; yedek GitHub tarifi ve mağaza açıklaması edilgen, hedef adlandırılmadı"
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "30 eğitmene LinkedIn ve e-posta ana kanal; Discord toplulukları, GitHub listeleri ve mevcut eğitim ilişkileri yedek"
+  },
+  "frontend-atlasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal Google araması, trafik henüz yok; YouTube, Discord ve LinkedIn yedekleri de görünürlüğe bağlı"
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Eğitmenlere LinkedIn ve e-posta ana kanal; Discord toplulukları ve mevcut eğitim ilişkileri yedek; tek platforma bağlı değil"
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut müşteri ve üretici ilişkileri ana kanal; PERYÖN şubeleri, OSB ve oda eğitim komisyonları farklı türde yedek, erişim sınanmadı"
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal 380 sayfalık sitenin arama sıralaması; LinkedIn, çapraz bağlantı ve bülten yedekleri de görünürlüğe bağlı, liste yok"
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışmanlar arası referans tek kanal ve hedef facilitatörler adsız; yedek ücretsiz worksheet edilgen, trafiği bilinmiyor"
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Dört adlı kuluçka ve TTO atölyesi ana kanal; uygulayıcı kuruluşlar, melek ağları ve LinkedIn yedek; hibe çağrı takvimine bağlı"
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kuluçka ve TTO atölyesi ana kanal; uygulayıcı kuruluşlara e-posta, LinkedIn ve kulüpler yedek; hepsi çağrı takvimine bağlı"
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Adlı program yöneticilerine e-posta, LinkedIn ve atölye üç ayrı yol; uygulayıcı kuruluş ve etkinlik yedeği aynı kurum havuzunda"
+  },
+  "vize-operasyon-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ana kanal ofis ziyareti ve elle mesaj, platform kuralına tabi değil; TÜRSAB sunumu, acente grupları, mali müşavir ve dizin ayrı türde yedekler"
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal TÜRSAB bölge kurulu eğitim yüzeyi, ev sahibi izni alınmadı; yedek acente ilişkisinin varlığı belirsiz"
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal Google araması, sıralama değişirse satış durur; Telegram bülteni, YouTube ve acente ortaklığı henüz kurulmadı"
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 0,
+   "g": "BiGG yürütücüleri ve kuluçka webinarı ile LinkedIn ana kanal; girişim listesine e-posta, Clutch ve Bionluk profili, ajans ortaklığı yedek"
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal GitHub Marketplace ve Kestra kataloğu listeleri; platform kuralına bağlı, topluluk ve ajans yedeği adlandırılmadı"
+  },
+  "software-factory-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahiplerine LinkedIn mesajı ana kanal; Bionluk ve Upwork ilanları, ajans rehberi ve stüdyo yönlendirmesi farklı türde yedek"
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 0,
+   "g": "TÜBİTAK 1812 listesindeki 30 kuruma kişisel e-posta ana kanal; teknokent yöneticileri, eğitmenler ve LinkedIn yedek; platforma bağlı değil"
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut danışmanlık müşterilerine e-posta ana kanal; arama içerikleri ve üniversite kulüp atölyeleri farklı türde yedek"
+  },
+  "strateji-simulatoru-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek kanal mevcut danışmanlık müşterileri; mali müşavir ve referans yedeği aynı ilişki havuzundan türüyor, sınanmadı"
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "GitHub, Homebrew, Show HN ve iki Reddit topluluğu ayrı platformlar; depo kalıcı, diğerleri moderasyon kuralına ve tek atış görünürlüğe bağlı"
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kanal tek depo ve bir satıcı deposundaki kayıtlara yorum; yedek kurucunun küçük çevresi, hepsi GitHub görünürlüğüne bağlı"
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Birkaç orkestratör projesinin PR kabulüne ve GitHub Sponsors'a bağlı; proje reddederse kanal daralır, yedek tek atış duyuru"
+  },
+  "actionplan-a": {
+   "p": 3,
+   "k": 0,
+   "g": "GitHub deposu, Show HN ve iki Reddit topluluğu ana kanal; X, awesome listeleri ve Product Hunt yedek; hepsi dış platform kuralına bağlı"
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal henüz listelenmemiş Plane Marketplace ve GitHub Action; platform kuralına bağlı, ajans yedeği adlandırılmadı"
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal YouTube ve X algoritmasına bağlı; LinkedIn ağı, bülten ve eğitmen ortaklığı yedeği kurulmadı, hedef adsız"
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 3,
+   "k": 0,
+   "g": "GitHub deposu ve Show HN ana kanal; Reddit, Homebrew ve orkestratör projelerine PR yedek; Show HN tek atış, hepsi kurala bağlı"
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahiplerine LinkedIn mesajı ana kanal; WhatsApp ajans grupları, Webrazzi ve IAB Türkiye ağı farklı türde yedek"
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal herkese açık örnek sayfa, adlandırılmış hedef yok; yedek mevcut ilişkiler ve tek topluluk gönderisi"
+  },
+  "ai-first-tasarim-a": {
+   "p": 3,
+   "k": 0,
+   "g": "GitHub, LinkedIn yazı dizisi, Show HN ve r/reactjs ana kanal; Frontend Istanbul ve React Istanbul toplulukları ile bülten yedek"
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucunun LinkedIn ağı ve tanıdık ekipler ana kanal; adlı iki toplulukta konuşma ve yazılım ajansları farklı türde yedek"
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal kurucunun LinkedIn ağındaki ajans sahipleri, hedef adlandırılmadı; yedek topluluk ve henüz olmayan rehber alıcıları"
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kanal kurucunun kendi canlı ürünü ve 5 pilot kafe; üçüncü taraf kuralı yok ama tek ürün tabanına bağlı, yedek zincir şubeleri tek ilişki"
+  },
+  "aicommandcard-b": {
+   "p": 3,
+   "k": 1,
+   "g": "GitHub, r/reactjs ve 1.025 üyeli Kommunity grubu ana kanal; Telegram, Discord, LinkedIn ve tanıdık ajanslar yedek; her biri düşük hacimli"
+  },
+  "atonota-denetim-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Birincil kanal tek platform wordpress.org dizini; topluluk ve rehber yedeği hacimsiz, mevcut müşteriler hedef alıcı değil"
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "30 ajanslık listeyle birebir görüşme ana kanal; WP Türkiye topluluğu, iş ortağı kodu ve barındırma ortaklığı farklı türde yedek"
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kanal kurucunun tanıdığı birkaç ajans ve ilişki doğrulanmadı; yedek demo ve ücretsiz bağlayıcı edilgen"
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut site müşterileri ve teklife eklenen satır ana kanal; LinkedIn yazısı ile mali müşavir ve ihracat danışmanı yönlendirmesi yedek"
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal kurucunun LinkedIn görünürlüğü ve demo sayfası; Astro toplulukları alıcı profiline uymuyor, hedef 20 ekip adlandırılmadı"
+  },
+  "b2b-bilesenler-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Lemon Squeezy ana mağaza, ThemeForest yedek mağaza; GitHub, Astro galerisi ve LinkedIn trafik kaynağı; hepsi platform kuralına bağlı"
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kanal kurucunun kendi ürünü Zabuno içi çağrı ve pilot restoranlar; rehber sayfaları yedek; üçüncü taraf kuralı yok ama tek ürün tabanına bağlı"
+  },
+  "banner-post-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Satış 3 mevcut müşteriye doğrudan teklife bağlı; yedek site teslimi eki ve Zabuno müşterileri aynı ilişki havuzu"
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek kanal ajans sorumlularına kurucu mesajı, hedef adlandırılmadı; yedek herkese açık örnek sayfası edilgen"
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahiplerine ayda 50 LinkedIn mesajı ana kanal; mali müşavir ve hosting ortaklığı, açık kaynak depo ve ajans dizinleri yedek"
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tanıdık ajans çevresi ve LinkedIn mesajı ana kanal; açık kaynak demo, ortaklar ve ajans toplulukları yedek; hiçbiri sınanmadı"
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Tanıdık ajans çevresi ve LinkedIn mesajı ana kanal; açık kaynak depo, arama içerik sayfaları ve ajans toplulukları yedek"
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut kurumsal site müşterileri ana kanal; LinkedIn birebir temas ve gelir paylı ortak ajanslar farklı türde yedek"
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Üç ildeki ajans sahiplerine LinkedIn notu ana kanal; yaklaşık 10 ortak ajans gelir payıyla yedek, sınanmadı"
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal danışmanlara LinkedIn notu, hedef adlandırılmadı; yedek yönlendirme kurucunun aynı ilişki çevresine bağlı"
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Haftada 25 LinkedIn mesajı ana kanal; mevcut ilişkiler ve kuluçka mentor ağı yedek; LinkedIn kuralına bağımlılık sürüyor"
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans yöneticilerine LinkedIn mesajı ana kanal; kuluçka ve teknopark atölyesi ile mali müşavir ofisleri farklı türde yedek"
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışman ofisi ve entegratör kanalı fikir düzeyinde; pilot tek danışman ofisine bağlı, hedef adlandırılmadı"
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal henüz çıkmamış e-kitabın alıcı listesi; kitap gecikirse kanal yok, GitHub ve LinkedIn yedeği görünürlüğe bağlı"
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 0,
+   "g": "GitHub, Reddit, dev.to ve LinkedIn ana kanal; awesome listeleri, dizinler ve Structurizr topluluğu yedek; hepsi platform kuralına bağlı"
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kanal kurucunun kendi iki ürünündeki örnek ve LinkedIn; yedek yazılım evi ve mimar ağı kurulmadı, alıcı havuzu küçük"
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "20 hedef kişiyle LinkedIn yazışması ana kanal; Show HN, r/reactjs ve dev.to yazıları farklı türde yedek; hepsi sıfır kitleden başlıyor"
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "GitHub issue yanıtları ve LinkedIn ana kanal, hedef adlandırılmadı; yedek dev.to yazısı ve demo edilgen"
+  },
+  "devpanel-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Lemon Squeezy ana mağaza, Gumroad yedek mağaza; GitHub, Show HN ve dev.to trafik kaynağı; görünürlüğe bağlı ama birden çok"
+  },
+  "e-menum-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İki adlı Telegram grubu ve ajanslara LinkedIn mesajı ana kanal; depo README, destek kuyruğu ve ajans dizinleri yedek; grup yöneticisi izni gerekir"
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut zincir ve kafe ilişkileri ile LinkedIn mesajı ana kanal; restoran ajansı ve POS bayii ortaklığı farklı türde yedek, kurulmadı"
+  },
+  "e-menum-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Depo README, yönetici izinli Telegram gönderisi ve LinkedIn mesajı ana kanal; CodeCanyon pazar yeri yedek, son çare sayılıyor"
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "28 ekosistem sayfasıyla arama ve açık veri deposu ana kanal; kurucunun geliştirici çevresi, LinkedIn ve WordPress Türkiye topluluğu yedek"
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Pano sayfalarına arama trafiği ana kanal, sıralama riski var; Product Hunt, LinkedIn ve kurucunun çevresine elle davet yedek"
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "20 ajansa LinkedIn kişisel mesajı ana kanal; WordPress Türkiye topluluğu ve bülten yer değişimi farklı türde yedek"
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut kurumsal site müşterileri ve ajans ortakları ana kanal; LinkedIn vaka yazıları ve Atlas modülü yedek; ana havuz küçük"
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Dağıtım tek sitenin arama sıralamasına bağlı; topluluk cevapları, dev.to ve LinkedIn yedekleri de görünürlüğe bağlı"
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal 20 SaaS ekibine LinkedIn mesajı, liste henüz yok; yedek GitHub Marketplace listesi edilgen ve platform kuralına bağlı"
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "30 küme ve sanayi bölgesi yöneticisine e-posta ve telefon ana kanal; ajans ortak teklifi ve LinkedIn yazı dizisi yedek; platforma bağlı değil"
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kuluçka atölyeleri ve mevcut toptancı ilişkileri ana kanal; ajans ortaklığı, LinkedIn ve oda etkinlikleri yedek; hedefler adsız"
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans ortaklığı ve mevcut üretici müşterileri ana kanal; LinkedIn mesajı ve etkinlikler yedek; ajans yönlendirmesine ağırlıklı bağlı"
+  },
+  "lifeos-a": {
+   "p": 3,
+   "k": 0,
+   "g": "LinkedIn günlük gönderisi ve Chrome Web Store ana kanal; Edge mağazası, üniversite kulüpleri ve eğitmen bağlantısı yedek; ikisi de platform kuralına bağlı"
+  },
+  "lifeos-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal tek Chrome Web Store listesi; yedek topluluk adlandırılmadı, mağaza kuralı değişirse satış durur"
+  },
+  "lifeos-c": {
+   "p": 2,
+   "k": 0,
+   "g": "GitHub deposu ve adsız topluluk gönderileri ana kanal; yedek mağaza listesi ve Product Hunt tek atış görünürlük"
+  },
+  "luquit-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ana kanal tanıdık ofislerle yüz yüze görüşme, platform kuralına tabi değil; dernek sunumu, Instagram mesajı, referans ve freelancer ortaklığı ayrı yedekler"
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 0,
+   "g": "GitHub ve npm ana kanal; teknik makale, dev.to, React toplulukları ve ajans referansı yedek; paket henüz yayında değil"
+  },
+  "metaframer-kernel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "A beş bağımsız kanal, B tek atış gönderi diyor: GitHub kalıcı, HN, Reddit, dev.to ayrı platform ama hepsi görünürlüğe bağlı; çapa 3"
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yazılım evi liderlerine LinkedIn mesajı ve iki Discord topluluğu ana kanal; meetup ve Telegram grupları farklı türde yedek"
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal GitHub örneği ve başka projelerin soru kayıtları, aynı platform; entegratör mesajı yedeğinin hedefi adlandırılmadı"
+  },
+  "alan-adi-bulucu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "10 uzun kuyruk sayfasıyla arama ana kanal, sıralamaya bağlı; kurucunun girişimci çevresi, depo ve Product Hunt yedek"
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "30 ajansa LinkedIn mesajı ana kanal; dernek etkinlikleri ve mali müşavir ortaklığı farklı türde yedek, henüz kurulmadı"
+  },
+  "alan-adi-bulucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kanal kurucunun mevcut ağı ve LinkedIn mesajı; yedek LinkedIn yazısı ve kuralı kısıtlayıcı gruplar aynı eksende"
+  },
+  "projector-a": {
+   "p": 3,
+   "k": 0,
+   "g": "LinkedIn haftalık yazı ve bülten ana kanal; 314 sayfalık önizleme sitesiyle arama ve Discord yedek; hepsi küçük ve organik"
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut yazılım evi ilişkileri ve ayda 10 LinkedIn mesajı ana kanal; teknokent firma günü ve önizleme sitesi yedek, kurulmadı"
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal Docusaurus kullanıcılarına GitHub aracı ve örnek portal, tek platform; firma mesajı yedeğinin hedefi adlandırılmadı"
+  },
+  "kurucu-pusulasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucunun kendi siteleri ana kanal ama trafikleri aramaya bağlı ve sınanmadı; LinkedIn dizisi ve ön kayıt listesi yedek"
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Program yöneticilerine doğrudan e-posta tek yol, 10 programlık liste henüz yok; konuk yazı ve mali müşavir yedeği zayıf"
+  },
+  "kurucu-pusulasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Gelir arama sıralamasına ve üç mağazanın ortaklık programı kabulüne bağlı; ikisi de kurucunun denetiminde değil"
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansların kurumsal adresine soğuk e-posta ana kanal; mevcut danışmanlık ilişkileri ve LinkedIn ajans toplulukları yedek"
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Altı rehber sayfasıyla arama ana kanal, sıralamaya bağlı; ücretsiz araçtaki imza rozeti ve mevcut ilişkiler aramadan bağımsız yedek"
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut danışmanlık ve site ilişkileri ana kanal, platform kuralından etkilenmez; LinkedIn gönderileri ve ajans teslimine ek kalem yedek"
+  },
+  "volley-tap-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut ilişkiler ile LinkedIn ve Instagram mesajı ana kanal; butik ajanslar ve il voleybol temsilcilikleri farklı türde yedek"
+  },
+  "volley-tap-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Gelir CrazyGames ve Yandex Games portallarına bağlı; portal kuralı ya da öne çıkarma değişirse düşer, Poki kabulü münhasırlık getirebilir"
+  },
+  "volley-tap-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal tek platform itch.io sayfası; yedek iki Reddit topluluğu haftalık gönderi kuralına bağlı, görünürlük düşerse satış durur"
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 0,
+   "g": "wordpress.org dizini ana kanal, dizin reddi durdurur; kurucunun diğer ürün kullanıcıları, WooCommerce toplulukları ve rehber yazıları yedek"
+  },
+  "woocommnts-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ana kanal ajanslara kurucu e-postası ve LinkedIn, 20 ajanslık liste henüz yok; topluluk ve dizin yedeği zayıf"
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "GitHub örnek paketi ve topluluk yanıtları ana kanal, hedef adsız; ajans teklifi ve wordpress.org bağlayıcısı koşullu"
+  },
+  "egitim-demolari-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Öğretmen toplulukları adlandırılmadı ve grup kuralına bağlı; yedek içerik sayfası edilgen, pazar yeri kaynakta yok"
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kanal kurucunun doğrudan tanıdığı ekip liderleri; yedek arama sayfası ve eğitim partnerleri adlandırılmadı, doğrulanmadı"
+  },
+  "baz-secenekler-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Satış iki mevcut ilişkiye yazılı teklife bağlı; yedek mali müşavir ve ajans tanıdıkları üzerinden ikinci derece tanıtım"
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "40 ajansa LinkedIn ve e-posta tek etkin kanal; yedek destek kuyruğu ve arşiv deposundaki not edilgen"
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Tek kamu programına ve çağrı takvimine tam bağlı; çağrı kapalıyken kanal yok, yedekler yalnız duyuru kaynağı"
+  }
+ }
+}

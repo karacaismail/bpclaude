@@ -1,0 +1,665 @@
+{
+ "kriter": "F1",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurulum kurucu eliyle yaklaşık 3 saat, plan ataması ve fatura elle; sonrası ayda 15 dakika destek varsayımı, pilotla ölçülmedi."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Çok şubeli pilot elle kurulur: 20-40 saat kurulum ve ayda yaklaşık 4 saat destek varsayımı; aynı zincir pilotunu anlatan kardeş seçenekle aynı düzey."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her uyarlama yaklaşık 40 saatlik elle teslim (fiyat bu saate dayanıyor) ve ayda 60 dakika destek; müşteri başına bir kurucu haftası."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor başına yaklaşık 1 saat: ilk 100 raporda imar özeti analist kontrollü ve emsal elle; teslim sonrası destek ayda 15 dakika."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kartlar elle üretiliyor: ofis başına ayda yaklaşık 6 kart ve 60 dakika; emek kurulumla bitmiyor, her ay tekrarlıyor."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Dosya başına yaklaşık 12 saat: belge toplama, elle karşılaştırma ve uzman onayı; ayda 60 dakika destek varsayımı."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor elle üretilir: yaklaşık 3 kurucu saati ve uzman koordinasyonu, bir kez; sonrası 20 dakika destek. Kısa elle teslim, devamı az."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Pilot kurulumu elle yaklaşık 6 saat; sonrası büro başına ayda 24 dakika destek varsayımı. İlk kurulum elle, devamı az."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum başına yaklaşık 40 saat: bir haftalık onboarding, 20 üyelik pilot ve toplu tarama listesi elle; ayda 120 dakika destek."
+  },
+  "asgari-iscilik-a": {
+   "p": 1,
+   "k": 0,
+   "g": "90 adam-günlük özel proje ve ayda 8 saat bakım; mevzuat parametre güncellemesi kurucuda. A 3 demişti; bakım tek başına ayda 8 saat, B yönünde ve daha düşük."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Pilot ve ilk veri aktarımı elle; sonrası büro başına ayda 30 dakika destek varsayımı. Ürün kodu olmadığı için ölçüm yok."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Dosya başına yaklaşık 5 saat kurucu kontrolü ve 2 saat uzman teyidi, bir kez; sonrası az. Bir iş gününün altında elle teslim."
+  },
+  "zincir-danismanligi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "90 gün boyunca haftada 10-12 saat, sonrasında aylık yönetim için yaklaşık 8 saat; tek müşteri kurucunun haftalık saatinin yarısını alır."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor başına 20-24 saat hazırlık ve sunum; sonrası az destek. Kısa bir kurulum değil, yarım kurucu ayı. A 3 demişti; B'nin saat hesabı esas alındı."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Pilot elle kurulur ve merkezden yayın yazılımı olmadığı için şubeler elle yönetilir; ayda 60 dakika varsayımı çok şubede iyimser."
+  },
+  "kar-pusulasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Self-servis tarayıcı aracı, lisans e-postası otomatik; ayda yaklaşık 5 dakika destek. Toplu Excel eşlemesi ara sıra yardım ister."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Danışman başına yaklaşık 30 dakika kurulum ve ayda 60 dakika öncelikli destek varsayımı; ilk kurulum elle, devamı sınırlı."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor başına yaklaşık 2 saat: dosya eşleme, inceleme ve açıklama; yalnız hazır şablondaki dosya kabul edildiği için emek sınırlı."
+  },
+  "titanlar-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kohort başına yaklaşık 90 kurucu saati, katılımcı başına 5-7 saat; 10 hafta boyunca canlı ders ve yazılı ödev geri bildirimi."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Giriş görüşmesi 1 saat ve PDF özet; Strateji paketi yaklaşık 9 saat ve 30 gün e-posta desteği. Ortalama satış başına 3 saat, bir kez."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum başına yaklaşık 25 saat hazırlık ve atölye; 2 günlük pakette 60 gün mentorluk ve katılımcı raporu ayda 4 saate çıkar."
+  },
+  "kurumsal-site-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Site başına yaklaşık 7 iş günü kurucu emeği ve bakımda ayda en az 2 saat; canlı referans aynı kalıptan çıktı. B 3 demişti; emek kısa kurulumu aşıyor."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Küçük kapsamda bile site başına yaklaşık 5 iş günü emek; bakım yok. B 4 demişti; self-servis değil, her site elle üretiliyor, A'ya yakın ve bir alt."
+  },
+  "kurumsal-site-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kaynak kodu alıcı kendi kurar; dokümantasyonla self-servis, talep başına yaklaşık 20 dakika destek varsayımı."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Paket başına 9-12 iş günü kurucu emeği (analiz, simülatör, site, plan), revizyon ve toplantılar; takipte ayda 4 saat."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Rapor başına yaklaşık 55 saat teslim ve 1 revizyon; sonrası az ama emek bir kurucu ayına yakın. A ve B 3 demişti; saat hesabı kısa kurulumu aşıyor."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Site başına yaklaşık 70 saat: ürün verisi toplama, form ayarı ve ilk katalog güncellemesi elle; ayda 90 dakika destek."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans kendi kurar ama sihirbaz ve ilk kurulumda elle yardım gerekir; ayda yaklaşık 30 dakika destek varsayımı."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Self-servis eklenti, kurulum mağaza sahibinde; ödeme sağlayıcı kırılmaları için ayda yaklaşık 20 dakika destek varsayımı."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Site başına yaklaşık 3 saat elle kurulum ve tek revizyon turu; sonrası ayda 15 dakika. Kısa elle kurulum, devamı az."
+  },
+  "qral-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Sunucusuz uzantı, lisans anahtarı akışı otomatik; ayda yaklaşık 5 dakika destek varsayımı. Yazılım olduğu için sürüm soruları gelir."
+  },
+  "qral-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Uzantı ve sınıf QR sayfası self-servis, Türkçe rehberle; öğretmen başına ayda 15 dakika destek varsayımı, elle kurulum gerekmez."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip başına yaklaşık 3 saat elle şablon kurulumu ve bir ay destek; sonrası ayda 30 dakika. İlk kurulum elle, devamı az."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit hazır dosya ama 90 gün e-posta desteği ve 15 dakikalık görüşmeler var; uyarlama soruları ayda yaklaşık 45 dakika."
+  },
+  "frontend-atlasi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Hazır dosya paketi ders sayfasından satın alınır; kurulum ve görüşme yok, müşteri başına ayda yaklaşık 5 dakika destek."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her sipariş brif, üretim, kaynak doğrulama ve revizyon ister; yaklaşık 10 kurucu saati ve ayda 60 dakika destek."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Atölye başına 12-20 kurucu saati: ön çalışma, yarım gün atölye ve 30 gün karar günlüğü takibi; her müşteri ayrı emek."
+  },
+  "karar-kitabi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Hazır PDF ve tablo paketi dijital teslim; kurulum ve görüşme yok, destek yalnız indirme ve iade soruları, ayda dakikalar."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit kendi kendine kullanılır ama müşteri başına yaklaşık 30 dakika destek ve istenirse 3 saatlik özel memo emeği var."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Paket başına 18-25 saat üretim ve 2 revizyon; güncelleme istenirse ayda birkaç saat daha. Her müşteri ayrı kurulum."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor başına 10-14 saat: veri sözlüğü, tutarlılık raporu, 45 dakikalık görüşme ve revizyon. B 4 demişti; self-servis değil, bir günü aşan elle iş."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum başına yaklaşık 15 saat eğitim ve destek, 10 girişimin soruları eklenir; ayda 150 dakika destek varsayımı."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Pilotta kurulum ve eğitim elle, haftalık geri bildirim; ülke şablonu güncellemesi sürer, acente başına ayda yaklaşık 2 saat destek."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Her acentede kolon eşleme, kural yayımı ve kurulum elle; yaklaşık 16 saat başlangıç ve ayda 2 saat destek varsayımı."
+  },
+  "vize-operasyon-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Belge yükle, rapor al, öde akışı self-servis; başvurucu başına yaklaşık 10 dakika destek, şablon güncellemesi müşteriden bağımsız."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Teslim başına 40-70 kurucu saati: seans, onay ve revizyon dahil; teslim sonrası ayda 4 saate kadar destek. Hat iki küçük teslimde denendi."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Her müşteride depo kurulumu ve komut profili elle; 20 işin sorun yönetimi haftada saatler alabilir, ayda yaklaşık 3 saat destek."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Teslim yine 40-60 kurucu saati; ajans ara katmanı iletişimi ve beyaz etiket çıktı ek yük getirir, ayda 4 saate kadar destek."
+  },
+  "strateji-simulatoru-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Her kurum için alt alan adı, logo ve 2 saat eğitim; pilot kurulumu elle, ayda yaklaşık 90 dakika destek varsayımı."
+  },
+  "strateji-simulatoru-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Rapor araçtan otomatik PDF olarak çıkar; ödeme ve teslim akışı görüşmesiz, müşteri başına yaklaşık 10 dakika destek varsayımı."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşteri başına yaklaşık 4 saat: elle 3 sayfalık rapor ve 1 saatlik yorum görüşmesi, bir kez; sonrası ayda 10 dakika."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Menü çubuğu uygulaması self-servis kurulur, lisans anahtarıyla; ayda yaklaşık 10 dakika destek, sürüm uyumluluğu soruları gelir."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşteri başına 60-90 dakikalık uzaktan kurulum oturumu, toplam yaklaşık 3 saat; sonrası ayda 20 dakika destek varsayımı."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Sponsor başına yaklaşık 20 satırlık entegrasyon ve örnek PR bir kez; sonrası öncelikli hata düzeltme için ayda 30 dakika."
+  },
+  "actionplan-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Tarayıcıda hesapsız çalışan araç, lisans anahtarlı Pro; kurulum yok, ayda yaklaşık 5 dakika destek varsayımı."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Araç yalnız dışa aktarma kadar; kabul şablonu, sürüm tablosu ve kanıt listesi her ajansa elle uyarlanır, 3 teslim boyunca eşlik gerekir."
+  },
+  "actionplan-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Hazır Türkçe şablon seti ve kısa video; araç bile gerekmez, destek yalnız indirme ve iade soruları, ayda yaklaşık 3 dakika."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Yerel, ağsız panel self-servis kurulur; destek topluluk üzerinden, müşteri başına ayda yaklaşık 10 dakika varsayımı."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Her ajans için proje eşleme kurulumu ve her ay elle hazırlanan rapor; ayda 2-3 saat kurucu emeği sürekli tekrarlar."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her alıcıda olay adaptörü kurulumu ve uyarlama kurucuya bağlı; yaklaşık 12 saat başlangıç ve ayda 60 dakika destek."
+  },
+  "ai-first-tasarim-a": {
+   "p": 5,
+   "k": 0,
+   "g": "E-kitap ve hazır örnek dijital teslim; kurulum ve görüşme yok, müşteri başına ayda yaklaşık 10 dakika destek varsayımı."
+  },
+  "ai-first-tasarim-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Atölye için yaklaşık 25 saat hazırlık ve sunum; yükseltmede 2 haftalık elle kurulum ve ilk ay destek, ayda 120 dakika."
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Form ve tablo için kabul dosyası elle hazırlanır, kurulum ve denetim dahil yaklaşık 12 saat; ayda 60 dakika destek. Bir iş gününü aşan elle teslim."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kart panelde hazır gelir, kurulum yok; ama pilot, günlük kota ve taslak onayı soruları için ayda 30 dakika destek varsayımı."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Paket başına 25-30 saat: müşterinin kod tabanında entegrasyon, 4 durum, klavye turu ve revizyon; sonrası az destek."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Eklenti self-servis kurulur, lisans doğrulama otomatik; destek varsayımı düşük ama sürüm uyumu ve tema çakışması riski planda işaretli."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Lisans anahtarı elle verilir, ilk sitelerde kurulum ve eğitim; sonrası ajans başına ayda yaklaşık 60 dakika destek varsayımı."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Önce ve sonra kanıtı elle toplanır, 40 siteye kadar kabul akışı kurucu tarafından yönetilir; ayda en az 2 saat sürekli emek."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Blokların siteye uyarlanması ve içerik girişi elle, 5-10 saat bir kez; sonrası ayda 30 dakika destek varsayımı."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Teslim 5 iş günü elle üretim, ayrıca ilk temasta kişiye özel örnek için yaklaşık 8 saat. A ve B 3 demişti; emek kısa kurulumu aşıyor, bir kademe alta alındı."
+  },
+  "b2b-bilesenler-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Şablonu alıcı kurulum belgesiyle kendi kurar, destek teklif dışı; belge soruları için ayda yaklaşık 15 dakika varsayımı."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Modül plana dahil ve self-servis hedefli; ilk 3 görsel kurucu eliyle (yaklaşık 3 saat), sonrası ayda 20 dakika destek."
+  },
+  "banner-post-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Müşteri başına her ay yaklaşık 8 saat üretim: 12 görsel ve 4 hikaye, 48 saat teslim; emek kurulumla bitmiyor, sürekli."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her ajans için marka izni, girdi hazırlığı ve 30 görselin elle ya da betikle üretimi; yaklaşık 8 saat ve inceleme turu."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Pilotlar kurucu eliyle kurulur ve ajans diline çevrilir; sonrası ajans başına ayda 20 dakika destek varsayımı."
+  },
+  "karar-sihirbazi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Dosya başına 60 dakikalık çalıştay, 6-8 saat uzman emeği ve revizyon; satışla birlikte yaklaşık 14 saat, her proje ayrı."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurulum, marka uyarlaması ve 1 saatlik eğitim bir kez elle; aboneliksiz, sonrası ayda 30 dakika destek varsayımı."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Set başına 8-12 saat üretim: tema kurulumu, 5 sunum ve 2 revizyon; ücretsiz 3 slaytlık örnek de kurucu emeği ister."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Marka başına tema kurulumu, sınırsız üretim ve 4 saat içinde yanıt sözü; ajans başına ayda en az 2 saat sürekli emek."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Sunum başına yaklaşık 12 saat elle üretim: kaynak kontrolü, şablon uyarlaması, 2 revizyon ve bir tekrar üretim hakkı. Bir iş gününü aşıyor."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Demo başına yaklaşık 40 saat kurucu üretimi ve 2 revizyon; her proje ayrı emek, teslim sonrası ayda 20 dakika destek."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Her demo yaklaşık 3 gün kurucu üretimi; ayda 1 demo taahhüdü ve ajans üzerinden revizyon yükü her ay tekrarlar."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Format başına kurulum ve eşleme yaklaşık 25 saat; her dönem istisna listesi için ayda 1,5 saat, özel eşleme çıkarsa 6 saate kadar."
+  },
+  "ddd-renderer-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Hazır şablon paketi self-servis; şablonlar blok motoruyla çalıştığı için kurulum soruları gelir, ayda yaklaşık 10 dakika destek."
+  },
+  "ddd-renderer-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Açık çekirdek ve şablon paketi self-servis, destek belge ve tartışma sayfasıyla; ayda yaklaşık 20 dakika, 12 ay güncelleme sözü."
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Değerlendirme başına 3 gün kurucu emeği, satışla yaklaşık 36 saat; görüşmeler ve tek tur düzeltme dahil, sonrası az."
+  },
+  "devpanel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Üç iş günü müşterinin projesinde elle entegrasyon ve test, yaklaşık 24 saat; sonrası ayda 30 dakika destek. B 3 demişti; teslim saati esas alındı."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Form başına kurulum, koşul ve doğrulama, müşterinin deposunda derleme ve test; yaklaşık 30 saat, sonrası ayda 30 dakika."
+  },
+  "devpanel-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Şablon ve dokümantasyon self-servis; alıcı geliştirici kendi kurar, ayda yaklaşık 20 dakika destek varsayımı."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum başına yaklaşık 40 saat: Docker kurulumu, marka, dil ve 20 saat uyarlama; 30 gün hata düzeltme ve ayda 2 saat destek."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "İçerik aktarma, fark raporu ve onaylar kurucu eliyle yürür; şube başına ayda yaklaşık 2 saat sürekli emek."
+  },
+  "e-menum-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kaynak kod ve kurulum kılavuzu teslim edilir, destek teklif dışı; alıcı kendi kurar, ayda yaklaşık 15 dakika soru varsayımı."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Abone başına ayda yaklaşık 10 dakika destek; sayı başına 4 saatlik yazım abone sayısından bağımsız. Abonelik fatura soruları gelir."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 5,
+   "k": 0,
+   "g": "İndirilebilir sabit paket; özelleştirme ve görüşme yok, müşteri başına yaklaşık 3 dakika destek."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans başına 20 dakikalık tanışma ve yılda 1 saatlik puanlama görüşmesi; içerik hazır, ayda yaklaşık 30 dakika destek."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Denetim başına 2-3 kurucu günü ve 14 gün içinde yeniden kontrol; süreç daha önce elle uygulandı, emek müşteriyle doğrusal artar."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Kontrol listesi PDF olarak self-servis satılır; kurulum ve eğitim yok, destek ayda yaklaşık 5 dakika."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her ekip kendi yığını ve CI düzeniyle gelir; pilot başına yaklaşık 12-24 saat kurulum ve ayda 90 dakika destek."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "İki haftalık teşhis ve 20 sayfalık karar belgesi elle hazırlanır; ayda 90 dakika destek. A ve B 3 demişti; iki haftalık teslim kısa kurulum değil."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor başına yaklaşık 50 saat: 3 yetkili görüşmesi, teklif sınıflaması ve yazım; tekrarı az ama her rapor ayrı emek."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "12 hafta boyunca haftalık koçluk, 60-120 ekranın müşteri markasına uyarlanması ve backlog; müşteri başına aylarca yoğun emek."
+  },
+  "lifeos-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Satılan şey hazır çalışma kâğıdı paketi; eklenti sunucusuz ve ücretsiz, kurulum yok, müşteri başına ayda yaklaşık 5 dakika destek."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Şablon ve kurulum paketi müşteri başına yaklaşık 3 saat elle; boşta süre ve saat dilimi düzeltmeleri için ayda 20 dakika destek."
+  },
+  "lifeos-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kit ve açık çekirdek self-servis; kurulum yok, geliştirici soruları için ayda yaklaşık 15 dakika destek varsayımı."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk 20 ilan ofisle birlikte girilir; pilot sonrası ayda 30 dakika destek varsayımı. İlk kurulum elle, devamı az."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit kopyalanan kaynak kod ama destekli satılıyor: kit başına 30-45 dakika destek ve sınırı yazılı olmayan özel entegrasyon istekleri."
+  },
+  "metaframer-kernel-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kit self-servis: ilk 30 dakika rehberi, sık sorular ve topluluk kanalı; müşteri başına ayda yaklaşık 20 dakika destek varsayımı."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekibin şemasına uyarlanan 1 günlük atölye ve kurulum; satışla birlikte yaklaşık 30 saat ve ayda 60 dakika destek."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Mevcut uygulamada 1-2 haftalık entegrasyon, yaklaşık 50 saat ve ayda 2 saat destek; A ve B 1 demişti, tek seferlik sabit kapsam olduğu için 2."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Tarayıcıda self-servis araç; ayda yaklaşık 5 dakika destek, kota ve lisans anahtarı zaman zaman elle ilgi ister."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Aynı self-servis çekirdek; ajans başına 20 dakikalık demo ve ayda 15 dakika destek varsayımı, elle kurulum gerekmez."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Dosya başına yaklaşık 2 saat elle sorgu ve karar dosyası, satışla 3 saat; bir kez, sonrası ayda 10 dakika."
+  },
+  "projector-a": {
+   "p": 5,
+   "k": 0,
+   "g": "PDF ve EPUB e-posta ile otomatik teslim; kurulum ve görüşme yok, müşteri başına ayda yaklaşık 5 dakika destek."
+  },
+  "projector-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Atölye başına yaklaşık 40 saat hazırlık ve 2 gün eğitim, ardından 30 gün destek; A ve B 1 demişti, emek tek seferlik ve 40 saat sınırında."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her geçişte elle eşleme ve kontrol; müşteri başına yaklaşık 25 saat ve ayda 60 dakika destek varsayımı."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Markdown ve Notion paketi tek seferlik dijital teslim; kurulum ve görüşme yok, ayda yaklaşık 10 dakika destek varsayımı."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurum başına 1 saatlik çevrimiçi atölye ve ekip kopyalarının hazırlanması bir kez; sonrası ayda yaklaşık 60 dakika destek."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Okur siteyi kendi kullanır, satın alma bağlantıdan gider; künye doğrulama kurucu işi ama müşteri başına kurulum ve destek yok."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk müşteride birlikte kurulum, müşteri alanları elle yönetilir; sonrası ajans başına ayda yaklaşık 60 dakika destek varsayımı."
+  },
+  "signator-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Self-servis tasarım: CSV toplu üretim ve kurulum rehberleri; ekip başına ayda yaklaşık 15 dakika destek varsayımı."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşteri başına 3-5 saat elle hazırlık: 5 kişilik imza, logo barındırma, kurulum notu ve 1 revizyon; sonrası ayda 20 dakika."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kampanya başına 25-34 saat: elle tema, logo, teslim ve oynanış raporu; kampanya süresince ayda 60 dakika destek."
+  },
+  "volley-tap-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Oyunu portal barındırır ve oyuncuya sunar; müşteri başına kurulum ya da destek yok, kurucu yalnız metrik izler."
+  },
+  "volley-tap-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Mağaza sayfasından self-servis satın alma; iade ve destek bilgisi sayfada, müşteri başına ayda yaklaşık 5 dakika varsayımı."
+  },
+  "woocommnts-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Self-servis eklenti, lisans anahtarıyla; oran güncelleme soruları için müşteri başına ayda yaklaşık 10 dakika destek varsayımı."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk mağazada birlikte kurulum ve öncelikli destek; sonrası ajans başına ayda yaklaşık 30 dakika varsayımı."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Göç başına yaklaşık 8 saat: kaynak-ürün eşleme, deneme çalıştırması, tekrar kontrolü ve onaylı yayın elle; her göç ayrı iş."
+  },
+  "egitim-demolari-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Hazır PDF paket ve statik demo bağlantısı indirilir; kurulum ve eğitim yok, ayda yaklaşık 10 dakika destek varsayımı."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Her atölye ekibin senaryosuna uyarlanır ve canlı sunulur; yaklaşık 12 kurucu saati ve ayda 30 dakika destek."
+  },
+  "baz-secenekler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "5 günlük paket başına yaklaşık 40 kurucu saati ve haftalık rapor; iş doğrudan kurucu saatiyle yürür, sonrası destek az."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Anlaşma başına yaklaşık 40 saat kurulum ve uyarlama, 30 gün hata düzeltme; bakım istenirse ayda birkaç saat."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Başvuru dosyası 40-80 saat; kabul sonrası izleme raporları ayda yaklaşık 2 saat varsayımı, yükümlülük kapsamı kaynakta açık değil."
+  }
+ }
+}

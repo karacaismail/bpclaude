@@ -1,0 +1,71 @@
+{
+  "slug": "karar-sihirbazi",
+  "kararlar": [
+    {
+      "itiraz": "A: kalan_efor beklenen 250 saat, plan yaklaşık 320 saat veriyor",
+      "karar": "kabul",
+      "degisiklik": "A finans.kalan_efor_saat 120/250/350 iken 200/320/420; ilk_tahsilat_gun 75-150 iken 90-180; analist_gorusu ve G6 notu 250 yerine 320 saat",
+      "gerekce": "Plan 320 saat veriyor; kart plandan düşüktü. G6 kaldi olarak kalır, ilk tahsilat da gecikir."
+    },
+    {
+      "itiraz": "C: LICENSE dosyası yok, ücretsiz açık motor fiyat gerekçesini ve E2 farkını zayıflatıyor",
+      "karar": "kismen",
+      "degisiklik": "C baz tahsilat 15.000 iken 5.000 (finans itirazıyla birlikte); kapı G1 zaten test",
+      "gerekce": "LICENSE eksikliği G1 testte kayıtlı; ücretsiz motor etkisi baz gelire yansıtıldı. E2 puan konusudur."
+    },
+    {
+      "itiraz": "B ve C: 6.000 ve 5.000 TL fiyatları kaynakta yok, 3 satışlı baz kanıtlı gibi okunabilir",
+      "karar": "kabul",
+      "degisiklik": "B baz 18.000 iken 12.000 (2 satış), iyi 36.000 iken 24.000; C baz 5.000; B ve C dayanak metinleri fiyat ve satış sayısının kanıtsız olduğunu söylüyor",
+      "gerekce": "Kaynaklar fiyat ya da satış sayısı vermiyor; temkinli düşük gelir seçildi, varsayım dayanakta açık yazıldı."
+    },
+    {
+      "itiraz": "A: 8 profilli ve çevrilmiş ilk kapsam %30 ürün tamamlanma düzeyine göre iyimser",
+      "karar": "kismen",
+      "degisiklik": "A ilk_kapsam: PDF ve panelin sıfırdan, ürünün yaklaşık %30 hazır olduğu eklendi; efor 320 saate çıkarıldı",
+      "gerekce": "Kaynak form motoru %70, soru bankası %60, PDF ve panel %0 diyor; kapsam tarifi eksikti, eforu zaten düzeltildi."
+    },
+    {
+      "itiraz": "A, G8 test: uyarlama, marka ve alan adı kurulumu var; kapsam sınırı yazılı değil",
+      "karar": "kabul",
+      "degisiklik": "A G8 gecti iken test; kapi_duzeltme'ye G8 eklendi",
+      "gerekce": "Kaynakta uyarlama için 1 saat ve 2 saat kurulum ipuçları var ama sınır teklifte yazılı değil; temkinli test."
+    },
+    {
+      "itiraz": "B, G6 test: 30 saat plan dışı tahmin, satış döngüsü ve 14-45 gün ilk tahsilat ölçülmedi",
+      "karar": "kabul",
+      "degisiklik": "B G6 gecti iken test; kapi_duzeltme'ye G6 ölçüm adımı eklendi",
+      "gerekce": "Kaynakta hizmetin eforu ve süresi yok; tahmin analiste ait. Belirsizlikte temkinli seçim test."
+    },
+    {
+      "itiraz": "A, alti_ay_musteri baz 5; 2-3 ajans ve yaklaşık 8.000 TL daha gerçekçi",
+      "karar": "kabul",
+      "degisiklik": "A alti_ay_musteri baz 5 iken 3, odeme adedi 14 iken 11, tahsilat baz 17.100 iken 10.500; iyi 20.600; dayanak yeniden yazıldı",
+      "gerekce": "Ödeme kanıtı ve isim listesi yok; kaynak 6. ayda 15 değil pilotlardan 2 ödeme öngörüyor. Eski baz iç tutarsızdı."
+    },
+    {
+      "itiraz": "A, kalan_efor beklenen 250; plan 320; ilk tahsilat üst uca gider",
+      "karar": "kabul",
+      "degisiklik": "A kalan efor 200/320/420, ilk tahsilat 90-180 gün",
+      "gerekce": "Plan 320 saat veriyor; haftalık 20 saatle yaklaşık 16 hafta."
+    },
+    {
+      "itiraz": "B, alti_ay_tahsilat baz 18.000; 1-2 satış, 6.000-12.000 TL daha gerçekçi",
+      "karar": "kabul",
+      "degisiklik": "B baz 18.000 iken 12.000, iyi 24.000; satış ve müşteri sayıları 3 iken 2",
+      "gerekce": "Fiyat ve dönüşüm varsayım; üst uç değil, aralığın üst sınırı alındı ve iyi senaryo düşürüldü."
+    },
+    {
+      "itiraz": "C, alti_ay_tahsilat baz 15.000; ücretsiz motor varken 1 satış ve 5.000 TL",
+      "karar": "kabul",
+      "degisiklik": "C baz 15.000 iken 5.000, iyi 30.000 iken 15.000; satış ve müşteri 1 baz, 3 iyi",
+      "gerekce": "Motor ücretsiz ve LICENSE yok; kaynak ücretli talep kanıtı vermiyor, düşük gelir seçildi."
+    },
+    {
+      "itiraz": "Kart taraması (hakem): A G7 gecti ama plandaki aylık gider payı ilk tahsilata dek tavanı zorluyor",
+      "karar": "kabul",
+      "degisiklik": "A G7 gecti iken test; not 40-66 bin ₺ hesabını yazıyor; kapi_duzeltme'ye G7 eklendi",
+      "gerekce": "Plan gideri 8.700 ₺/ay (yıllık 104 bin) x 3-6 ay + 14.000 ₺, 50.000 ₺ tavanı aşabilir; hesaplanmadı sayılır."
+    }
+  ]
+}

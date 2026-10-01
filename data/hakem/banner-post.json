@@ -1,0 +1,59 @@
+{
+ "slug": "banner-post",
+ "kararlar": [
+  {
+   "itiraz": "A: kart kalan_efor 80-200 saat der; derinlik ekinde L1 eksikleri 39 adam-gün (yaklaşık 300 saat); 3-4 hafta için iki paralel kol şart",
+   "karar": "kabul",
+   "degisiklik": "A kalan efor 80/120/200 idi, 160/250/320; ilk tahsilat gün 45-120 idi, 60-150; G6 notu ve dayanak güncellendi",
+   "gerekce": "Ek D.8 L1 eksiğini 39 adam-gün sayar; 3-4 hafta paralel kol varsayar, kurucu payı bu kadar düşük kanıtsız."
+  },
+  {
+   "itiraz": "A: kart 500 TL'yi net satış fiyatı sayar; modül ayrı satılmaz, plan geçişi ister; pilotlara ilk ay ücretsiz",
+   "karar": "kismen",
+   "degisiklik": "A dayanak ve kanıt notu: ayrı satılmaz, geçiş oranı kanıtsız, pilot ilk ay ücretsiz yazıldı; fiyat alanı aynı",
+   "gerekce": "Plan 5 farkı ₺500 plan geçişi geliri olarak doğru; ama geçiş oranı kanıtsız ve ücretsiz ay tahsilatı geciktirir, bu finans rakamında düzeltildi."
+  },
+  {
+   "itiraz": "C: kart alıcıyı ajans alır; Claude planı büyük ajansı anti-persona sayar; GPT'de fiyat yok",
+   "karar": "kismen",
+   "degisiklik": "C müşteri alanı 'küçük ajans (büyük ajans anti-persona)' oldu; kanıt notu düzeltildi",
+   "gerekce": "GPT alıcıyı ajans yapar, Claude yalnız büyük ajansı dışlar; fiyatın varsayım olduğu kartta zaten yazılı."
+  },
+  {
+   "itiraz": "B: kart mevcut müşterilere satışı kanıt gibi sunar; teklif iletilmedi, ödeyen 0, 7.500 TL fiyat kurucu varsayımı",
+   "karar": "kismen",
+   "degisiklik": "B fiyat alanına 'kurucu varsayımı, teklif iletilmedi' eklendi; dayanak ve kanıt notu güncellendi",
+   "gerekce": "Kart ödeyen 0 ve dönüşüm varsayım diyordu; fiyatın varsayım ve teklifin iletilmemiş olduğu açıkça yazılmamıştı."
+  },
+  {
+   "itiraz": "banner-post-a G4 gecti: 5 pilot kafe ve zincir şubeleri varsayım; 20 hedef alıcı ismen sayılmış değil",
+   "karar": "kabul",
+   "degisiklik": "A G4 gecti idi, test oldu; kapı notu ve kapi_duzeltme güncellendi",
+   "gerekce": "Kapı tanımı gecti için isim listesi ya da belgelenmiş ilişki ister; kaynakta 6 işletme anılıyor, 20 isim ve belge yok."
+  },
+  {
+   "itiraz": "banner-post-a kalan_efor_saat: kartta 80/120/200, sence 250-320 saat; ek D.8 39 adam-gün",
+   "karar": "kabul",
+   "degisiklik": "A kalan efor 80/120/200 idi, 160/250/320 oldu",
+   "gerekce": "39 adam-gün yaklaşık 310 saat; kurucu dışı kol payı kaynakta yok, temkinli üst sınır 320, beklenen 250."
+  },
+  {
+   "itiraz": "banner-post-a alti_ay_tahsilat baz: kartta 20000, sence 7500; tahsilat ay 2, modül ay 2-3, pilot ilk ay ücretsiz",
+   "karar": "kabul",
+   "degisiklik": "A baz tahsilat 20000 idi, 7500; ödeme adedi 40 idi, 15; müşteri 10 idi, 8; iyi 45000 idi, 22500",
+   "gerekce": "Ek C.8 ücretli 2/5/8 verir: 15 abone-ay x 500 = 7.500; modül gecikmesiyle 6 ayda 3 ay kalır; iyi 15 x 3 ay."
+  },
+  {
+   "itiraz": "banner-post-b alti_ay_musteri baz: kartta 2 ve 70000, sence 1 ve 27500; 3 teklifte dönüşüm beklenen 1'in altı",
+   "karar": "kabul",
+   "degisiklik": "B baz müşteri 2 idi, 1; baz tahsilat 70000 idi, 35000; baz ödeme 8 idi, 4; iyi 120000 idi, 85000, müşteri 3 idi, 2",
+   "gerekce": "3 teklif x 0,1-0,3 beklenen 1'in altı; plan 4 ay mantığıyla 30.000 + 5.000 kurulum; 27.500 3 ay varsayar, kaynak 4 ayı destekler."
+  },
+  {
+   "itiraz": "banner-post-c alti_ay_odeme_adedi baz: kartta 2 ve 12000, sence 0-1 satış; ajans listesi yok, fiyat varsayım",
+   "karar": "kabul",
+   "degisiklik": "C baz ödeme 2 idi, 1; baz tahsilat 12000 idi, 6000; baz müşteri 2 idi, 1; iyi 5 idi, 3 ve 30000 idi, 18000",
+   "gerekce": "Liste yok, dönüşüm 0,02-0,10 ve fiyat varsayım; kaynak 2 satışı desteklemez, 1 üst makul baz."
+  }
+ ]
+}

@@ -1,0 +1,665 @@
+{
+ "kriter": "B4",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Misafir sayfası her taramada görünür ama ürün imzası yalnız ücretsiz plan için öneri, kodda yok; görenler misafir, işletmeci değil."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Şube menüsünü misafirler görür; zincir planında ürün imzası yok ve görenler zincir yöneticisi değil. Aynı zincir pilotuyla aynı puan."
+  },
+  "zabuno-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Modül uyarlaması müşterinin iç paneline teslim edilir; çıktı başka alıcıya görünmez."
+  },
+  "parselq-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor PDF'inde 'ParselQ ile hazırlandı' ibaresi var; eş ve hissedarla paylaşılır ama görenler seyrek ve çoğu alıcı profili değil."
+  },
+  "parselq-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Her kart ilanda QR ve 'ParselQ ile hazırlandı' ibaresiyle yayımlanır; ilanı gören rakip ofisler alıcı profili. Tasarımda var, sınanmadı."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Karar dosyası ofisin alıcısına gider; ilk kapsamda paylaşım bağlantısı ve zorunlu marka yok, görenler danışmanlık ofisi değil."
+  },
+  "destektesvik-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Raporda 'DestekTeşvik ile doğrulandı' dipnotu danışmana gidebilir; davet akışı sonraki sürümde, elle üretilen ilk raporlarda yayılma seyrek."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Büro logolu, dipnotlu rapor her ay mükellef KOBİ'lere gider; görenler büronun müşterisi, mali müşavir değil; davet akışı henüz yok."
+  },
+  "destektesvik-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kullanımın kendisi davet: kurum 20 üyeyi bağlantıyla ürüne çağırır, üyeler ücretli raporun alıcı profili; sınanmadı, davet akışı yazılmadı."
+  },
+  "asgari-iscilik-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek firmaya özel proje; hesap çıktısı firma içinde kalır, yeni alıcıya görünmez."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Markalı PDF rapor mali müşavirden yüklenici mükellefe gider, yüklenici de alıcı profili; ürün kodu yok, akış sınanmadı, seyrek."
+  },
+  "asgari-iscilik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kaynak hücreli rapor yükleniciden mali müşavirine geçebilir; ürün imzası ve davet tanımlı değil, elle teslim."
+  },
+  "zincir-danismanligi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Hizmet teslimi tek zincirin içinde kalır; yalnız 90. günden sonra izinli vaka hikâyesi olabilir, bu gömülü dağıtım değil."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor yönetim ekibinde kalır; kendi kendine olgunluk testi profile uyan kişilere ulaşabilir ama paylaşım akışı ve imza yok."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Şube QR menüsünü misafirler görür; görenler zincir yöneticisi değil, zincir planında ürün imzası tanımlı değil."
+  },
+  "kar-pusulasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Hesap çıktısı satıcıda kalır; paylaşım bağlantısı var, rozet ve paylaşım görseli yalnız planda; yayılma seyrek."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Logolu PDF rapor düzenli olarak danışmanın müşterisi satıcılara gider; görenler danışman değil, rozetin görünürlüğü belirsiz."
+  },
+  "kar-pusulasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Elle teslim rapor satıcıdan mali müşavire ve ajansa geçebilir; görünür ürün imzası yok, sınanmadı."
+  },
+  "titanlar-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Program kullanımı dışarıya görünmez; mezuniyet yayını ve mezun rozeti ancak ilk kohorttan sonra çalışır."
+  },
+  "titanlar-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışmanlık çıktısı satıcıya özel kalır; gruplarda yapılan ücretsiz hesap ve kâr aracı bağlantısı zayıf görünürlük sağlar."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Katılımcılar kurumun üyesi KOBİ'ler, rapor kurumun faaliyet raporuna girer; başka kurumlara görünürlük dolaylı, imza yok."
+  },
+  "kurumsal-site-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Alt bilgi kredisi isteğe bağlı; siteyi çoğunlukla yabancı alıcı görür, komşu üretici seyrek görür."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Alt bilgi kredisi isteğe bağlı; küçük sitede ziyaret az, görenler çoğunlukla alıcı profili değil."
+  },
+  "kurumsal-site-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kalıpla çıkan sitelerde alt bilgi kredisi var ama görenler site ziyaretçisi, tema alacak geliştirici ya da ajans değil."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor ve site altına 'ile hazırlandı' bağlantısı öneriliyor; görenler ajans, müşavir ve site ziyaretçisi, seyrek."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Fizibilite raporu patrona, ara sıra ajansa ve müşavire gider; rozet öneri düzeyinde, yeni üreticiye ulaşma seyrek."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Katalog sitesini kumaş alıcıları ve komşu üreticiler görür; sitede ürün imzası ya da davet tanımlı değil."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Aydınlatma sayfasındaki 'ile yönetiliyor' bağlantısı dizin kuralı gereği isteğe bağlı; görenler site ziyaretçisi, ajans değil."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Taksit tablosunu alışveriş yapanlar görür; tablo altı bağlantı isteğe bağlı, mağaza sahibi seyrek görür."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kurulum hizmeti sitede ürün izi bırakmaz; teslim başka alıcıya görünmez."
+  },
+  "qral-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Kopyalanan bağlantı ve kaynak bloğu düz metindir; ürün imzası ya da davet taşımaz, kimse ürünü görmez."
+  },
+  "qral-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Basılı QR sayfası öğrenci ve velilere gider; imza tasarlanmadı, görenler alıcı profili değil, zümre öğretmeni seyrek görür."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Dışa aktarılan çıktı imzasız; yalnız danışmanın meslektaşına şablon paylaşması profile uyan kişiye ulaşır, seyrek."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kitle çıkan müfredat sitesini eğitmenin öğrencileri görür; ürün imzası yok, başka eğitmen seyrek görür."
+  },
+  "frontend-atlasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Portföy şablonu çıktısı paylaşılabilir ama imza ve davet akışı yok; ders altı kutu ürün içi tanıtım, kullanım değil."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Teslim edilen ders eğitmenin sitesinde yayımlanır; üretici imzası yok, görenler öğrenci."
+  },
+  "karar-kitabi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Atölye çıktısı şirket içinde kalır; referans yazısı sonradan ve izne bağlı, gömülü dağıtım yok."
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Doldurulan kâğıt ve dışa aktarma ekip içinde paylaşılır; altbilgi yalnız öneri, davet akışı yok."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Memo her oturumda müşteri sponsoruna gider ama imzasız ve sponsor facilitatör profili değil; aynı yapıdaki danışman çıktılarıyla aynı puan."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Sunum sitesi yatırımcıya ve jüriye gider; doğrulama rozeti ve 'hazırlandı' bağlantısı taslak, alıcı kurucular seyrek görür."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Tutarlılık raporu müşteriye özel ve gizli bir dosyadır; başkasına görünmez, rozet ya da bağlantı yok."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Her lisans 10-20 girişimi şablonla çalıştırır, çıktılar jüriye ve yatırımcıya gider; görenler program yöneticisi değil, rozet taslak."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Bildirimler acentenin müşterisine gider; takip bağlantısı altbilgisi sonraki sürümde, görenler acente değil."
+  },
+  "vize-operasyon-b": {
+   "p": 1,
+   "k": 0,
+   "g": "İlk kapsamı yalnız operatör kullanır; başvurucu bağlantısı sonraya bırakılmış, çıktı acente içinde kalır."
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor kişiye özel; 'acentemle paylaş' bağlantısı öneri düzeyinde ve ulaştığı kişi başvurucu profili değil."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Rozet ve kanıt karnesi paylaşımı planlı ama varsayılan kapalı; teslim edilen MVP'yi görenler alıcı profili değil."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Makbuz her PR'da inceleyenlere ürün adıyla görünür; görenler çoğunlukla aynı ekip, ekip dışına seyrek çıkar."
+  },
+  "software-factory-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Beyaz etiket: kanıt paketi ajans markasıyla gider, kurucu ve hat tasarım gereği görünmez."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kurum her çağrıda yüzlerce adaya aracı kullandırır; dışa aktarımda 'ile değerlendirildi' satırı var ama görenler aday ve mentor, kurum değil."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Rapor mentor görüşmesine götürülür, dışa aktarımda imza satırı var; mentor kısmen alıcı profili, yayılma seyrek ve sınanmadı."
+  },
+  "strateji-simulatoru-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor müşteriden mali müşavire ve ortağa geçebilir; hizmet çıktısı büyük ölçüde müşteri içinde kalır."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Menü çubuğu kimseye görünmez; yalnız redakte rapor paylaşılırsa aynı sorunu yaşayan geliştiriciye ulaşır, seyrek."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Redakte teşhis raporu sorun kayıtlarında paylaşılabilir, görenler aynı sorunu yaşayanlar; paylaşım seyrek ve çoğu kurucu eliyle."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kabul API'sini bağlayan her orkestratör, kendi 16 GB Mac kullanıcılarına ürünü kurdurur ve gösterir; görenler alıcı profili, sınanmadı."
+  },
+  "actionplan-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Görev paketi ajana ve ekibe gider; 'ile hazırlandı' bağlantısı planlı, bugünkü çıktıda zorunlu imza yok."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansın müşterisi her teslimde salt-okunur kabul kaydını açar; ürünü görür ama alıcı profili ajans, zorunlu marka yok."
+  },
+  "actionplan-c": {
+   "p": 1,
+   "k": 0,
+   "g": "İndirilen şablon paketi okunur içeriktir; kullanımı kimseye görünmez, paylaşılan çıktı ya da imza yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ücretsiz statik raporun altbilgisi paylaşıldığında başka geliştiriciye ürünü gösterir; kapatılabilir, paylaşım seyrek, henüz yazılmadı."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Redakte aylık rapor ajansın müşterisine yansıtılabilir; imzasız ve görenler ajans değil, elle teslim."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum müşteri içinde kalır; yalnız kamuya açık anonim örnek kart ürünü gösterir, görenlerin profili belirsiz."
+  },
+  "ai-first-tasarim-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kitap okumak kimseye görünmez; README ve Storybook altbilgisi ile varsayılan kapalı rozet seyrek görünürlük sağlar."
+  },
+  "ai-first-tasarim-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Hizmet teslimi ekip içinde kalır; açık kaynak bileşen ve Storybook demosu ekiplere dolaylı görünür, rozet varsayılan kapalı."
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kabul dosyası ajansın içinde kalır; yalnız anonim kabul örneği ve demo başka ajanslara gösterilebilir."
+  },
+  "aicommandcard-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Yapay zekâ taslağı menü metni ve yorum yanıtı olarak yayımlanır; misafire yapay zekâ ya da ürün bilgisi gösterilmez."
+  },
+  "aicommandcard-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Kart müşterinin giriş arkasındaki yönetim paneline bağlanır; yalnız müşteri ekibi görür, imza ya da davet yok."
+  },
+  "atonota-denetim-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Pro PDF alt bilgi bağlantısı isteğe bağlı; dizin kuralı varsayılan açık bağlantıyı yasaklar, puan kartı site sahibinde kalır."
+  },
+  "atonota-denetim-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans logolu aylık PDF müşteri site sahiplerine gider; alt bilgi bağlantısı isteğe bağlı, görenler ajans değil."
+  },
+  "atonota-denetim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansın müşterisi her değişiklikte kabul bağlantısını açıp ürünü kullanır; görenler ajans profili değil, referans döngüsü varsayım."
+  },
+  "b2b-bilesenler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ürün sayfasını yabancı alıcılar ve seyrek olarak komşu üreticiler görür; blokta ürün imzası ya da davet yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Sayfa ve kaynak kod ajansın müşteri projesine gömülür; ajans kendi işi olarak sunar, başka ajans görmez."
+  },
+  "b2b-bilesenler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Şablonla çıkan sitelerde imza yok; yalnız açık blok deposu ve demo geliştiricilere görünür."
+  },
+  "banner-post-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Görseller Instagram'da ve masada misafire, çevredeki işletmelere görünür; rozet öneri düzeyinde ve kapatılabilir, plan çıktıyı imzasız sayıyor."
+  },
+  "banner-post-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Teslim edilen görsel müşterinin hesabında imzasız yayımlanır; üreticiyi kimse görmez."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Toplu görseller ajansın müşteri markasıyla çıkar; yalnız herkese açık brif-teslim örneği sayfası ürünü gösterir."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Formu ajansın müşterisi doldurur; white-label ürün adını gizler, form altı rozet yalnız öneri ve görenler ajans değil."
+  },
+  "karar-sihirbazi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Karar dosyası ajansın müşterisine gider; imza zorunlu değil, anonim örnek paylaşılabilir, davet akışı yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Gömülü formu ajansın müşterisi görür ama ürün markası zorunlu değil; açık kaynak motor deposu geliştiricilere görünür."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Sunum franchise adayına ve fuar ziyaretçisine gider; son slayttaki imza satırı müşteri iznine bağlı ve kapatılabilir."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Sunumlar ajansın müşterilerine gider ama üretim hattı görünmez; ürün imzası planda yok, görenler ajans değil."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Karar dosyası danışmanın müşterisine imzasız gider; yalnız izinli anonim örnek gösterilebilir."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Demoyu yatırımcı ve ilk pilot müşteri izler; alt bilgi bağlantısı müşteri onayına bağlı, izleyenler alıcı profili değil."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Beyaz etiket: demo ajans adıyla sunulur, alt bilgi kapalı; hizmet sağlayıcı tasarım gereği görünmez."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Mutabakat özeti bordro ofisinin içinde kalır; yeni alıcı profiline görünen çıktı yok."
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Üretilen sitede kapatılabilir 'ile üretildi' bağlantısı var ama bireysel alıcının sitesini gören az."
+  },
+  "ddd-renderer-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Üretilen mimari site çoğunlukla ekip içinde gezilir; 'ile üretildi' bağlantısı kapatılabilir, ekip dışına seyrek çıkar."
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Teslim edilen sitedeki rozeti müşteri ekibi görür; yeni alıcıya yalnız anonim rapor ve vaka çalışması ulaşır."
+  },
+  "devpanel-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Bileşenler giriş arkasındaki yönetim paneline entegre edilir; teslimi müşteri ekibi dışında kimse görmez, rozet yalnız planda."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Dışa aktarılan şema ve form müşterinin deposunda takım arkadaşlarına gider; imza belirsiz, ekip dışına çıkmaz."
+  },
+  "devpanel-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Şablonla kurulan panel giriş arkasında kalır; kullanımı kimse görmez, demo alt bilgisi rozeti isteğe bağlı."
+  },
+  "e-menum-a": {
+   "p": 1,
+   "k": 0,
+   "g": "White-label kurulum: menü ajansın markasıyla yayımlanır, ürün adı görünmez; görenler misafir."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "QR menüyü misafirler görür; yönetim bağlantısı izne bağlı ve görenlerin çoğu marka sorumlusu değil."
+  },
+  "e-menum-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kaynak kod satışı; alıcının kurduğu sistemde ürün imzası yok, kullanım yeni alıcıya görünmez."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Bülten iletilebilir ve açık arşiv planlı ama yayında değil; iletilen kişilerin geliştirici olması seyrek."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "İndirilen paket alıcının kendi araştırmasında kalır; kullanımı başkasına görünmez."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "3 koltuk bülteni ajans ekibine gösterir; ekip dışına yalnız iletmeyle çıkar, yeni ajansa görünürlük zayıf."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Bulgu dosyası müşteride kalır; 'denetlendi' rozeti isteğe bağlı ve izne bağlı, çalışan bir akış yok."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 1,
+   "k": 0,
+   "g": "PDF kontrol listesi alıcının kendi projesinde kullanılır; paylaşılan çıktı ya da davet akışı tanımlı değil."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "CI makbuzu her sürümde ürün bağlantısıyla PM ve çeviri ekibine görünür; görenler aynı şirketin ekibi, dışarıya seyrek çıkar."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Karar belgesi yönetim kuruluna sunulur ama kapalı teslimdir; rehber altlığı ve hesaplayıcı çıktısı yalnız planda."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor kurucudan yatırımcıya ve ekibe gider; görenler alıcı profili değil, yalnız anonim örnek rapor dolaşır."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekranlar ve backlog müşteri markasıyla ajansa ve geliştiriciye gider; rehber altlığı planlı, paketin görünürlüğü kanıtsız."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yan panel kullanımı kimseye görünmez; paylaş düğmesi ve UTM'li çalışma kâğıdı bağlantısı istenen özellik, bugün yok."
+  },
+  "lifeos-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Haftalık CSV özeti müşterinin proje yöneticisine gider; imzasız ve görenler bağımsız çalışan değil."
+  },
+  "lifeos-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Şablondan çıkan eklentilerde ürün imzası yok; yalnız açık depo ve README geliştiricilere görünür."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Defter ofis içinde kullanılır; teklif ve randevu çıktısındaki imza öneri düzeyinde, görenler ofisin müşterisi."
+  },
+  "luquit-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kitin kullanıldığı arayüzlerde görünür imza yok; açık kaynak bileşenler ve belge sitesi geliştiricilere görünür."
+  },
+  "metaframer-kernel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Arka uç çekirdeği son kullanıcıya görünmez; host ve SDK başlığındaki bağlantı kapatılabilir, açık depo geliştiricilere görünür."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Çekirdek ajansın müşteri projesinde kalır; başlık bağlantısı kapatılabilir, başka ajans görmez."
+  },
+  "metaframer-kernel-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Açık adaptör ve test paketi PR'larda ürün adıyla görünür; görenler mühendis ama çoğu aynı şirketten, dönüş zayıf."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Paylaşılabilir liste ve rozet sonraki sürüm özelliği, bugün yok; listeyi görecek ortak ve arkadaşlar kısmen profile uyar."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "CSV ve PDF kısa liste ajansın müşterisine gider; rozet yalnız ücretsiz sürümde, görenler ajans değil."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Karar dosyası tek müşteriye özel teslim edilir; imza ya da davet yok, yalnız ayrı bir anonim örnek var."
+  },
+  "projector-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kitap okumak kimseye görünmez; paylaşılabilir ilerleme kartı ve davet kodu yalnız planda, çalışmıyor."
+  },
+  "projector-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Atölye çıktısı ekip içinde kalır; video ve alıntı sonradan referans olur, kullanım yeni alıcıya görünmez."
+  },
+  "projector-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Portal her teslimde danışmanlığın müşterisine açılır, örnek portal herkese açık; görenler danışman değil, marka yok, sınanmadı."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Şablon kişisel kullanımda kalır; altlık satırı ve arkadaşa ücretsiz paket isteğe bağlı ve sınanmadı."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kopyalar aynı programın ekiplerine dağılır; başka programın mentoruna gösteren akış tanımsız."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Künye sayfaları okurlarca paylaşılabilir ve RSS var; paylaşım akışı zayıf, seyrek."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 0,
+   "g": "İmza her e-postada alıcı şirketlere görünür ama ajans markasıyla; ürün adı yok, görenler ajans değil."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ücretsiz bireysel araçta imza rozeti planlı, her e-postada alıcıya gider; alıcıların KOBİ sorumlusu olması seyrek, ücretli pakette rozet yok."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Elle teslim edilen imza her e-postada alıcılara görünür ama ürün izi ya da davet taşımaz."
+  },
+  "volley-tap-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Skor paylaşım ekranı kulübün takipçilerine gider; görenler taraftar, pazarlama sorumlusu değil; sonuç sahnesi yarım."
+  },
+  "volley-tap-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı cihazda ikinci oyuncu ve skor paylaşımı oyunu yeni oyuncuya gösterir; aynı cihazla sınırlı, portalda paylaşım zayıf."
+  },
+  "volley-tap-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Rövanş ve ikinci oyuncu daveti oyunun içinde, her maç bir kişiyi daha oyuna sokar; aynı cihazla sınırlı, klip paylaşımı seyrek."
+  },
+  "woocommnts-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Taksit tablosunu mağazanın müşterileri görür; tablo altı bağlantı isteğe bağlı ve kapalı, mağaza sahibi seyrek görür."
+  },
+  "woocommnts-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı tablo ajansın kurduğu mağazalarda alışveriş yapanlara görünür; bağlantı kapalı, başka ajans görmez."
+  },
+  "woocommnts-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Yorum göçü hizmeti mağazada iz bırakmaz; teslim başka alıcıya görünmez."
+  },
+  "egitim-demolari-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ders paketi öğretmenden zümre arkadaşına geçebilir, görenler alıcı profili; ürün imzası ve davet akışı tanımlı değil, sınanmadı."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Atölye çıktısı ekip içinde kalır; eğitim veren danışmanların malzemeyi başka ekiplere taşıması olası ama akış tanımsız."
+  },
+  "baz-secenekler-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Gün paketi çıktısı müşterinin içinde kalır; yeni alıcıya görünen bir çıktı yok."
+  },
+  "baz-secenekler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "White-label kurulum: menü ajansın markasıyla çıkar, kurucu ve kod görünmez."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Başvuru dosyası yalnız fon veren kuruma gider; kullanım kimseye ürün göstermez."
+  }
+ }
+}

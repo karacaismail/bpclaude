@@ -1,0 +1,23 @@
+{
+ "slug": "metaframer-kernel",
+ "secenekler": {
+  "metaframer-kernel-a": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Lisanslı kopya, müşteriye özel kurulum yok; 20 dk yalnız satış sonrası soru ve hata desteği. Teslim saati 0."
+  },
+  "metaframer-kernel-b": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 18,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "1 günlük atölye 8 saat artı ekibin şemasına uyarlama ve hazırlık 10 saat; karttaki 30 saatin 18'i teslime taşındı, yapay zekâ hızlanması düşülmedi. 60 dk destek korundu."
+  },
+  "metaframer-kernel-c": {
+   "satis_basina_kurucu_saati": 50,
+   "teslim_saat_odeme_basina": 32,
+   "musteri_basina_aylik_destek_dk": 120,
+   "not": "Sabit paket: tek eylem bağdaştırıcısı, 3 negatif test, makbuz ve geri alma notu için 1-2 haftalık entegrasyon, 32 saat; yapay zekâ hızlanması çok iyimser sayılmadı. Satış 50 ve destek 120 korundu."
+  }
+ }
+}

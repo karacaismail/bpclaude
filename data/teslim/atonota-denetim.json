@@ -1,0 +1,23 @@
+{
+ "slug": "atonota-denetim",
+ "secenekler": {
+  "atonota-denetim-a": {
+   "satis_basina_kurucu_saati": 1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "Kopyası satılan eklenti lisansı; müşteriye özel iş yok, teslim 0. Satış 1 saat, karttaki gibi; destek 5 dk. Yıllık peşin ödeme."
+  },
+  "atonota-denetim-b": {
+   "satis_basina_kurucu_saati": 4,
+   "teslim_saat_odeme_basina": 1,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Ajans lisansı: elle lisans anahtarı ve logo kurulumu için 1 saat teslim (varsayım). Karttaki 6 saatin 2 saati kurulum sayıldı; satış 4 saat. Destek 60 dk."
+  },
+  "atonota-denetim-c": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 10,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Aylık yönetilen kabul akışı: 40 site için kayıt, doğrulama çıktısı ve kabul bağlantısı elle yönetilir, ayda 10 saat (varsayım). Karttaki 120 dk destek 60 dk'ya indirildi; kalanı teslimde."
+  }
+ }
+}

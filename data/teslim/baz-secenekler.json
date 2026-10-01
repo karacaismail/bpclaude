@@ -1,0 +1,23 @@
+{
+ "slug": "baz-secenekler",
+ "secenekler": {
+  "baz-secenekler-a": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "5 günlük aylık paket 40 saat (5 gün x 8); karttaki 30 dk yalnız yazışma. Satış 8 saat: görüşme, teklif, sözleşme. Baz 4 ödeme: toplam kapasiteyi aşmıyor."
+  },
+  "baz-secenekler-b": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 30,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Varsayım: Docker kurulumu 12, ortalama uyarlama 10 (0-20 saat aralığı), 30 gün hata düzeltme 4, KVKK ve dil 4 saat. Karttaki 40 saatin teslim kısmı taşındı; satış 10 saat."
+  },
+  "baz-secenekler-c": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 120,
+   "not": "Başvuru dosyası 40-80 saat kalan eforda sayılı (çift sayım yok); baz 0 ödeme olduğundan teslim 0. Satış 8 saat: jüri sunumu ve mülakat hazırlığı. Pay karşılığı gelir sayılmaz."
+  }
+ }
+}

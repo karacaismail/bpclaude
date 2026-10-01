@@ -1,0 +1,344 @@
+{
+ "slug": "kurumsal-site",
+ "baslik": "Kurumsal site hizmeti (KOBİ)",
+ "ozet": "İhracat yapan üretici KOBİ'lere kanıtlanmış bir Astro kalıbından 2-çok dilli, statik, hızlı kurumsal web sitesi satışı. Canlı bir çok dilli referans var; ödeyen dış müşteri, markasız şablon, teklif ve sözleşme şablonu henüz yok.",
+ "bugun": {
+  "var": [
+   "Canlı çok dilli üretici sitesi (yüzlerce sayfa, hreflang, JSON-LD, 301 haritası) müşteri işi olarak yayında",
+   "Bir üretici için yapılmış kurumsal site (statik) ve rakip sitelerin karşılaştırma raporu",
+   "Paket ve fiyat tablosu, bakım paketi ve teklif metni planda taslak olarak yazılı",
+   "Astro tabanlı kalıp, yayın hattı ve eski adresleri taşıma notları kodda mevcut",
+   "Kurucunun Codex/Claude Code ile hızlı üretim deneyimi (yüzlerce sayfa birkaç günde)"
+  ],
+  "yok": [
+   "Ödeyen dış müşteri; yazılı niyet ya da ön ödeme yok",
+   "Markasız şablon deposu ve içerikten sayfa üreten betik",
+   "Teklif, sözleşme ve denetim raporu şablonları; hizmet ve referans sayfası",
+   "Otomatik görsel ve tarayıcı testleri (320 px'ten masaüstüne) ve teslim raporu",
+   "Sunucusuz teklif formu ve KVKK onay kutusu",
+   "Üçüncü taraf lisansları ve hak devri metinlerinin hukukçu teyidi"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Ana ticari biçim: 45-150 bin ₺ paketli, 10-20 iş günü teslimli çok dilli kurumsal site, üstüne aylık bakım ve ek dil/içerik kalemleri. Baz hedef 12 ayda 10 site; kısıt pazar değil kurucu kapasitesi. Rakamlar varsayım; satış döngüsü ölçülmedi.",
+  "gpt": "Kaynak kaydı çalışan uygulama ya da ücretli talep kanıtı saymıyor; ilk ücretli çıktıyı dar tutar: izinli tek alıcı için gerçek, mobil uyumlu iletişim sayfası. Aboneliği tekrar kullanım görülene dek ertelemeyi önerir.",
+  "ayrisma": "Claude 3 paketli, 85-150 bin ₺ ve çok dilli bir hizmet kurar; GPT tek alıcıya tek küçük çıktıyı sınar. Claude rakamları varsayıma dayandırır, GPT kanıtsızlığı vurgular.",
+  "birlesik": "Küçük sabit kapsamlı paketle başla (Vitrin ya da İhracat), ilk ödemeyi gerçek alıcıdan al, bakım ve tema satışını ancak tekrar kullanım görünce aç."
+ },
+ "analist_gorusu": "En gerçekçi yol sıcak ilişkiye ve OSB sahasına dayalı, sabit kapsamlı İhracat paketi. Vitrin daha kolay satılır ama düşük fiyat ve tek kişilik kapasiteyle 3000 USD hedefini zorlar.",
+ "secenekler": [
+  {
+   "id": "kurumsal-site-a",
+   "ad": "İhracat paketi: sabit kapsamlı 3 dilli üretici sitesi",
+   "tur": "hizmet",
+   "musteri": "10-249 çalışanlı, ihracat yapan üretici KOBİ; Marmara OSB'lerinde; karar verici patron ve ihracat müdürü",
+   "is": "Yabancı alıcının firmayı kendi dilinde bulması, sertifika ve ürünleri görmesi, doğru bilgiyle teklif istemesi",
+   "tetikleyici": "Fuar öncesi hazırlık, alıcı denetimi, kaçan bir teklif, komşu firmanın yeni sitesi",
+   "teklif": "TR+EN+1 dil, 18-25 sayfa, 15 iş günü, 2 revizyon, eski adres taşıma haritası, sertifika ve teklif formu; ek dil ve bakım isteğe bağlı",
+   "fiyat": "85.000 ₺ + KDV (%50 avans, %50 yayında); ek dil 12.000 ₺, SEO ve işletme profili 7.500 ₺, bakım 2.500-9.000 ₺/ay",
+   "kanal_birincil": "İkitelli, Hadımköy, Çerkezköy OSB saha günleri ve OSB sanayici dernekleri; dış ticaret danışmanlarından yönlendirme",
+   "kanal_yedek": "Fuar katılımcı listelerinden elle derlenen kurumsal adrese ücretsiz site denetimi e-postası; ihracatçı birliği akademi seminerleri",
+   "ilk_adim": "Bir sayfalık denetim raporu şablonunu hazırla; 20 üreticinin sitesini denetleyip rapor gönder; 2 OSB günü planla",
+   "ilk_kapsam": "Mevcut kalıptan bir müşteri için TR+EN+DE site: sabit sayfa listesi, 301 haritası, teklif formu, ölçülmüş hız ve mobil test raporu",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kalıp ortak bileşenlerden oluşuyor; müşteri adına hak, çeviri ve bileşen lisansları (animasyon, ikon) teyit bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK aydınlatma, soğuk e-posta ret kuralı, e-Arşiv ve hak devri maddesi hukukçu ve mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "gecti",
+     "not": "Yurt içi alıcıdan havale/EFT ve fatura; kart isteyene sanal POS seçeneği planda; e-Arşiv ayrıntısı müşavirle netleşecek"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 20 isimlik liste henüz herkese açık kaynaklardan derlenmedi, mevcut ilişki ya da görüşme kaydı yok; OSB ihracatçı listesi yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal OSB sahası ve danışman yönlendirmesi, yedek fuar listesi e-postası; ilk adımlar adlı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 4-7 hafta aralığında; satış döngüsü hiç ölçülmedi, plan ilk imzayı 7-8. haftaya koyuyor"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit yaklaşık 17.000 ₺, 50.000 ₺ tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit sayfa, dil ve revizyon sınırı, sabit fiyat; fazlası saatlik; paneli ve üyeliği olan işler satılmaz"
+    }
+   },
+   "kapi_duzeltme": "G1, G2: hukukçu ve mali müşavirle sözleşme, KVKK ve lisans kontrolü. G6: ilk 10 teklifte döngüyü ölç; sözleşme ve teklif şablonunu 2 hafta içinde bitir. G4: 20 OSB ihracatçısını ismen listele.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 85000,
+    "degisken_maliyet_tl": 3300,
+    "sabit_gider_aylik_tl": 6300,
+    "baslangic_nakit_tl": 17000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 80,
+     "max": 140
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 90
+    },
+    "satis_basina_kurucu_saati": 14,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 42500,
+     "baz": 140000,
+     "iyi": 420000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 1,
+     "baz": 6,
+     "iyi": 14
+    },
+    "alti_ay_musteri": {
+     "kotu": 1,
+     "baz": 2,
+     "iyi": 5
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "Plan 5, 6, 8, ek C.8; hakem düzeltmesi. Kötü: tek imza, yalnız avans (42.500). Baz: ilk imza 7-8. hafta, 2 müşteri: 1 site tam (85.000) + 1 avans (42.500) + 1 SEO (7.500) + 2 bakım ayı (5.000) = 140.000, 6 ödeme. İyi: 4 site tam + 1 avans + ek kalemler. Maliyet plan 6.600 ₺/proje. Dönüşüm plan varsayımı, kanıtsız."
+   },
+   "deney": {
+    "varsayim": "OSB'deki üretici KOBİ'ler ücretsiz denetim raporuna yanıt verir ve 85.000 ₺'lik sabit kapsamlı teklife avans öder",
+    "yontem": "Mevcut sitesi zayıf 30 ihracatçıya denetim raporu gönder; ilgilenen 10'una 20 dakikalık görüşme ve yazılı teklif sun; imzaya avans fatura et",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 1500,
+    "basari_olcutu": "30 rapordan en az 8 görüşme, en az 3 yazılı teklif ve en az 1 kabul edilmiş teklif",
+    "birakma_olcutu": "30 raporda 3'ten az görüşme ya da hiç yazılı niyet çıkmaması",
+    "sonraki_dilim": "İlk avans alınınca 15 iş günlük teslim; ardından bakım ve ek dil teklifi, danışman yönlendirme payını başlat"
+   },
+   "etiketler": {
+    "segment": "Marmara OSB üretici KOBİ, ihracatçı",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Astro, Tailwind, statik CDN",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 1-2: eski sitelerin tek dilli ve mobilde bozuk olduğu, 20 üretici karşılaştırmasında sektör ortalamasının 2 dil olduğu yazılı. Plan 4-5: ajans fiyatları çok dilli işte 180.000 ₺ ve üzeri; paketler 45/85/150 bin ₺. Derinlik ek A.8 ve C.3: ROI 13 ay, varsayımlı; ilk 90 günde 3 imza hedefi. Ödeyen müşteri yok; GPT kaydı kanıt saymıyor."
+  },
+  {
+   "id": "kurumsal-site-b",
+   "ad": "Vitrin paketi: 2 dilli giriş sitesi (45.000 ₺)",
+   "tur": "hizmet",
+   "musteri": "1-49 çalışanlı yeni ihracatçı ya da tek sayfalık siteyle yetinen küçük üretici; karar veren patronun kendisi",
+   "is": "Google'da ve alıcı aramasında firma adıyla çıkmak, telefonda düzgün açılan 2 dilli, iletişim formlu bir site sahibi olmak",
+   "tetikleyici": "İhracata yeni başlama, alıcının web siteniz nerede sorusu, ihracatçı birliği üyeliği ya da destek başvurusu",
+   "teklif": "TR+EN, 8-10 sayfa, 20 görsel, iletişim ve teklif formu, 10 iş günü, 2 revizyon; üst pakete geçiş seçeneği",
+   "fiyat": "45.000 ₺ + KDV (%50 avans); SEO ve işletme profili 7.500 ₺, ek dil 12.000 ₺, bakım isteğe bağlı 2.500 ₺/ay",
+   "kanal_birincil": "İhracatçı birliği akademi eğitimleri (İMMİB, İİB, AKİB) ve OSB dernekleri seminerinde 20 dakikalık canlı site denetimi",
+   "kanal_yedek": "Ücretsiz site denetimi formu, WhatsApp Business yanıtı ve mevcut ilişkilerin tanıtımı; danışman yönlendirmesi",
+   "ilk_adim": "Denetim formunu ve rapor şablonunu yayına al; bir birlik akademisine ve bir OSB derneğine seminer önerisi gönder",
+   "ilk_kapsam": "TR+EN, 8-10 sayfalık sabit şablon: kurumsal, ürün, belge, referans, iletişim ve teklif formu; teslimde hız ve mobil test raporu",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Aynı kalıp ve lisans sorusu: kod hakları ve ücretli bileşen lisansı teyit bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK aydınlatma ve form onayı, hak devri maddesi ve e-Arşiv hukukçu ve müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "gecti",
+     "not": "Havale/EFT ve fatura; küçük müşteri için sanal POS seçeneği planda; e-Arşiv müşavirle teyit edilecek"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (yeni ihracatçı mikro firma) ama 20 isimlik liste yok; seminer ve denetim formu liste üretecek"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birliklerin akademi eğitimleri ve OSB dernekleri adlı; yedek denetim formu ve WhatsApp; ilk adım yazılı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 48 saat; satış döngüsü ölçülmedi, ilk tahsilat 2 ay içinde gerçekçi ama kanıtsız"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit yaklaşık 8.000 ₺, tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit sayfa listesi, 2 dil, 2 revizyon, sabit fiyat; e-ticaret, üyelik ve panel isteyen satılmaz"
+    }
+   },
+   "kapi_duzeltme": "G6: ilk 10 teklifte döngü süresini ölç. G1, G2: hukukçu ve müşavir teyidi. G4: seminer ve denetim formundan 20 isimlik liste çıkar; ilk 10 teklifte döngü süresini ölç.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 45000,
+    "degisken_maliyet_tl": 1800,
+    "sabit_gider_aylik_tl": 6300,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 24,
+     "beklenen": 48,
+     "max": 90
+    },
+    "ilk_tahsilat_gun": {
+     "min": 14,
+     "max": 60
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 22500,
+     "baz": 120000,
+     "iyi": 330000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 1,
+     "baz": 6,
+     "iyi": 20
+    },
+    "alti_ay_musteri": {
+     "kotu": 1,
+     "baz": 3,
+     "iyi": 7
+    },
+    "donusum_orani": {
+     "dusuk": 0.08,
+     "yuksek": 0.25
+    },
+    "dayanak": "Plan 5 ve 8, ek B.1-B.3: Vitrin 45.000 ₺; hakem düzeltmesi. Kötü: tek avans. Baz: 2 site tam (90.000) + 1 avans (22.500) + 1 SEO (7.500) = 120.000, 6 ödeme, 3 müşteri. İyi: 6 site tam + avans + ek kalemler. Mikro segmentte ödeme istekliliği düşük; dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Küçük üretici tek karar vericiyle 45.000 ₺'yi ilk görüşmeden sonraki iki hafta içinde avansla onaylar",
+    "yontem": "Bir birlik akademisi ve bir OSB derneğinde 20 dakikalık canlı denetim; katılımcıya denetim raporu ve sabit fiyatlı Vitrin teklifi; avans için havale bilgisi",
+    "sure_gun": 21,
+    "maliyet_saat": 20,
+    "maliyet_tl": 800,
+    "basari_olcutu": "40 katılımcıdan en az 8 denetim talebi ve en az 1 avans ödemesi",
+    "birakma_olcutu": "Seminerden 3'ten az denetim talebi ya da hiç fiyat görüşmesi çıkmaması",
+    "sonraki_dilim": "İlk Vitrin teslimini referans yap; İhracat paketine geçiş ve ek dil teklifini aynı müşteriye sun"
+   },
+   "etiketler": {
+    "segment": "Mikro ve küçük üretici, yeni ihracatçı",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Astro, Tailwind, statik CDN",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Ek B.1: mikro segment 123.513 ihracatçı ile büyük ama ödeme istekliliği 2/5 ve rekabet (serbest çalışan 10-25 bin ₺, site kurucular) yüksek, öncelik puanı 7. Ek A.8: Vitrin geri ödeme süresi yaklaşık 19 ay, düşük. Plan 3.1: patron fiyata duyarlı. Ek C.2: birlik eğitimleri ve OSB dernekleri kanalı 8-9 puan. Ödeyen müşteri yok."
+  },
+  {
+   "id": "kurumsal-site-c",
+   "ad": "Markasız Astro sanayi teması (kod satışı)",
+   "tur": "kod satışı",
+   "musteri": "Sanayi müşterisine site yapan ajans ya da serbest geliştirici; hazır çok dilli Astro kalıbı arayan, kendi kartıyla alan kişi",
+   "is": "Çok dilli, hreflang ve JSON-LD hazır, RTL destekli bir B2B kurumsal site kalıbını sıfırdan yazmadan kullanmak",
+   "tetikleyici": "Sanayi müşterisinden gelen çok dilli site işi ve kısa teslim tarihi",
+   "teklif": "Markasız Astro kaynak kodu, 5 dil altyapısı, B2B sayfa tipleri, TR/EN dokümantasyon; Agency paketinde sınırsız müşteri projesi",
+   "fiyat": "Lite 49 $, Pro 99 $, Agency 149 $ (ortalama 79 $ ≈ 3.792 ₺); ödeme küresel satış aracılı hizmetle",
+   "kanal_birincil": "Herkese açık kaynak deposunun README sayfası ve ödeme aracısı mağazası; Astro topluluk sunucusu ve Product Hunt duyurusu",
+   "kanal_yedek": "Kalıp tabanlı sitelerin alt bilgi kredisi ve vaka yazıları; beyaz etiket üretim isteyen ajansa doğrudan teklif",
+   "ilk_adim": "Markasız şablon deposunu ve içerikten sayfa üreten betiği bitir; ödeme aracısı hesabını aç ve test ödemesi yap",
+   "ilk_kapsam": "Lite paket: markasız kaynak, 5 dil altyapısı, 12 sayfa tipi, dokümantasyon ve tarayıcı test betikleri; demo site",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Bileşen lisansları ve kod haklarının satışa uygunluğu doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Küresel satışta vergi ve fatura yükü aracıda; Türkiye tarafı fatura ve cayma istisnası müşavir ve hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Aracı hizmet Türkiye banka ödemesini destekliyor; hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (ajans, serbest geliştirici) ama isim listesi yok; pazar küçük ve dağınık"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanal fikirleri var; arama hacmi ve mağaza trafiği ölçülmedi, somut dizin ya da topluluk kategorisi seçilmedi"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 100 saat (5 hafta); ilk satış mağaza onayı ve görünürlüğe bağlı, döngü bilinmiyor"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit yaklaşık 2.000 ₺; aracı hesabı ücretsiz açılıyor"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı paketi alır; özelleştirme satılmaz, yalnız dokümantasyon ve sınırlı destek"
+    }
+   },
+   "kapi_duzeltme": "G1: kod hakları ve bileşen lisanslarını yazılı teyit et. G3: hesabı aç, test ödemesi yap. G4, G5: 20 ajans ve geliştirici adı çıkar, dizin ve topluluk kategorisi seç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 3792,
+    "degisken_maliyet_tl": 220,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 2000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 100,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 0.5,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 22700,
+     "iyi": 91000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 24
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 24
+    },
+    "donusum_orani": {
+     "dusuk": 0.005,
+     "yuksek": 0.03
+    },
+    "dayanak": "Plan 5: 49/99/149 $; ortalama 79 $ x 48 = 3.792 ₺. Plan 2-8 satış/ay (benzer ürün verisi yok), ilk sonuç 12. hafta; hakem düzeltmesi: yalnız ay 4-6 satış. Baz 2/ay x 3 = 6, iyi 8/ay x 3 = 24, kötü 0. Dönüşüm varsayım, kanıtsız."
+   },
+   "deney": {
+    "varsayim": "Ajanslar ve serbest geliştiriciler markasız Türkçe/RTL destekli Astro kalıbına 49-149 $ öder",
+    "yontem": "Demo siteli README ve ödeme sayfasını yayına al; Astro topluluğunda ve bir dizinde duyur; 30 gün satış, indirme ve soruları kaydet",
+    "sure_gun": 30,
+    "maliyet_saat": 30,
+    "maliyet_tl": 500,
+    "basari_olcutu": "30 günde en az 3 ödeme ve en az 1 beyaz etiket üretim sorusu",
+    "birakma_olcutu": "30 günde hiç ödeme yok ve 500'den az depo ziyareti",
+    "sonraki_dilim": "Satış gelirse Pro ve Agency içeriğini genişlet; ajanslara sabit fiyatlı beyaz etiket üretim teklif et"
+   },
+   "etiketler": {
+    "segment": "Ajans ve serbest geliştirici",
+    "kanal_turu": "içerik",
+    "teknoloji": "Astro, Tailwind, ödeme aracısı",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan 3.2 ve 13: Astro sanayi teması nişi küçük, benzer ürün satış verisi bulunamadı; ajans payı ve tema geliri planın en çok %10'u. Ek C.2: tema kanalı 5/10, ilk sonuç 12 hafta. Plan 5: aracı hizmet Türkiye banka ödemesini destekliyor, diğer aracı desteklemiyor. Ödeyen müşteri yok; GPT kaydı tek alıcılı küçük çıktıyı önerip kanıt saymıyor."
+  }
+ ]
+}

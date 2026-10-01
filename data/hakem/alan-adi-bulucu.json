@@ -1,0 +1,41 @@
+{
+ "slug": "alan-adi-bulucu",
+ "kararlar": [
+  {
+   "itiraz": "B kanıt notu ajansı en yüksek ödeme isteği gösteriyor; kaynakta 3,7 varsayımdır, ölçülmüş talep değil.",
+   "karar": "kabul",
+   "degisiklik": "B kanit_notlari: 'ödeme isteği en yüksek' yerine 'kaynakta en yüksek puanlı; ölçülmüş talep değil, yargı varsayımı'.",
+   "gerekce": "Derinlik B.1: 3,7 yargıya dayalı puan; ödeyen ajans yok."
+  },
+  {
+   "itiraz": "C notu ilk 10 müşteriyi çevreden diyor; kaynakta hedef, gerçekleşmiş satış yok.",
+   "karar": "kabul",
+   "degisiklik": "C kanit_notlari: 'ilk 10 müşteri çevreden' ifadesine 'bir hedeftir (gerçekleşmiş satış yok)' eklendi.",
+   "gerekce": "Plan 7.2 bunu hedef olarak yazar; ödeyen müşteri 0."
+  },
+  {
+   "itiraz": "A çekirdek 2-3 gün diyor; derinlik belgesi tüm ilk sürüm için yaklaşık 8 gün hesaplıyor.",
+   "karar": "kabul",
+   "degisiklik": "A kalan_efor_saat 24/50/70 iken 24/64/80; G6 notu ve kanit_notlari 8 gün ayrımını belirtecek biçimde güncellendi.",
+   "gerekce": "Derinlik D.8: tüm L1 yaklaşık 8 gün; plan yalnız çekirdek MVP'yi sayıyor."
+  },
+  {
+   "itiraz": "A alti_ay_odeme_adedi baz 60 fazla: arama 8-12 haftada sonuç verir, 400 ziyaret varsayım; baz 20-30 olmalı.",
+   "karar": "kabul",
+   "degisiklik": "A odeme/musteri baz 60 iken 30, iyi 150 iken 100; tahsilat baz 9960 iken 4980, iyi 24900 iken 16600; dayanak güncellendi.",
+   "gerekce": "Kaynak 6. ay hedefi 220 ama ödeyen yok ve SEO gecikmeli; temkinli seçim 30."
+  },
+  {
+   "itiraz": "B donusum yuksek 0.20 kanıtsız çarpım; en çok 0.10, 6 ayda baz 2 ajans.",
+   "karar": "kabul",
+   "degisiklik": "B donusum 0.05-0.20 iken 0.02-0.10; odeme baz 4 iyi 10 iken 2 ve 5; tahsilat baz 1664 iken 832, iyi 4160 iken 2080.",
+   "gerekce": "Plan: 90 günde 2, 12 ayda 5 ajans hedefi; %10 x %20 = %2 alt sınır; 0.20 yalnız ikinci aşama oranı."
+  },
+  {
+   "itiraz": "C alti_ay_odeme_adedi baz 10 yalnız plan hedefi, ödeyen yok; baz 3-5, dönüşüm 0.15 iyimser.",
+   "karar": "kabul",
+   "degisiklik": "C odeme baz 10 iken 4, iyi 25 iken 12; tahsilat baz 12420 iken 4968, iyi 31050 iken 14904; donusum yuksek 0.15 iken 0.10.",
+   "gerekce": "Kaynakta rakam yok, ilk 10 hedef; 10 tekliften 2 ödeme başarı eşiği; temkinli 4."
+  }
+ ]
+}

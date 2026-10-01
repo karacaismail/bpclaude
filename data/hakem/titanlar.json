@@ -1,0 +1,47 @@
+{
+ "slug": "titanlar",
+ "kararlar": [
+  {
+   "itiraz": "A ilk_kapsam kâr aracı lisansını koyuyor; kaynakta formül hatası düzelmeden derste kullanılmamalı deniyor.",
+   "karar": "kabul",
+   "degisiklik": "titanlar-a ilk_kapsam: 'kâr aracı lisansı' çıkarıldı; formül düzelene dek Excel şablonu yazıldı.",
+   "gerekce": "Plan ve derinlik dosyası D.8 #10: hafta 4'ten önce düzeltme, düzelmezse derste Excel şablonu."
+  },
+  {
+   "itiraz": "A yedek kanalı referans şirket ağını sayıyor; bu ilişkiler ve ağ boyutu belgelenmemiş.",
+   "karar": "kismen",
+   "degisiklik": "titanlar-a kanal_yedek: referans ağı 'plan varsayımı, belgelenmedi' diye işaretlendi; Telegram grubu adlandırıldı.",
+   "gerekce": "Referans işler kaynakta var ama tedarikçi ağı ve 40 kayıt V6 varsayımı."
+  },
+  {
+   "itiraz": "B eğitimi kohort ön kaydına bağlıyor; e-ticaret satıcılığı geçmişi ve tanınırlık belgesiz (E1).",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart bunu kanit_notlari'nda zaten söylüyor; konu puan (E1) meselesi, kart alanı değil."
+  },
+  {
+   "itiraz": "C iyi senaryoda 2 atölye sayıyor; kaynak ilk sözleşmeyi ikinci çeyreğe koyuyor, oda ilişkisi yok.",
+   "karar": "kabul",
+   "degisiklik": "titanlar-c iyi tahsilat 30000 -> 0, ödeme/müşteri 2 -> 0; ilk_tahsilat_gun 75-210 -> 210-330; dayanak güncellendi.",
+   "gerekce": "D.7: teklif 2027 Q1, atölye ve sözleşme Q2, vade 30-60 gün; hepsi 6 aylık pencerenin dışında."
+  },
+  {
+   "itiraz": "A G5 'gecti' fakat webinar izleyicisi belgesiz, hedef grup, dizin ya da ortak adlandırılmamış.",
+   "karar": "kismen",
+   "degisiklik": "G5 gecti kaldı; kanal_yedek'e adlı grup (Telegram E-Ticaret Türkiye) eklendi.",
+   "gerekce": "Birincil kanal tarihli webinar, ilk adım ve yedekler adlı; izleyici eksikliği G4 ve B1 konusu."
+  },
+  {
+   "itiraz": "A baz 28 ödeme ve 135000 iyimser: talep görüşmesi ve izleyici yok; ikinci kohort 6 aya sığmayabilir.",
+   "karar": "kabul",
+   "degisiklik": "titanlar-a baz tahsilat 135000 -> 115000, ödeme ve müşteri 28 -> 24 (12+12 kişi); dayanak güncellendi.",
+   "gerekce": "Plan baz 16 kişi tanınırlık yok notuyla; plan kötümserinde kohort başına 12; kohort 2 Şubat'ta, pencere içinde."
+  },
+  {
+   "itiraz": "B baz 57500 (8 müşteri, 11 ödeme) iyimser: dönüşüm varsayım, grup erişimi ve ödeme isteği kanıtsız.",
+   "karar": "kabul",
+   "degisiklik": "titanlar-b baz 57500 -> 37500 (5 Giriş + 2 Strateji; 7 ödeme, 5 müşteri); kötü 5000 -> 0; iyi 112500 -> 80000; dayanak güncellendi.",
+   "gerekce": "Plan 12 ayda 5 Strateji ve mezun danışmanlığı 90 gün sonra der; ödeme isteği kanıtı yok."
+  }
+ ]
+}

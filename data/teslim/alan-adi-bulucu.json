@@ -1,0 +1,23 @@
+{
+ "slug": "alan-adi-bulucu",
+ "secenekler": {
+  "alan-adi-bulucu-a": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "Tek seferlik yazılım kopyası, müşteriye özel iş yok; satış öz hizmet. 5 dk yalnız satış sonrası destek. Karttaki değerler olduğu gibi korundu."
+  },
+  "alan-adi-bulucu-b": {
+   "satis_basina_kurucu_saati": 4,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Yıllık lisans, müşteriye özel iş yok; 4 saat ajans görüşmesi ve teklif. 15 dk yalnız destek. Şablon üretimi kalan eforda."
+  },
+  "alan-adi-bulucu-c": {
+   "satis_basina_kurucu_saati": 1,
+   "teslim_saat_odeme_basina": 2.5,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Karttaki 3 saat ayrıştırıldı: satış 1, teslim 2 saat; ilk müşterilerde elle kontrol ve karar dosyası için 2,5 saate çıkarıldı (iyimser olunmadı). Destek 10 dk."
+  }
+ }
+}

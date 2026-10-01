@@ -1,0 +1,53 @@
+{
+ "slug": "wp-nis-eklentiler",
+ "kararlar": [
+  {
+   "itiraz": "B kart: kapıda ödeme payı %3,5, Pro farkı küçük bir paya dayanıyor; taksitle %2 dönüşüm artışı ölçümsüz",
+   "karar": "kismen",
+   "degisiklik": "B kanit_notlari: %3,5 payın Pro farkını sınırladığı ve taksit etkisinin varsayım olduğu eklendi",
+   "gerekce": "Kaynak %3,5 payı ve ölçümsüz varsayımı doğruluyor; kart bunu açık yazmıyordu."
+  },
+  {
+   "itiraz": "A kart: kalan efor 90-160 saat, kaynak KVKK Lite için D.8'de ~158 saat gösteriyor; beklenen 120 iyimser",
+   "karar": "kabul",
+   "degisiklik": "A kalan_efor_saat 90/120/160 iken 120/158/220; G6 notu ve dayanak güncellendi; ilk_tahsilat 60-130",
+   "gerekce": "D.8 kalemleri (çekirdek, Lite, Pro, test, CI, onboarding) toplamı 158 saat; 120 beklenen buna uymuyor."
+  },
+  {
+   "itiraz": "C kart: G6 gecti, ama 1.500-3.000 TL kurulum kalemi varsayım, fiyat görüşmesi yok",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G6 efor ve satış döngüsüne bakar: 20-40 saat ve ajans kapanışı 7-14 gün (C.5) kaynaklı; fiyat sınanmamışlığı finans baz rakamında işlendi."
+  },
+  {
+   "itiraz": "B G5 test olmalı: Trendyol satıcı ve WhatsApp grupları adsız, yalnız wordpress.org ve arama somut",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Birincil kanal adlı (wordpress.org, 'woocommerce taksit tablosu' sorgusu), ilk adım ve yedek (R10.net, Trendyol satıcı grupları) kaynakta var; kanalın sınanmamışlığı G5 değil B3 konusu."
+  },
+  {
+   "itiraz": "A G6: kalan 90-160 saat 4-8 hafta, üst sınır 8 haftada, döngü ölçülmedi; test doğru, gecti değil",
+   "karar": "kismen",
+   "degisiklik": "A G6 durumu test kaldı; not güncellendi: 120-220 saat, 6-11 hafta, beklenen ~158 saat",
+   "gerekce": "Kart zaten test; itiraz durumu değiştirmiyor, yalnız efor düzeltmesiyle rakamlar yenilendi."
+  },
+  {
+   "itiraz": "A donusum_orani yüksek 0,25: görüşme 0 iken iyimser; 0,10 düşük bile olabilir",
+   "karar": "kabul",
+   "degisiklik": "A donusum_orani 0,10-0,25 iken 0,05-0,15; dayanak güncellendi; tahsilat rakamları aynı",
+   "gerekce": "Görüşme ve ödeme kanıtı yok; kaynak %25'i varsayım olarak veriyor, wordpress.org genel dönüşümü %1 altı."
+  },
+  {
+   "itiraz": "B ilk_tahsilat_gun 100-170 ve baz 3 ödeme iyimser; kaynak dönüşümü %1 altı, satış penceresi 1-2 ay",
+   "karar": "kabul",
+   "degisiklik": "B baz tahsilat 4470 iken 1490, ödeme/müşteri 3 iken 1; iyi 14900/10 iken 8940/6; dayanak güncellendi",
+   "gerekce": "Kaynak freemium dönüşümü %1 altı, ilk tahsilat 6 aylık pencerenin sonunda; gün aralığı kaynakla tutarlı, baz düşürüldü."
+  },
+  {
+   "itiraz": "C alti_ay_odeme_adedi baz 6 site: fiyat sınanmadı, dönüşüm %20 varsayım; baz 2-3 daha gerçekçi",
+   "karar": "kabul",
+   "degisiklik": "C baz 6 site/15000 iken 3/7500; iyi 14/35000 iken 10/25000; dayanak güncellendi",
+   "gerekce": "Fiyat görüşmesi 0 ve dönüşüm varsayım; temkinli baz seçildi."
+  }
+ ]
+}

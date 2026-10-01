@@ -1,0 +1,53 @@
+{
+ "slug": "actionplan",
+ "kararlar": [
+  {
+   "itiraz": "Kart: actionplan-b G5 test yerine kanal onayı belirsiz; Plane listelenme onayı yok",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kanallar adlı (Plane Marketplace, GitHub Action) ve yedek var; kaldı kanal tanımsızsa verilir. Onay belirsizliği test sınıfı; kart zaten test."
+  },
+  {
+   "itiraz": "Kart: actionplan-a ilk_tahsilat min 35 gün; kaynak 7-9 hafta yeniden yazım diyor",
+   "karar": "kabul",
+   "degisiklik": "finans.ilk_tahsilat_gun.min 35 idi, 50 oldu; dayanak güncellendi",
+   "gerekce": "Derinlik dosyası 7-9 hafta (49-63 gün) kalan iş diyor; satılabilir kapsam öncesi tahsilat beklenemez."
+  },
+  {
+   "itiraz": "Kart: actionplan-c için ödeme isteği 2/5 kanıt notunda zayıf vurgulanıyor",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kanıt notu 2/5 ödeme istekliliğini zaten yazıyor; asıl etki finans itirazında (baz satış) ele alındı."
+  },
+  {
+   "itiraz": "Kapı: actionplan-b G6 test olmalı; satış döngüsü ölçülmedi ve ajans alıcı listesi yok",
+   "karar": "kabul",
+   "degisiklik": "G6 gecti idi, test oldu; kapı notu ve kapi_duzeltme güncellendi",
+   "gerekce": "Efor 8 haftanın altında ama G6 tanımına göre satış döngüsü ölçülmemişse test; kaynakta ajans ilişkisi ya da döngü verisi yok."
+  },
+  {
+   "itiraz": "Finans: actionplan-a net_fiyat 2160, Pro 1872 TL; 45 USD karışım varsayımı; baz 45 satış iyimser",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Plan 6 açıkça 90/10 Pro-Team ile 45 USD ortalama veriyor; plan 6. ay hedefi 120 lisans, baz 45 bunun çok altında. Dayanağa çıplak Pro fiyatı notu eklendi."
+  },
+  {
+   "itiraz": "Finans: actionplan-a ilk_tahsilat_gun min 35; 7-9 hafta yeniden yazım nedeniyle en az 50",
+   "karar": "kabul",
+   "degisiklik": "ilk_tahsilat_gun.min 35 idi, 50 oldu",
+   "gerekce": "Kalan efor 160 saat ve 7-9 hafta yazım; 35 gün kaynakla çelişiyor, 50 gün alt sınır."
+  },
+  {
+   "itiraz": "Finans: actionplan-b baz 2 ödeyen ajans iyimser; liste, dönüşüm ve alıcı kanıtı yok",
+   "karar": "kabul",
+   "degisiklik": "baz ödeme 2 idi, 1 oldu (tahsilat 38400 -> 19200); iyi 6 idi, 3 oldu (115200 -> 57600); kötü 0 kaldı",
+   "gerekce": "Kaynak pilot hedefi 3 ajans; ajans listesi ve ilişki kanıtı yok. Temkinli düşük gelir: baz 1, iyi pilot hedefi 3."
+  },
+  {
+   "itiraz": "Finans: actionplan-c baz 25 satış iyimser; 490 TL, dönüşüm 0,3-1%, ödeme isteği 2/5",
+   "karar": "kismen",
+   "degisiklik": "baz 25 idi, 12 oldu (12250 -> 5880); iyi 80 idi, 45 oldu (39200 -> 22050); kötü 3 aynı",
+   "gerekce": "Plan hedefi 6. ayda 30 satış; ödeme isteği 2/5, kitle ve kanal doğrulanmadı. Baz hedefin altına çekildi; kötü 3 zaten kartta."
+  }
+ ]
+}

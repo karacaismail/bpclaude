@@ -1,0 +1,53 @@
+{
+ "slug": "vize-operasyon",
+ "kararlar": [
+  {
+   "itiraz": "A: TÜRSAB bölge sunumu kanalı dar (yaklaşık 70 kişi), vize acentesi olduğu doğrulanmadı",
+   "karar": "kismen",
+   "degisiklik": "A kanal_birincil ofis ziyareti öne alındı, TÜRSAB destekleyici yapıldı; G5 notu ve kanit_notlari erişim sınırını yazıyor; G5 gecti kaldı",
+   "gerekce": "Kaynak kurulları yaklaşık 70 kişi sayar; ofis ziyareti ve WhatsApp ayrı adlı kanallardır, G5 geçer."
+  },
+  {
+   "itiraz": "B: bölge kurulu eğitim yüzeyi ev sahibi izni ister, izin alınmadı",
+   "karar": "kabul",
+   "degisiklik": "B kanal_birincil izin şartını yazıyor; kanit_notlari ve kapi_duzeltme güncellendi",
+   "gerekce": "GPT dosyası paylaşımı ev sahibi iznine bağlar; izin alınmadığı için kanal hazır değil."
+  },
+  {
+   "itiraz": "C: bireysel pay yüzde 60 ve dönüşüm yüzde 1 varsayım, arama hacmi doğrulanamadı",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart bu değerleri zaten varsayım diye işaretliyor; kaynak da öyle diyor. Etkisi finans itirazında ele alındı."
+  },
+  {
+   "itiraz": "B G5 test olmalı: birincil kanal izne bağlı, yedek ilişki bilinmiyor",
+   "karar": "kabul",
+   "degisiklik": "B G5 gecti iken test oldu; not ve kapi_duzeltme güncellendi",
+   "gerekce": "G5 somut ve hazır birincil kanal ister; izin yok, yedek ilişki belgesiz, Excel arama hacmi bilinmiyor."
+  },
+  {
+   "itiraz": "A G7 test olmalı: 45.000 ₺ tavana yakın, ek efor nakdi aşabilir",
+   "karar": "kismen",
+   "degisiklik": "A G7 gecti iken test oldu; kapi_duzeltme ve kanit_notlari güncellendi",
+   "gerekce": "Efor kurucu saatidir, nakit değil; ancak 45.000 ₺ kaynaksız ve sabit gider eklenince 150. günde tavan aşılabilir."
+  },
+  {
+   "itiraz": "A alti_ay_musteri baz 3 yerine 1-2: pilot ücretsiz, ücretli geçiş en erken 70. gün",
+   "karar": "kabul",
+   "degisiklik": "A müşteri 3/6 iken 2/4; ödeme 7/14 iken 5/10; tahsilat 14651/29302 iken 10465/20930; dayanak güncellendi",
+   "gerekce": "Plandaki 3 pilottan 2'si ücretli hedefi sonuç değil; kod çalışmıyor, geçiş 70-100. gün; temkinli seçildi."
+  },
+  {
+   "itiraz": "B alti_ay_tahsilat baz 25.000 yerine 8.000-15.000: ilk tahsilat 50-120 gün, ilişki ve izin yok",
+   "karar": "kabul",
+   "degisiklik": "B baz 25000 iken 14000 (1 acente, 4 ödeme); iyi 56000 iken 45000 (3 acente, 13 ödeme); dayanak güncellendi",
+   "gerekce": "İzin ve ilişki doğrulanmadı, ilk ödeme 90. gün civarı; 2 acente varsayımı kaynaksız, 5.000 + 3 x 3.000 hesaplandı."
+  },
+  {
+   "itiraz": "C alti_ay_odeme_adedi baz 60 yerine 10-20: SEO 8-12 hafta, kod 9-10 hafta",
+   "karar": "kabul",
+   "degisiklik": "C ödeme ve müşteri baz 60 iken 15, iyi 150 iken 40; tahsilat baz 23940 iken 5985, iyi 59850 iken 15960; dayanak güncellendi",
+   "gerekce": "Kod 9-10 hafta ve SEO 8-12 hafta sürer; ilk satış 130. gün civarı, 6 ayda satış penceresi kısa; plan 12. ay rakamı kesildi."
+  }
+ ]
+}

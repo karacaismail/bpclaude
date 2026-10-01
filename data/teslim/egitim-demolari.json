@@ -1,0 +1,17 @@
+{
+ "slug": "egitim-demolari",
+ "secenekler": {
+  "egitim-demolari-a": {
+   "satis_basina_kurucu_saati": 1.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "PDF ve statik demo kopyası satılıyor: müşteriye özel iş yok, teslim 0; üretim kalan eforda. Satış 1.5 saat ve destek 10 dk karttaki gibi korundu. Fiyat ve adetler varsayım."
+  },
+  "egitim-demolari-b": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 10,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: ekip senaryosuna uyarlama 6 saat, 20 dk ders ve oturum 2 saat, eylem kaydı 2 saat. Karttaki 12 saatin teslim kısmı taşındı; satış 8 saat; destek 30 dk."
+  }
+ }
+}

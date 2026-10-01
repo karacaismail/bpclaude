@@ -1,0 +1,23 @@
+{
+ "slug": "cok-dilli-arayuz",
+ "secenekler": {
+  "cok-dilli-arayuz-a": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 20,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Temel paket: 5 ekran x 2 dil denetimi, bulgu dosyası, 14 gün yeniden kontrol, yaklaşık 20 saat; karttaki 16 saat satışın içinde denetim emeği vardı, satış 8 saate indi."
+  },
+  "cok-dilli-arayuz-b": {
+   "satis_basina_kurucu_saati": 0,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "PDF ve ders paketi kopyası satılıyor, müşteriye özel iş yok; teslim 0. Satış sayfası otomatik, kart değerleri korundu."
+  },
+  "cok-dilli-arayuz-c": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 45,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Pilot: JSON import, lint, pseudo-locale, adapter, rapor ve CI makbuzu müşteri işi yaklaşık 45 saat; kartın 24 saat satışı ve 90 dk desteği hazırlık ve pilotu içeriyordu; varsayım."
+  }
+ }
+}

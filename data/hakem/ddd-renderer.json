@@ -1,0 +1,65 @@
+{
+  "slug": "ddd-renderer",
+  "kararlar": [
+    {
+      "itiraz": "A G5 test olmalı: e-kitap çıkmadı, izinli alıcı listesi yok",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "G5 tanımı kanalın adlı ve ilk adımın yazılı olmasını, yedek kanalı ister; plan e-kitap listesi, GitHub örnek site ve LinkedIn serisini adıyla verir. Erişim eksiği G4 ve G6'da test."
+    },
+    {
+      "itiraz": "C G3 test olmalı: e-Arşiv ve fatura düzeni mali müşavirle teyit edilmedi",
+      "karar": "kabul",
+      "degisiklik": "C G3: gecti -> test; not ve kapi_duzeltme güncellendi (fatura düzeni kurulup teyit edilecek).",
+      "gerekce": "Belge e-Arşiv kurallarına tabi olduğunu ve mali müşavirin mevcut olduğunu söyler; kurulum teyidi yok. Belirsizlikte temkinli durum test."
+    },
+    {
+      "itiraz": "B G5 test olmalı: Reddit kuralları ve awesome liste kabulü doğrulanmadı",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Belge bu kanalları doğrulanmadı diye işaretler ama G5 için dev.to, LinkedIn ve GitHub örnek site adlı ve ilk adım yazılı; yedek dizinler ayrıca var."
+    },
+    {
+      "itiraz": "A baz ödeme adedi 30, olması gereken 8-10 (liste ve dönüşüm varsayım)",
+      "karar": "kabul",
+      "degisiklik": "A alti_ay_odeme_adedi/musteri: kotu 8 baz 30 -> kotu 3 baz 10; tahsilat 992/3720 -> 372/1240 (iyi 30 adet, 3720); dayanak güncellendi.",
+      "gerekce": "200 okuyucu ve %30 yalnız plan varsayımı; e-kitap çıkmadı, ölçüm yok. Belirsizlikte düşük gelir seçildi; tahsilat adet x 124 ile tutarlı."
+    },
+    {
+      "itiraz": "A ilk_tahsilat_gun min 35 iyimser; en az 60 olmalı",
+      "karar": "kabul",
+      "degisiklik": "A ilk_tahsilat_gun min: 35 -> 60 (max 120 aynı); dayanak güncellendi.",
+      "gerekce": "İlk satış e-kitap çıkış tarihine bağlı ve tarih belirsiz; plan kanalı 4-6 hafta der ama gecikme riskini de yazar. Temkinli alt sınır 60."
+    },
+    {
+      "itiraz": "C baz tahsilat 50.000 ₺ bir satış; referans ve döngü ölçümü yokken 0 olmalı",
+      "karar": "kabul",
+      "degisiklik": "C alti_ay_tahsilat/odeme/musteri baz: 50000/1/1 -> 0; iyi 100000/2 -> 50000/1; kotu 0; dayanak güncellendi.",
+      "gerekce": "Plan yıl 1 için 1 danışmanlık der; referans, ölçülmüş döngü ve ilk tahsilat 45-120 gün. 6 ay içinde baz satış kanıtsız; temkinli 0."
+    },
+    {
+      "itiraz": "B baz ödeme adedi 12; kötümser fiilen sıfır olduğundan en çok 4-6 olmalı",
+      "karar": "kismen",
+      "degisiklik": "B alti_ay_odeme_adedi/musteri: kotu 2 baz 12 iyi 30 -> kotu 1 baz 6 iyi 20; tahsilat 4469/26813/67032 -> 2234/13406/44688 (adet x 2352 x 0,95).",
+      "gerekce": "Kötümser senaryo kaynakta çok yıllıdır ve fiilen sıfır; dış kanal sınanmadı, ödeme eğilimi düşük. Baz 6'ya indirildi (üst aralık); iyi ve kötü de tutarlı çekildi."
+    },
+    {
+      "itiraz": "A tetikleyicideki mülakat hazırlığı kaynakta yok, kart eklemiş",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Değer/persona/GTM belgesinde öğrenen geliştirici personasının hedefi ve satın alma tetikleyicisi olarak mülakat geçer; kart kaynağa dayanıyor."
+    },
+    {
+      "itiraz": "A özeti 200 okuyucu ve %30 dönüşümü plan baz sayısı gibi taşıyor",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart bu sayıları plan sayısı olarak anıyor ve dönüşümün varsayım, e-kitabın çıkmadığının belirtildiğini dayanakta söylüyor; gelir rakamları ayrı kararda düşürüldü."
+    },
+    {
+      "itiraz": "C: ücretsiz değerlendirme ve ücretli referans yokluğu ile fiyat kanıtsızlığı açık yazılmalı",
+      "karar": "kabul",
+      "degisiklik": "C fiyat: '50.000 ₺ + KDV sabit, 3 iş günü, tek sistem ve en çok 10 modül' -> fiyat varsayım ve ücretli referans yok ibaresi eklendi.",
+      "gerekce": "Plan ilk değerlendirmeyi mevcut ilişkide ücretsiz yapar ve danışmanlık referansı yoktur; 50.000 ₺ planın varsayımıdır. Bu fiyat alanında görünür olmalı."
+    }
+  ]
+}

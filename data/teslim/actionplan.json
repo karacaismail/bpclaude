@@ -1,0 +1,23 @@
+{
+ "slug": "actionplan",
+ "secenekler": {
+  "actionplan-a": {
+   "satis_basina_kurucu_saati": 1.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "Kopyası satılan lisans; müşteriye özel iş yok, teslim 0. Karttaki satış ve destek değerleri korundu."
+  },
+  "actionplan-b": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 20,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Sabit kapsam: içe aktarma, kapsam sürüm tablosu, kabul listesi, kanıt bağlantısı, paylaşım ve 3 teslimlik pilot yaklaşık 20 saat (varsayım). Satış 8 saatten 6 saate, destek 60 dakikadan 30 dakikaya indirildi."
+  },
+  "actionplan-c": {
+   "satis_basina_kurucu_saati": 0.1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 3,
+   "not": "Kopyası satılan şablon seti ve video; müşteriye özel iş yok, teslim 0. Karttaki satış ve destek değerleri korundu."
+  }
+ }
+}

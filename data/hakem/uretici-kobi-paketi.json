@@ -1,0 +1,71 @@
+{
+ "slug": "uretici-kobi-paketi",
+ "kararlar": [
+  {
+   "itiraz": "B G6 gecti: kart 2-3 hafta döngü varsayıyor, plan 4-8 hafta yazıyor, döngü ölçülmedi",
+   "karar": "kabul",
+   "degisiklik": "B G6 gecti -> test; not planın 4-8 hafta döngüsüne göre yeniden yazıldı; kapi_duzeltme'ye döngü ölçümü eklendi",
+   "gerekce": "Plan 8. bölüm satış döngüsünü 4-8 hafta veriyor, ölçüm yok; G6 tanımına göre ölçülmemiş döngü test'tir."
+  },
+  {
+   "itiraz": "A G4 test olmalı: 20 isim soğuk liste, iki mevcut ilişkide ödeme ya da niyet kaydı yok",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G4 gecti için alıcı tipi net ve isim listesi yeterli; 20 adlı üretici raporda var. Ödeme kaydı yokluğu kartta ayrıca açık yazılı (ödeyen müşteri 0)."
+  },
+  {
+   "itiraz": "C G5 test olmalı: soğuk e-posta birincil kanal, arama trafiği bilinmiyor, yanıt sinyali yok",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G5 gecti birincil kanal ve ilk adımın adlı olmasını ve yedek kanalı ister; 20 adlı üretici, fuar listeleri ve ilk adım yazılı. Yanıt sinyali kapı koşulu değil."
+  },
+  {
+   "itiraz": "B alti_ay_musteri baz 3 fazla; kapanış oranı gözlenmedi, ödeyen müşteri 0",
+   "karar": "kabul",
+   "degisiklik": "B musteri baz 3 -> 2, iyi 6 -> 5; tahsilat baz 105000 -> 70000, iyi 210000 -> 175000; odeme adedi satış sayısına eşitlendi; dayanak güncellendi",
+   "gerekce": "Plan 120 günde 2 pilot hedefler; 4-8 hafta döngüyle 6 ayda 3 iyimser. %35 gözlenmemiş hedef."
+  },
+  {
+   "itiraz": "B ilk_tahsilat_gun.min 21 olmamalı; plan döngüsü 4-8 hafta, avans kapanışta gelir",
+   "karar": "kabul",
+   "degisiklik": "B ilk_tahsilat_gun.min 21 -> 35",
+   "gerekce": "Plan döngü 4-8 hafta; 21 gün kaynağa aykırı. Hazırlık dahil temkinli alt sınır 35 gün."
+  },
+  {
+   "itiraz": "A alti_ay_tahsilat_tl.baz 180000 (2 satış) fazla; 90.000 ₺ paket için döngü ve dönüşüm kanıtsız",
+   "karar": "kismen",
+   "degisiklik": "A tahsilat baz 180000 -> 90000, iyi 315000 -> 270000; musteri baz 2 -> 1, iyi 4 -> 3; odeme adedi 1/3; değişken maliyet 4000 -> 8000/satış",
+   "gerekce": "Plan 12 ay baz 6 paket (Başlangıç %45), 4-8 hafta döngü ve 15 iş günü teslimle 6 ayda 1 satış; sıfır baz kaynakla gerekmiyor."
+  },
+  {
+   "itiraz": "C donusum_orani.yuksek 0.20 fazla; soğuk e-postayla 45.000 ₺ satış sınanmadı",
+   "karar": "kabul",
+   "degisiklik": "C donusum_orani.yuksek 0.20 -> 0.10; tahsilat dayanağı güncellendi",
+   "gerekce": "Plan %35 hedefi sıcak ağ içindir; soğuk liste için kaynak yok, fiyat da varsayım. 0.10 temkinli üst sınır."
+  },
+  {
+   "itiraz": "Kart iki mevcut ilişkiyi satış ağı sayıyor; ödeme, fiyat görüşmesi ya da niyet kaydı yok",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart bunu bugun.yok ve ödeyen müşteri 0 ile açıkça yazıyor; ilişkinin varlığı kaynakta belgeli, kapı tanımı yalnız ilişkinin belgelenmesini ister."
+  },
+  {
+   "itiraz": "C 45.000 ₺ fiyatı kaynakta yok; planın site toplamından türetilmiş, GPT fiyat vermiyor",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart fiyatı zaten varsayım diye etiketliyor (fiyat ve dayanak alanları) ve türetimi yazıyor; ek düzeltme gerekmiyor."
+  },
+  {
+   "itiraz": "Yüzde 30-35 dönüşüm üst sınırı planın hedefi, gözlenmiş oran değil",
+   "karar": "kismen",
+   "degisiklik": "Dayanak metinleri A ve B için hedef olduğu ve gözlenmediği net yazıldı; C yüksek sınırı ayrıca 0.10'a indi",
+   "gerekce": "Oran planda hedef olarak geçiyor; kart zaten varsayım demişti, ifade güçlendirildi, sayılar finans itirazlarıyla ele alındı."
+  },
+  {
+   "itiraz": "A kartı kendi maliyetiyle çalışan simülatör varsayıyor; mevcut simülasyon markalı ve veri gömülü",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart bunu bugun.yok'ta açıkça yazıyor ve simülatörü yapılacak iş olarak ilk_kapsam ve kalan eforda sayıyor; ek düzeltme gerekmiyor."
+  }
+ ]
+}

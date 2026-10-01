@@ -1,0 +1,343 @@
+{
+ "slug": "alan-adi-bulucu",
+ "baslik": "Marka adı ve boş alan adı bulucu",
+ "ozet": "Aday marka adlarını boş .com durumu, Türkçe okunuş puanı ve marka sınıfı uyarısıyla tek kısa listede veren, tarayıcıda çalışan küçük araç. Hedef: Türk kurucu ve ajanslar. Bugün 950 adaylı iç liste var; ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "950 adaylık, puanlı, üstü çizilebilir tek dosyalık liste arayüzü (herkese açık depo ve canlı sayfa)",
+   "Aday listesi için boşluk doğrulaması yapılmış; 50 adayda ikinci kaynakla teyit rozeti",
+   "JSON dışa aktarma, arama, filtre, yerel kayıt, karanlık mod",
+   "Planlı fiyat ve ürün kapsamı yazılı: ücretsiz çekirdek, 199 ₺ proje paketi, ajans yıllık paketi"
+  ],
+  "yok": [
+   "Canlı boşluk kontrolü (sunucu tarafı vekil) yok",
+   "Aday üretici ve Türkçe okunuş puanı yok",
+   "Marka sınıfı bağlantısı ve CSV çıktısı yok",
+   "Ödeme, lisans anahtarı ve satış sayfası yok",
+   "Seçilmiş açık kaynak lisansı yok",
+   "Ödeyen ya da deneyen kullanıcı kaydı yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Ücretsiz çekirdek ve 199 ₺ proje paketi, 499 ₺ ajans yıllık; canlı boşluk kontrolü, Türkçe puan ve marka sınıfı bağlantısı eklenecek. Tavan düşük: ilk yıl baz yaklaşık 78 bin ₺; iç karar, 2-3 gün çekirdek MVP.",
+  "gpt": "Ürün yerine dar teslim: güncel boşluk doğrulamalı 10 adaylık karar dosyası. Üç seçenek: isim kısa liste hizmeti, markalı karar listesi, ajans müşteri oturumu. Talep doğrulanmadı; tekrar kullanım görülmeden abonelik yok.",
+  "ayrisma": "Claude otomatik araç ve paket satışıyla ölçeklemeyi hedefler; GPT önce elle teslim edilen küçük hizmetle talebi sınar. Claude kurulum süresini 2-3 gün sayar, derinlik belgesi tüm L1 için yaklaşık 8 gün hesaplar.",
+  "birlesik": "Önce elle hizmet olarak 7 günde sınanır, sonra kapsam aracı pakete çevrilir. Ücretsiz rakipler güçlü: fark yalnız Türkçe okunuş, marka sınıfı ve çıktıdır. Canlı sorgu kullanıcı tetiklemeli ve kotalı olmalı."
+ },
+ "analist_gorusu": "En gerçekçi yol önce sabit fiyatlı elle karar dosyası, sonra aynı kodun 199 ₺ self-servis paketi. Ürün tavanı düşük; birkaç bin dolar için tek başına yetmez.",
+ "secenekler": [
+  {
+   "id": "alan-adi-bulucu-a",
+   "ad": "Proje paketi: Türkçe puanlı boş .com kısa liste aracı",
+   "tur": "yazılım ürünü",
+   "musteri": "Yeni ürün ya da şirket adı arayan Türk yan girişimci ve çok ürün çıkaran bağımsız geliştirici",
+   "is": "Telaffuzu kolay, .com'u boş ve marka sınıfında alınabilir görünen 5 adaylık kısa listeyi 10 dakikada çıkarmak",
+   "tetikleyici": "Ürün lansmanına yakın ad seçimi; marka başvurusu öncesi (başvuru 2.820 ₺); ücretsiz 20 sorgu kotasının bitmesi",
+   "teklif": "Ücretsiz 20 sorgu/gün; 30 gün sınırsız sorgu, aday önerisi, CSV/JSON ve marka sınıfı bağlantısı; 7 gün koşulsuz iade",
+   "fiyat": "199 ₺ (KDV dahil), tek seferlik; net 166 ₺",
+   "kanal_birincil": "Arama motoru: 10 Türkçe uzun kuyruk sayfa (boş .com bulma, marka adı üretici, telaffuz testi)",
+   "kanal_yedek": "Herkese açık depo, Product Hunt ve Indie Hackers lansmanı, LinkedIn yazısı, kurucunun çevresindeki girişimciler",
+   "ilk_adim": "Kurucunun kendi ürün adları için aracı kullanıp 3 vaka yazmak; çevresindeki 10 girişimciye ücretsiz paket vermek",
+   "ilk_kapsam": "Canlı .com kontrolü (kullanıcı tetiklemeli, önbellekli, kotalı), kök-ek aday üretici, Türkçe okunuş puanı, marka sınıfı bağlantısı, CSV, lisans anahtarlı ödeme",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda ve depo herkese açık; açık kaynak lisansı seçilmedi, bağımlılık lisansları denetlenmedi"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kota için e-posta/IP verisi (KVKK), mesafeli satış, Verisign sorgu koşulları; teyit bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Türkiye'de sanal POS ya da yurt dışına yasal satıcı hizmeti planlı; hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (kurucu, bağımsız geliştirici); 20 kişilik isim listesi yok, çevrede yaklaşık 10 kişi var"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal arama sayfaları, adlı yedekler depo, Product Hunt ve LinkedIn; ilk adım yazılı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Planın 2-3 günü yalnız çekirdek; tüm ilk sürüm yaklaşık 8 gün (D.8); arama kanalı sonucu 8-12 hafta, döngü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Alan adı ve ilk ay giderleri birkaç bin ₺; 50.000 ₺ tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı aracı ve aynı paketi alır; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Lisans seçimini kullanıcıyla netleştir; ödeme hesabını aç ve test ödemesi yap; KVKK ve satış metinlerini mali müşavire teyit ettir; 20 kişilik hedef liste çıkar.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 166,
+    "degisken_maliyet_tl": 9,
+    "sabit_gider_aylik_tl": 900,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 24,
+     "beklenen": 64,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 21,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 0.5,
+    "musteri_basina_aylik_destek_dk": 5,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 1660,
+     "baz": 4980,
+     "iyi": 16600
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 10,
+     "baz": 30,
+     "iyi": 100
+    },
+    "alti_ay_musteri": {
+     "kotu": 10,
+     "baz": 30,
+     "iyi": 100
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.03
+    },
+    "dayanak": "Plan 5-6: 199 ₺ KDV dahil, net 166 ₺; komisyon ve model maliyeti yaklaşık 9 ₺; gider 400+500 ₺/ay. Plan 6. ay hedefi 220 paket; arama sayfaları 8-12 haftada sonuç verir, 400 ziyaret/sayfa varsayım, ödeyen yok: baz 30, iyi 100, kötü 10. Kalan efor derinlik D.8 (~8 gün) ile 64 saat. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Ücretsiz rakipler dururken kullanıcı Türkçe puan ve marka sınıfı farkı için 199 ₺ öder",
+    "yontem": "Çalışan örnek sayfa ve ücretsiz 20 sorgu yayınla; çevredeki 10 girişimciye paketi ücretle sun; kısa liste süresini ve ödeme niyetini kaydet",
+    "sure_gun": 14,
+    "maliyet_saat": 20,
+    "maliyet_tl": 500,
+    "basari_olcutu": "10 kişiden en az 2'si 199 ₺ öder; ilk kısa liste en çok 10 dakika",
+    "birakma_olcutu": "14 günde sıfır ödeme ve ücretsiz kullanıcının yarısından azı kısa liste tamamlar",
+    "sonraki_dilim": "Başarılıysa 10 arama sayfasını yayınla ve ajans paketini aç"
+   },
+   "etiketler": {
+    "segment": "Türk yan girişimci, bağımsız geliştirici",
+    "kanal_turu": "arama",
+    "teknoloji": "Statik ön yüz, Cloudflare Worker, RDAP",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Claude planı bölüm 1, 2, 5, 6: 950 aday listesi çalışıyor, canlı kontrol, aday üretici ve ödeme yok; ücretsiz rakipler (Namelix, Lean Domain Search) güçlü. Derinlik belgesi D.2 ve D.8: tüm ilk sürüm yaklaşık 8 gün (planın 2-3 gün çekirdek tahmini yalnız çekirdek MVP için), B.3 persona 1 bütçe eşiği varsayım. GPT dosyası: talep ve ödeme doğrulanmadı. Ödeyen müşteri 0."
+  },
+  {
+   "id": "alan-adi-bulucu-b",
+   "ad": "Ajans yıllık paketi: puanlı kısa liste ve müşteri teslim şablonu",
+   "tur": "yazılım ürünü",
+   "musteri": "Müşterileri için marka adı arayan küçük marka ve web ajansları, serbest marka stratejistleri",
+   "is": "Müşteriye gerekçeli, boş .com'lu 5 adlık kısa listeyi her projede sıfırdan hazırlamadan CSV ya da PDF olarak teslim etmek",
+   "tetikleyici": "Yeni müşteri brifi; müşterinin seçtiği adın .com'unun dolu çıkması; reddedilen ad revizyonu",
+   "teklif": "3 kullanıcı, sınırsız proje, CSV/PDF teslim şablonu, puan gerekçesi, marka sınıfı bağlantısı; yıllık yenileme",
+   "fiyat": "499 ₺/yıl (KDV dahil); net yaklaşık 416 ₺, yıllık peşin",
+   "kanal_birincil": "LinkedIn'de haftada 10 kişisel mesajla 30 Türk ajans ve serbest stratejist",
+   "kanal_yedek": "Dijital reklamcılık derneği etkinlikleri, girişimcilik haber sitesi etkinlikleri, mali müşavir ortaklığı (%20 gelir payı varsayımı)",
+   "ilk_adim": "30 ajansın isim listesini çıkar; 10'una kişiye özel mesaj gönder; ilk 3 ajansa 10 dakikalık demo yap",
+   "ilk_kapsam": "Seçenek A'nın çekirdeği artı CSV/PDF şablonu, 3 kullanıcı lisansı ve e-arşiv fatura düzeni",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; lisans seçilmedi, bağımlılık lisansları denetlenmedi"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Teslim şablonunda marka uyarısı ve sorumluluk reddi için hukukçu teyidi gerek; KVKK ve sözleşme metni"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Ajanslar havale ve e-arşiv fatura ister; sanal POS ya da havale düzeni kurulmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (ajans, serbest stratejist); 20 isimlik liste yok, hedef 30 ajans"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal LinkedIn kişisel mesaj, yedek dernek etkinlikleri ve mali müşavir ortak; ilk adım yazılı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Çekirdek ve PDF şablonu yaklaşık 10-11 gün; ajans satın alma döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit birkaç bin ₺; tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Tek paket ve tek fiyat; yalnız 3 kullanıcıya kadar, özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Şablon uyarı metnini hukukçuya teyit ettir; ödeme ve fatura düzenini kur; 30 ajanslık isim listesini çıkar; lisansı kullanıcıyla netleştir.",
+   "finans": {
+    "satis_tipi": "yıllık peşin",
+    "net_fiyat_tl": 416,
+    "degisken_maliyet_tl": 12,
+    "sabit_gider_aylik_tl": 900,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 70,
+     "max": 100
+    },
+    "ilk_tahsilat_gun": {
+     "min": 30,
+     "max": 90
+    },
+    "satis_basina_kurucu_saati": 4,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 832,
+     "iyi": 2080
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 5
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 5
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan 5 ve derinlik C.5: 499 ₺ KDV dahil, net 416 ₺, yıllık peşin. Plan 90 günde 2 ajans, 12 ayda 5 ajans hedefi; 6 ayda baz 2, iyi 5, kötü 0. Dönüşüm: %10 yanıt x %20 ücretsiz-yıllık = %2 alt sınır; üst %10 varsayım. Kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Ajans, ücretsiz araçlar dururken puanlı teslim şablonu için yılda 499 ₺ öder",
+    "yontem": "30 ajansa kişisel mesaj; ilgi gösterenlere 10 dakikalık demo ve örnek teslim dosyası; fiyat konuşulup yazılı yanıt alınır",
+    "sure_gun": 21,
+    "maliyet_saat": 15,
+    "maliyet_tl": 0,
+    "basari_olcutu": "30 mesajdan en az 3 demo talebi ve 1 yazılı satın alma niyeti",
+    "birakma_olcutu": "21 günde sıfır demo talebi",
+    "sonraki_dilim": "Demo talepleri gelirse şablonu yap ve ilk 2 ajansa yıllık ücretle sat"
+   },
+   "etiketler": {
+    "segment": "Küçük marka ve web ajansı",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Statik ön yüz, Cloudflare Worker, PDF/CSV",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Derinlik belgesi B.1 ve B.2: ajans segmenti kaynakta en yüksek puanlı (3,7; ölçülmüş talep değil, yargı varsayımı); persona 2 bütçesi 500-1.000 ₺ varsayım. C.2: ajans ilk temas kanalı. Plan 5-6: 499 ₺ yıllık, yenileme %50 varsayım. Sayılar doğrulanmadı; ödeyen ajans yok."
+  },
+  {
+   "id": "alan-adi-bulucu-c",
+   "ad": "Elle teslim: 10 adaylık güncel boş .com karar dosyası",
+   "tur": "hizmet",
+   "musteri": "Ürün ya da şirket adı arasında kalmış girişimci ve ajansı için tek seferlik ad seçtirecek küçük ekipler",
+   "is": "Elindeki 5-10 ad adayını güncel .com boşluğu, Türkçe okunuş notu ve marka sınıfı bağlantısıyla karşılaştırıp karar dosyasına çevirmek",
+   "tetikleyici": "Lansman ya da marka başvurusu öncesi ad kararı; seçilen adın .com'unun dolu çıkması",
+   "teklif": "Müşterinin 10 adayı için güncel boşluk kontrolü, puanlı karşılaştırma, ilk 3 ad önerisi, CSV ve 48 saatte teslim; hukuki görüş değildir",
+   "fiyat": "1.490 ₺ (KDV dahil) sabit paket; net yaklaşık 1.242 ₺; ilk 3 müşteriye ücretli pilot",
+   "kanal_birincil": "Kurucunun mevcut ağı: kendi ürünlerinin çevresindeki girişimciler ve LinkedIn bireysel mesajı",
+   "kanal_yedek": "LinkedIn yazısı, girişimcilik topluluk grupları (kurallarına uygun yardımcı cevap), herkese açık depodaki ücretsiz örnek çıktı",
+   "ilk_adim": "Kendi ürün adlarından birine ait anonim örnek karar dosyası hazırla; çevredeki 10 girişimciye 1.490 ₺'lik teklif gönder",
+   "ilk_kapsam": "Mevcut liste arayüzü ve elle RDAP sorgusu; 10 aday için karar dosyası şablonu; teslim ortalama 2 saat; kod geliştirme gerekmez",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Mevcut araç ve içerik kurucuda; lisans seçilmedi, rakip adları yalnız karşılaştırmada anılır"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Marka araştırması hukuki görüş sayılmamalı; uyarı metni ve vekil yönlendirmesi teyit bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşiv fatura ya da sanal POS yolu belli; hesap açılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 20 isimlik liste yok, çevrede yaklaşık 10 girişimci ilişkisi var"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal kurucunun mevcut ağı ve LinkedIn mesajı; yedek yazı ve topluluk; ilk adım yazılı"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Elle hemen sunulabilir; hazırlık yaklaşık 6-12 saat; ilk tahsilat 1-4 hafta içinde gerçekçi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar nakit birkaç yüz ₺; tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam ve sabit fiyatlı paket; 10 aday sınırı ve tek revizyon yazılı"
+    }
+   },
+   "kapi_duzeltme": "Uyarı metnini teyit ettir; ödeme yolunu aç; 20 kişilik hedef listeyi çıkar; lisansı kullanıcıyla netleştir.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 1242,
+    "degisken_maliyet_tl": 50,
+    "sabit_gider_aylik_tl": 200,
+    "baslangic_nakit_tl": 500,
+    "kalan_efor_saat": {
+     "min": 6,
+     "beklenen": 10,
+     "max": 20
+    },
+    "ilk_tahsilat_gun": {
+     "min": 7,
+     "max": 35
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 2484,
+     "baz": 4968,
+     "iyi": 14904
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 2,
+     "baz": 4,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 2,
+     "baz": 4,
+     "iyi": 12
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.1
+    },
+    "dayanak": "GPT dosyası: 10 adaylık karar dosyası ve fiyat sınanmalı, rakam yok; plan 1: başvuru 2.820 ₺. Fiyat varsayım. Plan ilk 10 müşteriyi hedef yazar, ödeyen yok: 6 ayda baz 4, iyi 12, kötü 2. Dönüşüm kanıtsız varsayım; kurucu saati 3 (teslim 2, satış 1)."
+   },
+   "deney": {
+    "varsayim": "Ad arasında kalan girişimci, Türkçe okunuş ve marka sınıfı farkıyla güncel karar dosyasına 1.490 ₺ öder",
+    "yontem": "Anonim örnek dosya hazırla; çevredeki 10 girişimciye teklif et; ilk üç ücretli pilotu 48 saatte elle teslim et ve emek süresini kaydet",
+    "sure_gun": 7,
+    "maliyet_saat": 12,
+    "maliyet_tl": 0,
+    "basari_olcutu": "10 teklifin en az 2'si ödeme yapar; teslim 2 saati aşmaz",
+    "birakma_olcutu": "7 günde sıfır ödeme ve en çok bir olumlu yanıt",
+    "sonraki_dilim": "Aynı alıcı tekrar iş isterse aracı 199 ₺ proje paketine (seçenek A) çevir"
+   },
+   "etiketler": {
+    "segment": "Ad arasında kalan kurucu, küçük ajans",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Mevcut liste arayüzü, elle RDAP sorgusu",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "GPT dosyası: ilk teslim 10 adaylık karar dosyası, yedi günlük deney, tekrar talep görülmeden abonelik yok; rakam yok. Claude planı bölüm 1 ve 7.2: ilk 10 müşteri çevreden bir hedeftir (gerçekleşmiş satış yok), marka başvurusu 2.820 ₺. Derinlik A.8: saat ücreti varsayım. Ödeyen müşteri 0; fiyat sınanmadı."
+  }
+ ]
+}

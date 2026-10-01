@@ -1,0 +1,343 @@
+{
+  "slug": "atonota-denetim",
+  "baslik": "WordPress site sağlığı ve pazarlama denetimi eklentisi (atonota)",
+  "ozet": "Türk KOBİ ve küçük ajansların WordPress sitelerini izleme kodları, hız, SEO temeli, sosyal etiketler ve çerez bandı açısından tek puanla denetleyen eklenti. Bugün çalışan ürün yok; iskelet kod var, ödeyen müşteri yok.",
+  "bugun": {
+    "var": [
+      "Yarım WordPress adaptör iskeleti (lisans, güncelleyici, API sınıfları), yaklaşık yüzde 15 hazır",
+      "FastAPI tabanlı kiracı ve lisans modeli ile müşteri paneli iskeleti (yeniden kullanılabilir kısım)",
+      "Denetim kural içeriği (SEO kontrol listeleri) ve tarayıcı DOM okuma deseni",
+      "Kurucunun bakım hizmeti verdiği yaklaşık 10 kurumsal site müşterisi (mevcut ilişki)",
+      "Önceki elle yapılmış tek bir site denetimi ve görülen değer"
+    ],
+    "yok": [
+      "Çalışan ürün, yayınlanmış eklenti ve wordpress.org başvurusu",
+      "Hiç ödeyen müşteri, ön ödeme ya da yazılı alım niyeti",
+      "Açık ödeme hesabı (sanal POS ya da yurt dışı satıcı hizmeti)",
+      "Ajans isim listesi ve ajans görüşmesi kaydı",
+      "Hukukçu okuması yapılmış çerez bandı kontrol metinleri"
+    ],
+    "odeyen_musteri": 0
+  },
+  "iki_calisma": {
+    "claude": "Geniş 83 platformlu SaaS tek kişiyle yapılamaz; daraltılmış ücretsiz eklenti, Pro 1.990 TL/yıl ve ajans lisansı 7.150 TL/yıl öneriliyor. wordpress.org kanalında 90 günde 1.000 kurulum ve 20 Pro şartıyla koşullu evet.",
+    "gpt": "Ürün ailesi tek çalışan platform değil; ilk güçlü ürün ajansın değişiklik, doğrulama ve müşteri kabul zinciri. Genel bakım raporu ya da otomatik PDF ücretsiz rakipler karşısında tek başına yetmez; salt okunur ücretsiz bağlayıcı ve ücretli hizmet önerilir.",
+    "ayrisma": "Claude pazarlama sağlığı puanı ve KVKK kontrolüyle KOBİ ve ajansa eklenti satar; GPT müşteri kabulü ve ücretli iş kapsamını ilk iş sayar ve rapor farkını savunulamaz bulur. Fiyat ve 6 ay tahsilat rakamları yalnız Claude tarafında.",
+    "birlesik": "İkisi de geniş vizyonu reddeder, ücretsiz salt okunur WordPress eklentisiyle başlamayı ve ajansı ilk ödeyen sayar. Ödeme kanıtı hiçbirinde yok; ücretli katman ancak ajans deneyi sonrası."
+  },
+  "analist_gorusu": "En gerçekçi yol ücretsiz puan kartı eklentisi ve Pro lisanstır; ama ilk 6 ayda küçük bir tahsilat beklenir. Ajansa doğrudan satış daha hızlı tahsilat getirebilir; geniş kabul platformu 6 aya sığmaz.",
+  "secenekler": [
+    {
+      "id": "atonota-denetim-a",
+      "ad": "Ücretsiz puan kartı eklentisi ve Pro yıllık lisans",
+      "tur": "eklenti",
+      "musteri": "Reklam harcayan Türk KOBİ WordPress ve WooCommerce sitesi sahipleri, siteyi yöneten serbest geliştiriciler",
+      "is": "Sitenin izleme kodları, hız, SEO temeli, sosyal etiketler ve çerez bandı açısından hazır olup olmadığını 2 dakikada öğrenmek ve Türkçe düzeltme listesi almak",
+      "tetikleyici": "Reklam dönüşümünün ölçülememesi, yeni kampanya öncesi kontrol, çerez bandı ve KVKK haberleri",
+      "teklif": "Ücretsiz 7 kontrollü puan kartı; Pro ile haftalık otomatik tarama, bozulma e-postası, geçmiş grafiği ve PDF rapor; 14 gün iade",
+      "fiyat": "Pro 1.990 TL/yıl, tek site (yaklaşık 39 USD); ücretsiz sürüm sınırsız",
+      "kanal_birincil": "wordpress.org eklenti dizini; Türkçe ve İngilizce readme, ekran görüntüleri, arama terimleri",
+      "kanal_yedek": "WP Türkiye topluluğu yanıtları ve Türkçe rehber sayfaları; kurucunun yaklaşık 10 kurumsal site müşterisi yalnız ilk kurulum ve vaka kaynağı (hedef alıcı değil)",
+      "ilk_adim": "7 kontrollü MVP'yi yazmak, 10 mevcut müşteri sitesine kurmak ve wordpress.org başvurusunu göndermek",
+      "ilk_kapsam": "7 kontrol (SEO, hız, izleme, sosyal, güvenlik başlıkları, çerez bandı, eklenti güncelliği), puan kartı, lisans doğrulama, Pro kapısı; PDF ve portal sonra",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuda; marka adı ve üçüncü taraf arayüz kiti lisansı doğrulanmadı, GPL uyumu gerekir."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Çerez bandı kontrol ifadeleri için hukukçu okuması ve sorumluluk reddi gerekir."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Satıcı hesabı (yurt dışı ödeme hizmeti) ve sanal POS açılmadı; test ödemesi yok."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; 20 kişilik isim listesi yok. Yaklaşık 10 mevcut hizmet müşterisi kurumsal sitedir, hedef KOBİ ya da ajans sayılmaz."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "wordpress.org dizini ve WP Türkiye adlı, yedek kanallar ve ilk adım tanımlı."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor 90-200 saat (haftada 20 saatle 5-10 hafta); dizin inceleme süresi bilinmiyor; ilk Pro ödemesi 2-4 ay."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi yaklaşık 4.000 TL, tavanın çok altında."
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Herkes aynı eklentiyi alır; kapsam 7 kontrolle sınırlı."
+        }
+      },
+      "kapi_duzeltme": "Hukukçu okuması, marka ve lisans taraması yapılır; ödeme hesabı açılıp test ödemesi alınır; 20 ajans ve KOBİ adı listelenir.",
+      "finans": {
+        "satis_tipi": "yıllık peşin",
+        "net_fiyat_tl": 1990,
+        "degisken_maliyet_tl": 270,
+        "sabit_gider_aylik_tl": 2500,
+        "baslangic_nakit_tl": 4000,
+        "kalan_efor_saat": {
+          "min": 90,
+          "beklenen": 130,
+          "max": 200
+        },
+        "ilk_tahsilat_gun": {
+          "min": 60,
+          "max": 120
+        },
+        "satis_basina_kurucu_saati": 1,
+        "musteri_basina_aylik_destek_dk": 5,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 3980,
+          "baz": 21080,
+          "iyi": 91100
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 2,
+          "baz": 8,
+          "iyi": 38
+        },
+        "alti_ay_musteri": {
+          "kotu": 2,
+          "baz": 8,
+          "iyi": 38
+        },
+        "donusum_orani": {
+          "dusuk": 0.005,
+          "yuksek": 0.02
+        },
+        "dayanak": "Plan 5-6-8: Pro 1.990 TL, ajans 7.150 TL; plan 6. ay hedefi 35 Pro ve 4 ajans. Derinlik D.8 L1 18,5 iş günü (Codex ile) kurucu saatine çevrilince 130 saat; dizin kabulü ve Pro açılışı gecikeceğinden baz 7 Pro + 1 ajans, iyi 35 Pro + 3 ajans, kötü 2 Pro. Dönüşüm varsayım (plan %1-2)."
+      },
+      "deney": {
+        "varsayim": "Ücretsiz kurulan Türk KOBİ siteleri tarama sonrası Pro için ödeme yapar (ücretsiz-Pro en az %1).",
+        "yontem": "MVP'yi 10 mevcut müşteri sitesine kurup 3 ajansa canlı tarama göstermek; ödeme bağlantılı Pro sayfası açıp wordpress.org başvurusunu göndermek.",
+        "sure_gun": 60,
+        "maliyet_saat": 60,
+        "maliyet_tl": 500,
+        "basari_olcutu": "60 günde yayın, 300 kurulum ve en az 3 ön ödeme yapan Pro müşterisi",
+        "birakma_olcutu": "90. günde 1.000 kurulumun ve 20 Pro'nun çok altında kalmak; o zaman dahili araç olarak sürdür",
+        "sonraki_dilim": "Pro haftalık tarama ve PDF; ardından ajans lisansı ve portal beta"
+      },
+      "etiketler": {
+        "segment": "Türk KOBİ WordPress sahipleri ve serbest geliştiriciler",
+        "kanal_turu": "pazar yeri",
+        "teknoloji": "PHP 8.1 WordPress eklentisi, küçük lisans servisi",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "Plan 1, 2, 5, 6 ve 11. bölümler: Pro 1.990 TL, ajans 7.150 TL, 90 gün kapısı 1.000 kurulum ve 20 Pro. Derinlik dosyası D.8: kalan yaklaşık 18,5 iş günü. Plan 4. bölüm: Site Kit ücretsiz ve 5 milyon kurulum, bakım araçları 1-2 USD/site/ay. Ödeyen müşteri yok; Pro ön ödemesi yok."
+    },
+    {
+      "id": "atonota-denetim-b",
+      "ad": "Ajans lisansı: 25 site için aylık müşteri sağlık raporu",
+      "tur": "eklenti",
+      "musteri": "10-50 WordPress müşterisi olan Türk küçük ajanslar ve serbest geliştiriciler (ajans sahibi karar verir)",
+      "is": "Her müşteri sitesi için aylık pazarlama sağlığı raporunu elle hazırlama emeğini (müşteri başına 1-2 saat) otomatik logolu PDF'e indirmek",
+      "tetikleyici": "Ay sonu rapor haftası, yeni müşteri sözleşmesindeki aylık rapor maddesi, kopuk izleme kodunun müşteri şikayetiyle fark edilmesi",
+      "teklif": "25 site için ajans lisansı: haftalık tarama, logolu PDF rapor, bozulma uyarısı; ilk 3 sitede ücretsiz deneme, 14 gün iade",
+      "fiyat": "7.150 TL/yıl, 25 site (yaklaşık 149 USD; site başına yaklaşık 286 TL)",
+      "kanal_birincil": "Kurucunun birebir ajans görüşmeleri; LinkedIn ve R10.net portföylerinden çıkarılan 30 ajanslık liste",
+      "kanal_yedek": "WP Türkiye topluluğu, serbest geliştirici iş ortağı kodu (yüzde 20) ve barındırma firması ortaklığı",
+      "ilk_adim": "30 ajanslık liste çıkarmak, kurucunun müşteri sitesinde çalışan taramayı 15 dakikalık canlı demoyla 10 ajansa göstermek",
+      "ilk_kapsam": "Tarama (7 kontrol), logolu PDF, el ile verilen lisans anahtarı ve 25 site sınırı; portal, otomatik ödeme ve çok kiracı sonra",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuda; marka adı, arayüz kiti lisansı ve GPL altında Pro kod satışı doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Rapordaki çerez bandı ifadeleri için hukukçu okuması ve sorumluluk reddi gerekir."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve e-arşiv fatura yolu belli ama hesap ve test ödemesi yok."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net (ajans sahibi); 30 ajanslık isim listesi henüz yok."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Birebir görüşme, WP Türkiye ve serbest geliştirici ortak kodu adlı; ilk adım tanımlı."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor 90-200 saat, 8 haftaya sığar; ajans satın alma döngüsü (1-3 hafta) ölçülmedi."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi yaklaşık 4.000 TL, tavanın altında."
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Tek sabit paket ve 25 site sınırı; özel geliştirme yok."
+        }
+      },
+      "kapi_duzeltme": "Hukukçu okuması ve marka taraması yapılır; havale ve e-arşiv hesabı açılır; 30 ajans listesi çıkarılır.",
+      "finans": {
+        "satis_tipi": "yıllık peşin",
+        "net_fiyat_tl": 7150,
+        "degisken_maliyet_tl": 1100,
+        "sabit_gider_aylik_tl": 1500,
+        "baslangic_nakit_tl": 4000,
+        "kalan_efor_saat": {
+          "min": 90,
+          "beklenen": 130,
+          "max": 200
+        },
+        "ilk_tahsilat_gun": {
+          "min": 45,
+          "max": 120
+        },
+        "satis_basina_kurucu_saati": 6,
+        "musteri_basina_aylik_destek_dk": 60,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 14300,
+          "iyi": 50050
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 2,
+          "iyi": 7
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 2,
+          "iyi": 7
+        },
+        "donusum_orani": {
+          "dusuk": 0.03,
+          "yuksek": 0.08
+        },
+        "dayanak": "Plan 5 ve 8: ajans lisansı 7.150 TL; plan 6. ayda 4 ajans hedefliyor. Derinlik C.2: temas-deneme %20, deneme-lisans %25 (varsayım, kanıtsız) yaklaşık 1,5 lisans/ay verir; satış ürün ve PDF sonrası başladığından baz 2, iyi 7, kötü 0 ajans. Değişken: komisyon, portal payı, destek."
+      },
+      "deney": {
+        "varsayim": "Ajans sahibi, otomatik logolu PDF için 7.150 TL/yıl öder ve ilk 3 sitede denemeden sonra lisansa geçer.",
+        "yontem": "30 ajanslık listeden 10 ajansa 15 dakikalık canlı tarama demosu; ilgilenene 3 sitede ücretsiz deneme ve ay sonunda lisans teklifi.",
+        "sure_gun": 45,
+        "maliyet_saat": 40,
+        "maliyet_tl": 300,
+        "basari_olcutu": "10 demodan en az 3 deneme ve 45 günde en az 1 ödenmiş ajans lisansı",
+        "birakma_olcutu": "20 demoda ödeme ya da yazılı niyet çıkmazsa ajans satışını bırak",
+        "sonraki_dilim": "Müşteri portalı beta ve ücretsiz eklentiyle dizin yayını"
+      },
+      "etiketler": {
+        "segment": "Küçük WordPress ajansları ve serbest geliştiriciler",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "PHP 8.1 WordPress eklentisi, PDF üretimi",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "Plan 5 ve 8: ajans lisansı 7.150 TL, 6. ayda 4 ajans hedefi. Derinlik A.8: 25 müşteri için aylık rapor emeği 15.000 TL ve ajans acısı rapor yığılması; B.2: ajans beachhead. Persona görüşmesi yok. GPT ana dosyası: genel bakım raporu ücretsiz rakipler karşısında tek başına yetmez. Ödeyen ajans yok."
+    },
+    {
+      "id": "atonota-denetim-c",
+      "ad": "Ajans için müşteri kabul ve teslim kaydı hizmeti (pilot)",
+      "tur": "hizmet",
+      "musteri": "20-100 retainer siteli 3-15 kişilik WordPress ajansları (ajans sahibi ve proje yöneticisi)",
+      "is": "Müşteriye yapılan değişikliği önce/sonra kanıtıyla göstermek, müşteri kabulünü kaydetmek ve sınırsız revizyonu ücretli kapsama bağlamak",
+      "tetikleyici": "Küçük revizyonların sınırsızlaşması, rapor ve itiraz yönetimi emeği, retainer yenileme görüşmesi",
+      "teklif": "Aylık yönetilen kabul akışı: 40 siteye kadar değişiklik kaydı, doğrulama çıktısı, müşteri kabul bağlantısı, kabul edilen iş dışa aktarımı",
+      "fiyat": "5.000 TL/ay, 40 siteye kadar (test varsayımı; GPT stratejisi)",
+      "kanal_birincil": "Ajans ilişkisi doğrulanmadı: kurucunun tanıdığı ajanslar üzerinden iki anonim kabul örneği; ajansın kendi müşterisine sunacağı rapor",
+      "kanal_yedek": "Bakım aracı kullanan ajanslara yanına kabul demosu; ücretsiz salt okunur WordPress bağlayıcısı",
+      "ilk_adim": "Mevcut çıktıları elle birleştirip bir ajansın tek müşterisi için ilk kabul kaydını çıkarmak",
+      "ilk_kapsam": "Tek ajans, tek müşteri alanı, elle toplanan önce/sonra kanıtı, kabul/ret bağlantısı (süreli ve iptal edilebilir); siteye yazan ajan yok",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuda; arayüz kiti lisansı ve marka adı doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Müşteri misafir bağlantısı kişisel veri işler; aydınlatma ve saklama metni için hukukçu okuması gerekir."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Aylık havale ve e-arşiv yolu belli ama hesap açılmadı, test ödemesi yok."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net (ajans); isim listesi yok, mevcut ajans ilişkisi doğrulanmalı."
+        },
+        "G5": {
+          "durum": "test",
+          "not": "Kanallar tanımlı ama somut ajans adı ya da topluluk hedefi yok; mağaza kabulü varsayılamaz."
+        },
+        "G6": {
+          "durum": "kaldi",
+          "not": "Misafir erişimi, kimlik doğrulama ve kayıt akışı 8 haftadan uzun sürer; elle pilot ayrı."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi yaklaşık 6.000 TL, tavanın altında."
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Kapsam 40 siteyle sınırlı ama revizyon ve istisna sınırı yazılı değil."
+        }
+      },
+      "kapi_duzeltme": "Önce elle pilot ve süreli misafir bağlantısı ile 8 haftaya indir; revizyon sınırını yaz; hukukçu okuması ve ajans listesi hazırla.",
+      "finans": {
+        "satis_tipi": "aylık abonelik",
+        "net_fiyat_tl": 5000,
+        "degisken_maliyet_tl": 1950,
+        "sabit_gider_aylik_tl": 1000,
+        "baslangic_nakit_tl": 6000,
+        "kalan_efor_saat": {
+          "min": 60,
+          "beklenen": 120,
+          "max": 320
+        },
+        "ilk_tahsilat_gun": {
+          "min": 60,
+          "max": 150
+        },
+        "satis_basina_kurucu_saati": 10,
+        "musteri_basina_aylik_destek_dk": 120,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 15000,
+          "iyi": 45000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 3,
+          "iyi": 9
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "donusum_orani": {
+          "dusuk": 0.02,
+          "yuksek": 0.08
+        },
+        "dayanak": "GPT ücretli paket: 5.000 TL/ay, 40 site test varsayımı; maliyet 2 saat destek x 600 + 600 işletim + 150 tahsilat = 1.950 TL. Pilot 60. günden önce açılmaz; baz 1 ajans 3 abone-ay, iyi 3 ajans 9 abone-ay, kötü 0. Dönüşüm kanıtsız varsayım."
+      },
+      "deney": {
+        "varsayim": "Ajans, müşteri kabul kaydı için aylık 5.000 TL öder ve rapor/revizyon emeğinde yüzde 30 düşüş görür.",
+        "yontem": "Elle birleştirilmiş çıktılarla bir ajansın tek müşterisinde ilk kabul kaydını çıkarmak; 30 günde kabul oranı ve ajans emeğini ölçmek.",
+        "sure_gun": 30,
+        "maliyet_saat": 30,
+        "maliyet_tl": 0,
+        "basari_olcutu": "İlk 10 teslimin en az 6'sı müşteri tarafından açılıp kabul edilir ve ajans ücretli pilota geçer",
+        "birakma_olcutu": "İlk 10 teslimin 5'i yok sayılır ve revizyon yükü azalmazsa bırak",
+        "sonraki_dilim": "Üç ajans ve 20 kabul; sonra rol ve kayıt yönetimi"
+      },
+      "etiketler": {
+        "segment": "Küçük WordPress ajansları (retainer siteli)",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "FastAPI çalışma alanı, WordPress salt okunur bağlayıcı",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "GPT ana dosyası (ürün, kullanıcı ve dağıtım stratejisi): ilk güçlü ürün kabul zinciri; ücretli paket 5.000 TL/40 site test varsayımı; 30 gün elle pilot, 90 gün iki retainer dönemi. Kabul ve tahsilat uçtan uca bilinmiyor. Claude planı bu biçimi seçenek saymaz. Ödeyen ajans yok; yazılı niyet yok."
+    }
+  ]
+}

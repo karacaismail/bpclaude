@@ -1,0 +1,23 @@
+{
+ "slug": "eklenti-firsat-panosu",
+ "secenekler": {
+  "eklenti-firsat-panosu-a": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 1.2,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Aylık sayı üretimi 10 saat x 4 sayı / 33 abone-ay, yaklaşık 1,2 saat; abone başına özel iş yok; sayı emeği kartta ayrıca yok, varsayım."
+  },
+  "eklenti-firsat-panosu-b": {
+   "satis_basina_kurucu_saati": 0.25,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 3,
+   "not": "İndirilebilir sabit paket; özelleştirme ve görüşme yok, teslim 0. Karttaki satış ve destek değerleri korundu."
+  },
+  "eklenti-firsat-panosu-c": {
+   "satis_basina_kurucu_saati": 4,
+   "teslim_saat_odeme_basina": 2.5,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "20 dk tanışma, yılda 1 saat görüşme ve yaklaşık 1 saat hazırlık, toplam 2,5 saat; kartın 30 dk desteği görüşmeyi içeriyordu, 20 dk'ya indirildi; varsayım."
+  }
+ }
+}

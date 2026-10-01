@@ -1,0 +1,71 @@
+{
+ "slug": "asgari-iscilik",
+ "kararlar": [
+  {
+   "itiraz": "Kart plan olgunluğunu yüzde 90 yazıyor; kod yüzde 0, ödeyen müşteri 0, hesap kuralları yüzde 60",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kaynak yüzde 90'ı teklif ve plan için verir; kart bunu plan olgunluğu diye sınırlar, kod yok ve ödeyen müşteri 0 yazar."
+  },
+  {
+   "itiraz": "A: kart teslimi 400 saat; plan 90 adam-gün (yaklaşık 720 saat) der, 20 saat/hafta ile 6 aya sığmaz",
+   "karar": "kismen",
+   "degisiklik": "A finans iyi tahsilat 252.000 idi, 108.000 oldu; iyi ödeme adedi 2 idi, 1 oldu; dayanak güncellendi",
+   "gerekce": "400 saat plan hız çarpanıyla (90 x 0,55 gün) tutarlı; ama 20 hafta ve imza gecikmesiyle kabul ödemesi 6 aya sığmaz."
+  },
+  {
+   "itiraz": "C: baz 5 dosya kanıtsız; açılmış gerçek tablo ve izinli dosya yok, dönüşüm varsayım",
+   "karar": "kabul",
+   "degisiklik": "C finans baz tahsilat 50.000 idi, 30.000; baz ödeme adedi 5 idi, 3; baz müşteri 4 idi, 3; dayanak güncellendi",
+   "gerekce": "30 kişilik mesajdan yüzde 5-15 dönüşüm 1-4 dosya verir; 3 orta noktadır, 5 kaynaksız iyimserdi."
+  },
+  {
+   "itiraz": "A kanalı mevcut ilişki; plan 10.1 yazılı sahiplik anlaşması olmadan kullanılamaz, tek bağımlılık",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart bu bağımlılığı zaten yazıyor: G1 kaldı, kanal metni yazılı onaya bağlı, yedek kanal ihale ilanı listesi."
+  },
+  {
+   "itiraz": "A G4 test olmalı: tek alıcı belgeli, kapı 20 hedef alıcıyı ismen saymayı ister",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kapı tanımı gecti için isim listesi ya da belgelenmiş mevcut ilişkiyi kabul eder; ilişki kaynakta belgeli. Not ikinci isim ihtiyacını zaten söylüyor."
+  },
+  {
+   "itiraz": "C G8 test: her müşteri tablosu farklı, iki saatlik özel betik sınırı yazılı değil",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart C G8 için gecti; tanım sabit kapsam ve sabit fiyatı yeterli sayar. Teklif bir dosya, bir dönem, 5 iş günü ve ayrı fiyatlı kapsam dışı diyor."
+  },
+  {
+   "itiraz": "C G6 test: 50 saat gerçek tablo görülmeden tahmin, uzman teyidi süresi dahil değil",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kaynak ilk kapsamı 4-6 saat verir, kart 50 saat ve 21-60 gün; 3 katı sapmada bile 8 haftanın altında. Uzman 2 saatlik değişken maliyette."
+  },
+  {
+   "itiraz": "A kalan_efor beklenen 60 saat; plan 90 adam-gün, teslim 400 saat; iyi 252.000 iyimser, baz imzaya bağlı",
+   "karar": "kismen",
+   "degisiklik": "A kalan_efor değişmedi; iyi tahsilat 252.000 idi, 108.000 oldu (bkz. kart itirazı 2)",
+   "gerekce": "60 saat ilk ödeme alınabilecek kanıt kapsamıdır, doğru; teslim 400 saat ayrı. Baz kaynakta imza yüzde 30; yalnız iyi kabul ödemesi sarkıyor."
+  },
+  {
+   "itiraz": "C degisken_maliyet 2.100; GPT katkı hesabı 4.900, 5 saat kontrol x 600 dahil, kurucu saati hariç marjı iyimser",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Brif değişken maliyete komisyon, uzman, baskı alır; kurucu saati ayrı alanda ve eşik saat ücretiyle izlenir. 2.100 = uzman 1.600 + araç 200 + tahsilat 300."
+  },
+  {
+   "itiraz": "C tahsilat baz 50.000, 5 dosya; dönüşüm kanıtsız, 30 kişilikten 1-4 dosya beklenir",
+   "karar": "kabul",
+   "degisiklik": "C finans baz tahsilat 50.000 idi, 30.000; ödeme adedi 5 idi, 3; müşteri 4 idi, 3",
+   "gerekce": "Yüzde 5-15 dönüşüm 30 adaydan en çok 1-4 dosya verir; baz 3 dosya oldu. İyi senaryo 12 dosya aynı kaldı."
+  },
+  {
+   "itiraz": "B tahsilat iyi 22.410: ürün 6. ayda hazır değil, plan 8 aboneliği 9. aya koyuyor",
+   "karar": "kabul",
+   "degisiklik": "B finans iyi tahsilat 22.410 idi, 0; iyi ödeme adedi 9 idi, 0; iyi müşteri 3 idi, 0; dayanak güncellendi",
+   "gerekce": "Plan aboneliği 9. aya koyar ve 600-1200 saat 20 saat/hafta ile 6 aya sığmaz; abone-ay tahsilatı kaynakla çelişiyordu."
+  }
+ ]
+}

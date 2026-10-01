@@ -1,0 +1,23 @@
+{
+ "slug": "zabuno",
+ "secenekler": {
+  "zabuno-a": {
+   "satis_basina_kurucu_saati": 2.5,
+   "teslim_saat_odeme_basina": 0.4,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Varsayım: 30 dk kurulum kurucu eliyle (satıştan teslime taşındı) + aylık elle plan ataması ve e-arşiv fatura ~10 dk; ödeme başına yaklaşık 0,4 saat. 15 dk yalnız soru ve hata."
+  },
+  "zabuno-b": {
+   "satis_basina_kurucu_saati": 30,
+   "teslim_saat_odeme_basina": 12,
+   "musteri_basina_aylik_destek_dk": 180,
+   "not": "Varsayım: aylık 12 saat; pilot şube kurulumu, merkezden elle yayın ve karşılaştırma raporu (modül yok). Satış 40 saatten pilot kurulumu düşüldü. Baz senaryoda ödeme 0."
+  },
+  "zabuno-c": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Fiyat 40 saat x eşik saat ücretine dayalı; teslim 40 saatten az olamaz, yapay zekâ hızlanması sayılmadı. Destek 60 dk teslim sonrası düzeltme. Baz senaryoda satış 0."
+  }
+ }
+}

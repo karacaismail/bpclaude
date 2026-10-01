@@ -1,0 +1,343 @@
+{
+ "slug": "ddd-renderer",
+ "baslik": "DDD modüler monolit rehberi ve JSON blok renderer",
+ "ozet": "Modül sınırlarını ve mimari kararları JSON'da tutup gezilebilir site ve kontrol listesi üreten blok motoru ile DDD modüler monolit içeriği. Alıcı: Türkçe geliştirici, danışman mimar, teknik lider. Bugün ürün, CLI ve ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Blok motoru (yükleyici, doğrulama, çapraz referans, arama, içindekiler) yaklaşık %60 hazır; 197 JSON içerik kümesi var",
+   "Modül görselleştirme sayfaları ve yedi katmanlı mimari analiz metni var",
+   "Yaklaşık 6.500 satır TypeScript motor kodu, birim ve erişilebilirlik testi yapılandırmaları var",
+   "Planlı fiyat bandı ve hedef kitle belgelerde tanımlı (şablon paketi, e-kitap eki, değerlendirme hizmeti)"
+  ],
+  "yok": [
+   "Ödeyen müşteri yok; kanal ve ödeme isteği kanıtı yok",
+   "Komut satırı aracı, mimari şeması ve döngüsel bağımlılık denetimi yok",
+   "Lisans kararı belirsiz: belgede MIT, paket bildiriminde LGPL-3.0-only, lisans dosyası yok",
+   "İki kopya ve silinmiş dosyalar nedeniyle tek kaynak depo yok",
+   "Ödeme hesabı (Shopier ya da yasal satıcı) açılmadı",
+   "Dış kullanıcı sıfır; motor sonraki içerik aracı tarafından aşılmış sayılıyor"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Bağımsız ürün olarak sunum yapılamaz; ücretsiz rakipler (Structurizr, LikeC4) var, pazar küçük. Önerilen: açık çekirdek, 3 şablonlu e-kitap eki (149 ₺), 29-79 $ paketler ve 50.000 ₺ değerlendirme; karar kapısı 6 ayda 50 paket.",
+  "gpt": "Ürün çalışan bir uygulama değil, belge ve kit varlığı; ödeme talebi kanıtlanmadı. Dar teslimler önerir: iki modülün sahipliğini çizen mimari değerlendirme, geçersiz bloğu reddeden örnek kit; 7 günlük deney, tekrar talep yoksa SaaS yok.",
+  "ayrisma": "Claude şablon paketi ve e-kitap eki ile başlar, danışmanlığı gelir kalemi sayar. GPT önce küçük hizmet teslimi ve kabul kaydı ister, şablonu ikinci sıraya koyar. İkisi de abonelik ve geniş platformu reddeder.",
+  "birlesik": "Platform yok; önce sabit kapsamlı küçük teslim (şablon eki ya da 3 günlük değerlendirme), lisans kararı ve ödeme hesabı sonra. Tekrar talep görülmeden CLI ve abonelik yazılmaz."
+ },
+ "analist_gorusu": "En gerçekçi yol e-kitap alıcılarına satılan 3 şablonluk ek; küçük ama hızlı. Gerçek gelir 50.000 ₺'lik değerlendirmeden gelir ve ilk satış 2-4 ayı bulur. Motor yazımına başlanmaz.",
+ "secenekler": [
+  {
+   "id": "ddd-renderer-a",
+   "ad": "E-kitap eki: 3 mimari şablonlu paket (149 ₺)",
+   "tur": "içerik",
+   "musteri": "Kurucunun Türkçe mimari e-kitabını okuyan, modüler monoliti kendi projesinde uygulamak isteyen yazılım geliştirici",
+   "is": "DDD modüler monoliti okuyup kendi projesinde somut JSON şablon ve kontrol listesiyle uygulamak; boş sayfadan kurtulmak",
+   "tetikleyici": "E-kitabı bitirmesi, ilk modüler monolit görevi ya da mülakat hazırlığı",
+   "teklif": "3 şablon (DDD modüler monolit, hexagonal, Frappe uygulaması): örnek mimari JSON, kontrol listesi, ADR şablonları ve uygulama rehberi; ücretsiz starter dosya",
+   "fiyat": "149 ₺ tek seferlik (KDV dahil varsayıldı, net 124 ₺); ilk 10 alıcıya indirim",
+   "kanal_birincil": "Kurucunun e-kitap alıcı listesi (ticari ileti izinli) ve e-kitap sonu bağlantısı",
+   "kanal_yedek": "GitHub depo ve canlı örnek site; LinkedIn'de haftada 2 gönderilik 'bir sınır, bir karar' serisi",
+   "ilk_adim": "Ücretsiz starter JSON ve 149 ₺ ön sipariş sayfasını yayımlamak; izinli listeye ve kişisel ağa duyurmak",
+   "ilk_kapsam": "Mevcut blok motoruyla hatasız render olan 3 şablon, kontrol listesi, canlı örnek site ve Shopier satış sayfası; yeni motor ve CLI yazılmaz",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "İçerik kurucuya ait ama lisans belirsiz: belgede MIT, paket bildiriminde LGPL-3.0-only; lisans dosyası yok."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Dijital içerikte cayma istisnası, fatura ve ticari ileti izni kayıtları mali müşavir teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier yolu belirli ama hesap açılmadı, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (e-kitap okuyucusu) ama e-kitap çıkmadı, 20 kişilik isim listesi yok."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal e-kitap alıcı listesi; yedek GitHub örnek sitesi ve LinkedIn serisi adlı, ilk adım yazılı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 52-80 saat (3-4 hafta) ama ilk tahsilat e-kitabın çıkış tarihine bağlı, tarih belirsiz."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 3.000 ₺ (alan adı, kısa hukuk teyidi); tavanın çok altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı 3 şablonlu paketi alır; özel geliştirme yok."
+    }
+   },
+   "kapi_duzeltme": "Kurucu lisansı seçer (onaysız seçilmez); Shopier hesabı açılıp test ödemesi yapılır; mali müşavir fatura ve cayma metnini teyit eder; e-kitap çıkış tarihi netleşir.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 124,
+    "degisken_maliyet_tl": 6,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 60,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 0.5,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 372,
+     "baz": 1240,
+     "iyi": 3720
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 3,
+     "baz": 10,
+     "iyi": 30
+    },
+    "alti_ay_musteri": {
+     "kotu": 3,
+     "baz": 10,
+     "iyi": 30
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.3
+    },
+    "dayanak": "Plan bölüm 5: ek 149 ₺ (KDV dahil sayıldı, net 124 ₺); Shopier komisyonu yaklaşık 6 ₺. Plan 200 okuyucu ve %30 dönüşümle 60 paket der; e-kitap çıkmadı, okuyucu listesi ve dönüşüm varsayım: 6 ayda baz 10, kötü 3, iyi 30. İlk tahsilat en erken 60 gün."
+   },
+   "deney": {
+    "varsayim": "E-kitap okuyucuları ve kurucunun ağı 3 şablonluk paketi 149 ₺'ye satın alır.",
+    "yontem": "Ücretsiz starter JSON ve 149 ₺ ön sipariş sayfasını yayımla; izinli listeye ve LinkedIn ağına duyur; indirme ve ön ödemeleri say.",
+    "sure_gun": 14,
+    "maliyet_saat": 12,
+    "maliyet_tl": 600,
+    "basari_olcutu": "14 günde en az 5 ön ödeme ve 100 starter indirme",
+    "birakma_olcutu": "14 günde 0 ön ödeme ve 30'dan az starter indirme",
+    "sonraki_dilim": "Başarılıysa 3 şablonu bitir ve e-kitap ekine bağla; değilse şablonlar e-kitap bonusu kalır."
+   },
+   "etiketler": {
+    "segment": "Türkçe konuşan yazılım geliştirici",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "JSON şema, TypeScript blok motoru",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "Plan bölüm 5-7 ve 11: 149 ₺ ek, e-kitap kitlesi birincil kanal; değer, persona ve pazara çıkış belgesi B.2 ve C.2: en yüksek puanlı kanal, 200 okuyucu varsayım. Motor yaklaşık %60, şablon içeriği %50 hazır (plan 2). Ödeyen müşteri 0. GPT belgeleri alıcıyı geliştirici olarak varsayım sayar. Lisans çelişkisi plan 10 ve GTM belgesi başlığında."
+  },
+  {
+   "id": "ddd-renderer-b",
+   "ad": "Uluslararası şablon paketleri (29-79 $) açık çekirdekle",
+   "tur": "içerik",
+   "musteri": "Modüler monolite geçen 10-50 kişilik ekibin teknik lideri ve bağımsız mimar; İngilizce konuşan, yurt dışı",
+   "is": "Modül sınırlarını, bağımlılıkları ve ADR'leri belgelemek; her projede mimari belgeyi sıfırdan yazmamak",
+   "tetikleyici": "İşe alım dalgası, büyük refactor öncesi, mimari gözden geçirme ya da aynı belgeyi ikinci kez yazma anı",
+   "teklif": "Açık çekirdek ücretsiz; tek stil paketi 29 $, 4 stilli demet 79 $: örnek mimari JSON, kontrol listesi, ADR şablonları, 12 ay güncelleme",
+   "fiyat": "29 $ tekil, 79 $ demet; ortalama 49 $ (2.352 ₺ net); 14 gün iade",
+   "kanal_birincil": "GitHub depo ve canlı örnek site; r/softwarearchitecture ve dev.to makaleleri; LinkedIn mimari serisi",
+   "kanal_yedek": "Awesome listeleri ve ADR araç dizinleri; bağımsız mimar ağı; Structurizr topluluğuna uyumluluk yazısı",
+   "ilk_adim": "Açık depo, starter JSON ve canlı örnek siteyi yayımlamak; dev.to'da 'modüler monolitte sınır nasıl yazılır' makalesi",
+   "ilk_kapsam": "3 şablon, İngilizce arayüz ve README, canlı örnek site, yasal satıcı (MoR) üzerinden ödeme sayfası; CLI ve dışa aktarma kapı sonrası",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Lisans belirsiz (belgede MIT, paket bildiriminde LGPL-3.0-only); şablon paketi lisansı ve bağımlılıklar doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Yurt dışına dijital satışta KDV ve fatura işleyişi mali müşavir teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yasal satıcı (MoR) hesabı seçildi ama açılmadı, test ödemesi yok."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (teknik lider, mimar) ama 20 kişilik isim listesi yok, yurt dışı soğuk liste."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "GitHub, r/softwarearchitecture, dev.to ve LinkedIn adlı; ilk adım yazılı; yedek dizinler var."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 60-110 saat (3-6 hafta); satış döngüsü ve ilk tahsilat ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 6.000 ₺ (alan adı, hukuk teyidi); tavanın altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı şablon paketini alır; özel geliştirme yok."
+    }
+   },
+   "kapi_duzeltme": "Kurucu lisansı seçer; MoR hesabı açılıp test ödemesi yapılır; mali müşavir yurt dışı satış faturasını teyit eder; 20 hedef alıcı adı listelenir.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 2352,
+    "degisken_maliyet_tl": 142,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 6000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 80,
+     "max": 110
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 1.5,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 2234,
+     "baz": 13406,
+     "iyi": 44688
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 1,
+     "baz": 6,
+     "iyi": 20
+    },
+    "alti_ay_musteri": {
+     "kotu": 1,
+     "baz": 6,
+     "iyi": 20
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.05
+    },
+    "dayanak": "Plan bölüm 5-6: 29 $ ve 79 $, karma ortalama 49 $; 48 ₺/USD ile 2.352 ₺. Komisyon %5 + 0,50 $ (142 ₺); tahsilat %5 iadeyle. Plan dış kanaldan yıllık 40 paket der; kanal sınanmadı, ödeme eğilimi düşük: 6 ayda baz 6, kötü 1, iyi 20. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Yurt dışı teknik liderler ve mimarlar, ücretsiz Structurizr ve LikeC4 varken 29-79 $ şablon paketi alır.",
+    "yontem": "Starter JSON ve canlı örnek siteyi yayımla; makale ve LinkedIn serisiyle yönlendir; 29 $ ön sipariş bağlantısı koy; indirme ve ön ödemeleri say.",
+    "sure_gun": 21,
+    "maliyet_saat": 25,
+    "maliyet_tl": 600,
+    "basari_olcutu": "21 günde en az 3 ön ödeme ve 100 starter indirme",
+    "birakma_olcutu": "21 günde 0 ön ödeme ve 40'tan az starter indirme",
+    "sonraki_dilim": "Başarılıysa demeti tamamla ve CLI kapısına git; değilse şablonları seçenek A'ya ya da e-kitap bonusuna kat."
+   },
+   "etiketler": {
+    "segment": "Teknik lider ve bağımsız mimar, yurt dışı",
+    "kanal_turu": "içerik",
+    "teknoloji": "JSON şema, TypeScript blok motoru",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "Plan bölüm 4: Structurizr ve LikeC4 ücretsiz, IcePanel 40-80 $/editör/ay; bölüm 8: kötümser senaryo fiilen sıfır. GTM belgesi A.7: ücretsiz LikeC4 en yakın rakip, fark yalnız şablon ve ADR bütünlüğü. Tek seferlik şablon ödeme isteği düşük (plan 3.2). Ödeyen müşteri ve isim listesi yok."
+  },
+  {
+   "id": "ddd-renderer-c",
+   "ad": "3 günlük sabit kapsamlı mimari değerlendirme hizmeti",
+   "tur": "hizmet",
+   "musteri": "Modüler monolite geçen 10-50 kişilik yazılım ekibinin teknik lideri ya da küçük yazılım evi; Türkiye",
+   "is": "Mevcut sistemin modül sınırlarını, veri sahipliğini ve ADR'lerini modellemek; yeni gelen geliştiriciye tek sayfada anlatabilmek",
+   "tetikleyici": "İşe alım dalgası, büyük refactor öncesi, modüller arası sahiplik çakışması ya da mimari gözden geçirme toplantısı",
+   "teklif": "3 günde mevcut sistemin mimari JSON modeli, gezilebilir site, modül sınırı ve sahipsiz modül raporu ile ADR taslakları; tek tur düzeltme",
+   "fiyat": "50.000 ₺ + KDV, 3 iş günü, en çok 10 modül; fiyat varsayım, ücretli referans yok",
+   "kanal_birincil": "Kurucunun mevcut iki ürününde ücretsiz değerlendirme, anonim rapor örneği ve vaka çalışması; LinkedIn",
+   "kanal_yedek": "Yazılım evleri ve bağımsız mimar ağı (lead payı); GitHub canlı örnek site ve makaleler",
+   "ilk_adim": "Kurucunun kendi ürününde 10 modüllü değerlendirmeyi yap, rapor örneğini anonimleştirip yayımla; 5 teknik liderle görüş",
+   "ilk_kapsam": "Standart rapor şablonu, 3 günlük teslim listesi, gizlilik sözleşmesi şablonu, anonim örnek rapor ve vaka çalışması; yeni yazılım yok",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Rapor siteyi mevcut motorla üretiyor; motorun lisansı belirsiz (MIT ya da LGPL-3.0-only), şablon içeriği kurucuya ait."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri sistem bilgisi için gizlilik sözleşmesi ve KVKK metni hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-Arşiv fatura kuralları belgede var, mali müşavir mevcut; ancak fatura düzeni kurulup teyit edilmedi."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net ama 20 kişilik isim listesi yok; yalnız kurucunun mevcut iki ilişkisi var."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal mevcut ilişkiler ve LinkedIn adlı; yedek ortak ve GitHub örnek site var."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Hazırlık 30-60 saat ama satın alma döngüsü ve ilk tahsilat ölçülmedi; 45-120 gün varsayım."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 2.000 ₺ (alan adı, sözleşme şablonu); tavanın çok altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam, sabit fiyat ve en çok 10 modül; kapsam dışı istek ayrı teklif."
+    }
+   },
+   "kapi_duzeltme": "Mali müşavir e-Arşiv fatura düzenini teyit eder; hukukçu gizlilik sözleşmesini ve KVKK metnini teyit eder; kurucu lisansı seçer; 20 hedef alıcı listelenir; satın alma süresi ölçülür.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 50000,
+    "degisken_maliyet_tl": 2000,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 2000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 45,
+     "max": 60
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 36,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 50000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan bölüm 5-8: 50.000 ₺ + KDV, 3 gün; plan yıl 1 için 1 danışmanlık der. Referans yok, satış döngüsü ölçülmedi, ilk tahsilat 45-120 gün: 6 ayda baz 0, iyi 1 satış, kötü 0. Satış başına 36 saat: 12 görüşme ve teklif, 24 teslim. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Teknik liderler mimari modelleme hizmetine 50.000 ₺ öder ve güvenip sistem bilgisini paylaşır.",
+    "yontem": "Kurucunun kendi ürününde değerlendirmeyi yap, anonim rapor yayımla; 10 teknik lidere 20 dakikalık demo ve sabit fiyat teklifi gönder.",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 300,
+    "basari_olcutu": "30 günde 10 demodan en az 3 yazılı teklif talebi ve 1 ön ödeme ya da imzalı sözleşme",
+    "birakma_olcutu": "10 demoda 0 teklif talebi ya da fiyat itirazıyla tamamı elenirse",
+    "sonraki_dilim": "Başarılıysa fiyatı ve kapsamı sabitle, şablonları bu hizmetin ekine bağla; değilse seçenek A'ya dön."
+   },
+   "etiketler": {
+    "segment": "Teknik lider, küçük yazılım evi, Türkiye",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "JSON şema, TypeScript blok motoru",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan bölüm 5, 6 ve 8: 50.000 ₺ + KDV, 3 gün; baz senaryonun yarısından fazlası danışmanlık geliri; plan bölüm 11: ilk değerlendirme mevcut ilişkide ücretsiz yapılır. GPT strateji belgesi mimari değerlendirmeyi ilk teslim olarak önerir ve ücretini kanıtlanmış saymaz. Ödeyen müşteri ve danışmanlık referansı yok; fiyat varsayım."
+  }
+ ]
+}

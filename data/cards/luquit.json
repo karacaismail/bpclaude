@@ -1,0 +1,241 @@
+{
+ "slug": "luquit",
+ "baslik": "Liquid glass bileşen kütüphanesi ve emlakçı CRM Lite",
+ "ozet": "Biri 12 bileşenli, yayımlanmamış bir React cam arayüz kütüphanesi, diğeri 1-10 kişilik emlak ofislerine yönelik, arayüzü hazır ama sunucu tarafı olmayan bir ofis defteri paneli. Ödeyen müşteri yok; gelir yolu panelin aylık aboneliği.",
+ "bugun": {
+  "var": [
+   "12 bileşenli React cam kütüphanesi, 4 bileşende erişilebilirlik testi, npm'de yayımlanmamış",
+   "14 binden fazla satırlık emlak ofisi paneli arayüzü: ilan, müşteri, finans, takvim, rapor, arama",
+   "Panel için 165 otomatik test ve tasarım sistemi belgesi",
+   "Kural tabanlı, ağ çağrısı yapmayan asistan motoru (talep-ilan eşleştirme niyeti dahil)",
+   "Üç fiyat basamağı taslağı: 499 / 899 / 1.490 TL aylık",
+   "Zabuno ile ortak Laravel altyapısı kararı"
+  ],
+  "yok": [
+   "Sunucu tarafı, kimlik doğrulama ve gerçek veri tabanı (panel tarayıcı deposunda çalışıyor)",
+   "Ödeme hesabı, abonelik akışı ve fatura düzeni",
+   "KVKK aydınlatma ve hizmet sözleşmesi metinleri",
+   "Yeni ürün adı ve alan adı kararı",
+   "Hiçbir emlak ofisiyle yapılmış talep ya da fiyat görüşmesi",
+   "Seçilmiş açık kaynak lisansı ve npm yayını"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Kütüphane için ticari sunum önerilmez (ücretsiz ve popüler rakip, gelir tavanı yılda birkaç yüz dolar); açık kaynak yayımlanır. Gelir yolu Emlakçı CRM Lite aboneliği; 3 görüşmede 2 ofis öderim demeden, ad değişmeden ilerlenmez.",
+  "gpt": "Ücretli tez bileşen sayısı değil; iki niş yolculukta marka, token, odak ve mobil entegrasyonunu kısaltan destekli paket. İlk alıcı 1-5 kişilik React ajansı; kit yaklaşık 1.500 TL, özel entegrasyon saatle. Panel kaydı yalnız hak ve veri teyidiyle sınırlı.",
+  "ayrisma": "Claude gelirin emlak ofisi aboneliğinden geleceğini, kütüphanenin ücretsiz kalacağını söylüyor. GPT ise emlak ofisini ilk alıcı saymıyor; ücretli alıcı olarak ajansı, ürün olarak destekli yolculuk kitini öne çıkarıyor.",
+  "birlesik": "İki çalışma da kütüphaneyi tek başına gelir kaynağı saymıyor. Ortak hüküm: talep doğrulanmadan satış yok, hak ve ad temizliği önce, kütüphane referans varlığı. Hangi alıcının ilk ödeyeceği açık ve deneyle sınanacak."
+ },
+ "analist_gorusu": "Ödeyen müşteri sıfır ve yerel rakipler aynı fiyat bandında. En küçük nakit adımı: 3 ofisle fiyat görüşmesi (14 gün). Sunucu tarafı 10 hafta sürdüğü için abonelik 6 ayda en çok iki ödeme ayı verir; ajans kiti hızlı ama tavanı düşük.",
+ "secenekler": [
+  {
+   "id": "luquit-a",
+   "ad": "Emlakçı CRM Lite aylık abonelik (bağımsız ofis)",
+   "tur": "yazılım ürünü",
+   "musteri": "Yetki belgeli, 1-10 kişilik bağımsız emlak ofisi sahibi; franchise dışı",
+   "is": "Müşteri talebini ve komisyon kaydını WhatsApp ile Excel yerine tek Türkçe defterde tutmak; yeni ilan girince kimi arayacağını görmek",
+   "tetikleyici": "Kaçan bir müşteri, ortakla komisyon tartışması, yeni danışman alımı ya da portal paketi yenileme faturası",
+   "teklif": "Başlangıç, Ofis ve Ofis Plus planları; ilk 3 ofise 2 ay ücretsiz beta pilot; 14 gün iade; veri her an dosya olarak alınabilir",
+   "fiyat": "499 / 899 / 1.490 TL aylık, KDV hariç; plan karışımı ortalama 850 TL",
+   "kanal_birincil": "Tanıdık ofislerle yüz yüze görüşme, sonra TÜGEM ve yerel emlak danışmanları dernek ve odası sunumları",
+   "kanal_yedek": "Instagram'da emlak danışmanlarına kişiye özel mesaj; pilot ofislerin referansı; sitesini yapan freelancer ortaklığı",
+   "ilk_adim": "3 tanıdık ofisle 30 dakikalık talep ve fiyat görüşmesi; en az 2 ofis 499-899 TL öderim demeden sunucu işine başlanmaz",
+   "ilk_kapsam": "Gerçek veri tabanında ilan, müşteri-talep eşleştirme, randevu ve komisyon defteri; kimlik; dosya dışa aktarma; iyzico abonelik; yeni ad ile 3 pilot ofis",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; ürün adı ve alan adı yeniden belirlenecek; bağımlılık lisansları doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK veri işleyen rolü, hizmet sözleşmesi, mesafeli satış ve e-Arşiv için hukukçu ve mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "iyzico abonelik ya da havale planlı; hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 3 tanıdık ofis ve mevcut ilişkiler var ama 20 hedef ofis isim listesi yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal ve ilk adım adlı (tanıdık ofis görüşmesi, dernek ve oda sunumu); yedek kanallar var"
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Sunucu tarafı için kalan iş yaklaşık 49 gün (8-12 hafta), 8 haftayı aşıyor; ilk tahsilat 2 ay ücretsiz pilot sonrası ay 4-6"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 36 bin TL (hukukçu, 5 ay sabit gider); en kötü durumda 45 bin TL altı; 50 bin TL tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Üç sabit plan, herkes aynı ürünü kullanır; özel geliştirme ve portal entegrasyonu vaat edilmiyor"
+    }
+   },
+   "kapi_duzeltme": "G6: ilk kapsamı ilan, müşteri ve eşleştirmeye daraltıp 8 haftaya indir. G1: yeni ad ve alan adı seç. G2, G3: hukukçu teyidi ve ödeme hesabı aç. G4: 20 ofislik isim listesi çıkar.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 850,
+    "degisken_maliyet_tl": 80,
+    "sabit_gider_aylik_tl": 4000,
+    "baslangic_nakit_tl": 36000,
+    "kalan_efor_saat": {
+     "min": 160,
+     "beklenen": 220,
+     "max": 320
+    },
+    "ilk_tahsilat_gun": {
+     "min": 120,
+     "max": 180
+    },
+    "satis_basina_kurucu_saati": 10,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 4250,
+     "iyi": 16150
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 5,
+     "iyi": 19
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 10
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "Plan 5, 6, 8: ortalama gelir 850 TL, ödeme ve altyapı maliyeti yaklaşık 80 TL. Sunucu işi 49 gün (8-12 hafta), sonra 2 ay ücretsiz pilot: ilk ödeme ay 4-6. Baz: 3 pilot ofis ay 5-6'da öder (2'si iki, 1'i bir ay) = 5 abone-ay. İyi: plan KPI 10 ofis. Dönüşüm yüzde 20 plan varsayımı, kanıtsız."
+   },
+   "deney": {
+    "varsayim": "1-10 kişilik ofisler yerel rakip fiyatı bandında (499-899 TL) ödeyecek kadar acı yaşıyor ve bizi seçecek",
+    "yontem": "3 tanıdık ofisle 30 dakika: bugünkü araç, kaçan müşteri, fiyat kabulü; ardından beta pilot teklifi yazılı mesajla; ekran görüntüleriyle demo",
+    "sure_gun": 14,
+    "maliyet_saat": 8,
+    "maliyet_tl": 300,
+    "basari_olcutu": "3 görüşmeden en az 2 ofis yazılı olarak aylık 499-899 TL öderim ve pilota girerim der",
+    "birakma_olcutu": "Yazılı niyet veren ofis 1 ya da 0; ya da mevcut yerel rakibi bırakmama itirazı baskın",
+    "sonraki_dilim": "Yeni ad ve alan adı, ilan-müşteri-eşleştirme çekirdeğinin sunucu tarafı (8 hafta)"
+   },
+   "etiketler": {
+    "segment": "Bağımsız emlak ofisi, 1-10 kişi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "React, Laravel, Postgres",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Claude planı 1, 2, 5, 6, 8 ve derinlik dosyası A, C, D bölümleri: ödeyen müşteri yok; panel arayüzü hazır, sunucu tarafı yok (D.8: yaklaşık 49 gün). İki yerel emlak CRM'i aynı fiyat bandında (499-599 TL); plan fiyatın artık farklılaştırıcı olmadığını kabul ediyor. TAM, danışman ile işletme karışıklığı nedeniyle yaklaşık yarıya iniyor. GPT çalışması bu alıcıyı ilk ürün saymıyor."
+  },
+  {
+   "id": "luquit-b",
+   "ad": "Destekli cam arayüz yolculuk kiti (ajans ve freelancer)",
+   "tur": "kod satışı",
+   "musteri": "1-5 kişilik React ajansı ve serbest frontend geliştirici; benzer onay ve sonuç ekranlarını farklı müşterilere teslim eden",
+   "is": "Marka, odak, klavye ve 320 piksel mobil uyumunu her projede yeniden çözmeden iki hazır cam arayüz yolculuğunu mevcut projeye almak",
+   "tetikleyici": "Yeni müşteri projesinin başlangıcı ya da müşterinin cam estetiği ve erişilebilirlik isteği",
+   "teklif": "Kaynak kodu ve tokenlarla iki özgün yolculuk, erişilebilirlik test kanıtı, desteklenen sürüm tarifi; isteğe bağlı saatlik özel entegrasyon",
+   "fiyat": "Kit 1.500 TL tek seferlik (yaklaşık 31 USD); özel entegrasyon 12 saat için 12.000 TL; KDV hariç",
+   "kanal_birincil": "GitHub ve npm üzerindeki açık kaynak bileşenler, README ve belge sitesi; 320 piksel odak sorunu üzerine teknik makale",
+   "kanal_yedek": "Ajanslara izinli tek entegrasyon referansı; Dev.to ve React topluluklarında örnek paylaşımı",
+   "ilk_adim": "Kütüphaneyi lisans kararıyla yayımlamak, iki yolculuğu bitirmek ve 10 nitelikli ajans ya da freelancer ile kiti denemek",
+   "ilk_kapsam": "İki özgün yolculuk (onay ve sonuç inceleme), 12 bileşenin testi, belge sitesi, lisans envanteri, Lemon Squeezy ödeme sayfası",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuya ait; kütüphane lisansı ve yayın görünürlüğü kurucuyla netleşmedi, bağımlılık lisansları doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kişisel veri işlenmiyor; destek ve iade şartları, KDV ve yurt dışı satış faturası mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yurt dışı satış için yasal satıcı (MoR) hizmeti planlı; hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (küçük React ajansı); 20 kişilik isim listesi yok, ağ belgelerde yazmıyor"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "GitHub, npm ve makale adlı ama paket yayımlanmadı, makale yazılmadı; somut hedef grup, dizin ya da ortak adlandırılmadı"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan 60-150 saat, haftada 20 saatle 8 haftanın altında; kutu ürün, tahsilat 1,5-3 ay içinde gerçekçi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı yaklaşık 3 bin TL (lisans teyidi, alan adı); tavanın çok altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kit sabit kapsamlı ama özel entegrasyon saatleri ve destek sınırı yazılı değil"
+    }
+   },
+   "kapi_duzeltme": "G1: lisans ve görünürlüğü netleştir. G2, G3: MoR hesabı aç, mali müşavir teyidi al. G4: 20 ajans listesi çıkar. G5: hedef topluluk ve dizinleri adla yaz. G8: destek ve özel iş kapsamını yaz.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 1500,
+    "degisken_maliyet_tl": 675,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 100,
+     "max": 150
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 90
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 45,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 3000,
+     "iyi": 18000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 12
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.05
+    },
+    "dayanak": "GPT çalışması: kit 1.500 TL; tahsilat 45, barındırma 30 ve bir saat destek 600 TL ile değişken maliyet 675 TL. Claude planı: Pro paket yılda 0-30 satış, tavan yıllık birkaç yüz dolar. Yapım ve gecikme düşülünce 6 ayda baz 2, iyi 12 satış. Dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Ücretsiz Radix, shadcn ve cam efekti paketleri varken ajanslar ölçülen entegrasyon süresi için kit ücreti öder",
+    "yontem": "İki yolculuğu bitir, kaynak ve kanıtla yayımla; 10 nitelikli ajans ya da freelancer ile kiti mevcut projede dene, süre kazancını kaydet, 1.500 TL fiyat teklif et",
+    "sure_gun": 30,
+    "maliyet_saat": 30,
+    "maliyet_tl": 250,
+    "basari_olcutu": "10 denemede en az 2 ücretli kit ya da yazılı ölçülen süre kazancı ve ikinci proje talebi",
+    "birakma_olcutu": "10 nitelikli denemede ücret ya da zaman kazancı yok; kütüphane iç varlık ve referans olarak kalır",
+    "sonraki_dilim": "3 ajansın mevcut projesinde entegrasyon ve destek süresi ölçümü"
+   },
+   "etiketler": {
+    "segment": "React ajansı ve serbest geliştirici",
+    "kanal_turu": "içerik",
+    "teknoloji": "React, TypeScript, SCSS",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Claude planı 3.2 ve 5: 12 bileşen için pazar kurulmadı, Pro paket yılda 0-30 satış, ücretsiz ve popüler rakip (6,3 bin yıldız) ve binlerce bileşenli ücretli paketler var; kütüphane yüzde 55 tamam. GPT çalışması: ücretli fark glass görseli değil ölçülen entegrasyon ve destek; ilk alıcı ajans. Ödeyen müşteri yok, ağ belgelerde yok."
+  }
+ ]
+}

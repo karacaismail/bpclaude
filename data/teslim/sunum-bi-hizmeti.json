@@ -1,0 +1,23 @@
+{
+ "slug": "sunum-bi-hizmeti",
+ "secenekler": {
+  "sunum-bi-hizmeti-a": {
+   "satis_basina_kurucu_saati": 14,
+   "teslim_saat_odeme_basina": 20,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Set başına 5 sunum, tema ve PDF yaklaşık 28 saat; yapay zekâ ile yarıya inmedi. 3 ödeme 2 set ve 1 güncelleme (4 saat); ortalama 20. Ücretsiz örnek satışta."
+  },
+  "sunum-bi-hizmeti-b": {
+   "satis_basina_kurucu_saati": 16,
+   "teslim_saat_odeme_basina": 32,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Varsayım: tema ve pptx kurulumu 16 saat, ücretsiz pilot ayında 4 sunum 16 saat. Abonelik ay 7 sonrası, 6 ayda ödeme yok. Karttaki 120 dk üretimi içerdiğinden 60 dk destek kaldı."
+  },
+  "sunum-bi-hizmeti-c": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 8,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Varsayım: kaynak kontrolü 2, şablon uyarlama 4, denetim ve PDF 1, revizyon 1 saat; betik hazır olmadığı için elle. Ödeme başına ortalama 8."
+  }
+ }
+}

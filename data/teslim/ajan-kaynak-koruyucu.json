@@ -1,0 +1,23 @@
+{
+ "slug": "ajan-kaynak-koruyucu",
+ "secenekler": {
+  "ajan-kaynak-koruyucu-a": {
+   "satis_basina_kurucu_saati": 0.3,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Kopyası satılan yazılım ve rehber; müşteriye özel iş yok, teslim 0. Lisans anahtarı otomatik. Karttaki satış ve destek değerleri korundu."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "satis_basina_kurucu_saati": 1,
+   "teslim_saat_odeme_basina": 3,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Bireysel kurulum oturumu 60-90 dk ve rapor yaklaşık 2,5 saat, takım paketi 3,5 saat; baz 3 bireysel + 1 takım ortalaması 3 saat. Satış 3 saatten 1 saate indirildi."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "satis_basina_kurucu_saati": 4,
+   "teslim_saat_odeme_basina": 1,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Aylık sponsorluk: öncelikli hata düzeltme ve entegrasyon yardımı ödeme başına yaklaşık 1 saat (varsayım). Satış 6 saatin entegrasyon kısmı teslime taşındı."
+  }
+ }
+}

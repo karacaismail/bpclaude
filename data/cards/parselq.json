@@ -1,0 +1,344 @@
+{
+ "slug": "parselq",
+ "baslik": "arsam.net / ParselQ (arsa raporu, emlakçı aracı, pazar yeri)",
+ "ozet": "ParselQ, arsa ve tarla için ada/parsel merkezli ürün ailesidir: tek parsel bilgi notu (299-799 ₺), emlakçıya ilan içi Parsel Kartı aboneliği ve ileride EİDS doğrulamalı pazar yeri. Bugün sunum, tıklanabilir prototip ve araştırma var; çalışan ürün yok (%15-20), ödeyen müşteri 0, dış sermaye taahhüdü yok.",
+ "bugun": {
+  "var": [
+   "Yedi canlı statik tanıtım sitesi ve 29 bölümlük sunum sitesi",
+   "3 rol x 17 ekranlı tıklanabilir prototip (veri bellekte, arka uç yok)",
+   "260 modüllük katalog ve 39 dosyalık araştırma korpusu",
+   "36 aylık formüllü finansal model; rapor ve kart fiyat hipotezi",
+   "İlk ürün için iki haftalık MVP planı ve yaklaşık 23,5 günlük iş listesi"
+  ],
+  "yok": [
+   "Çalışan ürün: kalıcı veri, kimlik doğrulama, ilan kaydı, ödeme yok",
+   "Açılmış ödeme hesabı ve kurulmuş şirket yok",
+   "Ölçülmüş dönüşüm, tekrar alım, kayıp oranı ve arama hacmi yok",
+   "EİDS entegrasyonu ve tapu-kadastro veri protokolü yok",
+   "Dış sermaye taahhüdü yok",
+   "Yazılı pilot, referans ya da kurucu dışında ekip yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Plan iki hat önerir: kurucunun hemen çıkaracağı ParselQ Rapor (299-799 ₺) ve Parsel Kartı (299-499 ₺/ay); pazar yeri yalnız dış sermaye ve kapılı pilotla. Hat B baz senaryoda nakit başabaş yaklaşık 7. ay; kurucu zamanı dahil negatif.",
+  "gpt": "Strateji, ilan platformundan önce yetkili belgeleri kaynak, tarih ve varsayım izli karar dosyasına çeviren uzmanlı hizmeti önerir: 5-15 kişilik danışmanlık ofisleri, 4.000 ₺/rapor test fiyatı. Panel sürümleri, katalog ve backend bağımsız gelir ürünü sayılmaz.",
+  "ayrisma": "Claude düşük fiyatlı, kendi kendine akan ürünle bireysel alıcıya ve emlakçıya gider; GPT yüksek fiyatlı, uzman onaylı, ilişkiye dayalı dosyayı danışmanlık ofislerine satar. Biri açık veri ve kullanıcı belgesine, diğeri yetkili belge ve uzman onayına yaslanır.",
+  "birlesik": "Önce kurucunun 8 haftada satabileceği en küçük kapsam: ParselQ Rapor ve Parsel Kartı. Ortak ilke: kaynak izi ve 'bilgi notu, değerleme değildir'. Uzmanlı dosya ilişki bulunursa denenir; pazar yeri sermaye ve EİDS olmadan açılmaz."
+ },
+ "analist_gorusu": "En gerçekçi yol Parsel Kartı ile ParselQ Rapor'u ücretsiz pilot kart ve örnek rapor üzerinden birlikte başlatmak. Tek rapor 416 ₺ net; 3.000 USD (144.000 ₺) hedefi bu fiyatlarla 6 ayda zor. Pazar yeri bu pencerede tahsilat getirmez.",
+ "secenekler": [
+  {
+   "id": "parselq-a",
+   "ad": "ParselQ Rapor: tek parsel bilgi notu (bireysel alıcı)",
+   "tur": "hizmet",
+   "musteri": "Şehir dışından ya da yurt dışından arsa/tarla bakan bireysel alıcı; ikincil: hissedarlı arsa satıcısı, küçük müteahhit",
+   "is": "Almadan önce parselin doğru yer olduğunu, imar durumunu, çevresini, risklerini ve emsal fiyat bandını anlamak",
+   "tetikleyici": "Kapora istenmesi, eşin 'belgesi var mı' sorusu, ilandaki 'imar durumu sorunuz' ibaresi, yaz öncesi diaspora alım dönemi",
+   "teklif": "Ada/parsel ve varsa imar belgesinden 48 saatte 3 sayfa PDF bilgi notu; yanlış parselde ya da gecikmede koşulsuz iade; değerleme değildir",
+   "fiyat": "Temel 299, Standart 499, Pro 799 ₺ (KDV dahil); toplu analiz 2.500 ₺ / 3 parsel; diaspora 19-39 USD",
+   "kanal_birincil": "Elle yazılmış 20 ilçe imar rehberi sayfası (arama) ve Ekşi Sözlük ile Donanımhaber arsa başlıklarında soru cevaplama",
+   "kanal_yedek": "Diaspora Facebook sayfaları, arsa YouTube kanallarında yorum ve ortak video, harita büroları ile karşılıklı yönlendirme",
+   "ilk_adim": "Ücretsiz ön kontrol formunu aç; Biga, Balıkesir ve Didim için 3 herkese açık örnek rapor yayınla",
+   "ilk_kapsam": "Form, belge yükleme, ödeme bağlantısı, 3 sayfalık PDF şablonu, harita ve mesafe tablosu, deprem sınıfı, elle emsal girişi; imar özeti ilk 100 raporda analist kontrollü",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Kod, şablon ve marka kurucuda; harita ve deprem verisi açık lisanslı (atıf şartıyla). Kullanıcı belgesi kazınmaz."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK metinleri, 'bilgi notu' ibaresi (SPK değerleme sınırı), cayma istisnası ve tapu-kadastro koşulları hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Sanal POS ve Shopier yolu belli; şirket ve hesap açılmadı, test ödemesi yapılmadı. Diaspora için yasal satıcı hizmeti teyitsiz."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (bireysel arsa alıcısı) ama isim listesi yok; alıcılar dağınık ve arama ile gelecek."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal ve ilk adım adlı (ilçe rehberleri, Ekşi, Donanımhaber); yedek: YouTube, diaspora sayfaları, harita büroları."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Beklenen 170 saat (25 saat/haftada ~7 hafta), üst sınır 240 (8 haftayı aşar); derinlik D.8 ~23,5 gün. 8 haftalık dilim tamamlanmadı; tahmin sınanmadı."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 25.000 ₺ (metin hizmeti, alan adı, kuruluş); tavan 50.000 ₺ altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Tek 3 sayfa şablon, 3 sabit paket ve sabit fiyat; özel geliştirme yok."
+    }
+   },
+   "kapi_duzeltme": "G2: hukukçu ve mali müşavir teyidi. G3: ödeme hesabı aç, test ödemesi yap. G4: 20 hedef alıcı kaynağını ad ve grup olarak listele. G6: kapsamı yazılı sabitle, haftalık saat ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 416,
+    "degisken_maliyet_tl": 47,
+    "sabit_gider_aylik_tl": 5000,
+    "baslangic_nakit_tl": 25000,
+    "kalan_efor_saat": {
+     "min": 110,
+     "beklenen": 170,
+     "max": 240
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 100
+    },
+    "satis_basina_kurucu_saati": 1,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 4160,
+     "baz": 12480,
+     "iyi": 43680
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 10,
+     "baz": 30,
+     "iyi": 105
+    },
+    "alti_ay_musteri": {
+     "kotu": 9,
+     "baz": 26,
+     "iyi": 91
+    },
+    "donusum_orani": {
+     "dusuk": 0.015,
+     "yuksek": 0.08
+    },
+    "dayanak": "Plan 5, 6, 8; derinlik C.8, D.8: Standart 499 KDV dahil = 416 net. Plan yıl-1 rampası ilk 6 ayda 105 satış (iyi); MVP gecikmesi, 3 hafta ödeme blokajı ve ölçülmemiş organik trafik nedeniyle rampa 3 ay kaydırıldı: baz 30, kötü 10. Efor: D.8 rapor kapsamı ~21,5 gün x 8 saat + tampon. Değişken: ödeme 22 + LLM/OCR 25 ₺. Oranlar varsayım."
+   },
+   "deney": {
+    "varsayim": "Bireysel alıcı ücretsiz ön kontrolden sonra 299-499 ₺ ödeyecek ve ikinci parsel için tekrar alacak",
+    "yontem": "Ön kontrol formu ve 3 örnek rapor yayınla; ilçe rehberleri ile Ekşi/forum cevaplarından gelen talepleri ücretsiz ön kontrole al, sipariş bağlantısı gönder; dönüşümü kanıt defterine yaz.",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 1500,
+    "basari_olcutu": "30 günde en az 5 ücretli rapor ve ön kontrolden siparişe dönüşüm en az %8",
+    "birakma_olcutu": "30 günde 2'den az ücretli rapor ya da ön kontrolden siparişe dönüşüm %2'nin altında",
+    "sonraki_dilim": "Başarılıysa Parsel Kartı ile birleşik emlakçı denemesi ve otomatik rapor; ücretli arama yalnız tekrar alım %15 üstündeyse"
+   },
+   "etiketler": {
+    "segment": "Bireysel arsa alıcısı (şehir dışı, diaspora)",
+    "kanal_turu": "içerik",
+    "teknoloji": "Vite, React, FastAPI, MapLibre, OCR + LLM",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan bölüm 3.2, 5, 6, 8: baz 12 ay 390 rapor, Standart 416 ₺ net, ödeme komisyonu %4,29 + 0,25 ₺. Derinlik A.1-A.8, C.2-C.3: rakipler Endeksa arsa raporu 1.199 ₺, Eder Mi 250-950 ₺; rakip fiyat listeleri dış kaynak sinyalidir (en çok E1); alıcının ödeme davranışını kanıtlamaz. Ödeyen müşteri 0; dönüşüm ve arama hacmi varsayımdır. Plan bölüm 2: gerçek MVP %15-20."
+  },
+  {
+   "id": "parselq-b",
+   "ad": "Parsel Kartı: emlakçıya arsa ilanı için güven kartı aboneliği",
+   "tur": "yazılım ürünü",
+   "musteri": "Bodrum, Çeşme, Urla, Didim ve Kuşadası'nda arsa portföylü, yetki belgeli emlak ofisleri",
+   "is": "Arsa ilanını diğer ofislerden ayırmak ve alıcının 'imar durumu ne, parsel nerede' sorusunu ilanın içinde cevaplamak",
+   "tetikleyici": "Mart-Mayıs sezon öncesi portföy tazeleme, rakip ofisin kartlı ilanı, EİDS sonrası güven sinyali ihtiyacı",
+   "teklif": "Ada/parsel girişinden 24 saatte ilan görseli ve açıklaması: m², imar özeti, mesafe tablosu, deprem sınıfı, harita, QR; ilk 10 kart ücretsiz, 7 gün deneme",
+   "fiyat": "Ofis 299 ₺/ay (10 kart), Ofis+ 499 ₺/ay (sınırsız kart, rapor %30 indirim); KDV dahil, ortalama 399 ₺",
+   "kanal_birincil": "pilot ilçelerdeki arsa ofislerine herkese açık iletişim bilgisiyle tek mesajlık WhatsApp ve ücretsiz örnek kart (haftada 20 görüşme)",
+   "kanal_yedek": "TÜGEM ve TEMFED üye dernekleri (Bodrum, Kuşadası, Didim) ile 20 dakikalık EİDS sonrası arsa ilanı sunumu; kart QR döngüsü",
+   "ilk_adim": "15 ofisle WhatsApp görüşmesi başlat, 5 ofise ücretsiz pilot kart üret",
+   "ilk_kapsam": "Kart üreteci (PNG/PDF, QR, ofis logosu, EİDS izin numarası alanı), herkese açık parsel sayfası, ödeme bağlantısı; ilk kartlar elle üretilir, ofis paneli sonra",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Kart şablonu, kod ve marka kurucuda; harita ve deprem verisi açık lisanslı. Ofis logosu ve ilan verisi ofisten gelir."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kartın 'ilan' sayılıp sayılmadığı (EİDS, taşınmaz ticareti yönetmeliği) için yazılı görüş gerekir; KVKK ve ticari ileti kuralları teyit bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Aylık tahsilat için sanal POS tekrarlı ödeme ya da havale yolu belli; hesap açılmadı, test ödemesi yok."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (arsa odaklı ofis); 5 ilçede herkese açık kaynaklardan derlenecek ofis listesi var ama 20 isim henüz sayılmadı."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal (ofislere doğrudan WhatsApp) ve yedek (TÜGEM, TEMFED dernek sunumu) adlı; ilk adım 15 görüşme."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Elle üretimle beklenen 70 saat (3,5 hafta); ama ürün %15-20 hazır, önceki 8 haftalık dilim tamamlanmadı ve satış döngüsü (7 gün deneme, ödeme hesabı) ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 20.000 ₺ (metinler, kuruluş, alan adı); tavanın altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Tek kart şablonu ve iki sabit paket; ofis yalnız logo ve numara girer, özel geliştirme yok."
+    }
+   },
+   "kapi_duzeltme": "G2: Bakanlık il müdürlüğünden ya da hukukçudan yazılı görüş. G3: ödeme hesabı aç, test ödemesi yap. G4: 20 ofisi ad ve ilçe listele. G6: haftalık saati ve deneme döngüsünü ölç.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 332,
+    "degisken_maliyet_tl": 25,
+    "sabit_gider_aylik_tl": 4500,
+    "baslangic_nakit_tl": 20000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 70,
+     "max": 120
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 80
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 3320,
+     "baz": 12616,
+     "iyi": 33200
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 10,
+     "baz": 38,
+     "iyi": 100
+    },
+    "alti_ay_musteri": {
+     "kotu": 4,
+     "baz": 14,
+     "iyi": 30
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "Plan 5, 6, 11; derinlik C.3, C.8: ortalama 399 KDV dahil = 332 net. Haftada 20 görüşme ve %5 dönüşüm = ayda ~4 hedef; ilk ödeme 45. günden (kurulum, 7 günlük deneme, hesap açılışı) ve ölçülmemiş dönüşüm nedeniyle baz ~3/ay, aylık kayıp %6 ile 6. ay sonunda 14 ofis, 38 abone-ay. 35 ofis hedefi iyi senaryo. Oranlar varsayım."
+   },
+   "deney": {
+    "varsayim": "Arsa odaklı ofisler 7 günlük denemeden sonra ayda 299-499 ₺ ödeyecek ve her ay kart üretmeye devam edecek",
+    "yontem": "15 ofisle WhatsApp; 5'ine 3 ücretsiz kart, 7 gün deneme, ardından ödeme bağlantısı. Kart başına QR tıklaması ve alıcı sorusundaki azalma ofisçe bildirilir; kanıt defterine yazılır.",
+    "sure_gun": 35,
+    "maliyet_saat": 35,
+    "maliyet_tl": 300,
+    "basari_olcutu": "5 deneme ofisinden en az 2'si öder; kart başına ortalama en az 3 QR tıklaması",
+    "birakma_olcutu": "35 günde 15 görüşmeden ödeyen ofis yok ya da denemeden ödemeye dönüşüm %10'un altında",
+    "sonraki_dilim": "Başarılıysa ofis paneli, rapor indirimi ve dernek sunumu; 10 ödeyen ofise ulaşınca Parsel Kartı için fiyat basamakları"
+   },
+   "etiketler": {
+    "segment": "Arsa odaklı yetki belgeli emlak ofisleri",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Vite, React, FastAPI, MapLibre, QR",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan bölüm 3.1, 5, 6, 7.2: ortalama 399 ₺ KDV dahil = 332 net, aylık kayıp %6 (varsayım), ofis edinim maliyeti 1.500 ₺ ve geri ödeme 4,9 ay; sahibinden kurumsal paket ücretleri kamuya açık listede yok (doğrulanmadı). Derinlik C.2, C.5: ofislere doğrudan WhatsApp, 5 ilçe, TÜGEM 2.000+ üye. Ödeyen müşteri 0; deneme-ödeme oranı hedeftir."
+  },
+  {
+   "id": "parselq-c",
+   "ad": "Uzmanlı karar dosyası: kaynak izli arsa raporu (danışmanlık ofisi)",
+   "tur": "hizmet",
+   "musteri": "5-15 kişilik arsa ve ticari gayrimenkul danışmanlık ofisleri; ikincil: küçük proje geliştirici",
+   "is": "Yetkili belge, alan, birim ve fiyat varsayımlarını kaynak, tarih ve uzman onayıyla tek karar dosyasında toplamak; iki seçeneği karşılaştırmak",
+   "tetikleyici": "Alıcıyla haftalık görüşme öncesi hazırlık; ayda 5-30 ciddi proje dosyası ve yeni gelen belge ya da revizyon",
+   "teklif": "Kaynak, tarih ve doğrulayıcı izli, uzman onaylı karar dosyası (PDF) ve iki seçenek karşılaştırması; eksik belge boş bırakılır, yapay zekâ doldurmaz",
+   "fiyat": "Rapor başına 4.000 ₺ test fiyatı (KDV hariç varsayıldı); tekrar iş çıkarsa kaynak ve sürüm aboneliği sonra",
+   "kanal_birincil": "Gerçek ilişkisi olan bir danışmanlık ofisine anonim örnek dosya ve ofisin alıcıya teslim linki (ofis adı henüz yok)",
+   "kanal_yedek": "Yerel meslek eğitimi (30 dakikalık kaynak ve varsayım gösterimi) ve belge kontrol listesi şablonu (arama niyeti ölçülmedi)",
+   "ilk_adim": "Beş sentetik dosya hazırla; gerçek ilişkisi olan bir ofisten iki yetkili pilot iste",
+   "ilk_kapsam": "Elle P0: kanonik dosya kimliği, belge kaynak/tarih/doğrulayıcı alanı, eksik belge kontrolü, iki seçenek karşılaştırması, uzman onayı, PDF; paylaşım bağlantısı ve rol yok",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Şablon ve kod kurucuda; ama belge ve veri müşterinin yetkisine bağlı, lisanslı harita/API kullanımı ve belge sahipliği doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "İmar, hukuk ve değerleme iddiaları uzman onayı ister; SPK değerleme sınırı ve gizli müşteri belgeleri için KVKK teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "B2B havale ve e-arşiv fatura yolu belli; hesap ve şirket açılmadı, 4.000 ₺ fiyat sınanmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (5-15 kişilik danışmanlık ofisi) ama isim yok; strateji önce gerçek ortak ilişkisi gerektiğini söylüyor."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Üç rota tarif edilmiş ama hedef ofis, eğitim sahibi ya da dizin adlandırılmadı; erişim garantisi yok."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Elle P0 için tahmini 60 saat; kanonik model ve uzman kabulü belirsiz, satış döngüsü ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 5.000 ₺ (şablon, alan adı, hesap); tavanın çok altında; uzman ücreti satışla birlikte ödenir."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kapsam sınırı yazılı değil; her proje farklı belge getirir, sabit kapsamlı paket tanımı henüz yok."
+    }
+   },
+   "kapi_duzeltme": "G1/G2: veri sahipliği ve uzman onay sözleşmesi. G4/G5: gerçek ortak ofis ve eğitim sahibini adlandır. G6/G8: sabit kapsamlı tek dosya paketi ve onay kuralı yaz.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 4000,
+    "degisken_maliyet_tl": 1020,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 5000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 60,
+     "max": 110
+    },
+    "ilk_tahsilat_gun": {
+     "min": 30,
+     "max": 90
+    },
+    "satis_basina_kurucu_saati": 12,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 8000,
+     "iyi": 24000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 6
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.1
+    },
+    "dayanak": "GPT stratejisi, ücretli paket ve 90 gün deneyi: 4.000 ₺/rapor test fiyatı (KDV hariç kabul); uzman 800 + araç 100 + tahsilat 120 = 1.020 ₺ değişken. Baz: tek ofis x 2 rapor (isimli ofis ve yetkili pilot yok), iyi 3 ofis x 2 (GPT 90 gün ikinci teslim hedefi), kötü 0. Oranlar varsayım; kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Gerçek ilişkisi olan bir danışmanlık ofisi, uzman onaylı kaynak izli dosyaya rapor başına 4.000 ₺ ödeyecek ve ikinci dosyayı getirecek",
+    "yontem": "Beş sentetik dosya ve anonim örnekle iki yetkili pilot iste; bir pilotu ücretli teklife çevir; kabul, düzeltme sayısı ve operatör ile uzman saatlerini ölç.",
+    "sure_gun": 45,
+    "maliyet_saat": 40,
+    "maliyet_tl": 800,
+    "basari_olcutu": "En az bir ofis ücretli ilk dosyayı ödeyip ikinci dosya için yazılı niyet bildirir; kaynak kapsamı %80 üstü",
+    "birakma_olcutu": "45 günde yetkili pilot bulunamaz ya da iki kritik imar iddiası hatalı çıkar",
+    "sonraki_dilim": "Başarılıysa sürüm karşılaştırma, süreli paylaşım bağlantısı ve rol ayrımı; aksi halde modülleri Parsel Kartı ve Rapor'a kat"
+   },
+   "etiketler": {
+    "segment": "Arsa ve ticari gayrimenkul danışmanlık ofisleri",
+    "kanal_turu": "ortak",
+    "teknoloji": "Elle PDF ve Sheets; React, FastAPI sonra",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "GPT stratejisi (ürün, kullanıcı ve dağıtım): ücretli paket bölümünde 1.780 ₺ katkı hesabı, P0/P1/P2 kapsamı, 30/60/90 günlük kanıt deneyi ve 'canlı ürün doğrulanmadı' notu. Panel sürümleri, katalog, bağlayıcı ve prototip dosyaları bağımsız gelir ürünü sayılmaz. Ödeyen müşteri ve isimli ortak yok; erişim garantisi verilmiyor."
+  }
+ ]
+}

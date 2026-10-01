@@ -1,0 +1,16 @@
+# bağımlılıklar ve test çıktıları
+node_modules/
+test-results/
+playwright-report/
+__pycache__/
+*.pyc
+.DS_Store
+
+# depoya girmeyen özel dosyalar: kaynak dosya eşlemesi ve yasaklı ad listesi
+private/
+
+# türetilmiş ara dosyalar (npm run build yeniden üretir)
+data/calib/
+data/model.json
+data/workbook_map.json
+qa/shots/

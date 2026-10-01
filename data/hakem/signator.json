@@ -1,0 +1,53 @@
+{
+ "slug": "signator",
+ "kararlar": [
+  {
+   "itiraz": "signator-c: 1.000 TL / 14 saat yaklaşık 70 TL/saat; kart eşiğin altında kalabilir diyor, eşik saat ücretinin çok altında.",
+   "karar": "kabul",
+   "degisiklik": "signator-c finans.dayanak: 'eşiğin altında kalabilir' idi; yaklaşık 70 TL/saat, eşiğin çok altında olarak düzeltildi.",
+   "gerekce": "1.000 TL / 14 saat yaklaşık 70 TL/saat; 500 TL eşikle karşılaştırınca kesin düşük."
+  },
+  {
+   "itiraz": "Kaynak canlı ürünü doğrulanmamış sayar; kart bugun.var yerel sürümü sunuyor, istemci uyumu sınanmamış.",
+   "karar": "kismen",
+   "degisiklik": "bugun.yok içindeki test maddesine 'canlı ürün doğrulanmadı, yalnız yerel sürüm gözlemi' notu eklendi; bugun.var aynı kaldı.",
+   "gerekce": "Yerel statik sürüm kaynakta var ve kartta yerel diye geçiyor; ama canlı ürün doğrulanmadığı açıkça yazılmalıydı."
+  },
+  {
+   "itiraz": "signator-a, G6: satış döngüsü ve ajans karar süresi ölçülmedi; kart gecti diyor.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kalan efor yaklaşık 95 saat (4-5 hafta), plan döngüyü 2-4 hafta, ilk tahsilat 35-120 gün görür; 6 aya geniş marj var."
+  },
+  {
+   "itiraz": "signator-a, G1: ikon ve bağımlılık lisansları doğrulanmadı; kart gecti.",
+   "karar": "kabul",
+   "degisiklik": "G1 gecti iken test oldu; not ve kapi_duzeltme güncellendi (lisans denetimi eklendi).",
+   "gerekce": "Kaynakta ikon ya da bağımlılık lisansına dair doğrulama yok; gecti için lisansların satışa uygunluğu gerekir."
+  },
+  {
+   "itiraz": "signator-b, G1: ikon ve bağımlılık lisansı doğrulanmadı.",
+   "karar": "kabul",
+   "degisiklik": "G1 gecti iken test oldu; not ve kapi_duzeltme güncellendi.",
+   "gerekce": "Kaynakta lisans doğrulaması yok; yalnız beyan var."
+  },
+  {
+   "itiraz": "signator-a, alti_ay_odeme_adedi baz 2 yerine 1.",
+   "karar": "kabul",
+   "degisiklik": "baz ödeme/müşteri 2 iken 1, baz tahsilat 9.980 iken 4.990 TL; dayanak güncellendi.",
+   "gerekce": "60 e-posta x %15 x %30 x %30 yaklaşık 0,8 satış; mevcut ilişki katkısı kanıtsız."
+  },
+  {
+   "itiraz": "signator-b, alti_ay_odeme_adedi baz 8 yerine 2-3.",
+   "karar": "kabul",
+   "degisiklik": "baz ödeme/müşteri 8 iken 3, baz tahsilat 12.000 iken 4.500 TL; dayanak güncellendi.",
+   "gerekce": "Arama etkisi 8-12 hafta gecikir, hacim ve %10 dönüşüm kanıtsız; 15 ekip plan hedefidir, baz değil."
+  },
+  {
+   "itiraz": "signator-c, alti_ay_odeme_adedi baz 6 yerine 3.",
+   "karar": "kabul",
+   "degisiklik": "baz ödeme/müşteri 6 iken 3, baz tahsilat 6.000 iken 3.000 TL; dayanak güncellendi.",
+   "gerekce": "5-15 ilişkide %30 pilot kabulü ödeme değildir; ödemeye dönüşüm kanıtsız."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "slug": "vize-operasyon",
+ "secenekler": {
+  "vize-operasyon-a": {
+   "satis_basina_kurucu_saati": 14,
+   "teslim_saat_odeme_basina": 5,
+   "musteri_basina_aylik_destek_dk": 120,
+   "not": "Aylık abonelikte acente başına aylık ayar 2 saat + ilk kurulum ve ülke eşleme 8 saat, 2 acente / 5 ödemeye yayıldı (3,2); varsayım. Kartta 120 dk destek."
+  },
+  "vize-operasyon-b": {
+   "satis_basina_kurucu_saati": 16,
+   "teslim_saat_odeme_basina": 12,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Hizmet: kurulum ve eşleme 24 saat, aylık kuyruk ve kural bakımı 8 saat x 3 ay = 48 saat / 4 ödeme; varsayım. Aylık hizmet teslime taşındı, destek 60 dk."
+  },
+  "vize-operasyon-c": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 1,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Kartta 1,5 saat satış; 1 saati rapor kalite kontrolü ve Tam Dosya yeniden kontrolüne taşındı (teslim), varsayım. Rapor otomatik; 10 dk destek."
+  }
+ }
+}

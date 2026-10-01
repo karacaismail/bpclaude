@@ -1,0 +1,35 @@
+{
+ "slug": "frontend-atlasi",
+ "kararlar": [
+  {
+   "itiraz": "B: arama ana kanal ama Türkçe arama hacmi ölçülmedi, site yayında değil; kanal bugün sıfır sinyal verir.",
+   "karar": "kismen",
+   "degisiklik": "B kanit_notlari: 'site yayında değil; arama kanalı bugün ölçülmüş sinyal vermiyor' eklendi; kanal ve G5 gecti aynı kaldı.",
+   "gerekce": "Kanal adlı ve ilk adım var (G5 gecti), ancak plan hacmi ölçmediğini söylüyor; sinyal yokluğu açıkça yazıldı."
+  },
+  {
+   "itiraz": "C: 4.800 ₺ fiyat kaynak destekli sunuluyor, oysa plan ve GPT dosyası bu birimi fiyatlamıyor.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart dayanak ve kanıt notlarında fiyatın varsayım olduğunu, planın birimi fiyatlamadığını ve GPT dosyasında fiyat olmadığını zaten açıkça yazıyor."
+  },
+  {
+   "itiraz": "B G6: ilk satış arama indekslenmesine bağlı (7-17. hafta), süre ölçülmedi; kart gecti diyor.",
+   "karar": "kabul",
+   "degisiklik": "B G6 gecti -> test; not ve kapi_duzeltme güncellendi (indeksleme süresini Search Console ile ölç).",
+   "gerekce": "Kapı tanımına göre satış döngüsü ölçülmediyse test; plan hacmi ve indekslemeyi ölçmediğini belirtiyor."
+  },
+  {
+   "itiraz": "B alti_ay_odeme_adedi.baz 28, itiraz 8-15; yayında olmayan sitede trafik 8-12 haftada oluşur, 28 satış ~9.000 ziyaret ister.",
+   "karar": "kabul",
+   "degisiklik": "B ödeme/müşteri adedi kötü/baz/iyi 8/28/60 -> 5/12/40; tahsilat 2300/8100/17500 -> 1455/3492/11640; dayanak güncellendi.",
+   "gerekce": "Kaynak belirsiz olduğunda düşük gelir seçilir; plan 6. ay trafiği 4.000/ay varsayımı ve %0,3 dönüşümle 12 satış tutarlı."
+  },
+  {
+   "itiraz": "A alti_ay_tahsilat_tl.baz 6.300, itiraz 1.700-3.300; ödeyen müşteri ve isim listesi yok, 2 lisans + 4 kit kanıtsız iyimser.",
+   "karar": "kabul",
+   "degisiklik": "A baz tahsilat 6300 -> 3156; baz adet/müşteri 6 -> 3 (1 lisans + 2 kit); dayanak güncellendi.",
+   "gerekce": "Ödeyen müşteri 0 ve liste yok (G4 test); temkinli seçim itirazın aralığında kalan 1 lisans + 2 kit."
+  }
+ ]
+}

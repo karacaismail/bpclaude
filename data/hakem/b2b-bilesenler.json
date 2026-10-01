@@ -1,0 +1,77 @@
+{
+  "slug": "b2b-bilesenler",
+  "kararlar": [
+    {
+      "itiraz": "A: plan 4-6 ve 2-4 site diye çelişiyor; kart iyimser uca yaslanıyor",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart düşük uç 2-4 siteyi esas alıyor; 6 ayda baz yalnız 1 blok + 1 hareket paketi, iyi 2+2; iyimser uca yaslanma yok."
+    },
+    {
+      "itiraz": "B: 12.000 ₺ fiyatın dayanağı yok; GPT fiyat ve talep doğrulamıyor; ajans ilişkisi yazılı değil",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart fiyatın Claude planı 5'teki 20-40 bin ₺ varsayımının altında kurulduğunu zaten açıkça yazıyor; ilişki eksiği G4 testinde. Gelir tarafı finans kararlarında kısıldı."
+    },
+    {
+      "itiraz": "C: planın hükmü Hayır, GPT ödeme talebi yok der; kart 6 ayda 4-16 satış gösteriyor",
+      "karar": "kabul",
+      "degisiklik": "C alti_ay_odeme_adedi/musteri baz 4 iyi 16 idi, baz 2 iyi 8 oldu; tahsilat 9.408/37.632 yerine 4.704/18.816 ₺; dayanak güncellendi.",
+      "gerekce": "Kaynak talep kanıtı vermiyor, plan hükmü Hayır, yeni yazar ve ücretsiz alternatif var; kaynak desteklemezse düşük gelir seçilir."
+    },
+    {
+      "itiraz": "A: ihracatçı alıcının bloğu aradığına dair kaynak yok; tetikleyici site teklifine bağlı",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart bunu zaten ek paket olarak kuruyor; müşteri getirisinin varsayım ve ödeyen müşterinin 0 olduğu kanıt notunda yazılı. Talep eksiği puan konusu."
+    },
+    {
+      "itiraz": "B G5 test: ajans hedefleri (grup, dizin, ortak) adlandırılmadı; yalnız LinkedIn ve topluluk adı var",
+      "karar": "kabul",
+      "degisiklik": "B G5 gecti idi, test oldu; not ve kapi_duzeltme güncellendi.",
+      "gerekce": "Kanallar adlı ama alıcı olan ajansa ulaşan somut dizin, grup ya da ortak yok; tanıma göre test."
+    },
+    {
+      "itiraz": "C G6 test: efor en çok 180 saat, haftada 20 saatle 9 hafta; sınıra yakın",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart zaten test; kalan efor 8 haftayı aşabilir ama satılabilir kapsam açıkça uzak değil, kaldı için dayanak yok."
+    },
+    {
+      "itiraz": "A ilk_tahsilat_gun.min 45 yerine 90 olmalı; ilk 1-2 ay temizlik ve port",
+      "karar": "kismen",
+      "degisiklik": "A ilk_tahsilat_gun.min 45 idi, 60 oldu; dayanak güncellendi.",
+      "gerekce": "Plan ilk teklifi 7. haftaya, kapanışı 1-2 hafta sonraya koyuyor (en erken ~60. gün); 90 plana uymuyor, 45 iyimser."
+    },
+    {
+      "itiraz": "A alti_ay_musteri baz 2 iyi 3 ama tahsilat 1 blok + 1 hareket; baz 1 iyi 2 olmalı",
+      "karar": "kabul",
+      "degisiklik": "A alti_ay_musteri baz 2/iyi 3 idi, baz 1/iyi 2 oldu; dayanak aynı müşterinin ikisini de aldığını söylüyor.",
+      "gerekce": "Kaynak müşteri sayısını ayırmıyor; temkinli olan seçildi, 2 ödeme aynı müşteriden gelebilir."
+    },
+    {
+      "itiraz": "B donusum_orani %2-8 yerine %1-3 olmalı; soğuk LinkedIn teması, ilişkisiz ajanslar, kanıt yok",
+      "karar": "kabul",
+      "degisiklik": "B donusum_orani 0,02-0,08 idi, 0,01-0,03 oldu; dayanak güncellendi.",
+      "gerekce": "Ajans ilişkisi yazılı değil, dönüşüm kanıtı yok; plan LinkedIn görüşme oranını %0,5 veriyor; temkinli aralık seçildi."
+    },
+    {
+      "itiraz": "B alti_ay_odeme_adedi baz 2 iyi 5 iyimser; 10 temas x %2-8 yalnız 0,2-0,8 satış verir",
+      "karar": "kabul",
+      "degisiklik": "B odeme/musteri baz 2/iyi 5 idi, baz 1/iyi 3 oldu; tahsilat 24.000/60.000 yerine 12.000/36.000 ₺.",
+      "gerekce": "Kartın kendi deneyi (10 temas) 2 satışı desteklemiyor; baz 1, iyi 3 temkinli ve tahsilat = adet x 12.000 ile tutarlı."
+    },
+    {
+      "itiraz": "C alti_ay_odeme_adedi baz 4 iyi 16 iyimser; yeni yazar, ücretsiz alternatifler, port sonrası 2-3 ay",
+      "karar": "kabul",
+      "degisiklik": "C alti_ay_odeme_adedi ve alti_ay_musteri baz 4/iyi 16 idi, baz 2/iyi 8 oldu; tahsilat 4.704/18.816 ₺.",
+      "gerekce": "Port sonrası yalnız 2-3 ay kalıyor, ücretsiz alternatifler ve talep kanıtı yok; planın 5/25/100 yıllık varsayımı iyimser."
+    },
+    {
+      "itiraz": "Kendi taramam: A G4 test, ama notta mevcut site müşterisi ilişkisi belgede var deniyor",
+      "karar": "kabul",
+      "degisiklik": "A G4 test idi, gecti oldu; not ve kapi_duzeltme güncellendi (20 isim listesi maddesi çıkarıldı).",
+      "gerekce": "G4 tanımı isim listesi ya da belgelenmiş mevcut ilişkiyi yeterli sayar; plan 3 mevcut site müşterisini yazıyor."
+    }
+  ]
+}

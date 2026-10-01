@@ -1,0 +1,47 @@
+{
+ "slug": "eklenti-firsat-panosu",
+ "kararlar": [
+  {
+   "itiraz": "A G6: 40 saat ve 10. hafta; kaynak haftada 4-6 saat veriyor, 7-10 hafta, 8 hafta sınırı",
+   "karar": "kismen",
+   "degisiklik": "A G6 gecti -> test (not güncellendi); eforu 40 saat kalıyor",
+   "gerekce": "Haftada 5 saatle 40 saat 8 haftaya denk geliyor; 'altında' ölçütü kanıtsız. Tahsilat 10. hafta 6 aya sığar."
+  },
+  {
+   "itiraz": "Kart alıcı havuzunu belirtmiyor; TR solo geliştirici ve 83 bin küresel sayı kaynaksız VARSAYIM",
+   "karar": "kismen",
+   "degisiklik": "A kanit_notlari: havuz sayılarının kaynaksız varsayım olduğu eklendi",
+   "gerekce": "Kaynak sayıları VARSAYIM etiketli; kart rakam vermediği için yalnız not eklendi, puan ve finans değişmedi."
+  },
+  {
+   "itiraz": "Ajans personası ortakla onaylar; ajans sayısı ve 15 bin TL eşiği kaynaksız VARSAYIM",
+   "karar": "kismen",
+   "degisiklik": "C kanit_notlari: ajans sayısı ve onay eşiğinin varsayım olduğu eklendi",
+   "gerekce": "Ortak onayı kaynakta var (persona); sayılar varsayım. Kart iddiası yanlış değil, belirsizlik notlandı."
+  },
+  {
+   "itiraz": "C G6: gecti kanıtsız; satış döngüsü ölçülmedi, ajans ilişkisi belgelenmemiş, tahsilat 3-5 ay",
+   "karar": "kabul",
+   "degisiklik": "C G6 gecti -> test; kapi_duzeltme'ye G6 eklendi",
+   "gerekce": "Kriter tanımı G6: satış döngüsü ölçülmediyse test. Kaynakta döngü yalnız varsayım (1-2 hafta, 3-6 hafta)."
+  },
+  {
+   "itiraz": "A G8: kaynak abonenin istediği ekosistemi işlemeyi vaat ediyor; yazılı kapsam sınırı yok",
+   "karar": "kabul",
+   "degisiklik": "A G8 gecti -> test; kapi_duzeltme'ye G8 eklendi",
+   "gerekce": "Kaynak e-postası ve persona ekosistem isteğini sonraki sayıda işlemeyi vaat ediyor; sınır yazılı değil, G8 test tanımı."
+  },
+  {
+   "itiraz": "C alti_ay_musteri baz 2, iyi 4: ödeme kanıtı yok, %15 dönüşüm varsayım; baz 0-1, iyi 2 daha gerçekçi",
+   "karar": "kismen",
+   "degisiklik": "C müşteri/ödeme baz 2->1, iyi 4->3; tahsilat baz 28704->14352, iyi 57408->43056; dayanak",
+   "gerekce": "Plan 6. ay hedefi 3 lisans (iyi); planın 12 aylık bazı 2 lisans, gecikmeyle 6 ayda 1. İyi 2'ye indirilmedi."
+  },
+  {
+   "itiraz": "A sabit_gider_aylik_tl 3200; kaynakta yaklaşık 4.500 TL/ay",
+   "karar": "kabul",
+   "degisiklik": "A sabit_gider_aylik_tl 3200 -> 4500; dayanak güncellendi",
+   "gerekce": "Plan 6 başabaş: araçlar, mali müşavir payı 2.000 TL ve alan adı ≈ 4.500 TL/ay."
+  }
+ ]
+}

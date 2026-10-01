@@ -1,0 +1,47 @@
+{
+ "slug": "cok-dilli-arayuz",
+ "kararlar": [
+  {
+   "itiraz": "A: 'Kurucu tek başına 8 haftada satabilir' kaynakta yok; şablon, teklif, sorumluluk reddi yok; kabul %50 ve 6-10 proje varsayım.",
+   "karar": "kabul",
+   "degisiklik": "analist_gorusu: 'tek başına 8 haftada satabilir' ifadesi çıkarıldı; şablon eksiği ve varsayım vurgusu eklendi.",
+   "gerekce": "Kaynakta şablon ve teklif %60 tamamlanmış sayılıyor, 8 haftalık satış iddiası yok; kabul oranı varsayım."
+  },
+  {
+   "itiraz": "B: Trafik ve dönüşüm varsayım, modül yayında değil, anahtar kelime hacmi yok; ücretsiz W3C ve TMS içerikleri güçlü ikame.",
+   "karar": "kismen",
+   "degisiklik": "alti_ay_odeme_adedi baz 40 idi, 20 oldu; müşteri ve tahsilat baz buna göre güncellendi, dayanak yazıldı.",
+   "gerekce": "Kaynak varsayımı etiketliyor; ikame zaten kanit_notlari'nda yazılı, rakam ise iyimserdi."
+  },
+  {
+   "itiraz": "C: Pilot 14.400 TL teklif testi, rakip fiyatı değil; çalışan CLI yok, 24-48 saat yalnız ilk paket; Playwright ve Storybook en güçlü ikame.",
+   "karar": "kismen",
+   "degisiklik": "kalan_efor_saat 30/50/80 idi, 40/70/110 oldu; dayanak güncellendi. Teklif testi ve ikame notu kartta zaten var.",
+   "gerekce": "GPT dosyası hazırlığı yalnız ilk paket için veriyor; adapter ve CLI işi eksik. Fiyat niteliği zaten doğru yazılmış."
+  },
+  {
+   "itiraz": "cok-dilli-arayuz-a G6 test olmalı: ilk tahsilat ve satış döngüsü ölçülmedi, ödeyen müşteri yok, döngü varsayım.",
+   "karar": "kabul",
+   "degisiklik": "A G6 durumu gecti idi, test oldu; not ve kapi_duzeltme güncellendi.",
+   "gerekce": "Kapı tanımı: satış döngüsü ölçülmediyse test; kalan efor tek başına geçirmez."
+  },
+  {
+   "itiraz": "A satis_basina_kurucu_saati kartta 8, kaynakta denetim başına yaklaşık 2 gün (16 saat).",
+   "karar": "kabul",
+   "degisiklik": "A satis_basina_kurucu_saati 8 idi, 16 oldu; dayanak güncellendi.",
+   "gerekce": "Plan 8: denetim kurucudan 2 gün isteyen iş; 8 saat kaynağa aykırıydı."
+  },
+  {
+   "itiraz": "B alti_ay_odeme_adedi baz 40 iyimser; modül yayında değil, SEO gecikmeli; 15-20 gerçekçi.",
+   "karar": "kabul",
+   "degisiklik": "B odeme/musteri baz 40 idi, 20 oldu; tahsilat baz 9960 idi, 4980 oldu; kötü ve iyi aynı.",
+   "gerekce": "Plan 80 PDF'i 6. ay iyi hedefi sayıyor; yayında olmayan modül için baz yarıdan azı temkinli."
+  },
+  {
+   "itiraz": "C baz 1 pilot fazla: ilişki ve liste yok; baz 0, iyi 1; satis_basina_kurucu_saati 12 düşük, 20-30 olmalı.",
+   "karar": "kismen",
+   "degisiklik": "C odeme baz 1 idi 0; iyi 2 idi 1; tahsilat baz 0, iyi 14400; kurucu saati 12 idi 24. Müşteri sayıları aynı.",
+   "gerekce": "İlişki ve isim listesi yok; kaynak saat vermiyor, temkinli üst bant seçildi. 90 günde 2 pilot yalnız hedef."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "slug": "kar-pusulasi",
+ "secenekler": {
+  "kar-pusulasi-a": {
+   "satis_basina_kurucu_saati": 1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "Kopyası satılan yazılım: müşteriye özel iş yok, teslim 0 (lisans e-postası otomatik). Karttaki 1 saat satış ve 5 dk destek aynen korundu; varsayım."
+  },
+  "kar-pusulasi-b": {
+   "satis_basina_kurucu_saati": 4,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Abonelik yazılımı, müşteriye özel iş yok, teslim 0. Karttaki 4 saat satış ve 60 dk öncelikli destek aynen korundu; kurulum satış görüşmesinde yapılır. Varsayım."
+  },
+  "kar-pusulasi-c": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 6,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Varsayım: 200 SKUluk dosya için katkı hesabı 2 saat, eksik veri listesi 1, 3 fiyat deneyi ve yazılı rapor 3 saat; yapay zekâ hızlanması dahil. Destek rapor sonrası sorular."
+  }
+ }
+}

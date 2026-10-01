@@ -1,0 +1,341 @@
+{
+  "slug": "qral",
+  "baslik": "qral (hızlı başvuru bağlantıları Chrome uzantısı)",
+  "ozet": "Sekme başlığı ve adresini Markdown, HTML, JSON gibi biçimlerde kopyalayan, QR üreten, 33 dilli Chrome uzantısı. Kod yaklaşık %80 hazır, yayın hazırlığı eksik; mağazada yayında değil, ödeyen müşteri yok. Rakiplerin hepsi ücretsiz.",
+  "bugun": {
+    "var": [
+      "Yaklaşık 5.100 satırlık Manifest V3 uzantı kodu; işlev yaklaşık %80 tamam",
+      "33 dilde arayüz metni, klavye kısayolları, sağ tık menüsü, sekme yönetimi",
+      "Kopyalama şablon motoru (Markdown, HTML, BBCode, JSON) ve QR üretimi",
+      "Fiyat paketleri, ödeme sağlayıcı karşılaştırması ve 12 aylık projeksiyon yazılı"
+    ],
+    "yok": [
+      "Yayınlanmış mağaza listesi, kurulum ve yorum",
+      "Pro lisans ve ödeme akışı; ödeme hesabı açılmamış",
+      "Otomatik test ve gizlilik politikası; yayın öncesi temizlik bekliyor",
+      "Hiçbir kullanıcıyla fiyat görüşmesi yapılmadı"
+    ],
+    "odeyen_musteri": 0
+  },
+  "iki_calisma": {
+    "claude": "Gelir tavanı çok düşük bir mikro ürün: ücretsiz çekirdek, Pro tek seferlik 4,99 euro, Sınıf Paketi yıllık 14,99 euro. 12 ayda 110 euro baz gelir; 40-60 saatlik bitir-yayınla-portföye koy projesi.",
+    "gpt": "Canlı ürün doğrulanmamış. Daha dar bir ilk ürün önerir: araştırma analistine kaynaklı Markdown dışa aktarma, ekip şablonu için 500-1500 TL tek takım teklifi; hosted eşitleme ancak ortak arşiv ihtiyacı çıkarsa.",
+    "ayrisma": "Claude öğretmen ve not alan bireylere ucuz lisans satar; GPT araştırma ekibine küçük bir hizmet ve şablon paketi satar. Claude ürün hacmine, GPT ekip teklifine ve izin güvenine dayanır.",
+    "birlesik": "Ücretsiz çekirdek dağıtım motoru, para ise küçük dar kitlelerden gelir. İkisi de ücretli reklam ve büyük gelir beklemez; ikisi de önce izinleri ve yayın temizliğini şart koşar."
+  },
+  "analist_gorusu": "En gerçekçi yol: önce ücretsiz sürümü yayınlayıp ilk ödeyeni küçük bir ekip şablon teklifiyle aramak. Bireysel Pro 6 ayda birkaç yüz lira getirir; öğretmen paketi dönem başına bağlı.",
+  "secenekler": [
+    {
+      "id": "qral-a",
+      "ad": "Pro lisansı: bilgi çalışanı ve yapay zekâ kullanıcısı",
+      "tur": "eklenti",
+      "musteri": "Not alan bilgi çalışanı ve yapay zekâ sohbetine kaynak yapıştıran bireysel kullanıcı",
+      "is": "Açık sayfayı başlık, adres, tarih ve seçili alıntıyla not ve yapay zekâ sohbetine doğru biçimde taşımak",
+      "tetikleyici": "Günde 10-20 kez bağlantı yapıştırma alışkanlığı; belirli bir tarih ya da zorunluluk yok",
+      "teklif": "Ücretsiz çekirdek; Pro ömür boyu: kaynak bloğu şablonu, sınırsız şablon, 500 geçmiş, toplu QR, QR logo ve renk",
+      "fiyat": "4,99 euro (yaklaşık 249 TL) tek seferlik; ödeme sağlayıcı kesintisi sonrası net yaklaşık 226 TL",
+      "kanal_birincil": "Chrome Web Store listesi (copy link as markdown aramaları); ek olarak Edge Add-ons ve Firefox AMO",
+      "kanal_yedek": "Obsidian forumu ve Discord, r/ObsidianMD, Product Hunt lansmanı, açık kaynak GitHub deposu",
+      "ilk_adim": "Yayın öncesi temizliği bitirip ücretsiz sürümü Chrome Web Store'a göndermek",
+      "ilk_kapsam": "Ücretsiz sürüm yayında; Pro ödeme ve lisans anahtarı akışı canlı; en az kaynak bloğu, sınırsız şablon ve 500 geçmiş açılmış",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuda; üçüncü taraf kütüphane lisansları ve marka adı çakışması (kripto proje) doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Veri toplanmıyor; mağaza politikası, gizlilik metni ve yurt dışı satışın vergi okuması mali müşavir teyidi bekliyor."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Yurt dışı satış için yasal satıcı (MoR) hizmeti planlı; hesap açılmadı, test ödemesi yok."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi belli ama ismen 20 hedef alıcı listesi yok; kanal kayıt üzerinden anonim."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Birincil kanal Chrome Web Store, ilk adım ve yedek kanallar adıyla yazılı."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor yaklaşık 97 saat (4-5 hafta); plan ilk satışı 4.-6. aya koyuyor, satış döngüsü ölçülmedi."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi 5 dolarlık mağaza kaydı ve çeviri kontrolüyle yaklaşık 4.500 TL; tavanın çok altında."
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Herkes aynı ürünü ve lisans anahtarını alır; özel geliştirme yok."
+        }
+      },
+      "kapi_duzeltme": "Hesap açılışı ve test ödemesi (G3), hukuk ve vergi teyidi (G2), lisans taraması (G1), ilk 20 hedef alıcının listesi (G4), ilk satış ölçümü (G6) ile geçer.",
+      "finans": {
+        "satis_tipi": "tek seferlik",
+        "net_fiyat_tl": 226,
+        "degisken_maliyet_tl": 50,
+        "sabit_gider_aylik_tl": 150,
+        "baslangic_nakit_tl": 4500,
+        "kalan_efor_saat": {
+          "min": 80,
+          "beklenen": 97,
+          "max": 130
+        },
+        "ilk_tahsilat_gun": {
+          "min": 75,
+          "max": 150
+        },
+        "satis_basina_kurucu_saati": 0.25,
+        "musteri_basina_aylik_destek_dk": 5,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 678,
+          "iyi": 2712
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 3,
+          "iyi": 12
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 3,
+          "iyi": 12
+        },
+        "donusum_orani": {
+          "dusuk": 0.005,
+          "yuksek": 0.02
+        },
+        "dayanak": "Plan 5 ve 8: Pro 4,99 euro. Plan baz tablosu ilk 6 ayda 3 Pro (Ç2, Pro ve ödeme canlı), iyi 12. Net: 5,49 dolar x 48 eksi %5 ve 0,50 dolar kesinti = 226 TL. Dönüşüm kurulumdan Pro'ya, kanıt yok, varsayım."
+      },
+      "deney": {
+        "varsayim": "Ücretsiz rakipler varken bireysel kullanıcı kaynak bloğu ve geçmiş için tek seferlik ödeme yapar.",
+        "yontem": "Ücretsiz sürüm yayınlanır; Pro duvarının ön satışı için ödeme bağlantılı bekleme listesi ve lansman fiyatı sunulur; 14 günde kurulum, tıklama ve ödeme sayılır.",
+        "sure_gun": 30,
+        "maliyet_saat": 20,
+        "maliyet_tl": 300,
+        "basari_olcutu": "30 günde en az 3 ödeme ya da 100 kurulum ve 10 Pro ön ödeme tıklaması.",
+        "birakma_olcutu": "120 günde 10 ödeyen yoksa Pro geliştirmesi durur, ürün ücretsiz bakıma alınır.",
+        "sonraki_dilim": "Ödeme gelirse Sınıf Paketi ve ekip şablon seti için ayrı deney."
+      },
+      "etiketler": {
+        "segment": "Bilgi çalışanı, yapay zekâ kullanıcısı",
+        "kanal_turu": "pazar yeri",
+        "teknoloji": "Chrome Manifest V3, vanilla JS",
+        "regulasyon": "yok"
+      },
+      "kanit_notlari": "Claude planı 1, 3.2, 5, 6, 8: rakiplerin hepsi ücretsiz (Tab Copy 100.000, Obsidian Web Clipper 1 milyon kullanıcı); ücretli kardeş uzantı 141 kullanıcıda kalmış; yayınlanmış vakada %0,8 dönüşüm. Derinlik ekinde bilgi çalışanı ödeme eğilimi 2/5. Ödeyen müşteri 0; görüşme yok."
+    },
+    {
+      "id": "qral-b",
+      "ad": "Sınıf Paketi: öğretmen ve okul için QR sayfası",
+      "tur": "eklenti",
+      "musteri": "Ortaokul ve lise öğretmeni; zümre ya da okul bütçesinden 10+ koltuk alabilen okul ve kurslar",
+      "is": "Ders bağlantılarını numaralı, yazdırılabilir A4 QR sayfasına ve bağlantı listesine hızla dönüştürmek",
+      "tetikleyici": "Dönem başı (eylül, şubat) materyal hazırlığı; haftada 3 QR'lı etkinlik",
+      "teklif": "Pro özellikleri, 30 öğrenci QR sayfası, ders bağlantı listesi dışa aktarma, 2 cihaz; ilk öğretmenlere ilk yıl ücretsiz",
+      "fiyat": "14,99 euro yıllık (yaklaşık 835 TL); sağlayıcı kesintisi sonrası net yaklaşık 727 TL",
+      "kanal_birincil": "Türkiye eğitim toplulukları: eTwinning grupları, Öğretmenler Odası ve Öğretmenler Sitesi sayfaları, eBabil ve Eğiteknoloji blogları",
+      "kanal_yedek": "r/Teachers ve İngilizce Sınıf QR rehberi, YouTube Shorts, Chrome Web Store listesi",
+      "ilk_adim": "Sınıf QR sayfasını yapıp 5 öğretmene ücretsiz verilip geri bildirim ve vaka yazısı almak",
+      "ilk_kapsam": "Pro ve sınıf QR sayfası (A4, 1-30 bağlantı, numaralı, yazdır ve PDF) çalışır; ödeme ve lisans canlı; Türkçe rehber",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuda; kütüphane lisansları ve marka adı çakışması doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Öğrenci verisi alınmıyor; okul alıcıda fatura ve vergi okuması mali müşavir teyidi bekliyor."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Yurt dışı kart için MoR, TL için sanal POS ya da havale planlı; hesap açılmadı."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi belli (öğretmen, okul); ismen 20 öğretmen listesi yok."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Adlı Türkiye grupları ve sayfaları, ilk adım ve yedek kanal yazılı; üye sayıları kısmen doğrulanmadı."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor yaklaşık 120 saat (6 hafta); asıl satış fırsatı şubat dönem başı, satış döngüsü ölçülmedi."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi yaklaşık 4.500 TL; tavanın çok altında."
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Aynı paket ve sabit fiyat; özel geliştirme yok."
+        }
+      },
+      "kapi_duzeltme": "Hesap ve test ödemesi (G3), hukuk ve vergi teyidi (G2), lisans taraması (G1), 20 öğretmen listesi (G4), efor ölçümü (G6) ile geçer.",
+      "finans": {
+        "satis_tipi": "yıllık peşin",
+        "net_fiyat_tl": 727,
+        "degisken_maliyet_tl": 80,
+        "sabit_gider_aylik_tl": 150,
+        "baslangic_nakit_tl": 4500,
+        "kalan_efor_saat": {
+          "min": 100,
+          "beklenen": 120,
+          "max": 160
+        },
+        "ilk_tahsilat_gun": {
+          "min": 100,
+          "max": 180
+        },
+        "satis_basina_kurucu_saati": 2,
+        "musteri_basina_aylik_destek_dk": 15,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 727,
+          "iyi": 7270
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 10
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 10
+        },
+        "donusum_orani": {
+          "dusuk": 0.01,
+          "yuksek": 0.03
+        },
+        "dayanak": "Plan 5 ve 8: Sınıf Paketi 14,99 euro/yıl; plan baz tablosu ilk 6 ayda 0, yıl 1'de 2 Sınıf satışı öngörüyor. Şubat dönem başı penceresinde temkinli baz 1 satış, iyi 10. Net: 16,5 dolar x 48 eksi %5 ve 0,50 dolar. Dönüşüm kanıtsız varsayım."
+      },
+      "deney": {
+        "varsayim": "Öğretmen ya da zümre, ücretsiz QR araçları varken toplu A4 QR sayfası için yıllık öder.",
+        "yontem": "Kod yazmadan örnek bir A4 QR sayfası elle hazırlanıp 20 öğretmene sunulur; ödeme bağlantısıyla yıllık paket ön satışı yapılır.",
+        "sure_gun": 21,
+        "maliyet_saat": 12,
+        "maliyet_tl": 0,
+        "basari_olcutu": "20 öğretmenden en az 2 ön ödeme ya da yazılı ödeme niyeti.",
+        "birakma_olcutu": "20 temasta ödeme niyeti yoksa paket bırakılır, QR sayfası ücretsiz özellik olur.",
+        "sonraki_dilim": "Okul ya da zümre için 10 koltuk teklifi."
+      },
+      "etiketler": {
+        "segment": "Öğretmen, okul ve kurs",
+        "kanal_turu": "topluluk",
+        "teknoloji": "Chrome Manifest V3, vanilla JS",
+        "regulasyon": "yok"
+      },
+      "kanit_notlari": "Derinlik eki B.1 ve A.8: öğretmen öncelik puanı 10/15 kurucunun kendi ulaşılabilirlik, ödeme ve rekabet tahminlerinden türüyor; doğrulanmış erişim ya da ödeme verisi yok. Ödeme eğilimi 3/5 ve ROI 6.750 TL/yıl varsayım; öğretmen cebinden ödeme eğilimi düşük, okul bütçesi hedef. Hiçbir öğretmenle görüşme yapılmadı. Ödeyen müşteri 0."
+    },
+    {
+      "id": "qral-c",
+      "ad": "Araştırma ekibi için kaynak dışa aktarma şablon paketi",
+      "tur": "hizmet",
+      "musteri": "Haftalık araştırma yapan teknik danışman ve analist; küçük araştırma ekibinin lideri ve alıntıyı denetleyen editör",
+      "is": "Rapora girecek sayfayı başlık, adres, erişim tarihi ve alıntıyla bozulmadan, ekibin kendi formatında kaydetmek",
+      "tetikleyici": "Rapor teslimi; izlenme parametreli adres, kayıp erişim tarihi ve tekrar biçimlendirme",
+      "teklif": "Sabit kapsamlı paket: ekibin formatında şablon seti, 3 siteli doğrulama, kurulum ve bir ay destek; kullanıcı onaylı alıntı",
+      "fiyat": "1.000 TL tek takım için sabit fiyat (plan aralığı 500-1.500 TL); sonraki takımlarda ekip lisansı",
+      "kanal_birincil": "Kurucunun mevcut ilişkileri: kendi ürün ekibi ve ajans çevresi; araştırma yapan danışmanlara doğrudan teklif",
+      "kanal_yedek": "GitHub Markdown tarifi, Chrome Web Store kaynak dışa aktarma açıklaması, danışmanın meslektaşına şablon paylaşması",
+      "ilk_adim": "Bir araştırma ekibinden eski ve yeni dışa aktarma süresini ölçmek için 5 analistle kısa deney",
+      "ilk_kapsam": "Ücretsiz üç siteli kaynak dışa aktarma örneği, başlık/adres/erişim tarihi ve alıntı önizlemesi; ekip şablonu elle kurulur. Canlı ürün ve 500-1.500 TL fiyat doğrulanmadı, ilk takım teklifiyle sınanır.",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuda; kütüphane lisansları doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Alıntı ve telif sınırı kullanıcıda; hizmet faturası ve vergi okuması mali müşavir teyidi bekliyor."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Türkiye'den havale ve fatura düzeni yolu belli; şirket kaydı ve hesap hazır değil."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; isim listesi yok, mevcut ajans çevresi belgelerde geçiyor."
+        },
+        "G5": {
+          "durum": "test",
+          "not": "Kanallar tanımlı ama somut hedef adlandırılmadı; yalnızca kurucunun ilişkileri."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Efor 25-60 saat sığıyor ama satış döngüsü ve tahsilat süresi ölçülmedi, görüşme yok; canlı ürün doğrulanmadı."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi yaklaşık 1.500 TL; tavanın çok altında."
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Sabit paket planlandı ama kapsam sınırı yazılı değil; ekip formatı özel istek üretebilir."
+        }
+      },
+      "kapi_duzeltme": "Hesap ve fatura (G3), vergi teyidi (G2), lisans taraması (G1), hedef listesi ve adlı kanal (G4, G5), yazılı kapsam sınırı (G8), ilk görüşmelerle satış döngüsü ölçümü (G6) ile geçer.",
+      "finans": {
+        "satis_tipi": "proje",
+        "net_fiyat_tl": 1000,
+        "degisken_maliyet_tl": 0,
+        "sabit_gider_aylik_tl": 0,
+        "baslangic_nakit_tl": 1500,
+        "kalan_efor_saat": {
+          "min": 25,
+          "beklenen": 40,
+          "max": 60
+        },
+        "ilk_tahsilat_gun": {
+          "min": 30,
+          "max": 120
+        },
+        "satis_basina_kurucu_saati": 6,
+        "musteri_basina_aylik_destek_dk": 30,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 1000,
+          "iyi": 3000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "donusum_orani": {
+          "dusuk": 0.01,
+          "yuksek": 0.05
+        },
+        "dayanak": "GPT dosyası: tek takım teklifi 500-1.500 TL, orta değer 1.000 TL; efor 8-16 saat refactor, haftada 1-2 saat bakım. Baz 6 ayda 1 satış, iyi 3; kötü 0. Dönüşüm %1-5 kanıtsız varsayım; görüşme yok, canlı ürün doğrulanmadı."
+      },
+      "deney": {
+        "varsayim": "Bir araştırma ekibi, ücretsiz yer imi ve yapay zekâ özeti varken ekip formatı kurulumu için öder.",
+        "yontem": "5 araştırmacıyla eski ve yeni yöntemin süresi ölçülür; ardından tek takıma sabit fiyatlı şablon kurulumu teklif edilir.",
+        "sure_gun": 30,
+        "maliyet_saat": 16,
+        "maliyet_tl": 0,
+        "basari_olcutu": "5 araştırmacıdan en az 3'ünde süre kısalması ve 1 takımın ödeme onayı.",
+        "birakma_olcutu": "Ücretsiz yer imi ve yapay zekâ aynı sonucu aynı sürede veriyorsa ücretli tez bırakılır.",
+        "sonraki_dilim": "Aynı ekibin ortak kaynak arşivi isteği olursa paylaşımlı kütüphane."
+      },
+      "etiketler": {
+        "segment": "Araştırma ekibi, danışman, analist",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "Chrome Manifest V3, Markdown dışa aktarma",
+        "regulasyon": "yok"
+      },
+      "kanit_notlari": "GPT dosyası: ilk kullanıcı araştırma analisti, QR tek başına ücretli fark değil, yer imi ve ücretsiz yapay zekâ güçlü alternatif; canlı ürün doğrulanmamış. Claude derinlik eki ekip yöneticisi önceliği 9/15 ve ekip ödeme eğilimi 3/5 varsayım. Ödeyen müşteri 0; fiyat görüşmesi yok."
+    }
+  ]
+}

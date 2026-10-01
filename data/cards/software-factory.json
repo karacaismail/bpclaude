@@ -1,0 +1,344 @@
+{
+ "slug": "software-factory",
+ "baslik": "software-factory (yapay zekâ destekli yazılım üretim hattı hizmeti)",
+ "ozet": "Test önce yazılan, bağımsız incelenen ve CI ile kanıtlanan yapay zekâ teslim hattı. İlk ticari biçim ürün değil hizmet: sabit fiyatlı MVP paketleri. Hat iki küçük gerçek teslimle denendi; ödeyen müşteri, referans ve müşteriye uygun kanıt paketi henüz yok.",
+ "bugun": {
+  "var": [
+   "Görev panosu, iş akışı motoru ve ajanlarla çalışan uçtan uca teslim hattı; küçük bir web uygulamasında iki gerçek teslim",
+   "Hat adımları: test önce (RED), kod (GREEN), bağımsız inceleme, CI, imaj, alpha/beta/rc, insan onayı",
+   "Geniş kod tabanı: yaklaşık 99 modül, 215 test dosyası, 16 servisli kurulum tanımı",
+   "Teslim kanıtı tanımlı: 3 tarayıcı motoru testi, erişilebilirlik taraması, imaj sağlama değeri",
+   "Paketler ve fiyatlar yazılı: S 95 bin, M 240 bin, L 480 bin ₺; bakım 25-45 bin ₺/ay"
+  ],
+  "yok": [
+   "Ödeyen müşteri, referans ve vaka çalışması yok",
+   "Depo düzeni henüz yayına hazır değil; lisans dosyası yok",
+   "Müşteri işi için API anahtarlı model adaptörü ve sert maliyet tavanı yok",
+   "Müşteriye okunur kanıt paketi dışa aktarıcısı, sözleşme ve kabul şablonu yok",
+   "Üretim ortamı henüz yayın düzeyinde değil",
+   "20 hikâyelik bir MVP'nin 5 haftada teslimi kanıtlanmadı; çok ekipli çalışma kararsız"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Fabrikayı SaaS yapmayı reddeder; ana iş S/M/L sabit fiyatlı 'TDD kanıtlı MVP' hizmeti. Baz 12 ay: 8 MVP, yaklaşık 2,2 milyon ₺. Beachhead: teknik ortağı olmayan tohum girişimler; kurs ve içerik huni olur.",
+  "gpt": "Genel platform değil, dar vaat: tek repodaki küçük değişikliği bağımsız test ve review makbuzlarıyla onaylanabilir PR'a taşımak. Alıcı 5-25 geliştiricili ürün şirketi; ilk ücret 300-800 $ tek repo kurulumu; hizmet olarak başlamak daha dürüst.",
+  "ayrisma": "Claude müşteriye sonuç (çalışan MVP, 95-480 bin ₺) satar; alıcı girişimci ve KOBİ. GPT mühendislik ekibine kendi deposunda kontrol aracı kurar (300-800 $). Biri iş teslimi, öteki araç kurulumu; GPT rakip araçların farkı daralttığını da söyler.",
+  "birlesik": "İkisi de ürün yerine hizmetle başlamayı ve farkın kanıt/makbuz olduğunu söylüyor; ikisinde de ödeyen müşteri yok. 6 ayda para getirme ihtimali en çok sabit fiyatlı MVP paketinde; makbuz kurulumu küçük bilet, ikincil deney."
+ },
+ "analist_gorusu": "En gerçekçi yol: önce hazırlık işlerini (API hattı, tavan, kanıt çıktısı, sözleşme) bitirip ilk 3 müşteriye maliyetine S paket pilotu satmak; M paketi kanıt gelince. Kapasite kurucu saatine bağlı, ayda 1-2 MVP.",
+ "secenekler": [
+  {
+   "id": "software-factory-a",
+   "ad": "Sabit fiyatlı kanıtlı MVP paketi (S/M/L)",
+   "tur": "hizmet",
+   "musteri": "Teknik ortağı olmayan tohum ve ön tohum aşaması girişimler; bütçe 95-480 bin ₺",
+   "is": "Kullanıcı hikâyelerinden test edilmiş, CI geçmişli, müşterinin sunucusuna kurulan web uygulaması MVP'si yaptırmak",
+   "tetikleyici": "Yatırımcı toplantısı ya da program rapor tarihi; ajans teklifinin 490 bin ₺ üstü çıkması; AI prototipinin tıkanması",
+   "teklif": "Kapsam = hikâye listesi; sabit fiyat ve süre; teslimde RED-GREEN, 3 tarayıcı, erişilebilirlik, CI ve imaj kanıt paketi; %50 peşin",
+   "fiyat": "S 95.000 ₺ (8 hikâye, 2 hf), M 240.000 ₺ (20 hikâye, 5 hf), L 480.000 ₺; ilk 3 pilot S 50.000 ₺; KDV hariç",
+   "kanal_birincil": "TÜBİTAK BiGG yürütücüleri (Bilişim Vadisi, Hangar BiGG, BİGGİST) ve kuluçkalarda webinar ile hikâye kliniği; LinkedIn kişisel mesaj",
+   "kanal_yedek": "Kurucunun ürünlerinin çevresinden pilot adayları (isim listesi yok); startups.watch'tan 50 girişime e-posta; Clutch ve Bionluk profili; ajans ortaklığı",
+   "ilk_adim": "50 girişimlik liste, fiyat sayfası ve kanıt karnesi örneği hazırla; 3 pilot adayıyla görüş",
+   "ilk_kapsam": "S paket: en çok 8 hikâye, 1 ortam, kanıt paketi, 2 revizyon, 2 hafta. Ön koşul: API adaptörü, sert tavan, kanıt çıktısı, sözleşme şablonu (yaklaşık 105 saat).",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; LICENSE kararı yok, müşteri işi için API koşulu ve bileşen lisansları doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Sözleşme, IP devri, KVKK ve KDV için avukat ve mali müşavir teyidi bekleniyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-Arşiv yolu belli; hesap, ödeme planı ve fatura düzeni kurulmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (CTO'suz girişim); 20 isimlik liste yok, 50 girişim listesi planlı"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı, ilk adım ve yedek kanallar (e-posta, dizin, ajans) var"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan hazırlık yaklaşık 105 saat (5-6 hafta, haftada 20 saat); satış döngüsü ve BiGG fonunun harcanabilirliği doğrulanmadı; ilk depozito 45-90 günde beklenir"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 25.000 ₺ (avukat, sunucu, araç); tavanın altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kapsam hikâye listesine bağlı sabit paket; sözleşme ve kapsam sınırı şablonu henüz yok"
+    }
+   },
+   "kapi_duzeltme": "G1 lisans ve API koşulu kontrolü; G2 avukat ve mali müşavir teyidi; G3 hesap ve e-Arşiv; G4 50 isimlik liste; G8 sözleşme şablonu; G6 ilk pilot sözleşmesi ve depozito ile satış döngüsünü ölç.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 240000,
+    "degisken_maliyet_tl": 8000,
+    "sabit_gider_aylik_tl": 10000,
+    "baslangic_nakit_tl": 25000,
+    "kalan_efor_saat": {
+     "min": 80,
+     "beklenen": 105,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 90
+    },
+    "satis_basina_kurucu_saati": 20,
+    "musteri_basina_aylik_destek_dk": 240,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 50000,
+     "baz": 270000,
+     "iyi": 680000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 2,
+     "baz": 7,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 1,
+     "baz": 4,
+     "iyi": 5
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "Plan 5 fiyatları; plan 11 hedefi iyimser sayıldı, 105 saat hazırlık (haftada 20 saat) ve 4-8 hafta karar payıyla kırpıldı. Baz: 3 pilot x 50.000 (6 ödeme) + 1 M'nin yalnız %50 peşini 120.000 = 270.000 (7 ödeme). Kötü: 1 pilot. İyi: 3 pilot, 2 M, 2 aylık bakım. Dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "CTO'suz girişim kurucusu, kanıt paketli sabit fiyatlı S paketi için maliyetine bile olsa depozito öder",
+    "yontem": "50 girişim listesi; kişisel mesaj ve 2 yürütücü kuruluşta ücretsiz hikâye kliniği; 45 dk seans sonrası yazılı S teklifi, 50.000 ₺, %50 peşin",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 0,
+    "basari_olcutu": "30 günde en az 3 seans ve 1 yazılı kabul ile 25.000 ₺ depozito",
+    "birakma_olcutu": "15 nitelikli seanstan sonra 0 depozito",
+    "sonraki_dilim": "Pilotu teslim et, kanıt karnesini yayımla, ikinci aşamada M teklifi ve bakım teklifi sun"
+   },
+   "etiketler": {
+    "segment": "CTO'suz tohum girişimler",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Yapay zekâ ajan hattı, web uygulaması",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 1: ajans 25-99 $/saat, 10-50 bin $ asgari proje (Clutch). Derinlik A.2 ve B.1: BiGG üst limiti 1,35 milyon ₺, M paket bunun %17,8'i. Fabrikanın iki gerçek teslimi de küçük web uygulaması ve elle onarım içerir; 73 bileşenli UI denemesi 3 bileşende kaldı. D.8: ilk pilot için yaklaşık 17,5 gün hazırlık. Ödeyen müşteri yok; BiGG fonunun MVP hizmetine harcanabilirliği doğrulanmadı."
+  },
+  {
+   "id": "software-factory-b",
+   "ad": "Tek repo için ajan PR makbuzu kurulum hizmeti",
+   "tur": "hizmet",
+   "musteri": "5-25 geliştiricili ürün şirketlerinde engineering lead; ikincil: 10-50 kişilik geliştirme ajansı",
+   "is": "Ajanla üretilen küçük PR'ların istek, test, review ve maliyet kanıtını tek makbuzda toplamak; insan inceleme süresini azaltmak",
+   "tetikleyici": "Ajan PR'ları review kuyruğunu uzatıyor; başarısız denemenin kanıtı kayboluyor; haftalık teslim riski",
+   "teklif": "Tek repo için salt okunur dry-run, 20 sınırlı iş, diff ve test makbuzu, owner onayı, sert bütçe; ücretsiz Action ile giriş",
+   "fiyat": "300-800 $ tek seferlik kurulum (orta 500 $ = 24.000 ₺); takım kontrolü 49-149 $/ay yalnız tekrar kullanım görülürse",
+   "kanal_birincil": "GitHub Marketplace'te ücretsiz makbuz doğrulama Action'ı ve Kestra blueprint kataloğunda 'issue-test makbuzu-onay' şablonu",
+   "kanal_yedek": "Geliştirici toplulukları, örnek açık kaynak repo, ajanslara doğrudan mesaj",
+   "ilk_adim": "Action ve örnek repoyu yayımla (24-40 saat; ücretli kurulum kapsamı ayrı iş); 3 dış ortamda dry-run yaptır",
+   "ilk_kapsam": "1 repo, izinli komut profili, 20 sınırlı iş, diff ve test makbuzu, owner onayı, sert bütçe; müşteri kendi model anahtarını kullanır.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; Action için açık kaynak lisans kararı yok, bileşen lisansları doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri deposuna erişim için gizlilik ve veri işleme metni, yetki sınırı teyit bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yurt dışı ya da yurt içi tahsilat yolu seçilmedi; hesap ve test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli; isim listesi ve mevcut ilişki belgelenmemiş"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "GitHub Marketplace ve Kestra blueprint kataloğu adlı; ilk adım ve yedek kanal var"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "İlk adım yalnız ücretsiz Action (24-40 saat); ücretli kurulum kapsamı (dry-run, makbuz, bütçe) için elle kurulum 60-170 saat; ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 8.000 ₺; tavanın çok altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "20 işlik sınır önerildi ama sabit kapsam ve fiyat sayfası yazılı değil"
+    }
+   },
+   "kapi_duzeltme": "G1 lisans kararı; G2 gizlilik metni; G3 tahsilat hesabı; G4 isim listesi; G6 ilk kurulumu ölç; G8 kapsam sayfası.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 24000,
+    "degisken_maliyet_tl": 2000,
+    "sabit_gider_aylik_tl": 3000,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 100,
+     "max": 170
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 12,
+    "musteri_basina_aylik_destek_dk": 180,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 48000,
+     "iyi": 86400
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 6
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.08
+    },
+    "dayanak": "GPT dosyası: ilk ücret hipotezi 300-800 $ kurulum, 49-149 $/ay yalnız tekrar kullanımda. 500 $ x 48 = 24.000 ₺. Hedef 30/60/90 gün, ilk ücret 60. gün civarı. Baz 2 kurulum; iyi 3 kurulum + 3 abone-ay x 4.800 ₺. Dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Bir engineering lead, ücretsiz dry-run sonrası ikinci işe geçer ve tek repo kurulumuna para öder",
+    "yontem": "Ücretsiz Action ve örnek repo yayımla; 10 ekibe kişisel mesajla dry-run öner; ikinci hafta ikinci iş; ardından 300-800 $ yazılı kurulum teklifi",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 0,
+    "basari_olcutu": "3 dış dry-run; en az 1 ekip ikinci işe geçer ve fiyatı yazılı kabul eder",
+    "birakma_olcutu": "30 aktif denemede kimse ikinci işe geçmiyor",
+    "sonraki_dilim": "Onboarding ve vaadi değiştir; barındırılan kontrol paneli geliştirme"
+   },
+   "etiketler": {
+    "segment": "Küçük ürün ekipleri ve ajanslar",
+    "kanal_turu": "pazar yeri",
+    "teknoloji": "GitHub Action, iş akışı motoru, yapay zekâ ajanları",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "GPT dosyası: Action paketi henüz yok; saat tasarrufu gözlenmedi. Rakipler: Superset (20 $/kullanıcı/ay), Kestra, LangSmith, Trigger, Temporal; fark yalnız kabul koşuluna bağlı makbuz. Çekirdek kodda kanıt var, araştırmada test çalıştırılmadı, dış kullanıcı yok. Karşılık gelen satış deneyi yok, ödeyen müşteri yok."
+  },
+  {
+   "id": "software-factory-c",
+   "ad": "Ajanslara beyaz etiket kanıtlı MVP kapasitesi",
+   "tur": "hizmet",
+   "musteri": "Geliştirici kadrosu olmayan 5-15 kişilik tasarım ve dijital ajanslar (İstanbul, İzmir, Ankara)",
+   "is": "Müşterisinden gelen web uygulaması talebini kendi markasıyla, test kanıtlı teslim etmek; geliştirici maaşı taşımamak",
+   "tetikleyici": "Büyük müşteriden uygulama talebi gelmesi; freelancer'ın teslim edememesi; ihale ya da marj baskısı",
+   "teklif": "Toptan %15 iskontolu S/M paket; ajans markalı kanıt paketi; iletişim ajans üzerinden; 12 ay rekabet etmeme maddesi",
+   "fiyat": "M 204.000 ₺ toptan (liste 240.000), S 80.750 ₺ toptan (liste 95.000); KDV hariç",
+   "kanal_birincil": "LinkedIn kişisel mesaj: 'dijital ajans kurucusu' hesapları; IAB Türkiye ve Reklamcılar Derneği üyesi ajanlar",
+   "kanal_yedek": "Bionluk ve Upwork'te alt yüklenici arayan ajanslar; Webrazzi ajans rehberi; tasarım stüdyolarıyla karşılıklı yönlendirme",
+   "ilk_adim": "40 ajanslık liste ve kanıt paketi örneği hazırla; haftada 10 kişisel bağlantı isteği gönder",
+   "ilk_kapsam": "Ajans markalı S paket: en çok 8 hikâye, 2 hafta, kanıt paketi. Ön koşul: A seçeneğinin hazırlık işleri ve ajans markalı çıktı şablonu (yaklaşık 135 saat).",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; marka ve ajans müşterisine devir koşulları, lisans ve API koşulu doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Üçlü sözleşme (ajans, müşteri, kurucu), IP devri ve rekabet etmeme maddesi avukat teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Ajansa havale ve e-Arşiv ile satış yolu belli; hesap ve fatura düzeni kurulmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (ajans sahibi); isim listesi yok, 40 ajanslık liste planlı"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "LinkedIn, IAB Türkiye, Reklamcılar Derneği ve iş platformları adlı; yedek kanal var"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor 110-200 saat; ajans satış döngüsü ve ilk iş ölçülmedi, tahsilat 60-130 gün"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi yaklaşık 30.000 ₺; tavanın altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Paketler sabit; ajansın müşterisine özel istek riski, kapsam sınırı şablonu yok"
+    }
+   },
+   "kapi_duzeltme": "G1 lisans ve API koşulu; G2 üçlü sözleşme teyidi; G3 hesap; G4 40 ajans listesi; G6 ilk ajansla deneme; G8 kapsam şablonu.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 204000,
+    "degisken_maliyet_tl": 6000,
+    "sabit_gider_aylik_tl": 10000,
+    "baslangic_nakit_tl": 30000,
+    "kalan_efor_saat": {
+     "min": 110,
+     "beklenen": 135,
+     "max": 200
+    },
+    "ilk_tahsilat_gun": {
+     "min": 75,
+     "max": 130
+    },
+    "satis_basina_kurucu_saati": 25,
+    "musteri_basina_aylik_destek_dk": 240,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 80750,
+     "iyi": 284750
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan 7.2 madde 4 ve derinlik C.7: toptan %15 iskonto, M 204.000, S 80.750 ₺. Plan hedefi 2 ajansla görüşme hafta 7, ilk iş hafta 9-12; üçlü sözleşme ve 135 saatlik hazırlık nedeniyle tahsilat 75+ gün. Baz: 1 ajans, 1 S. İyi: 2 ajans, S ve M. Dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Geliştirici kadrosu olmayan bir ajans, kendi markasıyla kanıtlı MVP satmak için toptan fiyatla S paket deneme işi verir",
+    "yontem": "40 ajans listesi; haftada 10 kişisel mesaj; 20 dk kanıt paketi gösterimi; ilk iş için S toptan teklifi, %50 peşin",
+    "sure_gun": 45,
+    "maliyet_saat": 35,
+    "maliyet_tl": 0,
+    "basari_olcutu": "45 günde 8 görüşme, 2 yazılı teklif, 1 ajanstan depozito",
+    "birakma_olcutu": "12 görüşmeden sonra 0 yazılı teklif talebi",
+    "sonraki_dilim": "Deneme işini teslim et; ajans markalı karne ile ikinci ajansa ve M toptan teklife geç"
+   },
+   "etiketler": {
+    "segment": "Küçük dijital ve tasarım ajansları",
+    "kanal_turu": "ortak",
+    "teknoloji": "Yapay zekâ ajan hattı, web uygulaması",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Derinlik B.3 (kişi 3) ve A.8: ajans toptan M 204.000 ₺'ye alır, müşteriye 330-400 bin ₺'ye satar, marj %38-49; bunlar görüşmesiz varsayım. Plan 7.2: 2 ajansla beyaz etiket teklifi. Ajans pazar büyüklüğü doğrulanamadı (varsayım 500). Kanal çatışması riski: müşteri doğrudan gelebilir. Ödeyen ajans yok."
+  }
+ ]
+}

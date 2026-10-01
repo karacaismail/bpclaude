@@ -1,0 +1,59 @@
+{
+  "slug": "projector",
+  "kararlar": [
+    {
+      "itiraz": "Özet içerik kalitesini yüzde 25 diyor; kaynakta bu oran ölçülmemiş varsayım.",
+      "karar": "kabul",
+      "degisiklik": "bugun.yok ve A kanit_notlari: yüzde 25 ifadesi varsayım, ölçülmedi diye etiketlendi.",
+      "gerekce": "Plan 2 ve derinlik D.2 oranı VARSAYIM etiketiyle veriyor; kart ölçülmüş gibi okunuyordu."
+    },
+    {
+      "itiraz": "A ilk satış hafta 7, 120 saat iyimser; yazım 40 gün insan emeği.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "120 saat yalnız ilk 3 bölüm, sayfa ve ödeme kapsamı; 40 gün 10 bölümün tamamı içindir. Üst sınır 180 saat zaten kartta; ilgili kapı itirazında ele alındı."
+    },
+    {
+      "itiraz": "B 70 saat hazırlık, plan 6 yaklaşık 24 saat; ekip tasarrufu varsayım.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Plan 24 saati yalnız hazırlık sayıyor; kart satış ve uyarlamayı da kapsıyor, yön temkinli. Tasarruf kartta zaten varsayım diye geçiyor."
+    },
+    {
+      "itiraz": "C efor 80-200 saat, GPT sample ve CLI için 16-32 saat diyor.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "GPT rakamı yalnız örnek ve CLI; kart sürüm, rapor ve portalı da kapsıyor. Fark kapsamla açıklanıyor, yön temkinli."
+    },
+    {
+      "itiraz": "A G6 test olmalı: üst sınır 180 saat (9 hafta), döngü ölçülmedi.",
+      "karar": "kabul",
+      "degisiklik": "A G6: gecti idi, test oldu; not ve kapi_duzeltme güncellendi.",
+      "gerekce": "Kapı gecti için 8 haftadan az efor ister; max 180 saat 8 haftayı aşar, kitap yazımı 40 gün, satış döngüsü ölçülmedi."
+    },
+    {
+      "itiraz": "B G5 test olmalı: 30 firmalık liste yok, ilişki ekipleri alıcı olarak teyitli değil.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "G5 kanal adlı mı diye sorar: LinkedIn ve mevcut ilişkiler birincil, topluluklar yedek, ilk adım yazılı. Liste eksikliği G4'te zaten test."
+    },
+    {
+      "itiraz": "A dönüşüm yüksek yüzde 8 ve baz 60 ödeme fazla; baz 25-30 olmalı.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Plan 6 aylık hedefi 120, 12 ay baz 200; baz 60 hafta 7 gecikmesiyle yarıya indirilmiş. 25-30 için kaynak yok; yüzde 8 kartta kanıtsız varsayım diye işaretli."
+    },
+    {
+      "itiraz": "B baz 15.000 TL ve 1 satış; referanssız kurucu için sıfır daha olası.",
+      "karar": "kismen",
+      "degisiklik": "B tahsilat baz 15.000 idi, 3.000 oldu; iyi 70.000 idi, 38.000 oldu. Ödeme adedi aynı; dayanak güncellendi.",
+      "gerekce": "Plan 10 ilk atölyeyi maliyetine (3.000 TL) verir; 1 satış plan bazı. 15.000 kaynaksızdı. Sıfır kötü senaryoda zaten var."
+    },
+    {
+      "itiraz": "C baz 28.800 TL ve 1 pilot; 0 ya da 14.400 TL olmalı, fiyat sınama.",
+      "karar": "kabul",
+      "degisiklik": "C net_fiyat 28.800 idi, 14.400 oldu; baz 14.400, iyi 86.400 idi 43.200 oldu; fiyat ve dayanak güncellendi.",
+      "gerekce": "GPT 300-900 dolar aralığını pazar fiyatı değil sınama sayıyor; referanssız ilk pilot için temkinli alt uç 300 dolar seçildi."
+    }
+  ]
+}

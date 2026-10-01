@@ -1,0 +1,23 @@
+{
+ "slug": "parselq",
+ "secenekler": {
+  "parselq-a": {
+   "satis_basina_kurucu_saati": 1,
+   "teslim_saat_odeme_basina": 0.5,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Varsayım: ilk 100 raporda imar özeti analist kontrollü ve emsal elle girilir; rapor başına 30 dk kurucu emeği. Satış kendi kendine ödeme bağlantısı ile 1 saat."
+  },
+  "parselq-b": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 1.8,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: ilk kartlar elle üretilir (ayda ~9 kart x 10 dk) ve ofis başına 1 saat kurulum; ofis paneli yok. Satış 3 saatten kurulum ayrıldı, destek 60 dk'dan kart üretimi çıkarıldı."
+  },
+  "parselq-c": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 10,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: rapor başına 10 saat kurucu emeği (dosya derleme, kaynak ve doğrulayıcı kaydı, iki seçenek karşılaştırması, PDF); uzman onayı değişken maliyette ve sayılmadı."
+  }
+ }
+}

@@ -1,0 +1,89 @@
+{
+ "slug": "ik-paneli-hizmeti",
+ "kararlar": [
+  {
+   "itiraz": "A G6: kalan efor 40-110 saat, kaynak D.8 yaklaşık 150 saat; G6 gecti olamaz",
+   "karar": "kabul",
+   "degisiklik": "A G6 gecti->test; kalan efor 40/70/110 -> 100/150/190 saat; G6 notu ve kapi_duzeltme güncellendi",
+   "gerekce": "Derinlik D.8 19 iş günü (yaklaşık 150 saat) topluyor; 20 saatlik haftada 7,5 hafta, 8 sınırında ve ölçülmedi."
+  },
+  {
+   "itiraz": "C G1: hizmetin kodu yazılmadı, hak kurucuda olabilir; test olmalı",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Hizmet mevcut üçüncü taraf panel görünümünü koruyup üstüne kuruluyor (GPT dosyası); yazılı izin yok, G1 tanımına göre kaldi."
+  },
+  {
+   "itiraz": "B G1: kaldi, aynı üçüncü taraf kitine dayanıyor",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Katılınan itiraz; kartta zaten kaldi, değişiklik gerekmedi. İmza notu eklendi (ayrı kayıt)."
+  },
+  {
+   "itiraz": "A satış sayısı baz: 180000 ve 3 müşteri kanıtsız; baz 1 satış 45-90 bin",
+   "karar": "kismen",
+   "degisiklik": "A tahsilat baz 180000->135000, iyi 400000->270000; ödeme 5->2 / 9->3; müşteri 3->2 / 5->3; dayanak yenilendi",
+   "gerekce": "C.3 baz 90 günde 1 proje ve 12. haftada ikinci satış; 6 ayda 2 satış desteklenir, 3 müşteri ve 5 ödeme desteklenmez."
+  },
+  {
+   "itiraz": "A ilk_tahsilat_gun.min 35; izin, demo ve görüşmeler gerekir, en az 60",
+   "karar": "kabul",
+   "degisiklik": "A ilk_tahsilat_gun 35-90 -> 60-120",
+   "gerekce": "Plan ilk peşinatı 8. haftaya koyuyor; 150 saat efor 20 saatlik haftada 35 günde bitmez."
+  },
+  {
+   "itiraz": "A satis_basina_kurucu_saati 8; plan Pro için 40 saat üretim, yaklaşık 45",
+   "karar": "kabul",
+   "degisiklik": "A satis_basina_kurucu_saati 8 -> 45",
+   "gerekce": "Plan §6 Pro için 40 saat; keşif ve revizyon eklenince yaklaşık 45 saat."
+  },
+  {
+   "itiraz": "B tahsilat baz 72000 ve 1 ajans; ağ belgesiz, baz 36000 (1 demo)",
+   "karar": "kabul",
+   "degisiklik": "B tahsilat baz 72000->36000; ödeme adedi baz 2->1; dayanak güncellendi",
+   "gerekce": "Ajans ağı belgesiz, ilk ajansa 4-8 hafta; ayda 1 demo taahhüdü kanıtsız, temkinli baz 1 demo."
+  },
+  {
+   "itiraz": "B satis_basina_kurucu_saati 10; Lite 3 iş günü + keşif yaklaşık 26",
+   "karar": "kabul",
+   "degisiklik": "B satis_basina_kurucu_saati 10 -> 26",
+   "gerekce": "Lite 3 iş günü (24 saat) üretim ve keşif, 26 saat."
+  },
+  {
+   "itiraz": "A donusum_orani.yuksek 0.25 plan varsayımı; üst sınır 0.10",
+   "karar": "kismen",
+   "degisiklik": "A donusum_orani.yuksek 0.25 -> 0.20",
+   "gerekce": "0.25 teklif-sipariş oranı; keşiften ödemeye plan senaryoları 3/8 ve 2/10 verir. Kanıt yok, 0.10 alt sınır kalır."
+  },
+  {
+   "itiraz": "A kalan efor D.8 yaklaşık 150 saat (kart itirazı, yazılı izin hariç)",
+   "karar": "kabul",
+   "degisiklik": "A efor 100/150/190 (bkz. G6 kararı)",
+   "gerekce": "D.8 kalemleri yeniden üretim kaydını içeriyor; ek izin süreci max'a yansıtıldı."
+  },
+  {
+   "itiraz": "Yazılı izin durumu belgelenecek",
+   "karar": "kabul",
+   "degisiklik": "Yazılı izin durumu belgelenecek",
+   "gerekce": "Yazılı izin durumu belgelenecek; kart bunu açık yazmalı."
+  },
+  {
+   "itiraz": "Referans: iki teslim edilmiş iş anılıyor, müşteri izni alınmadı",
+   "karar": "kabul",
+   "degisiklik": "bugun.var 5. madde: izin alınmadı, referans sayılmaz notu eklendi",
+   "gerekce": "Derinlik A.6 müşteri izninin alınmadığını söylüyor; referans sayılamaz."
+  },
+  {
+   "itiraz": "C kalan efor 120-320 saat analist tahmini, kaynakta saat yok",
+   "karar": "kismen",
+   "degisiklik": "C efor 120/200/320 -> 120/240/400; G6 notu ve dayanak analist tahmini olduğunu söylüyor",
+   "gerekce": "Kaynak yalnız tam arka ucu 12-18 ay veriyor; saat yok, temkinli yüksek efor seçildi. G6 kaldi kalır."
+  },
+  {
+   "itiraz": "Hakem taraması: B efor 50-120 ve ilk tahsilat min 45, aynı kit için D.8 150 saat",
+   "karar": "kabul",
+   "degisiklik": "B efor 50/80/120 -> 100/150/190; ilk_tahsilat_gun 45-120 -> 60-120",
+   "gerekce": "B de aynı markasız kite dayanıyor; D.8 150 saat; G6 zaten test."
+  }
+ ]
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "atonota-denetim",
+  "kararlar": [
+    {
+      "itiraz": "A ve B: yaklaşık 10 mevcut müşteri erişim varlığı sayılıyor ama bunlar kurumsal siteler, hedef KOBİ ya da ajans değil.",
+      "karar": "kismen",
+      "degisiklik": "A kanal_yedek ve G4 notu: 10 müşteri yalnız kurulum ve vaka kaynağı, hedef alıcı değil. B'de bu varsayım yoktu, değişmedi.",
+      "gerekce": "Plan 7. bölüm 10 kurumsal site müşterisini dahili kurulum olarak anar; ödeyen hedef alıcı ajanstır."
+    },
+    {
+      "itiraz": "A: G5 gecti ama wordpress.org kabulü ve görünürlüğü kanıtsız, yedek kanallar hacimsiz.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "G5 tanımı adlı birincil kanal, ilk adım ve yedek ister; üçü de var. Kabul ve hacim belirsizliği B2 ve B6 puanlarının konusudur."
+    },
+    {
+      "itiraz": "C: kanal mevcut müşteri sayılıyor; GPT dosyası mevcut ajans ilişkisini doğrulanmalı diyor, ilişki kanıtlı değil.",
+      "karar": "kabul",
+      "degisiklik": "C kanal_turu mevcut müşteri idi, kurucu satışı oldu; kanal_birincil ilişkinin doğrulanmadığını söyler. G4 ve G5 zaten test.",
+      "gerekce": "GPT ana dosyası mevcut client ilişkisinin doğrulanmasını şart koşar."
+    },
+    {
+      "itiraz": "Tüm seçenekler: Pro ve ajans satışı için ödeme isteği kanıtı yok; planın %1-2 dönüşümü varsayımdır.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart ödeyen müşteri 0 yazıyor ve dönüşümü dayanakta varsayım olarak işaretliyor; düzeltilecek bir şey yok."
+    },
+    {
+      "itiraz": "A kalan_efor_saat.beklenen 90 saat; D.8 toplamı 18,5 iş günü yaklaşık 148 saat, beklenen 120-150 olmalı.",
+      "karar": "kismen",
+      "degisiklik": "A kalan efor 60/90/140 idi, 90/130/200 oldu; G6 notu ve dayanak güncellendi. B de aynı çekirdek iş için 80/110/160 idi, 90/130/200 yapıldı.",
+      "gerekce": "D.8 L1 18,5 gün Codex ile hesaplı; 130 saat bunu yansıtır, 8 hafta sınırı ve G6 test kalır."
+    },
+    {
+      "itiraz": "A alti_ay_tahsilat_tl.baz 37000; dizin gecikirse 90. günde plan eşiği tutmaz, baz 15-20 bin TL daha düşük olmalı.",
+      "karar": "kabul",
+      "degisiklik": "A baz tahsilat 37000 idi, 21080 oldu; ödeme ve müşteri 16 idi, 8 oldu (7 Pro + 1 ajans). Dayanak güncellendi.",
+      "gerekce": "Efor artışı ve dizin inceleme süresi Pro açılışını geciktirir; kötü ≤ baz ≤ iyi korundu."
+    },
+    {
+      "itiraz": "B alti_ay_odeme_adedi.baz 3 ajans; 30 temas, %20 deneme, %25 lisans yaklaşık 1,5 lisans verir, baz 1-2 ve kanıtsız.",
+      "karar": "kabul",
+      "degisiklik": "B baz ödeme ve müşteri 3 idi, 2 oldu; baz tahsilat 21450 idi, 14300 oldu (2 x 7.150). Dayanak güncellendi.",
+      "gerekce": "Oranlar kanıtsız varsayım; satış ürün sonrası başlar, temkinli üst sınır 2 seçildi."
+    }
+  ]
+}

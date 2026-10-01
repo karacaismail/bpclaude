@@ -1,0 +1,77 @@
+{
+ "slug": "kurumsal-site",
+ "kararlar": [
+  {
+   "itiraz": "B1/G4: 20 isim alıcı listesi değil, bir analiz çıktısı; sıcak ilişki belgesi yok.",
+   "karar": "kabul",
+   "degisiklik": "A G4: gecti iken test; not düzeltildi, kapi_duzeltme G4 eklendi.",
+   "gerekce": "Kaynakta 20 isim bir analiz belgesinden geliyor; OSB ihracatçı listesi ve görüşme kaydı yok."
+  },
+  {
+   "itiraz": "Kart G5 geçti sayıyor ama erişim ya da randevu kaydı yok.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G5 tanımı adlı birincil kanal, ilk adım ve yedek kanal ister; erişim kaydı istemez. Üçü de kartta var."
+  },
+  {
+   "itiraz": "Baz hedef 10 site/12 ay; kapasite 1-2 site/ay, imza 7-8. hafta, döngü ölçülmedi.",
+   "karar": "kismen",
+   "degisiklik": "iki_calisma.claude sonuna rakamların varsayım ve döngünün ölçülmediği notu eklendi.",
+   "gerekce": "10 site planın kendi varsayımı; kart bunu plan görüşü olarak aktarıyor, ama kanıtsız olduğu açıkça yazılmalı."
+  },
+  {
+   "itiraz": "Tema ayda 4 satışı ay 4ten başlatıyor; benzer ürün verisi yok, düzeltme yine varsayım.",
+   "karar": "kismen",
+   "degisiklik": "C baz odeme 8->6, iyi 30->24; tahsilat baz 30300->22700, iyi 113700->91000; dayanak güncellendi.",
+   "gerekce": "Plan 2-8 satış/ay ve ilk sonuç 12. hafta der; yalnız ay 4-6 satış penceresi, veri yok."
+  },
+  {
+   "itiraz": "A G4 test olmalı; kaynakta 20 alıcı adı yok, yalnız rakip analizi ve persona.",
+   "karar": "kabul",
+   "degisiklik": "A G4 gecti -> test (kart itirazı 1 ile aynı).",
+   "gerekce": "Kaynakta alıcı listesi ya da belgeli ilişki yok."
+  },
+  {
+   "itiraz": "A G5 test olmalı; erişim ya da randevu yok, plan 90 günde kanalı kapatıyor.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G5 gecti ölçütü kanalın adlı olması; 90 gün kuralı kanal puanı içindir. Kanal adları ve yedek kaynakta var."
+  },
+  {
+   "itiraz": "B G6 test olmalı; satış döngüsü ölçülmedi.",
+   "karar": "kabul",
+   "degisiklik": "B G6: gecti -> test; not ve kapi_duzeltme güncellendi.",
+   "gerekce": "G6 tanımı döngü ölçülmediyse test der; kart de ölçülmesi gerektiğini söylüyor."
+  },
+  {
+   "itiraz": "B G5 test olmalı; seminer kabulü ve birlik onayı yok.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G5 test yalnız somut hedef adlandırılmadıysa; İMMİB, İİB, AKİB ve OSB dernekleri adlı, ilk adım yazılı."
+  },
+  {
+   "itiraz": "A baz tahsilat 225000 iyimser; ilk imza 7-8. hafta, 9 ödeme/3 müşteri, 1-2 müşteri görülüyor.",
+   "karar": "kismen",
+   "degisiklik": "A baz tahsilat 225000->140000, ödeme 9->6, müşteri 3->2; dayanak güncellendi.",
+   "gerekce": "İlk imza 7-8. hafta, döngü ve ödeme kanıtı yok; temkinli olarak 2 müşteri alındı."
+  },
+  {
+   "itiraz": "B baz tahsilat 175000 iyimser; ödeme istekliliği 2/5, rekabet yüksek.",
+   "karar": "kismen",
+   "degisiklik": "B baz tahsilat 175000->120000, ödeme 10->6, müşteri 4->3; dayanak güncellendi.",
+   "gerekce": "Mikro segmentte istek düşük ve ROI uzun; 3 tam site yerine 2 tam site, 1 avans, 1 SEO."
+  },
+  {
+   "itiraz": "A ilk_tahsilat_gun min 21 iyimser; plan ilk imzayı 7-8. haftaya koyuyor.",
+   "karar": "kabul",
+   "degisiklik": "A ilk_tahsilat_gun min 21->45, max 75->90.",
+   "gerekce": "Plan ilk imza için 7-8. hafta der; görüşme olmadan 3 hafta kaynaksız."
+  },
+  {
+   "itiraz": "C odeme adedi baz 8 yüksek; kaynağa göre 2-3 satış gerçekçi.",
+   "karar": "kismen",
+   "degisiklik": "C baz odeme/müşteri 8->6 (yukarıdaki tema değişikliğiyle aynı).",
+   "gerekce": "Kaynak 2-8 satış/ay der, 2-3 toplam demez; ama pencere 3 ay ve veri yok, düşük uç alındı."
+  }
+ ]
+}

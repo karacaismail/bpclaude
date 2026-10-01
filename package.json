@@ -1,0 +1,22 @@
+{
+  "name": "bpclaude",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reklamsız, altı ayda nakit hedefi için proje seçim şablonu ve puanlama: statik site",
+  "type": "module",
+  "scripts": {
+    "build": "python3 tools/compute.py && python3 tools/build_workbook.py && python3 tools/verify_workbook.py && python3 tools/add_cached_values.py docs/indir/bpclaude-secim-sablonu.xlsx && python3 tools/build_site.py && python3 tools/public_check.py",
+    "serve": "python3 tools/serve.py 4173",
+    "check": "python3 tools/public_check.py",
+    "test": "playwright test",
+    "test:hizli": "playwright test --project=chromium --project=telefon-webkit --grep-invert görsel",
+    "test:gorsel": "playwright test --grep görsel",
+    "test:gorsel:guncelle": "playwright test --grep görsel --update-snapshots",
+    "rapor": "python3 tools/public_check.py --json qa/public_check.json; python3 tools/qa_report.py",
+    "test:canli": "BASE_URL=$(python3 tools/live_url.py) playwright test --project=chromium --project=telefon-webkit --grep-invert görsel"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0"
+  }
+}

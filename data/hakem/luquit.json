@@ -1,0 +1,53 @@
+{
+ "slug": "luquit",
+ "kararlar": [
+  {
+   "itiraz": "luquit-a: kalan efor 150-320 saat ve ilk tahsilat 100-180 gün iyimser; kaynakta ay 4-5, sunucu işi 8-12 hafta",
+   "karar": "kismen",
+   "degisiklik": "kalan_efor min 150 -> 160; ilk_tahsilat_gun 100-180 -> 120-180; baslangic_nakit 31000 -> 36000; G6 ve G7 notları güncellendi",
+   "gerekce": "Sunucu işi 8-12 hafta ve 2 ay ücretsiz pilot ilk ödemeyi ay 4'ün altına indirmez; 160 saat 8 hafta x 20 saat; beklenen ve üst sınır kaynakla uyumlu."
+  },
+  {
+   "itiraz": "luquit-b: kalan efor 40-110 saat iki özgün yolculuk, 12 bileşen testi, belge sitesi ve ödeme için iyimser",
+   "karar": "kabul",
+   "degisiklik": "kalan_efor 40/70/110 -> 60/100/150; ilk_tahsilat_gun 30-75 -> 45-90; G6 notu ve dayanak güncellendi",
+   "gerekce": "Kütüphane yüzde 55 tamam; 8 bileşen testi, npm, lisans, iki yolculuk, belge sitesi ve ödeme sayfası eski aralığa sığmıyor. G6 hâlâ 8 haftanın altında."
+  },
+  {
+   "itiraz": "luquit-b: G8 testte ama destek ve iade kapsamı yazılı değil; destek saati katkıyı düşürüyor",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart G8'i zaten test veriyor ve kapı düzeltmesi destek süresi ile özel iş kapsamının yazılmasını istiyor; 675 TL maliyet bir saat desteği içeriyor."
+  },
+  {
+   "itiraz": "luquit-b G5 test olmalı: paket yayımlanmamış, makale yazılmamış, somut hedef grup ya da dizin adlandırılmamış",
+   "karar": "kabul",
+   "degisiklik": "G5 gecti -> test; not ve kapi_duzeltme güncellendi",
+   "gerekce": "G5 test tanımı somut grup, dizin ya da ortak adlandırılmamasıdır; kaynak yalnız GitHub, npm ve Dev.to anıyor, yedek ajans referansı da izinsiz."
+  },
+  {
+   "itiraz": "luquit-a G1 test: ad kararı kesinleşmeden pilot ofise ürün gösterilmemeli",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Katılınan bir görüş; G1 zaten test. Yeni ad, ilk kapsamda pilot şartı ve kapı düzeltmesinde yazılı, kart değişikliği gerekmez."
+  },
+  {
+   "itiraz": "luquit-a: alti_ay_musteri baz 5 yerine 2-3; ödeyen yok, yerel rakipler aynı fiyatta, ilk ödeme ay 5",
+   "karar": "kabul",
+   "degisiklik": "musteri baz 5 -> 3; odeme_adedi baz 8 -> 5; tahsilat baz 6800 -> 4250; dayanak güncellendi",
+   "gerekce": "İlk ödeme ay 5-6 ve ilk müşteriler yalnız 3 pilot ofis; 5 müşteri kaynakla desteklenmiyor. İyi senaryo plan KPI'sı 10 ofis olarak kaldı."
+  },
+  {
+   "itiraz": "luquit-a: donusum_orani yuksek 0,20 yerine 0,10; kapanış varsayımı kanıtsız",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Yüzde 20 planın açık kapanış varsayımıdır ve dayanakta kanıtsız diye işaretli; baz gelir artık yalnız 3 pilot ofise dayandığı için dönüşüm oranı geliri belirlemiyor."
+  },
+  {
+   "itiraz": "luquit-b: alti_ay_odeme_adedi baz 4 yerine 1-2; donusum yuksek 0,06 iyimser",
+   "karar": "kismen",
+   "degisiklik": "odeme_adedi ve musteri baz 4 -> 2; tahsilat baz 6000 -> 3000; donusum yuksek 0,06 -> 0,05",
+   "gerekce": "Plan tavanı yıllık birkaç yüz dolar; gecikme düşülünce baz 2. İyi 12 satış plan üst bandıyla uyumlu. Dönüşüm kanıtsız, temkinli seçildi."
+  }
+ ]
+}

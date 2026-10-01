@@ -1,0 +1,59 @@
+{
+  "slug": "devpanel",
+  "kararlar": [
+    {
+      "itiraz": "Kart: kurucunun kendi ürünündeki (Zabuno) kullanımı referans sayıyor; kaynakta bu yalnız 90 günlük plan.",
+      "karar": "kabul",
+      "degisiklik": "analist_gorusu ve devpanel-a kanal_yedek: kullanım referans olur ifadesi planlı ve henüz yok olarak düzeltildi.",
+      "gerekce": "Kaynak: Zabuno'da kullanım 90 gün sonra kanıtlanacak; bugün kullanım yok."
+    },
+    {
+      "itiraz": "Kart: dev.to ve GitHub yazılarını kanal sayıyor; yazı yayımlanmamış, depo 0 yıldız.",
+      "karar": "kabul",
+      "degisiklik": "devpanel-a kanal_birincil: dev.to ve GitHub yazıları planlı olarak işaretlendi.",
+      "gerekce": "Kaynak yazıları 90 günlük takvimde planlı gösteriyor; yayımlanmış yazı yok."
+    },
+    {
+      "itiraz": "Kart: devpanel-a için 20 kişilik tanıdık listeyi kanal varsayıyor; kurucunun ağı belgelenmemiş.",
+      "karar": "kismen",
+      "degisiklik": "devpanel-a kanal_birincil: tanıdık ve ikinci derece ifadesi kaldırıldı, ağın belgelenmediği yazıldı. G4 zaten test.",
+      "gerekce": "Kaynak 20 hedef kişiyi planlıyor ama gerçek ağı belgelemiyor; kanal geçerli, tanıdık iddiası değil."
+    },
+    {
+      "itiraz": "Kart: devpanel-c teklifi 31 ekranı ürün gibi sunuyor; ekranlar sahte veriyle yaklaşık %60 tıklanabilir prototip.",
+      "karar": "kabul",
+      "degisiklik": "devpanel-c teklif: 31 ekranın sahte veri ve yaklaşık %60 tıklanabilir prototip olduğu açıkça yazıldı.",
+      "gerekce": "Plan 2. bölüm: sahte veri, %60 tıklanabilir prototip."
+    },
+    {
+      "itiraz": "Kart: devpanel-b kapsamı 32-64 saat yazıyor; GPT önkoşul olarak tek canonical seçimini ve dışa aktarıcı yokluğunu söylüyor.",
+      "karar": "kismen",
+      "degisiklik": "devpanel-b ilk_kapsam: önkoşul olarak tek canonical varyant seçimi eklendi; efor aralığı (40-110) ve G6 test korundu.",
+      "gerekce": "Kart zaten 40-110 saat ve G6 test veriyor; eksik olan yalnız canonical önkoşuluydu."
+    },
+    {
+      "itiraz": "Kapı: devpanel-a G6 test olmalı; satış döngüsü ölçülmedi, ilk tahsilat 60-150 gün.",
+      "karar": "kabul",
+      "degisiklik": "devpanel-a G6 gecti idi, test oldu; not ve kapi_duzeltme güncellendi (satış döngüsü ilk 10 mesajdan ölçülür).",
+      "gerekce": "Kapı tanımı: satış döngüsü ölçülmediyse test; benzer satış geçmişi ve ödeyen müşteri yok."
+    },
+    {
+      "itiraz": "Finans: devpanel-a baz 36.000 iyimser; ödeyen yok, ağ kanıtsız, dönüşüm varsayım; iyi 3 müşteri fazla.",
+      "karar": "kabul",
+      "degisiklik": "alti_ay_tahsilat baz 36.000 idi 0; iyi 108.000 idi 36.000; ödeme adedi ve müşteri baz 0, iyi 1; dayanak güncellendi.",
+      "gerekce": "Kaynakta 1 kapanış yalnız ücretli kanal eşiği, tahmin değil; kanıt yoksa temkinli düşük gelir."
+    },
+    {
+      "itiraz": "Finans: devpanel-b baz 20.000 iyimser; dışa aktarıcı yok, ücretsiz kütüphaneler var; kötü 0 daha olası.",
+      "karar": "kabul",
+      "degisiklik": "alti_ay_tahsilat baz 20.000 idi 0; iyi 60.000 idi 40.000; adet ve müşteri baz 0, iyi 2; dayanak güncellendi.",
+      "gerekce": "GPT: 2 ücretli entegrasyon yalnız hedef; dışa aktarıcı ve canonical yok, kanıt zayıf."
+    },
+    {
+      "itiraz": "Finans: devpanel-c kötü 2.352 ve baz 14.112 yüksek; kaynak ayda 0-5 satış ve kısa pencere söylüyor; kötü 0, baz 2-3 satış.",
+      "karar": "kismen",
+      "degisiklik": "Kötü senaryo 2.352 idi 0 (adet ve müşteri 0). Baz 14.112 (6 satış) ve iyi korundu; dayanak güncellendi.",
+      "gerekce": "Kaynak alt sınırı 0 diyor, kötü 0 olmalı; plan 12 aylık baz 30 olduğundan 6 aylık 6 satış zaten temkinli."
+    }
+  ]
+}

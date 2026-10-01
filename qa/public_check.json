@@ -1,0 +1,15 @@
+{
+ "kaynak": "git",
+ "dosya": 491,
+ "taranan": {
+  "metin": 361,
+  "xlsx": 1,
+  "ikili": 128
+ },
+ "ozel_liste": true,
+ "ozel_kural": 13,
+ "elle_gozden_gecirilen": [
+  "tools/forbidden.py"
+ ],
+ "ihlal": 0
+}

@@ -1,0 +1,665 @@
+{
+ "kriter": "A6",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Rakip QR menüler 175-250 TL/ay alıyor; kafeler bu işe ödüyor ama 499 TL bandın iki katı ve hiçbir kafeyle fiyat konuşulmadı."
+  },
+  "zabuno-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Zincir fiyatı katalogda olmayan öneri; pilot ücretsiz, yazılı pilot onayı ve fiyat görüşmesi yok; rakip zincir planları daha ucuz."
+  },
+  "zabuno-c": {
+   "p": 1,
+   "k": 0,
+   "g": "30.000 TL kurucu saatinden türetilmiş varsayım; kaynakta fiyat ve ücretli talep kaydı yok."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı iş için Endeksa arsa raporu 1.199 TL, Eder Mi 250-950 TL alıyor; 299-799 TL bu bandın içinde. Ödeyen yok, fiyat sınanmadı."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ofisler ilan paketine ödüyor (kullanıcı bildirimi, farklı iş); kart aboneliği için fiyat görüşmesi yok, deneme-ödeme oranı yalnız hedef."
+  },
+  "parselq-c": {
+   "p": 1,
+   "k": 0,
+   "g": "4.000 TL yalnız test fiyatı; benzer işe ödeme kaynağı, isimli ofis ya da fiyat görüşmesi yok."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı iş için Teşvik Rotası analizi 500-2.600 TL, danışman 3.000 TL ve üstü alıyor; 2.990 TL bu bandda. Ödeyen yok, fiyat konuşulmadı."
+  },
+  "destektesvik-b": {
+   "p": 2,
+   "k": 1,
+   "g": "TeşvikAra 839 TL/ay ile benzer araca ödeme var; 2.990 TL/ay bunun üç katından fazla, pilot ücretsiz, ödeyen büro yok."
+  },
+  "destektesvik-c": {
+   "p": 1,
+   "k": 0,
+   "g": "60.000 TL sponsorluk plan kurgusu; hedef kurum adlandırılmadı, görüşme ya da niyet yazısı yok, TTO bütçesi yok."
+  },
+  "asgari-iscilik-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Müşteri adayına fiyatlı yazılı teklif hazır ama yanıt kaydı yok; kaynaklı fiyatlar hakediş araçlarına ait, bu hesabı yapan ürüne değil."
+  },
+  "asgari-iscilik-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı alıcı komşu yazılımlara ödüyor (büro yazılımı, hakediş araçları) ama bu iş için değil; pilot isteyen yok, ARPU varsayım."
+  },
+  "asgari-iscilik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı bugün danışmana dosya başı ücret ödüyor ama tutar kamuya açık değil; 10.000 TL test fiyatı, hizmet fiyatı için kaynak yok."
+  },
+  "zincir-danismanligi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Teklif henüz iletilmedi, 180.000 TL konuşulmadı; mevcut ilişki ve teslim edilmiş analizler var ama alıcının benzer işe ödediği gösterilmedi."
+  },
+  "zincir-danismanligi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "30.000 TL sınanmadı; ajanslar denetimi ücretsiz verebiliyor, ilişki yalnız tek zincirde, ödeme talebi doğrulanmadı."
+  },
+  "zincir-danismanligi-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Pilot ücretsiz, ücretli abonelik ayrı satış değil; rakip planlar sınırsız şubede 2.499 TL ve POS içi QR menü ücretsiz, 6.373 TL konuşulmadı."
+  },
+  "kar-pusulasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Karpanel 349-1.299 TL/ay fiyat listesi var ama ödeyen sayısı belgesiz ve 15'ten çok ücretsiz araç aynı hesabı yapıyor; 499 TL sınanmadı."
+  },
+  "kar-pusulasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "990 TL/ay kurucu planı; rakip paneller satıcıya satıyor, danışmana değil. Danışmanın ödediğini gösteren kaynak yok."
+  },
+  "kar-pusulasi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Karpanel aynı alıcıya benzer analitiği ücretli satıyor (ödeyen sayısı belgesiz); 1.000 TL rapor fiyatı varsayım, gerçek müşteri fiyatı değil."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Benzer programlara ödeme kaynaklı: üniversite sertifika programı 5.000 TL, kayıtlı kurs 3.900 TL; 5.000 TL bandın içinde. Talep görüşmesi yok."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Satıcılar benzer işe özel ders (1.500-20.000 TL) ve ajans ücreti ödüyor, kaynaklı; 2.500 ve 12.500 TL bu bandda. Talep görüşmesi yok."
+  },
+  "titanlar-c": {
+   "p": 1,
+   "k": 0,
+   "g": "15.000 TL gün ücreti ve kurum bütçesi varsayım; odalar ücretsiz bakanlık etkinlikleri ve oda akademileriyle yetinebiliyor, referans yok."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Çok dilli üretici sitesi için ajanslar 180.000 TL ve üstü alıyor (kaynaklı); 85.000 TL bunun altında. Ödeyen dış müşteri ve yazılı niyet yok."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajans fiyatları kaynaklı ama bu segmentte serbest çalışanlar 10-25 bin TL alıyor; 45.000 TL bandın üstünde, plan ödeme istekliliğini 2/5 sayıyor."
+  },
+  "kurumsal-site-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Astro sanayi teması için benzer ürün satış verisi bulunamadı; 49-149 USD fiyatı yalnız kurucu görüşü."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajans ve danışman fiyat bantları dış kaynak ama bu paketin bütününe ödeme gösterilmedi; iki mevcut ilişkiyle 90.000 TL konuşulmadı."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "35.000 TL ajans denetim bandının (15-60 bin TL) ortasında ama kapsam farklı; fiyat görüşmesi, ön ödeme ya da yazılı niyet yok."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajans web bandı 150-450 bin TL, 45.000 TL bunun altında ama fiyat varsayım; 20 üreticiden hiçbiriyle fiyat konuşulmadı."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Yerli KVKK SaaS'ı 719 TL/ay'dan başlıyor, benzer işe ödeme var; ajans lisansı 9.990 TL sınanmadı, ajans görüşmesi sayısı 0."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "1.490 TL için ödeme ya da ön kayıt denemesi yok; taksitle dönüşüm artışı ölçümsüz varsayım, mağaza görüşmesi 0."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "2.500 TL site başı fiyat ve ajansın 1.500-3.000 TL'lik kalemi varsayım; teklif gönderilmedi, fiyat sınanmadı."
+  },
+  "qral-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Rakiplerin hepsi ücretsiz, ücretli kardeş uzantı 141 kullanıcıda kalmış; 4,99 euro için görüşme ya da ödeme yok."
+  },
+  "qral-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Öğretmenle görüşme yok; ödeme eğilimi 3/5 ve yıllık getiri hesabı kurucu tahmini, okul bütçesi doğrulanmadı."
+  },
+  "qral-c": {
+   "p": 1,
+   "k": 0,
+   "g": "500-1.500 TL aralığı kurucu varsayımı; fiyat görüşmesi yok, yer imi ve ücretsiz yapay zekâ güçlü alternatif."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Astro tema paketleri 99-199 USD, Notion şablonları 29-79 USD satılıyor; eğitmen lisansı 2.990 TL için eğitmen listesi ve ödeme niyeti yok."
+  },
+  "frontend-atlasi-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Plan öğrenenin ödeme isteğini düşük sayıyor; Patika ve BTK Akademi ücretsiz, 349 TL sınanmadı, site yayında değil."
+  },
+  "frontend-atlasi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "4.800 TL kartın varsayımı, plan bu birimi fiyatlamıyor; Armut bandı kurumsal eğitim talebine ait, eğitmenin ödediği gösterilmedi."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kurumsal eğitim bandı 1.000-11.000 TL kaynaklı; 19.900 TL bandın üstünde, pilot 9.900 TL içinde. Yazılı teklif ve ödeyen yok."
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Kitabın Türkçe baskısı ve strateji kursları satılıyor (1.606 öğrenci); bu çalışma kâğıdı paketine ödeme kanıtı yok."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Notion şablonları 29-79 USD satılıyor ama güncel rakip fiyatları doğrulanmadı; 1.000 TL kit için facilitatör görüşmesi ve isim listesi yok."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Pitch deck için 5-25 bin TL ödeniyor (kaynaklı); model dahil 45.000 TL bandın üstünde, ödeme ya da yazılı niyet yok."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Slayt ajanslarına 1.000-5.000 TL ödeniyor; 9.000 TL emek bedelinden türetilmiş varsayım ve bandın üstünde, rapor ücreti sınanmadı."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "30.000-60.000 TL lisans için ödeme isteği kanıtsız; program yöneticisinin ilk itirazı bütçe yokluğu, plan baz lisans gelirini 0 alıyor."
+  },
+  "vize-operasyon-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Acenteler Excel ve WhatsApp ile çalışıyor, ödeme niyeti yok; rakipler fiyat belirtmiyor, 1.490-5.990 TL/ay yalnız plan fiyatı."
+  },
+  "vize-operasyon-b": {
+   "p": 1,
+   "k": 0,
+   "g": "5.000 TL kurulum ve 3.000 TL/ay kurucu hipotezi; acente ilişkisi yok, rakiplerin bu işi sunduğu bile teyit edilmedi."
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Başvurucu bugün acenteye 3.000-6.000 TL ödüyor ama bu kaynaksız; plan 299 TL'yi zayıf sayıyor, ChatGPT ve ücretsiz listeler ikame."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Clutch verisi ajanslara MVP için ödendiğini gösteriyor ama küresel; ön tohum girişimin 95-480 bin TL ödeyeceği ve fon kullanımı doğrulanmadı."
+  },
+  "software-factory-b": {
+   "p": 1,
+   "k": 0,
+   "g": "300-800 USD kurulum fiyatı hipotez; dış kullanıcı yok, karşılık gelen satış deneyi yapılmadı."
+  },
+  "software-factory-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Toptan %15 iskonto ve ajans marjı görüşmesiz varsayım; ödeyen ajans ve ajans listesi yok."
+  },
+  "strateji-simulatoru-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Pilot 3 ay ücretsiz; kurum getiri hesabı ve dönüşüm oranları varsayım, 24.900 TL için kurum görüşmesi yok."
+  },
+  "strateji-simulatoru-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Plan bireyden rapor başına ücret almayı ChatGPT ikamesine karşı zor sayıyor ve ödeme isteğini 2/5 puanlıyor; ödeyen yok."
+  },
+  "strateji-simulatoru-c": {
+   "p": 1,
+   "k": 0,
+   "g": "1.500 TL ve müşteri sayısı kurucu beyanı, doğrulanmadı; mevcut müşterilere teklif henüz gönderilmedi."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Rakipler ücretsiz (ccusage, CodexBar, Stats) ve benzer araçlarda sponsor dönüşümü yüzde 1'in çok altında; 15-19 USD için ön sipariş yok."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "60-200 USD destekli kurulum için talep kanıtı yok; ücretsiz çözüm ve yerleşik düzeltme beklentisi var."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Benzer araçlar 22-27 sponsor topluyor (yaklaşık 108 USD/ay); sponsorluğa ödeme var ama küçük, 64 USD/ay kurumsal sponsor kanıtsız."
+  },
+  "actionplan-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Dış kullanıcı sıfır; rakipler task-master ve spec-kit ücretsiz, 39 USD için ön ödeme ya da niyet yok."
+  },
+  "actionplan-b": {
+   "p": 1,
+   "k": 0,
+   "g": "400 USD kurulum GPT fiyat hipotezi; ücretli pilot, ajans müşteri listesi ya da niyet yok."
+  },
+  "actionplan-c": {
+   "p": 1,
+   "k": 0,
+   "g": "490 TL sınanmadı; plan bu segmentin ödeme istekliliğini 2/5 sayıyor, İngilizce ücretsiz seçenekler ikame."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Pano ayrı satılmıyor, 19 USD Pro'ya katkı; ücretsiz rakipler (ccusage, CodexBar) yaygın, beta davetlisi bile yok."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 1,
+   "k": 0,
+   "g": "1.500 TL/ay varsayım; ajans kişiliği kurgusal, gerçek ajans ilişkisi ya da görüşme yok."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "18.000 TL kurucu saatinden türetilmiş; alıcı yalnız hipotez, doğrulanmış talep yok, ücretsiz grafik karşılığı çok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Çeviri teknik kitaplara 322-679 TL ödeniyor (kaynaklı) ama bu yayınevi kitabı; 399 TL'lik rehber için ön satış yok."
+  },
+  "ai-first-tasarim-b": {
+   "p": 1,
+   "k": 0,
+   "g": "25.000 ve 120.000 TL kurucu tahmini; freelancer ve iç ekip maliyeti varsayım, plan baz yılda danışmanlık sayısını 0 alıyor."
+  },
+  "ai-first-tasarim-c": {
+   "p": 1,
+   "k": 0,
+   "g": "18.000 TL saat ücreti varsayımından türetilmiş; kaynak fiyat vermiyor, ücretli pilot yok."
+  },
+  "aicommandcard-a": {
+   "p": 1,
+   "k": 0,
+   "g": "999 TL plana 500 TL fark kurucu hipotezi; ücretli hesap sayısı doğrulanmadı, pilotlar ücretsiz, fiyat görüşmesi yok."
+  },
+  "aicommandcard-b": {
+   "p": 1,
+   "k": 0,
+   "g": "12.000 TL varsayım; kaynak talep ve ödemenin doğrulanmadığını söylüyor, ücretsiz rakipler var."
+  },
+  "atonota-denetim-a": {
+   "p": 1,
+   "k": 0,
+   "g": "1.990 TL/yıl plan varsayımı; Site Kit ücretsiz ve yaygın, Pro ön ödemesi ya da yazılı niyet yok."
+  },
+  "atonota-denetim-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajanslar bakım araçlarına site başına 1-2 USD/ay ödüyor (kaynaklı); 7.150 TL/yıl sınanmadı, ajans görüşmesi yok."
+  },
+  "atonota-denetim-c": {
+   "p": 1,
+   "k": 0,
+   "g": "5.000 TL/ay yalnız test varsayımı; ajans ilişkisi doğrulanmadı, yazılı niyet yok."
+  },
+  "b2b-bilesenler-a": {
+   "p": 1,
+   "k": 0,
+   "g": "20.000 TL blok fiyatı ve ajans ürün sayfası bandı varsayım; mevcut müşterilere teklif gönderilmedi, fiyat kabulü yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 1,
+   "k": 0,
+   "g": "12.000 TL kartın kurgusu; kaynak ödeme talebini doğrulanmamış sayıyor, belgelerde ajans ilişkisi yok."
+  },
+  "b2b-bilesenler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Fiyat çapası Metronic 49 USD ve 120 binden çok satış ama o bir yönetim paneli şablonu; ürün sayfası şablonu için talep kanıtı yok."
+  },
+  "banner-post-a": {
+   "p": 1,
+   "k": 0,
+   "g": "999 TL plana 500 TL fark hiç test edilmedi; Zabuno tahsilatı açık değil, pilotlara ilk ay ücretsiz, geçiş oranı varsayım."
+  },
+  "banner-post-b": {
+   "p": 1,
+   "k": 0,
+   "g": "7.500 TL/ay kurucu varsayımı, ajans bandı da varsayım; üç mevcut müşteriye teklif henüz iletilmedi."
+  },
+  "banner-post-c": {
+   "p": 1,
+   "k": 0,
+   "g": "6.000 TL kaynaklarda yok, kartın varsayımı; ödeme talebi doğrulanmadı, ajans alıcı listesi yok."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "ScoreApp 39-149 USD/ay ile benzer forma ödeme var ama Tally ücretsiz; 490-990 TL/ay için ücretli pilot ya da ajans görüşmesi yok."
+  },
+  "karar-sihirbazi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "6.000 TL varsayım, kaynak fiyat vermiyor; ajanslarla görüşme ya da yazılı niyet yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "5.000 TL plan varsayımı; motor açık kaynak ve Tally ücretsiz, kit için ödeme isteği gösteren belge yok."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 1,
+   "k": 0,
+   "g": "15.000 TL plan önerisi; kaynaklı fiyatlar Pitch ve Beautiful.ai araç abonelikleri, hizmete değil; ajans sunum fiyatı varsayım."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "8.000 TL kurulum ve 2.500 TL/ay varsayım; ajansın tasarımcıya ödediği tutar ve ajans sayısı kaynaksız, pilot kabulü yok."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "8.000 TL başka bir paketin fiyatından alınmış; danışman ismi, fiyat kanıtı ya da kanal doğrulaması yok."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Figma ajansı ve yapay zekâ üretici fiyat bandı için bir dış kaynak var, gerisi varsayım; 45-130 bin TL hiçbir alıcıyla konuşulmadı."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ajansın tasarımcı gününe ödediği ve %20 iskonto varsayım; ajans listesi, görüşme ya da fiyat yanıtı yok."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "6.000 TL kurulum ve 4.000 TL/ay yalnız deney paketi; pilot, görüşme ve alıcı listesi yok, fiyat hiç sınanmadı."
+  },
+  "ddd-renderer-a": {
+   "p": 1,
+   "k": 0,
+   "g": "149 TL ek ve %30 dönüşüm kurucu varsayımı; e-kitap okuyucu sayısı da varsayım, ön sipariş sayfası yok."
+  },
+  "ddd-renderer-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı alıcı IcePanel'e 40-80 USD/editör/ay ödüyor ama Structurizr ve LikeC4 ücretsiz; plan tek seferlik şablon ödeme isteğini düşük sayıyor."
+  },
+  "ddd-renderer-c": {
+   "p": 1,
+   "k": 0,
+   "g": "50.000 TL varsayım, ücretli referans yok; ilk değerlendirme mevcut ilişkide ücretsiz yapılacak."
+  },
+  "devpanel-a": {
+   "p": 1,
+   "k": 0,
+   "g": "36.000 TL (günü 12.000 TL) varsayım; Retool fiyatı platform aboneliği, entegrasyon hizmetine ödeme kanıtı değil; kurucunun ağı belgesiz."
+  },
+  "devpanel-b": {
+   "p": 1,
+   "k": 0,
+   "g": "20.000 TL bir test aralığından alınmış; ücretsiz form kütüphaneleri ağır rekabet, dış kullanıcı ve görüşme yok."
+  },
+  "devpanel-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı iş için Metronic 49 USD'ye 120.362 satış yapmış, fiyat aynı; alıcının benzer şablona ödediği kaynaklı. Bu ürüne ödeyen yok."
+  },
+  "e-menum-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Ajanslar benzer betiği 19-89 USD'ye alıyor; 25.000 TL kurulum bunun çok üstünde ve ajansla fiyat görüşmesi, referans yok."
+  },
+  "e-menum-b": {
+   "p": 1,
+   "k": 0,
+   "g": "5 şube 4.000 TL/ay ve 5.000 TL kurulum açıkça test fiyatı; akışların çalıştığı kanıtsız, marka görüşmesi yok."
+  },
+  "e-menum-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Benzer QR menü betikleri 19-89 USD'ye 2 bine kadar satmış ama Laravel pazarında; 89 USD bandın üst ucu, Django alıcısı için kanıt yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Rakip trend araçları ücretli (39-249 USD/ay), benzer işe ödeme var; 399 TL/ay sınanmadı, abone listesi yok, alıcı havuzu varsayım."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "349 TL sınanmadı; ücretsiz fikir veritabanları ve genel yapay zekâ istemleri paketi kopyalanabilir kılıyor."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "299 USD ajans lisansı ve ajans kişiliği varsayım; ajans listesi, ilişki ya da görüşme yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 1,
+   "k": 0,
+   "g": "7.500 TL taslak fiyat; dışarıdan ödeme isteği test edilmedi, denetim eki kabul oranı %50 varsayım."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 1,
+   "k": 0,
+   "g": "299 TL ve %1 dönüşüm varsayım; ücretsiz W3C ve çeviri aracı blog içerikleri güçlü ikame."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 1,
+   "k": 0,
+   "g": "14.400 TL pilot yalnız teklif testi, rakip fiyatı değil; SaaS ekipleriyle ilişki ve isim listesi yok."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 1,
+   "k": 0,
+   "g": "60.000 TL plan fiyatı; satış mesajı hiç denenmedi, yazılı talep ya da ön ödeme yok, isteyen küme oranı varsayım."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "20.000 TL kaynakta yok, varsayım; girişimci bütçesi 20-60 bin TL kişilik tahmini, ücretli talep doğrulanmadı."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 1,
+   "k": 0,
+   "g": "250.000 TL yalnız plan fiyatı; kurumsal bütçe kişilik varsayımı, referans müşteri ve vaka yok."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Satılan şey Karar Kitabı çalışma kâğıdı paketi: benzer kitap ve kurslara ödeme kaynaklı ama bu pakete ödeyen yok, huni oranları varsayım."
+  },
+  "lifeos-b": {
+   "p": 1,
+   "k": 0,
+   "g": "600 TL bir 300-1.000 TL varsayımının orta noktası; zaman izleyici fiyat karşılaştırması bile yapılmadı."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 0,
+   "g": "19 USD kaynakta yok, analist varsayımı; rakip yeni sekme eklentileri ücretsiz ya da ucuz, kod satışı talebi kanıtsız."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 1,
+   "g": "A seçildi: iki yerel emlak CRM'i aynı işi 499-599 TL/ay'a satıyor, giriş planı bu bandda. B'nin dediği gibi hiçbir ofisle fiyat konuşulmadı."
+  },
+  "luquit-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ücretli bileşen paketleri var ama ücretsiz popüler rakip de var; plan 12 bileşen için yılda 0-30 satış bekliyor, 1.500 TL kit hiç denenmedi."
+  },
+  "metaframer-kernel-a": {
+   "p": 3,
+   "k": 1,
+   "g": "A seçildi: ShipFast benzer kiti 8.427 müşteriye satmış, kitler 199-379 USD; 149-349 USD bu bandda. B'nin dediği gibi bu ürüne ödeyen yok."
+  },
+  "metaframer-kernel-b": {
+   "p": 1,
+   "k": 0,
+   "g": "40.000 TL paket ve atölye fiyatı varsayım; ajans bütçe eşiği de varsayım, ajans listesi ve görüşme yok."
+  },
+  "metaframer-kernel-c": {
+   "p": 1,
+   "k": 0,
+   "g": "1.500 USD paket hipotezi; rakip fiyatları araç aboneliği, entegrasyon hizmetine talep kanıtı ve isim listesi yok."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 1,
+   "k": 0,
+   "g": "199 TL kurucu varsayımı; Namelix ve Lean Domain Search ücretsiz, talep ve ödeme doğrulanmadı."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "499 TL/yıl ve ajans bütçesi varsayım; ajans segment puanı ölçülmüş talep değil, ajansla fiyat konuşulmadı."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "1.490 TL sınanmadı, teklif gönderilmedi; ilk 10 müşteri yalnız hedef, saat ücreti varsayım."
+  },
+  "projector-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Çeviri teknik kitaplara 322-679 TL ödeniyor (kaynaklı) ama bu yayınevi kitabı; 349 TL e-kitap için ön satış sayfası bile yok."
+  },
+  "projector-b": {
+   "p": 1,
+   "k": 0,
+   "g": "35.000 TL ve ekip bütçesi varsayım; referans yok, ilk atölye maliyetine verilecek."
+  },
+  "projector-c": {
+   "p": 1,
+   "k": 0,
+   "g": "300-900 USD pazar fiyatı değil sınama aralığı; ürün müşteriye dağıtılmadı, ücretli migration hedefi hipotez."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Notion ve Gumroad şablonları 9-997 USD satılıyor (dış kaynak) ama Türkçe karşılığı yok; 299 TL sınanmadı, ürün sayfası yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "1.490 TL plan fiyatı; kuluçka ödeme istekliliği 4/5 yalnız varsayım, program yöneticisiyle görüşme yok."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Okur ödemiyor; mağaza komisyon oranı doğrulanamadı, ortaklık programı kabulü ve ilk komisyon yok."
+  },
+  "signator-a": {
+   "p": 1,
+   "k": 0,
+   "g": "4.990 TL/yıl ve ajansın müşteriye yeniden satışı varsayım; ajans görüşmesi ya da pilot kaydı yok."
+  },
+  "signator-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Exclaimer ve WiseStamp aynı işe ücret alıyor (yıllık yaklaşık 108 USD) ama HubSpot ve Signitic ücretsiz; 990-2.990 TL sınanmadı."
+  },
+  "signator-c": {
+   "p": 1,
+   "k": 0,
+   "g": "1.000 TL teklif testi henüz yapılmadı; Gmail yardım sayfası ücretsiz alternatif, pilot kabul oranı varsayım."
+  },
+  "volley-tap-a": {
+   "p": 1,
+   "k": 0,
+   "g": "25.000 TL kurucu varsayımı; ajans özel oyun fiyatı doğrulanmadı, kulüp ödeme gücü varsayım, görüşme ve referans yok."
+  },
+  "volley-tap-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Portalların geliştiriciye reklam payı ödediği kamuya açık (Poki 50/50) ama eCPM yayımlanmamış; beklenen gelir aylık 60-70 USD."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "3 USD premium ve 5 gönüllü ödeme hedefi yalnız hipotez; gerçek analitik ve oyuncu verisi yok."
+  },
+  "woocommnts-a": {
+   "p": 1,
+   "k": 0,
+   "g": "1.490 TL/yıl plan varsayımı; dizindeki rakip taksit eklentisi ödeme geçidine bağlı, ücretli rakip fiyatı ya da görüşme yok."
+  },
+  "woocommnts-b": {
+   "p": 1,
+   "k": 0,
+   "g": "2.990 TL ajans paketi ve ajans bütçesi varsayım; ajans listesi, görüşme ya da teklif yanıtı yok."
+  },
+  "woocommnts-c": {
+   "p": 1,
+   "k": 0,
+   "g": "3.000-8.000 TL tek göç yalnız test önerisi; ücretsiz CusRev güçlü alternatif, talep kanıtı yok."
+  },
+  "egitim-demolari-a": {
+   "p": 1,
+   "k": 0,
+   "g": "600 TL paket fiyatı varsayım; kaynaklar ücretli talep kanıtı olmadığını söylüyor, adlı öğretmen listesi yok."
+  },
+  "egitim-demolari-b": {
+   "p": 1,
+   "k": 0,
+   "g": "6.000 TL atölye fiyatı kurucu varsayımı; ücretli talep kanıtı yok, yalnız ücretsiz mini ders denemesi planlı."
+  },
+  "baz-secenekler-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Bir inşaat firmasına günlük 4.000 TL yazılı teklif var ama yanıt kaydı yok; 6.000 TL hedef ve piyasa aralığı varsayım, imza yok."
+  },
+  "baz-secenekler-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Benzer betikler 19-89 USD'ye satılıyor; 15.000-25.000 TL kurulum bunun çok üstünde, ajansın bu farkı ödeyeceği gösterilmedi."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Programın 1.350.000 TL tutarı ve pay koşulu kamuya açık; kabul oranı bulunamadı, başvuru yapılmadı, destek geliri satış değil."
+  }
+ }
+}

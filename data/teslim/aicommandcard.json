@@ -1,0 +1,17 @@
+{
+ "slug": "aicommandcard",
+ "secenekler": {
+  "aicommandcard-a": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Plan katmanı olarak satılan yazılım abonelik özelliği; müşteriye özel iş yok, teslim 0. Destek 30 dk yalnız soru ve hata. Baz 6 ayda ödeme 0."
+  },
+  "aicommandcard-b": {
+   "satis_basina_kurucu_saati": 5,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "5 iş günü sabit paket = 40 saat; React paneli entegrasyonu, 4 durum, klavye turu, 320 px kontrolü, 1 revizyon. Karttaki 8 saat satışın bir kısmı teslimdi; satış 5 saat."
+  }
+ }
+}

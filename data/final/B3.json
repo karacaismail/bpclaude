@@ -1,0 +1,665 @@
+{
+ "kriter": "B3",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 2,
+   "k": 0,
+   "g": "499 TL/ay abonelik yüz yüze semt turuyla satılıyor; ilk ay ücretsiz, satış başına 3 saat. Düşük fiyat kurucu satışını zor taşır; sınanmadı."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aylık 6.373 TL ve yıllık sözleşme, mevcut ilişkiye yazılı teklif ve toplantıyla satılıyor; fiyat kurucu satışını taşır ama bu kanalla satış yapılmadı."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "30.000 TL proje kurucu teklifine uygun ama hedef ajanslar adlı değil, fiyat kaynakta yok; soğuk teklifin ödeme getirdiği doğrulanmadı."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "299-799 TL tek seferlik rapor ilçe rehber sayfaları ve forum yanıtlarıyla self-servis satılıyor; düşük fiyat ve arama uyumlu, hiç satış getirmedi."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aylık net 332 TL kart aboneliği ofis ofis WhatsApp ve görüşmeyle satılıyor; satış başına 3 saat ilk yıl gelirinin büyük kısmını yer; sınanmadı."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "4.000 TL rapor ilişki üzerinden satılacak ama ilişkili ofis henüz adlı değil ve satış başına 12 saat öngörülüyor; kanal erişimi doğrulanmadı."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 0,
+   "g": "2.990 TL tek seferlik rapor TTO ve teknopark bültenleriyle duyurulup self-servis alınıyor; orta fiyat ve ortak kanalı makul uyumlu, sınanmadı."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "2.990 TL/ay büro aboneliği oda eğitim webinarlarıyla satılıyor; satış başına 10 saat yıllık gelirle karşılanır, bu kanalla satış yapılmadı."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "60.000 TL yıllık paket kurucu satışına uygun ama hedef oda ve OSB'ler adlandırılmadı, erişim doğrulanmadı; kanal tanımsızken uyum zayıf."
+  },
+  "asgari-iscilik-a": {
+   "p": 3,
+   "k": 0,
+   "g": "360.000 TL proje mevcut ilişki üzerinden kurucu teklifiyle satılıyor; yüksek bedel ve doğrudan satış uyumlu, bu kanalda satış kaydı yok."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "2.490 TL/ay abonelik mali müşavir odası webinarlarıyla satılıyor; satış başına 10 saat yıllık gelirle karşılanır, hiç satış getirmedi."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "10.000 TL dosya kontrolü webinar ve ihale listesine kişisel e-postayla satılıyor; fiyat kurucu temasını taşır, sınanmadı."
+  },
+  "zincir-danismanligi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "180.000 TL paket mevcut ilişkiye 2 sayfalık teklif ve görüşmeyle satılıyor; yüksek bedel ve kurucu satışı uyumlu, kabul edilmiş teklif yok."
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "30.000 TL peşin rapor, UFRAD listesinden seçilen 30 zincire ayda 10 LinkedIn mesajıyla satılıyor; fiyat kişisel satışı taşır, sınanmadı."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Aylık 6.373 TL yıllık sözleşme mevcut ilişkide ücretsiz pilot sonrası satılıyor; fiyat kurucu satışını taşır, ücretli geçiş sınanmadı."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "499 TL/yıl ve 999 TL paket Telegram satıcı grubu ve birebir ekran paylaşımıyla satılıyor; satış başına 1 saat, düşük fiyatla uyumlu, sınanmadı."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "990 TL/ay panel LinkedIn mesajı ve 20 dakikalık demoyla satılıyor; satış başına 4 saat yıllık gelirle karşılanır, bu kanalla satış yok."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "1.000 TL insan teslimli rapor Telegram grubu ve ücretsiz hesaplayıcı çıktısından teklif ediliyor; satış başına 2 saat, makul uyum, sınanmadı."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 1,
+   "g": "5.000 TL kohort ücretsiz webinar ve 20 dakikalık görüşmeyle satılıyor; benzer programlar bu fiyat bandında, kayıt oranları ikincil kaynak; sınanmadı."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 0,
+   "g": "2.500 TL giriş ve 12.500 TL strateji paketi satıcı grupları ve LinkedIn mesajıyla satılıyor; fiyat kişisel satışı taşır, hiç satış yok."
+  },
+  "titanlar-c": {
+   "p": 3,
+   "k": 0,
+   "g": "15.000 TL günlük atölye oda eğitim birimlerine e-posta ve ziyaretle teklif ediliyor; fiyat doğrudan satışla uyumlu, kurum bütçesi sınanmadı."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 0,
+   "g": "85.000 TL sabit paket OSB saha günleri ve danışman yönlendirmesiyle satılıyor; yüksek bedel kurucu saha satışını taşır, sınanmadı."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 0,
+   "g": "45.000 TL paket seminerde canlı denetimle satılacak; kanalın ulaştığı mikro üretici fiyata duyarlı, serbest çalışan 10-25 bin TL; uyum zayıf."
+  },
+  "kurumsal-site-c": {
+   "p": 3,
+   "k": 0,
+   "g": "49-149 dolar tema, depo README'si, satış aracısı mağazası ve Astro topluluğuyla self-servis satılıyor; ucuz ürün ve kanal uyumlu, satış yok."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "90.000 TL paket iki mevcut ilişki ve 20 hedef üreticiye kişiselleştirilmiş hesapla kurucu satışı; fiyat kanalı taşır, hiç satış yapılmadı."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "35.000 TL fizibilite mevcut ilişkiler ve LinkedIn'den ücretsiz 30 dakikalık seansla satılıyor; kurucu satışıyla uyumlu, sınanmadı."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "45.000 TL site, 20 adlı kumaş üreticisine sitedeki eksiğe dayalı kişisel e-postayla satılıyor; fiyat kurucu satışını taşır, sınanmadı."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "İlk yıl 4.990 TL ajans lisansı forum ve buluşmalarda birebir görüşmeyle satılıyor; satış başına 5 saat ilk yıl gelirine yakın, sınanmadı."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "1.490 TL yıllık Pro, wordpress.org listesi ve taksit tablosu aramasıyla self-servis satılıyor; ucuz ürün ve arama uyumlu, hiç satış yok."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 0,
+   "g": "2.500 TL sabit kurulum mevcut ilişkiler ve ücretli WordPress işleri forumuyla satılıyor; küçük hizmet ve doğrudan teklif uyumlu, sınanmadı."
+  },
+  "qral-a": {
+   "p": 2,
+   "k": 1,
+   "g": "4,99 euro lisans Chrome Web Store'da rakiplerin hepsi ücretsizken satılacak; ücretli kardeş uzantı 141 kullanıcıda kalmış, yayınlanmış dönüşüm %0,8."
+  },
+  "qral-b": {
+   "p": 2,
+   "k": 0,
+   "g": "835 TL yıllık sınıf paketi öğretmen topluluklarında duyuruluyor; kanal öğretmene ulaşıyor ama ödeme okul bütçesinden bekleniyor; sınanmadı."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "1.000 TL sabit şablon paketi kurucunun mevcut çevresine doğrudan teklif ediliyor; küçük hizmet ve sıcak ilişki uyumlu, fiyat görüşmesi yok."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "1.990-2.990 TL lisans 30 eğitmene LinkedIn, e-posta ve 20 dakikalık demoyla satılıyor; satış başına 3 saat gelire yakın, liste henüz yok."
+  },
+  "frontend-atlasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "349 TL laboratuvar paketi ders sayfalarına gelen arama trafiği ve ders altı kutusuyla self-servis satılıyor; uyumlu ama site yayında değil."
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "4.800 TL ders üretimi eğitmenlere LinkedIn ve e-postayla, canlı örnek dersle satılıyor; hizmet fiyatı kişisel satışı taşır, sınanmadı."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "19.900 TL atölye mevcut üretici ilişkilerine 6 tekil pilot e-postasıyla satılıyor; fiyat kurucu satışını taşır, bu fiyatla satış yapılmadı."
+  },
+  "karar-kitabi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "199 TL tema paketi yöntem adı aramaları için yaklaşık 380 sayfadan self-servis satılıyor; ucuz ürün ve arama uyumlu, arama hacmi ölçülmedi."
+  },
+  "karar-kitabi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Net 833 TL kit 30 dakikalık demo ve danışman referansıyla satılıyor; satış başına 5 saat kit gelirini aşıyor, ucuz ürün ve kurucu satışı çelişiyor."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "45.000 TL paket kuluçka ve TTO'larda ücretsiz 45 dakikalık atölye sonrası kurucu satışıyla; fiyat kanalı taşır, hiç satış denenmedi."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "9.000 TL sabit denetim ücretsiz atölyenin ardından teklif ediliyor; orta fiyat ve atölye sonrası kurucu satışı uyumlu, sınanmadı."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "30.000-60.000 TL yıllık lisans adlı kuluçka ve TTO yöneticilerine e-posta, LinkedIn ve atölyeyle satılıyor; fiyat kanalı taşır, sınanmadı."
+  },
+  "vize-operasyon-a": {
+   "p": 3,
+   "k": 0,
+   "g": "2.093-2.990 TL/ay panel ofis ziyareti ve elle WhatsApp mesajıyla satılıyor; satış başına 14 saat yıllık gelirle karşılanır, satış yok."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "5.000 TL kurulum ve 3.000 TL/ay, bölge kurulu eğitim yüzeyindeki ücretsiz şablon sunumundan gelecek; ev sahibi izni alınmadı, sınanmadı."
+  },
+  "vize-operasyon-c": {
+   "p": 3,
+   "k": 0,
+   "g": "299-599 TL evrak kontrolü ülke bazlı arama sayfalarından self-servis satılıyor; ucuz ürün ve arama uyumlu, kanal hiç satış getirmedi."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 0,
+   "g": "240.000 TL paket webinar, hikâye kliniği ve LinkedIn mesajıyla satılacak; referanssız kurucu için bu bedeli soğuk kanalın taşıması zayıf."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 0,
+   "g": "24.000 TL kurulum hizmeti ücretsiz Action ve şablon kataloğundan gelen kullanıcıya satılacak; ücretsiz araçtan ücretli hizmete geçiş sınanmadı."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "204.000 TL toptan paket ajans kurucularına soğuk LinkedIn mesajıyla satılacak; referans yok, bu bedeli soğuk mesajın taşıması zayıf."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 0,
+   "g": "24.900 TL yıllık lisans 30 uygulayıcı kuruluşa kişisel e-posta ve 15 dakikalık demoyla satılıyor; fiyat kurucu satışını taşır, sınanmadı."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 0,
+   "g": "349-749 TL rapor mevcut danışmanlık müşterilerine e-posta, sonra arama içeriğiyle satılıyor; satış başına yarım saat, uyumlu, satış yok."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 0,
+   "g": "1.500 TL rapor ve görüşme paketi mevcut danışmanlık müşterilerine kişisel e-postayla satılıyor; sıcak ilişki uyumlu ama bu paketle satış yok."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "15-19 dolar tek seferlik Pro, depo, Homebrew, Show HN ve Reddit ile self-servis; uyumlu ama benzer araçta sponsor dönüşümü yüzde 1'in çok altında."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "60-200 dolar destekli kurulum hizmeti herkese açık depo ve sorun giderme yazısından gelecek; ücretsiz rapordan ücretli hizmete geçiş sınanmadı."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 1,
+   "g": "64 dolar/ay kurumsal sponsorluk sorun ve PR kayıtlarından gelecek; benzer araçta 22 sponsor toplam ayda yaklaşık 108 dolar, kanal zayıf taşıyor."
+  },
+  "actionplan-a": {
+   "p": 3,
+   "k": 0,
+   "g": "39 dolar tek seferlik Pro, GitHub deposu, canlı demo, Show HN ve Reddit ile self-servis satılıyor; ucuz ürün ve topluluk uyumlu, satış yok."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "19.200 TL kurulum hizmeti henüz listelenmemiş pazar yeri kaydı ve ücretsiz Action ile gelecek; edilgen kanal bu hizmet fiyatını zor taşır."
+  },
+  "actionplan-c": {
+   "p": 3,
+   "k": 0,
+   "g": "490 TL şablon paketi Türkçe kısa video ve X geliştirici topluluğuyla self-servis satılıyor; ucuz ürün ve içerik kanalı uyumlu, sınanmadı."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 3,
+   "k": 0,
+   "g": "15-19 dolar Pro lisansı depo README'si ve Show HN ile self-servis satılıyor; ucuz ürün ve topluluk kanalı uyumlu, hiç satış getirmedi."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "1.500 TL/ay rapor ajans sahiplerine soğuk LinkedIn mesajı ve demoyla satılacak; gerçek ajans ilişkisi belgelerde yok, satış başına 10 saat."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "18.000 TL kurulum paketinin kanalı yalnız herkese açık örnek sayfa; adlandırılmış hedef yok. Pahalı hizmet ve edilgen kanal çelişiyor."
+  },
+  "ai-first-tasarim-a": {
+   "p": 3,
+   "k": 0,
+   "g": "399 TL e-kitap depo, Storybook demosu, LinkedIn yazı dizisi ve topluluk lansmanıyla self-servis satılıyor; uyumlu, hiç satış getirmedi."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "25.000 TL atölye ve 120.000 TL kurulum kurucunun LinkedIn ağı ve tanıdık ekiplere doğrudan satılıyor; fiyat kanalı taşır, satış yapılmadı."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "18.000 TL sabit paket LinkedIn ağındaki ajans sahiplerine ücretsiz kabul örneği ve demoyla satılıyor; kurucu satışıyla uyumlu, sınanmadı."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Aylık 500 TL plan farkı ürün içi duyuru ve 5 pilot kafeyle görüşmeyle satılıyor; yükseltme ve ürün içi kanal uyumlu, hiç yükseltme yok."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "12.000 TL entegrasyon hizmeti depo, Storybook demosu ve geliştirici topluluklarından gelecek; ücretsiz bileşen kanalı hizmet fiyatını zor taşır."
+  },
+  "atonota-denetim-a": {
+   "p": 3,
+   "k": 0,
+   "g": "1.990 TL yıllık Pro, wordpress.org dizinindeki ücretsiz sürümden yükseltmeyle satılıyor; eklentilerde olağan düzen, bu kanalla satış denenmedi."
+  },
+  "atonota-denetim-b": {
+   "p": 2,
+   "k": 0,
+   "g": "7.150 TL yıllık ajans lisansı 30 ajanslık listeyle birebir görüşülerek satılıyor; satış başına 6 saat ilk yıl gelirinin büyük kısmı, sınanmadı."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "5.000 TL/ay hizmet tanıdık ajanslar üzerinden satılacak ama ajans ilişkisi doğrulanmadı, yazılı niyet yok; kanal belirsizken uyum zayıf."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "20.000 TL blok, mevcut site müşterilerine ve site teklifine ek satır olarak satılıyor; ek kalem ve mevcut ilişki uyumlu, fiyat kabulü yok."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "12.000 TL paket LinkedIn profili ve herkese açık karşılaştırma demosuyla satılacak; ajans ilişkisi yazılı değil, soğuk kanalla sınanmadı."
+  },
+  "b2b-bilesenler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "49 dolar şablon çevrimiçi mağazadan self-servis satılıyor; fiyat çapası Metronic 49 dolar ile uyumlu, yeni yazarla bu kanalda satış yok."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Aylık 500 TL plan farkı menü kaydı sonrası ürün içi çağrı ve pilotlara WhatsApp ile satılıyor; yükseltme kanalı uyumlu, geçiş oranı varsayım."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 0,
+   "g": "7.500 TL/ay hizmet 3 mevcut müşteriye doğrudan teklifle satılacak; fiyat kurucu satışını taşır ama teklif henüz iletilmedi."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "6.000 TL pilot paket ajans kreatif sorumlularına soğuk mesajla satılacak; fiyat kaynaklarda yok, hedef ajanslar adlı değil, sınanmadı."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "490-990 TL/ay abonelik ayda 50 kişisel mesaj ve canlı demoyla satılıyor; satış başına 12 saat ilk yıl gelirine denk, uyum zayıf."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "6.000 TL sabit karar dosyası tanıdık ajans çevresine ve seçilmiş ajans sahiplerine birebir mesajla satılıyor; uyumlu, hiç satış yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "5.000 TL kit birebir mesajla satılıyor; satış başına 10 saat kit gelirini aşıyor, açık kaynak motor ücretsizken kurucu satışı zor taşır."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "15.000 TL sunum seti mevcut site müşterilerine birebir mesaj ve ücretsiz 3 slaytlık örnekle satılıyor; fiyat kanalı taşır, sınanmadı."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "8.000 TL kurulum ve 2.500 TL/ay, ajans sahiplerine haftada 15 birebir LinkedIn notu ve ücretsiz örnekle satılıyor; uyum makul, sınanmadı."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "8.000 TL karar dosyası danışmanlara soğuk LinkedIn notuyla satılacak; danışman ismi ve fiyat kanıtı yok, kanal kanıtsız."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "45.000-130.000 TL demo paketi haftada 25 elle yazılmış LinkedIn mesajıyla satılıyor; yüksek bedel kurucu satışını taşır, satış kaydı yok."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Demo başına 36.000 TL ajans paketi satış yöneticilerine elle yazılmış LinkedIn mesajıyla satılıyor; fiyat kanalı taşır, sınanmadı."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "6.000 TL kurulum ve 4.000 TL/ay, mali müşavir ve bordro danışmanı ofisleri üzerinden satılacak; ortak ağı belgelenmedi, fikir düzeyinde."
+  },
+  "ddd-renderer-a": {
+   "p": 3,
+   "k": 0,
+   "g": "149 TL ek paket kurucunun e-kitap alıcı listesine ve kitap sonu bağlantısıyla satılıyor; ucuz ek ve kendi liste uyumlu, satış yok."
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 0,
+   "g": "29-79 dolar şablon paketi depo, canlı örnek site ve mimari makalelerle self-servis satılıyor; ucuz ürün ve içerik kanalı uyumlu, satış yok."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "50.000 TL değerlendirme, kendi ürünlerindeki ücretsiz örnek rapor ve LinkedIn ile kurucu satışı; fiyat kanalı taşır, ücretli referans yok."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "36.000 TL sabit paket LinkedIn'de 20 hedef teknik liderle tek tek yazışarak satılıyor; fiyat kişisel satışı taşır, hiç sınanmadı."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "20.000 TL iş, form kütüphanelerinin issue sayfalarındaki yanıtlardan gelecek; ücretsiz yardım kanalı bu hizmet fiyatını zor taşır, sınanmadı."
+  },
+  "devpanel-c": {
+   "p": 3,
+   "k": 1,
+   "g": "49 dolar şablon çevrimiçi mağaza, depo ve Show HN ile self-servis; fiyat pazar çapasıyla (Metronic 49 dolar) uyumlu, yeni satıcıyla satış yok."
+  },
+  "e-menum-a": {
+   "p": 3,
+   "k": 0,
+   "g": "25.000 TL kurulum Django ve Python Telegram grupları ile haftada 10 ajansa kişisel LinkedIn mesajıyla satılıyor; fiyat uyumlu, sınanmadı."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 0,
+   "g": "5 şube için 4.000 TL/ay hizmet mevcut zincir ve kafe ilişkileri ile kişisel LinkedIn mesajıyla satılıyor; fiyat kanalı taşır, sınanmadı."
+  },
+  "e-menum-c": {
+   "p": 3,
+   "k": 1,
+   "g": "89 dolar kaynak kod paketi depo README'si ve Django Telegram grubuyla self-servis; benzer betikler 19-89 dolara satılıyor, bu kanalda satış yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "399 TL/ay bülten 28 ekosistem sayfasına gelen arama ve kurucunun geliştirici çevresiyle satılıyor; satış başına yarım saat, uyumlu, satış yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "349 TL tek seferlik paket ücretsiz pano sayfalarından paket sayfasına yönlendirmeyle self-servis satılıyor; uyumlu, satış kaydı yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık peşin yaklaşık 14.352 TL lisans 20 ajansa kişisel LinkedIn mesajı ve 20 dakikalık görüşmeyle satılıyor; fiyat kanalı taşır, sınanmadı."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 0,
+   "g": "7.500-15.000 TL denetim mevcut site müşterilerine tekil mesaj ve ücretsiz mini denetimle satılıyor; ek kalem ve sıcak ilişki uyumlu, satış yok."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 3,
+   "k": 0,
+   "g": "299 TL kontrol listesi ücretsiz Atlas modülüne aramayla gelen okura ders sonunda sunuluyor; ucuz içerik ve arama uyumlu, trafik varsayım."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 2,
+   "k": 0,
+   "g": "14.400 TL pilot 20 SaaS ekibine soğuk LinkedIn mesajıyla satılacak; ilişki ve isim listesi belgelerde yok, kanal bu fiyatta sınanmadı."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "60.000 TL teşhis paketi 30 küme ve sanayi bölgesi yöneticisine doğrudan e-posta ve telefonla satılıyor; fiyat kanalı taşır, satış yok."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "20.000 TL rapor kuluçkalarda ücretsiz 45 dakikalık atölye ve mevcut toptancı ilişkileriyle satılıyor; uyum makul, bu kanalla satış yok."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "250.000 TL tam paket ajans yönlendirmesi ve ortak teklifle satılacak; referanssız kurucu için bu bedeli dolaylı kanalın taşıması zayıf."
+  },
+  "lifeos-a": {
+   "p": 3,
+   "k": 0,
+   "g": "199 TL paket günlük LinkedIn gönderisi ve mağaza aramasıyla self-servis satılıyor; ucuz ürün ve içerik kanalı uyumlu, huni oranları varsayım."
+  },
+  "lifeos-b": {
+   "p": 2,
+   "k": 0,
+   "g": "600 TL ücretli paket ücretsiz mağaza listesinden satılacak; ücretsiz eklentinin paketi nasıl göstereceği belirsiz, hedef topluluk adlı değil."
+  },
+  "lifeos-c": {
+   "p": 2,
+   "k": 0,
+   "g": "912 TL kit herkese açık depo ve geliştirici gönderileriyle satılacak; kanal geliştiriciye ulaşıyor, alıcı hipotezi rutin takipçisi; uyum zayıf."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ortalama 850 TL/ay abonelik yüz yüze ofis görüşmesi ve dernek sunumuyla satılıyor; satış başına 10 saat ilk yıl gelirinin çoğunu yer."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 0,
+   "g": "1.500 TL kit açık kaynak bileşenlerin deposu, belge sitesi ve teknik makaleyle self-servis satılıyor; fiyat kanala uygun, hiç satış yok."
+  },
+  "metaframer-kernel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "149-349 dolar kit GitHub deposu, Show HN ve Reddit gönderileriyle self-servis satılıyor; rakipler 199-379 dolar bandında, satış denenmedi."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "40.000 TL lisans ve atölye paketi yazılım evi liderlerine doğrudan LinkedIn mesajıyla satılıyor; fiyat kurucu satışını taşır, sınanmadı."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yaklaşık 72.000 TL paket açık örnek adaptör ve topluluk sorularındaki paylaşımla satılacak; edilgen depo kanalı bu bedeli zor taşır."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "199 TL tek seferlik paket 10 Türkçe uzun kuyruk arama sayfasından self-servis satılıyor; ucuz ürün ve arama uyumlu, hiç satış getirmedi."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Net 416 TL yıllık paket haftada 10 kişisel LinkedIn mesajı ve demoyla satılıyor; satış başına 4 saat geliri aşıyor, ucuz ürün ve kurucu satışı çelişiyor."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "1.490 TL elle teslim dosya kurucunun kendi ağına ve LinkedIn bireysel mesajıyla satılıyor; küçük hizmet ve sıcak ilişki uyumlu, sınanmadı."
+  },
+  "projector-a": {
+   "p": 3,
+   "k": 0,
+   "g": "349 TL e-kitap haftalık LinkedIn yazısı ve ön satış sayfasına bağlı bültenle satılıyor; ucuz içerik ve kendi kitlesi uyumlu, sayfa henüz yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "35.000 TL atölye mevcut yazılım evi ilişkileri ve teknik müdürlere ayda 10 kişisel mesajla satılıyor; fiyat kanalı taşır, referans yok."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yaklaşık 14.400 TL pilot ücretsiz içe aktarma aracı ve örnek portaldan gelecek; ücretsiz araç kullanıcısının ücretli işe geçişi sınanmadı."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "299 TL şablon kurucunun kendi sitelerindeki ürün kutusu ve ücretsiz ilk paketle self-servis satılıyor; uyumlu, ürün sayfası henüz yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Net 1.200 TL tek seferlik lisans program yöneticilerine doğrudan e-posta ve LinkedIn ile; satış başına 8 saat geliri aşıyor, kurum döngüsü uzun."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Okura ücretsiz künye sayfaları aramadan trafik alıp mağaza komisyonu kazanıyor; ücretsiz içerik ve arama uyumlu, komisyon kaydı yok."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 0,
+   "g": "4.990 TL yıllık paket ayda 10 soğuk e-posta ve demoyla satılıyor; satış başına 6 saat ilk yıl gelirine yakın, kanal hiç satış getirmedi."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 0,
+   "g": "990-2.990 TL yıllık paket 6 rehber sayfasına gelen aramayla self-servis satılıyor; düşük fiyat ve arama uyumlu, hacim doğrulanmadı."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "1.000 TL kurulum paketi mevcut danışmanlık ve site ilişkilerine birebir teklifle satılıyor; küçük hizmet ve sıcak ilişki uyumlu, satış yok."
+  },
+  "volley-tap-a": {
+   "p": 3,
+   "k": 0,
+   "g": "25.000 TL kampanya oyunu mevcut ilişkiler ve haftada 15 kişisel mesajla satılıyor; fiyat kurucu satışını taşır, hiç satış getirmedi."
+  },
+  "volley-tap-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Oyuncuya ücretsiz oyun, portalın açık gönderimiyle yayımlanıp reklam payı alıyor; kanal ve gelir modeli aynı yerde, pay oranı portalca belirli."
+  },
+  "volley-tap-c": {
+   "p": 3,
+   "k": 0,
+   "g": "2-5 dolar premium paket itch.io demo sayfası ve etiketleriyle self-servis satılıyor; çok ucuz ürün ve pazar yeri uyumlu, fiyat hipotez."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 0,
+   "g": "1.490 TL yıllık Pro, wordpress.org dizinindeki taksit aramaları ve eklenti içi Pro kartıyla satılıyor; self-servis uyumlu, hiç satış yok."
+  },
+  "woocommnts-b": {
+   "p": 2,
+   "k": 0,
+   "g": "2.990 TL yıllık ajans paketi doğrudan e-posta ve LinkedIn ile satılıyor; satış başına 6 saat geliri aşıyor, ajans listesi ve görüşme yok."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "4.000 TL göç hizmeti ücretsiz örnek paket ve topluluk yanıtlarından gelecek; ücretsiz depo kanalının ücretli hizmete geçişi sınanmadı."
+  },
+  "egitim-demolari-a": {
+   "p": 3,
+   "k": 0,
+   "g": "600 TL ders paketi öğretmen paylaşım topluluklarında ücretsiz örnek dersle satılıyor; düşük fiyat ve topluluk uyumlu, ücretli talep kanıtı yok."
+  },
+  "egitim-demolari-b": {
+   "p": 3,
+   "k": 0,
+   "g": "6.000 TL atölye kurucunun doğrudan tanıdığı ekip liderleri ve danışmanlara satılıyor; aktif satış gerektiren fiyatla uyumlu, sınanmadı."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "20.000 TL'lik 5 günlük paket iki mevcut ilişkiye yazılı teklifle satılıyor; gün ücreti ve kurucu satışı uyumlu, imzalı teklif yok."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "15.000-25.000 TL kurulum 40 ajansa soğuk LinkedIn mesajı ve e-postayla satılacak; ajans listesi yok, satış başına 40 saat, sınanmadı."
+  },
+  "baz-secenekler-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Pay karşılığı fon yalnız programın kendi başvuru sistemiyle alınabiliyor; kanal tutara uygun ama çağrı tarihi belirsiz, satış geliri değil."
+  }
+ }
+}

@@ -1,0 +1,665 @@
+{
+ "kriter": "S1",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 1,
+   "g": "159 bin kayıtlı yeme-içme işletmesi kaynaklı; ulaşılabilir pazar yaklaşık 260 milyon TL/yıl varsayım, kategori 200 TL/ay bandında metalaşmış; orta ölçek."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 0,
+   "g": "10-100 şubeli zincir sayısı yaklaşık 150 ve varsayım; şube başı gelir yüksek olsa da alıcı sayısı dar, büyüme gösterilmedi."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansa panel modülü uyarlama hizmeti için kaynaklarda alıcı sayısı ya da pazar rakamı yok; iki değerlendirici de dar ve tanımsız buluyor."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yılda 1,6 milyon konut dışı satış kaynaklı; rapor için ulaşılabilir pazar yaklaşık 75 milyon TL/yıl, dönüşüm varsayım; orta ölçek."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Yaklaşık 5.000 arsa ağırlıklı ofis x 399 TL x 12 ile ulaşılabilir pazar 24 milyon TL/yıl; ofis sayısı varsayım, dar."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "5-15 kişilik arsa danışmanlık ofisi nişi için belgelerde pazar hesabı yok; alıcı sayısı az, dar niş."
+  },
+  "destektesvik-a": {
+   "p": 4,
+   "k": 1,
+   "g": "3,93 milyon KOBİ ve yılın ilk yarısında 27 milyar TL KOSGEB aktarımı kaynaklı; ulaşılabilir pazar 388 milyon TL/yıl ama katsayılar varsayım."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Mali müşavir sayısı meslek birliği kaynaklı; yaklaşık 6.650 ilgili büro varsayımıyla ulaşılabilir pazar 72 milyon TL/yıl; orta ölçek."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Alıcı kurum sayısı küçük: 45 TTO ve 115 teknopark kaynaklı, oda ve OSB sayısı doğrulanmadı; yavaş ve dar kurumsal pazar."
+  },
+  "asgari-iscilik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Asgari işçilik uyum nişi için plan ulaşılabilir pazarı yaklaşık 810 milyon TL/yıl hesaplıyor ama varsayım ağırlıklı; büyüme gösterilmedi."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı niş: ulaşılabilir pazar yaklaşık 810 milyon TL/yıl varsayımlı hesap; inşaat mükellefli büro ve yüklenici sayısı doğrulanmadı."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı yüklenici ve mali müşavir nişi (yaklaşık 810 milyon TL/yıl, varsayımlı); dosya kontrolü bunun bir dilimi, büyüme kanıtı yok."
+  },
+  "zincir-danismanligi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Plan toplam pazarı 84 milyon TL/yıl, ulaşılabilir kısmı yaklaşık 30 zincir ve 27 milyon TL/yıl görüyor; alıcı sayısı dar."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ulaşılabilir alıcı yaklaşık 30 zincir ve 70 operatör; 30.000 TL'lik raporla pazar küçük, büyüme gösterilmedi."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Zincir planının alıcısı yaklaşık 30 ulaşılabilir zincir; geniş QR menü pazarı bu seçeneğin alıcısı değil, rakip planlar ucuz."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "634 bin e-ticaret işletmesi kaynaklı; 350 bin satıcı varsayımıyla ulaşılabilir pazar yaklaşık 44 milyon TL/yıl; büyüyen ama rekabetli."
+  },
+  "kar-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yaklaşık 3.000 danışman varsayımı kaynaksız; pazar yaklaşık 30 milyon TL/yıl tahmini, dar niş."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı pazar yeri satıcı tabanı; 50-500 SKU'lu kesim 60-80 bin satıcı varsayım, bu seçenek için ayrı pazar hesabı yok; orta ölçek."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 1,
+   "g": "634.611 e-ticaret işletmesi kaynaklı ve artıyor; ücretli canlı program pazarı yaklaşık 40 milyon TL varsayım, ücretsiz arz bol."
+  },
+  "titanlar-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı 634 bin işletme tabanı; kâr edemeyen pay yaklaşık 95 bin satıcı varsayım, danışmanlık dilimi orta ölçekli."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı oda, belediye ve kalkınma ajansı eğitim birimleri; kurum sayısı varsayım, ücretsiz bakanlık etkinlikleri ikame; dar kurum pazarı."
+  },
+  "kurumsal-site-a": {
+   "p": 4,
+   "k": 1,
+   "g": "166.459 ihracatçı kaynaklı, mikro ihracatçı 5 yılda %64 artmış; 10+ çalışanlı kesimde ulaşılabilir pazar 435 milyon TL/yıl, yenileme döngüsü varsayım."
+  },
+  "kurumsal-site-b": {
+   "p": 3,
+   "k": 1,
+   "g": "123.513 mikro ihracatçı kaynaklı ve büyüyor; ödeme istekliliği düşük, serbest çalışan ve site kurucu rekabeti ulaşılabilir kısmı küçültüyor."
+  },
+  "kurumsal-site-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Astro sanayi teması nişi küçük; benzer ürün satış verisi bulunamadı, plan tema gelirini toplamın en çok %10'u sayıyor."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Plan toplam pazarı 430, ulaşılabilir pazarı 128 milyon TL/yıl hesaplıyor; üretici evreni 56.954 işyeri kamu verisi, oranlar varsayım."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı üretici evreni (56.954 işyeri) ve 128 milyon TL/yıl tahmini; yalnız fizibilite alan pay daha küçük ve varsayım."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Kumaş üreticisi alt kesimi için ayrı pazar rakamı yok; genel evren 56.954 işyeri, bu varyantın alıcısı dar."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "38.531 canlı Türk WooCommerce mağazası kaynaklı; 154 bin site varsayımıyla ulaşılabilir pazar yaklaşık 90 milyon TL; orta ölçek."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 2,
+   "k": 1,
+   "g": "38.531 mağaza kaynaklı ama Pro farkı %3,5'lik kapıda ödeme payına dayanıyor; taksit alt pazarı yaklaşık 17 milyon TL, dar."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "KVKK eklentisiyle aynı site tabanı (38.531 mağaza kaynaklı, 154 bin site varsayım); kurulum kalemi fiyatı sınanmadı; orta ölçek."
+  },
+  "qral-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Rakipler ücretsiz ve 100 bin-1 milyon kullanıcılı; ücretli kardeş uzantı 141 kullanıcıda kalmış, ödeyen pazar çok küçük."
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Öğretmen topluluğu büyük (eTwinning yaklaşık 215 bin üye, kaynaklı) ama ödeyen okul sayısı ve bütçesi belirsiz; orta ölçek."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Küçük araştırma ekipleri için pazar büyüklüğü belgelerde yok; ücretsiz yer imi ve yapay zekâ ikamesi güçlü, dar niş."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Türkçe frontend eğitmeni nişi: plan ulaşılabilir pazarı 5-8 milyon TL/yıl görüyor ve pazarın küçük olduğunu kabul ediyor."
+  },
+  "frontend-atlasi-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Öğrenen kitlesi büyük (BTK Akademi 2,75 milyon kullanıcı, 285 bin yazılımcı kaynaklı); ödeme isteği düşük, 238 milyon TL toplam pazar varsayım."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı dar eğitmen nişi (5-8 milyon TL/yıl); ders üretim hizmeti bu pazarın küçük bir dilimi."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurumsal atölye için toplam pazar yaklaşık 15 milyon TL/yıl ve tamamı varsayım; büyüme gösterilmedi."
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Kitabın Türkçe baskısına ilgi sınırlı; ulaşılabilir pazar 5-6,5 milyon TL/yıl varsayım, büyüme yok."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Bağımsız facilitatör ve küçük danışman ekibi nişi için pazar hesabı yok; alıcı sayısı az, dar."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yılda yaklaşık 15.000 başvuru ve 360 yatırım işlemi kaynaklı; ulaşılabilir pazar 52,5 milyon TL/yıl tahmini; orta ölçek."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı başvurucu kitlesinin (yılda yaklaşık 15.000) yalnız dosyası hazır olan kesimi; 9.000 TL tek seferlik bilet, pazarın küçük dilimi."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Yaklaşık 150 program (115 teknopark, 147 uygulayıcı kuruluş kaynaklı) x 60.000 TL ile yaklaşık 9 milyon TL/yıl; dar kurumsal niş."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Dizinde 2.669 acente kaydı (aktif işletme sayısı değil); toplam pazar 30-80 milyon TL/yıl, AB dijitalleşmesi randevu değerini eritebilir."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı acente pazarı ayda 50-300 dosya işleyen kesimle daralıyor; 2.669 dizin kaydı aktif işletme sayısı değil."
+  },
+  "vize-operasyon-c": {
+   "p": 4,
+   "k": 1,
+   "g": "2025'te 1.268.376 Schengen başvurusu kaynaklı ve artıyor; toplam pazar yaklaşık 300 milyon TL, bireysel pay %60 varsayım."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 1,
+   "g": "20.000 üzeri girişim kaydı kaynaklı; Türkiye toplam pazarı 1,2 milyar TL varsayım, alıcı oranı ölçülmedi; orta ölçek."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajan kullanan geliştirici pazarı büyüyor ve diğer kartlarda 1-1,3 milyon dolar/yıl ulaşılabilir hesaplanmış; bu seçenek için ayrıca ölçülmedi, alan kalabalık."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Geliştiricisi olmayan ajans sayısı doğrulanamadı (varsayım 500); toptan marj düşük, dar pazar."
+  },
+  "strateji-simulatoru-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Yaklaşık 200 kurum x 15.000 TL ile ulaşılabilir pazar 3 milyon TL/yıl; 147 uygulayıcı kuruluş kaynaklı, dar kurum pazarı."
+  },
+  "strateji-simulatoru-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Bireysel rapor için ulaşılabilir pazar yaklaşık 14 milyon TL/yıl, tavan 57 milyon TL; plan ödeme isteğini 2/5 görüyor, dar."
+  },
+  "strateji-simulatoru-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı havuzu kurucunun mevcut danışmanlık müşterileri; yatırım kararı alan 50-100 bin KOBİ rakamı varsayım, doğrulanmadı."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajan CLI kullanıcı tabanı büyüyor; 16 GB Mac alt kümesiyle ulaşılabilir pazar yaklaşık 1,26 milyon dolar/yıl, 840 bin kişi varsayım."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Destekli kurulum için takım ve IT kesimi küçük; kaynaklarda alıcı sayısı yok, yerleşik düzeltme beklentisi pazarı daraltıyor."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Sponsor tabanı kaynaklı olarak çok küçük: benzer araçta 22 sponsor ve ayda yaklaşık 108 dolar; orkestratör sayısı 20-50 varsayım."
+  },
+  "actionplan-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajan kullanan geliştirici kitlesi büyüyor; plan niş toplam pazarı 2,5, ulaşılabilir pazarı 1 milyon dolar/yıl hesaplıyor, huni varsayım."
+  },
+  "actionplan-b": {
+   "p": null,
+   "k": 0,
+   "g": "Belgelerde ajans teslim kabul pazarı için alıcı sayısı, büyüklük ya da büyüme verisi yok; B'nin orta ölçek puanı dayanaksız."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Türkiye'de 2,5 milyon GitHub geliştiricisi kaynaklı ama Türkçe şablon için ödeme isteği 2/5 ve hacim küçük; ikinci dalga pazar."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Pano ayrı satılmıyor; panoya atfedilen pazar yaklaşık 378 bin dolar, doğrudan gelir yılda birkaç bin dolar; hepsi varsayım."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans kesimi yaklaşık 8 bin ve varsayım; gerçek ajans ilişkisi ya da ölçülmüş talep yok, dar niş."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": null,
+   "k": 0,
+   "g": "Alıcı tipi bile adlandırılmamış; yapay zekâ iş izleme pazarı hiçbir belgede ölçülmemiş, puan verecek dayanak yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Türkçe rehber için ulaşılabilir pazar yaklaşık 152 bin TL/yıl (varsayım zinciri); küresel talep büyük ama içerik ücretsiz."
+  },
+  "ai-first-tasarim-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Danışmanlık için ulaşılabilir pazar yaklaşık 50 şirket ve 600 bin TL/yıl (varsayım); çok dar yerel pazar."
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans kesimi 800-1.200 ve varsayım; kabul dosyası hizmeti için ayrı pazar hesabı yok, dar."
+  },
+  "aicommandcard-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ulaşılabilir pazar kurucunun QR menü ürünündeki ücretli hesaplarla sınırlı: 100-200 hesap varsayım, bugün ödeyen hesap yok."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkiye'de yaklaşık 3.000 ajans varsayımı; bileşen alanı niş ve ücretsiz rakipli, npm indirme sayıları talep göstermiyor."
+  },
+  "atonota-denetim-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Türkiye tavan pazarı yaklaşık 2,5 milyon TL/yıl; ücretsiz Site Kit 5 milyon kurulumlu, küresel pazar yan gelir; küçük niş."
+  },
+  "atonota-denetim-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Türkiye'de yaklaşık 3.000 ajans varsayım; plan 36. ay hedefini 740 bin TL/yıl görüyor, küçük niş."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "20-100 siteli küçük ajanslar için kabul zinciri pazarı ölçülmemiş; ayrı büyüklük hesabı yok, dar kesim."
+  },
+  "b2b-bilesenler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ek blok kurucunun kendi site müşterilerine satılıyor; doğrudan pazar kaynağı yok, planın kendi tahmini yılda 60-150 bin TL."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "B2B katalog ajansı ve frontend ekibi için pazar kaynağı yok; ihracat odaklı tek ürün sayfası işi dar niş."
+  },
+  "b2b-bilesenler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Metronic 120 bin satış çapası kaynaklı ama Astro ve Tailwind alt nişi yılda 150-300 bin dolar varsayım; yeni yazar payı küçük."
+  },
+  "banner-post-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Modül ayrı satılmıyor; ulaşılabilir pazar Zabuno'nun kendi hesap tabanı, 36 ayda 3,6 milyon TL hedef ve 300 bin işletme varsayım."
+  },
+  "banner-post-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Hedef 10-30 mevcut müşteri varsayımı; plan 3. yılda 10 müşteriyle 0,9 milyon TL görüyor, ölçeklenecek pazar tanımlı değil."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Küçük ajans kesimi için planlarda pazar ölçümü yok; B'nin andığı toplu görsel araçları pazarı bu hizmetin ulaşılabilir kısmı değil."
+  },
+  "karar-sihirbazi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkiye'de 4.000 ajans varsayımıyla ulaşılabilir pazar yaklaşık 3,8 milyon TL/yıl; ajans sayısı resmi veriyle doğrulanmadı."
+  },
+  "karar-sihirbazi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı küçük ajans kitlesi; sayı doğrulanmadı, proje başı karar dosyası hizmeti için ayrı pazar hesabı yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı doğrulanmamış ajans pazarı (yaklaşık 3,8 milyon TL/yıl); 5.000 TL tek seferlik kit tavanı düşürüyor."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Toplam pazar yaklaşık 30 milyon TL/yıl ve tamamı varsayım; doğrulanmış alıcı sayısı yok, dar ve belirsiz."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yaklaşık 4.000 butik ajans varsayımı doğrulanmadı; tekrar eden talep var ama alıcı tabanı dar."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Bağımsız danışman ve analist sayısı belgelerde yok; plan tahmini varsayım, dar ve doğrulanmamış pazar."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Toplam pazar yaklaşık 33,8 milyon TL/yıl ve tümü varsayım; seed öncesi kurucu sayısı doğrulanmadı, dar."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans demo pazarı yaklaşık 1.500 ajans varsayımı; isim listesi ve görüşme yok, dar niş."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": null,
+   "k": 0,
+   "g": "Vardiyalı işletme ve bordro danışmanı sayısı hiçbir belgede yok; pazar geniş olabilir ama ölçülmedi, puan verecek dayanak yok."
+  },
+  "ddd-renderer-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Alıcı kurucunun kendi e-kitap okurları: yaklaşık 200 okuyucu varsayım x 149 TL; çok dar. Komşu pazar yılda %3,8 büyüyor."
+  },
+  "ddd-renderer-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Mimari şablon nişi toplam pazarı yaklaşık 0,53 milyon dolar/yıl; komşu pazar yılda %3,8 büyüyor, ücretsiz rakipler güçlü."
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Mimari değerlendirme danışmanlığı talebi küçük niş; şablon nişi 0,53 milyon dolar/yıl, komşu pazar yılda %3,8 büyüyor."
+  },
+  "devpanel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkiye'de 3.000-6.000 iç araç ekibi varsayımı kaynaksız; A'nın orta ölçek puanını taşıyacak doğrulanmış alıcı sayısı yok."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Form ve iç araç pazarı küresel ölçekte büyük ama bu hizmetin alıcısı 3-15 kişilik ajans ve küçük ekipler; sayı kaynaksız."
+  },
+  "devpanel-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Küresel yönetim paneli şablonu pazarı yılda 20-40 milyon dolar varsayım; Metronic 120.362 satış kaynaklı, yeni satıcı payı çok küçük."
+  },
+  "e-menum-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Alıcı Django barındırabilen ajans: plan yaklaşık 10 ajans ve 500 bin TL/yıl görüyor. A'nın andığı QR menü pazarı bu seçeneğin alıcısı değil; B'ye yakın."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 0,
+   "g": "2-10 şubeli marka kesimi geniş; zincir kahve şubeleri için yaklaşık 150 milyon TL/yıl modelleme varsayımı, kesim doğrulanmadı."
+  },
+  "e-menum-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Hazır QR menü betikleri 19-89 dolar ve en çok 2 bin satış (kaynaklı); kod pazarı küçük ve ucuz."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Plan toplam pazarı yaklaşık 239 bin dolar/yıl görüyor; alıcı havuzu (Türkiye'deki solo eklenti geliştiricisi) kaynaksız varsayım."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı pazar: toplam yaklaşık 239 bin dolar/yıl, 600 paket x 29 dolar hedef; alıcı sayısı varsayım, dar niş."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajans kesimi Türkiye'de 3.000-5.000 ve kaynaksız varsayım; toplam pazar küçük, ajans ilişkisi yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Türkiye'de ulaşılabilir pazar yaklaşık 30 milyon TL/yıl ve varsayım; mevcut ilişkilerden yılda 6-10 proje, büyüme kanıtı yok."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 2,
+   "k": 1,
+   "g": "PDF için plan hedefi yılda 100-180 bin TL; 3.000 ziyaret/ay ve %1 dönüşüm varsayım, ücretsiz W3C içerikleri ikame."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Dil servisleri endüstrisi büyük (Nimdzi, kaynaklı); arayüz kalite kapısı dilimi ve Türk SaaS ekibi kesimi daha dar, ölçülmedi."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 1,
+   "g": "418 sanayi bölgesi ve 11.534 kooperatif kaynaklı ama B2B isteyen oran varsayım; plan toplam pazarı yaklaşık 4,5 milyon TL/yıl."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yılda yaklaşık 50 seed aşama B2B girişim varsayımı; 20.000 TL'lik raporla dar kitle, doğrulanmadı."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yılda yaklaşık 60 kurumsal girişim varsayımı; plan toplam pazarı 4,5 milyon TL/yıl, doğrulanmadı."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Kategori için ulaşılabilir pazar yaklaşık 43 bin dolar/yıl, 500 bin kişilik kitle varsayım; rakip yeni sekme eklentileri ücretsiz."
+  },
+  "lifeos-b": {
+   "p": null,
+   "k": 0,
+   "g": "Freelancer zaman kaydı için kaynaklarda pazar ölçüsü ve rakip fiyat karşılaştırması yok; geniş ya da dar demeye dayanak yok."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Plan yeni sekme kategorisinde gelir tezi görmüyor: hedef yaklaşık 2,2 bin dolar/yıl, rakipler ücretsiz; kod kiti talebi kanıtsız."
+  },
+  "luquit-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Danışman ve işletme karışıklığı ayıklanınca toplam pazar yaklaşık 19 milyon TL; ulaşılabilir kısım 800 ofis ve 7,7 milyon TL/yıl."
+  },
+  "luquit-b": {
+   "p": 2,
+   "k": 1,
+   "g": "12 bileşenlik kit için pazar hesabı yapılmadı; ücretsiz rakip 6,3 bin yıldızlı, plan yılda 0-30 satış görüyor; doygun kesim."
+  },
+  "metaframer-kernel-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Plan toplam pazarı 27, ulaşılabilir pazarı 4 milyon dolar/yıl görüyor (varsayımlı huni); ShipFast'in 8.427 müşterisi talebi gösteriyor."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Türkiye'de yazılım evi ve ajans sayısı yaklaşık 3.000 varsayım; kaynakta yalnız geliştirici sayısı var, dar pazar."
+  },
+  "metaframer-kernel-c": {
+   "p": null,
+   "k": 0,
+   "g": "Kaynak bu entegrasyon hizmeti için pazar büyüklüğü üretmemiş; alıcı sayısı ve büyüme verisi yok, A ile B'nin puanları dayanaksız."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Plan toplam pazarı yaklaşık 1 milyon TL/yıl, 36. ay hedefi 300 bin TL ve varsayım; ücretsiz rakipler güçlü, çok dar."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Yaklaşık 5.000 ajans ve serbest çalışan varsayımı kaynaksız; 499 TL/yıl fiyatla tavan birkaç milyon TL'yi geçmiyor, çok dar."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Aynı yaklaşık 1 milyon TL/yıl'lık varsayımlı pazar; elle teslim karar dosyası bunun daha da küçük bir dilimi."
+  },
+  "projector-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Türkiye'de 2,54 milyon GitHub geliştiricisi kaynaklı ve artıyor ama e-kitap için ulaşılabilir pazar yaklaşık 4,5 milyon TL varsayım."
+  },
+  "projector-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Yaklaşık 300 yazılım evinin %10'u varsayımıyla pazar 1,05 milyon TL/yıl; çok dar ve kanıtsız."
+  },
+  "projector-c": {
+   "p": null,
+   "k": 0,
+   "g": "Teslim portalı için Türkiye'deki alıcı sayısı ve pazar büyüklüğü kaynaklarda hesaplanmadı; iki değerlendiricinin orta puanı dayanaksız."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Şablon için yukarıdan aşağı toplam pazar yaklaşık 450 bin TL/yıl ve tamamı varsayım; çok dar."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "60-100 program varsayımı doğrulanamadı; 1.490 TL tek seferlik lisansla tavan yaklaşık 150 bin TL, çok dar kurum pazarı."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Kültür yayınlarının %66'sı çevrimiçi satılıyor (kaynaklı) ama pazar reel daralıyor; ulaşılabilir kısım yalnız %3-8 komisyon havuzu."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Toplam pazar yaklaşık 13,5 milyon TL (varsayım), plan hedefi yılda 150-270 bin TL; ücretsiz rakipler var, ajans kesimi dar."
+  },
+  "signator-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı 13,5 milyon TL'lik varsayımlı pazar ve yılda 150-270 bin TL hedef; arama hacmi doğrulanmadı, rakiplerin ücretsiz planı var."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı küçük pazarın tek seferlik kurulum dilimi; plan hedefi yılda 150-270 bin TL yazılım içindir, hizmet için ayrı hesap yok."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Bölgesel kulüp ve marka sayısı kaynaklanmamış; plan yılda 0-1 proje görüyor, dar pazar."
+  },
+  "volley-tap-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Portal reklam havuzu büyük (aylık yaklaşık 2,8 milyon dolar varsayım) ama eCPM yayımlanmıyor ve tek oyunun payı çok küçük."
+  },
+  "volley-tap-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Premium rahat oyun için ulaşılabilir ücretli oyuncu kitlesi kaynaksız; ücretsiz tarayıcı oyunlarıyla dolu, dar."
+  },
+  "woocommnts-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Bu planın toplam pazar tahmini yaklaşık 1,1 milyon TL/yıl; aynı ürün için diğer plan 38.531 mağaza ve 17 milyon TL görüyor; dar."
+  },
+  "woocommnts-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Yaklaşık 1.500 ajans varsayımı; ajans kanalı aynı dar taksit ve kapıda ödeme pazarına ek büyüme taşımıyor."
+  },
+  "woocommnts-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Yorum göçü tek seferlik ve dar bir ihtiyaç; talep doğrulanmadı, ücretsiz alternatif güçlü, büyüme kanıtı yok."
+  },
+  "egitim-demolari-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Öğretmen kitlesi geniş (başka kartta büyük bir öğretmen topluluğu kaynaklı) ama bu ürün için boyut ve ödeyen pay ölçülmedi."
+  },
+  "egitim-demolari-b": {
+   "p": null,
+   "k": 0,
+   "g": "Ekip atölyesi için kaynaklarda alıcı sayısı ya da pazar büyüklüğü yok; iki değerlendiricinin orta puanı dayanaksız."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kahve zinciri hizmet pazarı yaklaşık 84 milyon TL ve inşaat uyum nişi planlarda hesaplı; bugün erişim iki mevcut ilişkiyle sınırlı."
+  },
+  "baz-secenekler-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Beyaz etiket kurulum için toplam pazar yaklaşık 500 bin TL/yıl varsayım; hazır betikler 19-89 dolar ve en çok 2 bin satış; çok dar."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Bu bir satış pazarı değil fon başvurusu: tek bilet, dönemsel çağrı, sonraki tarih belirsiz. B'nin andığı yatırım hacmi alıcı pazarı değil; A seçildi."
+  }
+ }
+}

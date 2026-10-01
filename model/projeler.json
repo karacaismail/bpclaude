@@ -1,0 +1,362 @@
+[
+ {
+  "slug": "zabuno",
+  "baslik": "Zabuno (QR menü ve sipariş yazılımı)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "parselq",
+  "baslik": "arsam.net / ParselQ (arsa raporu, emlakçı aracı, pazar yeri)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 14
+  }
+ },
+ {
+  "slug": "destektesvik",
+  "baslik": "DestekTeşvik (destek ve teşvik uygunluk platformu)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "asgari-iscilik",
+  "baslik": "Asgari işçilik ve hakediş uyum platformu",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "zincir-danismanligi",
+  "baslik": "Kahve zinciri için dijital dönüşüm danışmanlığı",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "kar-pusulasi",
+  "baslik": "Stratejik Kâr Pusulası (e-ticaret kârlılık aracı)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "titanlar",
+  "baslik": "Titanlar (e-ticaret eğitimi ve danışmanlık)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 3
+  }
+ },
+ {
+  "slug": "kurumsal-site",
+  "baslik": "Kurumsal site hizmeti (KOBİ)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 4
+  }
+ },
+ {
+  "slug": "uretici-kobi-paketi",
+  "baslik": "Üretici KOBİ dijital başlangıç paketi",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 3
+  }
+ },
+ {
+  "slug": "wp-nis-eklentiler",
+  "baslik": "WordPress / WooCommerce Türkiye niş eklenti hattı",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "qral",
+  "baslik": "qral (hızlı başvuru bağlantıları Chrome uzantısı)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "frontend-atlasi",
+  "baslik": "Frontend Atlası (eğitim içeriği)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "karar-kitabi",
+  "baslik": "Karar Kitabı / Yöntem Atlası",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "kurucu-sunum-hizmeti",
+  "baslik": "Kurucu sunumu ve canlı finans modeli hizmeti",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 3
+  }
+ },
+ {
+  "slug": "vize-operasyon",
+  "baslik": "Vize acentesi operasyon platformu",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "software-factory",
+  "baslik": "software-factory (yapay zekâ destekli yazılım üretim hattı hizmeti)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 4
+  }
+ },
+ {
+  "slug": "strateji-simulatoru",
+  "baslik": "Strateji Simülatörü",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "ajan-kaynak-koruyucu",
+  "baslik": "Yapay zekâ ajanı kaynak ve maliyet koruyucu",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "actionplan",
+  "baslik": "actionplan (yapay zekâya hazır iş kırılım aracı)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "ajan-gozlem-paneli",
+  "baslik": "Ajan gözlem paneli",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "ai-first-tasarim",
+  "baslik": "Yapay zekâ öncelikli tasarım sistemi rehberi",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "aicommandcard",
+  "baslik": "AiCommandCard bileşeni",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "atonota-denetim",
+  "baslik": "WordPress site sağlığı ve pazarlama denetimi eklentisi (atonota)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 6
+  }
+ },
+ {
+  "slug": "b2b-bilesenler",
+  "baslik": "B2B ürün sayfası ve animasyon bileşenleri",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 4
+  }
+ },
+ {
+  "slug": "banner-post",
+  "baslik": "Banner ve gönderi üretim sistemi",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "karar-sihirbazi",
+  "baslik": "Teknoloji yığını karar sihirbazı",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "sunum-bi-hizmeti",
+  "baslik": "Sunum ve iş zekâsı çıktı hizmeti",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "ik-paneli-hizmeti",
+  "baslik": "İK paneli arayüz hizmeti",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "ddd-renderer",
+  "baslik": "DDD modüler monolit rehberi ve JSON blok renderer",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "devpanel",
+  "baslik": "Geliştirici paneli desenleri (devpanel)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 9
+  }
+ },
+ {
+  "slug": "e-menum",
+  "baslik": "E-Menum (Django QR menü kod tabanı)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "eklenti-firsat-panosu",
+  "baslik": "Eklenti ekosistemi fırsat panosu ve bülteni",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "cok-dilli-arayuz",
+  "baslik": "Çok dilli arayüz rehberi ve denetimi",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "b2b-pazar-yeri-hizmeti",
+  "baslik": "B2B pazar yeri keşif ve teklif hizmeti",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 7
+  }
+ },
+ {
+  "slug": "lifeos",
+  "baslik": "LifeOS (yeni sekme ve alışkanlık eklentisi)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 3
+  }
+ },
+ {
+  "slug": "luquit",
+  "baslik": "Liquid glass bileşen kütüphanesi ve emlakçı CRM Lite",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 3
+  }
+ },
+ {
+  "slug": "metaframer-kernel",
+  "baslik": "Çok kiracılı SaaS arka uç başlangıç kiti (metaframer-kernel)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "alan-adi-bulucu",
+  "baslik": "Marka adı ve boş alan adı bulucu",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "projector",
+  "baslik": "Kurumsal SaaS mimarisi içerik ürünü (projector)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "kurucu-pusulasi",
+  "baslik": "Kurucu Pusulası şablonu ve Kitap Atlası",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 2
+  }
+ },
+ {
+  "slug": "signator",
+  "baslik": "signator (e-posta imzası üreticisi)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "volley-tap",
+  "baslik": "Volley Tap (HTML5 arcade oyunu)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "woocommnts",
+  "baslik": "WooCommerce yorum ve taksit eklentisi (WooCommnts)",
+  "kaynak": {
+   "claude": 2,
+   "gpt": 1
+  }
+ },
+ {
+  "slug": "egitim-demolari",
+  "baslik": "Etkileşimli eğitim içeriği demoları",
+  "kaynak": {
+   "claude": 0,
+   "gpt": 6
+  }
+ },
+ {
+  "slug": "baz-secenekler",
+  "baslik": "Baz seçenekler: günlük danışmanlık, kod satışı, hibe başvurusu",
+  "kaynak": {
+   "claude": 5,
+   "gpt": 1
+  }
+ }
+]

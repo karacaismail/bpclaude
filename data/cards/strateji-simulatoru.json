@@ -1,0 +1,343 @@
+{
+ "slug": "strateji-simulatoru",
+ "baslik": "Strateji Simülatörü",
+ "ozet": "Fikri ya da iç projeyi 32 soru ve 6 karar kapısından geçiren, tarayıcıda çalışan ön değerlendirme aracı. Hedef: girişimci adayları, kuluçka merkezleri ve KOBİ. Bugün çalışan tek dosya var; satış sayfası, PDF rapor, ödeme ve ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Tek dosyalık çevrimdışı araç: 32 soru, 6 bölüm, 6 karar kapısı, 28 kural, karar çıktısı",
+   "JSON, CSV, Markdown ve formüllü Excel dışa aktarma; veri yalnızca tarayıcıda kalır",
+   "Gömülü öz sınama 32 testin 32'sini geçiyor; 4 örnek senaryo motorda hazır",
+   "Fiyat ve paket planı yazılı: rapor 349-749 TL, danışman 9.900 TL, kuluçka 24.900 TL yıllık",
+   "Kurucunun mevcut hibe ve teşvik danışmanlık müşterileri bu ürünün ilk doğal alıcı havuzu"
+  ],
+  "yok": [
+   "Ödeyen müşteri, ön ödeme ya da imzalı pilot",
+   "Satış sayfası, README, metodoloji sayfası ve örnek rapor",
+   "PDF yönetici raporu ve başvuru formu eşlemesi",
+   "Ödeme hesabı, hukuk metinleri ve white-label yapılandırması",
+   "Tarayıcı testleri ve 320 px kabul doğrulaması; lisans dosyası kararı da bekliyor"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Gelir ağırlığı kuluçka ve BİGG uygulayıcılarına white-label lisansta (24.900 TL yıllık); bireysel rapor (349-749 TL) huni görevi görür. 12 ay baz: 150 rapor, 3 kurum, yaklaşık 90 bin TL net.",
+  "gpt": "Ücretsiz açık motor; ücretli olan, ajans, danışman ve kurum için kurulan karar workshop'u ve kalibrasyonu (150-500 USD). Ücretli kullanım öncesi brüt geri ödeme etiketi düzeltilmeli, net nakit modeli eklenmeli.",
+  "ayrisma": "Claude yazılım ve rapor satışı ile kurum lisansını önde tutar. GPT araç ücretsizse yalnızca eğitim ve destekle ücret alınabileceğini söyler; alıcıyı yazılım ajansı ve proje komitesi olarak görür, hosted aboneliği sonraya bırakır.",
+  "birlesik": "İkisi de bireysel rapor satışının zayıf, danışmanlı satışın güçlü olduğunda birleşir. Ortak hüküm: ücretsiz araç dağıtım aracıdır; para hizmetli paketten ve kurum lisansından gelir. Kurucunun elindeki alıcı mevcut müşterilerdir."
+ },
+ "analist_gorusu": "En gerçekçi yol önce mevcut müşterilere rapor ve yorum görüşmesi paketini satmak (c), sonra bu kanıtla kuluçkalara pilot götürmek (a). Rapor katmanı (b) tek başına ChatGPT ikamesine karşı zayıf kalır.",
+ "secenekler": [
+  {
+   "id": "strateji-simulatoru-a",
+   "ad": "Kuluçka ve BİGG uygulayıcıya white-label lisans",
+   "tur": "yazılım ürünü",
+   "musteri": "BİGG uygulayıcı kuruluşlar, teknokent kuluçkaları ve TTO'lar; her çağrıda 150-400 fikri ön eleyen program yöneticileri",
+   "is": "Çağrıdaki yüzlerce fikri mentor saati harcamadan, tek bir yayımlı ölçekle ön elemek ve program raporlamasına gerekçe üretmek",
+   "tetikleyici": "Yeni çağrı ya da ön kuluçka döneminin açılması; mentor saatinin yetmemesi; programın raporlama yükümlülüğü",
+   "teklif": "Kurum logosuyla ve alt alan adıyla çalışan simülatör; 3 ay ücretsiz pilot, sonra yıllık lisans; kohort CSV çıktısı ve 2 saat eğitim",
+   "fiyat": "24.900 TL yıllık + KDV; pilot 3 ay ücretsiz; danışman paketi 9.900 TL yıllık + KDV",
+   "kanal_birincil": "TÜBİTAK 1812 listesindeki uygulayıcı kuruluşlara kişisel e-posta ve 15 dakikalık demo; ilk dalga 30 kurum",
+   "kanal_yedek": "Teknokent yöneticileri, girişimcilik eğitmenleri ve LinkedIn üzerinden kuluçka yöneticilerine yöntem paylaşımı",
+   "ilk_adim": "30 kurumluk ilk dalga listesini çıkarıp çağrı takvimine göre 10 kuruma pilot teklifi göndermek",
+   "ilk_kapsam": "Statik white-label paket (logo, renk, kurum notu, alt alan adı), yayımlı metodoloji sayfası, örnek senaryolar, toplu CSV ve 3 aylık ölçüm planı; kohort panosu ve jüri modu kapsam dışı (L2)",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Kod kurucuya ait; gömülü kütüphaneler MIT; lisans dosyası kararı bekliyor ama satışı engellemiyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Veri tarayıcıda; kurum için veri işleme metni ve KVKK aydınlatması hukukçu gözünden geçmedi"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu var ama bu ürün için fatura akışı mali müşavirle teyit edilmedi"
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Uygulayıcı listesi kamuya açık ve adlı: 147 kuruluş; ayrıca yaklaşık 97 faal teknokent"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal e-posta ve demo, ilk adım 30 kurum; yedek eğitmen ve LinkedIn kanalı adlı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Pilot ücretsiz 3 ay; ilk fatura 3-6 ay sürebilir, kurum satın alma döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 8.500 TL (hukuk metni ve alan adı); tavanın çok altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kohort panosu ve jüri modu henüz yok (L2); ilk kapsamda vaat edilmez ama yazılı kapsam sınırı yok, özel işe dönebilir"
+    }
+   },
+   "kapi_duzeltme": "G2/G3: hukuk metni ve fatura akışı için mali müşavir ve hukukçu teyidi. G6: pilot sözleşmesine ücretli başlangıç tarihi yazmak. G8: paket kapsamını ve ayar listesini tek sayfada sabitlemek.",
+   "finans": {
+    "satis_tipi": "yıllık peşin",
+    "net_fiyat_tl": 24900,
+    "degisken_maliyet_tl": 2000,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 8500,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 65,
+     "max": 100
+    },
+    "ilk_tahsilat_gun": {
+     "min": 105,
+     "max": 240
+    },
+    "satis_basina_kurucu_saati": 14,
+    "musteri_basina_aylik_destek_dk": 90,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 24900,
+     "iyi": 44700
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan 5, 6 ve 8. bölüm: ilk white-label sözleşme baz 4. ay (pilot hafta 6, 3 ay ücretsiz), 2. kurum 8. ay; bu yüzden baz 6 ayda 1 lisans (24.900). İyi: 1 kurum + 2 danışman (19.800) = 44.700. Dönüşüm: demo-pilot %30, pilot-sözleşme %33 (varsayım, kanıtsız); ilk fatura 3-6 ay."
+   },
+   "deney": {
+    "varsayim": "Bir uygulayıcı kuruluş ücretsiz pilotun ardından yıllık lisans bedelini ödemeye razı olur",
+    "yontem": "30 kuruma kişisel e-posta, 15 dakikalık demo ve 3 kurumla 3 aylık pilot; mentor saati ve tamamlanma oranı önce ve sonra ölçülür.",
+    "sure_gun": 60,
+    "maliyet_saat": 40,
+    "maliyet_tl": 0,
+    "basari_olcutu": "30 e-postadan en az 10 yanıt, 5 demo, 2 pilot; en az 1 kurumdan yazılı lisans niyeti",
+    "birakma_olcutu": "30 e-postadan 3'ten az yanıt ya da pilotların hiçbirinde tamamlanma %70'in üzerine çıkmıyor",
+    "sonraki_dilim": "Kurum önünde pilot sonuçlarıyla 24.900 TL teklifi ve kohort karşılaştırma modülü"
+   },
+   "etiketler": {
+    "segment": "kuluçka merkezi, TTO, BİGG uygulayıcı",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "statik web uygulaması, tarayıcı içi motor",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı 2, 5, 6 ve 7. bölüm: 32 soru, 6 kapı, çalışan çekirdek; 147 uygulayıcı kuruluş TÜBİTAK 1812 planında. Derinlik belgesi A.8 ve C.5: kurum ROI hesabı varsayımdır; satın alma döngüsü 1-3 ay karar, 3-6 ay ilk fatura. GPT belgesi kurum aboneliğini sonraya bırakır. Ödeyen kurum yok."
+  },
+  {
+   "id": "strateji-simulatoru-b",
+   "ad": "Girişimci adayına ücretli yönetici raporu (PDF)",
+   "tur": "içerik",
+   "musteri": "KOSGEB ve BİGG başvurusu hazırlayan teknik girişimci adayları; kendi kararı ve kartıyla alan bireyler",
+   "is": "Başvurudan önce jürinin soracağı soruları görmek, eksik kanıtı 30 günlük listeye çevirmek, başvuru alanlarına eşlenmiş özet almak",
+   "tetikleyici": "KOSGEB başvuru dönemi ya da BİGG çağrısının açılması; mentor görüşmesinden önceki hafta",
+   "teklif": "Ücretsiz tam değerlendirme; sonucu 8-10 sayfalık PDF rapora çeviren ücretli katman: kapı tablosu, eylem listesi, form eşlemesi",
+   "fiyat": "349 TL (rapor) ve 749 TL (başvuru paketi), KDV dahil; ilk 5 kişiye 149 TL kurucu fiyatı; 7 gün iade",
+   "kanal_birincil": "Kurucunun mevcut hibe danışmanlığı müşterilerine kişisel e-posta; sonra Türkçe arama içerikleri ve kulüp atölyeleri",
+   "kanal_yedek": "Üniversite girişimcilik kulüpleri, Türkçe girişim toplulukları ve kuluçka duyuruları üzerinden ölçüm paylaşımı",
+   "ilk_adim": "Metodoloji sayfası ve satış sayfasını yayınlamak, ödeme hesabını açıp test satın alma yapmak",
+   "ilk_kapsam": "Yazdırma tabanlı PDF rapor şablonu, ödeme ve teslim akışı, satış sayfası, hukuk metinleri, 4 örnek senaryo",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Kod ve içerik kurucuya ait; gömülü bileşenler MIT; lisans dosyası kararı bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Mesafeli satış, KVKK aydınlatma ve iade metinleri hukukçu kontrolünden geçmedi"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Yerel ve dış ödeme sağlayıcısı belli ama hesaplar açılmadı, test satın alma yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net ama isimli 20 kişilik liste yok; mevcut müşteri listesinin boyutu belgelenmemiş"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Mevcut müşteri e-postası birincil, arama ve kulüp atölyesi yedek; ilk adımlar adlı"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan efor yaklaşık 70 saat, 6 haftalık lansmana sığıyor; ilk tahsilat 5-13 hafta"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Tasarım, hukuk ve alan adı yaklaşık 18.500 TL; tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsamlı ve sabit fiyatlı iki paket; herkes aynı raporu alır"
+    }
+   },
+   "kapi_duzeltme": "G2: hukuk metinleri için avukat kontrolü. G3: ödeme hesaplarını açıp uçtan uca test satın alma. G4: mevcut müşteri listesinden en az 20 isim çıkarmak.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 390,
+    "degisken_maliyet_tl": 31,
+    "sabit_gider_aylik_tl": 755,
+    "baslangic_nakit_tl": 18500,
+    "kalan_efor_saat": {
+     "min": 45,
+     "beklenen": 70,
+     "max": 110
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 90
+    },
+    "satis_basina_kurucu_saati": 0.5,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 1800,
+     "baz": 4500,
+     "iyi": 11500
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 8,
+     "baz": 15,
+     "iyi": 33
+    },
+    "alti_ay_musteri": {
+     "kotu": 8,
+     "baz": 15,
+     "iyi": 33
+    },
+    "donusum_orani": {
+     "dusuk": 0.02,
+     "yuksek": 0.05
+    },
+    "dayanak": "Plan 5 ve 8. bölüm: karışık net 390 TL; ilk 5 satış 149 TL kurucu fiyatı (net ~124). Plan rampası (0-0-5-8-10-10 = 33 rapor) ödeyen ve trafik kanıtı olmadığından iyi senaryo sayıldı; baz 15 (5 kurucu + 10 normal), kötü 8. Dönüşüm %2-5 varsayım."
+   },
+   "deney": {
+    "varsayim": "Girişimci adayı, ücretsiz değerlendirmeyi bitirdikten sonra ChatGPT yerine 349-749 TL ödeyip rapor alır",
+    "yontem": "Mevcut müşterilere 149 TL kurucu fiyatıyla erken erişim e-postası; satış sayfası olmadan ödeme bağlantısı ve elle PDF teslimi.",
+    "sure_gun": 21,
+    "maliyet_saat": 14,
+    "maliyet_tl": 600,
+    "basari_olcutu": "İlk 40 kişilik e-postadan en az 5 ödeme ya da ön ödeme",
+    "birakma_olcutu": "40 e-postadan 2'den az ödeme ve rapor sonrası geri bildirimde 'ChatGPT yeter' baskın",
+    "sonraki_dilim": "Satış sayfası, ücretli arama içeriği ve kulüp atölyeleri"
+   },
+   "etiketler": {
+    "segment": "girişimci adayı, KOSGEB ve BİGG başvurucusu",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "statik web uygulaması, PDF üretimi, ödeme",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı 3, 4, 5, 6 ve 8. bölüm: bireyden rapor başına 500 TL almak ChatGPT ikamesine karşı zor; planın kendisi bunu en önemli ekonomik kısıt sayar. Derinlik belgesi B.1: S1 ödeme isteği puanı 2/5. GPT belgesi şablon ile hizmeti karıştırmamayı söyler. Ödeyen yok."
+  },
+  {
+   "id": "strateji-simulatoru-c",
+   "ad": "Mevcut müşterilere değerlendirme raporu ve yorum görüşmesi",
+   "tur": "hizmet",
+   "musteri": "Kurucunun hibe ve teşvik danışmanlığı ile sunum hizmeti müşterileri; yeni ürün hattı ya da iç proje kararı veren KOBİ'ler",
+   "is": "Yatırım ya da başvuru kararından önce geri ödeme, nakit ömrü, kapasite ve risk kapılarını yazılı görmek ve bir saatte yorumlatmak",
+   "tetikleyici": "Hibe başvurusu ya da teşvik ön değerlendirmesi öncesi; banka kredi görüşmesi; yeni ürün hattı kararı",
+   "teklif": "Değerlendirme çalıştırılır; sonuç kısa rapora dökülür; 1 saatlik görüşmede kapı gerekçeleri ve eksik kanıt listesi yorumlanır",
+   "fiyat": "1.500 TL + KDV tek paket (rapor ve 1 saat görüşme)",
+   "kanal_birincil": "Kurucunun mevcut danışmanlık müşterilerine kişisel e-posta; her ön değerlendirme görüşmesine araç bağlantısı eklemek",
+   "kanal_yedek": "Müşterilerin tanıdığı mali müşavirler ve ortak web semineri; müşteri referansı",
+   "ilk_adim": "Mevcut müşteri listesinden 20 isim çıkarıp ilk 10 kişiye pakete özel e-posta göndermek",
+   "ilk_kapsam": "Mevcut araç, elle hazırlanan 3 sayfalık rapor şablonu (Markdown ve Excel çıktısından), 1 saatlik görüşme ve sabit teklif metni",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Araç ve hizmet kurucuya ait; teslim edilen yalnızca rapor ve görüşme, kod devri yok"
+    },
+    "G2": {
+     "durum": "gecti",
+     "not": "Mevcut müşteri ilişkisi, sınırlı veri; 'yatırım tavsiyesi değildir' uyarısı araçta var"
+    },
+    "G3": {
+     "durum": "gecti",
+     "not": "Mevcut şirket üzerinden havale ve fatura düzeni; sanal POS gerekmiyor"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net ama mevcut müşteri listesinin boyutu ve 20 isim belgelerde yazılı değil"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal mevcut müşteri e-postası, yedek mali müşavir ve ortak seminer; ilk adım adlı"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan efor yaklaşık 20 saat; ilk satış 1-6 hafta içinde mümkün"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı yaklaşık 1.000 TL (alan adı ve araçlar)"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsamlı ve fiyatlı paket; özel yazılım geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "G4: mevcut müşteri listesini çıkarıp en az 20 ismi yazmak.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 1500,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 125,
+    "baslangic_nakit_tl": 1000,
+    "kalan_efor_saat": {
+     "min": 12,
+     "beklenen": 20,
+     "max": 40
+    },
+    "ilk_tahsilat_gun": {
+     "min": 10,
+     "max": 45
+    },
+    "satis_basina_kurucu_saati": 4,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 9000,
+     "iyi": 18000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 12
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "Plan 7.2: ilk 6 haftada 2 iç proje değerlendirmesi, rapor ve 1 saat görüşme 1.500 TL (KDV hariç varsayıldı). Derinlik B.3 KOBİ kişiliği: ayda 2 paket hedefi; temkinle 6 ayda baz 6, iyi 12. Dönüşüm varsayım, kanıtsız."
+   },
+   "deney": {
+    "varsayim": "Mevcut müşteriler hibe ya da yatırım kararından önce 1.500 TL'lik değerlendirme ve görüşme paketini satın alır",
+    "yontem": "Mevcut müşterilerden 10 kişiye kişisel e-posta ve ödeme bilgisiyle teklif; aracın mevcut halini 20 dakikalık ortak oturumda kullandırmak.",
+    "sure_gun": 14,
+    "maliyet_saat": 10,
+    "maliyet_tl": 0,
+    "basari_olcutu": "10 teklifte en az 2 ödeme ya da yazılı onay; rapor sonunda 'tekrar alırım' yanıtı",
+    "birakma_olcutu": "10 teklifte 0 ödeme ve görüşmelerde 'ücretsiz araç yeter' baskın",
+    "sonraki_dilim": "Paketi PDF rapora ve raporu kuluçka pilotuna taşımak"
+   },
+   "etiketler": {
+    "segment": "mevcut danışmanlık müşterisi, KOBİ",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "mevcut tarayıcı aracı, elle rapor",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "İş planı 7.2 ve derinlik C.2 kanal 5: mevcut müşteri en hızlı kanal; fiyat ve müşteri sayısı kurucu beyanıdır, doğrulanmamıştır. GPT belgesi 150-500 USD workshop ve danışman müşteri deliverable'ı önerir; ücretli hizmeti ücretsiz araçtan ayırır. Ödeyen müşteri yok."
+  }
+ ]
+}

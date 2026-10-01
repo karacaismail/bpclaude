@@ -1,0 +1,665 @@
+{
+ "kriter": "D2",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Aylık abonelik; masadaki QR menü her gün kullanılıyor, fiyat değiştikçe güncelleniyor. Rakipler de aylık ücret alıyor; elde tutma ölçülmedi."
+  },
+  "zabuno-b": {
+   "p": 5,
+   "k": 1,
+   "g": "Yıllık sözleşme, aylık fatura; şube menüleri sürekli yayında ve fiyat güncellemesi süreklidir. Rakip planlar aylık; imzalı zincir yok."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek modül uyarlaması tek seferlik iş; aynı alıcı ancak ikinci modül isterse yeniden öder, abonelik tanımlı değil."
+  },
+  "parselq-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek parsel için tek seferlik rapor; ikinci parsel ya da 3 parsellik toplu analiz mümkün ama tekrar oranı yalnız varsayım."
+  },
+  "parselq-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Aylık abonelik ve her yeni ilanda kart; ihtiyaç sezonluk portföy tazelemeye bağlı, aylık kayıp oranı ölçülmedi."
+  },
+  "parselq-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Ofis ayda 5-30 dosya üretiyor, rapor başına ödeme süreklilik sağlar; taahhüt ya da abonelik yok, ikinci dosya sınanmadı."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Rapor tek seferlik ama çağrılar yılda iki dönem açılıyor ve yıllık izleme paketi tanımlı; izlemeye geçiş ölçülmedi."
+  },
+  "destektesvik-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Aylık abonelik; yenileme nedeni çağrı dönemlerinde portföy taraması, sessiz aylarda bırakma riski var. Rakip aylık ücret alıyor."
+  },
+  "destektesvik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık sponsorluk ve yılda iki toplu tarama; ödeme kararı yılda bir, yenileme üye memnuniyetine bağlı ve kanıtsız."
+  },
+  "asgari-iscilik-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Proje tek seferlik; ardından aylık bakım ve mevzuat güncellemesi teklifin parçası ama tek müşteriyle sınırlı ve imzasız."
+  },
+  "asgari-iscilik-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Aylık abonelik ve aylık izleme; yükümlülük şantiye ve iş bazlı olduğundan iş bitince düşebilir, kayıp oranı ölçülmedi."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Dosya başı kontrol; dönem ve mevzuat değişimiyle yılda birkaç kez tekrar eder, tekrar dönem paketi tanımlı ama sınanmadı."
+  },
+  "zincir-danismanligi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "90 günlük paket tek seferlik; ardından aylık yönetim bedeli fiyatta yazılı ve iş sürekli, ancak geçiş imzaya bağlı ve kanıtsız."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Denetim raporu tek seferlik; aynı alıcı ancak 90 günlük programa geçerse yeniden öder."
+  },
+  "zincir-danismanligi-c": {
+   "p": 5,
+   "k": 1,
+   "g": "Aylık fatura, yıllık sözleşme; şubelerde menü ve fiyat güncellemesi sürekli ihtiyaç. Rakip planlar aylık; imzalı sözleşme yok."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yıllık yenileme; oran ve tarife yılda birkaç kez değişiyor. Ömür boyu Kurucu Paketi alanlar yeniden ödemez; yenileme oranı varsayım."
+  },
+  "kar-pusulasi-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Aylık abonelik; danışman her müşteri için rapor üretir ama tetikleyici oran değişimi ve yeni müşteri, yani dönemsel. Rakip aylık ücretli."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Rapor tek seferlik; oran değişimi yılda birkaç kez olduğundan dönemsel tekrar olur, aylık üç raporluk paket tanımlı ama sınanmadı."
+  },
+  "titanlar-a": {
+   "p": 2,
+   "k": 0,
+   "g": "10 haftalık program tek seferlik; aynı katılımcı ancak danışmanlığa geçerse yeniden öder, geçiş oranı varsayım."
+  },
+  "titanlar-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Giriş ve Strateji paketleri tek seferlik; tarife değişince yeniden analiz istenebilir ama tanımlı bir tekrar paketi yok."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum eğitim planını yılda bir yapar; atölye yılda en çok bir kez yinelenir, tekrar satın alma hedefi kanıtsız."
+  },
+  "kurumsal-site-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Site tek seferlik proje; aylık bakım ve ek dil isteğe bağlı, bakıma bağlanma oranı yalnız plan varsayımı."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Vitrin sitesi tek seferlik; aylık bakım isteğe bağlı ve bu segmentte bağlanma beklentisi düşük."
+  },
+  "kurumsal-site-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik tema kodu satışı; ajans paketi sınırsız proje içeriyor, aynı alıcının yeniden ödeme nedeni yok."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Başlangıç paketi tek seferlik; aylık takip isteğe bağlı ek ve bağlanma yalnız varsayım."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Fizibilite raporu tek seferlik; tekrar yalnız üst pakete geçiş ya da oran değişince güncelleme isteğiyle olur, kayıt yok."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Katalog sitesi kurulumu tek seferlik; katalog güncellemesi ayrı ücretli ama fiyatı ve talebi sınanmadı."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yıllık lisans; ajans yıl boyu yeni site kurar, yenileme nedeni güncelleme ve destek. Yerli rakip aylık ücret alıyor; oran varsayım."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık lisans; eklenti mağazada sürekli çalışır, yenileme nedeni sürüm uyumu ve oran güncellemesi. Yenileme oranı varsayım."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Site başına tek seferlik kurulum; ajans yeni sitelerde yeniden sipariş verebilir ama tekrar kanıtı yok."
+  },
+  "qral-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Ömür boyu tek seferlik lisans; aynı kullanıcının yeniden ödeme nedeni yok."
+  },
+  "qral-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık lisans; ihtiyaç dönem başlarında yinelenir, ödeme kararı yılda bir. Öğretmenin yenilemesi için kanıt yok."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek takım için tek seferlik şablon kurulumu; tekrar yalnız yeni şablon ya da ekip genişlemesiyle, kanıtsız."
+  },
+  "frontend-atlasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kit ve eğitmen lisansı tek seferlik; güncelleme süresi dolunca yenileme ve yeni dönem müfredatı zayıf bir tekrar nedeni."
+  },
+  "frontend-atlasi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik alıştırma paketi; öğrenen aynı paketi yeniden almaz, ek paket tanımlı değil."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ders başına tek seferlik üretim; eğitmen yeni modül için yeniden sipariş verebilir ama talep gösterilmedi."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Atölye yılda en çok bir kez yinelenir; 30 günlük takip dışında sürekli ihtiyaç yok, yenileme varsayım."
+  },
+  "karar-kitabi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Tema paketi tek seferlik; aynı alıcı başka tema paketi ya da tam set alabilir, düzenli yenileme yok."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit tek seferlik ama facilitatör ayda 2-10 oturum yapıyor; özel memo hizmeti tekrar satın alınabilir, tekrar görülmedi."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Paket başvuru başına tek seferlik; aylık güncelleme tur bitince biter, aynı kurucunun yeniden alması varsayım."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Denetim raporu başvuru başına tek seferlik; çağrılar yinelense de aynı kurucunun ikinci dönemde alması kanıtsız."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık lisans; program yılda iki dönem çalışıyor, ödeme kararı yılda bir. Yenileme hedefi varsayım, kurum bütçesi belirsiz."
+  },
+  "vize-operasyon-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Aylık abonelik; dosya, evrak ve randevu takibi günlük operasyonun parçası, yenileme nedeni açık. Ödeme niyeti ve kayıp ölçülmedi."
+  },
+  "vize-operasyon-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Kurulum sonrası aylık ücret; acentenin dosya akışı her ay sürüyor, yenileme nedeni açık. Fiyat kurucu hipotezi, kullanım doğrulanmadı."
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Başvuru başına tek seferlik evrak kontrolü; aynı kişi ancak sonraki başvurusunda döner, ikinci başvuru oranı varsayım."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 0,
+   "g": "MVP tek seferlik proje; canlıya çıkan yazılım için aylık bakım paketi tanımlı ama bakıma dönüşüm yalnız plan varsayımı."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurulum tek seferlik; ajan PR akışı sürekli olduğundan aylık takım kontrolü tanımlı ama yalnız tekrar kullanım görülürse açılacak."
+  },
+  "software-factory-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans müşteri işi geldikçe yeniden sipariş verir; yılda yaklaşık üç proje görüşmesiz varsayım, tekrar sipariş verisi yok."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık lisans; ihtiyaç çağrı dönemlerinde yinelenir, ödeme kararı yılda bir. Kayıp oranı varsayım, yenileme kanıtı yok."
+  },
+  "strateji-simulatoru-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor fikir başına tek seferlik; aynı kişi ancak yeni fikir ya da üst pakette döner, yeniden sipariş kaynaksız varsayım."
+  },
+  "strateji-simulatoru-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Karar başına tek seferlik paket; aynı müşteri yılda bir iki yeni kararda dönebilir, tekrar kanıtsız."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Pro tek seferlik lisans; aylık seçenek ve büyük sürüm yükseltmesi tanımlı ama yenileme nedeni zayıf ve kanıtsız."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Destekli kurulum tek seferlik; tekrar yalnız sürüm güncellemesi sonrası uyum desteğinde, garanti yok."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Aylık sponsorluk yapısı var ama gönüllü ve kolay bırakılır; benzer araçların kamuya açık sponsor tabanı küçük."
+  },
+  "actionplan-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Pro tek seferlik lisans; 12 ay güncelleme sonrası yenileme ve ekip yükseltmesi zayıf tekrar nedeni, oran varsayım."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurulum tek seferlik; ajans teslimleri sürekli olduğundan çalışma alanı başına aylık ücret hipotezi var, sınanmadı."
+  },
+  "actionplan-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik Türkçe şablon paketi; aynı alıcının yeniden satın alma nedeni yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Pro içinde tek seferlik lisans; aylık seçenek tanımlı ama pano ayrı satılmıyor ve yenileme nedeni zayıf."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Aylık ücret; ay başı fatura günü için her ay yeniden maliyet raporu gerekiyor, yenileme nedeni açık. Ajans talebi doğrulanmadı."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek kart kurulumu tek seferlik sabit paket; devam ücreti ya da ikinci iş tanımlı değil."
+  },
+  "ai-first-tasarim-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik e-kitap; aynı okurun yeniden ödeme nedeni yok, plan da kayıp ya da yenileme saymıyor."
+  },
+  "ai-first-tasarim-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Atölye ve kurulum proje bazlı; tekrar yalnız ek bileşen ya da yeni ekip ihtiyacında, kanıtsız."
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Form ve tablo başına sabit paket; ajans yeni ekranda yeniden alabilir ama kalıbı alınca kendi çoğaltabilir, düzenli yenileme yok."
+  },
+  "aicommandcard-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Aylık üst plan farkı; menü ve yorum işi her hafta tekrarlar ama AI asistan isteğe bağlı değer, elde tutma verisi yok."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek seferlik entegrasyon; ajans yeni panel işinde yeniden alabilir, bakım sözü ve tekrar talebi yok."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Yıllık lisans; haftalık tarama ve bozulma uyarısı sürekli çalışan hizmet, yenilenmezse durur. Yenileme oranı varsayım."
+  },
+  "atonota-denetim-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Yıllık lisans; ajansın her ay müşteri raporu üretmesi sürekli ihtiyaç, yenileme nedeni açık ama oran varsayım."
+  },
+  "atonota-denetim-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Aylık yönetilen kabul akışı; ajansın retainer işleri her ay sürüyor, yenileme nedeni açık. Fiyat test varsayımı, niyet yok."
+  },
+  "b2b-bilesenler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Site paketine tek seferlik ek blok; tekrar yalnız yıllık bakımda hareket güncellemesiyle, o da varsayım."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek ürün için tek seferlik iş; ek ürün görünümü fiyatlı ve ajans yeni projede dönebilir, tekrar kanıtı yok."
+  },
+  "b2b-bilesenler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Tek seferlik şablon lisansı; yeniden ödeme nedeni yok. Benzer şablonlar pazarda tek seferlik fiyatla satılıyor."
+  },
+  "banner-post-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Aylık üst plan farkı; menü ve fiyat değiştikçe görsel yenilenir ama modül isteğe bağlı değer, geçiş oranı varsayım."
+  },
+  "banner-post-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Aylık ücret; içerik takvimi her ay 12 görsel ve 4 hikaye istiyor, yenileme nedeni açık. Fiyat varsayım, teklif iletilmedi."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Pilot paket tek seferlik; ajans yeni kampanya brifinde dönebilir ama ikinci brif görülmedi."
+  },
+  "karar-sihirbazi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Aylık abonelik; form sitede sürekli çalışır ama küçük ajansın teklif talebi akışı düzensiz. Kayıp oranı varsayım."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Proje başı karar dosyası; ajans her yeni teklif öncesi yeniden alabilir, yani yılda birkaç kez. Tekrar talebi görülmedi."
+  },
+  "karar-sihirbazi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Aboneliksiz tek seferlik kit; kurulumdan sonra aynı ajansın yeniden ödeme nedeni tanımlı değil."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk set tek seferlik; fiyat ve ürün değişimleriyle çeyreklik güncelleme paketi tanımlı, tekrar kanıtı yok."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Kurulum sonrası aylık abonelik; ajans her ay müşteri sunumu yetiştiriyor, yenileme nedeni açık. Abone yok, kayıp varsayım."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Paket tek seferlik; rapor her veri güncellemesinde yeniden üretiliyor ve tekrar üretim fiyatlı, ancak tekrar görülmedi."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Demo kurucu için tek seferlik; aylık bakım isteğe bağlı, tekrar sipariş hedefi varsayım."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ajans ayda 4-6 teklif veriyor, ayda bir demo taahhüdü sürekli iş sağlar; ödeme demo başına ve taahhüt kabulü kanıtsız."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Kurulum sonrası aylık ücret; bordro kapanışı her ay zorunlu tekrar eden iş, yenileme nedeni açık. Pilot ve ödeme yok."
+  },
+  "ddd-renderer-a": {
+   "p": 1,
+   "k": 0,
+   "g": "E-kitaba tek seferlik ek paket; aynı okurun yeniden ödeme nedeni yok, yenileme yalnız küçük bir varsayım."
+  },
+  "ddd-renderer-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Şablon paketi tek seferlik; aynı alıcı başka stil paketi ya da demet alabilir, güncelleme yenilemesi varsayım."
+  },
+  "ddd-renderer-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Mimari değerlendirme tek seferlik proje; tekrar yalnız yeni sistem ya da yıllık gözden geçirmede, zayıf."
+  },
+  "devpanel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Üç günlük entegrasyon tek seferlik; aynı ekip yeni panel ya da ek ekran isterse döner, yenileme nedeni zayıf."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Form başına tek seferlik iş; ajans yeni formda yeniden alabilir ama kalıbı alınca kendi çoğaltabilir, tekrar görülmedi."
+  },
+  "devpanel-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Tek proje için tek seferlik şablon lisansı; yenileme nedeni yok. Benzer şablonlar pazarda tek seferlik satılıyor."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum tek seferlik; yalnız küçük bir yıllık bakım tekrar eder ve yenileme oranı varsayım."
+  },
+  "e-menum-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Aylık ücret; markada ayda en az iki fiyat ya da ürün değişimi var, onaylı yayın sürekli iş. Fiyat test değeri, ödeyen yok."
+  },
+  "e-menum-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Tek seferlik kaynak kod lisansı; yeniden ödeme nedeni yok. Rakip betikler de tek seferlik fiyatla satılıyor."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Aylık bülten aboneliği; her ay yeni sayı yenileme nedeni ama alıcının ürün kararı seyrek. Rakip araçlar aylık ücretli."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik keşif paketi; aynı alıcının yeniden ödeme nedeni yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık peşin lisans ve yılda bir görüşme; ajansın ürün hattı kararı seyrek, yenileme kanıtı yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Denetim tek seferlik; tekrar yalnız yeni dil eklenince, yılda en çok bir kez."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik PDF kontrol listesi; aynı alıcının yeniden ödeme nedeni yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Pilot tek seferlik; kontrol her sürümde yinelendiği için aylık ekip desteği tanımlı ama yalnız pilot sonrası sınanacak."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Teşhis tek seferlik; aynı alıcı ancak üst pakete ya da aylık koçluğa geçerse yeniden öder, geçiş kanıtsız."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kategori raporu tek seferlik; ikinci kategori fiyatlı ama tekrar talep görülmedi."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "12 haftalık paket tek seferlik; aylık koçluk devamı tanımlı, devam ve kayıp oranı varsayım."
+  },
+  "lifeos-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Eklenti günlük kullanılır ama ücretsiz; ödeme yöntem paketi başına tek seferlik, tekrar yalnız yeni paket alımıyla."
+  },
+  "lifeos-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Haftalık kullanım var ama ödeme tek seferlik kurulum paketi; abonelik ancak tekrar kullanım görülürse düşünülecek."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik şablon kiti; aynı alıcının yeniden ödeme nedeni yok."
+  },
+  "luquit-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Aylık abonelik; müşteri ve komisyon defteri günlük iş aracı, yenileme nedeni açık. Yerli rakipler aylık ücretli; kayıp ölçülmedi."
+  },
+  "luquit-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kit tek seferlik; tekrar yalnız saatlik özel entegrasyon ya da yeni proje desteğiyle, sınanmadı."
+  },
+  "metaframer-kernel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek seferlik lisans; 12 ay güncelleme sonrası yenileme tanımlı ama oran düşük bir varsayım."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Lisans ve atölye tek seferlik; güncelleme yenilemesi ya da yeni proje tekrarı mümkün ama belirsiz."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek eylem entegrasyonu tek seferlik; ikinci eylem ve bakım olasılığı var, tekrar nedeni kanıtsız."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "30 günlük paket tek seferlik; çok ürün çıkaran kurucu yılda bir kezden biraz fazla döner, o da varsayım."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık peşin lisans; ajans her yeni müşteri brifinde kullanır, ödeme kararı yılda bir. Yenileme oranı varsayım."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ad kararı başına tek seferlik dosya; aynı alıcı yılda en çok birkaç kez döner, tekrar talep görülmedi."
+  },
+  "projector-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik e-kitap; 12 ay güncelleme dahil, aynı okurun yeniden satın alması küçük bir varsayım."
+  },
+  "projector-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Atölye yılda en çok bir kez; yıllık eğitim bütçesi ve yeni gelen geliştirici tekrar doğurabilir, kanıt yok."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Migration pilotu tek seferlik; barındırılan aylık sürüm yalnız sınama fikri, müşteri bir kez kurup bırakabilir."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Şablon tek seferlik; yıllık güncelleme paketi ve yeniden yazım hatırlatması zayıf bir yenileme nedeni."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Lisans tek sefer fiyatlı ama program her dönem yeni ekiplerle başlıyor; dönem başı yenileme beklentisi kanıtsız."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Okur yılda birkaç kitap için künyeye döner; yenileme ödemesi yok, komisyon küçük ve düzensiz."
+  },
+  "signator-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Yıllık lisans; ajans her yeni müşteri tesliminde kullanır ve barındırılan görsel yenilenmezse durur. Rakipler abonelikli; oran varsayım."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Yıllık lisans; barındırılan görsel yenileme nedeni ama kullanım işe alımda seyrek. Rakip yıllık ücretli; yenileme oranı varsayım."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum paketi tek seferlik; işe alım ve logo değişimi yeni iş doğurabilir ama tek kişilik ek için paket alınmaz."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kampanya oyunu tek seferlik; sezon yılda bir, ikinci kampanya ve aylık barındırma isteğe bağlı, yenileme hedefi varsayım."
+  },
+  "volley-tap-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Portal reklam payını oynanış sürdükçe aylık öder; tek oyunda ilgi zamanla söner ve gelir çok küçük. Pay oranı kısmen yayımlı."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek seferlik premium satın alma; içerik paketi ve etkinlik sürümü yalnız hipotez, yeniden ödeme nedeni yok."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık lisans; yenileme nedeni uzaktan oran güncellemesi ve sürüm uyumu, ödeme kararı yılda bir. Yenileme oranı varsayım."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık 10 site lisansı; ajans yeni mağazalarda kullanmayı sürdürür, yenileme hedefi varsayım ve ajans görüşmesi yok."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yorum göçü mağaza için tek seferlik; yalnız çok mağazaya göç yapan ajans yeniden alabilir, tekrar kanıtı yok."
+  },
+  "egitim-demolari-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ders paketi tek seferlik; öğretmen yeni konu için başka paket alabilir, düzenli yenileme nedeni yok."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Atölye tek seferlik; yeni ekip kurulunca yinelenebilir, tekrar paketi yalnız varsayım."
+  },
+  "baz-secenekler-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Beş günlük paket aylık yinelenebilir ve ikinci pakette aylık yönetim öneriliyor; süreklilik imzasız ve tek ilişkiye bağlı."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurulum tek seferlik; yalnız küçük bir yıllık bakım tekrar eder ve yenileme oranı varsayım."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Fon tek seferlik; program koşullarına göre izlemede en çok bir kez devam desteği var, sürekli gelir değil."
+  }
+ }
+}

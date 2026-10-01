@@ -1,0 +1,344 @@
+{
+ "slug": "b2b-pazar-yeri-hizmeti",
+ "baslik": "B2B pazar yeri keşif ve teklif hizmeti",
+ "ozet": "B2B pazar yeri kurmak isteyen küme, kurumsal ekip ve girişim kurucusuna sabit kapsamlı teşhis, strateji ve doğrulama hizmeti satılır. Yöntem belge olarak hazır; ödeyen müşteri yok, kod ve veri üçüncü taraf bir şirkete ait.",
+ "bugun": {
+  "var": [
+   "Soğuk başlangıç yöntemi: yaklaşık 70 belgelik rehber, likidite, giriş kaması, kendini ödeyen model, 90 günlük plan",
+   "Üçüncü taraf markalı ve yarım ekran seti ile backlog kalıpları (satıcı mağazası, yönetici paneli, bildirim); markasız sürüm yok",
+   "Üç paket ve fiyat yazılı: 60.000, 150.000 ve 250.000 ₺, koçluk 15.000 ₺/ay",
+   "Kanal listesi: sektör kümeleri, sanayi bölgeleri, kuluçka merkezleri, ajans ortaklığı",
+   "Belge sitesi altyapısı ve içerik kapıları çalışıyor; kendini ödeyen model tablosu hazır"
+  ],
+  "yok": [
+   "Ödeyen müşteri, imzalı pilot, ön ödeme ve yazılı talep yok",
+   "Kod ve veri üçüncü taraf bir şirkete ait; yazılı izin ön koşul ve alınmadı",
+   "Rehber, ekran seti ve backlog markasız hale getirilmedi; hesaplayıcı yok",
+   "Sözleşme, KVKK metni, e-fatura düzeni ve tahsilat hesabı hazır değil",
+   "20 hedef alıcının isim listesi yok; satış mesajı hiç denenmedi",
+   "Referans müşteri ve vaka yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Planın en gerçekçi biçimi: markasız soğuk başlangıç danışmanlığı. Teşhis 60.000, strateji 150.000, tam paket 250.000 ₺. Pazar yerinin kendisi ve yazılım kiti elenir; izin gelmeden satış yok.",
+  "gpt": "Geniş platform yerine dar çıktı: tek kategori için görüşme ve teklif verisinden beş sayfalık rapor, beş teklif yanıtlı pilot dosya. Dosyalarda fiyat ve ücretli talep kanıtı yok; abonelik tekrar kullanımdan sonra.",
+  "ayrisma": "Claude yüksek biletli paketleri ve ekran setini öne çıkarır; GPT dar, tek kategorili, kanıt toplayan raporla başlar ve fiyat vermez. Claude kanalı kümeler ve ajanslar, GPT mevcut toptancı ilişkisi ve ortaktır.",
+  "birlesik": "Önce izin ya da markasız yeniden yazım; sonra dar doğrulama raporu (fiyatı kart varsayımı) ile teşhis paketi satılır. Yüksek bilet ve yazılım ancak ödeyen müşteri ve vaka sonrası gelir."
+ },
+ "analist_gorusu": "En gerçekçi yol A: sabit kapsamlı teşhis, kümelere doğrudan satış. B en dar kapsamdır ama fiyatı varsayımdır ve izin ya da yeniden yazım ister. C süre ve izin yüzünden 6 ayda tahsilat vermez.",
+ "secenekler": [
+  {
+   "id": "b2b-pazar-yeri-hizmeti-a",
+   "ad": "Soğuk başlangıç teşhis paketi (2 hafta)",
+   "tur": "hizmet",
+   "musteri": "Sektör kümesi, sanayi bölgesi, birlik ya da kooperatif yöneticisi; 100-500 üyeli ve kendi B2B platformunu planlayan",
+   "is": "Yazılıma ve ekibe para harcamadan önce hangi kategori, kaç satıcı ve hangi ekiple başlanacağını belgeyle karara bağlamak",
+   "tetikleyici": "Genel kurul ya da yönetim kurulu gündemi, ajanstan gelen pahalı yazılım teklifi, hibe çağrısı",
+   "teklif": "Sabit kapsamlı 2 haftalık teşhis: problem ve varsayım haritası, 20 sayfalık karar belgesi, kendini ödeyen model, devam ya da durdur ölçütleri",
+   "fiyat": "60.000 ₺ + KDV; %40 peşin, kalanı teslimde; teşhis sonrası üst pakete geçme zorunluluğu yok",
+   "kanal_birincil": "30 kümeye ve sanayi bölgesi yöneticisine doğrudan e-posta ve telefon; sanayi bölgeleri birliği ve oda etkinlikleri",
+   "kanal_yedek": "B2B yazılım ajansları ile ortak teklif; kurucunun mevcut üretici müşterileri; LinkedIn yazı dizisi",
+   "ilk_adim": "Yazılı izin talebi gönder; kamuya açık kaynaklardan 30 yöneticilik liste çıkar ve doğrula; 10 kişiye 2 sayfalık özet teklifi yolla",
+   "ilk_kapsam": "Teşhis şablonları, 20 sayfalık markasız karar belgesi (henüz yok; izin ya da sıfırdan yazımla), kendini ödeyen model tablosu, sözleşme ve teklif PDF; ekran seti ve backlog sonraya",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Rehber, ekran seti ve backlog üçüncü taraf bir şirketin; yazılı izin yok. Markasız yeniden yazım 3-4 hafta."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri verisi işlenirse KVKK ve veri işleme metni; sözleşme ve e-fatura için hukukçu ve mali müşavir teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-fatura yolu belli; hesap ve fatura düzeni kurulmadı, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 30 yöneticilik liste kamuya açık kaynaklardan çıkarılacak, kişi ve sayılar doğrulanmadı; mevcut üretici ilişkileri yalnız yan kanal."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı: yöneticilere doğrudan temas ve oda etkinlikleri; yedek ajans ortaklığı ve ilk adım belli."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 128 saat (6 hafta); satış döngüsü 3-6 hafta varsayım, ölçülmedi; ilk tahsilat 6 aya sığar."
+    },
+    "G7": {
+     "durum": "test",
+     "not": "Başlangıç 10.000 ₺ + aylık 11.000 ₺ sabit gider, ilk tahsilat 84-120 günde: yaklaşık 41-54 bin ₺; en kötü halde tavanı (50 bin ₺) aşar."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam, süre ve fiyat; yazılım ve satıcı sayısı vaadi kapsam dışı."
+    }
+   },
+   "kapi_duzeltme": "G1: yazılı izin ya da sıfırdan markasız yazım. G2-G3: hukukçu, mali müşavir, fatura düzeni. G4: 30 isim listesi. G6: döngüyü ilk 6 görüşmede ölç. G7: sabit gideri ilk tahsilata dek kıs.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 60000,
+    "degisken_maliyet_tl": 2000,
+    "sabit_gider_aylik_tl": 11000,
+    "baslangic_nakit_tl": 10000,
+    "kalan_efor_saat": {
+     "min": 72,
+     "beklenen": 128,
+     "max": 180
+    },
+    "ilk_tahsilat_gun": {
+     "min": 84,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 12,
+    "musteri_basina_aylik_destek_dk": 90,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 120000,
+     "iyi": 240000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan 5: teşhis 60.000 ₺; sabit gider 11.000 ₺/ay (plan 8). Derinlik C.3: 12. haftada ilk satış (84 gün). Baz: 2 teşhis. İyi: 3 teşhis + 1 strateji peşinatı (%40 x 150.000). Kötü 0. Kalan efor Derinlik D.8. Dönüşüm kanıtsız varsayım; üst uç düşürüldü."
+   },
+   "deney": {
+    "varsayim": "Küme yöneticileri yönetim kurulundan 60.000 ₺ teşhis bedelini çıkarabilir ve bunu ajans teklifinden önce öder.",
+    "yontem": "30 yöneticiye doğrudan temas; 6 keşif görüşmesi; her birine ücretsiz 2 sayfa özet; 3 yazılı teşhis teklifi; ilk peşinatı havaleyle iste.",
+    "sure_gun": 45,
+    "maliyet_saat": 60,
+    "maliyet_tl": 3000,
+    "basari_olcutu": "45 günde en az 1 yazılı teklif yanıtı ve 1 peşinat ya da imzalı sözleşme",
+    "birakma_olcutu": "6 görüşme ve 3 teklifte 60 günde sıfır imza: fiyatı düşür ya da B seçeneğine geç",
+    "sonraki_dilim": "Teşhis teslimi, vaka izni, strateji paketi teklifi ve ajans ortak teklifi"
+   },
+   "etiketler": {
+    "segment": "Sektör kümesi, sanayi bölgesi, birlik yöneticisi",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Belge sitesi, Sheets modeli, PDF",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 5: teşhis 60.000 ₺, %40 peşin. Plan 7.2 ve Derinlik C.2: 30 yönetici doğrudan temas, puan 9/10. Derinlik B.1: 418 sanayi bölgesi, 11.534 kooperatif; B2B isteyen oran varsayım. Derinlik A.2: yanlış kamada 3-6 ay ekip maliyeti varsayım. Plan 0: ödeyen müşteri yok; hazırlık düzeyi düşük. Plan 10: kod ve veri üçüncü tarafta, yazılı izin ön koşul."
+  },
+  {
+   "id": "b2b-pazar-yeri-hizmeti-b",
+   "ad": "Tek kategori talep ve teklif doğrulama raporu",
+   "tur": "hizmet",
+   "musteri": "Tek kategoride satıcı ve alıcı bulmaya çalışan seed aşama B2B girişim kurucusu; toptancı sahibi ya da ticaret topluluğu yöneticisi",
+   "is": "Bir ürün kategorisini gerçek görüşme ve teklif yanıtlarıyla sınayıp lansman planına ve fiyat kararına bağlamak",
+   "tetikleyici": "Melek yatırımcı toplantısı, hızlandırıcı başvurusu, kayıtlı satıcı var ama işlem yok durumu, kasa süresinin kısalması",
+   "teklif": "5 sayfalık rapor: 3 yetkili görüşmesi, kategori maliyeti, 5 anonim teklif yanıtı sınıflaması, itirazlar, devam ya da durdur kararı; 10 iş günü",
+   "fiyat": "20.000 ₺ + KDV (varsayım); %50 peşin, kalanı teslimde; ikinci kategori 12.000 ₺",
+   "kanal_birincil": "Kuluçka merkezleri ve girişim toplulukları: ücretsiz 45 dakikalık atölye; kurucunun mevcut toptancı ve üretici ilişkileri",
+   "kanal_yedek": "Ajans ortaklığı, LinkedIn yazı dizisi, kooperatif ve ticaret odası etkinlikleri",
+   "ilk_adim": "Tek sayfalık örnek rapor yaz; 10 girişimciye ve 5 tanıdık toptancıya ücretsiz özet teklifi gönder",
+   "ilk_kapsam": "Rapor ve teklif tablosu şablonu, görüşme formu, sözleşme sayfası; ekran seti, backlog ve koçluk yok; tek kategori",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Yöntem ve belge seti üçüncü tarafın; yazılı izin yok. İzinsiz yol sıfırdan yazım (3-4 hafta, sınanmadı)."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Görüşme ve teklif verisi anonim tutulur; KVKK ve sözleşme için hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-fatura yolu belli; hesap ve fatura düzeni kurulmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (girişim kurucusu); 20 isimlik liste yok; tanıdık toptancılar belgelerde adsız geçiyor."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kuluçka ve topluluk adları var ama varlıkları ve üye sayıları doğrulanmadı; ilk adım belli."
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan efor yaklaşık 80 saat (4 hafta, sıfırdan şablon dahil); satış döngüsü kısa ve tek karar vericili varsayım; ilk tahsilat 45-100 gün."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata dek yaklaşık 6.000 ₺; tavan altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit sayfa, görüşme ve süre; tek kategori; özel yazılım yok."
+    }
+   },
+   "kapi_duzeltme": "G1: yazılı izin al ya da rapor şablonunu sıfırdan yaz. G2-G3: hukukçu ve fatura düzeni. G4: 20 isim çıkar. G5: 3 kuluçka merkezine ulaş, varlıklarını doğrula.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 20000,
+    "degisken_maliyet_tl": 1000,
+    "sabit_gider_aylik_tl": 6000,
+    "baslangic_nakit_tl": 6000,
+    "kalan_efor_saat": {
+     "min": 50,
+     "beklenen": 80,
+     "max": 120
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 100
+    },
+    "satis_basina_kurucu_saati": 6,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 20000,
+     "iyi": 60000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.08
+    },
+    "dayanak": "Fiyat varsayım: GPT dosyalarında fiyat ve ücretli talep yok; seed bütçesi 20-60 bin ₺ (Derinlik B.3). Baz 1 rapor, iyi 3 rapor, kötü 0. Sabit gider yalnız AI araçları 6.000 ₺. Efor sıfırdan şablon yazımı dahil. Dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Seed girişim kurucusu tek kategori için 20.000 ₺ rapor bedelini öz kaynaktan öder; rapor kararını değiştirir.",
+    "yontem": "Örnek raporu yayımla; 10 girişimciye ve 5 toptancıya özet teklifi gönder; 3 ücretsiz atölye yap; ilk iki yazılı teklifi %50 peşinle kapat.",
+    "sure_gun": 30,
+    "maliyet_saat": 30,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "30 günde 1 peşinat ve 3 yazılı teklif yanıtı",
+    "birakma_olcutu": "15 temas ve 60 günde sıfır peşinat: fiyatı düşür ya da A seçeneğine geç",
+    "sonraki_dilim": "Rapor tesliminde aynı işi tekrar isteyen var mı kaydet; ikinci kategori ve teşhis paketi teklifi"
+   },
+   "etiketler": {
+    "segment": "Seed B2B girişim kurucusu, toptancı sahibi",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Belge şablonu, Sheets, PDF",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT çalışması: tek kategori görüşmesi, beş sayfalık rapor, beş teklif yanıtı pilotu; tekrar kullanım görülmeden abonelik yok. Derinlik B.3 Persona 3: bütçe 20-60 bin ₺, karar 3-7 gün, kayıt var işlem yok. Derinlik A.2: ücretsiz rehber alternatifi. Ödeyen müşteri 0; GPT: ücretli talep doğrulanmadı."
+  },
+  {
+   "id": "b2b-pazar-yeri-hizmeti-c",
+   "ad": "Tam paket: strateji, ekran seti, backlog ve 90 gün koçluk",
+   "tur": "hizmet",
+   "musteri": "Bayi ağına dijital sipariş kanalı kuracak ya da pazar yeri başlatacak kurumsal girişim ekibi; ödeme gücü yüksek üretici ve dağıtıcı",
+   "is": "Pazar yeri mi bayi portalı mı kararını vermek; geliştiriciye verilebilir backlog, ekranlar ve 90 günlük uygulama planı edinmek",
+   "tetikleyici": "Ekim-Kasım bütçe planlaması, bayi kaybı, rakibin portal açması, ajanstan gelen yazılım teklifi",
+   "teklif": "12 haftalık paket: teşhis, strateji, 60-120 markalı ekran, backlog, deney portföyü, haftalık koçluk; yazılım kapsam dışı",
+   "fiyat": "250.000 ₺ + KDV; %40 peşin, kalanı aşama teslimlerinde; koçluk devamı 15.000 ₺/ay",
+   "kanal_birincil": "B2B yazılım ve e-ticaret ajanslarıyla ortak teklif (yönlendirme payı %15); kurucunun mevcut üretici müşterileri",
+   "kanal_yedek": "LinkedIn doğrudan mesaj; e-ticaret etkinlikleri; kümelerde yapılan ücretsiz atölyeler",
+   "ilk_adim": "Yazılı izin talep et; 10 ajansı adlandır ve ulaş; izin gelirse ya da sıfırdan 12 ekranlık markasız galeri hazırla",
+   "ilk_kapsam": "Markasız 20 sayfalık rehber ve 12 ekranlık galeri (henüz yok; izin ya da sıfırdan yazımla), karar belgesi ve sözleşme şablonu; ekran seti ve backlog müşteriyle üretilir",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Rehber, ekran seti ve backlog üçüncü taraf bir şirketin; yazılı izin yok. İzinsiz yol: sıfırdan markasız set, aylar."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kurumsal müşteri verisi, gizlilik sözleşmesi, veri işleme metni ve e-fatura için hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-fatura yolu belli; 30 gün vadeli kurumsal tahsilat düzeni kurulmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; isim listesi yok; belgelerde adı geçen mevcut üretici ilişkileri var, ihtiyaçları doğrulanmadı."
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Ajans ortaklığı kanalı var ama ajanslar adlandırılmadı (10 ajans hedefi isimsiz); mevcut üretici ilişkileri doğrulanmadı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 150 saat (7,5 hafta) sınırda; satış döngüsü 6-10 hafta varsayım; ilk tahsilat 6 aya zor sığar."
+    },
+    "G7": {
+     "durum": "test",
+     "not": "Başlangıç 15.000 ₺ + aylık 11.000 ₺ sabit gider, ilk tahsilat 75-180 günde: yaklaşık 42-81 bin ₺; tavan (50 bin ₺) aşılabilir."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kapsam yazılı ama ekran ve backlog müşteri markasına uyarlanıyor; yazılım dışı sınırı sözleşmeye yazılmadı."
+    }
+   },
+   "kapi_duzeltme": "G1: yazılı izin ya da sıfırdan set. G2-G3: hukuk ve fatura. G4: isim listesi. G5: 10 ajansı adlandır. G6: dar ilk kapsam ya da teşhisle başla. G7: sabit gideri kıs. G8: kapsam sınırını sözleşmeye yaz.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 250000,
+    "degisken_maliyet_tl": 15000,
+    "sabit_gider_aylik_tl": 11000,
+    "baslangic_nakit_tl": 15000,
+    "kalan_efor_saat": {
+     "min": 120,
+     "beklenen": 150,
+     "max": 240
+    },
+    "ilk_tahsilat_gun": {
+     "min": 75,
+     "max": 180
+    },
+    "satis_basina_kurucu_saati": 25,
+    "musteri_basina_aylik_destek_dk": 240,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 100000,
+     "iyi": 250000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan 5: tam paket 250.000 ₺, %40 peşin. Persona 2: bütçe 150-250 bin ₺, karar 6-10 hafta. Baz: 1 satış, yalnız peşinat (100.000). İyi: 1 satışın 250.000 ₺ tamamı; ikinci peşinat 6 ayda iyimser. Kötü 0. Dönüşüm kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Kurumsal ekip bütçesini ajans teklifi öncesinde 250.000 ₺ bağımsız strateji paketine ayırır.",
+    "yontem": "10 ajansla ortak teklif şablonu paylaş; 5 kurumsal ekibe 2 sayfalık karar çerçevesi gönder; 2 teklif ver; sözleşme ve peşinatı iste.",
+    "sure_gun": 60,
+    "maliyet_saat": 50,
+    "maliyet_tl": 2000,
+    "basari_olcutu": "60 günde 1 yazılı teklif yanıtı ve 1 ortak ajansın ortak teklifi",
+    "birakma_olcutu": "5 ekip ve 90 günde teklif talebi yok: A seçeneğiyle teşhisi giriş ürünü yap",
+    "sonraki_dilim": "Teşhis ile başlayıp tam pakete yükseltme; vaka izni; koçluk devamı"
+   },
+   "etiketler": {
+    "segment": "Kurumsal girişim, üretici ve dağıtıcı",
+    "kanal_turu": "ortak",
+    "teknoloji": "Belge sitesi, tasarım dosyaları, backlog şablonu",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 5: tam paket 250.000 ₺; plan 8: baz yıl 1 gelirin çoğu strateji. Derinlik B.3 Persona 2: karar 6-10 hafta, bütçe 150-250 bin ₺, ajanslar yazılım satıp bayi sorusunu yanıtlamıyor. Derinlik D.2: ekran seti ve backlog yarım, markasız değil. Plan 10: kod ve veri üçüncü tarafta. Ödeyen müşteri 0."
+  }
+ ]
+}

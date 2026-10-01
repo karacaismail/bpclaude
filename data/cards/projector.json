@@ -1,0 +1,344 @@
+{
+  "slug": "projector",
+  "baslik": "Kurumsal SaaS mimarisi içerik ürünü (projector)",
+  "ozet": "Türkçe kurumsal SaaS mimarisi külliyatı (315 sayfa, 25 karar kaydı, 35 eğitim ünitesi) e-kitap, ekip atölyesi ve kaynaklı teslim portalı olarak satılabilir. Görüntüleyici canlı; ödeyen müşteri yok, satış altyapısı yok.",
+  "bugun": {
+    "var": [
+      "Çalışan statik görüntüleyici: arama, sözlük, kod vurgusu, erişilebilirlik testleri",
+      "315 JSON içerik dosyası; 25 karar kaydı, 35 eğitim ünitesi, 14 kernel sayfası",
+      "Herkese açık canlı önizleme sitesi ve açık kaynak depo",
+      "Markdown dışa aktarma ve kaynak yükleyici kodu (GPT çalışması bunları tanıyor)",
+      "Planda fiyat, kanal ve 90 günlük satış takvimi yazılı"
+    ],
+    "yok": [
+      "Ödeyen müşteri, ön ödeme ya da yazılı niyet",
+      "Ön satış sayfası, ödeme hesabı, KVKK metni",
+      "Yayın kalitesinde bölüm: içerik ham, kalite tahmini yaklaşık yüzde 25, varsayım",
+      "Çalışan örnek repo ve kurs videosu",
+      "Referans ya da ilk atölye teslimi",
+      "Ekip, hesap ve erişim yönetimi (portal için)"
+    ],
+    "odeyen_musteri": 0
+  },
+  "iki_calisma": {
+    "claude": "Görüntüleyici satılmaz (Docusaurus ve Starlight ücretsiz); satılan şey içeriktir: e-kitap 349 TL, kurs 1.990 TL, ekip atölyesi 35.000 TL + KDV. Sunum koşullu; yıl 1 baz gelir yaklaşık 160-184 bin TL.",
+    "gpt": "Ürün kaynaklı teslim portalı: 20-50 dokümanı içe aktarır, bozuk bağlantı ve terim raporu verir, sürüm farkı ve dışa aktarma sunar. İlk ücretli iş 300-900 dolarlık migration pilotu; abonelik ancak tekrar kullanım görülürse.",
+    "ayrisma": "Claude içeriği, GPT yazılımı satıyor. Claude alıcısı Türkçe geliştirici ve yazılım evi, GPT alıcısı danışmanlık firması ve SaaS ekibi. GPT rakip GitBook ve Docusaurus'u açıkça tehdit sayıyor.",
+    "birlesik": "Ödeyen müşteri sıfır olduğundan en küçük sınanabilir şey içerik ön satışıdır; atölye en yüksek bilet, migration pilotu ise yazılım gerektiren ve en az kanıtlı yoldur. Hiçbiri tek başına 6 ayda 3000 dolara varmaz."
+  },
+  "analist_gorusu": "En gerçekçi yol önce e-kitap ön satışı ve aynı anda 2-3 ekip atölyesi teklifidir. 6 ayda 3000 dolar (144 bin TL) üç yolda da baz senaryoda görünmüyor; atölye tek satışla en yakın sonuç.",
+  "secenekler": [
+    {
+      "id": "projector-a",
+      "ad": "Türkçe SaaS mimarisi e-kitabı ön satışı",
+      "tur": "içerik",
+      "musteri": "Türkçe konuşan, 2-5 yıl deneyimli backend geliştirici; ilk çok kiracılı SaaS tasarımını yapıyor.",
+      "is": "Çok kiracılılık, olay kutusu ve denetim kaydı kararlarını gerekçesiyle Türkçe, dağınık İngilizce kaynak taramadan öğrenmek.",
+      "tetikleyici": "İşyerinde çok kiracılı mimariye geçiş, mülakat daveti ya da yapay zekâ kodunun teknik borç yaratması.",
+      "teklif": "Kitabın ilk 3 bölümü ve sözlük ücretsiz; tamamı PDF ve EPUB, 12 ay güncelleme, 14 gün iade. İlk 10 okuyucuya yüzde 40 indirim.",
+      "fiyat": "349 TL KDV dahil (yaklaşık 291 TL KDV hariç); kampanyada yaklaşık 210 TL.",
+      "kanal_birincil": "LinkedIn haftalık mimari karar yazısı ve ön satış sayfasına bağlı Brevo bülteni; kurucunun kendi teknik ağı.",
+      "kanal_yedek": "Arama motoru için düzeltilen 314 sayfalık önizleme sitesi; Türkiye Yazılımcılar Topluluğu Discord'unda yardım cevapları.",
+      "ilk_adim": "Ön satış sayfası, KVKK onaylı e-posta formu ve Shopier ya da iyzico hesabını aç; bölüm 1'i ücretsiz yayınla.",
+      "ilk_kapsam": "İlk 3 bölüm yayında, ön satış sayfası, ödeme bağlantısı ve e-posta ile teslim; kalan 7 bölüm ön satış sonrası haftada bir yazılır.",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "İçerik kurucunun; ancak yapay zekâyla derlenmiş metin ve alıntı kaynakların lisansı doğrulanmadı. Depo lisansı seçilmedi."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "KVKK aydınlatma, ticari ileti onayı ve e-kitap KDV oranı mali müşavir ile hukukçu teyidi bekliyor."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Shopier, iyzico ve yurt dışı için Lemon Squeezy yolu belli; hesap açılmadı, test ödemesi yok."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; 20 kişilik isim listesi yok, 30 teknik lidere mesaj planlı."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "LinkedIn, bülten, Discord ve arama adlı; ilk adım ve yedek kanal planda yazılı."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Beklenen 120 saat (6 hafta) ama üst sınır 180 saat 8 haftayı aşar; kitap yazımı 40 gün insan emeği, satış döngüsü ölçülmedi."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "İlk tahsilata kadar yaklaşık 12.000 TL (hukuk metni, kapak, editör payı, alan adı); tavanın altında."
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Herkes aynı e-kitabı alır; özel geliştirme yok."
+        }
+      },
+      "kapi_duzeltme": "G1-G4: hak beyanı, mali müşavir ve hukukçu teyidi, ödeme hesabı, 20 isimlik liste. G6: ilk 3 bölüm kapsamını ve haftalık takvimi 160 saat altında sabitle.",
+      "finans": {
+        "satis_tipi": "tek seferlik",
+        "net_fiyat_tl": 291,
+        "degisken_maliyet_tl": 12,
+        "sabit_gider_aylik_tl": 5000,
+        "baslangic_nakit_tl": 12000,
+        "kalan_efor_saat": {
+          "min": 80,
+          "beklenen": 120,
+          "max": 180
+        },
+        "ilk_tahsilat_gun": {
+          "min": 45,
+          "max": 100
+        },
+        "satis_basina_kurucu_saati": 0.5,
+        "musteri_basina_aylik_destek_dk": 5,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 4365,
+          "baz": 17460,
+          "iyi": 34920
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 15,
+          "baz": 60,
+          "iyi": 120
+        },
+        "alti_ay_musteri": {
+          "kotu": 15,
+          "baz": 60,
+          "iyi": 120
+        },
+        "donusum_orani": {
+          "dusuk": 0.02,
+          "yuksek": 0.08
+        },
+        "dayanak": "Plan 5-6: 349 TL KDV dahil, net yaklaşık 291 TL, komisyon yüzde 4. Plan 11'in 6 ay hedefi 120 e-kitap iyi senaryo; baz bunun yarısı, ilk satış hafta 7 gecikmesi düşüldü. Kötü 15. Aylık gider: mali müşavir ve araç payı. Dönüşüm plan varsayımı (yüzde 8), kanıtsız."
+      },
+      "deney": {
+        "varsayim": "Türkçe geliştiriciler, ücretsiz önizlemeden sonra 349 TL'lik e-kitap için ön ödeme yapar.",
+        "yontem": "Bölüm 1-3 ve ön satış sayfasını yayınla; ağdan 30 teknik lidere kişisel mesaj, LinkedIn'de 8 gönderi, bülten kaydı topla; ilk 10 alıcıya indirim.",
+        "sure_gun": 28,
+        "maliyet_saat": 40,
+        "maliyet_tl": 1500,
+        "basari_olcutu": "28 günde en az 10 ödenmiş ön satış ve 100 e-posta kaydı.",
+        "birakma_olcutu": "28 günde 3'ten az ödeme ya da kayıtta yüzde 3'ün altı: kitabı bülten içeriğine çevir.",
+        "sonraki_dilim": "Başarıda bölüm 4-6 ve örnek repo; ardından kurs ön satışı."
+      },
+      "etiketler": {
+        "segment": "Backend geliştirici, 2-5 yıl deneyim",
+        "kanal_turu": "içerik",
+        "teknoloji": "Statik site, PDF ve EPUB, Shopier",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "Ödeyen müşteri yok; ön satış sayfası yok. Plan 3.2: Türkiye'de 2,54 milyon GitHub geliştiricisi. Plan 1: çeviri kitaplar 322-679 TL, ileri Türkçe özgün kaynak az. Plan 2: içerik yayın kalitesi yaklaşık yüzde 25 (varsayım, ölçülmedi), çelişkiler var. Derinlik dosyası C.2: kanal puanları LinkedIn 9, bülten 9, arama 8; hacimler varsayım. Plan 4: ücretsiz İngilizce kaynak ve araçlar ikame."
+    },
+    {
+      "id": "projector-b",
+      "ad": "İki günlük ekip atölyesi: Kurumsal SaaS mimarisi",
+      "tur": "hizmet",
+      "musteri": "3-15 kişilik yazılım evinin teknik lideri ya da ortağı; müşteri projelerinde ortak mimari standardı yok.",
+      "is": "Ekibe çok kiracılılık, olay kutusu, denetim ve modül sınırları konusunda ortak dil kazandırmak; çıktı olarak ekibin kendi karar kaydı seti.",
+      "tetikleyici": "Büyük bir çok kiracılı müşteri sözleşmesi, ekibe yeni geliştirici katılımı, yıllık eğitim bütçesi dönemi (Aralık-Ocak).",
+      "teklif": "2 gün, 12 kişiye kadar, ekibin kendi modül haritası üzerinde; çıktı: ekibin karar kaydı seti ve çalışan bir örnek dilim; 30 gün destek.",
+      "fiyat": "35.000 TL + KDV sabit paket; ilk referans atölye maliyetine, video ve alıntı karşılığı.",
+      "kanal_birincil": "Kurucunun mevcut yazılım evi ilişkileri ve LinkedIn'de Ankara, İstanbul, İzmir teknik müdürlerine ayda 10 kişisel mesaj.",
+      "kanal_yedek": "Teknokent ve yazılım toplulukları yöneticileri üzerinden firma günü; ücretsiz önizleme sitesi ve bülten kaydı.",
+      "ilk_adim": "30 yazılım evi listesi çıkar; mevcut ilişkideki bir ekibe maliyetine pilot atölye öner, video ve alıntı karşılığında.",
+      "ilk_kapsam": "Atölye eğitmen notu, ekip başına modül haritası şablonu, karar kaydı şablonu ve küçük örnek dilim; 2 günlük program sabit.",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Külliyat kurucunun; yapay zekâ ile derlenen metin ve alıntı lisansı doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Kurumsal e-fatura ve sözleşme şablonu mali müşavir ve hukukçu teyidi bekliyor."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve e-fatura yolu belli; fatura düzeni ve şirket hesabı bu satış için doğrulanmadı."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net; 30 firmalık liste planda var ama çıkarılmadı."
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "LinkedIn ve mevcut ilişki birincil, teknokent ve topluluk yedek; ilk adım yazılı."
+        },
+        "G6": {
+          "durum": "gecti",
+          "not": "Hazırlık yaklaşık 70 saat (3-4 hafta); satış döngüsü 2-4 hafta, ilk tahsilat 6 aya sığar."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "İlk tahsilata kadar yaklaşık 5.000 TL (hukuk, sözleşme şablonu, materyal); tavanın altında."
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Ekibin modül haritasına uyarlama kapsamı yazılı sınırlanmadı."
+        }
+      },
+      "kapi_duzeltme": "G1-G4: hak beyanı, mali müşavir teyidi, sözleşme şablonu ve 30 firmalık liste; G8: uyarlama kapsamını 1 modül haritasıyla sınırla.",
+      "finans": {
+        "satis_tipi": "proje",
+        "net_fiyat_tl": 35000,
+        "degisken_maliyet_tl": 3000,
+        "sabit_gider_aylik_tl": 3000,
+        "baslangic_nakit_tl": 5000,
+        "kalan_efor_saat": {
+          "min": 40,
+          "beklenen": 70,
+          "max": 110
+        },
+        "ilk_tahsilat_gun": {
+          "min": 45,
+          "max": 150
+        },
+        "satis_basina_kurucu_saati": 20,
+        "musteri_basina_aylik_destek_dk": 60,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 3000,
+          "iyi": 38000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 2
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 2
+        },
+        "donusum_orani": {
+          "dusuk": 0.03,
+          "yuksek": 0.1
+        },
+        "dayanak": "Plan 5: 35.000 TL + KDV, plan 6: seyahat ve materyal 3.000 TL, yaklaşık 24 saat hazırlık. Plan 10: referans yok, ilk atölye maliyetine verilir; baz 1 satış maliyet bedeli 3.000 TL. İyi: biri maliyetine, biri tam fiyatlı iki satış. Plan 11 6. ay hedefi 1 atölye. Dönüşüm kanıtsız varsayım."
+      },
+      "deney": {
+        "varsayim": "Bir yazılım evi, referanssız bir kurucuya 2 günlük atölye için 35.000 TL ödemeye hazırdır.",
+        "yontem": "30 firmalık liste; 10 kişisel mesaj, 20 dakikalık ön görüşme, ekibin modül haritasına özel yazılı teklif; mevcut ilişkide pilot atölye.",
+        "sure_gun": 45,
+        "maliyet_saat": 25,
+        "maliyet_tl": 0,
+        "basari_olcutu": "2 yazılı teklif görüşmesi ve en az 1 ön ödeme ya da imzalı sipariş.",
+        "birakma_olcutu": "45 günde 10 mesajdan hiç görüşme yok ya da 3 teklif fiyat nedeniyle reddedildi.",
+        "sonraki_dilim": "Başarıda 12 kişilik paket sabit; ardından tekrar eden ekip lisansı."
+      },
+      "etiketler": {
+        "segment": "Küçük yazılım evi teknik lideri",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "Eğitim materyali, örnek repo",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "Ödeyen müşteri ve referans yok (plan 10). Plan 5: 35.000 TL kurumsal fiyat varsayım. Derinlik dosyası A.8: ekip için tasarruf 76-154 bin TL/yıl varsayım; B.3 persona: alıcı kendisi ve ortak, karar 2-4 hafta. C.2: mevcut ilişkiler kanalı puan 9, doğrudan kurumsal mesaj puan 7. Bütçe yaklaşık 20-40 bin TL, varsayım."
+    },
+    {
+      "id": "projector-c",
+      "ad": "Kaynaklı teslim portalı: 30 dokümanlık migration pilotu",
+      "tur": "hizmet",
+      "musteri": "3-15 kişilik teknik danışmanlık firmasında teslim sorumlusu; müşteriye mimari ve iş kırılım dokümanları teslim ediyor.",
+      "is": "Dağınık Markdown, JSON ve Word kararlarını tek adreste, kaynağı ve sürümü görünen, aranabilir müşteri teslim portalına dönüştürmek.",
+      "tetikleyici": "Proje kapanışı ve müşteriye teslim; ilk tesliminden sonra kaynak değişikliği ve sürüm sorusu.",
+      "teklif": "30 doküman için içe aktarma, bozuk bağlantı ve terim raporu, salt okur portal ve çevrimdışı dışa aktarma; sabit kapsam, tek seferlik.",
+      "fiyat": "300-900 dolar sınama aralığı; ilk pilot alt uçta 300 dolar (14.400 TL); barındırılan sürüm ayda 19-59 dolar sınama.",
+      "kanal_birincil": "Docusaurus kullanıcıları için ücretsiz GitHub içe aktarma aracı ve herkese açık örnek portal; rapor paylaşılır.",
+      "kanal_yedek": "Kurucunun doğrudan danışmanlık firması mesajları; teknik danışmanlık topluluklarında örnek rapor paylaşımı.",
+      "ilk_adim": "3 gerçek doküman külliyatında içe aktarma raporunu çıkar; anonim örnek portalı yayınla ve 5 firmaya pilot teklifi gönder.",
+      "ilk_kapsam": "Tek kaynak içe aktarıcı, bozuk bağlantı raporu, kaynak ve sürüm metaverisi, salt okur portal; sürüm farkı ve yetki sonraki dilimde.",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuya ait ve açık depoda; lisans henüz seçilmedi, bağımlılık lisansları doğrulanmadı."
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Müşteri belgeleri işlenecekse KVKK ve veri işleme sözleşmesi gerekir; teyit yok."
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve fatura yolu belli; hesap, fatura düzeni ve test ödemesi hazır değil."
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net (danışmanlık firması teslim sorumlusu); isim listesi yok."
+        },
+        "G5": {
+          "durum": "test",
+          "not": "Kanal fikri var; Docusaurus topluluğunda somut hedef ve kural uyumu adlandırılmadı."
+        },
+        "G6": {
+          "durum": "test",
+          "not": "İçe aktarma ve portal için kalan efor yaklaşık 120-200 saat; planda belirsiz, satış döngüsü ölçülmedi."
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "İlk tahsilata kadar yaklaşık 3.000 TL (alan adı, hukuk şablonu); tavanın altında."
+        },
+        "G8": {
+          "durum": "test",
+          "not": "30 doküman sınırı önerildi ama biçim farkları ve özel istek sınırı yazılı değil."
+        }
+      },
+      "kapi_duzeltme": "G1-G5: lisans kararı kullanıcıdan, veri işleme şablonu, ödeme hesabı, 20 firmalık liste ve somut topluluk hedefi; G6-G8: kapsam ve efor sınırını yaz.",
+      "finans": {
+        "satis_tipi": "proje",
+        "net_fiyat_tl": 14400,
+        "degisken_maliyet_tl": 2000,
+        "sabit_gider_aylik_tl": 1000,
+        "baslangic_nakit_tl": 3000,
+        "kalan_efor_saat": {
+          "min": 80,
+          "beklenen": 140,
+          "max": 200
+        },
+        "ilk_tahsilat_gun": {
+          "min": 60,
+          "max": 180
+        },
+        "satis_basina_kurucu_saati": 25,
+        "musteri_basina_aylik_destek_dk": 60,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 14400,
+          "iyi": 43200
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "donusum_orani": {
+          "dusuk": 0.02,
+          "yuksek": 0.1
+        },
+        "dayanak": "GPT stratejisi: migration pilotu 300-900 dolar, pazar fiyatı değil quote testi; referanssız ilk pilot alt uç 300 dolar x 48 = 14.400 TL. Hedef 90 günde 2 ücretli migration kanıtsız; baz 6 ayda 1, iyi 3. Uzman kontrolü 2.000 TL. Efor GPT'nin 16-32 saatinin üstünde: sürüm ve rapor da var. Dönüşüm kanıtsız."
+      },
+      "deney": {
+        "varsayim": "Bir danışmanlık firması, 30 dokümanını kaynaklı portala taşıyan sabit kapsamlı pilot için ücret öder.",
+        "yontem": "3 gerçek doküman külliyatında rapor çıkar, anonim örnek yayınla, 5 firmaya sabit fiyatlı pilot teklifi gönder; her yanıtı kaydet.",
+        "sure_gun": 14,
+        "maliyet_saat": 20,
+        "maliyet_tl": 0,
+        "basari_olcutu": "5 tekliften en az 2 olumlu yanıt ve 1 yazılı pilot niyeti.",
+        "birakma_olcutu": "14 günde hiç olumlu yanıt yok ya da firmalar yalnız ücretsiz araç istiyor.",
+        "sonraki_dilim": "Başarıda ücretli pilot; teslimden bir ay sonra güncelleme isteği olursa barındırılan sürüm."
+      },
+      "etiketler": {
+        "segment": "Teknik danışmanlık firması teslim sorumlusu",
+        "kanal_turu": "topluluk",
+        "teknoloji": "React, typed block, MiniSearch, içe aktarma CLI",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "GPT çalışması: bu ürün bugün müşteriye dağıtılmadı, gelir yok; runtime ortak veritabanı ve kiracı geçidi kanıtı yok. Kaynak yükleyici ve Markdown dışa aktarma mevcut. Rakipler: GitBook Premium 65 dolar/site/ay, Docusaurus ücretsiz; hosted arama tek başına savunma değil. 90 gün hedefi 3 doküman ve 2 ücretli migration, hepsi hipotez. Fiyatlar pazar fiyatı değil sınama aralığı."
+    }
+  ]
+}

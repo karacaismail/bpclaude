@@ -1,0 +1,344 @@
+{
+ "slug": "kurucu-sunum-hizmeti",
+ "baslik": "Kurucu sunumu ve canlı finans modeli hizmeti",
+ "ozet": "Kurucunun daha önce tek bir proje için kurduğu yığınla hibe başvurucusuna ve ilk yatırımcısını arayan kurucuya site, canlı Sheets modeli ve rakam doğrulaması satılır. Altyapı tek projede çalışıyor, şablon henüz genel değil; ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Tek projede çalışan yığın: JSON'dan sunum sitesi, canlı Sheets modeli, 106 metrik, doğrulayıcı bugün 0 hata",
+   "Sheets için 18 araçlı MCP sunucusu, taşma testli PPTX/PDF üretim hattı, 19 Haziran 2026 doğrulamalı teşvik envanteri",
+   "Metodoloji: çelişki raporu, kaynak ve çelişki şablonu, görüşme müfredatı; tek vakada çelişkiler bulunmuş",
+   "Paket ve fiyat tablosu yazılı: 25/45/75 bin ₺, aylık güncelleme 4.000 ₺, kuluçka lisansı 60.000 ₺/yıl",
+   "Kuluçka, TTO, BİGG uygulayıcı kuruluş ve melek ağı hedefleri adıyla listelenmiş"
+  ],
+  "yok": [
+   "Ödeyen müşteri, imzalı pilot, ön ödeme ve referans izni yok",
+   "Şablon markadan arındırılmadı; sabit metinler ve doğrulayıcı kuralları tek projeye bağlı",
+   "Hibe formatı şablonları (KOSGEB, BİGG, AGY101) ve demo site yok",
+   "Sözleşme, KVKK/DPA metni, e-arşiv teyidi ve tahsilat hesabı yok",
+   "Operasyonel hazırlık eksikleri var",
+   "50 kişilik hedef listesi, CRM ve satış mesajı denemesi yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Hizmet ağırlıklı karma: 25/45/75 bin ₺ paket, aylık güncelleme, kuluçka lisansı, 2027'de SaaS. 12 ay baz yaklaşık 376 bin ₺ gelir; ilk satış 4 hafta; kurucu saati dahil başabaş 25-27. ay.",
+  "gpt": "Bağımsız gelir ürünü olduğu kanıtlanmadı. İlk teslim, sayfa metriklerini kaynak tablosuna bağlayan veri sözlüğü ve tutarlılık raporu. Moda ve perakende yatırım raporu için sınırlı rapor ya da atölye ücreti test edilir; abonelik ve platform yok.",
+  "ayrisma": "Claude hibe takvimine bağlı paket, lisans ve SaaS yolu çizer; GPT yalnız dar bir rapor çıktısını sayar, ilk alıcıyı proje sahibi bilir ve yatırımcı bulma vaadinden uzak durulmasını ister.",
+  "birlesik": "Önce küçük, sabit fiyatlı tutarlılık raporu ve ücretsiz atölyeyle ödeme sinyali al; sonra pilot paket ve kuluçka lisansına geç. SaaS ve platform, tekrarlı kullanım görülmeden yapılmaz."
+ },
+ "analist_gorusu": "En gerçekçi yol A: sabit kapsamlı paket, kuluçka atölyesiyle satılır. B, ödeme sinyalini ucuza almanın en küçük yoludur. C ödeyen müşteri olmadan 6 ayda tahsilat vermez; SaaS beklemeli.",
+ "secenekler": [
+  {
+   "id": "kurucu-sunum-hizmeti-a",
+   "ad": "Hibe ve yatırım sunum paketi: site, canlı model, doğrulama",
+   "tur": "hizmet",
+   "musteri": "BİGG veya KOSGEB başvurusuna hazırlanan teknik kurucu; ilk dış yatırımcısıyla konuşan KOBİ sahibi",
+   "is": "Sunum, finans modeli ve hibe formundaki rakamları birbirini tutar hale getirmek ve jüriye ya da yatırımcıya okunur biçimde sunmak",
+   "tetikleyici": "KOSGEB ve BİGG çağrı takvimi (4-6 hafta önce), demo günü, yatırımcının ikinci toplantıda rakam istemesi",
+   "teklif": "Standart paket: 15 bölümlü site, 3 senaryolu 36 ay Sheets modeli, doğrulama raporu, 1 hibe formatı, PPTX/PDF, 2 revizyon, 15 iş günü",
+   "fiyat": "Başlangıç 25.000, Standart 45.000, Premium 75.000 ₺ (KDV hariç); pilotta %50 indirim; ödeme %30 / %40 / %30",
+   "kanal_birincil": "Kuluçka merkezlerinde ve TTO'larda ücretsiz 45 dakikalık tutarlılık atölyesi (İTÜ Çekirdek, KWORKS, Workup, Tech Istanbul)",
+   "kanal_yedek": "BİGG uygulayıcı kuruluşlar, Keiretsu Forum Türkiye ve Galata Business Angels, LinkedIn vaka yazıları",
+   "ilk_adim": "Demo siteyi yayımla, 10 kuluçka ve TTO yöneticisine atölye teklifi gönder",
+   "ilk_kapsam": "Pilot Standart paket: 12-15 bölümlü site, tek senaryolu başlangıç modeli, doğrulama raporu, PDF; hibe formatı ve PPTX ikinci tur",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Şablon ve doğrulayıcı tek bir önceki projeden türedi; içerik ve marka hakkı yazılı teyit edilmedi."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşteri finansal ve kadro verisi işlenir; DPA, aydınlatma ve e-arşiv eşiği için hukukçu ve mali müşavir teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşivle tahsil edilebilir; fatura düzeni kurulu değil, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (başvurucu kurucu); 50 kişilik isim listesi hafta 1'de çıkarılacak, henüz yok."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı, ilk adımı belli; yedek: uygulayıcı kuruluşlar, melek ağları, LinkedIn."
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan efor yaklaşık 63 saat (3 hafta); plan ilk ödemeyi 30 günde hedefliyor; satış döngüsü 1-4 hafta."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata dek yaklaşık 25.000 ₺ (sözleşme, DPA, alan adı); tavan altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Üç sabit paket; bölüm sayısı, revizyon ve süre yazılı; hibe sonucu garanti edilmiyor."
+    }
+   },
+   "kapi_duzeltme": "G1: kod ve içerik hakkını yazılı teyit et. G2: hukukçu ve mali müşavirle DPA ve fatura düzenini onayla. G3: havale ve e-arşiv düzenini kur. G4: 50 isim çıkar.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 45000,
+    "degisken_maliyet_tl": 1700,
+    "sabit_gider_aylik_tl": 3250,
+    "baslangic_nakit_tl": 25000,
+    "kalan_efor_saat": {
+     "min": 45,
+     "beklenen": 63,
+     "max": 100
+    },
+    "ilk_tahsilat_gun": {
+     "min": 21,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 6,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 15750,
+     "baz": 60750,
+     "iyi": 260000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 2,
+     "baz": 8,
+     "iyi": 20
+    },
+    "alti_ay_musteri": {
+     "kotu": 1,
+     "baz": 3,
+     "iyi": 7
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "Standart 45.000 ₺ (Plan 5). Baz: 3 pilot %50 (22.500 ₺, 3 taksit) = 67.500 ₺; son pilotun son taksiti 6. ayı aşar, tahsilat ~60.750 ₺, 8 ödeme. Plan 8 baz 12 ay 8 paket, 6. ay KPI 5 hedefti; ödeyen yok, ilk tahsilat gecikmesi düşülerek 3 alındı. Kötü: 1 pilotun %30+%40. İyi: 3 pilot + 4 tam + 4 aylık güncelleme. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Kurucu, jüri ve yatırımcı dosyası için 22.500-45.000 ₺ paket bedelini öz kaynaktan ödeyecek.",
+    "yontem": "Demo site yayımla; 3 ücretsiz atölye ve 10 teklif sun; 3 pilot sözleşmesini %50 indirim ve referans izni karşılığı imzalat; %30 ön ödemeyi havaleyle tahsil et.",
+    "sure_gun": 30,
+    "maliyet_saat": 40,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "30 günde en az 1 ön ödeme ve 3 imzalı pilot sözleşmesi",
+    "birakma_olcutu": "10 teklifte 60 günde sıfır imza gelirse fiyatı düşür ya da B seçeneğine dön",
+    "sonraki_dilim": "Pilot teslim, kanıt defteri, aylık güncelleme teklifi ve kuluçka lisansı görüşmesi"
+   },
+   "etiketler": {
+    "segment": "Hibe başvurucusu teknik kurucu, KOBİ",
+    "kanal_turu": "ortak",
+    "teknoloji": "Vite, React, Google Sheets, python-pptx",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 5: Standart 45.000 ₺, üç taksit, pilot %50. Plan 8: baz 12 ay 8 paket, 376 bin ₺; 6. ay KPI 5 paket. Derinlik D.8: kalan iş yaklaşık 21 gün (63 saat). Ödeyen müşteri yok. Rakipler: slayt 1.000-5.000 ₺, pitch deck 5-25 bin ₺. GPT notu: bağımsız gelir ürünü kanıtlanmadı."
+  },
+  {
+   "id": "kurucu-sunum-hizmeti-b",
+   "ad": "Rakam tutarlılığı denetimi: tek dosya, sabit fiyat",
+   "tur": "hizmet",
+   "musteri": "Hibe ya da yatırım görüşmesine hazırlanan kurucu; sunumu, modeli ve formu elinde hazır",
+   "is": "Sunum, model ve hibe formundaki rakamların çelişkisini bulmak ve tek kaynaklı bir rakam listesine bağlamak",
+   "tetikleyici": "Çağrı kapanmadan 2-4 hafta önce; mentör ya da jürinin 'bu rakam nereden' sorusu; demo günü",
+   "teklif": "Rapor: 10 kritik rakamın kaynak tablosu, çelişki listesi, düzeltilmiş rakam seti; 5 iş günü, 1 revizyon; hibe sonucu garanti edilmez",
+   "fiyat": "9.000 ₺ sabit (KDV hariç; varsayım), peşin tek ödeme; 45 dakikalık atölye ücretsiz",
+   "kanal_birincil": "Kuluçka merkezlerinde ve TTO'larda ücretsiz 45 dakikalık tutarlılık atölyesi, ardından rapor teklifi (İTÜ Çekirdek, Workup, PİLOT)",
+   "kanal_yedek": "BİGG uygulayıcı kuruluşlara çağrı öncesi e-posta; LinkedIn vaka yazıları; üniversite girişimcilik kulüpleri",
+   "ilk_adim": "'10 kritik rakam' tek sayfasını ve rapor teklifini hazırla, ilk atölyeyi iki kuluçka merkezinde planla",
+   "ilk_kapsam": "Tek dosya seti için veri sözlüğü, tutarlılık raporu ve 45 dakikalık gözden geçirme görüşmesi; site ve canlı model yok",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Doğrulama mantığı önceki bir projeden geliyor; el ile raporda sorun yok ama otomasyon için hak teyidi gerekir."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Müşterinin finansal dosyası işlenir; NDA, aydınlatma ve e-arşiv eşiği için hukukçu ve mali müşavir teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşiv ile tahsil edilebilir; fatura düzeni kurulu değil, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (başvurucu kurucu); isim listesi henüz çıkarılmadı."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı, ilk adım belli; yedek: uygulayıcı kuruluşlar, LinkedIn, kulüpler."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor ~14 saat, ilk tahsilat 2-6 hafta; ama atölye sonrası satış döngüsü ve 9.000 ₺ fiyatı ölçülmedi, kaynak yalnız atölye hedefi verir."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata dek yaklaşık 10.000 ₺ (NDA ve sözleşme şablonu); tavanın çok altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam ve fiyat: 10 rakam, 5 iş günü, 1 revizyon."
+    }
+   },
+   "kapi_duzeltme": "G1: yöntem ve şablon hakkını yazılı teyit et. G2: NDA ve hizmet sözleşmesini hazırla. G3: havale ve e-arşiv düzenini kur. G4: isim listesi çıkar. G6: ilk atölye sonrası karar süresini ölç.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 9000,
+    "degisken_maliyet_tl": 600,
+    "sabit_gider_aylik_tl": 2500,
+    "baslangic_nakit_tl": 10000,
+    "kalan_efor_saat": {
+     "min": 8,
+     "beklenen": 14,
+     "max": 24
+    },
+    "ilk_tahsilat_gun": {
+     "min": 14,
+     "max": 45
+    },
+    "satis_basina_kurucu_saati": 4,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 18000,
+     "iyi": 54000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 6
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 6
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "Fiyat plandan değil, GPT notunun rapor ve atölye ücreti test önerisinden türetildi: 12 saatlik emek bedeli, eşik saat ücretinin üzerinde = 9.000 ₺. Slayt bandı 1.000-5.000 ₺. Baz: 6 ayda ~10 atölye (Derinlik C.8), ödeme kanıtı yok, 2 satış; iyi 6; kötü 0. Kanalın ödeme getirdiği doğrulanmadı. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Kurucu, kendi dosyasındaki çelişkiyi görünce 9.000 ₺ ödeyerek rapor ve düzeltilmiş rakam listesi isteyecek.",
+    "yontem": "4 ücretsiz atölyede katılımcının '10 kritik rakam' sayfasını doldurt, çıkan tutarsızlıkları göster, ardından 5 iş günlük rapor teklifini havale bilgisiyle sun.",
+    "sure_gun": 21,
+    "maliyet_saat": 20,
+    "maliyet_tl": 500,
+    "basari_olcutu": "21 günde en az 2 ödenmiş rapor",
+    "birakma_olcutu": "4 atölyede sıfır teklif kabulü gelirse B'yi bırak, fiyat ve mesajı yeniden kur",
+    "sonraki_dilim": "Rapor müşterisine Standart paket (A) ve aylık güncelleme teklif et"
+   },
+   "etiketler": {
+    "segment": "Hibe ve yatırım hazırlığındaki kurucu",
+    "kanal_turu": "ortak",
+    "teknoloji": "Google Sheets, el ile denetim, doğrulayıcı betik",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT notu: ilk teslim veri sözlüğü ve tutarlılık raporu; rapor ya da atölye ücreti test edilir; bu kanalın ödeme getirdiği doğrulanmadı. Plan 1: tek vakada çelişkiler; slayt ajansları 1.000-5.000 ₺. Derinlik C.5 ve C.8: ücretsiz atölye, 3 ayda 5 atölye hedefi. 9.000 ₺ fiyatı varsayımdır; ödeyen müşteri yok."
+  },
+  {
+   "id": "kurucu-sunum-hizmeti-c",
+   "ad": "Kuluçka ve TTO yıllık lisansı: şablon, doğrulayıcı, eğitim",
+   "tur": "yazılım ürünü",
+   "musteri": "Kuluçka merkezi, TTO ya da hızlandırıcının program yöneticisi; dönemde 10-20 girişimi demo gününe hazırlıyor",
+   "is": "Demo günü öncesi girişimlerin sunumunu standart ve rakamca tutarlı hale getirmek; mentör saatini slayt düzeltmeye harcamamak",
+   "tetikleyici": "Yeni dönem planı (Eylül-Ekim, Şubat-Mart), demo gününe 6 hafta kala, BİGG uygulayıcı kuruluş çağrısı",
+   "teklif": "10 girişim için şablon, parametreli doğrulayıcı, 2 eğitim ve yönetici paneli; pilot yıl 30.000 ₺, sonraki yıl 60.000 ₺",
+   "fiyat": "Pilot lisans 30.000 ₺ (ilk yıl), standart 60.000 ₺/yıl (KDV hariç); havale; 2 sayfa sözleşme",
+   "kanal_birincil": "İTÜ Çekirdek, KWORKS, Workup, PİLOT, Tech Istanbul ve 1513 destekli TTO yöneticilerine doğrudan e-posta, LinkedIn ve atölye",
+   "kanal_yedek": "BİGG uygulayıcı kuruluşlar; Keiretsu Forum Türkiye ve Galata Business Angels; Webrazzi Summit ve Big Bang etkinlikleri",
+   "ilk_adim": "Pilot lisans teklifini ve 45 dakikalık atölyeyi 10 program yöneticisine götür",
+   "ilk_kapsam": "Pilot: arındırılmış şablon, parametreli doğrulayıcı, 2 eğitim; yönetici paneli ve jüri modu ikinci aşamada",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Şablon ve doğrulayıcı tek bir önceki projeden türedi; hak teyidi yok; açık kaynak lisansı kullanıcı kararı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Girişim verisi işlenir; DPA, lisans sözleşmesi ve yurt dışı aktarım için hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Üniversite ya da teknopark şirketi faturası havaleyle ödenir; fatura düzeni kurulu değil."
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Alıcı tipi net; 14 kuluçka merkezi ve 16 TTO adıyla listelendi."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı; ilk adım atölye ve pilot teklifi; yedek kanallar var."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Panel dahil kalan efor yaklaşık 100 saat; TTO satın alması 1-3 ay, hiç ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata dek yaklaşık 25.000 ₺ (sözleşme, DPA); tavan altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Kurumlar panel, SSO ve marka özelleştirmesi isteyebilir; kapsam sınırı yazılı değil."
+    }
+   },
+   "kapi_duzeltme": "G1: hak teyidi al. G2: DPA ve lisans sözleşmesini hukukçuyla hazırla. G3: fatura düzenini kur. G6: ilk iki görüşmede karar süresini ölç. G8: pilot kapsamını 2 sayfada sabitle.",
+   "finans": {
+    "satis_tipi": "yıllık peşin",
+    "net_fiyat_tl": 30000,
+    "degisken_maliyet_tl": 500,
+    "sabit_gider_aylik_tl": 2500,
+    "baslangic_nakit_tl": 25000,
+    "kalan_efor_saat": {
+     "min": 70,
+     "beklenen": 100,
+     "max": 150
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 150
+    },
+    "satis_basina_kurucu_saati": 12,
+    "musteri_basina_aylik_destek_dk": 150,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 60000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 2
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.2
+    },
+    "dayanak": "Pilot 30.000 ₺, standart 60.000 ₺/yıl (Plan 5, 7.2). Plan 8 baz tablosu yıl 1 lisans geliri 0 der (6. ay KPI 1 lisans hedefi çelişir); temkinli olarak baz 0, iyi 2 pilot (60.000 ₺), kötü 0. Panel (L3) henüz yok, 6 gün. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Program yöneticisi 10 girişim için 30.000 ₺ pilot lisansı bütçeleyip ön ödeme yapacak.",
+    "yontem": "10 yöneticiye e-posta ve 15 dakikalık demo; 3 ücretsiz atölye; pilot lisans teklifini yazılı sun; karar süresini ve onay zincirini kaydet.",
+    "sure_gun": 60,
+    "maliyet_saat": 35,
+    "maliyet_tl": 500,
+    "basari_olcutu": "60 günde 1 yazılı niyet ya da ön ödeme",
+    "birakma_olcutu": "10 görüşme ve 3 atölyede yazılı niyet yoksa lisansı bırak, A'ya dön",
+    "sonraki_dilim": "Pilot lisansı imzalanırsa yönetici paneli ve jüri modu; girişimlerden A paketi satışı"
+   },
+   "etiketler": {
+    "segment": "Kuluçka merkezi, TTO, hızlandırıcı",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Vite, React, Google Sheets, python",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 5 ve 7.2: lisans 60.000 ₺/yıl, pilot 30.000 ₺. Plan 8: baz 12 ay lisans geliri 0. Derinlik B.3 Persona 3: karar 1-3 ay, onay TTO müdüründe, itiraz 'bütçemiz yok'. Derinlik B.1: 115 teknopark, 147 uygulayıcı kuruluş. Derinlik D.8: kalan efor 21 gün, panel 6 gün. Ödeyen müşteri yok."
+  }
+ ]
+}

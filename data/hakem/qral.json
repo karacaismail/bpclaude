@@ -1,0 +1,59 @@
+{
+ "slug": "qral",
+ "kararlar": [
+  {
+   "itiraz": "qral-b: öğretmen önceliği 10/15 kurucunun kendi puanlarından türüyor, en yüksek öncelik diye sunulmamalı.",
+   "karar": "kismen",
+   "degisiklik": "qral-b kanit_notlari: 10/15 'en yüksek' ibaresi kaldırıldı; kurucunun kendi tahmininden türediği, erişim/ödeme verisi olmadığı yazıldı.",
+   "gerekce": "Derinlik eki B.1 puanı yazarın tahminlerinden hesaplıyor; kaynak doğrulanmış veri göstermiyor."
+  },
+  {
+   "itiraz": "qral-c: fiyat ve efor tek GPT dosyasına dayanıyor, canlı ürün doğrulanmamış; ilk_kapsam kesin değil.",
+   "karar": "kismen",
+   "degisiklik": "qral-c ilk_kapsam: canlı ürün ve 500-1.500 TL fiyatın doğrulanmadığı, ilk teklifle sınanacağı eklendi.",
+   "gerekce": "GPT dosyası durumu 'canlı ürün doğrulanmadı' diye işaretliyor; fiyat bir deney hipotezi."
+  },
+  {
+   "itiraz": "qral-a: 'kod %80 hazır' satılabilirlik göstermez; yayın, ödeme, lisans yok, 97 saat bunu yansıtıyor.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart zaten yayın hazırlığı eksikliğini ve 97 saat kalan eforu yazıyor; plan işlev %80, yayın %30, test %0 diyor."
+  },
+  {
+   "itiraz": "qral-c G6 gecti: satış döngüsü ve tahsilat süresi ölçülmedi; kapı test kalmalı.",
+   "karar": "kabul",
+   "degisiklik": "qral-c G6: gecti -> test, not güncellendi; kapi_duzeltme'ye satış döngüsü ölçümü eklendi.",
+   "gerekce": "Kriter tanımı G6: satış döngüsü ölçülmediyse test; görüşme yok, canlı ürün doğrulanmadı."
+  },
+  {
+   "itiraz": "qral-b G5 test olmalı: üye sayıları doğrulanmadı, gruplara ticari gönderi yönetici iznine bağlı.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G5 somut kanalın adıyla ve ilk adımıyla tanımlı olmasını ister; adlı gruplar, ilk adım ve yedek kanal planda yazılı. Erişim doğrulaması puan konusudur."
+  },
+  {
+   "itiraz": "qral-a G4 kaldi olmalı: ödeyen bireysel kullanıcı, kanal anonim, isim listesi kurulamaz.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G4 kaldi yalnız ödeyenin belli olmadığı durumdur; alıcı tipi (bilgi çalışanı) net, isim listesi yok, bu test tanımına uyar."
+  },
+  {
+   "itiraz": "qral-a baz ödeme adedi 4 fazla; 0-2 olmalı (Pro geç canlı, dönüşüm kanıtsız).",
+   "karar": "kismen",
+   "degisiklik": "qral-a baz ödeme/müşteri 4 -> 3, baz tahsilat 904 -> 678 TL; dayanak güncellendi.",
+   "gerekce": "Plan baz tablosu ilk 6 ayda 3 Pro veriyor; 4 plandan iyimser. 0-2 için kaynak yok, ödeyen 0 ve kardeş uzantı 141 kullanıcıda."
+  },
+  {
+   "itiraz": "qral-b baz ödeme adedi 3 fazla; 0-1 olmalı (ilk tahsilat 100-180 gün, ilk yıl ücretsiz teklif).",
+   "karar": "kabul",
+   "degisiklik": "qral-b baz ödeme/müşteri 3 -> 1, baz tahsilat 2181 -> 727 TL; G6 notu 120 saate hizalandı; dayanak güncellendi.",
+   "gerekce": "Plan ilk 6 ayda Sınıf satışı koymuyor, yıl 1'de 2 öngörüyor; kaynak desteklemiyor, temkinli 1 seçildi. Ödeyen müşteri ve görüşme yok."
+  },
+  {
+   "itiraz": "qral-c dönüşüm %5-20 fazla, 1-5 olmalı; satış başına 6 saat ve ayda 30 dk destek eşik saat ücretinin altında kalabilir.",
+   "karar": "kabul",
+   "degisiklik": "qral-c donusum_orani 0.05-0.20 -> 0.01-0.05; dayanak güncellendi. Saat ücreti eşiği alanı kartta yok, puanlamada ele alınır.",
+   "gerekce": "Hiçbir kaynak 5-20% vermiyor, görüşme yok; temkinli aralık seçildi. 1.000 TL / yaklaşık 9 saat eşiğin altında, ama bu puan konusu."
+  }
+ ]
+}

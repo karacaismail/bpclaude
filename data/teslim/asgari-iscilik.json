@@ -1,0 +1,23 @@
+{
+ "slug": "asgari-iscilik",
+ "secenekler": {
+  "asgari-iscilik-a": {
+   "satis_basina_kurucu_saati": 25,
+   "teslim_saat_odeme_basina": 720,
+   "musteri_basina_aylik_destek_dk": 120,
+   "not": "Fiyat 90 adam-gün üzerinden tanımlı: 720 saat teslim emeği. Bakım ayrı ücretli. Baz senaryo kurucunun altı aylık kapasitesini aşıyor."
+  },
+  "asgari-iscilik-b": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 4,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: müşteri başına aylık 4 saat (mükellef CSV içe aktarma, parametre güncelleme, rapor kontrolü); pilot kurulumu satıştan taşındı. Baz ödeme 0; efor 850 saat kapasiteyi aşıyor."
+  },
+  "asgari-iscilik-c": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 10,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Varsayım: dosya başına 10 saat kurucu emeği (tablo uyarlama, kontrol listesi, rapor ve kaynak hücreli özet); uzman teyidi 2 saat değişken maliyette. Teslim 5 iş günü."
+  }
+ }
+}

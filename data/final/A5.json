@@ -1,0 +1,665 @@
+{
+ "kriter": "A5",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Menüyü kendi yöneten tek şubeli kafe sahibi hem kullanıcı hem ödeyen; 499 TL/ay kararını tek başına ve günler içinde verir. Karar süreci görüşmeyle sınanmadı."
+  },
+  "zabuno-b": {
+   "p": 2,
+   "k": 1,
+   "g": "çok şubeli zincirde karar çok kademeli (pazarlama, operasyon, üst yönetim); yapı mevcut ilişkiden biliniyor, yazılı onay yok."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı restoran operasyon sahibi mi ajans mı belli değil; hedef rol yalnız hipotez, bütçe sahibi tanımlanmamış."
+  },
+  "parselq-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Bireysel arsa alıcısı 299-799 TL'yi kendi kartıyla öder; eş ya da hissedar onayı ve 1-3 gün bekleme olabildiği için tam 5 değil."
+  },
+  "parselq-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Emlak ofisi sahibi 299-499 TL/ay için tek başına karar verir; kartı hazırlayan danışman ile ödeyen sahip her ofiste aynı kişi değil."
+  },
+  "parselq-c": {
+   "p": 3,
+   "k": 0,
+   "g": "5-15 kişilik danışmanlık ofisinde sahip alıcı; analist, uzman onayı ve son alıcı incelemesi ayrı roller, onay zinciri var."
+  },
+  "destektesvik-a": {
+   "p": 4,
+   "k": 0,
+   "g": "KOBİ'de kurucu ya da finans sorumlusu 2.990 TL'ye günler içinde karar verir; iki rolden hangisinin ödediği şirkete göre değişir."
+  },
+  "destektesvik-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Mali müşavir bürosu sahibi tek karar verici; kullanan personel ayrı olabilir, uyum ve itibar riski ikinci bir bakış isteyebilir."
+  },
+  "destektesvik-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Kullanıcı üye firma, alıcı oda ya da OSB yönetimi, bütçe sahibi ayrı; kurum satın alma kuralları bilinmiyor ve hedef kurum adlandırılmadı."
+  },
+  "asgari-iscilik-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Mali işler ve genel müdür onayı gerekir; büyük tutarda ortak onayı da aranır, 360.000 TL bu sınıfta. B'nin okuması karta uyuyor."
+  },
+  "asgari-iscilik-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Mali müşavir bürosu sahibi ya da küçük yüklenici aylık aboneliği kendi bütçesiyle seçer; büroda kullanan personel ayrı olabilir."
+  },
+  "asgari-iscilik-c": {
+   "p": 4,
+   "k": 0,
+   "g": "10.000 TL'lik dosya kontrolüne mali müşavir kendisi, yüklenicide mali işler yöneticisi karar verir; yöneticinin harcama yetkisi doğrulanmadı."
+  },
+  "zincir-danismanligi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Muhatap dijital pazarlama lideri, bütçe onayı genel müdürde; alıcı belli ama iki basamaklı onay var ve yetki sınırı yazılı değil."
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Zincirin pazarlama müdürü muhatap; 30.000 TL peşin ödemeyi tek başına onaylayabildiği varsayım, üst onay olası."
+  },
+  "zincir-danismanligi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Aynı zincirde operasyon direktörü kullanıcı, pazarlama lideri muhatap, yıllık sözleşmeyi genel müdür onaylar; diğer zincir seçeneğiyle aynı üç basamak."
+  },
+  "kar-pusulasi-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Şahıs işletmesi satıcı 499-999 TL'yi kendi kararı ve kartıyla öder; kullanıcı, alıcı ve bütçe sahibi aynı kişi. Görüşme yapılmadı."
+  },
+  "kar-pusulasi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Serbest danışman ya da küçük ajans sahibi 990 TL/ay kararını kendi verir; ekip hesabında kullanıcılar ayrı, karar 2-4 haftalık denemeye bağlı."
+  },
+  "kar-pusulasi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "1.000 TL'lik rapora mağaza sahibi karar verir; operatör ve mali müşavir inceleme rolünde, bağlayıcı onay zinciri değil. B'nin okuması karta uyuyor."
+  },
+  "titanlar-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Esnaf ya da küçük satıcı 6.000 TL'lik programa kendi karar verir; eşe danışma ve taksit ihtiyacı not edilmiş, bu yüzden tam 5 değil."
+  },
+  "titanlar-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Şahıs işletmesi sahibi satıcı sorunu yaşayan, karar veren ve ödeyen tek kişi; 3-7 günde karar, gider olarak faturalanır. Görüşmeyle sınanmadı."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oda ya da belediye eğitim birimi teklif alır, genel sekreter ve yönetim kurulu onaylar; kamu alım kuralı ve 1-3 ay karar süresi var."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İhracat müdürü içeriği yürütür ve denetler, patron 85.000 TL'yi onaylar; alıcı belli ama iki kişili onay var, karar 2-4 hafta."
+  },
+  "kurumsal-site-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Küçük üreticide patron tek başına karar verir, ortak onayı yok; 45.000 TL avanslı sözleşme kart alımı değil, şirket harcaması olduğundan 4."
+  },
+  "kurumsal-site-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Serbest geliştirici ya da ajans 49-149 dolarlık temayı mağazadan kendi kartıyla alır; karar tek kişide, onay zinciri yok."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "20-100 çalışanlı üreticide patron ya da kurucu karar verir; 90.000 TL'de aile ya da ortak görüşü gerekebilir, kişi profili varsayım."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Satış-pazarlama yöneticisi hazırlar, patron tek toplantıda onaylar; kısa ama iki kişili onay zinciri var."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Satış ekibi kullanır, fabrika sahibi öder; kullanıcı ile bütçe sahibi ayrı ve hedef rol hipotez."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ajans sahibi ya da freelancer 9.990 TL yıllık lisansa kendi karar verir, 1-14 gün; ajansta kullanan ekip ayrı olabilir, görüşme sayısı 0."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Tek kişilik WooCommerce mağaza sahibi 1.490 TL yıllık Pro'yu kendi kararı ve kartıyla alır; onay zinciri yok."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Site sahibi ya da ajans sahibi 2.500 TL'ye kendi karar verir; kurumsal WordPress sitesi olan işletmede onay zinciri devreye girer."
+  },
+  "qral-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Bireysel kullanıcı 4,99 euroluk tek seferlik lisansı kendi kartıyla alır; kullanıcı, alıcı ve bütçe sahibi aynı kişi."
+  },
+  "qral-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Öğretmen kullanıcı ama cebinden ödeme eğilimi düşük; hedeflenen okul ya da zümre bütçesinin sahibi ve onay yolu belirsiz."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Küçük araştırma ekibinin lideri alıcı, editör denetçi; 1.000 TL küçük ama bütçe sahibi ayrı olabilir ve kimlik doğrulanmadı."
+  },
+  "frontend-atlasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Bireysel eğitmen 2.990 TL lisansı kendi kararıyla alır; hedefteki bootcamp ve kurs üreticilerinde ek onay olabilir."
+  },
+  "frontend-atlasi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Öğrenen 349 TL'yi kendi kartıyla, kimseye sormadan öder. B'nin 3'ü bütçe darlığına dayanıyor; bu ödeme isteği kriterine aittir, karar netliğine değil."
+  },
+  "frontend-atlasi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Eğitmen 4.800 TL'ye kendi bütçesiyle karar verir; ajans tarafındaki alıcı rolü hipotez ve orada ikinci onay olabilir."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "50-250 çalışanlı üreticide sahip karar verici, ama atölye için İK ya da eğitim sorumlusu ve muhasebe görüşü devrede; 2-4 hafta onay."
+  },
+  "karar-kitabi-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Sahip ya da yönetici 199-799 TL'lik paketi kendi kartıyla anında alır; kullanıcı ile ödeyen aynı kişi, onay zinciri yok."
+  },
+  "karar-kitabi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Bağımsız facilitatör ya da küçük danışmanlık sahibi 1.000 TL'lik kite kendi karar verir; çıktıyı müşteri tarafındaki sponsor onaylar."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Başvuruya hazırlanan kurucu ya da KOBİ sahibi kendisi karar verir; 25.000-75.000 TL taksitli sözleşme olduğundan ortak görüşü olası, 1-4 hafta."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Sunumu ve modeli elinde olan kurucu 9.000 TL'yi öz kaynağıyla tek başına ve bir haftada öder; sorunu yaşayan, karar veren ve ödeyen aynı kişi."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Program yöneticisi önerir, TTO ya da kuluçka müdürü onaylar; kullanıcı girişimler, alıcı kurum, bütçe kalemi belirsiz ve karar 1-3 ay."
+  },
+  "vize-operasyon-a": {
+   "p": 4,
+   "k": 0,
+   "g": "5-12 personelli acentede sahip tek karar verici, 1-2 hafta; paneli kullanan personel ayrı ama sorunun bedelini sahip ödüyor."
+  },
+  "vize-operasyon-b": {
+   "p": 3,
+   "k": 0,
+   "g": "3-20 operatörlü acentede ilk sürümü yalnız operatör kullanır; operasyon yöneticisi ve acente sahibi ayrı roller, onay zinciri var."
+  },
+  "vize-operasyon-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Acentesiz bireysel başvurucu 299-599 TL'yi kendi kartıyla dakikalar içinde öder; onay zinciri yok."
+  },
+  "software-factory-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Teknik ortağı olmayan girişimde kurucu 1-3 haftada kendi karar verir; destek fonunun bu hizmete harcanabilirliği teyit edilmedi."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Engineering lead alıcı, kıdemli mühendis kullanıcı; ekip bütçesi ve repo erişim izni ayrı onay ister."
+  },
+  "software-factory-c": {
+   "p": 4,
+   "k": 0,
+   "g": "5-15 kişilik ajansta sahip karar verir, son müşteri onayı gerekmez; 80.000-204.000 TL toptan alım şirket harcaması, 1-3 hafta."
+  },
+  "strateji-simulatoru-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Program yöneticisi kullanıcı, bütçe kurumun proje kaleminde; karar 1-3 ay, ilk fatura 3-6 ay. Aynı kurum tipindeki diğer seçeneklerle aynı puan."
+  },
+  "strateji-simulatoru-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Girişimci adayı 349-749 TL'lik raporu kendi kararı ve kartıyla alır; kullanıcı, alıcı ve bütçe sahibi aynı kişi."
+  },
+  "strateji-simulatoru-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Mevcut danışmanlık müşterisi KOBİ sahibi 1.500 TL'ye karar verir; ortağına danışabildiği not edilmiş, 1-2 hafta."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Bağımsız geliştirici 15-19 dolarlık lisansı kendi kartıyla alır; karar tek kişide. İsteksizlik notu ödeme isteği kriterine ait."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Birincil alıcı 5-20 mühendisli takımın geliştirici deneyimi sorumlusu; 200 dolarlık paket için takım lideri onayı gerekir, bireysel danışman azınlık."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Küçük araç şirketinde kurucu tek başına karar verebilir (A), açık kaynak projede bütçe sahibi belirsiz (B); karta göre karma segment, ikisinin arası."
+  },
+  "actionplan-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Solo geliştirici 39 dolarlık Pro'yu kendi kartıyla aynı gün alır; onay zinciri yok. Persona kurucu varsayımı."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansın proje lideri alıcı olarak tanımlı; bütçe sahibi ajans sahibi olabilir, teslimi kabul eden taraf ise ajansın müşterisi."
+  },
+  "actionplan-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Ürün yöneticisi ya da yeni başlayan geliştirici 490 TL'lik paketi kendi kartıyla aynı gün alır; onay zinciri yok."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Bağımsız geliştirici 15-19 dolarlık Pro lisansını kendi kartıyla 1-7 günde alır; kullanıcı ve ödeyen aynı kişi."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 4,
+   "k": 0,
+   "g": "5-20 kişilik ajansta sahip 1.500 TL/ay kararını kendi verir; veriyi üreten geliştiriciler ayrı, ajans kişiliği kurgusal."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Hedef operasyon sorumlusunun 18.000 TL'lik bütçe yetkisi belgelenmedi; alıcı yalnız hipotez, adlandırılmış hedef yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 399 TL'lik e-kitabı kendi kartıyla aynı gün alır; onay zinciri yok. Şirket kartı olasılığı kararı başkasına bağlamıyor."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "CTO ya da ekip lideri alıcı; 25.000-120.000 TL için CTO yetki sınırı varsayım, atölyede lider ve CTO birlikte onaylar. B'nin okuması karta uyuyor."
+  },
+  "ai-first-tasarim-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Ajans sahibi ya da küçük SaaS ekip lideri 18.000 TL'ye tek başına karar verebilir; doğrulanmadı, ekip liderinde üst onay olası."
+  },
+  "aicommandcard-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kafe sahibi 499'dan 999 TL plana geçişi kendi yapar; hedefteki 3-10 şubeli yerel zincirlerde merkez onayı gerekir."
+  },
+  "aicommandcard-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Serbest React geliştiricisi ve ajans sahibi 12.000 TL'ye kendi karar verir; 3-10 kişilik ürün ekiplerinde onay gerekebilir."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Reklam veren site sahibi 1.990 TL/yıl Pro'yu kendi kartıyla alır; siteyi yöneten serbest geliştiriciye danışması olası."
+  },
+  "atonota-denetim-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ajans sahibi 7.150 TL yıllık lisansa kendi karar verir, önce 3 sitede dener; kullanan ekip ayrı, kişilik kurgusal."
+  },
+  "atonota-denetim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans sahibi alıcı, proje yöneticisi ve geliştirici kullanıcı, kabulü ajansın müşterisi verir; onay zinciri var."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İhracat sorumlusu önerir, patron site teklifiyle birlikte onaylar; aynı alıcının kurumsal site paketindeki iki kişili onayla aynı durum."
+  },
+  "b2b-bilesenler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Proje sorumlusu karar verici diye tanımlı ama ajansın müşterisi adına harcar; bütçe sahibi ayrı olabilir, süreç yazılı değil."
+  },
+  "b2b-bilesenler-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Bireysel geliştirici ya da küçük ajans 49 dolarlık şablonu mağazadan kendi kartıyla alır; karar tek kişide."
+  },
+  "banner-post-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Instagram'ı kendi yöneten tek şubeli kafe sahibi plan yükseltmesini kendi yapar; ana ürünün kafe seçeneğiyle aynı alıcı. B'nin 3'ü kanıt eksiğine dayanıyor."
+  },
+  "banner-post-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Küçük işletme sahibi 7.500 TL/ay'a kendi karar verir; hedefteki kahve zincirinde ise genel müdür onayı gerekir."
+  },
+  "banner-post-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Küçük ajansta kreatif operasyon sorumlusu hedef rol; 6.000 TL için ajans sahibinin onayı olası, bütçe sahibi doğrulanmadı."
+  },
+  "karar-sihirbazi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "2-8 kişilik ajansta sahip 490-990 TL/ay aboneliğe tek başına karar verir, 1-7 gün; formu kullanan ekip ayrı olabilir."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Hedef rol çözüm mimarı ve teklif sahibi; 6.000 TL'yi ajans sahibinin onaylaması gerekebilir, zincir kısa ama belirsiz."
+  },
+  "karar-sihirbazi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Küçük ajans sahibi ya da bağımsız geliştirici 5.000 TL'yi kendi kararıyla öder; havale ve faturayla şirket alımı."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Pazarlama sorumlusu önerir, genel müdür ya da finans onaylar; franchise veren zincirlerde onay zinciri var."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "3-15 kişilik butik ajansta sahip hem alan hem kullanan; 8.000 TL kurulum ve 2.500 TL/ay kararını 3-10 günde verir."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kart alıcıyı bağımsız danışman diye tanımlıyor; 8.000 TL'ye kendi karar verir (B). A'nın saydığı rapor sahibi ve inceleyici çıktıyı onaylar, satın almayı değil."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Seed öncesi SaaS kurucusu 45.000-130.000 TL'ye kendi bütçesiyle karar verir; ortağın onayı gerekebildiği not edilmiş, 3-10 gün."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "5-30 kişilik ajansta satış müdürü önerir, ortak onaylar; demo başına 36.000 TL için 1-3 haftalık onay zinciri."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "100+ çalışanlı işletmede bordro sorumlusu, İK müdürü, BT yöneticisi ve şube müdürü ayrı roller; satın alan kişi belirsiz, zincir uzun."
+  },
+  "ddd-renderer-a": {
+   "p": 5,
+   "k": 0,
+   "g": "E-kitap okuru geliştirici 149 TL'lik eki kendi kartıyla alır; kullanıcı, alıcı ve bütçe sahibi aynı kişi."
+  },
+  "ddd-renderer-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Bağımsız mimar 29-79 doları kendi öder; 10-50 kişilik ekibin teknik liderinde şirket kartı ya da CTO onayı gerekebilir."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Teknik lider talep eder; 50.000 TL + KDV için CTO ya da şirket sahibi onayı ve gizlilik sözleşmesi gerekir, iki basamaklı zincir."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İç araç geliştiricisi ya da teknik lider çözümü seçer; 36.000 TL'lik hizmet için şirket onayı gerekir, yetki sınırı belirsiz."
+  },
+  "devpanel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajansın frontend lideri alıcı; 20.000 TL'yi ajans içinde ya da müşteri adına onaylatması gerekir, zincir kısa ama belirsiz."
+  },
+  "devpanel-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Bağımsız geliştirici ya da küçük ajans 49 dolarlık şablonu mağazadan kendi kartıyla alır; onay zinciri yok."
+  },
+  "e-menum-a": {
+   "p": 4,
+   "k": 0,
+   "g": "2-10 kişilik ajansta sahip hem karar verici hem bütçe sahibi; 25.000 TL ön ödemeli kurulum şirket alımı, 1-3 hafta."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 0,
+   "g": "2-10 şubeli markada şube müdürü, mutfak onaycısı ve marka sahibi ayrı roller; ödeyen marka sahibi belli ama onay zinciri var."
+  },
+  "e-menum-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Django bilen serbest geliştirici 89 dolarlık kod paketini kendi kararı ve kartıyla alır; onay zinciri yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Solo eklenti geliştiricisi 399 TL/ay bülteni kendi kartıyla ya da havaleyle 1-3 günde alır; karar tek kişide."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Geliştirici 349 TL'lik paketi kendi kartıyla tek başına alır; bütçe onayı yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "2-5 kişilik ajansta kurucu önerir, ortak onaylar; kart bu onayı zorunlu adım olarak tanımlıyor, 1-2 hafta ve faturalı havale."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans lideri kendi karar verse de öncelikli alıcı mevcut site müşterisi ihracatçı; orada ihracat sorumlusu ve patron birlikte onaylar."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Bağımsız geliştirici ya da küçük ajans ekibinden biri 299 TL'lik PDF'i kendi kartıyla alır; onay gerekmez."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Frontend lideri sorunun sahibi, bütçe ürün ya da ekip yöneticisinde; QA ve yerelleştirme sorumlusu da dahil, 14.400 TL için onay zinciri var."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Küme ya da kooperatif yöneticisi önerir, yönetim kurulu onaylar; alıcı belli, 3-6 haftalık onay zinciri var."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Seed aşama kurucu 20.000 TL'ye 3-7 günde karar verir; ortak görüşü ve dar kasa not edilmiş, bütçe varsayım."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Dijital ekip lideri önerir; genel müdür yardımcısı, satın alma ve hukuk onaylar; 250.000 TL için 6-10 haftalık çok onaylı süreç."
+  },
+  "lifeos-a": {
+   "p": 5,
+   "k": 0,
+   "g": "KOBİ sahibi ya da yönetici 199 TL'lik paketi kendi kartıyla, kimseye sormadan alır; kullanıcı ile ödeyen aynı kişi."
+  },
+  "lifeos-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Bağımsız çalışan hem kullanıcı hem alıcı, 600 TL'ye kendi karar verir; çıktıyı müşterisinin proje yöneticisi kabul eder, rol hipotez."
+  },
+  "lifeos-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Alıcı bireysel ve kendi kartıyla 19 dolar öder; ancak alıcının rutin takipçisi mi eklenti geliştiricisi mi olduğu kaynakta net değil."
+  },
+  "luquit-a": {
+   "p": 4,
+   "k": 0,
+   "g": "1-10 kişilik bağımsız emlak ofisinde sahip 499-1.490 TL/ay'a kendi karar verir; büyüyen ofiste ortak onayı gerekir."
+  },
+  "luquit-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Serbest frontend geliştirici ya da 1-5 kişilik ajans 1.500 TL'lik kiti kendi projesi için kendi kararıyla alır; onay zinciri yok."
+  },
+  "metaframer-kernel-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Solo geliştirici ya da 2-5 kişilik kurucu ekip 149-349 dolarlık lisansı kendi kartıyla alır; karar ürünü kuran kişide."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Backend lideri önerir, ajans sahibi ya da CTO onaylar; 40.000 TL varsayılan bütçe eşiğinin üstünde, 1-2 hafta."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "10-60 geliştiricili SaaS şirketinde kıdemli mühendis, CTO ve güvenlik sorumlusu ayrı kişiler; 1.500 dolar için uzun onay zinciri."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Yan girişimci ya da bağımsız geliştirici 199 TL'yi kendi kararı ve kartıyla öder; onay zinciri yok."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Küçük ajans sahibi ya da serbest stratejist 499 TL/yıl'a kendi karar verir; 3 kullanıcılı pakette kullananlar ayrı olabilir."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Girişimci 1.490 TL'ye kendi karar verir; hedefteki küçük ekiplerde ad seçimi ortak karar olduğundan tam 5 değil."
+  },
+  "projector-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Backend geliştirici 349 TL'lik e-kitabı kendi kartıyla 1-5 günde alır; onay zinciri yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "3-15 kişilik yazılım evinde teknik lider ve ortak birlikte karar verir; 35.000 TL şirket faturası, 2-4 hafta. Küçük ama zorunlu onay."
+  },
+  "projector-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Teslim sorumlusu alıcı diye tanımlı; 3-15 kişilik danışmanlık firmasında 300 dolarlık pilot için ortak onayı olası, doğrulanmadı."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Solo kurucu 299 TL'lik şablonu kendi kartıyla alır; kullanıcı, alıcı ve bütçe sahibi aynı kişi."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Mentor önerir, program müdürü kurum bütçesinden onaylar; kullanıcılar girişim ekipleri. Tutar küçük ama zincir diğer kuluçka seçenekleriyle aynı."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Okur kitabı kendi kararı ve kartıyla alır ama geliri ödeyen mağazanın ortaklık programı; kullanıcı ile ödeyen ayrı, komisyon koşulları teyitsiz."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "5-30 kişilik ajansta proje yöneticisi dener, ajans sahibi 4.990 TL'yi onaylar; ürün ajansın müşterisine yeniden satılır."
+  },
+  "signator-b": {
+   "p": 3,
+   "k": 0,
+   "g": "10-50 çalışanlı KOBİ'de İK ya da idari işler sorumlusu araştırır, genel müdür onaylar; kart yetkisi varsayım."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Marka ya da operasyon sorumlusu çalışan konumunda; 1.000 TL küçük ama aynı şirket tipindeki ekip paketinde olduğu gibi yönetici onayı olası."
+  },
+  "volley-tap-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kulüpte iletişim sorumlusu önerir, başkan onaylar; marka tarafında ajans da araya girer, karar 1-6 hafta."
+  },
+  "volley-tap-b": {
+   "p": 1,
+   "k": 1,
+   "g": "Oyuncu ödemez; geliri portalın reklam payı belirler, kabulü portal editörü verir, parayı reklamveren öder. Üç taraf ayrı ve pay oranı yayımlanmamış."
+  },
+  "volley-tap-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Oyuncu 3 dolarlık premium için kendi karar verir; 16 yaş üstü kitlede kart sahipliği belirsiz olduğundan tam 5 değil."
+  },
+  "woocommnts-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Küçük WooCommerce mağaza sahibi 1.490 TL/yıl Pro'yu kendi kartıyla 1-3 günde alır; diğer eklenti seçeneğindeki mağaza sahibiyle aynı durum."
+  },
+  "woocommnts-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ajans sahibi ya da serbest geliştirici 2.990 TL/yıl lisansa kendi karar verir, 1-2 hafta; ajansta kullanan ekip ayrı, görüşme yok."
+  },
+  "woocommnts-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Mağaza sahibi ya da ajans 4.000 TL'lik tek göçe kendi karar verir; ajansta veri izni için mağaza sahibinin onayı ek adım."
+  },
+  "egitim-demolari-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Öğretmen ya da ebeveyn 600 TL'yi kendi öder; ebeveynde kullanıcı öğrenci, öğretmende cepten ödeme eğilimi belirsiz, rol hipotez."
+  },
+  "egitim-demolari-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip lideri alıcı olarak belli; 6.000 TL atölye için şirket bütçe onayı ya da eğitim sağlayıcı aracılığı gerekebilir."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "İki mevcut ilişkide muhatap belli, gün paketi teklifi muhatabın onayına gider; 20.000 TL paket büyük projeye göre kısa ama zincir var."
+  },
+  "baz-secenekler-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Küçük web ajansı sahibi 15.000-25.000 TL kurulum kararını kendi verir; diğer ajans kurulum seçeneğiyle aynı alıcı, belgelenmedi."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Parayı veren kamu programı; karar çok aşamalı değerlendirme kurulunda, başvuran karar veremez. Süreç kamuya açık çağrı metnine dayanıyor."
+  }
+ }
+}

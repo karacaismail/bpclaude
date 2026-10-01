@@ -1,0 +1,23 @@
+{
+ "slug": "destektesvik",
+ "secenekler": {
+  "destektesvik-a": {
+   "satis_basina_kurucu_saati": 3,
+   "teslim_saat_odeme_basina": 4,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Varsayım: rapor başına 4 saat kurucu emeği (form incelemesi, 4-5 program doğrulama, derleme, kontrol); yapay zekâ ile yarıya inmiş, uzman ve analist değişken maliyette."
+  },
+  "destektesvik-b": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 6,
+   "musteri_basina_aylik_destek_dk": 24,
+   "not": "Varsayım: büro başına aylık 6 saat (CSV yükleme, 25 şirket taraması kontrolü, 10 logolu rapor); 8 haftalık pilot kurulumu satıştan teslime taşındı. Baz senaryoda ödeme 0."
+  },
+  "destektesvik-c": {
+   "satis_basina_kurucu_saati": 30,
+   "teslim_saat_odeme_basina": 60,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Varsayım: yıllık ödeme başına 60 saat; 20 üyelik 8 haftalık pilot, 2 toplu tarama, üye profili ve anonim özet. Satış 40 saatten pilot ayrıldı. Baz senaryoda ödeme 0."
+  }
+ }
+}

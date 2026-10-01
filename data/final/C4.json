@@ -1,0 +1,665 @@
+{
+ "kriter": "C4",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Canlı üründe fotoğraftan taslak ve 30 dakikalık kurucu eliyle kurulum; menü aynı gün yayında, masa kartı basımı ardından gelir. Kullanıcıyla ölçülmedi."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "3 şubelik pilot mevcut çoklu şube özelliğiyle yaklaşık 1 günde kurulur; şube menü dosyaları beklenir, ücretli değer olan merkezden yayın henüz yok."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek modül uyarlaması 2 haftada teslim; demo hemen gösterilse de alıcının kendi verisine bağlı modül ancak teslimde çalışır."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor 48 saatte PDF olarak teslim edilir; alıcı için kurulum yok, ilk sonuç saatlerde değil 1-2 günde."
+  },
+  "parselq-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk kart ada/parsel girişinden 24 saat sonra elle üretilir; kurulum ya da entegrasyon yok, sonuç aynı oturumda değil ertesi gün."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Belge toplama, kaynak doğrulama ve uzman onayı gerekir; karar dosyası birkaç gün ile iki hafta arasında çıkar, süre ölçülmedi."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor 48 saatte teslim; alıcı kurulum yapmaz ama profil girişi ve uzman kontrolü gerekir, anında ön kontrol ucu henüz yok."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Pilotta portföy CSV ile yüklenir, 25 şirketlik tarama elle üretimle yaklaşık 1 günde döner; self-servis yükleme henüz yok."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurumun gördüğü değer üyelerin davetle profil girmesine bağlı; 8 haftalık pilotta anonim toplu özet haftalar içinde oluşur."
+  },
+  "asgari-iscilik-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Dört modül avansla üretilir, taşeron verisi girilir ve 3 aylık paralel koşu gerekir; alıcının ilk gerçek sonucu aylar sonra."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ürün hazır olduğunda CSV içe aktarma ve parametre girişiyle 1-3 günlük kurulum öngörülüyor; bugün çalışan kod yok."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurulum yok; ücretsiz kısa teşhis alıcının kendi dosyasında erken bulgu verir, uzman onaylı rapor 5 iş gününde gelir. Beş günlük teslimlerle aynı puan."
+  },
+  "zincir-danismanligi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Erişim devri ve karar notu 2. haftada, ölçüm omurgası kabulü 30. günde; ilk anlamlı sonuç haftalar içinde."
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor 2 haftada; yalnız halka açık veriyle hazırlanan 1 sayfalık ön denetim ilk temasta alıcının kendi durumunu gösterir."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Canlı üründe 3 şube menüsü ve TR/EN sayfa CSV ile yaklaşık 1 günde kurulur; şubelerden dosya beklenir, merkezden yayın pilotta elle yürür."
+  },
+  "kar-pusulasi-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Çalışan PWA tarayıcıda kayıtsız açılır, ilk kâr hesabı bir dakikadan kısa sürer; toplu Excel eşlemesi de aynı oturumda biter. Kurulum yok."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Panel henüz yok; danışman müşteri profillerini girer, ilk logolu raporlar ilk iki danışmanda elle hazırlanır; ilk sonuç 1-3 günde."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Şablona uygun dosya gönderilince SKU katkı raporu elle 1-3 günde teslim edilir; kurulum yok, anında sonuç da yok."
+  },
+  "titanlar-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ücretli programın ilk somut çıktısı 3-4. haftada (mağaza başvurusu, fiyatlar); haftalık oturumlar erken öğrenme verir, tam sonuç 10 haftada."
+  },
+  "titanlar-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Giriş görüşmesinde 5 ürünün kâr hesabı aynı oturumda çıkar, PDF özet aynı gün; randevu ve alıcının maliyet verisi gerekir."
+  },
+  "titanlar-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Atölye gününde katılımcı kendi ürün hesabını görür; kurum hazırlığı ve tarih gerekir, mentor sonucu 60 günde ölçülür."
+  },
+  "kurumsal-site-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Teslim 15 iş günü, içerik ve çeviri müşteriden beklenir; keşif görüşmesinde kalıptan iskelet gösterimi erken bir ilk sonuçtur."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 0,
+   "g": "8-10 sayfalık sabit şablon 10 iş gününde teslim; içerik ve görsel toplama müşteriye bağlı, ilk sonuç yayında görülür."
+  },
+  "kurumsal-site-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Geliştirici kaynağı alıp belgelerle saatler içinde çalıştırır, içerik doldurma aynı gün başlar; belge ve demo henüz yok, süre ölçülmedi."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Teslim 15 iş günü; 30 dakikalık canlı simülatör seansında alıcı kendi maliyetiyle ilk sayıyı görür, site ve plan haftalar sonra."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "30 dakikalık seansta alıcının kendi maliyetiyle ilk başabaş sepeti çıkar; rapor ve 15 slayt 5-7 iş gününde, veri müşteriden gelir."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek koleksiyon sitesi yaklaşık 3 haftada; izinli ürün verisi müşteriden gelmeden ilk sayfa çıkmaz, erken sonuç yalnız anonim demo."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Eklenti kurulumu ve 3 adımlı sihirbazla yaklaşık 15 dakikada metin ve rıza kaydı hedefleniyor; eklenti henüz yazılmadı, ölçüm yok."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Eklenti kurulunca elle oran tablosu 15 dakikada görünür; Pro için PSP anahtarı girmek gerekir, yine aynı gün. Kod henüz yok."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek site kurulumu 5 iş gününde teslim edilir; alıcı sonucu yaklaşık bir hafta sonra görür, erken bir ara çıktı tanımlı değil."
+  },
+  "qral-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Uzantı tek tıkla kurulur, hesap ve ayar istemez; ilk kopyalama dakikalar içinde çalışır. Kod çalışıyor ama mağazada yayında değil."
+  },
+  "qral-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Uzantı kurulduktan sonra seçili sekmelerden A4 QR sayfası dakikalar içinde çıkar, ayar gerekmez; sınıf sayfası henüz yazılmadı."
+  },
+  "qral-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekibin formatındaki şablon seti elle kurulur ve 3 sitede doğrulanır; ilk kullanılabilir çıktı 1-3 günde."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit hemen iner, kılavuz ve ekran kaydıyla ilk ders sayfası günler içinde üretilir; eğitmenin tam müfredat sitesi 2-3 hafta sürer."
+  },
+  "frontend-atlasi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ödeme sonrası dosyalar hemen iner, kurulum yok; ilk laboratuvar görevi alıcının kendi emeğiyle birkaç saatte çözülür."
+  },
+  "frontend-atlasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Bir ders ve bir laboratuvar 10 iş gününde teslim edilir; eğitmen ilk sonucu yaklaşık iki hafta sonra görür."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "1 saatlik ön çalışmada bir kâğıt canlı doldurulur, asıl değer yarım günlük atölyede çıkar; kurulum yok ama tarih ve hazırlık gerekir."
+  },
+  "karar-kitabi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "PDF ya da tablo kâğıdı hemen iner, kurulum yok; ilk doldurma alıcının kendi emeğiyle dakikalar-saatler içinde. Paketler henüz hazır değil."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Üç worksheet hemen kullanılır ama ilk karar memosu oturum sonrası elle hazırlanan PDF ile bir iki günde çıkar; kurulum yok."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Brif sonrası 10-20 iş günü teslim; ücretsiz atölye dışında alıcı ilk taslak siteyi ve modeli haftalar sonra görür."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "45 dakikalık atölyede alıcının kendi dosyasındaki ilk çelişkiler görünür; kaynak tablolu rapor 5 iş gününde teslim edilir."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Şablonun arındırılması, parametreli doğrulayıcı ve 2 eğitimle program kurulumu yaklaşık 1 hafta; girişimlerin çıktısı daha sonra."
+  },
+  "vize-operasyon-a": {
+   "p": 3,
+   "k": 0,
+   "g": "30 dakikalık görüşme, Excel'den 1 günlük veri aktarımı ve ülke şablonu kurulumu; ilk sonuç birkaç günde. Arayüz henüz yok, ölçülmedi."
+  },
+  "vize-operasyon-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Salt okunur Sheet içe aktarma ve kolon eşleme sonrası 10 dakikalık ön kontrol; gerçek eksik belge kuyruğu için kural kaydı günler alır."
+  },
+  "vize-operasyon-c": {
+   "p": 5,
+   "k": 0,
+   "g": "Başvurucu belgeyi yükler, maskeler ve yaklaşık 10 dakikada eksik-tutarsızlık raporunu alır; hesap ya da kurulum yok. Ürün henüz yok."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yazılı kapsam 1 hafta, S pakette ilk çalışan ürün 2 hafta; alıcı arada yalnız haftalık ilerleme raporu görür."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Salt okunur dry-run alıcının kendi reposunda ilk makbuzu bir iki günde verir; izinli komut profili ve erişim ayarı gerekir."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans markalı S paket 2 haftada teslim; hikâye listesi ve çıktı şablonu hazırlığı gerekir, ilk çalışan ürün haftalar içinde."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 1,
+   "g": "White-label kurulum 1 iş günü; girişimci 20 dakikada sonuç alır ama kurumun gördüğü değer başvuruların dolmasıyla günler içinde oluşur."
+  },
+  "strateji-simulatoru-b": {
+   "p": 5,
+   "k": 1,
+   "g": "Çalışan araç tarayıcıda 20 dakikada karar çıktısı verir, kurulum ve hesap yok; ücretli PDF ödeme sonrası hemen gelir (şablon henüz yok)."
+  },
+  "strateji-simulatoru-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Mevcut araç ortak oturumda 20 dakikada ilk sonucu verir; elle rapor ve 1 saatlik yorum görüşmesi randevuya bağlı, 1-3 günde tamamlanır."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Tek komutla kurulum ve hook ayarından sonra ilk durum dakikalar içinde görünür; kurulum adımı var, menü çubuğu uygulaması henüz yok."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ücretsiz rapor-yalnız CLI dakikalar içinde çıktı verir; ücretli destekli kurulum 60-90 dakikalık uzaktan oturumla aynı gün biter."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Kabul API'si yaklaşık 20 satırla bağlanır, orkestratör ilk yanıtı saatler içinde alır; geliştirici eliyle entegrasyon adımı gerekir."
+  },
+  "actionplan-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Canlı demo tarayıcıda hesapsız açılır; ilk ajan görev paketi yaklaşık 10 dakikada çıkar, kurulum yok. Boş proje şablonu henüz yok."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek kaynaktan içe aktarma ve kabul şablonunun elle kurulumu 1-3 gün; ilk kabul kaydı ancak ilk teslimde oluşur."
+  },
+  "actionplan-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Şablon seti ve video araç kurmadan okunur; ilk görev paketi alıcının kendi emeğiyle saatler içinde yazılır. İçerik henüz hazır değil."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Komut satırından kurulum sonrası ilk statik rapor 10 dakikada hedefleniyor; okuyucular yazılmadı, bugün yalnız görsel iskelet var."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor elle hazırlanır; ajans geliştiricilerinin kullanım dosyalarını dışa aktarıp göndermesi bir iki gün alır, ilk rapor ardından gelir."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek bekleme kartı için olay adaptörü alıcının verisine bağlanmalı; küçük kapsamla kurulum birkaç gün sürer, ölçüm yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "E-kitap hemen iner; okuyucu Storybook örneğini saatler içinde çalıştırır, 30 dakikalık ilk render hedefi sınanmadı."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "1 günlük atölyede ekip kendi ekranından token çıkarır; tarih ve hazırlık gerekir, tam kurulum 2 hafta sürer."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek form ve tek tablo için kabul dosyası 1-3 günde ilk çıktıyı verir; müşterinin kodu ve ekranına erişim gerekir, süre varsayım."
+  },
+  "aicommandcard-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Kart mevcut panelin üst çubuğunda durur; ürün adı yazılınca taslak saniyeler içinde gelir, kurulum yok. Entegrasyon henüz yapılmadı."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kartın müşterinin kendi paneline bağlanması 5 iş günü sürer; Storybook demosu hemen görülür ama alıcının kendi sonucu değildir."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Eklenti kurulumundan 2 dakika sonra ilk puan hedefleniyor; PageSpeed anahtarı girmek küçük bir kurulum adımı. Ürün yok, ölçülmedi."
+  },
+  "atonota-denetim-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ajans eklentiyi 3 sitede yaklaşık 1 saatte kurar, ilk puan ve PDF aynı gün; lisans anahtarı elle verilir. Ürün henüz yok."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "İlk kabul kaydı elle toplanan kanıtla çıkar ama misafir bağlantısı ve kimlik doğrulama kurulumu gerekir; günler ile haftalar arası."
+  },
+  "b2b-bilesenler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ürün sayfası bloğu siteyle birlikte yaklaşık 2 haftada yayına girer; 5 dil ve içerik girişi gerekir, ilk sonuç haftalar sonra."
+  },
+  "b2b-bilesenler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk temasta alıcıya kişiye özel örnek görünüm gösterilir; çalışan sayfa ve kaynak kod 5 iş gününde teslim edilir."
+  },
+  "b2b-bilesenler-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Astro şablonu geliştirici tarafından saatler içinde kurulur; derlenmiş çıktı ve kurulum belgesi henüz yok, süre ölçülmedi."
+  },
+  "banner-post-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Menü verisi içeride; logo ve renk ayarından sonra ilk görsel 10 dakikada hedefleniyor. Modül yazılmadı, ölçüm yok."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Markaya özel 3 örnek görsel hemen gönderilir; 15 şablonluk setin kurulumu ve ilk teslim 2-5 gün, sonraki görseller 48 saatte."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek brief için 10 görsel x 3 boyutluk paket yaklaşık 1 haftada hazırlanır; üretim hattı olmadığı için elle ya da betikle yapılır."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Gömme hedefi 2 saat ama her pilot elle kurulur ve soru seti ajansa uyarlanır; ilk gerçek keşif formu 1-3 günde gelir."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "60 dakikalık çalıştaydan sonra beş seçimlik karar dosyası 3 iş gününde teslim edilir; yazılım kurulumu yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Statik formun gömülmesi 2 saat hedefi; soru seti ve marka uyarlaması ile 1 saatlik eğitim dahil kurulum 1-3 gün."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşterinin logosuyla 3 slaytlık örnek 24 saatte, tam set 48 saatte; tema kurulumu ve katalog aktarımı gerekir."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Her marka için tema kurulumu ve katalog hazırlığı 1-3 gün; ajans ilk sunumu tek müşterilik pilotla görür."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Tek CSV ve beş slayt şablonu uyarlamasıyla ilk dosya 1-3 günde çıkar; kaynak dosya kontrolü elle yapılır, tek oturumda bitmez."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Keşiften sonra ilk ekran 2. günde, Lite 3 iş gününde teslim edilir; Pro demo 7 iş günü sürer. Ücretsiz tek ekran örneği henüz yok."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans, müşterisinin markasıyla Lite demoyu 3 iş gününde alır; kurulum yok, süre ölçülmedi."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek PDKS biçimi için eşleme kurulur, ilk istisna listesi bir dönem kapanışıyla çıkar; ilk değer günler ile haftalar arasında."
+  },
+  "ddd-renderer-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Dosyalar hemen iner ama komut satırı aracı yok; şablonu kendi projesine uyarlayıp mevcut motorla derlemek elle 1-3 gün sürer."
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk derleme için 20 dakika hedefi var, ancak araç olmadan elle kurulum ve kendi mimarisini JSON'a dökmek 1-3 gün alır."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Sistem bilgisi paylaşıldıktan sonra mimari model, gezilebilir site ve rapor 3 iş gününde teslim edilir."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Üç desen müşterinin React projesine 3 iş gününde entegre edilir; depo erişimi gerekir, 30 dakikalık kurulum hedefi doğrulanmadı."
+  },
+  "devpanel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Örnek form dışa aktarımı saatler içinde görülür; müşterinin 20 alanlı formunun kendi deposunda derlenmesi 1-3 gün sürer."
+  },
+  "devpanel-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Şablon hemen çalışır ama ekranlar sahte veriyle; alıcının kendi panelinde anlamlı sonuç için arka uç bağlamak günler alır."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Docker kurulumu, marka, 2 dil ve 20 saat uyarlama içeren paketin teslimi haftalar sürer; çalışan kurulum günler içinde gösterilebilir."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "İçe aktarma, elle fark raporu, alerjen ve sahip onayından sonra ilk yayın yapılır; iki pilot şubede ilk değer yaklaşık bir haftada."
+  },
+  "e-menum-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Django bilen geliştirici Docker kılavuzuyla çekirdeği 1-3 günde kendi sunucusunda çalıştırır; destek yok, kılavuz henüz yazılmadı."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "İlk sayı e-postayla gelir ve dakikalar içinde okunur, kurulum yok; karar değeri alıcının kendi değerlendirmesiyle ve aylık ritimde oluşur."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Paket hemen iner, kurulum yok; alıcının kendi fikrini çerçeveyle puanlaması birkaç saatlik emek ister."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Bülten ve keşif paketi hemen erişilir; ajansın kendi fikirlerinin puanlanması 20 dakikalık tanışma ve randevulu görüşmeye bağlı."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Staging bağlantısı yeter, kurulum yok; 1 ekranlık mini denetim 1-3 günde, ekran görüntülü bulgu dosyası 3 iş gününde gelir."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 4,
+   "k": 0,
+   "g": "PDF hemen iner, kurulum yok; 60 maddelik listeyle kendi projesini denetlemek alıcının saatler süren emeğine bağlı. PDF henüz yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Repo erişimi ve tek adapter kurulduktan sonra ilk taşma raporu günler içinde; 30 dakikada ilk makbuz hedefi ölçülmedi, pilot 2 hafta."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Karar belgesi 2 haftalık teşhisin sonunda teslim edilir; ilk görüşmedeki 2 sayfalık özet alıcının verisine dayanmayan bir tekliftir."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Üç yetkili görüşmesi ve teklif yanıtları toplandıktan sonra rapor 10 iş gününde gelir; ücretsiz atölye yalnız örnek rapor gösterir."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "12 haftalık pakette ilk anlamlı çıktı 2. haftadaki teşhis; ekran seti ve backlog haftalar sürer, veri paylaşımı gerekir."
+  },
+  "lifeos-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Yan panel kurulunca günün yöntemi saniyeler içinde görünür; ücretli değer olan çalışma kâğıdının doldurulması alıcının emeğiyle saatler içinde."
+  },
+  "lifeos-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Proje etiketleri ve izinler ayarlanır, kayıt bir hafta birikir; ilk anlamlı çıktı olan haftalık CSV ancak hafta sonunda alınır."
+  },
+  "lifeos-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Geliştirici depoyu alıp tek rutin akışını saatler içinde çalıştırır; mağaza gönderimi ek iştir. Şablon henüz yayında değil."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk 20 ilan ofisle birlikte yaklaşık 1 saatte girilir; eşleştirme değeri müşteri talepleri de girildikçe günler içinde oluşur. Sunucu yok."
+  },
+  "luquit-b": {
+   "p": 4,
+   "k": 0,
+   "g": "İki bileşen mevcut React projesine geliştirici eliyle saatler içinde alınır; kurulum yükü düşük, süre ölçülmedi."
+  },
+  "metaframer-kernel-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Tek komutla ayağa kalkan demo ile 30 dakikada ilk kiracılı kayıt hedefleniyor; geliştirici kurulumu gerekir, demo bugün yok."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "1 günlük atölyede kit ekibin şemasına uyarlanır; kendi projesinde çalışan kurulum 1-3 gün alır."
+  },
+  "metaframer-kernel-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kart mevcut uygulamada 1-2 haftalık entegrasyon öngörüyor; 1 günde sandbox hedefi ölçülmedi, negatif testler ardından gelir."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Tarayıcıda açılan liste arayüzüyle ilk kısa liste yaklaşık 10 dakikada hedefleniyor; kurulum ve hesap yok. Canlı kontrol henüz yazılmadı."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Çekirdek araç dakikalar içinde sonuç verir; 3 kullanıcı ve müşteri teslim şablonunun ayarı yaklaşık 20 dakikalık bir kurulum adımı ekler."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşterinin 10 adayı için karar dosyası elle hazırlanır ve 48 saatte teslim edilir; kurulum yok."
+  },
+  "projector-a": {
+   "p": 4,
+   "k": 1,
+   "g": "PDF ve EPUB e-postayla hemen gelir, ilk 3 bölüm önizlemede açık; değer okuyucunun saatler süren okumasıyla oluşur, kurulum yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk değer 2 günlük atölyede ekibin kendi modül haritasında çıkar; tarih ve ekip takvimi gerekir, kurulum yok."
+  },
+  "projector-c": {
+   "p": 3,
+   "k": 0,
+   "g": "İçe aktarma raporu hızlı çıkar; 30 dokümanlık salt okur portalın kurulup teslim edilmesi 1-3 gün sürer. İçe aktarıcı henüz tam değil."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Paket hemen iner, kurulum yok; ilk 3 kümenin doldurulması alıcının kendi emeğiyle saatler alır (ilk hafta yaklaşık 3 saat varsayımı)."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "1 saatlik çevrimiçi atölye ve ekip başı kopyaların dağıtımı bir iki gün; ekiplerin doldurduğu belgeler sonradan toplanır."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 5,
+   "k": 1,
+   "g": "Site yayında; okur aradığı klasiğin güvenilir çevirisini künye sayfasından yaklaşık 30 saniyede bulur, kurulum ve hesap yok."
+  },
+  "signator-a": {
+   "p": 4,
+   "k": 0,
+   "g": "CSV ile toplu imza yaklaşık 12 dakikada hedefleniyor; ilk müşteride birlikte kurulum ve elle yönetilen müşteri alanı gerekir. Ürün çalışmıyor."
+  },
+  "signator-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Form ve CSV ile imzalar dakikalar içinde üretilir; her çalışanın imzayı posta istemcisine kurması aynı güne yayılan bir adımdır. Ölçülmedi."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "5 kişilik imza paketi elle hazırlanır, kurulum notuyla 1-3 günde teslim edilir; istemci kontrolü ve 1 revizyon dahil."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kulüp renkleri ve logosuyla oyun 2 haftada teslim edilir; mevcut demo hemen oynanır ama alıcının markalı sonucu değildir."
+  },
+  "volley-tap-b": {
+   "p": 5,
+   "k": 1,
+   "g": "Oyuncu tarayıcıda girişsiz ve kurulumsuz saniyeler içinde maça başlar; çalışan 1v1 sürüm var, portal sürümü henüz gönderilmedi."
+  },
+  "volley-tap-c": {
+   "p": 5,
+   "k": 1,
+   "g": "İlk maç tarayıcıda hesapsız saniyeler içinde başlar, kurulum yok; çalışan 1v1 sürüm var, itch sayfası henüz açılmadı."
+  },
+  "woocommnts-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Eklenti kurulup CSV oran şablonu yüklenince ilk taksit tablosu 15 dakikada hedefleniyor; kurulum adımı var, eklenti yayında değil."
+  },
+  "woocommnts-b": {
+   "p": 4,
+   "k": 0,
+   "g": "İlk mağazada birlikte kurulum yapılır, tablo aynı oturumda görünür; 15 dakika hedefi ölçülmedi. Benzer birlikte kurulumlarla aynı puan."
+  },
+  "woocommnts-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kaynak-ürün eşleme tablosu ve deneme çalıştırması elle yürür; tek göç onay sonrası 1-3 günde yayına alınır."
+  },
+  "egitim-demolari-a": {
+   "p": 4,
+   "k": 0,
+   "g": "PDF ve statik demo hemen açılır, kurulum yok; öğretmen dersi kendi hazırlığına saatler içinde uyarlar. Paket henüz hazır değil."
+  },
+  "egitim-demolari-b": {
+   "p": 3,
+   "k": 0,
+   "g": "20 dakikalık mini ders aynı oturumda değer verir; ekibin kendi senaryosuna uyarlama ve tarih ayarı birkaç gün alır."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "5 günlük pakette erişim devri sonrası ölçüm denetimi ya da hesap prototipi 1-3 günde ilk çıktıyı verir; yeni ürün gerekmez."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Docker kurulumu, marka, 2 dil ve uyarlama içeren teslim haftalar sürer; çalışan kurulum günler içinde gösterilebilir, kopyalar birleşmedi."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Kamuya açık takvime göre çağrı kapanışı ile sonuç arasında aylar var; fon başvurudan yaklaşık 3,5 ay sonra başlar, erken sonuç yok."
+  }
+ }
+}

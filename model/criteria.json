@@ -1,0 +1,603 @@
+{
+ "surum": "1.0",
+ "tarih": "2026-10-01",
+ "hedef": {
+  "tanim": "Ücretli reklam olmadan, ilk 6 ayda tahsil edilmiş net nakit",
+  "hedef_usd": 3000,
+  "kur_tl_usd": 48,
+  "ufuk_ay": 6,
+  "haftalik_kurucu_saati": 20,
+  "esik_saat_ucreti_tl": 500,
+  "azami_riske_edilen_nakit_tl": 50000,
+  "wip_siniri": 1,
+  "not": "Tüm değerler başlangıç varsayımıdır; çalışma kitabının Hedef sayfasından değiştirilir. Eşik saat ücreti, kurucunun yazılı teklifindeki günlük 4.000 ₺ danışmanlık ücretinin sekiz saate bölünmüş halidir."
+ },
+ "kanit_olcegi": [
+  {
+   "kod": 0,
+   "ad": "E0",
+   "tanim": "Yalnız varsayım ya da kurucu görüşü",
+   "guven": 0.3
+  },
+  {
+   "kod": 1,
+   "ad": "E1",
+   "tanim": "Dış kaynak, masa başı araştırma ya da alıcı beyanı",
+   "guven": 0.5
+  },
+  {
+   "kod": 2,
+   "ad": "E2",
+   "tanim": "Gerçek davranış sinyali: kayıt, kullanım, demo talebi, yazılı niyet",
+   "guven": 0.7
+  },
+  {
+   "kod": 3,
+   "ad": "E3",
+   "tanim": "Parasal davranış: ödeme, ön ödeme, ücretli pilot, imzalı sözleşme",
+   "guven": 0.9
+  },
+  {
+   "kod": 4,
+   "ad": "E4",
+   "tanim": "Birbirinden bağımsız birden çok müşteride tekrarlanan ödeme",
+   "guven": 1.0
+  }
+ ],
+ "puan_olcegi": [
+  {
+   "puan": 0,
+   "anlam": "Kriterin tersine güçlü durum"
+  },
+  {
+   "puan": 1,
+   "anlam": "Çok zayıf"
+  },
+  {
+   "puan": 2,
+   "anlam": "Zayıf ama mümkün"
+  },
+  {
+   "puan": 3,
+   "anlam": "Kabul edilebilir"
+  },
+  {
+   "puan": 4,
+   "anlam": "Güçlü"
+  },
+  {
+   "puan": 5,
+   "anlam": "Çok güçlü"
+  }
+ ],
+ "kapilar": [
+  {
+   "id": "G1",
+   "ad": "Haklar",
+   "soru": "Satılacak şeyin fikri mülkiyeti, lisansı, verisi ve kullandığı servislerin hakları kurucuda mı?",
+   "gecti": "Kod, içerik, marka ve veri kurucuya ait; bağımlılık lisansları satışa uygun.",
+   "test": "Hak sahipliği ya da lisans uyumu doğrulanmadı.",
+   "kaldi": "Kod ya da marka üçüncü tarafa ait ve yazılı izin yok; ya da lisans satışı engelliyor."
+  },
+  {
+   "id": "G2",
+   "ad": "Hukuk ve uyum",
+   "soru": "Satış için lisans, kişisel veri ya da mevzuat engeli var mı; 6 ay içinde çözülebilir mi?",
+   "gecti": "Engel yok ya da gereken metinler ve kayıtlar hazır.",
+   "test": "Hukukçu ya da mali müşavir teyidi bekleyen konu var.",
+   "kaldi": "Faaliyet hukuka ya da platform kurallarına aykırı; ya da uyum yükü 6 aya sığmıyor."
+  },
+  {
+   "id": "G3",
+   "ad": "Tahsilat yolu",
+   "soru": "Hedef alıcıdan ödeme alıp Türkiye'de yasal olarak tahsil etmenin yolu hazır mı?",
+   "gecti": "Sanal POS, havale ve fatura düzeni ya da küresel satışta yasal satıcı (MoR) hesabı hazır.",
+   "test": "Yol belli ama hesap açılmadı, test ödemesi yapılmadı.",
+   "kaldi": "Hedef pazardan ödeme almanın uygulanabilir yolu yok."
+  },
+  {
+   "id": "G4",
+   "ad": "Ödeyecek alıcı",
+   "soru": "Ödeme yapacak kişi ya da şirket tipi belli mi; kurucu en az 20 hedef alıcıyı ismen sayabiliyor mu?",
+   "gecti": "Alıcı tipi net; isim listesi var ya da mevcut ilişki belgelenmiş.",
+   "test": "Alıcı tipi belli ama isim listesi yok.",
+   "kaldi": "Kimin ödeyeceği belli değil."
+  },
+  {
+   "id": "G5",
+   "ad": "Reklamsız kanal",
+   "soru": "En az bir somut reklamsız kanal adıyla ve ilk adımıyla tanımlı mı?",
+   "gecti": "Birincil kanal ve ilk adım adlı; yedek kanal var.",
+   "test": "Kanal fikri var ama somut hedef (grup, dizin, ortak) adlandırılmadı.",
+   "kaldi": "Alıcının ürünü nasıl bulacağı tanımsız."
+  },
+  {
+   "id": "G6",
+   "ad": "Süre",
+   "soru": "İlk satılabilir kapsama kalan kurucu eforu en çok 8 hafta mı ve satın alma döngüsü 6 aya sığıyor mu?",
+   "gecti": "Kalan efor 8 haftanın altında ve ilk tahsilat 6 ay içinde gerçekçi.",
+   "test": "Kalan efor tahmini belirsiz ya da satış döngüsü ölçülmedi.",
+   "kaldi": "Satılabilir kapsam 8 haftadan uzak ya da satın alma döngüsü 6 ayı aşıyor."
+  },
+  {
+   "id": "G7",
+   "ad": "Riske edilen nakit",
+   "soru": "İlk tahsilata kadar harcanacak nakit, belirlenen tavanın altında mı?",
+   "gecti": "Gereken nakit tavanın altında.",
+   "test": "Nakit ihtiyacı hesaplanmadı.",
+   "kaldi": "İlk tahsilattan önce tavanı aşan nakit ya da dış sermaye gerekiyor."
+  },
+  {
+   "id": "G8",
+   "ad": "Standart teslim",
+   "soru": "Her müşteri ayrı bir yazılım projesine dönüşmeden teslim edilebilir mi?",
+   "gecti": "Herkes aynı ürünü alır ya da hizmet sabit kapsamlı ve sabit fiyatlı pakettir.",
+   "test": "Kapsam sınırı yazılı değil.",
+   "kaldi": "Her satış özel geliştirme gerektiriyor."
+  }
+ ],
+ "kategoriler": [
+  {
+   "id": "A",
+   "ad": "Talep ve ödeme gerekçesi",
+   "agirlik": 25,
+   "soru": "Sorun öncelikli mi; alıcının bugün ödeme yapma nedeni ve bütçe sahibi belli mi?"
+  },
+  {
+   "id": "B",
+   "ad": "Reklamsız erişim ve dağıtım",
+   "agirlik": 30,
+   "soru": "Alıcı ürünü hangi yoldan bulacak; kurucu bu yola bugün erişebiliyor mu?"
+  },
+  {
+   "id": "C",
+   "ad": "Nakde hız ve satın alma kolaylığı",
+   "agirlik": 22,
+   "soru": "İlk tahsilat ne kadar yakın; alıcı yardım almadan anlayıp satın alabiliyor mu?"
+  },
+  {
+   "id": "D",
+   "ad": "Gelir yoğunluğu ve devamlılık",
+   "agirlik": 8,
+   "soru": "Hedefi kaç satış kapatır; aynı müşteri neden yeniden öder?"
+  },
+  {
+   "id": "E",
+   "ad": "Kurucu avantajı ve fark",
+   "agirlik": 7,
+   "soru": "Kurucunun bu alıcıda ve bu sorunda dışarıdan başlayan birine göre üstünlüğü ne?"
+  },
+  {
+   "id": "F",
+   "ad": "Operasyon yükü ve risk",
+   "agirlik": 8,
+   "soru": "Satıştan sonra iş kurucuya ne kadar bağlı kalıyor; hatanın bedeli ne?"
+  }
+ ],
+ "kriterler": [
+  {
+   "id": "A1",
+   "kat": "A",
+   "ad": "Sorunun şiddeti",
+   "agirlik": 5,
+   "yon": "fayda",
+   "soru": "Sorun alıcıya bugün ne kaybettiriyor: para, ceza, iş gücü, gecikme?",
+   "c1": "Olsa iyi olur düzeyinde; kayıp gösterilemiyor.",
+   "c3": "Düzenli zaman ya da para kaybı var ama iş durmuyor.",
+   "c5": "Ceza, gelir kaybı ya da işin durması söz konusu; kayıp rakamla gösterilebiliyor.",
+   "kanit": "Kayıp hesabı, mevzuat metni, alıcı belgesi"
+  },
+  {
+   "id": "A2",
+   "kat": "A",
+   "ad": "Satın alma tetikleyicisi ve aciliyet",
+   "agirlik": 5,
+   "yon": "fayda",
+   "soru": "Alıcıya şimdi almak zorundayım dedirten olay ne?",
+   "c1": "Tetikleyici yok; bir gün kullanırım.",
+   "c3": "Tekrarlayan bir olay var ama ertelenebiliyor.",
+   "c5": "Tarihi belli zorunluluk (mevzuat, denetim, son tarih) ya da her ay tekrarlayan zorunlu iş.",
+   "kanit": "Tarihli olay, takvim, mevzuat"
+  },
+  {
+   "id": "A3",
+   "kat": "A",
+   "ad": "Farkındalık ve çözüm arama",
+   "agirlik": 3,
+   "yon": "fayda",
+   "soru": "Alıcı sorunu zaten biliyor ve çözüm arıyor mu?",
+   "c1": "Önce sorunun varlığını öğretmek gerekiyor.",
+   "c3": "Sorunu biliyor ama etkin biçimde aramıyor.",
+   "c5": "Bugün çözüm arıyor: arama yapıyor, teklif alıyor ya da rakip kullanıyor.",
+   "kanit": "Arama verisi, rakip kullanımı, teklif talebi"
+  },
+  {
+   "id": "A4",
+   "kat": "A",
+   "ad": "Bugünkü ücretli ya da elle geçici çözüm",
+   "agirlik": 3,
+   "yon": "fayda",
+   "soru": "Alıcı bu iş için bugün para ya da emek harcıyor mu?",
+   "c1": "Hiçbir şey yapmıyor; maliyeti yok.",
+   "c3": "Excel ya da elle çözüyor; zaman harcıyor.",
+   "c5": "Bu iş için bugün para ödüyor: danışman, yazılım ya da personel.",
+   "kanit": "Rakip fiyatı, danışmanlık ücreti, iş tanımı"
+  },
+  {
+   "id": "A5",
+   "kat": "A",
+   "ad": "Kullanıcı, alıcı ve bütçe sahibinin netliği",
+   "agirlik": 3,
+   "yon": "fayda",
+   "soru": "Sorunu yaşayan kişi satın alma kararını kendisi verebiliyor mu?",
+   "c1": "Kullanıcı, alıcı ve bütçe sahibi ayrı ve belirsiz.",
+   "c3": "Alıcı belli ama onay zinciri var.",
+   "c5": "Sorunu yaşayan kişi kendi kararı ve kartıyla satın alabiliyor.",
+   "kanit": "Karar süreci tanımı, persona"
+  },
+  {
+   "id": "A6",
+   "kat": "A",
+   "ad": "Ödeme isteği kanıtı",
+   "agirlik": 6,
+   "yon": "fayda",
+   "soru": "Bu fiyata ödeme yapılacağını gösteren ne var?",
+   "c1": "Yalnız kurucunun görüşü.",
+   "c3": "Görüşmelerde fiyat konuşulmuş ya da alıcının benzer işe bugün ödeme yaptığı kaynakla gösterilmiş.",
+   "c5": "Ön ödeme, imzalı pilot ya da ödeyen müşteri var.",
+   "kanit": "Ödeme kaydı, sözleşme, teklif yanıtı"
+  },
+  {
+   "id": "B1",
+   "kat": "B",
+   "ad": "İlk 20-50 alıcıya doğrudan erişim",
+   "agirlik": 8,
+   "yon": "fayda",
+   "soru": "Kurucu ilk alıcıları ismen sayabiliyor ve onlara doğrudan ulaşabiliyor mu?",
+   "c1": "İsim yok; soğuk liste.",
+   "c3": "20 isim sayılabiliyor; yarısı ikinci derece bağlantı.",
+   "c5": "20'den çok isim; çoğu doğrudan tanıdık ya da mevcut müşteri.",
+   "kanit": "İsim listesi, mevcut ilişki kaydı"
+  },
+  {
+   "id": "B2",
+   "kat": "B",
+   "ad": "Yüksek niyetli keşif",
+   "agirlik": 5,
+   "yon": "fayda",
+   "soru": "Alıcı bu çözümü arama motorunda, bir pazar yerinde ya da dizinde kendisi arıyor mu?",
+   "c1": "Alıcı bu işi aramıyor; pazar yeri yok.",
+   "c3": "Arama niyeti var ama rekabet yoğun ya da hacim bilinmiyor.",
+   "c5": "Alıcı sorunu adıyla arıyor ya da hazır bir pazar yerinde çözüm arıyor.",
+   "kanit": "Arama hacmi, pazar yeri kategorisi"
+  },
+  {
+   "id": "B3",
+   "kat": "B",
+   "ad": "Kanal ve fiyat uyumu",
+   "agirlik": 6,
+   "yon": "fayda",
+   "soru": "Seçilen kanal bu fiyatı taşıyor mu?",
+   "c1": "Çelişiyor: ucuz ürün ve kurucu satışı ya da pahalı ürün ve yalnız arama.",
+   "c3": "Uyum makul ama sınanmadı.",
+   "c5": "Bu kanal bu fiyatla en az bir kez satış getirdi.",
+   "kanit": "Satış kaydı, benzer satış geçmişi"
+  },
+  {
+   "id": "B4",
+   "kat": "B",
+   "ad": "Ürüne gömülü dağıtım",
+   "agirlik": 5,
+   "yon": "fayda",
+   "soru": "Ürünün kullanımı, alıcı profiline uyan yeni kişilere ürünü gösteriyor mu?",
+   "c1": "Kullanım kimseye görünmüyor.",
+   "c3": "Çıktı başkalarına gidiyor ama görenler alıcı profili değil ya da seyrek.",
+   "c5": "Her kullanım alıcı profiline uyan yeni kişilere ürünü gösteriyor: davet, paylaşılan çıktı, ürün imzası.",
+   "kanit": "Çıktı örneği, davet akışı"
+  },
+  {
+   "id": "B5",
+   "kat": "B",
+   "ad": "Segment ağ yoğunluğu ve ortak kanalı",
+   "agirlik": 3,
+   "yon": "fayda",
+   "soru": "Alıcılar birbirini tanıyor mu; ürünü kendi müşterisine önerecek bir aracı var mı?",
+   "c1": "Alıcılar dağınık; aracı yok.",
+   "c3": "Dernek, oda ya da grup var ama erişim kurulmadı.",
+   "c5": "Yoğun bağlantılı niş ve erişilebilir ortak (mali müşavir, bayi, oda) var.",
+   "kanit": "Topluluk adı, ortak görüşmesi"
+  },
+  {
+   "id": "B6",
+   "kat": "B",
+   "ad": "Kanal bağımlılığı",
+   "agirlik": 3,
+   "yon": "ters",
+   "soru": "Kanalın kuralı ya da görünürlüğü değişirse satış durur mu?",
+   "c1": "Tek platforma ya da tek ilişkiye tam bağımlı.",
+   "c3": "Bir ana kanal ve bir yedek var.",
+   "c5": "Birbirinden bağımsız birden çok kanal; kural değişikliği işi durdurmaz.",
+   "kanit": "Kanal listesi"
+  },
+  {
+   "id": "C1",
+   "kat": "C",
+   "ad": "İlk tahsilata kalan süre",
+   "agirlik": 6,
+   "yon": "fayda",
+   "soru": "Bugünden ilk paranın hesaba girmesine kadar ne kadar var?",
+   "c1": "3 aydan uzun.",
+   "c3": "4-8 hafta.",
+   "c5": "2 haftadan kısa.",
+   "kanit": "Plan, kalan iş listesi"
+  },
+  {
+   "id": "C2",
+   "kat": "C",
+   "ad": "İlk satılabilir kapsama kalan kurucu eforu",
+   "agirlik": 5,
+   "yon": "ters",
+   "soru": "İlk ödeme alınabilecek kapsama ulaşmak için bundan sonra ne kadar emek gerekiyor?",
+   "c1": "8 haftadan çok.",
+   "c3": "3-5 hafta.",
+   "c5": "1 haftadan az ya da elle hemen sunulabilir.",
+   "kanit": "Kalan iş listesi, mevcut kod durumu"
+  },
+  {
+   "id": "C3",
+   "kat": "C",
+   "ad": "Satış döngüsü ve onay zinciri",
+   "agirlik": 4,
+   "yon": "ters",
+   "soru": "İlk temastan ödemeye kadar ne kadar sürer; kaç kişi onaylar?",
+   "c1": "3 aydan uzun; çok onaylı.",
+   "c3": "2-6 hafta.",
+   "c5": "Tek görüşmede ya da görüşmesiz karar.",
+   "kanit": "Benzer satış geçmişi"
+  },
+  {
+   "id": "C4",
+   "kat": "C",
+   "ad": "İlk değere ulaşma süresi ve kurulum",
+   "agirlik": 3,
+   "yon": "fayda",
+   "soru": "Alıcı ilk anlamlı sonucu ne kadar sürede görüyor?",
+   "c1": "Haftalar süren kurulum ya da entegrasyon.",
+   "c3": "1-3 günlük kurulum.",
+   "c5": "Dakikalar ya da saatler içinde ilk sonuç.",
+   "kanit": "Kurulum adımları, demo"
+  },
+  {
+   "id": "C5",
+   "kat": "C",
+   "ad": "Kendi kendine satın alınabilirlik",
+   "agirlik": 2,
+   "yon": "fayda",
+   "soru": "Kapsam, fiyat, deneme ve ödeme görüşme yapmadan anlaşılabiliyor mu?",
+   "c1": "Demo, teklif ve sözleşme şart.",
+   "c3": "Fiyat açık ama ödeme için görüşme gerekiyor.",
+   "c5": "Fiyat, deneme ve ödeme görüşmesiz.",
+   "kanit": "Fiyat sayfası, ödeme akışı"
+  },
+  {
+   "id": "C6",
+   "kat": "C",
+   "ad": "Geçiş, entegrasyon ve güven bariyeri",
+   "agirlik": 2,
+   "yon": "ters",
+   "soru": "Alıcının başlamak için sistem değiştirmesi, veri taşıması ya da güvenlik incelemesi yapması gerekiyor mu?",
+   "c1": "Veri taşıma, entegrasyon ve güvenlik incelemesi gerekiyor.",
+   "c3": "Sınırlı veri girişi yeterli.",
+   "c5": "Mevcut işe küçük bir ek; bariyer yok.",
+   "kanit": "Kurulum gereksinimleri"
+  },
+  {
+   "id": "D1",
+   "kat": "D",
+   "ad": "Gelir yoğunluğu",
+   "agirlik": 4,
+   "yon": "fayda",
+   "soru": "6 aylık hedefi kaç satış kapatır?",
+   "c1": "100'den çok satış gerekir.",
+   "c3": "10-30 satış.",
+   "c5": "1-5 satış.",
+   "kanit": "Fiyat ve hedef hesabı"
+  },
+  {
+   "id": "D2",
+   "kat": "D",
+   "ad": "Tekrar eden ihtiyaç",
+   "agirlik": 2,
+   "yon": "fayda",
+   "soru": "Aynı müşteri neden yeniden ödeme yapar?",
+   "c1": "Tek seferlik ihtiyaç; tekrar yok.",
+   "c3": "Yılda birkaç kez.",
+   "c5": "Aylık ya da sürekli ihtiyaç; yenileme nedeni açık.",
+   "kanit": "Kullanım sıklığı"
+  },
+  {
+   "id": "D3",
+   "kat": "D",
+   "ad": "Genişleme ve fiyatın değerle uyumu",
+   "agirlik": 2,
+   "yon": "fayda",
+   "soru": "Müşteri büyüdükçe ya da daha çok kullandıkça gelir artıyor mu?",
+   "c1": "Tek fiyat; genişleme yok.",
+   "c3": "Üst paket var.",
+   "c5": "Fiyat kullanım, şube ya da kullanıcı sayısıyla büyüyor; değerle uyumlu.",
+   "kanit": "Fiyat yapısı"
+  },
+  {
+   "id": "E1",
+   "kat": "E",
+   "ad": "Alan bilgisi, itibar ve ilişki",
+   "agirlik": 3,
+   "yon": "fayda",
+   "soru": "Kurucu bu alanı ve bu alıcıyı dışarıdan başlayan birinden daha iyi tanıyor mu?",
+   "c1": "Alanı tanımıyor.",
+   "c3": "Alanı tanıyor; ağı sınırlı.",
+   "c5": "Alanda uzman; itibarı ve ağı var.",
+   "kanit": "Geçmiş iş, referans"
+  },
+  {
+   "id": "E2",
+   "kat": "E",
+   "ad": "Ücretsiz, yapay zekâ, Excel ve hiçbir şey yapmama seçeneğine karşı fark",
+   "agirlik": 4,
+   "yon": "fayda",
+   "soru": "Alıcının bugünkü en kolay seçeneğini bırakması için yeterli neden var mı?",
+   "c1": "Ücretsiz güçlü bir seçenek aynı işi görüyor.",
+   "c3": "Fark var ama alıcıya anlatmak gerekiyor.",
+   "c5": "Seçenek yok ya da belirgin biçimde yetersiz; geçiş nedeni rakamla gösterilebiliyor.",
+   "kanit": "Rakip ve ikame karşılaştırması"
+  },
+  {
+   "id": "F1",
+   "kat": "F",
+   "ad": "Müşteri başına kurucu emeği",
+   "agirlik": 4,
+   "yon": "ters",
+   "soru": "Her yeni müşteri kurucudan ne kadar kurulum, eğitim ve destek istiyor?",
+   "c1": "Her müşteri yoğun kurulum, eğitim ve destek istiyor.",
+   "c3": "İlk kurulum elle; sonrası az.",
+   "c5": "Self-servis; müşteri başına ayda dakikalar.",
+   "kanit": "Kurulum ve destek tahmini, pilot ölçümü"
+  },
+  {
+   "id": "F2",
+   "kat": "F",
+   "ad": "Sorumluluk riski",
+   "agirlik": 2,
+   "yon": "ters",
+   "soru": "Hatalı çıktı müşteriye ceza ya da zarar doğurur mu?",
+   "c1": "Hatalı çıktı müşteriye ceza ya da ciddi zarar doğurur.",
+   "c3": "Sınırlı zarar.",
+   "c5": "Zarar riski yok.",
+   "kanit": "Hukuki okuma"
+  },
+  {
+   "id": "F3",
+   "kat": "F",
+   "ad": "Standart teslim",
+   "agirlik": 2,
+   "yon": "ters",
+   "soru": "Müşteriler özel istek ve istisna üretiyor mu?",
+   "c1": "Her müşteri özel geliştirme istiyor.",
+   "c3": "Yapılandırmayla çözülüyor.",
+   "c5": "Herkes aynı ürünü kullanıyor.",
+   "kanit": "Kapsam tanımı"
+  }
+ ],
+ "stratejik": [
+  {
+   "id": "S1",
+   "ad": "Pazar büyüklüğü ve büyüme",
+   "agirlik": 25,
+   "soru": "Ulaşılabilir pazar 3 yılda anlamlı bir işi taşır mı?",
+   "c1": "Çok dar ya da duran pazar.",
+   "c3": "Orta ölçekli pazar.",
+   "c5": "Büyük ve büyüyen pazar; kaynakla gösterilmiş."
+  },
+  {
+   "id": "S2",
+   "ad": "Savunulabilirlik",
+   "agirlik": 25,
+   "soru": "Rakip ya da yapay zekâ bunu ne kadar kolay kopyalar?",
+   "c1": "Birkaç haftada kopyalanır.",
+   "c3": "Bir miktar veri ya da entegrasyon üstünlüğü var.",
+   "c5": "Tescilli veri, derin entegrasyon, mevzuat uzmanlığı ya da ağ etkisi var."
+  },
+  {
+   "id": "S3",
+   "ad": "Ölçeklenebilirlik",
+   "agirlik": 25,
+   "soru": "Gelir kurucunun saatinden bağımsız büyüyebilir mi?",
+   "c1": "Gelir kurucu saatine bağlı.",
+   "c3": "Kısmen ürünleşmiş.",
+   "c5": "Yazılım geliri; ek müşterinin maliyeti düşük."
+  },
+  {
+   "id": "S4",
+   "ad": "Portföy sinerjisi ve yeniden kullanılabilir öğrenme",
+   "agirlik": 25,
+   "soru": "Bu iş başka projelerin müşterisini, kodunu ya da kanalını besliyor mu?",
+   "c1": "Yalıtık.",
+   "c3": "Bir başka projeyle ortak müşteri ya da kod.",
+   "c5": "Birden çok projenin müşterisini, kodunu ya da kanalını besliyor."
+  }
+ ],
+ "agirlik_setleri": [
+  {
+   "id": "temel",
+   "ad": "Temel (bu çalışma)",
+   "kat": {
+    "A": 25,
+    "B": 30,
+    "C": 22,
+    "D": 8,
+    "E": 7,
+    "F": 8
+   },
+   "not": "Üç kaynağın ortak noktası: erişim ve ödeme gerekçesi önde, nakde hız ayrı bir kategori."
+  },
+  {
+   "id": "sohbet",
+   "ad": "Sohbet yanıtındaki örnek dağılım",
+   "kat": {
+    "A": 25,
+    "B": 30,
+    "C": 20,
+    "D": 10,
+    "E": 10,
+    "F": 5
+   },
+   "not": "Erişim %30, sorun ve gerekçe %25, satın alma kolaylığı %20, yetkinlik %10, gelir devamlılığı %10, operasyon %5."
+  },
+  {
+   "id": "chatgpt",
+   "ad": "ChatGPT araştırmasındaki dağılım",
+   "kat": {
+    "A": 30,
+    "B": 30,
+    "C": 20,
+    "D": 10,
+    "E": 10,
+    "F": 0
+   },
+   "not": "Müşteri çekimi 30, reklamsız dağıtım 30, self-servis 20, devamlılık 10, kurucu avantajı 10; operasyon yükü puanda değil saat olarak izlenir."
+  },
+  {
+   "id": "claude",
+   "ad": "Claude araştırmasındaki ağırlık aralıklarının yaklaşık eşlemesi",
+   "kat": {
+    "A": 23.4,
+    "B": 25.5,
+    "C": 27.7,
+    "D": 0,
+    "E": 14.9,
+    "F": 8.5
+   },
+   "not": "K1-K15 aralıklarının orta değerleri kategorilere dağıtılıp 100'e ölçeklendi; süre ve kalan efor daha ağır."
+  },
+  {
+   "id": "esit",
+   "ad": "Eşit kategori ağırlığı",
+   "kat": {
+    "A": 16.67,
+    "B": 16.67,
+    "C": 16.67,
+    "D": 16.67,
+    "E": 16.66,
+    "F": 16.66
+   },
+   "not": "Ağırlık seçimine duyarlılığı görmek için."
+  }
+ ],
+ "karar_esikleri": {
+  "uygunluk_alt_puan": 45,
+  "nakit_alt_orani": 0.5,
+  "stratejik_beklet_puan": 60,
+  "yatirim_kanit_kodu": 3,
+  "not": "Uygunluk tabanı ve nakit oranı, kalibrasyon öncesindeki geçici puanlara bakılarak seçildi; kesin puanlar geldikten sonra değiştirilmedi. Eşikler bir ölçüm değil, tercihtir ve çalışma kitabından değiştirilebilir. Puan bir başarı olasılığı değildir."
+ }
+}

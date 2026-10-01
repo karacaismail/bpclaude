@@ -1,0 +1,23 @@
+{
+ "slug": "titanlar",
+ "secenekler": {
+  "titanlar-a": {
+   "satis_basina_kurucu_saati": 3,
+   "teslim_saat_odeme_basina": 6.7,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Kohort başına 80 saat: 20 oturum x 1,5 saat ders, 20 saat hazırlık, 12 katılımcı x 10 ödev x 15 dk geri bildirim; 12 kişiye bölündü. Destek 45 dk'dan 30'a indi (geri bildirim teslime taşındı). Varsayım."
+  },
+  "titanlar-b": {
+   "satis_basina_kurucu_saati": 3,
+   "teslim_saat_odeme_basina": 5.8,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Giriş 2,5 saat (görüşme, hazırlık, PDF); Strateji 14 saat (4 saat görüşme, analiz, yazılı plan, 30 gün e-posta). 5 Giriş + 2 Strateji ortalaması. Destek 60 dk'dan 30'a indi. Varsayım."
+  },
+  "titanlar-c": {
+   "satis_basina_kurucu_saati": 25,
+   "teslim_saat_odeme_basina": 20,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Bir günlük atölye: 8 saat sahada, 8 saat hazırlık, 4 saat katılımcı raporu. Gün ücreti üzerinden teslim 8 saatin altında değil. Karttaki 240 dk mentor işini içerdiğinden destek 60 dk'ya indi. Varsayım."
+  }
+ }
+}

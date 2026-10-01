@@ -1,0 +1,83 @@
+{
+ "slug": "zabuno",
+ "kararlar": [
+  {
+   "itiraz": "zabuno-a: ilk ay ücretsiz olduğundan ilk ücretli havale 21-45 değil 45-75 gün; ilk tahsilat süresi kısa kalmış.",
+   "karar": "kabul",
+   "degisiklik": "finans.ilk_tahsilat_gun 21-45 iken 45-75 oldu (finans itirazıyla aynı).",
+   "gerekce": "Plan §7.2 ve §5: ilk ay ücretsiz, 2. aydan havale; ilk ödeme 45. günden önce gelmez."
+  },
+  {
+   "itiraz": "zabuno-a: G7 nakit yalnız hukukçu ve kartları sayıyor; aylık araç ve muhasebe gideri dışarıda, tavan payı dar.",
+   "karar": "kabul",
+   "degisiklik": "G7 gecti iken test oldu; not ve kapi_duzeltme güncellendi. baslangic_nakit 43000 aynı kaldı.",
+   "gerekce": "Plan §8: hukukçu 40000 + aylık sabit gider; 2-2,5 ay sonra toplam 50000 tavanı aşabilir, hesap yapılmadı."
+  },
+  {
+   "itiraz": "zabuno-b: kart ilk zincir tahsilatını baz senaryoda 6. ay sayıyor; plan §8 3. ay diyor; 60 gün ücretsiz pilot ve 6-10 hafta karar süresi var.",
+   "karar": "kismen",
+   "degisiklik": "Plan kadar iyimser değil diye kart 3. aya çekilmedi; baz ödeme 1 iken 0 oldu (finans itirazı).",
+   "gerekce": "Kart planın 3. ayından zaten ayrışıyor; pilot ve karar süresi baz 6. ay faturasını da güvencesiz bırakıyor."
+  },
+  {
+   "itiraz": "zabuno-c: kart hizmeti Claude planında olmayan biçim olarak anıyor; fiyat, alıcı ve kanal kaynakta yok, yalnız GPT hipotezi var.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "GPT dosyaları sınırlı kit, uyarlama veya hizmeti öneriyor; kart planda olmadığını ve fiyatın varsayım olduğunu açıkça yazıyor. Talep rakamı finans itirazında ele alındı."
+  },
+  {
+   "itiraz": "zabuno-a, G7 test: plan §8 aylık araç ve muhasebe gideri ve hukukçu 50000 TL tavanı aşabilir; hesap yeniden yapılmalı.",
+   "karar": "kabul",
+   "degisiklik": "G7 durum gecti iken test oldu; kapi_duzeltme G7 eklendi. Zabuno-b G7 de aynı gerekçeyle gecti iken test oldu.",
+   "gerekce": "Hukukçu 40000 TL + aylık sabit gider ilk tahsilata kadar tavana yaklaşıyor ya da aşıyor; temkinli durum test."
+  },
+  {
+   "itiraz": "zabuno-b, G8 kaldi: çeviri, POS ve şube fiyat istisnası her zincirde özel geliştirme doğurur; kapsam sınırı yazılı değil.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Plan §7.3 çeviri ve POS yokluğunu teklifte açıkça yazıyor; şube istisnası ortak ürün özelliği, her satışta özel geliştirme kanıtı yok. test kalır."
+  },
+  {
+   "itiraz": "zabuno-c, G2 test: canlı restoran verisine bağlanma KVKK işleme doğurur; ücretli uyarlama kişisel veri kapsar.",
+   "karar": "kabul",
+   "degisiklik": "G2 gecti iken test oldu; not ve kapi_duzeltme güncellendi; etiketler.regulasyon yok iken KVKK oldu.",
+   "gerekce": "Teklif modülü müşterinin kendi verisine bağlamayı içeriyor; anonim demo yeterli ama ücretli iş veri işleme sözleşmesi ister."
+  },
+  {
+   "itiraz": "zabuno-a, baz müşteri/ödeme adedi: kartta 18 ve 45, sence 6 ve 12; ödeyen 0, dönüşüm %15 kanıtsız, ilk ay ücretsiz.",
+   "karar": "kismen",
+   "degisiklik": "alti_ay_musteri baz 18 iken 12; odeme_adedi baz 45 iken 28; tahsilat baz 18720 iken 11648; dayanak güncellendi.",
+   "gerekce": "Dönüşüm kanıtsız ve ödemeler 2-3. aydan başlıyor; ancak plan ayda 5 ödeyen varsayıyor, 6/12 kadar düşük kaynak desteği yok."
+  },
+  {
+   "itiraz": "zabuno-a, donusum_orani yuksek: kartta 0,15, sence 0,08; plan kaydı ücretliye çevirme oranı kanıtsız.",
+   "karar": "kabul",
+   "degisiklik": "donusum_orani yuksek 0,15 iken 0,08 oldu.",
+   "gerekce": "Oran yalnız plan varsayımı (§6, C.5); ödeyen müşteri 0, kanıt yok; temkinli düşük değer."
+  },
+  {
+   "itiraz": "zabuno-a, ilk_tahsilat_gun: kartta 21-45, sence 45-75; ilk ay ücretsiz olduğundan havale geç gelir.",
+   "karar": "kabul",
+   "degisiklik": "ilk_tahsilat_gun 21-45 iken 45-75 oldu.",
+   "gerekce": "Plan §7.2: ilk ay ücretsiz, 2. aydan 499 TL havale; kurulum ve hazırlık da süreyi uzatır."
+  },
+  {
+   "itiraz": "zabuno-b, baz ödeme adedi: kartta 1, sence 0; 60 gün ücretsiz pilot, 6-10 hafta karar, tek aday; ilk fatura 6. aydan sonraya kayar.",
+   "karar": "kabul",
+   "degisiklik": "alti_ay_odeme_adedi baz 1 iken 0; tahsilat baz 5311 iken 0; musteri baz 1 iken 0; dayanak güncellendi.",
+   "gerekce": "Yazılı onay yok; pilot 60 gün ve karar 6-10 hafta; kaynak 6. ay faturasını desteklemiyor, temkinli düşük gelir."
+  },
+  {
+   "itiraz": "zabuno-b, donusum_orani yuksek: kartta 0,3, sence 0,1; tek zincirle ve yazılı onay olmadan kanıtsız iyimser.",
+   "karar": "kabul",
+   "degisiklik": "donusum_orani yuksek 0,3 iken 0,1 oldu.",
+   "gerekce": "Tek aday, yazılı pilot onayı yok; 0,3 için kaynak yok."
+  },
+  {
+   "itiraz": "zabuno-c, baz tahsilat: kartta 30000, sence 0; 20 teklifte %1-5 dönüşümle beklenen satış 0,2-1; fiyat ve talep kanıtsız.",
+   "karar": "kabul",
+   "degisiklik": "tahsilat baz 30000 iken 0; odeme ve musteri baz 1 iken 0; iyi 60000/2 iken 30000/1; dayanak güncellendi.",
+   "gerekce": "Fiyat varsayım, GPT kanal talebini doğrulamadı; beklenen satış 1'in altında, temkinli düşük gelir."
+  }
+ ]
+}

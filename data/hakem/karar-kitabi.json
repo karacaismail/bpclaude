@@ -1,0 +1,47 @@
+{
+ "slug": "karar-kitabi",
+ "kararlar": [
+  {
+   "itiraz": "Kart A baz senaryosu 2 pilota dayaniyor; kaynak yillik 2-3 atolye diyor, donusum kanitsiz, odeyen 0",
+   "karar": "kismen",
+   "degisiklik": "finans.dayanak: baz 2 pilot aynen kaldi, plandaki 10:1 donusumle celiskisi ve kanitsizlik yazildi; ilk_tahsilat itirazi ayri karara baglandi",
+   "gerekce": "Plan 8 baz akisi ay 4 ve 6 pilotlarini acikca verir; sayilar kaynakla uyumlu ama donusum kanitsiz, dayanakta belirtildi."
+  },
+  {
+   "itiraz": "Kart B 6 aylik baz gelir arama gecikmesini kismen kismis; 60 paket satisi kaynakla desteklenmiyor",
+   "karar": "kabul",
+   "degisiklik": "alti_ay_tahsilat baz 17800 -> 8476; odeme adedi baz 69 -> 25; musteri baz 55 -> 22; iyi 31600 -> 25400; dayanak guncellendi",
+   "gerekce": "Plan siralamayi 9. ayda varsayar; ay 3-6 plan rampasi arama gerektirir. Baz arama disi kanallara indirildi, plan rampasi iyi senaryo oldu."
+  },
+  {
+   "itiraz": "Kart C kaynakta ayri secenek degil, hak ve rakip fiyati teyitsiz; 6 kit ve 5 deneme isimsiz",
+   "karar": "kismen",
+   "degisiklik": "Secenek korundu; alti_ay_tahsilat baz 8300 -> 1666, iyi 22500 -> 8300; odeme adedi baz 7 -> 2; musteri baz 6 -> 2; ilk_tahsilat min 45 -> 60",
+   "gerekce": "GPT dosyasi ayri bir ilk urun onerir, secenek gecerli; ancak satis adedi vermez, 60. gunden once odeme gerceklesmez. Gelir temkinli dusuruldu."
+  },
+  {
+   "itiraz": "karar-kitabi-b G5 test olmali: arama hacmi olculmedi, siralama 9. ayda",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G5 yalniz adli kanal, ilk adim ve yedek ister; plan arama sorgularini, 380 sayfayi ve LinkedIn yedegini adlandirir. Hacim kapi degil puan konusudur."
+  },
+  {
+   "itiraz": "karar-kitabi-a ilk_tahsilat_gun.min 45 degil 75 olmali; temizlik 4-6 hafta, onay 2-4 hafta",
+   "karar": "kabul",
+   "degisiklik": "ilk_tahsilat_gun.min 45 -> 75; max 120 -> 150; dayanak guncellendi",
+   "gerekce": "Plan hak teyidi bitmeden teklif yasaklar; 4-6 hafta + on oturum ve avans 45 gunu asar. Plan kotumserde satis 5. aya kayar."
+  },
+  {
+   "itiraz": "karar-kitabi-b alti_ay_odeme_adedi.baz 69 degil 25 olmali",
+   "karar": "kabul",
+   "degisiklik": "alti_ay_odeme_adedi baz 69 -> 25 (tahsilat baz 8476, musteri baz 22 ile tutarli)",
+   "gerekce": "Siralama 9. ayda varsayildigi icin 6 ayda arama kaynakli satis desteklenmiyor; 25 adet portfoy, LinkedIn ve kurucu fiyati ile makul."
+  },
+  {
+   "itiraz": "karar-kitabi-c alti_ay_tahsilat_tl.baz 8300 degil 0-3000 olmali",
+   "karar": "kabul",
+   "degisiklik": "alti_ay_tahsilat_tl baz 8300 -> 1666 (2 kit); iyi 22500 -> 8300; odeme adedi ve musteri baz 2",
+   "gerekce": "Kaynakta satis rakami, isim listesi ve odeme hesabi yok; ucretsiz yapay zeka farki kanitlanmadi. Itirazin ust bandi kabul edildi."
+  }
+ ]
+}

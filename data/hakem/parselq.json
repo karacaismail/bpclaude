@@ -1,0 +1,65 @@
+{
+  "slug": "parselq",
+  "kararlar": [
+    {
+      "itiraz": "A kanıt notu: rakip fiyat listesi ödeme alışkanlığı sayılmış; en çok kanıt 1.",
+      "karar": "kabul",
+      "degisiklik": "A kanit_notlari: 'alıcı ödeme alışkanlığı bu kaynaklara dayanır' ifadesi, fiyat listelerinin E1 dış kaynak sinyali olduğu ve davranışı kanıtlamadığı şekline çevrildi.",
+      "gerekce": "Rakip fiyat listesi alıcı davranışı değil; ödeyen müşteri 0 ve kanıt ölçeği E1 üstüne çıkamaz."
+    },
+    {
+      "itiraz": "A G6 notu 120 saat beklenen ile plandaki ~23,5 günlük liste çelişiyor.",
+      "karar": "kabul",
+      "degisiklik": "A G6 notu: beklenen 170, üst sınır 240 saat ve D.8 listesine atıf yazıldı; durum test kaldı.",
+      "gerekce": "Derinlik D.8 L1 toplamı ~23,5 gün; rapor kapsamı ~21,5 gün; eski not bunu yansıtmıyordu."
+    },
+    {
+      "itiraz": "B abonelik ve %6 kayıp dayanaksız varsayım; ödeyen 0.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Kart %6'yı plan bölüm 6'ya atıfla açıkça varsayım olarak etiketliyor ve baz tahmin ayrıca düşürüldü; ayrı düzeltme gerekmiyor."
+    },
+    {
+      "itiraz": "B G6 test olmalı: dilim yetişmedi, ürün %15-20, satış döngüsü ölçülmedi.",
+      "karar": "kabul",
+      "degisiklik": "B G6: gecti iken test oldu; not ve kapi_duzeltme güncellendi.",
+      "gerekce": "G6 gecti için tahmin ve satış döngüsü gerçekçi olmalı; döngü ölçülmedi, önceki dilim yetişmedi. Temkinli seçim test."
+    },
+    {
+      "itiraz": "A G1 test olmalı: harita ve deprem verisi lisans ve atıf şartları doğrulanmadı.",
+      "karar": "ret",
+      "degisiklik": "",
+      "gerekce": "Plan OSM için ODbL atıf şartını, AFAD için açık veri ve atıf şartını yazıyor; her rapor sayfasında atıf öngörülüyor. Satışı engelleyen şart yok."
+    },
+    {
+      "itiraz": "A kalan efor beklenen 120 yerine 150-190 olmalı.",
+      "karar": "kismen",
+      "degisiklik": "A kalan_efor_saat: 70/120/190 iken 110/170/240; ilk_tahsilat_gun 18-60 iken 35-100; dayanak güncellendi.",
+      "gerekce": "D.8 rapor kapsamı ~21,5 gün x 8 saat = 172 saat; tampon 6-9 gün üst sınırı verir. 150 alt kalır, 170 seçildi."
+    },
+    {
+      "itiraz": "A ödeme adedi baz 60 yerine 10-25 olmalı.",
+      "karar": "kismen",
+      "degisiklik": "A baz ödeme 60 iken 30 (müşteri 52 iken 26, tahsilat 24.960 iken 12.480); iyi 150 iken 105; dayanak güncellendi.",
+      "gerekce": "Plan rampası 6 ayda 105; gecikme ve ölçülmemiş trafik için 3 ay kaydırınca 30. 10-25 aralığının kaynak dayanağı yok."
+    },
+    {
+      "itiraz": "B ilk tahsilat min 25 yerine 45 olmalı.",
+      "karar": "kabul",
+      "degisiklik": "B ilk_tahsilat_gun: 25-65 iken 45-80; baz ödeme 43 iken 38, müşteri 16 iken 14, tahsilat 14.276 iken 12.616; dayanak güncellendi.",
+      "gerekce": "Kartın kendi dayanağı ilk ödemeyi 5. haftaya koyuyordu; kurulum, 7 günlük deneme ve hesap açılışı 45 günü gerektirir."
+    },
+    {
+      "itiraz": "B müşteri baz 16 yerine 3-8 olmalı.",
+      "karar": "kismen",
+      "degisiklik": "B alti_ay_musteri baz 16 iken 14; ödeme adedi ve tahsilat ilk tahsilat gecikmesine göre düşürüldü.",
+      "gerekce": "Plan ayda ~4 ofis hedefler; 3-8 aralığının kaynağı yok. Gecikme ve ölçülmemiş dönüşüm için hafif düşürüldü."
+    },
+    {
+      "itiraz": "C ödeme adedi baz 6 yerine 0-2 olmalı.",
+      "karar": "kabul",
+      "degisiklik": "C baz ödeme 6 iken 2 (müşteri 3 iken 1, tahsilat 24.000 iken 8.000); iyi 15 iken 6, tahsilat 60.000 iken 24.000; dayanak güncellendi.",
+      "gerekce": "İsimli ofis ve yetkili pilot yok; 3 ofis x 2 teslim GPT'nin 90 günlük hedefi, baz değil. Temkinli: düşük gelir."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+ "slug": "woocommnts",
+ "kararlar": [
+  {
+   "itiraz": "Kart A'da iskelet hazır izlenimi var; taksit alan modeli ve kancalar sıfır, okuma zinciri boş, bağımlılıklar kurulu değil.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart bu eksiklikleri zaten 'yok' listesinde açıkça yazıyor; hazır iddiası yok."
+  },
+  {
+   "itiraz": "Plan %45 tamam diyor; GPT kaynağı tam zincirin olmadığını söylüyor.",
+   "karar": "kismen",
+   "degisiklik": "ozet: yaklaşık %45 tamam; oldu: plana göre yaklaşık %45 tamam, çalıştırılmış test yok.",
+   "gerekce": "%45 plan beyanı, GPT tam zincir yok diyor; kart iki görüşü de taşıyor, ifade plana atfedildi."
+  },
+  {
+   "itiraz": "Kart A'da rakip zayıf deniyor; PayTR aracı 3.000+ kurulum ve ücretsiz.",
+   "karar": "kismen",
+   "degisiklik": "analist_gorusu: rakip zayıf ifadesi kaldırıldı; farklar ve PayTR aracının gücü yazıldı.",
+   "gerekce": "Kaynak PayTR aracının tek geçide bağlı olduğunu ve 3.000+ kurulumlu olduğunu gösteriyor."
+  },
+  {
+   "itiraz": "Kart B'de kurucunun ilişkisi ajans kanalını taşıyor deniyor; kaynakta ajans listesi ve görüşme yok.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart bunu iddia etmiyor; kanıt notu ajans listesi, görüşme ve ödeme olmadığını zaten söylüyor."
+  },
+  {
+   "itiraz": "woocommnts-a G1 gecti erken; bağımlılık lisansları ve kurulu paketler doğrulanmadı, yeşil test yok.",
+   "karar": "kabul",
+   "degisiklik": "woocommnts-a G1: gecti idi, test oldu; not ve kapi_duzeltme güncellendi. Aynı gerekçeyle woocommnts-b G1 de test yapıldı.",
+   "gerekce": "G1 gecti için bağımlılık lisanslarının satışa uygunluğu gerekir; vendor kurulu değil, lisanslar doğrulanmadı."
+  },
+  {
+   "itiraz": "woocommnts-a alti_ay_tahsilat_tl.baz 26.840 TL fazla, bence 8-10 bin; 4 aylık satış iyimser.",
+   "karar": "kismen",
+   "degisiklik": "baz 26.840 idi, 23.860 oldu; ödeme adedi 16 idi, 14 oldu; müşteri 14; dayanak güncellendi.",
+   "gerekce": "Plan 6 ayda 30 Pro diyor, kart zaten yarısını aldı; ilk gelir plana göre 3. ay, satış süresi kısaldı. 8-10 bin kaynakla desteklenmiyor."
+  },
+  {
+   "itiraz": "woocommnts-a ilk_tahsilat_gun 45-90 değil 90-150 olmalı; kod, inceleme ve lisans akışı yok.",
+   "karar": "kismen",
+   "degisiklik": "ilk_tahsilat_gun: 45-90 idi, 60-120 oldu.",
+   "gerekce": "Plan ilk geliri 3. ayda, Pro lisansı 2-3. ayda veriyor; kalan 3-5 hafta ve inceleme 1-3 hafta eklenince 45 gün erken, 150 kaynaksız."
+  },
+  {
+   "itiraz": "woocommnts-b alti_ay_tahsilat_tl.baz 8.970 TL fazla, bence 0-3.000 TL; ajans listesi ve pilot yok.",
+   "karar": "kabul",
+   "degisiklik": "baz 8.970 idi, 2.990 oldu; iyi 20.930 idi, 8.970 oldu; ödeme adedi ve müşteri baz 1, iyi 3; dayanak güncellendi.",
+   "gerekce": "Kaynak oranları (%20 yanıt, %25 lisans) 20 temasta yaklaşık 1 lisans verir; 3 lisans kartın kendi hesabıyla da tutmuyordu."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "slug": "signator",
+ "secenekler": {
+  "signator-a": {
+   "satis_basina_kurucu_saati": 4,
+   "teslim_saat_odeme_basina": 5,
+   "musteri_basina_aylik_destek_dk": 45,
+   "not": "Varsayım: ilk müşteride birlikte kurulum 3 saat, elle müşteri alanı açma 2 saat; karttaki 60 dk destekten elle alan yönetimi ayrıldı. Satış 4 saat: soğuk e-posta yanıtı, demo, teklif."
+  },
+  "signator-b": {
+   "satis_basina_kurucu_saati": 3,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Kopyası satılan self-servis yazılım: müşteriye özel iş yok, teslim 0. Satış saati arama içeriği, 5 ilişkilik pilot ve teklif yazışması; 15 dk destek aynen korundu."
+  },
+  "signator-c": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 8,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "Kart: ilk örnek kurulum 6-12 saat; 5 kişilik CSV, imza, logo, Gmail ve Outlook rehberi, istemci kontrolü, revizyon için 8 saat. Satış 2 saat, destek 20 dk sonrası sorular."
+  }
+ }
+}

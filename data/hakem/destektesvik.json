@@ -1,0 +1,65 @@
+{
+ "slug": "destektesvik",
+ "kararlar": [
+  {
+   "itiraz": "Kart A degisken maliyet 1.600 TL; plan b.6 2.090 TL (analist saati atlanmis)",
+   "karar": "kabul",
+   "degisiklik": "A degisken_maliyet_tl 1600 -> 2090; dayanak guncellendi",
+   "gerekce": "Plan bolum 6 rapor maliyetini uzman 1.500 + analist 500 + komisyon 90 = 2.090 TL yazar."
+  },
+  {
+   "itiraz": "Kart B baz 3 abone-ay tahsilat; plan ilk danisman odemesini 7. aya koyuyor",
+   "karar": "kabul",
+   "degisiklik": "B alti_ay_tahsilat/odeme/musteri baz 8970/3/2 -> 0/0/0; dayanak guncellendi",
+   "gerekce": "Plan bolum 8 danisman gelirini 7. aydan baslatir; 6 ay icinde baz odeme yok. Iyi senaryo korundu."
+  },
+  {
+   "itiraz": "Kart A kanal turu arama; program sayfalari ve on kontrol yok, birincil kanal fiilen TTO bulteni ve tanidik",
+   "karar": "kabul",
+   "degisiklik": "A etiketler.kanal_turu arama -> ortak; kanal_birincil TTO ve teknopark bultenleri olarak yeniden yazildi",
+   "gerekce": "SSR program sayfalari ve arama hacmi planda yok; kanal fiilen TTO ve teknopark bultenidir."
+  },
+  {
+   "itiraz": "A G5 test: hangi TTO/teknopark/program sayfasi adlandirilmadi, program sayfalari yok",
+   "karar": "kabul",
+   "degisiklik": "A G5 gecti -> test; not ve kapi_duzeltme guncellendi",
+   "gerekce": "Birincil kanalin yarisi (sayfalar) yok, hedef kurum secilmedi, ilk adim kanaldan gecmiyor; temkinli olarak test."
+  },
+  {
+   "itiraz": "B G5 test: hangi mali musavir odasi adlandirilmadi, webinar basvurusu yapilmadi",
+   "karar": "ret",
+   "degisiklik": "G5 gecti kaldi; kanal_birincil ve ilk_adim metinleri odalari adiyla yazacak sekilde acildi",
+   "gerekce": "Kaynaklar İSMMMO, IZSMMMO ve TESMER'i adlandirir; kanal ve ilk adim somut, basvurunun yapilmamasi G5'i dusurmez."
+  },
+  {
+   "itiraz": "A degisken_maliyet_tl 1600, bence 2090 (analist saati ve komisyon dahil)",
+   "karar": "kabul",
+   "degisiklik": "Degisken maliyet 2090 (kart itirazi 1 ile ayni degisiklik)",
+   "gerekce": "Plan bolum 6: 2.090 TL; kart A dayanagina islendi."
+  },
+  {
+   "itiraz": "A alti_ay_odeme_adedi baz 7, bence 2-3; odeyen 0, donusum olculmedi",
+   "karar": "kismen",
+   "degisiklik": "A baz odeme 7 -> 5, tahsilat 20930 -> 14950, musteri 7 -> 5",
+   "gerekce": "Plan baz ay 4-6'da 10 rapor der ama kanitsiz; 2-3 icin kaynak yok. Temkinli ara deger 5 secildi."
+  },
+  {
+   "itiraz": "B donusum_orani 0.2-0.4, bence 0.05-0.15; pilot donusumu hedef ve kanitsiz",
+   "karar": "kabul",
+   "degisiklik": "B donusum_orani 0.2-0.4 -> 0.05-0.15",
+   "gerekce": "Plan pilot kabulunu hedef olarak yazar, odemeye donusum olculmedi; plan rapor donusumu %6, ust sinir temkinli."
+  },
+  {
+   "itiraz": "B alti_ay_tahsilat_tl baz 8970, bence 0; plan ilk danisman odemesini 7. aya koyuyor",
+   "karar": "kabul",
+   "degisiklik": "B baz tahsilat 8970 -> 0 (odeme ve musteri baz 0)",
+   "gerekce": "Plan bolum 8 danisman gelirini 7. aydan baslatir; 6 ay baz 0."
+  },
+  {
+   "itiraz": "C sabit_gider_aylik_tl 3000, bence 6000-8000; altyapi ve uzman gideri A ve B ile ayni",
+   "karar": "kabul",
+   "degisiklik": "C sabit_gider_aylik_tl 3000 -> 6000; dayanak guncellendi",
+   "gerekce": "Plan bolum 8 altyapi 3.000 + AI araclari 3.000 TL/ay verir; pilot ayni urunu kullanir. Uzman gideri degiskendir."
+  }
+ ]
+}

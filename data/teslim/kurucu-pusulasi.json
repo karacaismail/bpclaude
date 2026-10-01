@@ -1,0 +1,23 @@
+{
+ "slug": "kurucu-pusulasi",
+ "secenekler": {
+  "kurucu-pusulasi-a": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Şablon kopyası, müşteriye özel iş yok; satış öz hizmet. 10 dk yalnız satış sonrası destek. Karttaki değerler korundu."
+  },
+  "kurucu-pusulasi-b": {
+   "satis_basina_kurucu_saati": 8,
+   "teslim_saat_odeme_basina": 3,
+   "musteri_basina_aylik_destek_dk": 20,
+   "not": "1 saatlik çevrimiçi atölye artı hazırlık 1 saat ve ekip kopyası düzeni 1 saat = 3 saat; karttaki 60 dk destek atölyeyi içeriyordu, 20 dk yalnız destek kaldı. Varsayım."
+  },
+  "kurucu-pusulasi-c": {
+   "satis_basina_kurucu_saati": 0,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 0,
+   "not": "Ücretsiz ortaklık sitesi, müşteri yok; teslim emeği yok, içerik güncelleme kalan eforda. Satış, teslim ve destek 0."
+  }
+ }
+}

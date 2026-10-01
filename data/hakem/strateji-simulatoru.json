@@ -1,0 +1,41 @@
+{
+ "slug": "strateji-simulatoru",
+ "kararlar": [
+  {
+   "itiraz": "A kalan efor 65 saat düşük: derinlik D.8 L1 çekirdeği 75 saat, white-label ayrı 3 ajan günü.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "D.8 madde 14 (white-label) 75 saatin içinde; A'nın ihtiyaç duymadığı PDF, ödeme, satış sayfası çıkınca madde toplamı yaklaşık 41 saat; 65 zaten temkinli."
+  },
+  {
+   "itiraz": "A teklifinde kohort karşılaştırma ve jüri modu var; derinlik A.4'e göre yok ve L3, ilk kapsamda sunulamaz.",
+   "karar": "kismen",
+   "degisiklik": "A ilk_kapsam: kohort panosu ve jüri modu kapsam dışı (L2) eklendi; G8 notu bu yönde güncellendi, durum test kaldı.",
+   "gerekce": "Kart teklifi yalnız toplu CSV sayıyor; ancak plan bu modülleri 24.900 TL pakete yazıyor ve D.2'de yok görünüyor, sınır yazılmalıydı."
+  },
+  {
+   "itiraz": "B kalan efor 70 saat hafif: derinlik C.3 yalnız ürün için 83 saat yazıyor.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "C.3'ün 83 saati 13 haftalık tüm ürün işi (white-label dahil); B kapsamının D.8 kalemleri yaklaşık 64 saat, ilk 6 haftada 50 saat; 70 yeterince temkinli."
+  },
+  {
+   "itiraz": "A 6 ay tahsilat baz 24.900 ve 1 ödeme: pilot 3 ay ücretsiz, ilk tahsilat en geç 240 gün; baz 0-1 olmalı.",
+   "karar": "kismen",
+   "degisiklik": "A alti_ay_tahsilat iyi 59.700 -> 44.700 (1 kurum + 2 danışman); baz 1 ödeme ve kötü 0 aynı; dayanak güncellendi.",
+   "gerekce": "Plan baz senaryosu ilk sözleşmeyi 4. ayda, ikinciyi 8. ayda veriyor; baz 1 desteklenir, iyide 2 kurum 6 aya sığmaz."
+  },
+  {
+   "itiraz": "B ödeme adedi baz 33, iyi 80: ödeyen yok, trafik ve dönüşüm kanıtsız; baz 10-15 rapor olmalı.",
+   "karar": "kabul",
+   "degisiklik": "B ödeme adedi ve müşteri baz 33 -> 15, iyi 80 -> 33; tahsilat baz 11.500 -> 4.500, iyi 29.900 -> 11.500; dayanak güncellendi.",
+   "gerekce": "Plan rampası ve 1.500 ziyaret hedefi varsayım; ödeyen yok, planın kendisi B2C'yi en zayıf kısıt sayıyor; temkinli düşük gelir seçildi."
+  },
+  {
+   "itiraz": "C ödeme adedi baz 6: müşteri listesi belgesiz; planda ilk 6 haftada 2 proje geçiyor; baz 2-3 paket olmalı.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Plan 6 haftada 2 proje ve persona ölçümü ayda 2 paket diyor; 6 ayda baz 6 bunun yarısı kadar, zaten temkinli. Liste eksikliği G4 testinde kayıtlı."
+  }
+ ]
+}

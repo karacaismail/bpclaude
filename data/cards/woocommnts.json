@@ -1,0 +1,341 @@
+{
+  "slug": "woocommnts",
+  "baslik": "WooCommerce yorum ve taksit eklentisi (WooCommnts)",
+  "ozet": "WooCommerce yorum slider iskeleti (plana göre yaklaşık %45 tamam, 9 birim test, çalıştırılmış test yok) Türk mağazaları için geçitten bağımsız taksit tablosu ve kapıda ödeme kuralı eklentisine çevrilecek. Ödeyen müşteri yok, yayın yok.",
+  "bugun": {
+    "var": [
+      "DDD katmanlı PHP iskeleti: alan modelleri, DI konteyneri, REST ve kısa kod altyapısı",
+      "Pest ile 9 birim test, PHPStan en yüksek seviye",
+      "Action Scheduler servisi ve yorum içe aktarıcı iskeleti (içe aktarıcı simülasyon)"
+    ],
+    "yok": [
+      "Taksit ve kapıda ödeme alan modeli ile WooCommerce kancaları",
+      "readme, çeviri, blok, derleme çıktısı ve wordpress.org gönderimi",
+      "Kurulu bağımlılıklar ve çalıştırılmış test paketi",
+      "Lisans anahtarı ve ödeme akışı; ücretsiz sürüm bile yayında değil",
+      "Yorum okuma zinciri tam değil: slider sorgusu boş dönüyor"
+    ],
+    "odeyen_musteri": 0
+  },
+  "iki_calisma": {
+    "claude": "Yorum slider ürünü doygun kategori (gelir tavanı yılda yaklaşık 1.000 USD), ticari sunum yok. İskeleti taksit ve kapıda ödeme kuralı eklentisine taşı: ücretsiz çekirdek, Pro yıllık 1.490-2.990 TL, wordpress.org ve ajans kanalı.",
+    "gpt": "Taksit yok. Ürün, izinli mevcut yorumları doğru ürüne eşleyen göç aracı: kaynak kimliği eşleme, tekrar kontrolü, geri alma. Ücretli kısım tek göç hizmeti 3.000-8.000 TL; ücretsiz doğru/hatalı örnek paketi kanal.",
+    "ayrisma": "Claude yeni bir niş ürün (taksit kuralları) kurup lisansla satıyor; GPT mevcut yorum kodunu göç hizmetine çeviriyor. GPT kaynakta tam zincirin olmadığını vurguluyor, Claude iskeleti hazır sayıyor.",
+    "birlesik": "Hiçbir çalışmada ödeyen müşteri veya yayın yok. En gerçekçi yol taksit eklentisi; göç hizmeti ikinci, daha zayıf seçenek. İlk iş: yeşil test ve wordpress.org gönderimi."
+  },
+  "analist_gorusu": "Taksit ve kapıda ödeme eklentisi en gerçekçi yol: kapıda ödeme kural motoru ve çoklu geçit farkı var, ama ücretsiz PayTR aracı 3.000+ kurulumlu. İlk tahsilat en az 2-4 ay uzakta; 3.000 USD için yaklaşık 97 Pro satışı gerekir.",
+  "secenekler": [
+    {
+      "id": "woocommnts-a",
+      "ad": "Taksit ve kapıda ödeme eklentisi: ücretsiz çekirdek + Pro",
+      "tur": "eklenti",
+      "musteri": "Küçük Türk WooCommerce mağaza sahibi (ayda 50-500 sipariş, kapıda ödeme sunan), PayTR dışı ya da çok geçitli",
+      "is": "Ürün sayfasında banka bazlı taksit tablosu göstermek, kategoriye göre azami taksiti ve kapıda ödeme kuralını yönetmek",
+      "tetikleyici": "Kapıda ödeme iadesinin yaşandığı hafta, kampanya dönemi (11.11, Black Friday) ve blok ödeme sayfasına geçiş",
+      "teklif": "Ücretsiz çekirdek (taksit tablosu, 1 kapıda ödeme kuralı); Pro: sınırsız kural, uzaktan oran güncelleme, çok geçit eşleme",
+      "fiyat": "Pro tek site 1.490 TL/yıl + KDV; ajans 10 site 2.990 TL/yıl; 14 gün koşulsuz iade",
+      "kanal_birincil": "wordpress.org eklenti dizini ('taksit', 'kapıda ödeme' aramaları) ve eklenti içi Pro kartı",
+      "kanal_yedek": "Kurucunun e-ticaret programı ve diğer ürününün kullanıcıları; WooCommerce Türkiye toplulukları; rehber yazıları",
+      "ilk_adim": "Bağımlılıkları kur, testleri yeşile çek, wordpress.org'da 'taksit' rakip kurulum doğrulamasını yap, ilk 5 pilot mağazayı davet et",
+      "ilk_kapsam": "CSV ile banka oran tablosu, ürün sayfası tablosu (kısa kod ve blok), kategori azami taksit, kapıda ödeme tutar/il kuralı ve ek ücret satırı, 320 px tablo, lisans anahtarı",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod ve marka kurucuya ait; bağımlılıklar kurulu değil, lisansları (GPL uyumu) ve yeşil test doğrulanmadı; plan GPL-2.0+ öngörüyor"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Taksit sınırları ürün grubuna göre değişiyor, güncel kural doğrulanmadı; oranlar mağaza girdisi, KVKK etkisi düşük"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Shopier (TL) ve yasal satıcı (USD) yolu belli; hesap açılmadı, test ödemesi yapılmadı"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net (kapıda ödemeli Woo mağazası); 20 kişilik isim listesi yok, 5 pilot yalnız planda"
+        },
+        "G5": {
+          "durum": "gecti",
+          "not": "Birincil kanal wordpress.org arama ve eklenti içi kart; yedek: topluluk, rehber yazısı, ajans e-postası"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan iş yaklaşık 60-100 saat (3-5 hafta); wordpress.org inceleme 1-3 hafta, satış döngüsü ölçülmedi"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "İlk tahsilata kadar alan adı ve muhasebe payı yaklaşık 2.500 TL, tavanın çok altında"
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Herkes aynı eklentiyi alır; kurallar ayar sayfasından, özel geliştirme yok"
+        }
+      },
+      "kapi_duzeltme": "Test kapıları: bağımlılık lisans taraması ve yeşil test, taksit sınırı için mali müşavir/hukukçu okuması, Shopier hesabı ve test ödemesi, 20 hedef mağaza ve ajans listesi, 3. hafta süre ölçümü.",
+      "finans": {
+        "satis_tipi": "yıllık peşin",
+        "net_fiyat_tl": 1490,
+        "degisken_maliyet_tl": 55,
+        "sabit_gider_aylik_tl": 100,
+        "baslangic_nakit_tl": 2500,
+        "kalan_efor_saat": {
+          "min": 40,
+          "beklenen": 70,
+          "max": 110
+        },
+        "ilk_tahsilat_gun": {
+          "min": 60,
+          "max": 120
+        },
+        "satis_basina_kurucu_saati": 2,
+        "musteri_basina_aylik_destek_dk": 10,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 23860,
+          "iyi": 65620
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 14,
+          "iyi": 38
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 14,
+          "iyi": 38
+        },
+        "donusum_orani": {
+          "dusuk": 0.02,
+          "yuksek": 0.05
+        },
+        "dayanak": "Plan: Pro 1.490/2.990 TL; Pro hafta 9'da açılır, plana göre ilk gelir 3. ay, 6 ayın yaklaşık 3-4 ayı satış. Baz: 12 tek site + 2 ajans = 23.860 TL (planın 6 ay 30 Pro hedefi gecikmeyle yarıya indirildi). İyi: 32 + 6 = 65.620 TL. Kötü: wordpress.org reddi veya geç yayın, 0. Komisyon yaklaşık 55 TL."
+      },
+      "deney": {
+        "varsayim": "Kapıda ödeme ve taksit için geçitten bağımsız eklentiye mağaza sahibi para öder",
+        "yontem": "Taksit tablosu ve kapıda ödeme kuralı örnek ekranlarıyla 10 hedef mağaza ve 5 ajansa yaz; 5 pilota ücretsiz Pro ver, ön ödemeli yıllık 1.490 TL teklif et",
+        "sure_gun": 21,
+        "maliyet_saat": 15,
+        "maliyet_tl": 0,
+        "basari_olcutu": "En az 3 mağaza veya ajans yazılı niyet verir, en az 1'i ön ödeme yapar",
+        "birakma_olcutu": "21 günde 0 yazılı niyet ve ön ödeme yok",
+        "sonraki_dilim": "MVP'yi 10 günde yapıp wordpress.org'a gönder, Pro lisansı hafta 9'da aç"
+      },
+      "etiketler": {
+        "segment": "Türk WooCommerce mağazaları ve ajansları",
+        "kanal_turu": "pazar yeri",
+        "teknoloji": "PHP 8.2, WooCommerce, REST, Pest",
+        "regulasyon": "mevzuata bağlı"
+      },
+      "kanit_notlari": "İş planı bölüm 5-6: Pro 1.490/2.990 TL, marj %86, yenileme %55 (varsayım). Derinlik belgesi A.2/A.7: wordpress.org taksit aramasında 6 sonuç, en büyüğü PayTR'ye bağlı, 3.000+ kurulum, son 3 WP sürümüyle test uyarısı. Ödeyen müşteri 0; tüm rakamlar varsayım. Slider ürünü plan tarafından bırakıldı."
+    },
+    {
+      "id": "woocommnts-b",
+      "ad": "Ajans paketi: 10 site lisanslı taksit ve kapıda ödeme eklentisi",
+      "tur": "eklenti",
+      "musteri": "10-30 WooCommerce mağazası kuran Türk ajansı veya serbest geliştirici",
+      "is": "Her müşteri mağazasında aynı, test edilmiş taksit tablosu ve kapıda ödeme kuralını kurmak; geçit değişince yeniden yazmamak",
+      "tetikleyici": "Yeni mağaza kurulumu, müşterinin blok ödeme sayfasına geçişi, bir müşteride yanlış taksit gösterimi",
+      "teklif": "Pro özellikleri 10 siteye tek lisansla, öncelikli destek, CSV ile mağazadan mağazaya oran kopyalama, ilk mağazada birlikte kurulum",
+      "fiyat": "2.990 TL/yıl + KDV (10 site); 14 gün koşulsuz iade; havale veya iyzico",
+      "kanal_birincil": "Kurucunun ajanslara doğrudan e-postası ve LinkedIn mesajı (20 Türk WooCommerce ajansı listesi)",
+      "kanal_yedek": "WordPress Türkiye toplulukları, Türkçe WordPress blogları, wordpress.org eklenti sayfası",
+      "ilk_adim": "20 ajansı ve serbest geliştiriciyi isimle listele; 10'una 15 dakikalık geri bildirim karşılığı Pro lisans teklifi gönder",
+      "ilk_kapsam": "Seçenek A'nın MVP'si + lisans anahtarı + ajans paketi (10 site) ve ilk mağazada birlikte kurulum; çoklu geçit eşleme yol haritasında",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod ve marka kurucuya ait; bağımlılıklar kurulu değil, lisans uyumu doğrulanmadı; GPL-2.0+ ile Pro kod da açık, gelir lisans, güncelleme ve destekten"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Taksit sınırı kuralları doğrulanmadı; ajans müşteri adına kurduğu için sorumluluk metni gerekli"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve iyzico ile fatura yolu belli; hesap ve e-Arşiv düzeni açılmadı"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi net (ajans); 20 kişilik isim listesi henüz çıkarılmadı"
+        },
+        "G5": {
+          "durum": "test",
+          "not": "Kanal e-posta ve LinkedIn; hedef ajanslar adlandırılmadı"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Kalan efor 60-120 saat; ajans önce 1 mağazada dener, ilk tahsilat pilottan sonra, 2-4 ay"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Başlangıç nakdi yaklaşık 2.500 TL; tavanın çok altında"
+        },
+        "G8": {
+          "durum": "gecti",
+          "not": "Sabit paket: aynı eklenti, 10 site, aynı destek; özel geliştirme sunulmuyor"
+        }
+      },
+      "kapi_duzeltme": "Bağımlılık lisans taraması yap, ajans listesini isimle çıkar, hukukçu/mali müşavir teyidini al, ilk fatura akışını dene; 1 ajansta pilot bitince ilk tahsilatı al.",
+      "finans": {
+        "satis_tipi": "yıllık peşin",
+        "net_fiyat_tl": 2990,
+        "degisken_maliyet_tl": 120,
+        "sabit_gider_aylik_tl": 100,
+        "baslangic_nakit_tl": 2500,
+        "kalan_efor_saat": {
+          "min": 60,
+          "beklenen": 85,
+          "max": 120
+        },
+        "ilk_tahsilat_gun": {
+          "min": 60,
+          "max": 120
+        },
+        "satis_basina_kurucu_saati": 6,
+        "musteri_basina_aylik_destek_dk": 30,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 2990,
+          "iyi": 8970
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 1,
+          "iyi": 3
+        },
+        "donusum_orani": {
+          "dusuk": 0.1,
+          "yuksek": 0.25
+        },
+        "dayanak": "Plan: ajans 2.990 TL; kaynakta yalnız 20 ajanslık liste, temas-yanıt %20, yanıt-lisans %25 (varsayım) = 20 temastan yaklaşık 1 lisans; 90 günde 1 ajans lisansı hedefi. Baz: 1 lisans = 2.990 TL. İyi: 3 lisans = 8.970 TL. Kötü: pilot ödemeye dönmez, 0."
+      },
+      "deney": {
+        "varsayim": "Ajans müşteri başına yeniden yazmadan tek lisansla taksit ve kapıda ödeme çözümüne para öder",
+        "yontem": "20 ajansa kısa e-posta ve LinkedIn mesajı; ilgilenenlere 15 dakikalık görüşme, 1 mağazada ücretsiz pilot, ardından 2.990 TL teklif",
+        "sure_gun": 28,
+        "maliyet_saat": 20,
+        "maliyet_tl": 0,
+        "basari_olcutu": "20 temastan 4 yanıt, 2 pilot ve en az 1 yazılı satın alma niyeti",
+        "birakma_olcutu": "28 günde 20 temasa 2'den az yanıt",
+        "sonraki_dilim": "Pilot ajansla ilk mağaza kurulumu ve ücretli lisans, sonra ikinci dalga 10 e-posta"
+      },
+      "etiketler": {
+        "segment": "WooCommerce ajansları ve serbest geliştiriciler",
+        "kanal_turu": "kurucu satışı",
+        "teknoloji": "PHP 8.2, WooCommerce, REST, Pest",
+        "regulasyon": "mevzuata bağlı"
+      },
+      "kanit_notlari": "Derinlik belgesi B.3 Persona 2: 18 müşterili ajans, ajans paketi 2.990 TL, karar süresi 1-2 hafta, bütçe 3.000-6.000 TL (varsayım). A.8: ajansın 10 mağazada yılda 8.000 TL tasarrufu (varsayım). Ajans listesi, görüşme ve ödeme yok; kurucunun programı yalnız mağaza kitlesine yakın."
+    },
+    {
+      "id": "woocommnts-c",
+      "ad": "Yorum göç hizmeti: izinli yorumları doğru ürüne eşleme",
+      "tur": "hizmet",
+      "musteri": "Katalog göçü yapan küçük WooCommerce mağazası veya göçü birçok mağazaya uygulayan ajans",
+      "is": "Mevcut izinli gerçek yorumları doğru ürüne bağlamak, tekrarı ve kaynak tarihi kaybını önlemek",
+      "tetikleyici": "Katalog göçü ya da yorum slider kurulumu sırasında yanlış ürüne yorum, tekrar kayıt veya tarih kaybı",
+      "teklif": "Sabit kapsamlı tek göç: kaynak kimliği eşleme, deneme çalıştırması, tekrar kontrolü, onaylı yayın ve geri alma",
+      "fiyat": "Tek göç 4.000 TL + KDV (aralık 3.000-8.000 TL, mağaza büyüklüğüne göre)",
+      "kanal_birincil": "Ücretsiz herkese açık doğru/tekrar/yanlış ürün örnek paketi (GitHub) ve WooCommerce topluluk yanıtları",
+      "kanal_yedek": "WooCommerce ajanslarına göç teslimi teklifi; kod hazır olursa wordpress.org ücretsiz bağlayıcı",
+      "ilk_adim": "Örnek paketi 16-24 saatte hazırla, 3 mağazadan izinli göç verisi iste, tek göç için fiyat teklifi dene",
+      "ilk_kapsam": "Elle ve betikle yürütülen tek göç: kaynak-ürün eşleme tablosu, tekrar önizlemesi, onay sonrası yayın; araç yalnız teslimi hızlandırır",
+      "kapilar": {
+        "G1": {
+          "durum": "test",
+          "not": "Kod kurucuda ama müşterinin yorum verisi ve yorumcu izni belirsiz; veri hakkı sözleşmeyle çözülmeli"
+        },
+        "G2": {
+          "durum": "test",
+          "not": "Yorum metni ve yorumcu adları kişisel veri; KVKK aydınlatma ve işleme sözleşmesi teyit bekliyor"
+        },
+        "G3": {
+          "durum": "test",
+          "not": "Havale ve fatura yolu belli; hesap ve e-Arşiv düzeni açılmadı"
+        },
+        "G4": {
+          "durum": "test",
+          "not": "Alıcı tipi belli (göç yapan mağaza, ajans); isim listesi yok"
+        },
+        "G5": {
+          "durum": "test",
+          "not": "Örnek paket ve ajans teslimi fikri var; yayın yeri ve hedef ajanslar adlandırılmadı"
+        },
+        "G6": {
+          "durum": "test",
+          "not": "Okuma zinciri boş sorgu ve simülasyon içe aktarıcı onarılmalı; 40-80 saat tahmini ölçülmedi"
+        },
+        "G7": {
+          "durum": "gecti",
+          "not": "Nakit ihtiyacı yaklaşık 1.000-2.000 TL; tavanın çok altında"
+        },
+        "G8": {
+          "durum": "test",
+          "not": "Her mağazanın kaynak verisi farklı; kapsam sınırı ve özel istek kuralı yazılı değil"
+        }
+      },
+      "kapi_duzeltme": "Sabit kapsam ve istisna listesi yaz, veri işleme sözleşmesi hazırla, hukukçu teyidi al, okuma zincirini onar, ilk üç göçü pilot olarak yap.",
+      "finans": {
+        "satis_tipi": "proje",
+        "net_fiyat_tl": 4000,
+        "degisken_maliyet_tl": 300,
+        "sabit_gider_aylik_tl": 100,
+        "baslangic_nakit_tl": 2000,
+        "kalan_efor_saat": {
+          "min": 40,
+          "beklenen": 60,
+          "max": 100
+        },
+        "ilk_tahsilat_gun": {
+          "min": 30,
+          "max": 90
+        },
+        "satis_basina_kurucu_saati": 8,
+        "musteri_basina_aylik_destek_dk": 20,
+        "alti_ay_tahsilat_tl": {
+          "kotu": 0,
+          "baz": 8000,
+          "iyi": 20000
+        },
+        "alti_ay_odeme_adedi": {
+          "kotu": 0,
+          "baz": 2,
+          "iyi": 5
+        },
+        "alti_ay_musteri": {
+          "kotu": 0,
+          "baz": 2,
+          "iyi": 5
+        },
+        "donusum_orani": {
+          "dusuk": 0.05,
+          "yuksek": 0.15
+        },
+        "dayanak": "GPT stratejisi: tek göç 3.000-8.000 TL testi, 90 günde 3 izinli mağaza ve 1 tekrar göç hedefi. Taban 4.000 TL. Baz: 2 göç = 8.000 TL; iyi: 5 göç = 20.000 TL; kötü 0. Dönüşüm ve ürün eşlemesi varsayım; kaynakta ödeyen müşteri yok."
+      },
+      "deney": {
+        "varsayim": "Mağaza veya ajans, yorum göçü için sabit fiyatlı hizmete para öder",
+        "yontem": "Herkese açık örnek paketi yayımla, topluluk ve 10 ajansa tek göç için 4.000 TL teklif sun; 3 izinli pilot göçü yap",
+        "sure_gun": 30,
+        "maliyet_saat": 24,
+        "maliyet_tl": 0,
+        "basari_olcutu": "10 doğru ve bozuk kaynak eşlemesi, 3 izinli mağaza ve en az 1 ücretli göç",
+        "birakma_olcutu": "30 günde 0 yazılı teklif yanıtı ve ücretli göç yok",
+        "sonraki_dilim": "Tekrar göç ihtiyacı çıkarsa araçlaştır; çıkmazsa hizmet olarak sabit tut"
+      },
+      "etiketler": {
+        "segment": "WooCommerce mağazaları ve ajansları (göç)",
+        "kanal_turu": "topluluk",
+        "teknoloji": "PHP, WooCommerce, REST",
+        "regulasyon": "KVKK"
+      },
+      "kanit_notlari": "GPT belgesi: kaynakta boş slider sorgusu ve simülasyon içe aktarıcı var, tam zincir yok; ücretsiz CusRev güçlü alternatif; 3.000-8.000 TL göç testi önerisi. Claude planı slider ürününü ticari saymıyor. Ödeyen müşteri 0; fiyat ve talep kanıtı yok."
+    }
+  ]
+}

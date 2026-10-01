@@ -1,0 +1,65 @@
+{
+ "slug": "e-menum",
+ "kararlar": [
+  {
+   "itiraz": "Seçenek C birincil kanal CodeCanyon; plan son çare ve 3/10 sayıyor.",
+   "karar": "kabul",
+   "degisiklik": "kanal_birincil pazar yeriydi, depo README ve Django Türkiye Telegram oldu; CodeCanyon yedek; kanal_turu topluluk; finans ve notlar uyumlandı.",
+   "gerekce": "Plan bölüm 4 ve derinlik C.2 CodeCanyon'u yalnız ilk 90 gün sonuçsuzsa öneriyor."
+  },
+  {
+   "itiraz": "Seçenek A satılabilir ürün gibi sunuluyor; plan ana kararı arşivle ve taşıdır.",
+   "karar": "kismen",
+   "degisiklik": "kanit_notlarına plan ana kararının iç arşivleme, ajans satışının ikincil ve talebe bağlı olduğu eklendi; seçenek aynı kaldı.",
+   "gerekce": "Plan bölüm 0 ve 5 satışı koşullu bırakıyor; kart zaten ikincil seçenek olarak yazılıyor, kanıt notu eksikti."
+  },
+  {
+   "itiraz": "Seçenek B 4.000 TL/ay ve 5.000 TL kurulum fiyat gibi; kaynakta test fiyatı varsayımı.",
+   "karar": "kabul",
+   "degisiklik": "fiyat alanı test fiyatı, mevcut müşteri fiyatı değil ve kurulumun analist varsayımı olduğunu söyler hale getirildi.",
+   "gerekce": "GPT dosyası 4.000 ve 1.000 TL'yi test fiyatı sayar; 5.000 TL kurulum kaynakta rakamsız."
+  },
+  {
+   "itiraz": "Seçenek B elle hizmeti sunar; içe aktarma, onay, geri alma çalışır kanıtı yok.",
+   "karar": "kabul",
+   "degisiklik": "teklif alanı: bu akışlar kurucunun elle yürüttüğü, üründe çalışır kanıtı olmayan işler olarak yeniden yazıldı.",
+   "gerekce": "GPT dosyası bunları önerilen kapsam sayar; çalışır kanıtı yok."
+  },
+  {
+   "itiraz": "e-menum-c G5 test olmalı: satıcı başvurusu ve kategori hacmi bilinmiyor.",
+   "karar": "kismen",
+   "degisiklik": "G5 gecti kaldı; not yeni kanalları adlandırır, CodeCanyon yedek. Hacmin bilinmediği nota yazıldı.",
+   "gerekce": "Birincil kanal artık adlı topluluk ve depo; G5 tanımı adlı kanal, ilk adım ve yedek ister, hacim istemez."
+  },
+  {
+   "itiraz": "e-menum-a alti_ay_tahsilat_tl.baz 25000 iyimser; ödeyen, liste ve demo yok.",
+   "karar": "kismen",
+   "degisiklik": "baz 25000 -> 20000, iyi 50000 -> 45000; dayanak güncellendi, kötü 0 kaldı.",
+   "gerekce": "Plan bölüm 11 baz 6 ayda 1 kurulum der; bölüm 8 baz ortalama kurulum 20.000 TL, iyimser 22.500 TL."
+  },
+  {
+   "itiraz": "e-menum-a donusum_orani 0,05-0,15; kaynak temas başına yaklaşık %0,5, kanıtsız.",
+   "karar": "kismen",
+   "degisiklik": "aralık 0,05-0,15 -> 0,05-0,10 (görüşme başına kapanış); dayanak temas başına %0,5'i belirtir.",
+   "gerekce": "Plan 3.2: yanıt %5, kapanış %10; kartın 0,15 üst sınırı kaynaksızdı."
+  },
+  {
+   "itiraz": "e-menum-b ilk_tahsilat_gun.min 40 yerine en az 60 gerçekçi.",
+   "karar": "kabul",
+   "degisiklik": "min 40 -> 60; max 110 kaldı.",
+   "gerekce": "GPT 30-60-90 deneyi: ücretsiz pilot sonrası ücretli tekrar 90. günde; onay zinciri var."
+  },
+  {
+   "itiraz": "e-menum-b tahsilat baz 17000 iyimser; liste yok, fiyat test, baz sıfıra yakın.",
+   "karar": "kabul",
+   "degisiklik": "baz 17000 -> 13000 (3 ödeme), iyi 34000 -> 26000 (6 ödeme, 2 marka); dayanak güncellendi, kötü 0.",
+   "gerekce": "Kaynakta satış kanıtı ve liste yok, fiyat test; ücretli başlangıç en erken 60-90. gün."
+  },
+  {
+   "itiraz": "e-menum-c alti_ay_odeme_adedi.baz 2 kanıtsız ve iyimser.",
+   "karar": "kabul",
+   "degisiklik": "baz ödeme/müşteri 2 -> 1, iyi 5 -> 3; tahsilat 4.272 / 12.816 TL; değişken maliyet 534 -> 184 TL.",
+   "gerekce": "Kaynak doğrudan satış sayısı vermez; kanal notu 30 ulaşımda %3 (yaklaşık 1 satış). Komisyon yedek kanala ait."
+  }
+ ]
+}

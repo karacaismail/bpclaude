@@ -1,0 +1,71 @@
+{
+ "slug": "kurucu-sunum-hizmeti",
+ "kararlar": [
+  {
+   "itiraz": "Kart yığın çalışıyor diyor; şablon ve doğrulayıcı tek projeye bağlı, markadan arındırılmamış; hazır ürün sayılmaz.",
+   "karar": "kismen",
+   "degisiklik": "ozet: 'Altyapı çalışıyor' -> 'Altyapı tek projede çalışıyor, şablon henüz genel değil'; bugun.yok zaten arındırma eksiğini söylüyordu.",
+   "gerekce": "D.2 ve D.8: şablon tek projeye özgü, arındırma 2-3 gün iş; ifade abartılıydı, eksik zaten yazılıydı."
+  },
+  {
+   "itiraz": "Seçenek B fiyatı 9.000 ₺ kaynakta yok; 12 saatlik emek bedeli varsayımdır, talep kanıtı sayılmaz.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart fiyatı zaten varsayım diye işaretliyor (fiyat, dayanak, kanıt notu), türetmeyi açıklıyor; talep kanıtı iddia etmiyor."
+  },
+  {
+   "itiraz": "GPT dosyası gelir ürünü ve kanalın ödeme getirdiğini doğrulamadığını söylüyor; A ve B baz tahsilatı bununla uyumsuz.",
+   "karar": "kismen",
+   "degisiklik": "A baz 150.000 -> 60.750 ₺ (12->8 ödeme, 5->3 müşteri); B baz 54.000 -> 18.000 ₺ (6->2 satış); dayanaklar güncellendi.",
+   "gerekce": "Ödeyen müşteri ve kanıtlı kanal yok; baz çekinceyle uyumlu olacak şekilde düşürüldü; ayrıntı finans kararlarında."
+  },
+  {
+   "itiraz": "Seçenek C baz 1 pilot; Plan 8'de yıl 1 lisans geliri 0; baz Plan 8'in üstünde olabilir notu izlenmeli.",
+   "karar": "kabul",
+   "degisiklik": "C tahsilat baz 30.000 -> 0, ödeme adedi 1 -> 0, müşteri 1 -> 0; dayanak güncellendi.",
+   "gerekce": "Plan 8 baz yıl 1 lisans 0 der, 6. ay KPI 1 der; çelişkide temkinli düşük gelir seçilir. İyi 60.000 ₺ Plan 8 iyimserine denk."
+  },
+  {
+   "itiraz": "A, G6: 63 saat yalnız çekirdek; sözleşme, demo, hibe formatı yok, satış döngüsü ölçülmedi; kart gecti diyor.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "D.8 demo (2 gün), hibe formatı (4), sözleşme/DPA (1) ve arındırmayı 21 gün = 63 saatte sayıyor; döngü Persona 1'de 1 hafta, plan ilk ödemeyi 30 günde hedefliyor."
+  },
+  {
+   "itiraz": "B, G6: 14 saat tahmin ama atölye sonrası 1-2 hafta satış döngüsü ölçülmedi; tanım döngü ölçümü istiyor.",
+   "karar": "kabul",
+   "degisiklik": "B G6 gecti -> test; not güncellendi; kapi_duzeltme'ye G6 (karar süresini ölç) eklendi.",
+   "gerekce": "B için planda döngü verisi yok, fiyat varsayım; tanıma göre döngü ölçülmediyse test."
+  },
+  {
+   "itiraz": "A, G5: birincil kanal denenmedi, yedekler soğuk; sınırda.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "G5 gecti tanımı birincil kanal, ilk adım ve yedek kanalın adlı olmasını ister; kart üçünü karşılıyor, deneme şartı yok."
+  },
+  {
+   "itiraz": "A baz 12 ödeme ve 5 müşteri iyimser; ödeyen 0 iken en çok 2-3 müşteri, 60-90.000 ₺ gerçekçi.",
+   "karar": "kabul",
+   "degisiklik": "A ödeme adedi baz 12 -> 8, müşteri 5 -> 3, tahsilat baz 150.000 -> 60.750 ₺; dayanak yeniden yazıldı.",
+   "gerekce": "5 paket plan hedefi (KPI), tahmin değil; Plan 8 baz 12 ayda 8 paket, ilk tahsilat gecikmesi düşülünce 3 pilot; ödeyen yok."
+  },
+  {
+   "itiraz": "A kalan efor beklenen 63; sözleşme, demo, 3 hibe formatı ve arındırma dahil değil; ~90 saat gerçekçi.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "D.8 bu kalemlerin tümünü içeriyor (arındırma, demo, hibe formatı 4 gün, sözleşme 1 gün); toplam 21 gün = 63 saat, max 100 zaten var."
+  },
+  {
+   "itiraz": "B baz tahsilat 54.000 ₺ (6 satış); dönüşüm %5-20, ödeme kanıtı yok; baz 2-3 satış, 18-27.000 ₺ olmalı.",
+   "karar": "kabul",
+   "degisiklik": "B tahsilat baz 54.000 -> 18.000 ₺, ödeme adedi 6 -> 2, müşteri 6 -> 2; iyi 108.000 -> 54.000 ₺ (6 satış); dayanak güncellendi.",
+   "gerekce": "~10 atölye var, ödeme kanıtı yok; GPT kanalın ödeme getirdiğini doğrulanmamış sayıyor; alt uç temkinli alındı."
+  },
+  {
+   "itiraz": "C kalan efor beklenen 100; eğitim içeriği, DPA, sözleşme dahil değil; ~130 saat ve tahsilat 90+ gün.",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "DPA/sözleşme D.8'de 1 gün; panel 6 gün ve 2 eğitim ~6 saat 100'e sığıyor (63+18+6); ilk tahsilat aralığı zaten 60-150 gün."
+  }
+ ]
+}

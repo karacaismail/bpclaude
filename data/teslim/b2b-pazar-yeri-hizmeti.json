@@ -1,0 +1,23 @@
+{
+ "slug": "b2b-pazar-yeri-hizmeti",
+ "secenekler": {
+  "b2b-pazar-yeri-hizmeti-a": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "2 haftalık teşhis: varsayım haritası, 20 sayfa karar belgesi, model; yaklaşık 60 saat, yapay zekâ ile 40; 2 ödeme = 2 müşteri; karttaki 90 dk destek 60 dk'ya indirildi."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "satis_basina_kurucu_saati": 6,
+   "teslim_saat_odeme_basina": 24,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "5 sayfa rapor, 3 görüşme, 5 teklif sınıflaması, yaklaşık 40 saat; yapay zekâ ile en çok yarıya, 24 saat; kartın 60 dk desteği teslimle karışıktı; varsayım."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "satis_basina_kurucu_saati": 25,
+   "teslim_saat_odeme_basina": 180,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "12 hafta: teşhis, strateji, ekran ve backlog yönetimi, haftalık koçluk; yaklaşık 180 saat, taşeron hariç; karttaki 240 dk koçluğu içeriyordu, destek 60 dk; varsayım."
+  }
+ }
+}

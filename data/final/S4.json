@@ -1,0 +1,665 @@
+{
+ "kriter": "S4",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kafe müşteri tabanı, görsel modülü ve AI asistan katmanının satılacağı kanal; panel desenleri ve zincir hattıyla kod ortak. İki ayrı projeyi besler; ödeyen kafe yok, plan düzeyinde."
+  },
+  "zabuno-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Zincir modülü, danışmanlık paketinin pilot kalemi ve aynı müşteriye bağlı; çoklu şube kodu tek şubeli ürüne ve AI asistan denemesine de gider. Mevcut ilişki belgeli."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Panel modülü ana ürünle kod paylaşabilir; başka projeye müşteri ya da kanal taşıdığına dair dayanak yok, ajans alıcısı ayrı bir kitle."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı parsel veri modeli ve rapor şablonu Parsel Kartı ile pazar yeri arzını besler; ürün ailesi dışındaki projelerle ortak müşteri yok."
+  },
+  "parselq-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Kart QR'ı rapora trafik, ofis ağı pazar yerine arz getirir; emlak ofisi alıcısı ve dernek kanalı kurucunun emlak CRM paneliyle de ortak."
+  },
+  "parselq-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Dosya modülleri başarısız olsa da Kart ve Rapor'a eklenebilir; kod ortak, danışmanlık ofisi alıcısı aile içindeki diğer ürünlerden farklı."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kural motoru diğer iki seçeneği besler; teşvik envanteri ve KOBİ alıcısı sunum hizmeti ile strateji aracının müşteri havuzuyla örtüşür, ortak kullanım planlanmadı."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Motor ve mali müşavir odası webinar kanalı asgari işçilik aboneliğiyle aynı; başka projeye müşteri taşıdığı belgelenmedi."
+  },
+  "destektesvik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Oda, OSB ve TTO kanalı üye talebini rapora taşır; aynı kurumlar eğitim atölyesi ve pazar yeri teşhisinin de hedefi, erişim henüz kurulmadı."
+  },
+  "asgari-iscilik-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek müşteriye özel proje; hesap motoru yalnız aynı projenin abonelik ve rapor seçeneklerine taşınır, başka projeye müşteri ya da kanal vermez."
+  },
+  "asgari-iscilik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Motor üç seçenekte ortak; mali müşavir odası webinar kanalı teşvik tarama paketiyle aynı. Başka projenin müşterisini beslediği belgelenmedi."
+  },
+  "asgari-iscilik-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Bulgu ve senaryolar motoru, lead listesi aboneliği besler; mali müşavir odası kanalı teşvik projesiyle ortak, başka kod paylaşımı yok."
+  },
+  "zincir-danismanligi-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Aynı zincir ilişkisi Zabuno pilotunu, sosyal görsel hizmetini ve AI asistan denemesini besler; pano ve denetim varlıkları ortak. Tek müşteriye bağlı olduğu için 5 değil."
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor, 90 günlük paketin ve Zabuno zincir satışının kapı açıcısı; yeni zincirlerle ilişki yok, bağ bir başka projeyle sınırlı."
+  },
+  "zincir-danismanligi-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Zabuno zincir planının kendisi: kod ve müşteri iki projede ortak, pilot 90 günlük paketin kalemi; mevcut ilişki belgeli."
+  },
+  "kar-pusulasi-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Hesaplayıcı, eğitim programının ders aracı ve üretici paketinin giriş hunisi; satıcı kitlesi taksit eklentisinin de yedek kanalı. Araç bugün çalışıyor."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Motor ortak, danışman alıcısı eğitim programı kitlesinden gelir; panel başka projeye müşteri ya da kod taşımıyor."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı motor ve satıcı kitlesi; eğitim projesindeki kâr teşhisi hizmetiyle alıcı ortak, başka projeye kanal açmıyor."
+  },
+  "titanlar-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kohort, kâr aracına kullanıcı, teşhis hizmetine ve üretici paketine aday taşır; taksit eklentisi de bu kitleyi yedek kanal sayar. Kohort başlamadı."
+  },
+  "titanlar-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Teşhis müşterisi kohort adayı ve kâr aracı kullanıcısı olur, vaka içeriği üretir; üretici fizibilite paketiyle aynı hesap yöntemi. Hepsi plan."
+  },
+  "titanlar-c": {
+   "p": 3,
+   "k": 0,
+   "g": "12 prensip sunumu eğitim demoları projesiyle ortak içerik; oda kanalı diğer kurumsal tekliflerle örtüşür, referans ve erişim yok."
+  },
+  "kurumsal-site-a": {
+   "p": 5,
+   "k": 1,
+   "g": "İki değerlendirici 3 verdi; kartlar arası okuma: site müşterisi blok eki, çok dilli denetim, sunum seti, görsel hizmet ve imza paketinin ilk kanalı; kalıp üretici paketinde de kullanılıyor."
+  },
+  "kurumsal-site-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Aynı kalıp üretici paketinin vitrin sitesinde kullanılıyor; vitrin müşterisi üst pakete ve ek hizmetlere aday. Üç dilli pakete göre ek satış alanı daha dar."
+  },
+  "kurumsal-site-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Tema, hizmetin kalıp ve test betikleriyle ortak kod; ajans alıcısı beyaz etiket üretime dönebilir ama ortak müşteri kanıtı yok."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Paket üç ayrı projenin varlığını birleştirir: kurumsal site kalıbı, e-ticaret eğitimi ve fiyat hesaplayıcı; müşteri hepsine aday. Varlıklar bugün mevcut."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Fizibilite, başlangıç paketine, eğitime ve hesaplayıcıya giriş hunisi; simülasyon ve rakip raporu mevcut. Site kalıbını beslemez."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Katalog sitesi kurumsal site kalıbını ve rakip raporu yöntemini kullanır; eğitim ve hesaplayıcı hunisine bağlanmaz."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ortak çekirdek paket diğer iki eklentiyi besler; ajans kanalı site denetimi eklentisiyle örtüşür, ortak müşteri kaydı yok."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Çekirdek kod KVKK eklentisiyle ortak; iskelet kurucunun önceki yorum eklentisinden gelir. Mağaza alıcısı başka projeye taşınmıyor."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kurulumlar iki eklenti için alıcı, vaka ve tekrar eden işten çekirdek kod üretir; kurucunun site müşterileriyle ortak. Henüz kurulum yapılmadı."
+  },
+  "qral-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Bağımsız tarayıcı uzantısı; kod yalnız kendi seçenekleriyle ortak, başka projeye müşteri ya da kanal taşıdığına dair dayanak yok."
+  },
+  "qral-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Pro kodunu paylaşır; öğretmen kitlesi portföydeki başka hiçbir projenin alıcısı değil."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurucunun ürün ekibi ve ajans çevresine satılır ama taşıdığı şey yalnız şablon öğrenmesi; ortak kod ya da kanal beslemesi sınırlı."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ders üretim sistemi çok dilli arayüz modülünde ve eğitim işlerinde yeniden kullanılıyor; eğitmen alıcısı başka projeye taşınmıyor."
+  },
+  "frontend-atlasi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Ders sitesi trafiği kite, çok dilli arayüz modülüne ve tasarım rehberinin alıcı listesine akar; site yayında olmadığı için akış henüz plan."
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Üretilen örnek dersler kite ve ücretsiz siteye içerik sağlar; üretim hattı diğer eğitim işlerinde kullanılabilir, ortak müşteri yok."
+  },
+  "karar-kitabi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Atölye alıcısı kurumsal site ve zincir ilişkilerinden gelir; çıktı karar günlüğü bileşeni fikrini besler, ortak kod yok."
+  },
+  "karar-kitabi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Çalışma kâğıdı paketleri yan panel eklentisinin tek gelir yolu; site, kurucu şablonunun da satış kanalı. İçerik temizliği bitmeden akış yok."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Dışa aktarma kodu aynı projede; diğer projelerin çıktısına bağlı memo paketi yalnız fikir, ortak müşteri ya da kanal yok."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Teşvik envanteri, tablo bağlayıcısı ve doğrulayıcı başka projelerde kullanılabilir; müşterisi strateji raporunun ve demo hizmetinin de alıcısı. Yığın tek projede denendi."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Atölye ve rapor, sunum paketi ile kuluçka lisansına aday getirir; doğrulayıcı şablonu yeniden kullanılır, başka projeye müşteri taşıması sınırlı."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kuluçka lisansı girişimleri sunum paketine ve tutarlılık raporuna yönlendirir; aynı kurumlar strateji aracı lisansı ve mentor şablonunun da alıcısı."
+  },
+  "vize-operasyon-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kod ve şablonlar yalnız aynı projenin diğer iki seçeneğiyle ortak; acente alıcısı portföydeki başka bir projenin müşterisi değil."
+  },
+  "vize-operasyon-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kural kaydı ve tablo katmanı panele birleşir; sinerji proje içinde kalır, başka projeye kod ya da kanal taşımaz."
+  },
+  "vize-operasyon-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Başvurucu hunisi acente beyaz etiketine bağlanabilir ama bu aynı proje içi; diğer projelerle ortak müşteri, kod ya da kanal yok."
+  },
+  "software-factory-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Teslim hattı kurucunun diğer ürünlerinin üretimini de taşır; girişim alıcısı sunum paketi ve demo hizmetiyle ortak, kuluçka kanalı paylaşılır. Müşteri kanıtı yok."
+  },
+  "software-factory-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Makbuz çekirdeği fabrika hattını ve iş kırılım aracının kanıt çıktısını besler; ücretsiz Action ajan araçlarıyla aynı geliştirici kitlesine dağıtım yüzeyi açar."
+  },
+  "software-factory-c": {
+   "p": 3,
+   "k": 0,
+   "g": "A seçeneğinin hazırlığını ve kanıt şablonlarını kullanır; ajans kanalı demo hizmetinin beyaz etiket hattıyla örtüşür, ilişki kurulmadı."
+  },
+  "strateji-simulatoru-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Kuluçka lisansı sunum hizmetinin lisansıyla aynı duruma sahip: aynı kurumlar, girişimleri hibe danışmanlığına ve sunum paketine taşıyan kanal; iki değerlendirici 3 demişti."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor alıcısı hibe danışmanlığına ve sunum hizmetine yönlendirilebilir; rapor katmanı ortak kod, akış sınanmadı."
+  },
+  "strateji-simulatoru-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Hibe danışmanlığı ve sunum hizmeti müşterilerine satılır, iki hizmete de geri iş ve kuluçka pilotuna vaka üretir; müşteri havuzu kurucu beyanı."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Gözlem paneli bu Pro uygulamasının içine katlanıyor; kullanıcı havuzu ve duyuru kanalları iş kırılım aracıyla aynı geliştirici kitlesi."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor çekirdeği Pro uygulaması ve maliyet panosuyla ortak kod; destekli kurulum alıcısı başka projeye taşınmıyor."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kabul API'si entegrasyonları Pro uygulamasına ve panoya dağıtım kanalı açar; gelir değil görünürlük, ortak müşteri kanıtı yok."
+  },
+  "actionplan-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucunun kendi ajan akışından doğdu; fabrika hattı ve ajan araçlarıyla aynı geliştirici kitlesi ve kanal, dış kullanıcı yok."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kabul ve kanıt zinciri fabrika hattının makbuz çıktısıyla ortak kod ailesi; ajans alıcısı için ilişki listesi yok."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Türkçe şablonlar yalnız aynı aracın satış hunisini besler; başka projeye kod, müşteri ya da kanal taşımaz."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Pano ayrı satılmaz, koruyucu Pro'nun içine katlanır: kod ve alıcı ortak; fabrika hattının iç ölçümünde de kullanılır. Kod bugün görsel iskelet."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Okuyucu kodu koruyucu ile ortak; ajans sahibi alıcı ayrı bir kitle ve ilişki belgelenmedi."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kart, panonun veri katmanıyla kısmen ortak; adlandırılmış hedef alıcı yok, başka projeye müşteri ya da kanal taşımıyor."
+  },
+  "ai-first-tasarim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Rehber, kurulum hizmetine ve ajans paketine alıcı taşır; Frontend Atlası listesiyle ortak kitle, komut kartı bileşeni ayrı projede de ürünleşiyor."
+  },
+  "ai-first-tasarim-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Her kurulum bileşeni, token hattını ve rehberi besler, vaka ajans paketine girer; komut kartı bileşeni menü ürünüyle ortak kod."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Rehber şablonlarını ve token hattını kullanır, rehber alıcılarına geri besler; proje dışına taşan bağ zayıf."
+  },
+  "aicommandcard-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Bileşen menü ürününün üst planını, tasarım rehberini ve entegrasyon hizmetini besler; başka bir iş projesinde kullanılmış olması iç beyan."
+  },
+  "aicommandcard-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı bileşen menü ürünündeki AI yüzeyiyle ortak kod; herkese açık depo görünürlük sağlar, entegrasyon alıcısı başka projeye taşınmıyor."
+  },
+  "atonota-denetim-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Lisans ve kiracı kodu yeniden kullanılır; yaklaşık 10 kurumsal site müşterisi ilk kurulum ve vaka kaynağı ama hedef alıcı değil."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Lisans, kiracı ve panel kodu ortak; ajans kanalı niş eklenti hattıyla örtüşür, ajans listesi ve görüşme yok."
+  },
+  "atonota-denetim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Mevcut çalışma alanı ve panel kodu kullanılır; kabul akışı iş kırılım aracındaki kabul kurulumuyla aynı fikir, ajans ilişkisi doğrulanmadı."
+  },
+  "b2b-bilesenler-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Bloklar kurumsal site hizmetinin teklifine ek satır olur, aynı müşteriye satılır; şablon ve animasyon sitesiyle kod ortak. Canlı çok dilli teslim mevcut."
+  },
+  "b2b-bilesenler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İki görünüm kodu site eki ve şablon seçeneğiyle ortak; ajans alıcısıyla ilişki belgelerde yok."
+  },
+  "b2b-bilesenler-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Şablon, bloklar ve kurumsal site kalıbıyla ortak kod; alıcı geliştirici kitlesi, hizmet projelerine müşteri taşımıyor."
+  },
+  "banner-post-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Modül Zabuno'nun üst plana geçişini tetikler, şablon ve dışa aktarma kâr aracı varyantına gider; kod sıfır, akış plan düzeyinde."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Alıcılar kurumsal site müşterileri, kahve zinciri ve Zabuno kullanıcıları: ortak müşteri var ama Canva ile üretildiği için kod beslemez."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Şablon ve şema belge düzeyinde, motor yok; küçük ajans alıcısı başka projenin müşterisi değil."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk adım sihirbazı kurucunun kendi hizmet sayfasına gömmek; arka uç çok kiracılı çekirdek kitle paylaşılabilir, ajans alıcısı için ilişki yok."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Çalıştay çıktıları soru bankasını besler ve kurucunun kendi projesinde denenir; ajans alıcısı mimari değerlendirme hizmetiyle örtüşür."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit önce kurucunun kendi hizmet sayfasında kullanılır, soru bankası ve motor aboneliğe geçişi hazırlar; ortak müşteri kanıtı yok."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Alıcılar mevcut kurumsal site müşterileri; üretim hattı kurucu sunum hizmetindeki PPTX/PDF hattıyla aynı iş. Çekirdek kod üçüncü tarafa ait."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurumsal site yapan ortak ajanslar aynı kanal; çekirdek ortak, başka projeyi beslemesi sınırlı ve abone yok."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışman alıcısıyla ilişki yok; ortak çekirdek küçük ve sıfırdan yazılacak, başka projeye kod ya da kanal taşımaz."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Demo alıcısı seed öncesi kurucu: sunum paketinin ve kanıtlı MVP hizmetinin de alıcısı, demo MVP işine kapı açar; kit ortak. Kod üçüncü tarafa ait."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans beyaz etiket kanalı MVP kapasitesi teklifiyle aynı alıcı; kit ortak kod, ajans listesi ve görüşme yok."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Puantaj ve bordro alıcısı portföyde başka hiçbir projeyle ortak değil; yalnız panel bileşenleri yeniden kullanılabilir."
+  },
+  "ddd-renderer-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Paket mimari e-kitabın okur listesine satılır, Frappe şablonu çekirdek kit hattına bağlanır; motor ve içerik ortak. Okur sayısı varsayım."
+  },
+  "ddd-renderer-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Blok motoru ve içerik e-kitap ve görüntüleyiciyle ortak kod; yurt dışı alıcı başka projeye taşınmıyor."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk değerlendirme kurucunun kendi iki ürününde ücretsiz yapılır, şablon ve vaka içeriğini besler; alıcı mimari atölyesiyle örtüşür."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Onay, denetim ve yetki desenlerinin kurucunun menü ürünü panellerine girmesi planlı: bir projeyle ortak kod. Müşteri ve kanal ortaklığı yok."
+  },
+  "devpanel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Şema ve form kodu kurucunun başka bir ürününün render motorunu kullanır; ajans alıcısı ve kanal ortak değil, dışa aktarıcı henüz yok."
+  },
+  "devpanel-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Satılan varyantın kodu menü ürünü paneline de giriyor; şablon alıcısı başka projeye müşteri ya da kanal olmuyor."
+  },
+  "e-menum-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Modül ve gereksinimler kurucunun canlı menü ürününe taşınır, o ürünün destek kuyruğuna gelen ajans talebi buraya yönlenir; tek proje bağı."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Çok şubeli onaylı yayın kuralları ve ekranları canlı menü ürününün zincir modülüne girdi olur; alıcı kitlesi aynı, ayrı kod tabanında yürür."
+  },
+  "e-menum-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kaynak kod satışı canlı ürünü beslemez; yalnız depo görünürlüğü ve kurulum paketine aday sağlar, ortak müşteri yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Pano ve metodoloji kurucunun kendi eklenti hattı için ürün seçimi öğrenmesi üretir; geliştirici çevresi ortak, kod paylaşımı yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Paket pano verisi ve çerçeveyi yeniden kullanır, bültene giriş ürünü olur; öğrenme eklenti hattına yarar, ortak müşteri yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans lisansı bülten ve paketi besler; ajans kitlesi eklenti hattının ajans kanalıyla örtüşür, liste ve ilişki yok."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Denetim, kurumsal site projelerine ek kalem olur ve Atlas modülünden talep alır; kurallar çok dilli sitede ve kurucunun ürününde elle uygulandı."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Modül Atlas'a içerik ve arama trafiği, denetim hizmetine aday sağlar; iki projeyle ortak içerik, yayın henüz yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Lint aracı ve fixture seti denetim şablonuyla ortak kod; SaaS ekibi alıcısıyla ilişki ve isim listesi yok."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Küme ve sanayi bölgesi kanalı ile mevcut üretici müşterileri kurumsal site hizmetiyle ortak; rehber ve ekran seti üçüncü tarafa ait."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor şablonu teşhis paketine giriş sağlar; kuluçka atölyesi kanalı sunum hizmetiyle ortak, ücretli talep doğrulanmadı."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans ortaklığı ve mevcut üretici müşterileri başka hizmetlerle ortak kanal; ekran seti ve backlog yarım, markasız değil."
+  },
+  "lifeos-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Eklenti Karar Kitabı çalışma kâğıdı paketlerinin dağıtım kanalı: içerik, müşteri ve gelir o projeyle ortak; tek projeye bağlı olduğu için 5 değil."
+  },
+  "lifeos-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Zaman kaydı kodu yalnız aynı projede; plan bu kodu mağaza amacına uymadığı için kaldırmayı öneriyor, başka projeye kanal olmaz."
+  },
+  "lifeos-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Beş kopyanın kodunu birleştirir; kit alıcısı ve içerik portföydeki başka bir projeyi beslemez."
+  },
+  "luquit-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Panel cam kütüphanesini kullanır, menü ürünüyle ortak altyapı kararı var; emlak ofisi alıcısı ve dernek kanalı Parsel Kartı ile aynı."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Kütüphane emlak panelinde fiilen kullanılıyor: ayrı bir ürünle ortak kod. Ajans ve freelancer alıcısıyla ilişki belgelerde yok."
+  },
+  "metaframer-kernel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Çekirdek, iç pilot kod ekibiyle ve mimari külliyatındaki kernel sayfalarıyla ortak; alıcı geliştirici kitlesi için kanal kurulmadı."
+  },
+  "metaframer-kernel-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kod iç pilot ekibiyle ortak; yazılım evi alıcısı mimari atölyesiyle örtüşür, ajans listesi yok."
+  },
+  "metaframer-kernel-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Çekirdek örneği ve test paketi diğer modüllerle ortak kod; SaaS şirketi alıcısı için isim listesi ve ilişki yok."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurucu aracı kendi ürün adları için kullanıyor ve çekirdek bir başka projeyle ortak; dış kullanıcı ve ortak müşteri yok."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 3,
+   "k": 0,
+   "g": "A ile aynı çekirdek ve iç kullanım; ajansların başka projeye müşteri olması yalnız olasılık."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Teslimden çıkan vakalar aracı besler, liste kurucunun kendi ürün adlarında kullanılır; çevredeki girişimciler ortak ağ."
+  },
+  "projector-a": {
+   "p": 4,
+   "k": 0,
+   "g": "E-kitap okur listesi şablon paketinin birincil kanalı; külliyat ve örnek repo atölyeyi ve çekirdek kit hattını besler. Ön satış sayfası yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Atölye vaka ve kitap alıcısı üretir, örnek repoyu ortak kullanır; yazılım evi alıcısı çekirdek kit paketiyle örtüşür."
+  },
+  "projector-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kaynak yükleyici ve dışa aktarma kodu külliyatla ortak; danışmanlık firması alıcısı kitap ve atölyeye sınırlı katkı verir."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Satış kutusu Karar Kitabı ve strateji simülatörü sitelerinde durur, çapraz bağlantı iki yönlü; iki projeyle ortak trafik, ürün sayfası henüz yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Bireysel şablonu kullanır; kuluçka yöneticisi alıcı strateji aracı ve sunum lisansıyla aynı, program listesi çıkarılmadı."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kitap sitesi kurucunun diğer sitelerine ve şablon hunisine çapraz bağlantı verir; okur kitlesi portföy alıcısıyla kısmen örtüşür."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans paketi kurumsal site ve danışmanlık ilişkilerine satılır, site teslimine ek kalem olur; ortak bileşen planı kanıtsız."
+  },
+  "signator-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aramadan gelen self-servis satış; diğer işlere çapraz satış yalnız plan, ortak müşteri ya da kod yok."
+  },
+  "signator-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurulum paketi mevcut danışmanlık ve kurumsal site ilişkilerine satılır: bir başka projeyle ortak müşteri; kod yok, öğrenme ekip paketine gider."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Oyun kodu başka oyuna taşınabilir, portal yayını vitrin olur; kulüp ve marka alıcısı portföydeki başka bir projeyi beslemez."
+  },
+  "volley-tap-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Portal oynanış verisi yalnız aynı projenin kampanya teklifine kanıt olur; başka projeye müşteri, kod ya da kanal taşımaz."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Yalıtık: oyuncu kitlesi ve oyun kodu portföydeki hiçbir projenin müşterisini, kodunu ya da kanalını beslemiyor."
+  },
+  "woocommnts-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Çekirdek niş eklenti hattıyla ortak; mağaza kitlesi e-ticaret programı ve kâr aracının kullanıcılarıyla aynı, onlar yedek kanal. Yayın yok."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "A seçeneğinin kodunu kullanır; ajans kanalı diğer WordPress eklentileriyle örtüşür, ajans listesi ve görüşme yok."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yalnız mevcut slider ve içe aktarıcı kodunu kullanır; göç hizmeti başka projeye müşteri ya da kanal taşımaz."
+  },
+  "egitim-demolari-a": {
+   "p": 2,
+   "k": 0,
+   "g": "A 4, B 3 vermişti; altı varlık yalnız proje içinde ortak ve öğretmen alıcı portföyde başka projenin müşterisi değil, o yüzden B'nin de altında kaldı."
+  },
+  "egitim-demolari-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Çevik prensip sunum seti e-ticaret eğitim projesinin kurumsal atölyesiyle ortak içerik; ekip lideri alıcısı için ortak müşteri yok."
+  },
+  "baz-secenekler-a": {
+   "p": 4,
+   "k": 1,
+   "g": "İki mevcut ilişki başka projelerin ilk alıcısı: kahve zinciri bir pilotu, inşaat firması uyum yazılımını besler; teklif ve analiz teslim edilmiş."
+  },
+  "baz-secenekler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kod modülleri ve gereksinimler canlı menü ürününe taşınır, destek kuyruğundaki ajans talebi buraya yönlenir; tek proje bağı."
+  },
+  "baz-secenekler-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Fon seçilecek tek projeye sermaye sağlar; başvuru dosyası sunum hizmetinin yöntemini kullanabilir ama müşteri, kod ya da kanal taşımaz."
+  }
+ }
+}

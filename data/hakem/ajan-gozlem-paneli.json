@@ -1,0 +1,65 @@
+{
+ "slug": "ajan-gozlem-paneli",
+ "kararlar": [
+  {
+   "itiraz": "A kartı ilk 10 beta davetlisi diyor; planda 5 iç çevre ve 5 henüz bulunmamış gönüllü var, davetli yok",
+   "karar": "kabul",
+   "degisiklik": "A ilk_adim ve G4 notu: 10 davetli var denmişti; hedef 5+5, davetli yok olarak düzeltildi; deney yöntemi uyarlandı",
+   "gerekce": "Plan 7.2 beta kişilerini planlı sayıyor, davetli kaydı yok."
+  },
+  {
+   "itiraz": "Kart panoyu A'da 19 USD ürün gibi atfediyor; plan panoyu ayrı satmıyor, Pro dönüşümüne katkı sayıyor",
+   "karar": "kismen",
+   "degisiklik": "A fiyat metni: pano ayrı satılmaz, 19 USD Pro fiyatı, katkı Pro'ya sayılır; finans ek Pro adedine göre baz alındı",
+   "gerekce": "Satılan birim Pro; plan 5 ve 6 panoyu ayrı fiyatlamıyor, kart bunu açıkça yazmalıydı."
+  },
+  {
+   "itiraz": "B'nin ajan talebi derinlik belgesinde varsayım ve kurgusal persona; kart G4'te alıcı tipi net diyerek yumuşatıyor",
+   "karar": "kismen",
+   "degisiklik": "B G4 durumu test kaldı; not: kurgusal persona ve varsayım, ajans listesi ve ilişki yok olarak değişti",
+   "gerekce": "Tanıma göre alıcı tipi belli, isim listesi yok ise test; yalnız not kaynağı yumuşatıyordu."
+  },
+  {
+   "itiraz": "C seçeneğinin baz 1 satış senaryosu GPT belgesiyle desteklenmiyor",
+   "karar": "kabul",
+   "degisiklik": "C alti_ay_tahsilat baz 18000 iken 0; ödeme adedi ve müşteri baz 1 iken 0; iyi 54000 iken 18000, 1 satış",
+   "gerekce": "GPT belgesi talep kanıtı ve tutar vermiyor; temkinli seçildi."
+  },
+  {
+   "itiraz": "A alti_ay_tahsilat baz 18240 TL; plan 12 ayda baz yaklaşık 15.500 TL, 6 ayda en çok 5.000-8.000 TL olmalı",
+   "karar": "kabul",
+   "degisiklik": "A tahsilat baz 18240 iken 4320, iyi 41040 iken 8640; net fiyat 912 iken 720, değişken maliyet 70 iken 60",
+   "gerekce": "Plan 8 baz yıl 1 toplamı 15.500 TL; ödeme gecikmesiyle 6 ayda daha düşük."
+  },
+  {
+   "itiraz": "A odeme adedi baz 20 ve dönüşüm yüzde 1-3 kanıtsız; plan 12 ayda 25 ek Pro, 6 ayda baz 5-10 olmalı",
+   "karar": "kabul",
+   "degisiklik": "A ödeme adedi baz 20 iken 6, iyi 45 iken 12; müşteri aynı; dayanak plan 8 bazına bağlandı",
+   "gerekce": "Plan 12 ayda 25 ek Pro diyor, ilk tahsilat gecikmeli; dönüşüm varsayım olarak işaretlendi."
+  },
+  {
+   "itiraz": "B net fiyat 1.500 TL aylık; plan ekip planı 49-99 USD yıllık, kart 4-7 kat iyimser",
+   "karar": "kismen",
+   "degisiklik": "B fiyat aynı; dayanak 49-99 USD referansı kaldırıldı, farklı ürün olarak yazıldı; hacim düşürüldü",
+   "gerekce": "Hizmet sabit kapsamlı ve elle; ekip planı farklı ürün, ama 1.500 TL kaynaksız; hacim temkinli."
+  },
+  {
+   "itiraz": "B baz 3 ajans ve dönüşüm yüzde 5-15 desteksiz; satış başı 4 saat ve 120 dk destek eşiğin altında",
+   "karar": "kabul",
+   "degisiklik": "B baz 3 ajans iken 1, abone-ay 12 iken 2, tahsilat 18000 iken 3000, iyi 45000 iken 12000; dönüşüm 2-8 yüzde; satış 10 saat, destek 180 dk",
+   "gerekce": "Ajan ilişkisi yok; elle aylık teslim ve 5 demo zahmeti önceki rakamlarla uyuşmuyordu."
+  },
+  {
+   "itiraz": "C baz tahsilat 18000 TL (1 satış) belgesiz; baz 0 olmalı",
+   "karar": "kabul",
+   "degisiklik": "C baz tahsilat 18000 iken 0 (finans ve dönüşüm dayanağı güncellendi)",
+   "gerekce": "GPT belgesinde talep ve tutar yok."
+  },
+  {
+   "itiraz": "A ve B ilk_tahsilat_gun alt sınırı (45 ve 30) hesap, alıcı ve satıcı hesabı yokken iyimser",
+   "karar": "kabul",
+   "degisiklik": "A 45-100 iken 60-120; B 30-75 iken 75-120; B G6 notu güncellendi; C 30-120 iken 45-150",
+   "gerekce": "Ödeme hesabı açılmadı, alıcı ve ilişki yok; iyimser alt sınır desteksiz."
+  }
+ ]
+}

@@ -1,0 +1,665 @@
+{
+ "kriter": "S3",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 4,
+   "k": 1,
+   "g": "Canlı abonelik yazılımı, ek kafenin maliyeti düşük (ayda 15 dk destek); kurucu eliyle kurulum yalnız ilk müşteri taktiği. A'nın puanı çapaya uyuyor."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ek şube geliri düşük maliyetli ama zincir başına 40 saat satış ve ayda 240 dk destek gerekiyor; merkezden yayın henüz yok, kısmen ürünleşmiş."
+  },
+  "zabuno-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek modül uyarlaması 40 saatlik sabit proje; gelir doğrudan kurucu saatine bağlı."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Rapor otomatikleşebilir ama ilk 100 raporda imar özeti analist kontrollü ve emsal elle giriliyor; kısmen ürünleşmiş."
+  },
+  "parselq-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Abonelik geliri ama ilk kartlar elle üretiliyor, ofis paneli sonra; ofis başına ayda 60 dk destek var."
+  },
+  "parselq-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Her dosyada uzman onayı ve 12 saat emek gerekir; yalnız dosya şeması ve şablon yeniden kullanılır, abonelik tekrar görülürse."
+  },
+  "destektesvik-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor elle üretiliyor, kurucu ve sözleşmeli uzman saatine bağlı; kural motoru uzman süresini kısaltmayı hedefliyor."
+  },
+  "destektesvik-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Abonelik yazılımı; ek büronun maliyeti düşük (ayda 24 dk). Program doğrulama emeği müşteri sayısından bağımsız sabit yük; B'nin puanı seçildi."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kurum başına 40 saat satış, toplu tarama ve uzman kontrolü gerekir; gelir büyük ölçüde kurucu ve uzman saatine bağlı."
+  },
+  "asgari-iscilik-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek müşteriye 90 adam-günlük özel proje; gelir saate bağlı, yalnız aylık bakım ve platforma taşınabilir çekirdek ölçek ihtimali verir."
+  },
+  "asgari-iscilik-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Çok kiracılı abonelik; ek büro ya da yüklenici ayda 30 dk destek ister. Ürün kodu henüz yok, mevzuat bakımı sabit yük."
+  },
+  "asgari-iscilik-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Dosya başı kontrol elle ve uzman gözüyle yapılıyor, yazılım yok; gelir kurucu ve uzman saatine bağlı."
+  },
+  "zincir-danismanligi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "90 günlük danışmanlık ve aylık yönetim; ayda yaklaşık 35 saat kurucu emeği, tek kişilik kapasite tavanı."
+  },
+  "zincir-danismanligi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Her denetim raporu 24 saat kurucu emeği; yalnız rapor şablonu ve olgunluk testi yeniden kullanılır."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı zincir planı: ek şube maliyeti düşük ama merkezden yayın yok, pilot elle yönetilir, ayda 60 dk destek; zabuno-b ile aynı puan."
+  },
+  "kar-pusulasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Tarayıcıda çalışan lisanslı yazılım; satış başına 1 saat, ayda 5 dk destek. Oran bakımı sabit yük; ilk satışlar birebir ekran paylaşımıyla."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Abonelik yazılımı ama danışman başına demo, onboarding ve ayda 60 dk destek var; ilk raporlar elle hazırlanıyor. B'nin puanı seçildi."
+  },
+  "kar-pusulasi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor elle teslim ediliyor ama hesap motoru ve sabit şablon işi taşıyor (satış başına 2 saat); toplu araç sonraki dilim. A seçildi."
+  },
+  "titanlar-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Canlı kohort kurucu saatine bağlı ama 90 saat 20 kişiye kadar aynı kalıyor; kayıtlı kurs henüz yok. Bire çok yapı nedeniyle A seçildi."
+  },
+  "titanlar-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Görüşme ve ürün bazlı analiz doğrudan kurucunun danışmanlık saati; araç yerine tablo kullanılıyor."
+  },
+  "titanlar-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Gün ücretli atölye ve 60 gün mentorluk; gelir kurucu eğitmenin gününe bağlı, kayıtlı içerik yok. Atölyeler için ortak puan."
+  },
+  "kurumsal-site-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Hazır kalıp üretimi hızlandırıyor ama kapasite ayda 1-2 site; gelir proje başına kurucu saatine bağlı, bakım küçük tekrar geliri."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Sabit şablondan 8-10 sayfalık site; kalıp yeniden kullanılıyor ama her teslim kurucu emeği, bakım isteğe bağlı."
+  },
+  "kurumsal-site-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Kaynak kod teması; satış başına 0,5 saat, ek alıcının maliyeti düşük. Aracı mağaza üzerinden teslim; destek ayda 20 dk."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Paket başına yaklaşık 75 saat kurucu emeği; simülatör ve site kalıbı yeniden kullanılıyor."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor başına yaklaşık 55 saat; simülatör ve rakip tablosu şablonu yeniden kullanılıyor ama gelir saate bağlı."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Canlı site kalıbından üretilir ama ürün verisi girişi kurucuda; kurumsal site paketleriyle aynı durum, bu yüzden 1 yerine 2."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Yıllık lisanslı eklenti; teklifte elle kurulum yok, ek ajans ayda 30 dk destek ister. Satış kurucu görüşmesiyle başlar, kod henüz yazılmadı."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Arama ve eklenti dizininden satılan lisans; satış başına 1,5 saat, ek mağazanın maliyeti düşük. Kod henüz yok."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Site başına 5 saatlik elle kurulum, mevcut ücretsiz araçlarla; her ek müşteri ek kurucu saati demek."
+  },
+  "qral-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Sunucusuz uzantı, mağaza üzerinden görüşmesiz lisans; satış başına 0,25 saat, ayda 5 dk. Çapa 5'e tam uyuyor; hacim küçüklüğü S1 konusu."
+  },
+  "qral-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Yıllık lisanslı uzantı; öğretmen başına maliyet düşük (2 saat satış, ayda 15 dk). Okul alımında fatura ve ilişki emeği var; A seçildi."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekip şablonu elle kuruluyor (takım başına 6 saat) ama işi uzantı görüyor ve sonraki takımlarda lisans öngörülüyor; A seçildi."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit dijital ürün ama eğitmen lisansı 90 gün e-posta desteği, demo ve uyarlama yardımı içeriyor (satış 3 saat, ayda 45 dk)."
+  },
+  "frontend-atlasi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "24 laboratuvarlık sabit dijital paket, ders altı kutudan satılır; satış başına 0,1 saat. İçerik ürünü olduğu için 5 değil 4."
+  },
+  "frontend-atlasi-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Eğitmene özel tek ders ve laboratuvar üretimi; sipariş başına kurucu emeği, ürünleşme yok."
+  },
+  "karar-kitabi-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Yarım günlük atölye, ön çalışma ve 30 gün takip; gelir kurucunun atölye saatine bağlı, yazılım yok."
+  },
+  "karar-kitabi-b": {
+   "p": 4,
+   "k": 0,
+   "g": "PDF ve tablo paketleri otomatik teslim edilir, satış başına 0,1 saat; kalan 12 tema paketini kurucunun yazması gerekiyor."
+  },
+  "karar-kitabi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "1.000 TL'lik kit dijital ve çoğaltılabilir; 4.000 TL'lik özel memo ise kurucu saatine bağlı hizmet. Karma yapı."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Paket başına kurucu emeği, ayda 2-3 paket tavanı; site ve model üreten yığın yeniden kullanılıyor, şablon henüz genel değil."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek dosya seti için elle hazırlanan tutarlılık raporu ve 45 dakikalık görüşme; gelir kurucu saatine bağlı."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Şablon ve doğrulayıcı lisansı ürünleşmiş; yönetici paneli yok, 2 eğitim ve ayda 150 dk destek kurucuda."
+  },
+  "vize-operasyon-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Abonelik paneli ama acente başına 14 saat satış, elle pilot kurulumu ve ayda 120 dk destek; ülke şablonları güncel tutulmalı."
+  },
+  "vize-operasyon-b": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk kapsamda yazılım kuruluyor ve aylık ücret alınıyor; eşleme ve kural kaydı elle. Aynı yapıdaki birim başı hizmetlerle eşit, bu yüzden 2 yerine 3."
+  },
+  "vize-operasyon-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Otomatik evrak raporu, ek başvurucunun maliyeti düşük (model maliyeti); satış başına 1,5 saat nedeniyle 5 değil."
+  },
+  "software-factory-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Üretim hattı işin bir kısmını otomatik yapıyor ama kapasite ayda 1-2 MVP ve elle onarım var; aynı hatlı beyaz etiketle aynı puan, B seçildi."
+  },
+  "software-factory-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ücretsiz Action ve şablon yazılım olarak dağıtılır; ilk gelir repo başına elle kurulum, aylık plan yalnız tekrar kullanım görülürse."
+  },
+  "software-factory-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans satışı üstlenir ama teslim aynı hatta ve kurucu kapasitesine bağlı; satış başına 25 saat."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Statik white-label paket ürünleşmiş; kurum başına logo ve alt alan adı kurulumu, 2 saat eğitim ve ayda 90 dk destek kurucuda."
+  },
+  "strateji-simulatoru-b": {
+   "p": 5,
+   "k": 0,
+   "g": "Çalışan araçtan otomatik üretilen PDF raporu, kartla alınır; satış başına 0,5 saat, ayda 10 dk. Çapa 5'e uyuyor; gelir tavanı S1 konusu."
+  },
+  "strateji-simulatoru-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Elle hazırlanan 3 sayfalık rapor ve 1 saatlik yorum görüşmesi; satış başına 4 saat kurucu emeği."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Ağsız menü çubuğu uygulaması, otomatik lisans anahtarı; satış başına 0,3 saat. A'ya yakın: B'nin düşük puanı gelir hacmine dayanıyor, o S1 konusu."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 1,
+   "k": 0,
+   "g": "60-90 dakikalık uzaktan kurulum oturumu satılıyor; her müşteri ek kurucu saati, CLI ücretsiz. Kurulum hizmetleriyle aynı puan, A seçildi."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Aylık sponsorluk kurucu saatinden kısmen bağımsız; karşılığında öncelikli hata düzeltme ve entegrasyon desteği emek ister. B seçildi."
+  },
+  "actionplan-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Açık çekirdek ve lisans anahtarlı Pro şablonlar; ayda 5 dk destek. Satış başına 1,5 saat nedeniyle 5 değil."
+  },
+  "actionplan-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kabul şablonu ve kapsam tablosu elle teslim ediliyor, araç yalnız mevcut dışa aktarma kadar; aylık abonelik hipotez."
+  },
+  "actionplan-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Bir kez yazılan Türkçe şablon seti ve video; satış başına 0,1 saat, ek alıcının maliyeti düşük. A seçildi; üretim emeği tek seferlik."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Koruyucu Pro'nun parçası, yerel ve ağsız yazılım; aynı ürünle aynı puan. Satış başına 0,5 saat, ek kullanıcının maliyeti sıfıra yakın."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aylık rapor kurucu eliyle teslim ediliyor (ayda 180 dk); okuyucular veriyi hazırlıyor, ekip aracı sonraki aşama."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Müşteriye özel tek kart ve olay adaptörü; kabule bağlı proje işi, gelir kurucu saatine bağlı."
+  },
+  "ai-first-tasarim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "E-kitap ve prompt katalogları bir kez yazılıp çoğaltılır (satış başına 0,1 saat); kalan bölümlerin yazımı ve güncelleme kurucuda."
+  },
+  "ai-first-tasarim-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Bir günlük atölye ve 2 haftalık kurulum; satış başına 25 saat, gelir doğrudan kurucu saatine bağlı."
+  },
+  "ai-first-tasarim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kabul dosyası şablonu ve token hattı yeniden kullanılır ama her ajans için yaklaşık 12 saat kurucu emeği gerekir."
+  },
+  "aicommandcard-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Canlı menü ürününün üst plan katmanı, ürün içinden satılır; ek hesabın maliyeti model kotasıyla sınırlı. Entegrasyon henüz yok."
+  },
+  "aicommandcard-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Kartın müşterinin kendi paneline bağlanması 5 iş günlük elle iş; müşteri kod tabanına entegrasyon işleriyle aynı puan, B seçildi."
+  },
+  "atonota-denetim-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Eklenti dizininden dağıtılan yıllık lisans; satış başına 1 saat, ayda 5 dk destek. Ürün henüz yazılmadı."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Lisans yazılımı ama anahtar elle veriliyor, portal ve otomatik ödeme sonra; ajans başına demo ve ayda 60 dk destek."
+  },
+  "atonota-denetim-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Yönetilen kabul akışı elle yürütülen pilot; kanıt elle toplanıyor, ajans başına ayda 120 dk kurucu emeği."
+  },
+  "b2b-bilesenler-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Hazır ürün sayfası ve hareket blokları yeniden kullanılır ama her sitede uyarlama ve teslim saati gerekir."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Teslim mevcut demodaki hazır görünümlerden çıkan bağımsız sayfa ve kaynak kod; yine müşteri başına uyarlama var. B seçildi."
+  },
+  "b2b-bilesenler-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Desteksiz şablon satışı, aracı mağazadan otomatik teslim; satış başına 0,5 saat. Kod paketi olduğu için 4."
+  },
+  "banner-post-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Canlı menü ürününe eklenen modül, plan geçişiyle satılır; kiracı başına maliyet çok düşük. Modül kodu henüz yok."
+  },
+  "banner-post-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ayda 12 görsel ve 4 hikâye elle üretiliyor (ayda 480 dk); gelir kurucu ya da tasarımcı saatine bağlı."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Renderer yok; görseller elle ya da betikle üretiliyor. CSV betiği tekrar kullanımı sağlar; ürünleşme henüz kanıtsız, B seçildi."
+  },
+  "karar-sihirbazi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Aylık abonelik, ajans sitesine gömülen form; ek ajans ayda 20 dk destek ister. Kurulum ayrı ücretli; arka uç ve panel henüz yok."
+  },
+  "karar-sihirbazi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Proje başına 60 dakikalık çalıştay ve elle yazılan karar dosyası; satış başına 14 saat kurucu emeği."
+  },
+  "karar-sihirbazi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Kit yeniden satılır ama her ajansta marka uyarlaması, kurulum ve 1 saat eğitim var (10 saat); kurulumlu kod satışlarıyla aynı, A seçildi."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Set başına 8-14 saat kurucu emeği; üretim çekirdeği sunumu betikle çıkarıyor, tema ve katalog okuyucu henüz yok."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Tema kurulduktan sonra aylık üretim büyük ölçüde betikle; kurulum, kuyruk ve destek (ayda 120 dk) şimdilik elle."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı üretim betiğiyle tek CSV'den 5 slayt; her teslim yine 12 saat kurucu emeği. Katalog paketiyle aynı puan, B seçildi."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Demo hazır kitten üretilir ama ayda 2 demo tavanı var; kalıptan site paketleriyle aynı durum olduğu için 1 yerine 2."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Demo başına kurucu emeği sürer; şablon kütüphanesi ve ajansın satışı üstlenmesi kısmi kaldıraç sağlar."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Kurulumdan sonra dönem istisna listesi kuralla üretilir, aylık ücret alınır; her yeni biçim için eşleme elle. Arka uç yok; B seçildi."
+  },
+  "ddd-renderer-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Üç şablonluk dijital paket otomatik teslim edilir; satış başına 0,5 saat, ek alıcının maliyeti düşük. A seçildi; kitle küçüklüğü S1 konusu."
+  },
+  "ddd-renderer-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Açık çekirdek üstüne şablon paketleri, yasal satıcı üzerinden görüşmesiz satış; 12 ay güncelleme kurucuda."
+  },
+  "ddd-renderer-c": {
+   "p": 1,
+   "k": 0,
+   "g": "3 günlük değerlendirme, satış başına 36 saat; gelir kurucunun teslim günlerine bağlı."
+  },
+  "devpanel-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Bileşenlerin müşterinin React projesine 3 günde entegrasyonu; gün ücretiyle fiyatlanmış, gelir kurucu saatine bağlı."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Tek formluk entegrasyon işi; dışa aktarıcı sonraki işleri hızlandırır ama tekrar eden ürün geliri tanımlı değil."
+  },
+  "devpanel-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Lisanslı şablon, aracı mağazadan teslim; satış başına 0,5 saat. A seçildi: B'nin düşük puanı gelir büyüklüğüne dayanıyor, S3'e değil."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kod tabanı yeniden kullanılır ama her ajans kurulumu 40 saat ve 20 saat uyarlama içerir; yıllık bakım küçük."
+  },
+  "e-menum-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Menü güncellemeleri kurucunun mevcut panelle elle yürüttüğü hizmet; içe aktarma ve onay akışı üründe kanıtsız."
+  },
+  "e-menum-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Desteksiz kaynak kod ve belge paketi; satış başına 1 saat, ek alıcının maliyeti düşük. A seçildi; hacim küçüklüğü S1 konusu."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Bülten dağıtımı maliyetsiz ama her ay 5 fırsat kartının araştırması ve yazımı kurucuda; sayı başına emek sürüyor."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Sabit içerikli indirilebilir paket; özelleştirme ve görüşme yok, satış başına 0,25 saat. İçerik ürünü olduğu için 4."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Lisansın bülten kısmı ürünleşmiş; satış görüşmesi ve yıllık puanlama görüşmesi kurucu saatine bağlı."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Denetim başına 2-3 gün kurucu emeği (satış 16 saat); şablon yardımcı ama gelir denetim günlerine bağlı."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 4,
+   "k": 0,
+   "g": "60 maddelik PDF, ders sonundan görüşmesiz satılır; satış başına kurucu emeği yok. İçerik ürünü olduğu için 4."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "İlk kapsamda mesaj denetimi ve CI makbuzu yazılım olarak kuruluyor, aylık ekip planı sınanacak; pilot ise elle, 24 saat satış."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 2,
+   "k": 0,
+   "g": "2 haftalık teşhis kurucu emeği; yılda en çok 4 tam paket. Şablonlar ve kendini ödeyen model tablosu yeniden kullanılır."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Her rapor 3 yetkili görüşmesi ve teklif yanıtı sınıflaması ister; kurucunun birebir emeği, B seçildi."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "12 haftalık paket ve haftalık koçluk kurucu saatine bağlı; ekran seti ve backlog kalıpları yeniden kullanılır. Teşhis paketiyle aynı, A seçildi."
+  },
+  "lifeos-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Gelir aynı çalışma kâğıdı paketlerinden gelir; otomatik teslim edilen dijital dosya. Karar Kitabı paketleriyle aynı durum, bu yüzden 3 yerine 4."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Eklenti yerel ve ücretsiz dağıtılır; ücretli kısım elle teslim edilen şablon ve kurulum paketi (satış başına 3 saat)."
+  },
+  "lifeos-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Açık çekirdek üstüne ücretli dijital kit; ek alıcının maliyeti düşük, destek ayda 15 dk. Kod paketleriyle aynı puan, B seçildi."
+  },
+  "luquit-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Aylık abonelik paneli; teklifte elle kurulum yok, ofis başına ayda 30 dk destek. Sunucu tarafı henüz yok, ilk ofislerde veri girişi desteği olur."
+  },
+  "luquit-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Kit kod olarak çoğalır ama destekli satılıyor (ayda 45 dk) ve 12 saatlik özel entegrasyon kurucu emeği."
+  },
+  "metaframer-kernel-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Ticari lisanslı kit, görüşmesiz satış; ek müşteri maliyeti düşük. Satış başına 2 saat ve destek kurucuda olduğu için 5 değil."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Paketin lisans kısmı ürün; değerin çoğu ekibe uyarlanan 1 günlük atölye ve satış başına 30 saat kurucu emeği."
+  },
+  "metaframer-kernel-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Müşterinin uygulamasında tek eylem entegrasyonu, satış başına 50 saat; kod tabanına entegrasyon işleriyle aynı, B seçildi."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 5,
+   "k": 0,
+   "g": "Tarayıcıda çalışan araç, lisans anahtarlı görüşmesiz satış; satış başına 0,5 saat, ayda 5 dk. Sorgu kotası dışında ek maliyet yok."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Aynı yazılımın 3 kullanıcılı yıllık lisansı; kurulum yok, ayda 15 dk destek. Satış kurucu demosuyla; ajans lisanslarıyla aynı, 3 yerine 4."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 1,
+   "k": 0,
+   "g": "10 adaylık karar dosyası elle hazırlanıyor, teslim başına yaklaşık 2 saat; gelir doğrudan kurucu saatine bağlı."
+  },
+  "projector-a": {
+   "p": 4,
+   "k": 0,
+   "g": "E-kitap bir kez yazılıp çoğaltılır (satış başına 0,5 saat); kalan 7 bölüm ve güncelleme kurucuda. Diğer e-kitapla aynı, bu yüzden 4."
+  },
+  "projector-b": {
+   "p": 1,
+   "k": 0,
+   "g": "İki günlük ekip atölyesi ve 30 gün destek; gelir tamamen kurucunun atölye günlerine bağlı."
+  },
+  "projector-c": {
+   "p": 3,
+   "k": 0,
+   "g": "İçe aktarıcı ve salt okur portal yazılım olarak kuruluyor, barındırılan aylık sürüm sınanacak; migration pilotu ise elle, 25 saat."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Arındırılmış şablon paketi dijital dosya; satış başına 0,5 saat, ek alıcının maliyeti düşük. İçerik ürünü olduğu için 4."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Şablon kopyaları ürünleşmiş ama kurum satışı ve 1 saatlik atölye kurucu saatine bağlı (satış başına 8 saat)."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Ortaklık komisyonu trafiğe bağlı, satış başına kurucu emeği yok; künye doğrulaması ve içerik genişletme kurucuda."
+  },
+  "signator-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yıllık lisanslı yazılım ama müşteri alanları elle yönetiliyor, panel yok; ilk müşteride birlikte kurulum ve ayda 60 dk destek."
+  },
+  "signator-b": {
+   "p": 4,
+   "k": 0,
+   "g": "Self-servis ekip paketi, aramadan gelen satış ve ödeme bağlantısı; ek müşteri maliyeti düşük. Ekip modu henüz yazılmadı."
+  },
+  "signator-c": {
+   "p": 1,
+   "k": 0,
+   "g": "5 kişilik imza paketi elle hazırlanıyor, satış başına 5 saat; yazılım geliştirme yok, her müşteri ek saat."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Marka başına tema ve logo uyarlaması elle (teslim yaklaşık 25 saat); aynı oyun çekirdeği yeniden kullanılır, tema dosyası sonra."
+  },
+  "volley-tap-b": {
+   "p": 5,
+   "k": 1,
+   "g": "Portal reklam payı; ek oyuncunun maliyeti sıfır, satış emeği yok. Portal şartları yayımlanmış; düşük gelir hacmi S1 konusu."
+  },
+  "volley-tap-c": {
+   "p": 4,
+   "k": 0,
+   "g": "Mağaza sayfasından görüşmesiz premium paket; ek oyuncunun maliyeti düşük. Satış başına 1 saat ve haftalık bakım nedeniyle 5 değil; B seçildi."
+  },
+  "woocommnts-a": {
+   "p": 4,
+   "k": 0,
+   "g": "Yıllık lisanslı eklenti, dizin ve eklenti içi karttan satış; ayda 10 dk destek. Satış başına 2 saat ve oran güncellemesi kurucuda."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Lisans yazılım ama teklif ilk mağazada birlikte kurulum ve öncelikli destek içeriyor; satış kurucunun doğrudan teması (6 saat)."
+  },
+  "woocommnts-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek göç elle ve betikle yürütülüyor, satış başına 8 saat; araç yalnız teslimi hızlandırır."
+  },
+  "egitim-demolari-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ders paketi tekrar satılır ama her yeni kazanım için rehber ve 20 doğrulanmış soru üretimi kurucuda; satış başına 1,5 saat."
+  },
+  "egitim-demolari-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Ekibin kendi senaryosuna uyarlanan atölye; satış başına 12 saat, gelir kurucunun atölye saatine bağlı."
+  },
+  "baz-secenekler-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Gün paketi olarak satılan kurucu saati; yazılı günlük birim ücret teklifi var, kapasite haftalık 20 saatle sınırlı."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Kod yeniden satılır ama her ajans kurulumu yaklaşık 40 saat; aynı kod tabanının kurulum paketiyle aynı puan."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Program duyurusuna göre tek seferlik, pay karşılığı fon; satış geliri değil, tekrarlanmaz ve dosya emeğine bağlı."
+  }
+ }
+}

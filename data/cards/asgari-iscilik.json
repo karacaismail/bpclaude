@@ -1,0 +1,344 @@
+{
+ "slug": "asgari-iscilik",
+ "baslik": "Asgari işçilik ve hakediş uyum platformu",
+ "ozet": "İhaleli ya da ruhsatlı inşaat işi yapan yüklenicilerin SGK asgari işçilik yükümlülüğünü taşeron bazında, 2026 kurallarıyla hesaplayan ve izleyen uyum aracı. Bugün teklif ve kapsam belgeleri hazır; ürün kodu, ödeyen müşteri ve yazılı anlaşma yok.",
+ "bugun": {
+  "var": [
+   "Fiyatlı teklif formu ve yedi modüllü kapsam sözleşmeleri hazır (plan olgunluğu yaklaşık yüzde 90)",
+   "Canlı tanıtım raporu ve ücret hesaplayan teklif sayfası yayında",
+   "Hesap kuralları belgelenmiş (yaklaşık yüzde 60); 12 doğrulama senaryosu tanımlı",
+   "Müşteri adayı bir inşaat firması teklif sürecinde; ilişki mevcut",
+   "Rakip ve fiyat taraması yapılmış: hakediş ve bordro araçları bu hesabı yapmıyor"
+  ],
+  "yok": [
+   "Çalışan ürün kodu ve test yok (kod yüzde 0)",
+   "Ödeyen müşteri ve imzalı sözleşme yok",
+   "Kod ve müşteri ilişkisinin sahibi şirketle yazılı anlaşma yok",
+   "Bağımsız SGK/SMMM doğrulaması ve mesleki sorumluluk sigortası yok",
+   "Ölçülmüş arama hacmi, dönüşüm, kayıp oranı ve edinme maliyeti yok",
+   "Ödeme hesabı ve fatura düzeni kurulmadı"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Kod ve müşteri ilişkisi anlaşmasından sonra bir inşaat firmasına sabit fiyatlı proje (ilk dilim 360.000 ₺ + KDV) ve aylık bakım; sonra aynı motor SMMM ve yükleniciye abonelik. Pazar niş ama dar boşluk var.",
+  "gpt": "İlk ürün platform değil: müşterinin tablosunu bırakmadan açıklanamayan farkları gösteren, uzmanın elle hazırladığı sabit kapsamlı dosya kontrol hizmeti (test fiyatı 10.000 ₺). İki saatten fazla özel betik gerekiyorsa hizmette kal.",
+  "ayrisma": "Claude yazılımı ve geliştirme projesini öne alır, kuruş doğruluğunu vaat eder. GPT kodu henüz kanıtlanmamış sayar, önce hizmet ve ücretli pilot ister; gerçek müşteri tablosu açılmadığını ve mevzuat oranının uzman teyidi gerektiğini vurgular.",
+  "birlesik": "Önce uzman teyitli, sabit fiyatlı hesap ve dosya kontrol hizmetini sat; ücretli kanıt ve senaryolar gelince motoru ürünleştir ve proje ile aboneliğe geç. Yazılı sahiplik anlaşması her yolda ön koşuldur."
+ },
+ "analist_gorusu": "Altı ayda tahsilat için en gerçekçi yol sabit kapsamlı, uzman teyitli kontrol raporudur. Müşteri projesi büyük ama yazılı anlaşmaya ve 400 saat işe bağlı; abonelik ürün çıkmadan gelir getirmez.",
+ "secenekler": [
+  {
+   "id": "asgari-iscilik-a",
+   "ad": "Bir inşaat firmasına sabit fiyatlı uyum yazılımı projesi",
+   "tur": "hizmet",
+   "musteri": "Kamu ihalesi alan, çok taşeronlu orta ve büyük ölçekli bir inşaat firması (mali işler ve genel müdür onayı)",
+   "is": "İlişiksizlik belgesi, kesin teminat ve hakedişin SGK asgari işçilik hesabı yüzünden kilitlenmemesi; taşeron bazında doğru kesinti",
+   "tetikleyici": "2026 SGK genelgesi sonrası günceldışı kalan tablo; eksik işçilik tebliği; teminat çözümünde gecikme",
+   "teklif": "Dört modüllü ilk sürüm (üç hesap motoru, taşeron matrisi, parametre kilidi), 12 senaryoda kuruş kabulü; sonrasında aylık bakım",
+   "fiyat": "360.000 ₺ + KDV (90 adam-gün); yüzde 30 imza, yüzde 40 kabul testi, yüzde 30 canlıya alma; bakım 12.000-15.000 ₺/ay",
+   "kanal_birincil": "Mevcut ilişki: teklif sürecindeki inşaat firması, kod ve müşteri ilişkisinin sahibi şirketin yazılı onayıyla",
+   "kanal_yedek": "Kamu ihale sonuç ilanlarından çıkarılan yükleniciler; müşterinin mali müşaviri ve SGK danışmanı",
+   "ilk_adim": "Yazılı sahiplik anlaşmasını bağla; 45 dakikalık sunum ve iki gerçek senaryoda kuruş kanıtı prototipi",
+   "ilk_kapsam": "Parametre tablosu ile ruhsat ve ihale hesabı iskeleti; iki senaryo kanıtı. Satış bununla yapılır, kalan dört modül avansla üretilir.",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Kod ve müşteri ilişkisinin sahibi şirketle yazılı anlaşma yok; anlaşmasız proje ve pazarlama başlamaz."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kişisel veri işleme sözleşmesi, sorumluluk sınırı ve uzman teyidi bekliyor; hukuki görüş alınmadı."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura düzeni yol olarak belli; hesap ve şablon hazır değil."
+    },
+    "G4": {
+     "durum": "gecti",
+     "not": "Alıcı tipi net; belgelenmiş mevcut ilişki var. Tek alıcıya dayanır, ikinci isim gerekir."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal mevcut ilişki, yedek kanal ihale ilanı listesi; ilk adım yazılı."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Satıştan önce yaklaşık 60 saat kanıt işi; teslim 400 saat, 20 saat/hafta ile yaklaşık 20 hafta, tahsilat aşamalı."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 20.000 ₺ (sözleşme seti, doğrulama); tavan 50.000 ₺'nin altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Modüller ve fiyat sabit ama senaryo müşteriye özgü; kapsam sınırı sözleşmeye yazılmalı."
+    }
+   },
+   "kapi_duzeltme": "Sahiplik anlaşmasını imzala (G1); kişisel veri ve sorumluluk maddelerini hukukçuya yazdır; hesap ve fatura şablonunu aç; kapsamı yazılı ekle.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 360000,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 12000,
+    "baslangic_nakit_tl": 20000,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 60,
+     "max": 100
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 90
+    },
+    "satis_basina_kurucu_saati": 25,
+    "musteri_basina_aylik_destek_dk": 480,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 108000,
+     "iyi": 108000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 1
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 1
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.5
+    },
+    "dayanak": "Plan 5 ve 8: 360.000 ₺, yüzde 30 imzada = 108.000 ₺ (baz ve iyi). Teslim 400 saat ve kurucu 20 saat/hafta ile 20 hafta; imza 45-90. gün olursa kabul testi (yüzde 40) 6. aya sığmaz, bu yüzden ikinci ödeme sayılmadı. Dönüşüm varsayım: tek sıcak ilişki, kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Müşteri, sahiplik anlaşması bağlandıktan sonra yüzde 30 avansla 360.000 ₺'lik sabit fiyatlı teklifi imzalar",
+    "yontem": "Anlaşma sonrası 45 dakikalık sunum, müşterinin iki gerçek senaryosunda kuruş kanıtı prototipi, imzaya hazır teklif formu.",
+    "sure_gun": 30,
+    "maliyet_saat": 60,
+    "maliyet_tl": 20000,
+    "basari_olcutu": "Yazılı niyet ya da avans; iki senaryoda sapma 0,01 ₺ altı",
+    "birakma_olcutu": "60 gün içinde yazılı anlaşma ya da imza çıkmazsa projeyi beklemeye al",
+    "sonraki_dilim": "Avans gelirse ilk dört modül; kabul sonrası bakım ve ikinci modül dilimi"
+   },
+   "etiketler": {
+    "segment": "Kamu ihalesi alan yüklenici",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Çok kiracılı olmayan çekirdek, Python hesap motoru",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan 1, 2, 5: teklif ve kapsam hazır, ürün kodu yok; ödeyen müşteri 0. Derinlik dosyası A.8 ve B.3: karar süreci 1-3 ay, yüksek tutarlı işlerde ortak onayı. Plan 10.1: yazılı sahiplik anlaşması yok, olasılık ve etki yüksek. Dosya D.8: 131 adam-gün eksik iş listesi. GPT: gerçek müşteri tablosu açılmadı, kod kanıtlanmadı."
+  },
+  {
+   "id": "asgari-iscilik-b",
+   "ad": "Mali müşavir ve yükleniciye aylık abonelik (çok kiracılı platform)",
+   "tur": "yazılım ürünü",
+   "musteri": "İnşaat mükellefi olan mali müşavir büroları (10-40 mükellef) ve 2-5 şantiyeli yükleniciler",
+   "is": "Her mükellef ya da şantiye için asgari işçilik yükümlülüğünü her ay tek yerden izlemek, mevzuat değişince hesabı günler içinde güncellemek",
+   "tetikleyici": "2026 genelgesi sonrası tabloların güncellenmesi; eksik işçilik tebliğinde bir aylık itiraz süresi",
+   "teklif": "Aylık abonelik: ruhsat, ihale ve hakediş hesabı, taşeron matrisi, uyarı, PDF rapor; 30 gün ücretsiz pilot, ilk 14 gün iade",
+   "fiyat": "Mali müşavir bürosu 2.490 ₺/ay (10 mükellef); yüklenici 1.490 / 3.990 / 9.900 ₺/ay; yıllık peşin indirimli",
+   "kanal_birincil": "Mali müşavir odalarının ücretsiz eğitim webinarları (İstanbul, Ankara, İzmir, Bursa odaları)",
+   "kanal_yedek": "Ücretsiz asgari işçilik hesaplayıcısı ve genelge rehberi; LinkedIn içerikleri; ihale ilanlarından e-posta",
+   "ilk_adim": "İki odaya webinar başvurusu; hesaplayıcı ve rehber içeriği; ilk iki mali müşavirle sekiz haftalık ücretsiz pilot",
+   "ilk_kapsam": "Tek kiracılı çalışan çekirdek: ruhsat ve ihale hesabı, parametre tablosu, CSV içe aktarma, PDF rapor; abonelik ve ödeme akışı.",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Kod ve müşteri ilişkisinin sahibi şirketle yazılı anlaşma yok; anlaşmasız abonelik pazarlaması başlamaz."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kişisel veri işleme, hesap sorumluluğu ve açık kaynak lisans uyumu için hukukçu teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Sanal POS ya da havale yolu belli; hesap açılmadı, test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (mali müşavir, yüklenici); 20 kişilik isim listesi henüz çıkarılmadı."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal oda webinarları, yedek hesaplayıcı ve içerik; ilk adım adlı."
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Çalışan çekirdek ve abonelik akışı yaklaşık 850 saat; satılabilir kapsam 8 haftadan uzak."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 40.000 ₺ (hukuk, hesap, alan adı); tavanın altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı ürünü alır; paketler ve fiyatlar sabit."
+    }
+   },
+   "kapi_duzeltme": "Sahiplik anlaşmasını imzala; çalışan çekirdeği önce bir proje ya da hizmetle finanse et; hukuk, ödeme hesabı ve 20 isimlik liste ile G2-G4'ü kapat.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 2490,
+    "degisken_maliyet_tl": 110,
+    "sabit_gider_aylik_tl": 16000,
+    "baslangic_nakit_tl": 40000,
+    "kalan_efor_saat": {
+     "min": 600,
+     "beklenen": 850,
+     "max": 1200
+    },
+    "ilk_tahsilat_gun": {
+     "min": 150,
+     "max": 270
+    },
+    "satis_basina_kurucu_saati": 10,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "Plan 5 ve 8: 2.490 ₺/ay. Plan abonelik satışını 9. aya koyar; 600-1200 saat ve haftada 20 saatle çalışan ürün 6. ayda hazır değil. Kötü, baz ve iyi senaryoda 6 ay içinde tahsilat 0. Dönüşüm: webinar yüzde 10 pilot talebi, varsayım."
+   },
+   "deney": {
+    "varsayim": "Mali müşavirler çalışan ürün olmadan, genelge rehberi ve hesaplayıcı karşılığında sekiz haftalık pilota ve ardından ödemeye razı olur",
+    "yontem": "İki oda webinarı, ücretsiz hesaplayıcı ve rehber; webinar sonrası pilot daveti ve 30 gün sonunda fiyat teklifi.",
+    "sure_gun": 60,
+    "maliyet_saat": 40,
+    "maliyet_tl": 2000,
+    "basari_olcutu": "En az 4 pilot talebi ve 2 yazılı ödeme niyeti",
+    "birakma_olcutu": "60 günde 2 pilottan az talep ya da hiç ödeme niyeti yok",
+    "sonraki_dilim": "Seçenek C ile para kazan; talep ve senaryolar gelince çekirdeği üret"
+   },
+   "etiketler": {
+    "segment": "Mali müşavir ve orta ölçekli yüklenici",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Çok kiracılı SaaS, Python hesap motoru",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan 5, 6: paket fiyatları, ARPU 3.600 ₺ ve churn yüzde 3 varsayım. Plan 8: 12. ay baz gelirinin büyük kısmı projeden gelir; abonelik 9. aydan başlar. Derinlik dosyası C.2: webinar hedefleri ve oda üye sayıları; arama hacmi ölçülmedi. Rakip fiyatları: mali müşavir yazılımı yıllık 700 ₺ kullanım, hakediş araçları 99.000-146.000 ₺."
+  },
+  {
+   "id": "asgari-iscilik-c",
+   "ad": "Asgari işçilik hesap ve dosya kontrol raporu (uzman teyitli)",
+   "tur": "hizmet",
+   "musteri": "Taşeronlu ihale ve ruhsat işi yapan yüklenicinin mali işleri; yükleniciye hizmet veren mali müşavir ve teknik ofis",
+   "is": "Kendi tablosundaki günceldışı çarpan, kırık bağ, tür hatası ve açıklamasız düzeltmeyi bulup 2026 kurallarıyla doğru rakamı belgelemek",
+   "tetikleyici": "2026 genelgesi sonrası hesabı yenileme ihtiyacı; eksik işçilik tebliği; ilişiksizlik belgesi ya da teminat öncesi son kontrol",
+   "teklif": "Sabit kapsamlı kontrol raporu: bir dosya, bir dönem karşılaştırması, uzman onaylı bulgu listesi ve kaynak hücreli özet; teslim 5 iş günü",
+   "fiyat": "10.000 ₺ + KDV dosya başı (test fiyatı); tekrar dönem kontrolü ayrı paket",
+   "kanal_birincil": "Mali müşavir odaları webinarı ve ihale ilanlarından çıkarılan yüklenici listesine kişisel e-posta (50/ay)",
+   "kanal_yedek": "Mevcut ilişki olan inşaat firması ve mali müşaviri; LinkedIn ve genelge rehberi; ücretsiz hesaplayıcı",
+   "ilk_adim": "On sentetik doğru ve bozuk örnek, iki sayfalık kapsam, ücretsiz kısa teşhis; ilk izinli dosya",
+   "ilk_kapsam": "Parametreli hesap tablosu, kontrol listesi ve rapor şablonu; müşterinin dosyası elle ve uzman gözüyle kontrol edilir, yazılım yok.",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Yalnız kamuya açık mevzuat ve kendi yöntem kullanılır; kod ve müşteri ilişkisi sahibi şirketle yazılı anlaşma bekliyor."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Hesap rakamı mesleki sorumluluk doğurur; uzman teyidi, sorumluluk sınırı ve kişisel veri maskelemesi gerekir."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli; hesap ve fatura şablonu hazırlanmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; ihale ilanlarından 20 isimlik liste çıkarılabilir ama henüz çıkarılmadı."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal oda webinarı ve ilan listesi, yedek mevcut ilişki ve içerik; ilk adım adlı."
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "İlk satılabilir kapsam yaklaşık 50 saat (2,5 hafta); ilk tahsilat 21-60 gün."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 8.000 ₺; tavanın çok altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam, sabit fiyat, sabit teslim süresi; kapsam dışı istek ayrı fiyatlanır."
+    }
+   },
+   "kapi_duzeltme": "Uzman teyidi ve sorumluluk sınırlı sözleşme taslağını hazırla; ödeme ve fatura şablonunu aç; 20 yüklenici ve büro isim listesi çıkar; sahiplik anlaşmasını bağla.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 10000,
+    "degisken_maliyet_tl": 2100,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 50,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 21,
+     "max": 60
+    },
+    "satis_basina_kurucu_saati": 6,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 30000,
+     "iyi": 120000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 9
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "GPT: 10.000 ₺ test fiyatı, 2 saat uzman x 800, araç 200, tahsilat 300 = 2.100 ₺ değişken (kurucu saati hariç). Baz: 30 kişilik mesajdan yüzde 5-15 ile 1-4 dosya, orta nokta 3 ücretli dosya; iyi 12 (tekrar dönem dahil). Dönüşüm varsayım, kanıt yok."
+   },
+   "deney": {
+    "varsayim": "Bir yüklenici ya da mali müşavir, bu tablo kontrolü için 10.000 ₺'yi uzman teyitli rapora öder",
+    "yontem": "Genelge rehberi ve ücretsiz teşhis ile 30 hedef kişiye kişisel mesaj; ilk izinli dosyada kontrol ve rapor, ücret teklif edilir.",
+    "sure_gun": 30,
+    "maliyet_saat": 50,
+    "maliyet_tl": 8000,
+    "basari_olcutu": "İki izinli dosya ve en az bir ücretli rapor (10.000 ₺ tahsil)",
+    "birakma_olcutu": "30 günde 6 teşhis görüşmesi olup ödeme isteği sıfırsa fiyat ve kitleyi değiştir",
+    "sonraki_dilim": "Üç dosya ve 50 etiketli bulguyla tekrar dönem paketi; 90. günde aynı müşteriden ikinci dönem"
+   },
+   "etiketler": {
+    "segment": "Yüklenici mali işleri ve mali müşavir",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Hesap tablosu, kontrol listesi, uzman incelemesi",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "GPT: ilk ürün dosya kontrol hizmeti, 10.000 ₺ test fiyatı, 30-90 günlük deney; gerçek müşteri tablosu açılmadı. Plan 1 ve derinlik dosyası A.1, A.4: tablo kusurları ve danışmana dosya başı ücret (fiyat kamuya açık değil). Derinlik C.3: 90 günde 6 teşhis ve 4 pilot hedefi. Ödeyen müşteri 0; hizmet fiyatı için kanıt yok."
+  }
+ ]
+}

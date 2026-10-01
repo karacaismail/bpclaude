@@ -1,0 +1,343 @@
+{
+ "slug": "wp-nis-eklentiler",
+ "baslik": "WordPress / WooCommerce Türkiye niş eklenti hattı",
+ "ozet": "Türk WordPress ve WooCommerce siteleri için üç küçük eklenti: KVKK Lite, Türk Taksit Tablosu ile Kapıda Ödeme Kuralları, İYS Köprü. Ödeyen alıcı siteleri kuran ajans ve freelancer'lar. Bugün yalnız iş planı ve araştırma var; eklenti kodu yazılmadı, ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Ayrıntılı iş planı, fiyat tablosu ve 12 aylık yayın takvimi (varsayım ağırlıklı)",
+   "Rakip ve pazar taraması: wordpress.org KVKK eklentilerinin tamamı 10 kurulumun altında",
+   "Önceki bir yorum eklentisinden kalma ~550 satırlık PHP iskeleti: DI, tablo, REST, Pest, PHPStan",
+   "Kurucunun daha önce yayımladığı birkaç küçük WordPress ve WooCommerce deposu",
+   "Mevcut ilişki: kurucunun çevresindeki siteler ve ajans çevresi (isim listesi yok)"
+  ],
+  "yok": [
+   "Üç eklentinin hiçbiri yazılmadı (alan kodu, lisanslama, CI, Playwright matrisi yok)",
+   "Ödeme alma hesabı (Freemius, TL için sanal POS) açılmadı",
+   "Hukuk bürosu teyitli aydınlatma metni şablonları yok",
+   "Hiçbir ajans ya da mağaza ile fiyat görüşmesi yapılmadı (görüşme sayısı 0)",
+   "wordpress.org gönderimi ve yorumu yok; İYS API erişimi alınmadı"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Üç eklentilik hat; KVKK Lite ile başla, wordpress.org ücretsiz sürüm ve Freemius Pro (yıllık ₺1.490-2.490), ajans paketi ₺9.990. Baz senaryo 12. ay ~₺125 bin; tek kurucuyu geçindirmez, 90 günde 10 ödeyen yoksa durdur.",
+  "gpt": "İlgili GPT notu yalnız sektörel site hizmeti için bir synthetic landing brief çıktısını anlatır. Pazar talebi ya da ödeme kanıtı yok; ücretli öneri sınırlı kit, uyarlama ya da hizmettir. Tekrarlı kullanım görülmeden abonelik kurulmaz.",
+  "ayrisma": "Claude planı ürünleşmiş, abonelik benzeri lisans modeli ve ajans paketi kurar; GPT notu aynı varlığı ürün sayılmaz, talep kanıtı yok der ve ilk adımı hizmet ya da kit olarak sınırlar.",
+  "birlesik": "Eklenti lisansı büyük bahistir ve ödeyen müşteri yok. Önce ajans ön ödemesiyle KVKK Lite'ı sına; kodsuz, sabit kapsamlı kurulum hizmeti en küçük satılabilir adımdır, tekrar görülürse lisansa geç."
+ },
+ "analist_gorusu": "En gerçekçi yol KVKK Lite'ı ajans lisansı olarak satmaktır; ama kod yok. 8 haftada tahsilat için kodsuz, sabit fiyatlı kurulum hizmeti en küçük adımdır; talep kanıtı gelince lisansa geçilir.",
+ "secenekler": [
+  {
+   "id": "wp-nis-eklentiler-a",
+   "ad": "KVKK Lite Pro: ajans lisansı",
+   "tur": "eklenti",
+   "musteri": "Yılda 15-25 site kuran WordPress ajansı ve freelancer; karar ve ödemeyi kendisi verir",
+   "is": "Her müşteri sitesinde aydınlatma metni, rıza kaydı ve başvuru formunu elle tekrar kurmak; müşteriye kayıt gösterebilmek",
+   "tetikleyici": "Müşterinin KVKK ceza haberi sorusu; bir sitede kanıtsız rıza ya da kaybolan veri sahibi başvurusu",
+   "teklif": "KVKK Lite Pro: sınırsız site, metin üreteci, rıza kaydı, 30 gün sayaçlı başvuru panosu, CSV; 14 gün iade",
+   "fiyat": "Ajans lisansı yıllık ₺9.990; ilk 10 ajansa ilk yıl ₺4.990; tek site Pro ₺1.990 (KDV hariç)",
+   "kanal_birincil": "Kurucu satışı: R10.net WordPress bölümü, WordPress Türkiye Slack ve WordPress Istanbul Meetup'ta ajans görüşmeleri",
+   "kanal_yedek": "wordpress.org ücretsiz sürüm listesi ve Türkçe rehber yazıları; hosting bayi blogları",
+   "ilk_adim": "Bu hafta 15 ajans adayını adlandır, 10 görüşme ve 15 dakikalık demo için randevu al",
+   "ilk_kapsam": "KVKK Lite ücretsiz çekirdek (metin, 1 form rıza kaydı, başvuru formu, çerez bandı, CSV) ve Pro: sınırsız form, başvuru panosu; Freemius lisansı",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; bağımlılık lisansları ve hukuk bürosu şablon metinlerinin kullanım hakkı henüz doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK ürünü; metinler için hukukçu teyidi ve sorumluluk reddi gerekir; Freemius veri aktarımı beyanı bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Freemius ve TL için sanal POS ya da havale yolu belli ama hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (ajans); mevcut ilişki var ama 20 kişilik isim listesi yazılı değil"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "R10.net, WordPress Türkiye Slack, Meetup adlı; ilk adım görüşme listesi; yedek wordpress.org listesi"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan 120-220 saat (6-11 hafta, beklenen ~158 saat = 8 hafta); wordpress.org onayı 7 gün-3 hafta; satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar ~₺15.000 (hukuk danışmanlığı, tasarım, alan adı) tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı eklentiyi alır; white-label ve özel geliştirme kapsam dışı"
+    }
+   },
+   "kapi_duzeltme": "Hukukçudan şablon hakkı ve sorumluluk metnini al; Freemius hesabını aç ve 1 test ödemesi yap; 20 ajans listesi yaz; kapsamı 8 haftalık KVKK Lite çekirdeğine kilitle.",
+   "finans": {
+    "satis_tipi": "yıllık peşin",
+    "net_fiyat_tl": 4990,
+    "degisken_maliyet_tl": 524,
+    "sabit_gider_aylik_tl": 3000,
+    "baslangic_nakit_tl": 15000,
+    "kalan_efor_saat": {
+     "min": 120,
+     "beklenen": 158,
+     "max": 220
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 130
+    },
+    "satis_basina_kurucu_saati": 5,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 23910,
+     "iyi": 47300
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 9,
+     "iyi": 20
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 9,
+     "iyi": 20
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "Plan 5, 7.2, 8, 11 ve D.8: çekirdek, KVKK Lite, Pro, test, CI ve onboarding ~158 saat. Baz: 3 ajans x 4.990 + 6 tek site Pro x 1.490 = 23.910. İyi: 5 ajans + 15 Pro. Kötü 0. Freemius %7 + geçit %3,5 = ~524 ₺. Dönüşüm %5-15: görüşme 0, plan %25 iyimser bulundu (varsayım)."
+   },
+   "deney": {
+    "varsayim": "En az 3 ajans, eklenti yayına çıkmadan ₺4.990 ajans lisansı için ön ödeme yapar",
+    "yontem": "15 ajansla 15 dakikalık demo ve beta anahtarı; ön ödeme bağlantısı (havale ya da Freemius). Ücretsiz çekirdek wordpress.org'a gönderilir.",
+    "sure_gun": 21,
+    "maliyet_saat": 20,
+    "maliyet_tl": 0,
+    "basari_olcutu": "3 ajans ön ödeme yapar ya da 5 ajans yazılı alım niyeti bildirir",
+    "birakma_olcutu": "15 görüşmede ön ödeme 0 ve yazılı niyet 3'ün altında",
+    "sonraki_dilim": "KVKK Lite 1.0 ve Pro yayını; 90 günde 10 ödeyen kapısı, sonra Taksit modülü"
+   },
+   "etiketler": {
+    "segment": "WordPress ajansı ve freelancer",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "PHP, WordPress, Freemius",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı bölüm 1: KVKK 2026 aydınlatma cezası 85.437-1.709.200 ₺; wordpress.org KVKK eklentileri 10 kurulumun altında. Bölüm 4-5: yerli SaaS aylık ₺719'dan başlıyor, ajans lisansı ₺9.990. Derinlik dosyası B.3-B.4: ajans personası varsayım, görüşme sayısı 0. D.8: üç eklenti için eksik ~244 saat; KVKK Lite çekirdek, Pro, ortak paket, test ve onboarding ~158 saat; mevcut iskelet ~%10-15. Ödeyen müşteri yok."
+  },
+  {
+   "id": "wp-nis-eklentiler-b",
+   "ad": "Taksit Tablosu ve Kapıda Ödeme Pro: tek mağaza",
+   "tur": "eklenti",
+   "musteri": "Kendi WooCommerce sitesini işleten tek kişilik ya da küçük mağaza sahibi; iyzico, PayTR gibi PSP kullanır",
+   "is": "Ürün sayfasında doğru taksit tablosunu göstermek; kapıda ödemeyi il, ilçe ve sepet tutarına göre kapatıp ek ücret almak",
+   "tetikleyici": "Sepet terki ya da teslim edilemeyen kapıda ödeme gönderisi; WooCommerce güncellemesinde PSP tablosunun bozulması",
+   "teklif": "Pro: PSP oran API'si, kategori bazlı taksit sınırı, kapıda ödeme kuralları ve ek ücret; ücretsiz elle oran tablosu",
+   "fiyat": "Tek site Pro yıllık ₺1.490; 5 site ₺2.990 (KDV hariç); ücretsiz sürüm sınırsız",
+   "kanal_birincil": "Arama ve wordpress.org: 'woocommerce taksit tablosu' sorgusu, Türkçe liste ve rehber yazıları",
+   "kanal_yedek": "Trendyol satıcı Facebook ve WhatsApp grupları; R10.net WooCommerce bölümü",
+   "ilk_adim": "Taksit ücretsiz çekirdeğini yaz; 10 mağaza sahibine kapıda ödeme kuralı için ücretli ön kayıt teklif et",
+   "ilk_kapsam": "Ücretsiz: 8 kart ailesi elle oran tablosu, ürün sekmesi, varyasyon güncellemesi; Pro: kapıda ödeme kuralları ve iyzico/PayTR oran modülü",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucuda; PSP API kullanım koşulları ve marka içeren slug yasağı doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kapıda ödeme ek ücretinin fiyat gösterimi ve KDV kuralı mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Freemius ya da TL sanal POS yolu belli ama hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 38.531 mağaza var ama kurucunun 20 mağaza isim listesi yok"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "wordpress.org listesi, Google taksit sorgusu, R10.net ve Trendyol satıcı grupları adlı; yedek var"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan 100-180 saat (5-9 hafta); ilk Pro Mart ayında planlı; satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Nakit ihtiyacı ~₺6.000 (hesaplar, tasarım, alan adı) tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı eklentiyi alır; PSP modülleri ayrı ama özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Mali müşavirden ek ücret ve KDV okumasını al; Freemius hesabı aç; PSP API koşullarını oku; 20 mağaza listesi yaz; kapsamı iyzico ve PayTR ile sınırla.",
+   "finans": {
+    "satis_tipi": "yıllık peşin",
+    "net_fiyat_tl": 1490,
+    "degisken_maliyet_tl": 156,
+    "sabit_gider_aylik_tl": 2000,
+    "baslangic_nakit_tl": 6000,
+    "kalan_efor_saat": {
+     "min": 100,
+     "beklenen": 130,
+     "max": 180
+    },
+    "ilk_tahsilat_gun": {
+     "min": 100,
+     "max": 170
+    },
+    "satis_basina_kurucu_saati": 1.5,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 1490,
+     "iyi": 8940
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 6
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 6
+    },
+    "donusum_orani": {
+     "dusuk": 0.005,
+     "yuksek": 0.015
+    },
+    "dayanak": "Plan 2, 5 ve 11. bölüm: Taksit 1.0 Şubat, Pro Mart; ilk tahsilat 100-170. günde, satış penceresi 1-2 ay. Dönüşüm %1 altı (varsayım %0,5-1,5): baz 1 Pro x 1.490; iyi 6 x 1.490; kötü 0. Freemius %7 + geçit %3,5 = ~156 ₺."
+   },
+   "deney": {
+    "varsayim": "Mağaza sahipleri kapıda ödeme kuralı için kod yazılmadan önce ücret öder",
+    "yontem": "Açılış sayfası ve 10 mağazaya kapıda ödeme kuralı için ₺990 ücretli ön kayıt; Trendyol satıcı grupları, R10.net ve WhatsApp üzerinden.",
+    "sure_gun": 14,
+    "maliyet_saat": 12,
+    "maliyet_tl": 0,
+    "basari_olcutu": "5 mağaza ₺990 ön ödeme yapar",
+    "birakma_olcutu": "14 günde ön ödeme 0 ve bekleme listesi 20'nin altında",
+    "sonraki_dilim": "Ücretsiz taksit çekirdeği; ön ödeyenlerle kapıda ödeme kuralı Pro'su, sonra PSP modülleri"
+   },
+   "etiketler": {
+    "segment": "WooCommerce mağaza sahibi",
+    "kanal_turu": "arama",
+    "teknoloji": "PHP, WooCommerce, Freemius",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "İş planı bölüm 1 ve 3: 38.531 canlı Türk WooCommerce mağazası; kart ödemesi %62,5, kapıda ödeme yalnız %3,5 (2025 raporu): Pro'nun ana farkı küçük bir paya dayanır. PSP eklentilerinin kurulumu 3.000-10.000. Derinlik dosyası A.7: kapıda ödeme kuralı rakiplerde yok; A.8 taksitle dönüşüm artışı ölçümsüz varsayım. Ödeyen müşteri 0."
+  },
+  {
+   "id": "wp-nis-eklentiler-c",
+   "ad": "Türkiye uyum kurulumu: sabit fiyatlı hizmet",
+   "tur": "hizmet",
+   "musteri": "Kendi WooCommerce ya da kurumsal WordPress sitesi olan işletme ve onu kuran ajans; hazır kurulum satın alır",
+   "is": "Sitede KVKK aydınlatma metni, rıza kutusu, başvuru formu, çerez bandı ve taksit ile kapıda ödeme ayarlarını doğru kurdurmak",
+   "tetikleyici": "KVKK ceza haberi; ajansın müşteriye uyum kalemi sunması; Trendyol'dan kendi siteye geçiş",
+   "teklif": "Tek site için sabit kapsamlı kurulum: 5 iş gününde teslim, 1 revizyon turu, kayıt dışa aktarma; hukuki görüş yok",
+   "fiyat": "Site başına ₺2.500 (KDV hariç); ajanslara 5 site paketi ₺10.000",
+   "kanal_birincil": "Mevcut ilişki ve kurucu satışı: çevredeki müşteri siteleri, ajans çevresi, R10.net Ücretli WordPress İşleri",
+   "kanal_yedek": "Bionluk hizmet ilanı ve WordPress Türkiye Slack; Trendyol satıcı grupları",
+   "ilk_adim": "Kapsam listesi ve fiyat sayfasını yaz; 10 kişiye bu hafta teklif gönder",
+   "ilk_kapsam": "1 WooCommerce sitesi: aydınlatma metni sayfası, rıza kaydı, başvuru formu, çerez bandı, taksit tablosu, kapıda ödeme kuralı; mevcut ücretsiz araçlarla",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Hukukçu şablon metinlerinin kullanım hakkı alınmadı; kullanılacak ücretsiz eklentilerin lisansı kontrol edilecek"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK metni hizmeti için sorumluluk sınırı ve 'hukuki görüş değildir' sözleşme maddesi hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve TL sanal POS yolu belli; hesap, fatura düzeni ve mali müşavir teyidi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; kurucunun çevresindeki siteler ve ajans çevresi var ama 20 kişilik isim listesi yazılı değil"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Mevcut ilişkiler, R10.net Ücretli WordPress İşleri ve Bionluk adlı; yedek Slack ve satıcı grupları"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan 20-40 saat (1-2 hafta); ilk tahsilat 2-6 hafta içinde gerçekçi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar ~₺8.000 (hukukçu şablon danışmanlığı, alan adı) tavanın altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam ve sabit fiyat; özel geliştirme ve hukuki görüş kapsam dışı"
+    }
+   },
+   "kapi_duzeltme": "Hukukçudan şablon metin hakkı ve sözleşme sorumluluk maddesini al; havale ve fatura düzenini kur; 20 kişilik isim listesi yaz; lisansı kontrol edilmiş ücretsiz araç listesini sabitle.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 2500,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 20,
+     "beklenen": 30,
+     "max": 40
+    },
+    "ilk_tahsilat_gun": {
+     "min": 14,
+     "max": 45
+    },
+    "satis_basina_kurucu_saati": 5,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 7500,
+     "iyi": 25000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 10
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 10
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.25
+    },
+    "dayanak": "Derinlik dosyası A.8: ajansın uyum kurulumu kalemi ₺1.500-3.000/site (varsayım), elle kurulum 3 saat/site. İş planı bölüm 0 ve 11 hizmet ağırlıklı pivotu önerir. Fiyat görüşmesi 0: baz 3 site x 2.500; iyi 10; kötü 0. Dönüşüm %10-25 varsayım. Ödeme komisyonu ihmal."
+   },
+   "deney": {
+    "varsayim": "En az 3 site sahibi ya da ajans, sabit ₺2.500 fiyatla kurulum paketini satın alır",
+    "yontem": "Tek sayfa kapsam ve fiyat belgesi; mevcut ilişkilerden ve R10.net Ücretli WordPress İşleri'nden 10 kişiye teklif; havale ile ödeme.",
+    "sure_gun": 14,
+    "maliyet_saat": 12,
+    "maliyet_tl": 0,
+    "basari_olcutu": "3 ödeme ya da 2 ödeme ve 2 ajans paket talebi",
+    "birakma_olcutu": "10 teklifte ödeme 0",
+    "sonraki_dilim": "Kurulumlarda tekrar eden işi KVKK Lite çekirdeğine dönüştür; tekrar görülürse ajans lisansı"
+   },
+   "etiketler": {
+    "segment": "WooCommerce işletme ve ajans",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "WordPress, WooCommerce",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "İş planı bölüm 0, 11 ve derinlik dosyası A.8: ajans ve B2B kurulum hizmeti birleşimi önerilir; kurulum kalemi ₺1.500-3.000 varsayım. GPT notu: ücretli öneri sınırlı kit, uyarlama ya da hizmet; tekrar görülmeden abonelik yok. Aynı alıcı, aynı cezalar (bölüm 1). Ödeyen müşteri yok; fiyat sınanmadı."
+  }
+ ]
+}

@@ -1,0 +1,342 @@
+{
+ "slug": "kurucu-pusulasi",
+ "baslik": "Kurucu Pusulası şablonu ve Kitap Atlası",
+ "ozet": "Kurucunun kendi karar dosyasından türeyen, kişisel veriden arındırılmış Türkçe kurucu karar şablonu (kanıt etiketi, karar defteri, durdurma kapısı) ve 170 künyeli, çevirmen güven göstergeli kitap sitesi. Ödeyen müşteri yok; ürün sayfası kurulmadı.",
+ "bugun": {
+  "var": [
+   "Kurucu karar dosyası 19 kümeye bölünmüş: etiket sözlüğü, karar defteri, risk kartları, ritim ve 16 kümelik planlama çerçevesi",
+   "Kitap sitesi yayında: 320 px arayüz, künye sayfaları; belge 170 künye der, tabloda 78 kodlu satır sayıldı",
+   "Karar Kitabı ve strateji simülatörü gibi kurucunun kendi sitelerinden çapraz bağlantı kurulabilecek trafik kaynakları",
+   "Plan, satış mesajı taslakları ve 90 günlük kanal takvimi yazılı"
+  ],
+  "yok": [
+   "Ödeyen müşteri, ön ödeme ya da ücretli pilot",
+   "Kişisel veriden arındırılmış şablon sürümü, anonim örnek ve denetim betiği",
+   "Ürün sayfası, ödeme hesabı ve e-arşiv düzeni",
+   "Kitap sitesinde satın alma bağlantıları ve onaylı ortaklık hesabı",
+   "Adlandırılmış 20 alıcılık isim listesi"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Planın hükmü: dosya bugünkü haliyle iç karar belgesidir, sunum konusu değildir. Komşu biçim: arındırılmış şablon 299 TL, kurum lisansı 1.490 TL, yanında affiliate kitap sitesi. 12 ay baz hedef 100 satış.",
+  "gpt": "Koşullu fikir: ürün işlevi, hak ve içerik sahipliği doğrulanmadan ürünleştirilmez. Fiyat, persona ve pazar sayısı uydurulmaz; önce kişisel içeriği üründen ayırmak ve yayımlanabilir içeriği netleştirmek gerekir.",
+  "ayrisma": "Claude somut fiyat, kanal ve rakam verir; GPT bunları kanıtsız sayar ve yalnız içerik ayrıştırma ile hak doğrulamasını ilk iş görür. Claude kitap sitesini ikinci gelir sayar; GPT ayrı ürün saymaz.",
+  "birlesik": "Ortak hüküm: önce kişisel içerik ayrıştırılır ve hak sahipliği teyit edilir; sonra en küçük kapsam olan şablon satışı sınanır. Fiyat ve dönüşüm rakamları varsayımdır, ilk satışla doğrulanır."
+ },
+ "analist_gorusu": "En gerçekçi yol arındırılmış şablonu 299 TL ile kurucunun kendi sitelerinden satmaktır. Kitap sitesi gelirleri küçük ve gecikmelidir; huni olarak kalır. Kurum lisansı ancak ilk bireysel satıştan sonra denenmelidir.",
+ "secenekler": [
+  {
+   "id": "kurucu-pusulasi-a",
+   "ad": "Kurucu Pusulası şablonu, bireysel satış",
+   "tur": "içerik",
+   "musteri": "Maaşlı işinin yanında kendi ürününü yürüten Türkiye'deki solo kurucu ve yan girişimci",
+   "is": "Dağınık kararları, nakit ve saat bütçesini tek dosyada kanıt etiketiyle yazmak ve her ürün için durdurma kapısı koymak",
+   "tetikleyici": "Yeni bir ürün ya da fikre başlama anı, yarım kalan işler ve aynı kararı yeniden tartışma",
+   "teklif": "Kişisel veriden arındırılmış 16 kümelik Markdown ve Notion paketi, anonim doldurulmuş örnek, PDF kılavuz; 14 gün iade",
+   "fiyat": "299 TL tek sefer (yurt dışı 19 USD); net 249 TL KDV hariç",
+   "kanal_birincil": "Kurucunun kendi siteleri (Karar Kitabı, strateji simülatörü) üzerindeki ürün kutusu ve ücretsiz ilk 3 küme paketi",
+   "kanal_yedek": "LinkedIn yazı dizisi ve mevcut ön kayıt listesine e-posta; Shopier ve Lemon Squeezy ürün sayfaları",
+   "ilk_adim": "Kişisel kümeleri yer tutuculu sürüme çevir, denetim betiğini çalıştır, anonim örneği ücretsiz paketle yayımla",
+   "ilk_kapsam": "Nakit ve saat bütçesi, karar defteri, risk kartları, kanıt etiketi sözlüğü ve durdurma kapısı kümeleri; anonim örnek ve denetim betiği; ürün sayfası",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "İçerik kurucunun kendi eseri; ama kişisel içeriğin ayrıştırılması, üçüncü kişi verisi ve çerçeve atıfları için hak teyidi yapılmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kişisel veri kalmadı denetimi, mesafeli satış metinleri ve KDV düzeni mali müşavir ve hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ve Lemon Squeezy planlı; hesap açılmadı, test ödemesi yapılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 20 kişilik isim listesi yok, ön kayıt listesi boyutu doğrulanmadı"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı (kendi siteleri), yedek kanallar adlı; ilk adım belli"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Kalan iş yaklaşık 8-9 iş günü (60-70 saat), haftada 20 saatle 3-4 hafta; ilk tahsilat 6 ay içinde gerçekçi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Alan adı ve danışman payı yaklaşık 2.500 TL; tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı dosyayı alır; özel geliştirme yok, iade politikası sabit"
+    }
+   },
+   "kapi_duzeltme": "G1: kişisel kümeleri ayır, üçüncü kişi verisi ve çerçeve atıfları için yazılı hak beyanı yaz. G2: denetim betiği, mali müşavir teyidi. G3: Shopier hesabı, 1 TL test. G4: 20 kurucu listesi.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 249,
+    "degisken_maliyet_tl": 8,
+    "sabit_gider_aylik_tl": 1000,
+    "baslangic_nakit_tl": 2500,
+    "kalan_efor_saat": {
+     "min": 40,
+     "beklenen": 64,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 60
+    },
+    "satis_basina_kurucu_saati": 0.5,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 1245,
+     "baz": 6225,
+     "iyi": 12450
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 5,
+     "baz": 25,
+     "iyi": 50
+    },
+    "alti_ay_musteri": {
+     "kotu": 5,
+     "baz": 25,
+     "iyi": 50
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.08
+    },
+    "dayanak": "Plan bölüm 5-6: 299 TL, KDV sonrası 249 TL. Kalan efor derinlik D.2 ve D.8: L1 işleri 8-9 iş günü, yaklaşık 64 saat. Plan 12 ayda 100 satış der; hazırlık ve gecikme düşülerek 6 ayda baz 25. Tahsilat net fiyat çarpı adet. Dönüşüm derinlik C.2 ve C.9: %3-8, kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Kurucular, arındırılmış bir karar dosyası için 299 TL öder; ücretsiz ilk 3 küme paketi satışa dönüşür",
+    "yontem": "Anonim örnek ve ilk 3 küme paketini kendi sitelerinde ve 20 kurucuya doğrudan yayımla; 299 TL ödeme bağlantısıyla tam paketi sun",
+    "sure_gun": 21,
+    "maliyet_saat": 30,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "21 günde en az 5 ödeme ya da 400 indirmede en az 12 satış",
+    "birakma_olcutu": "21 günde 150 indirme ve sıfır ödeme",
+    "sonraki_dilim": "Başarıda mentor sürümü ve İngilizce paket; olmazsa şablon ücretsiz huni olarak kalır"
+   },
+   "etiketler": {
+    "segment": "Solo kurucu, yan girişimci",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Markdown, Notion içe aktarma, PDF",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan bölüm 2, 5, 6, 7 ve derinlik dosyası A, C, D.2, D.8: kişisel kümeler yer tutuculu sürüme çevrilmedi; anonim örnek, denetim betiği, PDF ve ürün sayfası yok; kalan iş 8-9 iş günü. Notion ve Gumroad şablonları 9-997 USD aralığında; Türkçe ve kanıt etiketli örnek bulunamadı (derinlik A.7). Ödeyen müşteri yok. GPT stratejisi içerik hakkı ve ayrıştırmayı ön koşul sayar."
+  },
+  {
+   "id": "kurucu-pusulasi-b",
+   "ad": "Mentor sürümü, kuluçka programlarına kurum lisansı",
+   "tur": "hizmet",
+   "musteri": "Kuluçka ve teknokent programı yöneticileri ve mentorları; 5-10 girişim ekibiyle çalışanlar",
+   "is": "Birden çok ekibe aynı karar iskeletini ve aynı kanıt dilini vermek, ekiplerden tutarlı karar belgesi toplamak",
+   "tetikleyici": "Yeni dönem başlangıcı ve dönem sonu çıktı raporu hazırlığı",
+   "teklif": "10 kullanıcılı lisans, ekip başı kopya, toplu ritim kartı ve 1 saatlik çevrimiçi atölye; tek e-arşiv fatura",
+   "fiyat": "1.490 TL tek sefer; net yaklaşık 1.200 TL KDV hariç",
+   "kanal_birincil": "Kuluçka ve teknokent program yöneticilerine doğrudan e-posta ve LinkedIn mesajı; anonim örnek ücretsiz mentor sürümü",
+   "kanal_yedek": "Girişimcilik Vakfı toplulukları ve girişim bülteni yazarlarına konuk yazı; mali müşavir tavsiyesi",
+   "ilk_adim": "Şablonun anonim örneği hazır olunca 10 programın adlı listesini çıkar ve ilk 5 yöneticiye örneği gönder",
+   "ilk_kapsam": "Bireysel şablon paketi, ekip başı kopya düzeni, toplu ritim kartı, 1 saatlik atölye metni ve tek sayfa teklif",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "İçerik kurucunun kendi eseri; kişisel içeriğin ayrıştırılması ve hak teyidi bireysel şablonla aynı biçimde bekliyor"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kişisel veri denetimi, kurumsal sözleşme metni ve fatura düzeni teyit bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-arşiv düzeni planlı; hesap ve fatura akışı sınanmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; programların adlı listesi yok, ad ve sayılar doğrulanmadı"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "Kanal tipi belli ama somut program ve yönetici hedefleri adlandırılmadı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kurum satış döngüsü ölçülmedi; planda ilk lisans 90. günde hedefleniyor"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Ek nakit yok denecek kadar az; alan adı ve danışman payı tavanın çok altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Atölye ve ekip başı kopya kapsamı yazılı değil; sabit paket olarak tanımlanmalı"
+    }
+   },
+   "kapi_duzeltme": "G1, G2 ve G3: bireysel paketle birlikte teyit et. G4 ve G5: 10 programı adıyla listele. G6: ilk görüşmede karar süreci sor. G8: atölyeyi tek 1 saatle sınırla.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 1200,
+    "degisken_maliyet_tl": 40,
+    "sabit_gider_aylik_tl": 1000,
+    "baslangic_nakit_tl": 2500,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 44,
+     "max": 64
+    },
+    "ilk_tahsilat_gun": {
+     "min": 60,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 8,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 1200,
+     "iyi": 3600
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.2
+    },
+    "dayanak": "Plan bölüm 5 ve 8: 1.490 TL, net yaklaşık 1.200 TL; 12 ayda 3 lisans baz. Derinlik dosyası C.3: ilk teklif 10. hafta, ilk lisans 90. gün. 6 ayda baz 1, iyi 3 lisans; kötü 0. Dönüşüm derinlik C.2: yüzde 20 görüşmeden lisans, kanıtsız varsayım."
+   },
+   "deney": {
+    "varsayim": "Program yöneticileri aynı karar iskeleti için kurum bütçesinden 1.490 TL öder ve tek fatura keser",
+    "yontem": "10 programın yöneticisine anonim örnekle 15 dakikalık görüşme iste; ilgi gösterenlere yazılı teklif ve atölye tarihi ver",
+    "sure_gun": 45,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "45 günde 5 görüşme ve en az 1 yazılı teklif kabulü",
+    "birakma_olcutu": "10 temasta 2'den az görüşme ve sıfır teklif talebi",
+    "sonraki_dilim": "Başarıda ekip başı kopya ve toplu ritim kartını standartlaştır; olmazsa bireysel satışa dön"
+   },
+   "etiketler": {
+    "segment": "Kuluçka ve teknokent yöneticileri",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Markdown, Notion, çevrimiçi atölye",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Plan bölüm 3.1 P2, 5, 8 ve derinlik dosyası B.1, B.3, C.7: kuluçka segmenti ödeme istekliliği 4/5 ama yalnız varsayım; program sayısı 60-100 olarak doğrulanamadı. Satış döngüsü uzun, plan ilk 10 müşteri için bu segmenti değil bireysel satışı önerir. Ödeyen kurum yok."
+  },
+  {
+   "id": "kurucu-pusulasi-c",
+   "ad": "Kitap Atlası, çevirmen künyeli ortaklık sitesi",
+   "tur": "içerik",
+   "musteri": "Strateji ve felsefe klasiklerini doğru çeviriden almak isteyen Türkçe okur; gelir mağaza ortaklık programından gelir",
+   "is": "Bir klasiğin hangi çevirmen ve baskısının güvenilir, hangisinden kaçınılacağını künyeden 30 saniyede bulmak",
+   "tetikleyici": "Bir klasik kitabı satın almadan önce hangi çeviri sorusunu aramak",
+   "teklif": "Ücretsiz site; her künyede çevirmen güven göstergesi, ikinci seçenek, kaçınılacak baskı ve işaretli satın alma bağlantıları",
+   "fiyat": "Okura ücretsiz; mağaza komisyonu yüzde 3-8 (varsayım), sepet başına yaklaşık 12 TL",
+   "kanal_birincil": "Arama motoru: künye ve yayınevi sayfaları, hangi çeviri aramaları; kitaplarla ilgili arama için Search Console",
+   "kanal_yedek": "Ekşi Sözlük ve r/kitap katkıları, kurucunun kendi sitelerinden çapraz bağlantı, RSS",
+   "ilk_adim": "Üç mağazanın ortaklık programlarına başvur, 20 künyeyi doğrula ve satın alma bağlantılarını ekle",
+   "ilk_kapsam": "20 doğrulanmış künye, her biri için 2-3 işaretli satın alma bağlantısı, 3 yayınevi sayfası ve RSS; ortaklık bildirimi",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Künye içeriği kurucunun; kapak görselleri ve ortaklık sözleşmesi koşulları doğrulanmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Ortaklık bağlantılarının reklam olarak işaretlenmesi ve gelir beyanı mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Ortaklık programları kabul edilmedi, başvuru yapılmadı; ödeme eşiği ve süresi doğrulanmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Ödeyen taraf mağaza programı, okur değil; program kabulü ve oranlar belli değil"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal arama ve künye sayfaları; yedek olarak ekşi, Reddit ve çapraz bağlantı adlı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Site hazır; ama ilk komisyon ödemesi arama trafiği oluşmasına ve program eşiğine bağlı, ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Barındırma ücretsiz; yalnız alan adı payı, tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı siteyi kullanır; müşteriye özel iş yok"
+    }
+   },
+   "kapi_duzeltme": "G1 ve G2: kapak ve ortaklık metinlerini kontrol et. G3 ve G4: üç programa başvur. G6: ilk komisyon eşiğini programdan öğren.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 12,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 100,
+    "baslangic_nakit_tl": 750,
+    "kalan_efor_saat": {
+     "min": 8,
+     "beklenen": 14,
+     "max": 24
+    },
+    "ilk_tahsilat_gun": {
+     "min": 90,
+     "max": 180
+    },
+    "satis_basina_kurucu_saati": 0,
+    "musteri_basina_aylik_destek_dk": 0,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 144,
+     "iyi": 600
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 12,
+     "iyi": 50
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 3
+    },
+    "donusum_orani": {
+     "dusuk": 0.0025,
+     "yuksek": 0.0075
+    },
+    "dayanak": "Plan bölüm 3.2 ve 6: 5.000 aylık ziyaret yıl 1 sonu hedefi, yaklaşık 470 TL/ay; trafik 8-12 haftada başlar, ödeme eşiği tahsilatı geciktirir. 6 ayda baz 12 komisyon kaydı x 12 TL = 144 TL; iyi 50 x 12 = 600 TL. Komisyon %3-8 doğrulanmadı."
+   },
+   "deney": {
+    "varsayim": "Arama trafiği künye sayfalarından mağazaya tıklar ve ortaklık programları kabul eder, komisyon ödenir",
+    "yontem": "20 künyeyi doğrula, bağlantıları ekle, Search Console aç; 60 gün tıklama ve gösterim sayısını izle",
+    "sure_gun": 60,
+    "maliyet_saat": 14,
+    "maliyet_tl": 0,
+    "basari_olcutu": "60 günde 1.000 ziyaret, yüzde 10 mağaza tıklaması ve ilk komisyon kaydı",
+    "birakma_olcutu": "60 günde 300 ziyaretin altı ya da hiçbir programın kabul etmemesi",
+    "sonraki_dilim": "Başarıda ayda 10 künye ve yayınevi sayfaları; olmazsa site yalnız şablon hunisi olarak kalır"
+   },
+   "etiketler": {
+    "segment": "Nitelikli klasik okuru",
+    "kanal_turu": "arama",
+    "teknoloji": "Astro, statik barındırma",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Plan bölüm 3.2, 5, 6: README 170 künye diyor (yaklaşık yüzde 30 doğrulanmış); ana tabloda kodlu 78 satır sayıldı, 565 eser iddiası doğrulanamadı. Arayüz yaklaşık yüzde 80, ortaklık bağlantısı yok; 2025 kültür yayınlarının yüzde 66,42 çevrimiçi satılıyor. Komisyon oranları doğrulanamadı. GPT bunu ürün saymaz. Gelir kurucu saatinden bağımsız ama çok küçük."
+  }
+ ]
+}

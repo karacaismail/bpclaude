@@ -1,0 +1,23 @@
+{
+ "slug": "strateji-simulatoru",
+ "secenekler": {
+  "strateji-simulatoru-a": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 14,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Markasız uyarlama, pilot kurulumu, 2 saatlik eğitim ve ölçüm planı yaklaşık 14 saat (varsayım); satış demo ve sözleşme. Destek 90 dk içindeki kurulum teslime taşındı."
+  },
+  "strateji-simulatoru-b": {
+   "satis_basina_kurucu_saati": 0.5,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Rapor şablondan otomatik üretilir; müşteriye özel kurucu emeği yok, teslim 0. Hazırlık kalan eforda. Destek yalnız iade ve soru yazışması."
+  },
+  "strateji-simulatoru-c": {
+   "satis_basina_kurucu_saati": 2,
+   "teslim_saat_odeme_basina": 5,
+   "musteri_basina_aylik_destek_dk": 10,
+   "not": "Değerlendirme çalıştırma 1, 3 sayfalık rapor 2, hazırlık 0,5 ve 1 saatlik görüşme = yaklaşık 5 saat (varsayım); satış 4 saatlik değerin görüşme kısmı teslime taşındı."
+  }
+ }
+}

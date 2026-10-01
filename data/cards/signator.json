@@ -1,0 +1,343 @@
+{
+ "slug": "signator",
+ "baslik": "signator (e-posta imzası üreticisi)",
+ "ozet": "Türkçe, tarayıcıda çalışan e-posta imzası üreticisi: form, canlı önizleme, panoya kopyalama. Hedef ekip imzası, KVKK altbilgisi ve CSV toplu üretim. Bugün yerel statik sürüm var; barındırılan görsel, ekip modu ve ödeme yok; ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Tek sayfalık statik uygulama: form, canlı önizleme, panoya kopyalama (yaklaşık 520 satır)",
+   "Taslağı tarayıcıda saklama, Türkçe arayüz, iki marka rengi",
+   "Tek imza şablonu; 300 KB üstü görsel için uyarı",
+   "Kapsam, fiyat paketleri ve rakip fiyat karşılaştırması yazılı"
+  ],
+  "yok": [
+   "Barındırılan görsel: görseller gömülü base64, Gmail gibi istemcilerde görünmeyebilir",
+   "Ekip modu, CSV toplu üretim, çalışan kurulum bağlantısı",
+   "KVKK altbilgi kütüphanesi ve hukukçu okuması",
+   "Ödeme hesabı ve fatura düzeni",
+   "Otomatik test, derleme hattı, istemci uyumluluk testi; canlı ürün doğrulanmadı (kaynak yalnız yerel sürüm gözlemi)",
+   "Ödeyen müşteri, pilot ya da yazılı niyet"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Plan: Türkçe ekip imzası mikro ürünü; bireysel ücretsiz, ekip yıllık 990-2.990 TL, ajans 4.990 TL; 3 günlük sprint (barındırılan görsel, CSV, KVKK altbilgi). Bağımsız şirket sunumu: hayır; ajans ve mevcut ilişkilere koşullu. 12 ay baz: 25 ekip, yaklaşık 37,5 bin TL.",
+  "gpt": "Kaynak gözlemine dayanır, canlı ürün doğrulanmadı. Alıcı 5-50 kişilik şirketin marka sorumlusu; ilk ücretli fark ekip tutarlılığı ve doğru kurulum. Pilot: 5 kişilik CSV, üç istemci kontrolü; ilk takım kurulumu 500-1.500 TL teklif testi; merkezi dağıtım ilk paket değil.",
+  "ayrisma": "Claude yazılım paketi ve arama trafiğiyle ölçek kurar; GPT sabit kapsamlı elle kurulum ve teklif testiyle başlar. Kapsam: Claude 3 gün (derinlik eki yaklaşık 12 gün), GPT ilk örnek için 6-12 saat. Fiyat: yıllık paket karşı tek seferlik kurulum.",
+  "birlesik": "İkisi de geliri küçük bir yan gelir sayar; fark toplu üretim, Türkçe ve doğru kurulumdadır. Önce ajans denemesi ve elle kurulumla ödeme kanıtı toplanmalı; yazılım paketi yalnız ödeme gelirse genişletilmeli."
+ },
+ "analist_gorusu": "En gerçekçi yol: mevcut ilişkilerde ve ajanslarda sabit kapsamlı kurulumla ödeme kanıtı almak, ajans paketini bu kanıtla satmak. Arama trafiğine dayalı KOBİ paketi 6 ayda yetişmez; üçü de 144 bin TL hedefin çok altında kalır.",
+ "secenekler": [
+  {
+   "id": "signator-a",
+   "ad": "Ajans paketi: white-label toplu imza ve KVKK altbilgi",
+   "tur": "yazılım ürünü",
+   "musteri": "5-30 kişilik dijital ajans, web tasarım ve kurumsal kimlik stüdyosu",
+   "is": "Müşterilerinin tüm ekibine aynı logolu, KVKK altbilgili imzayı dakikalar içinde teslim etmek",
+   "tetikleyici": "Yeni kurumsal kimlik ya da site teslimi; müşterinin imza talebi; yeni işe alım",
+   "teklif": "25 müşteri alanı, CSV toplu üretim, barındırılan görsel, 3 şablon, KVKK altbilgi, ajans markası; ilk müşteride birlikte kurulum",
+   "fiyat": "4.990 TL + KDV yıllık peşin; müşteriye 1.500-2.500 TL'ye satılabilir",
+   "kanal_birincil": "Ajansların kendi sitesindeki kurumsal iletişim adresine ayda 10 soğuk e-posta ve demo",
+   "kanal_yedek": "Kurucunun mevcut danışmanlık ve kurumsal site ilişkileri; LinkedIn ajans toplulukları",
+   "ilk_adim": "Barındırılan görsel ve CSV çalışınca, mevcut ilişkideki bir ajansla ilk müşterisinde ücretsiz deneme",
+   "ilk_kapsam": "Barındırılan görsel, 3 şablon, CSV toplu üretim, KVKK altbilgi, 4 istemci kurulum rehberi; çok müşterili panel yok, müşteri alanları elle yönetilir",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod ve şablonlar kurucunun; ikon ve bağımlılık lisansları kaynakta doğrulanmadı, yalnız beyan var."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK altbilgi metinleri için hukukçu okuması ve veri işleyen rolü teyidi bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier, iyzico ya da havale yolu belli; hesap açılmadı, test ödemesi yok."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 20 ajanslık isim listesi yok, yalnız birkaç mevcut ilişki var."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Soğuk e-posta ve demo adlı, ilk adım belli; mevcut ilişkiler ve LinkedIn yedek."
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Beklenen yaklaşık 95 saat (4-5 hafta); ajans karar süresi günlerle haftalar, 6 aya sığar."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Hukukçu okuması ve alan adı dahil yaklaşık 5.000 TL, 50.000 TL tavanın altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit paket: 25 müşteri alanı, 3 şablon; özel geliştirme kapsam dışı."
+    }
+   },
+   "kapi_duzeltme": "İkon ve bağımlılık lisanslarını denetle; hukukçu okumasını yaptır, ödeme hesabını aç ve test ödemesi yap, 20 ajanslık isim listesi çıkar.",
+   "finans": {
+    "satis_tipi": "yıllık peşin",
+    "net_fiyat_tl": 4990,
+    "degisken_maliyet_tl": 200,
+    "sabit_gider_aylik_tl": 150,
+    "baslangic_nakit_tl": 5000,
+    "kalan_efor_saat": {
+     "min": 60,
+     "beklenen": 95,
+     "max": 135
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 6,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 4990,
+     "iyi": 19960
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 4
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 4
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "Fiyat plan 5. bölüm ajans paketi. Baz 1 ajans: ayda 10 e-posta, 6 ayda 60 e-posta x %15 yanıt x %30 demo x %30 kapanış yaklaşık 0,8 satış; mevcut ilişki katkısı kanıtsız. İyi 4. Dönüşüm kanıtsız varsayım. Tahsilat yıllık peşin."
+   },
+   "deney": {
+    "varsayim": "Ajanslar imzayı ek kalem olarak satmak için yıllık 4.990 TL ödemeye razı",
+    "yontem": "Mevcut ilişkideki 3 ajansa demo ve ilk müşteride ücretsiz kurulum; ardından 20 ajansa e-posta ve demo",
+    "sure_gun": 42,
+    "maliyet_saat": 40,
+    "maliyet_tl": 0,
+    "basari_olcutu": "3 ajanstan en az 1 yazılı ön ödeme ya da onaylı sipariş",
+    "birakma_olcutu": "20 demoda sıfır ödeme niyeti",
+    "sonraki_dilim": "Ajans paneli ve white-label alan adı"
+   },
+   "etiketler": {
+    "segment": "Dijital ajans, kimlik stüdyosu",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Statik site, Cloudflare Worker ve R2",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Ödeyen müşteri ve ön ödeme yok. İş planı 5-7 ve derinlik eki B.2: ajans beachhead sayılır, fiyat 4.990 TL. Rakipler: HubSpot ücretsiz, WiseStamp, Exclaimer (en az 10 kullanıcı), Signitic. Ajansın bugünkü maliyeti 15-30 dk/çalışan varsayımdır. Arama hacmi doğrulanmadı."
+  },
+  {
+   "id": "signator-b",
+   "ad": "KOBİ ekip paketi: self-servis, aramadan gelen satış",
+   "tur": "yazılım ürünü",
+   "musteri": "10-50 çalışanlı KOBİ; İK ya da idari işler sorumlusu",
+   "is": "Çalışanların imzasında aynı logo, renk ve KVKK altbilgisi görünsün; logo Gmail'de çıksın",
+   "tetikleyici": "Müşteriden logo görünmüyor geri bildirimi; işe alım dalgası; yönetimin tutarlılık talebi",
+   "teklif": "Ekip 10 / 30 / 100 paketleri: CSV toplu üretim, marka kilidi, barındırılan görsel, KVKK altbilgi, kurulum rehberleri; 14 gün iade",
+   "fiyat": "990 / 1.990 / 2.990 TL + KDV yıllık; karma ortalama 1.500 TL",
+   "kanal_birincil": "Arama: 6 rehber sayfası (Gmail, Outlook, Apple Mail imza, KVKK altbilgisi, imza oluşturucu)",
+   "kanal_yedek": "Ücretsiz bireysel araçta imza rozeti; kurucunun mevcut ilişkileri; mali müşavir odası duyuruları",
+   "ilk_adim": "3 günlük sprintle barındırılan görsel ve CSV; ilk 2 rehber sayfası ve Search Console kaydı",
+   "ilk_kapsam": "Barındırılan görsel, 3 şablon, CSV toplu üretim, KVKK altbilgi, Shopier ödeme bağlantısı, ilk 3 rehber sayfası",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod ve şablonlar kurucunun; ikon ve bağımlılık lisansları doğrulanmadı, kaynakta yalnız beyan var."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK altbilgi metni hukukçu okuması ister; çalışan verisinde veri işleyen rolü netleşmeli."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Shopier ya da iyzico seçildi; hesap açılmadı, test siparişi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 20 isim listesi yok, yalnız 5-15 mevcut ilişki var."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Rehber sayfaları ve imza rozeti adlı; mevcut ilişkiler ve oda duyurusu yedek."
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kapsam ve rehberlerle yaklaşık 100 saat; arama trafiği 8-12 haftada belli olur, döngü ölçülmedi."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Hukukçu okuması ve alan adı yaklaşık 5.000 TL; tavanın altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı ürünü ve sabit paketleri alır."
+    }
+   },
+   "kapi_duzeltme": "İkon ve bağımlılık lisanslarını denetle; hukukçu okuması, ödeme hesabı ve test siparişi, 20 hedef şirketlik liste; sprint sonrası arama gösterimiyle süreyi ölç.",
+   "finans": {
+    "satis_tipi": "yıllık peşin",
+    "net_fiyat_tl": 1500,
+    "degisken_maliyet_tl": 70,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 5000,
+    "kalan_efor_saat": {
+     "min": 44,
+     "beklenen": 100,
+     "max": 140
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 120
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 15,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 4500,
+     "iyi": 22500
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 15
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 15
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.15
+    },
+    "dayanak": "Plan 5 ve 6: karma ortalama 1.500 TL. Plan 6 ay hedefi 15 ekip (iyi senaryo). Arama etkisi 8-12 hafta gecikir ve hacim doğrulanmadı; baz 3 (arama ve 5 mevcut ilişki pilotu), kötü 0. Deneme-ödeme %10 plan varsayımı, kanıtsız. Maliyet: komisyon ve depolama; sabit gider plan 8 yaklaşık 300 TL/ay."
+   },
+   "deney": {
+    "varsayim": "Aramadan gelen KOBİ ücretsiz araçla yetinmeyip ekip paketi için ödeme yapar",
+    "yontem": "2 rehber sayfası ve ücretsiz araç yayında; 8 hafta Search Console gösterimi ve deneme sayısı izlenir; 5 mevcut ilişkide ücretsiz pilot",
+    "sure_gun": 56,
+    "maliyet_saat": 50,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "Haftada en az 300 gösterim ve 3 ekip denemesi, 1 ödeme",
+    "birakma_olcutu": "8 haftada 300 gösterimin altı ve sıfır ödeme",
+    "sonraki_dilim": "Kalan 4 rehber sayfası ve marka kilidi"
+   },
+   "etiketler": {
+    "segment": "KOBİ 10-50 çalışan",
+    "kanal_turu": "içerik",
+    "teknoloji": "Statik site, Cloudflare Worker ve R2",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Ödeyen müşteri yok. İş planı 3, 5, 7 ve derinlik eki C.2: arama ana kanal, hacim doğrulanmadı; rakipler HubSpot ücretsiz, WiseStamp, Exclaimer (en az 10 kullanıcı, yıllık yaklaşık 108 USD), Signitic (19 çalışana kadar ücretsiz). Plan SOM'u yılda 150-270 bin TL görür. Derinlik eki D.8: L1 yaklaşık 12 gün."
+  },
+  {
+   "id": "signator-c",
+   "ad": "Sabit fiyatlı ekip imzası kurulum paketi",
+   "tur": "hizmet",
+   "musteri": "5-50 çalışanlı şirketin marka ya da operasyon sorumlusu; ajansın müşteri onboarding sorumlusu",
+   "is": "5 kişilik bir ekibin imzasını aynı marka ve doğru kurulumla teslim almak",
+   "tetikleyici": "Yeni çalışan; logo, unvan ya da telefon değişimi; ajansın marka teslimi",
+   "teklif": "Sabit kit: 5 kişilik CSV, tek şablon, logo barındırma, Gmail ve Outlook kurulum rehberi, istemci kontrolü, 1 revizyon",
+   "fiyat": "1.000 TL + KDV tek seferlik (500-1.500 TL arası teklif testi)",
+   "kanal_birincil": "Kurucunun mevcut danışmanlık ve kurumsal site ilişkileri; birebir teklif",
+   "kanal_yedek": "LinkedIn gönderileri (önce/sonra); ajansın onboarding teslimine ek kalem",
+   "ilk_adim": "Anonim 5 kişilik örnek imza paketi ve 3 istemci kontrol notu hazırla; 5 mevcut ilişkiye teklif gönder",
+   "ilk_kapsam": "Elle hazırlanan 5 kişilik paket: CSV, HTML imza, logo barındırma, Gmail, Outlook, Apple Mail kurulum notu; yazılım geliştirme yok",
+   "kapilar": {
+    "G1": {
+     "durum": "gecti",
+     "not": "Kod, şablon ve rehber kurucunun; üçüncü taraf hak sorunu görünmüyor."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Çalışan adı ve telefonu işlenir; aydınlatma ve veri işleyen rolü teyit bekliyor."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve e-Arşiv ya da Shopier planlı; hesap ve fatura düzeni kurulmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 20 isim yok, 5-15 mevcut ilişki var."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Mevcut ilişkiler ve LinkedIn adlı; ilk adım teklif gönderimi."
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "İlk örnek 6-12 saat, satılabilir kapsam 3 haftadan kısa; ilk ödeme 1 ay içinde mümkün."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Başlangıç nakdi 0-250 TL (GPT dosyası); tavanın çok altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsamlı ve sabit fiyatlı paket; özel CSS isteği kapsam dışı."
+    }
+   },
+   "kapi_duzeltme": "Ödeme ve fatura yolunu aç, veri işleme notunu yazdır, 5 mevcut ilişkiyle teklif görüşmesi yap.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 1000,
+    "degisken_maliyet_tl": 50,
+    "sabit_gider_aylik_tl": 50,
+    "baslangic_nakit_tl": 250,
+    "kalan_efor_saat": {
+     "min": 8,
+     "beklenen": 14,
+     "max": 24
+    },
+    "ilk_tahsilat_gun": {
+     "min": 7,
+     "max": 45
+    },
+    "satis_basina_kurucu_saati": 5,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 3000,
+     "iyi": 12000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 12
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "GPT dosyası: ilk takım kurulumu 500-1.500 TL teklif testi, 6-12 saat ilk örnek, 0-250 TL nakit. Fiyat 1.000 TL orta nokta. Baz 3 satış: 5-15 mevcut ilişkide %30 pilot kabulü (derinlik C.2) ödeme sayılmaz, ödemeye dönüşüm kanıtsız; kötü 0. Kurulum geliri yaklaşık 1.000 TL / 14 saat = 70 TL/saat, eşik saat ücretinin çok altında."
+   },
+   "deney": {
+    "varsayim": "Bir şirket 5 kişilik imza kurulumuna sabit 1.000 TL öder",
+    "yontem": "Anonim örnek paketi hazırla, 10 mevcut ilişkiye sabit fiyatlı teklif gönder, ilk 3 kabulde kurulum süresini ölç",
+    "sure_gun": 21,
+    "maliyet_saat": 14,
+    "maliyet_tl": 0,
+    "basari_olcutu": "10 tekliften en az 2 ödeme ve kurulum 4 saatin altında",
+    "birakma_olcutu": "10 tekliften sıfır ödeme ya da kurulum 8 saati aşıyor",
+    "sonraki_dilim": "Ajans paketi ya da yazılımlı ekip paketi"
+   },
+   "etiketler": {
+    "segment": "5-50 çalışanlı şirket ve ajans",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Elle HTML ve CSV; mevcut statik uygulama",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Ödeyen müşteri yok. GPT dosyası: sınırlı kapsam, ücretli takım kurulumu 500-1.500 TL teklif testi, her çalışana ayrı CSS gerekirse sabit kit yerine hizmet. Gmail yardım ücretsiz alternatiftir. İş planı 7.2 ve derinlik C.2: mevcut ilişkilerde pilot kabulü varsayımı %30. Kurucu saati geliri düşük."
+  }
+ ]
+}

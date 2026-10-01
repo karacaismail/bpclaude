@@ -1,0 +1,77 @@
+{
+ "slug": "sunum-bi-hizmeti",
+ "kararlar": [
+  {
+   "itiraz": "A: 8 mevcut ilişkinin sunum alıcısı olduğuna dair yazılı niyet yok",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart zaten G4 test, ödeyen müşteri 0 ve yazılı niyet yok diyor; kaynak 8 kişilik listeyi yalnız varsayım olarak veriyor. Puan etkisi ayrı adımda."
+  },
+  {
+   "itiraz": "A: beklenen kalan efor 100 saat; derinlik B.3 14,5-17 gün (116-136 saat) diyor",
+   "karar": "kabul",
+   "degisiklik": "A kalan_efor_saat 60/100/140 -> 90/120/160; G6 notu 120 saat (6 hafta) oldu",
+   "gerekce": "Derinlik D.8 toplamı 14,5-17 gün; 100 saat bunun altında kalıyordu."
+  },
+  {
+   "itiraz": "B: abonelik ay 7 sonrası, ilk ay ücretsiz; 13.000 baz tahsilat planı öne çekiyor",
+   "karar": "kabul",
+   "degisiklik": "B alti_ay_tahsilat baz 13000 -> 8000, odeme_adedi baz 3 -> 1; dayanak yeniden yazıldı",
+   "gerekce": "Plan abonelik gelirini ay 7 sonrasına koyuyor; 6 ayda yalnız kurulum bedeli sayılır."
+  },
+  {
+   "itiraz": "C: 8.000 ₺ 20 slaytlık Başlangıç fiyatı; GPT fiyat vermiyor, 5 slayt daha dar",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "8.000 ₺ planın en düşük paketi; kart dayanakta fiyat riskini zaten belirtiyor ve baz iki satış. Daha düşük fiyat için kaynak yok."
+  },
+  {
+   "itiraz": "C: danışman alıcı ve LinkedIn kanalı hipotez; G5 test doğru, kanal puanları kanıtsız",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Kart G5 için zaten test veriyor; puanlar bu adımın dışında. Kartta değişecek alan yok."
+  },
+  {
+   "itiraz": "B G5: ajans mesaj grupları adlandırılmadı, isim listesi yok; gecti sayılmaz",
+   "karar": "kismen",
+   "degisiklik": "B kanal_yedek: mesaj grupları ifadesi kaldırıldı; G5 gecti kaldı",
+   "gerekce": "LinkedIn ajans sahipleri ve 10 ortak ajans adlı, ilk adım belli; grup adı kaynakta doğrulanmamış, o ifade çıkarıldı."
+  },
+  {
+   "itiraz": "A ilk_tahsilat_gun.min 30; sence en az 50 gün",
+   "karar": "kismen",
+   "degisiklik": "A ilk_tahsilat_gun min 30 -> 42 (max 75)",
+   "gerekce": "Plan ilk teklif 6. hafta, ilk set 7. hafta; peşin ödeme 42. günde mümkün, 50 gün kaynakta yok."
+  },
+  {
+   "itiraz": "A donusum_orani.yuksek 0,3 kanıtsız; sence en çok 0,15",
+   "karar": "ret",
+   "degisiklik": "",
+   "gerekce": "Derinlik C.2 ve plan yüzde 30 örnek-sipariş varsayımı veriyor; kart bunu kanıtsız varsayım olarak etiketlemiş."
+  },
+  {
+   "itiraz": "A alti_ay_tahsilat baz 48.000 iyimser; sence 1-2 set",
+   "karar": "kismen",
+   "degisiklik": "A baz 48000 -> 33000 (2 set + 1 güncelleme), odeme baz 4 -> 3, musteri baz 3 -> 2",
+   "gerekce": "8 ilişki x yüzde 30 yaklaşık 2 set verir; 3 set kaynakla desteklenmiyor. İyi senaryo plan hedefiyle kaldı."
+  },
+  {
+   "itiraz": "B alti_ay_tahsilat.iyi 28.500; abonelik ay 7+; sence 16.000",
+   "karar": "kabul",
+   "degisiklik": "B iyi tahsilat 28500 -> 16000, odeme iyi 7 -> 2, musteri iyi 2 (aynı)",
+   "gerekce": "İyi senaryoda 2 ajans kurulumu (2 x 8.000); abonelik ay 7 sonrası."
+  },
+  {
+   "itiraz": "C donusum_orani.yuksek 0,25 kanıtsız; sence en çok 0,1",
+   "karar": "kabul",
+   "degisiklik": "C donusum yuksek 0,25 -> 0,1",
+   "gerekce": "Danışman kanalı kaynakta kanıtsız ve GPT tekrar kanıtı yok; yüzde 30 plan varsayımı mevcut müşteri içindi."
+  },
+  {
+   "itiraz": "C ilk_tahsilat_gun.min 21; sence en az 35",
+   "karar": "kabul",
+   "degisiklik": "C ilk_tahsilat_gun min 21 -> 35",
+   "gerekce": "Kanal doğrulanmamış; 30 saat iş ve 2-3 günlük yazım sonrası 3 haftada tahsilat iyimser."
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "slug": "frontend-atlasi",
+ "secenekler": {
+  "frontend-atlasi-a": {
+   "satis_basina_kurucu_saati": 3,
+   "teslim_saat_odeme_basina": 1,
+   "musteri_basina_aylik_destek_dk": 45,
+   "not": "Kit ve lisans kopyası satılır; lisans alıcısına kurulum yardımı ortalama 1 saat/ödeme, varsayım. 90 gün e-posta desteği 45 dk/ay destekte kalır."
+  },
+  "frontend-atlasi-b": {
+   "satis_basina_kurucu_saati": 0.1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "Kopyası satılan alıştırma paketi; müşteriye özel iş yok, teslim 0. Karttaki 0,1 saat satış, 5 dk destek; varsayım."
+  },
+  "frontend-atlasi-c": {
+   "satis_basina_kurucu_saati": 10,
+   "teslim_saat_odeme_basina": 24,
+   "musteri_basina_aylik_destek_dk": 30,
+   "not": "Kartta 1 ders, 1 laboratuvar, 5 maddelik kabul ölçütü, tek revizyon: ders 10, lab 8, ölçüt ve kaynak 3, revizyon 3 saat; varsayım. Revizyon teslime taşındı, destek 30 dk."
+  }
+ }
+}

@@ -1,0 +1,343 @@
+{
+ "slug": "titanlar",
+ "baslik": "Titanlar (e-ticaret eğitimi ve danışmanlık)",
+ "ozet": "Titanlar, e-ticarete başlayan ve kâr edemeyen esnaf, üretici ve KOBİ sahiplerine 10 haftalık canlı eğitim ve danışmanlık satmayı planlıyor. Müfredat, fiyat ve site iskeleti hazır; ödeme, fatura düzeni, hukuk sayfaları ve yayındaki alan adı yok. Ödeyen müşteri 0.",
+ "bugun": {
+  "var": [
+   "Statik site iskeleti (4 sayfalık tanıtım sitesi ve 11 sayfalık program sitesi); yayında değil",
+   "10 haftalık müfredat metni, fiyat tablosu ve kohort ekonomisi planı yazılı",
+   "12 çevik prensip sunumu (saf HTML, otomatik oynatıcı) hazır",
+   "Ders aracı olarak açık kaynak bir kâr hesaplayıcısı var; formül düzeltmesi bekliyor",
+   "Karar kapıları yazılı: 25 Ekim'e kadar en az 12 tahsil edilmiş kayıt"
+  ],
+  "yok": [
+   "Ödeme altyapısı, fatura düzeni ve hukuk sayfaları (KVKK, mesafeli satış, iade) yok",
+   "Ödev şablonları, geri bildirim rubriği ve ders slaytları yok; sitedeki formlar işlevsiz",
+   "Site taslağındaki iddialar ve örnek yorum alanları doğrulanmadı; yayından önce gözden geçirilmeli",
+   "Talep görüşmesi yapılmadı; webinar ya da ön kayıt sayfası yok",
+   "Kurucunun ağı ve izleyici kitlesi belgelenmemiş; alan adı yayında değil"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Plan, 10 hafta, 20 oturum, 30 saatlik 20 kişilik canlı programı 5.000 ₺ (KDV hariç) ile birinci biçim sayar; VIP, danışmanlık ve kayıtlı kurs üst satıştır. İki webinarla 25 Ekim'e kadar en az 12 tahsilat hedefler; 12 aylık baz gelir yaklaşık 257 bin ₺.",
+  "gpt": "Strateji dosyaları Titanlar varlıklarını bağımsız gelir ürünü saymaz: tanıtım ve program sitelerini kâr aracının satışını destekleyen modül, 12 prensip setini eğitim materyali sayar. Ücretli öneri dar bir çıktı için sınırlı kit, uyarlama ya da atölye; ödeme ve talep doğrulanmadı.",
+  "ayrisma": "Claude planı hazır bir eğitim kohortunu ve yaklaşık 257 bin ₺ yıllık geliri öne koyar; GPT dosyaları ödeme ve talep kanıtı olmadığı için yalnız dar, sabit kapsamlı çıktıyı satmayı, tekrar kullanım görülmeden abonelik ya da geniş platforma geçmemeyi önerir.",
+  "birlesik": "Önce kanıt: fatura düzeni ve hukuk metinleriyle iki webinar ve ücretli ön kayıt denenir; kendi ürünüyle hesap isteyen satıcıya sabit fiyatlı danışmanlık sunulur. Kohort ve kurumsal paket, ilk tahsilatlar ile tamamlama oranı görüldükten sonra büyütülür."
+ },
+ "analist_gorusu": "En gerçekçi yol, iki webinar ve ücretli ön kayıtla 12 kişilik kohortu doldurmak; yanında kâr edemeyen satıcıya sabit kapsamlı danışmanlık denenir. Kurumsal paket 6 ayda tahsilat getirmez. Ödeme düzeni ve kanıtsız iddia temizliği olmadan satış başlamaz.",
+ "secenekler": [
+  {
+   "id": "titanlar-a",
+   "ad": "Titan Programı: 10 haftalık canlı kohort",
+   "tur": "hizmet",
+   "musteri": "E-ticarete başlayan esnaf, üretici ve kâr edemeyen küçük satıcı (şahıs işletmesi ya da 1-3 çalışanlı KOBİ)",
+   "is": "Hangi ürünü, hangi pazar yerinde, hangi fiyatla ve hangi şirket türüyle satacağına karar verip 10 haftada mağazasını ve yazılı planını kurmak",
+   "tetikleyici": "Zararlı ay, komisyon ya da kargo tarifesi değişikliği, komşu esnafın pazar yerinde satışa başlaması, ücretsiz webinarda kendi ürününün hesabı",
+   "teklif": "20 kişilik, haftada 2 akşam 90 dakikalık canlı program: zorunlu ödev, yazılı geri bildirim, kurulmuş mağaza, 10 fiyatlanmış ürün ve 90 günlük yazılı plan",
+   "fiyat": "5.000 ₺ + KDV (6.000 ₺ KDV dahil, 3 taksit); webinar sonrası 7 gün erken kayıt 4.500 ₺ + KDV; VIP 8.750 ₺ + KDV",
+   "kanal_birincil": "Kurucunun iki ücretsiz canlı webinarı (15 ve 22 Ekim), ardından 20 dakikalık tanışma görüşmesi ve ödeme bağlantısı",
+   "kanal_yedek": "LinkedIn mesajları, Telegram E-Ticaret Türkiye ve satıcı grupları, tanıdık üretici ağı (plan varsayımı, belgelenmedi), kâr aracı içi bağlantı",
+   "ilk_adim": "Mali müşavirle fatura düzenini kurmak, sitedeki kanıtsız iddiaları kaldırmak, tek sayfa kayıt sitesini ve ödeme yolunu açmak",
+   "ilk_kapsam": "İlk kohort: 20 oturum, 10 ödev şablonu, rubrik, katılım belgesi; kâr aracı formülü düzeltilip test edilene dek derste Excel şablonu; ders anlatımı kohort sırasında hafta hafta üretilir",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Müfredat, sunumlar ve ders aracı kurucunun, araç açık kaynak; Titanlar markası sorgulanmadı, alan adı kayıt sahibi doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KVKK, mesafeli satış, ön bilgilendirme ve iade metinleri yok; avukat ve mali müşavir teyidi gerekli; MEB onaylı kurs değil."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Şahıs işletmesi ya da şirket, e-Arşiv ve iyzico ya da havale düzeni kurulmadı; test ödemesi yapılmadı."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (kâr edemeyen satıcı, esnaf, üretici); 20 isimlik liste yok, kurucunun ağı belgelenmedi."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal canlı webinar (15 ve 22 Ekim); yedek olarak LinkedIn, satıcı grupları ve tanıdık üretici ağı adlı ve ilk adımlı."
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Ödeme alınabilir kapsama kalan efor yaklaşık 40 saat; ilk tahsilat webinar sonrası 2-6 hafta; efor payı varsayım."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 21.500 ₺ (avukat, müşavir, araç, opsiyonel reklam); 50.000 ₺ tavanın altında, dış sermaye yok."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı sabit programı ve fiyatı alır; VIP 4 birebir oturumla sınırlı; özel geliştirme yok."
+    }
+   },
+   "kapi_duzeltme": "G1: marka ve alan adı sorgusu. G2-G3: şahıs işletmesi ya da şirket, e-Arşiv, iyzico ya da havale, avukat kontrollü metinler. G4: ilk webinardan önce 20 isimlik liste.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 5000,
+    "degisken_maliyet_tl": 300,
+    "sabit_gider_aylik_tl": 1900,
+    "baslangic_nakit_tl": 21500,
+    "kalan_efor_saat": {
+     "min": 25,
+     "beklenen": 40,
+     "max": 70
+    },
+    "ilk_tahsilat_gun": {
+     "min": 14,
+     "max": 45
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 45,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 27000,
+     "baz": 115000,
+     "iyi": 210000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 6,
+     "baz": 24,
+     "iyi": 40
+    },
+    "alti_ay_musteri": {
+     "kotu": 6,
+     "baz": 24,
+     "iyi": 40
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.3
+    },
+    "dayanak": "Plan bölüm 5-8. Baz: kohort 1 12 kişi (K02-A eşiği; 10 erken 4.500 + 2 standart 5.000 = 55.000) + kohort 2 12 kişi (60.000) = 115.000 ₺; plan baz 16'şar kişi ama tanınırlık, izleyici ve talep kanıtı yok, 12 alındı. Kötü: 6 ön kayıt. İyi: 20+20 kişi + 4 VIP. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Webinar katılımcıları ve görüşme yaptığı satıcılar, 10 haftalık programa 5.000 ₺ + KDV ön ödeme yapar.",
+    "yontem": "Fatura düzeni kurulduktan sonra iki webinar (15 ve 22 Ekim), 30 tanışma görüşmesi; ödeme bağlantısı ya da havale ve e-Arşiv ile ön kayıt tahsilatı.",
+    "sure_gun": 24,
+    "maliyet_saat": 90,
+    "maliyet_tl": 21500,
+    "basari_olcutu": "25 Ekim'e kadar en az 12 tahsil edilmiş kayıt",
+    "birakma_olcutu": "25 Ekim'de 6'dan az tahsilat, kanal değişikliğiyle 8 Kasım'da hâlâ 6'dan az",
+    "sonraki_dilim": "Kohort 3 Kasım'da başlar; tamamlama oranı ölçülür, izinli referanslar toplanır, ardından VIP ve kayıtlı kurs"
+   },
+   "etiketler": {
+    "segment": "Kâr edemeyen satıcı, esnaf, üretici KOBİ",
+    "kanal_turu": "içerik",
+    "teknoloji": "Statik site, form aracı, canlı ders, ödeme bağlantısı",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Kaynak: iş planı bölüm 2, 3, 5-8 ve derinlik dosyası B, C, D.8. Ödeyen müşteri yok; talep görüşmesi yapılmadı. Rakip fiyatlar (üniversite sertifika programı 5.000 ₺, bir diğeri 28.500 ₺ + KDV, kayıtlı kurs 3.900 ₺) ve pazar yeri komisyonları dış kaynaklı; kayıt-satış oranları ikincil. Kohort net nakdi 12 kişide 43.700 ₺, kurucu saati başına 485-900 ₺ (eşik saat ücreti). GPT dosyalarında gelir ya da ödeme kanıtı yok."
+  },
+  {
+   "id": "titanlar-b",
+   "ad": "Kâr teşhisi: Giriş ve Strateji danışmanlığı",
+   "tur": "hizmet",
+   "musteri": "Pazar yerlerinde satış yapan, cirosu olup kâr edemeyen küçük satıcı (şahıs işletmesi ya da 1-3 çalışanlı KOBİ sahibi)",
+   "is": "Hangi ürünlerde ve kampanyalarda zarar ettiğini bulmak, fiyat, reklam ve kampanya kurallarını yeniden kurmak",
+   "tetikleyici": "Zararlı ay sonu, komisyon ya da kargo tarifesi değişikliği, webinarda kendi ürününün hesabının çıkması",
+   "teklif": "Giriş: 1 saat görüşme ve PDF özet. Strateji: 4 saat, 2 hafta, ürün bazlı kâr analizi, yazılı fiyat ve kampanya planı, 30 gün e-posta desteği",
+   "fiyat": "Giriş 2.500 ₺ + KDV; Strateji 12.500 ₺ + KDV (15.000 ₺ KDV dahil)",
+   "kanal_birincil": "Satıcı grupları (Telegram E-Ticaret Türkiye ve WhatsApp satıcı grupları) ve kurucunun LinkedIn mesajları; ücretsiz kâr hesabı demosu",
+   "kanal_yedek": "Kâr aracı içi bağlantı, iki ücretsiz webinar, mali müşavir yönlendirmeleri, tanıdık üretici ağı",
+   "ilk_adim": "Fatura düzenini kurmak ve gruplarda 'ürününü yaz, komisyon ve kargo sonrası ne kaldığını hesaplayayım' mesajıyla 20 satıcıya Giriş teklif etmek",
+   "ilk_kapsam": "Giriş görüşmesi: tablo şablonu ve 5 ürünlük kâr hesabı; Strateji: ürün bazlı analiz şablonu ve yazılı plan şablonu; kâr aracı yerine tablo kullanılır",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Hizmeti kurucu verir, araç açık kaynak; Titanlar markası ve alan adı kayıt sahibi doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Danışmanlık sözleşmesi, KVKK ve e-Arşiv düzeni yok; hatalı tavsiye sorumluluğu için hukukçu teyidi gerekli."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Şahıs işletmesi ya da şirket ve fatura düzeni kurulmadı; ödeme bağlantısı ya da havale hesabı hazır değil."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (cirosu olup kâr edemeyen satıcı); 20 isimlik liste yok, satıcı grupları adlı ama kişi listesi yok."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı satıcı grupları ve LinkedIn mesajları; yedek webinar, kâr aracı bağlantısı ve mali müşavir yönlendirmesi."
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "Giriş görüşmesi elle hemen sunulabilir; kalan efor yaklaşık 20 saat; ilk tahsilat 10-35 gün, karar tek kişide."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 8.000 ₺ (müşavir, sözleşme taslağı kontrolü, araç); 50.000 ₺ tavanın altında."
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Giriş ve Strateji sabit saatli, sabit fiyatlı paket; kapsam dışı istek yeni pakettir; özel yazılım geliştirme yok."
+    }
+   },
+   "kapi_duzeltme": "G1-G3: marka sorgusu, şahıs işletmesi ya da şirket, e-Arşiv, avukat kontrollü danışmanlık sözleşmesi ve sorumluluk sınırı. G4: 20 satıcı isim listesi.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 12500,
+    "degisken_maliyet_tl": 400,
+    "sabit_gider_aylik_tl": 1500,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 12,
+     "beklenen": 20,
+     "max": 35
+    },
+    "ilk_tahsilat_gun": {
+     "min": 10,
+     "max": 35
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 60,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 37500,
+     "iyi": 80000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 7,
+     "iyi": 16
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 5,
+     "iyi": 12
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.3
+    },
+    "dayanak": "Plan bölüm 2 ve 5: Giriş 2.500 ₺, Strateji 12.500 ₺ (KDV hariç). Baz: 5 Giriş + 2 Strateji = 37.500 ₺; plan 12 ayda 5 Strateji varsayar, mezun danışmanlığı 90 gün sonra başlar. Kötü: 0 ödeme (ödeme isteği kanıtsız). İyi: 12 Giriş + 4 Strateji. Dönüşüm varsayım."
+   },
+   "deney": {
+    "varsayim": "Cirosu olup kâr edemeyen satıcı, kendi ürününün kâr hesabı sonrası 2.500 ₺ + KDV Giriş görüşmesi için ödeme yapar.",
+    "yontem": "Satıcı gruplarında ve LinkedIn'de kendi ürünüyle ücretsiz 10 dakikalık hesap; 20 satıcıya ödeme bağlantılı Giriş teklifi; hesap tablosu ve PDF özet standart.",
+    "sure_gun": 21,
+    "maliyet_saat": 25,
+    "maliyet_tl": 3000,
+    "basari_olcutu": "21 günde en az 3 ödenmiş Giriş ve en az 1 Strateji teklifi kabulü",
+    "birakma_olcutu": "20 satıcıya yapılan tekliften 21 günde 0 ödeme",
+    "sonraki_dilim": "Strateji paketi, ardından kohort ön kaydı ve izinli vaka sayfası"
+   },
+   "etiketler": {
+    "segment": "Cirosu olup kâr edemeyen pazar yeri satıcısı",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Tablo şablonu, kâr hesaplayıcısı, görüntülü görüşme",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "Kaynak: iş planı bölüm 1, 2, 5, 6; derinlik dosyası A.2, B.3 (kâr edemeyen satıcı kişiliği), C.2, C.9; GPT strateji dosyaları (dar çıktı, sabit kapsam). Ödeyen müşteri yok. Komisyon %21,36, kargo 81,95-121,75 ₺ ve stopaj %1 dış kaynaklı; benzer işe ödeme (özel ders 1.500-20.000 ₺, ajans) kaynaklı. Ücretsiz hesaplayıcılar ve kâr aracı hesabın bir kısmını karşılar. Kurucunun e-ticaret satıcılığı geçmişi belgelenmedi."
+  },
+  {
+   "id": "titanlar-c",
+   "ad": "Kurumsal atölye: oda, belediye ve üretici KOBİ",
+   "tur": "hizmet",
+   "musteri": "İl ticaret ve sanayi odası, esnaf odası ve belediye girişimci merkezi eğitim birimleri; ekibine çevik çalışma öğretmek isteyen üretici KOBİ",
+   "is": "Üyelerinin ya da ekibinin e-ticarete geçişini ve haftalık teslim ritmini raporlanabilir, takipli bir eğitimle başlatmak",
+   "tetikleyici": "Faaliyet raporu ve bakanlık e-ticaret projesi takvimi, üyelerden gelen eğitim talebi, ücretsiz etkinliklerin takipsiz kalması",
+   "teklif": "1 günlük uygulamalı atölye; 2 günlük paket 60 gün mentor, katılımcı bazlı ilerleme raporu ve katılım belgesi içerir; 20-40 katılımcı",
+   "fiyat": "1 gün 15.000 ₺ + KDV (varsayım); 2 gün ve 60 gün mentor 30.000 ₺ + KDV; teklif, sözleşme ve e-Fatura ile, 30-60 gün vade",
+   "kanal_birincil": "Doğrudan teklif: İstanbul ve Kayseri, Denizli, Gaziantep ticaret ve sanayi odaları ile esnaf odalarının eğitim birimleri; e-posta ve ziyaret",
+   "kanal_yedek": "Kurucunun LinkedIn ağında üretici KOBİ sahipleri ve ücretsiz 45 dakikalık çevik çalışma oturumu; üniversite sürekli eğitim merkezleri ile görüşme",
+   "ilk_adim": "Üç odaya teklif şablonu ve örnek rapor eki göndermek; LinkedIn'de çevik çalışma oturumu duyurmak",
+   "ilk_kapsam": "Bir günlük atölye: 12 sunumdan 4'ü (erken teslimat, sık teslimat, sürdürülebilir tempo, yansıma) ya da fiyat hesabı atölyesi; rapor şablonu 1 sayfa",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Sunumlar saf HTML ve kurucunun, ders aracı açık kaynak; Titanlar markası ve alan adı kayıt sahibi doğrulanmadı."
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kurum sözleşmesi, KVKK eki, katılım belgesi dili ve kamu kurumu alım kuralları için hukukçu ve müşavir teyidi gerekli."
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Şahıs işletmesi ya da şirket ve e-Fatura düzeni kurulmadı; kurum tahsilatı 30-60 gün vadeli."
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (kurum eğitim birimi); 20 kurum ismi yok, kurucunun oda ilişkisi belgelenmedi, yalnız üretici müşteri ağı var."
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal adlı odalara doğrudan teklif; yedek LinkedIn ve ücretsiz çevik çalışma oturumu; ilk adım teklif şablonu."
+    },
+    "G6": {
+     "durum": "kaldi",
+     "not": "Karar 1-3 ay, vade 30-60 gün; plan ilk teklifi ilk çeyrek, sözleşmeyi ikinci çeyrek öngörür; tahsilat 6 aya sığmıyor."
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 8.000 ₺ (sözleşme kontrolü, yol, e-Fatura); 50.000 ₺ tavanın altında."
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Atölye kapsamı, rapor ve mentor sınırı yazılı değil; kurumlar logo, rapor biçimi ve oturum sayısı için özel istek getirebilir."
+    }
+   },
+   "kapi_duzeltme": "G6: 6 ayda tahsilat için yazılı niyetli bir oda ya da üretici ilk atölyeyi ücretli pilotla başlatmalı. G1-G3: marka, sözleşme, e-Fatura. G4: kurum listesi. G8: sabit paket tanımı.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 15000,
+    "degisken_maliyet_tl": 1000,
+    "sabit_gider_aylik_tl": 600,
+    "baslangic_nakit_tl": 8000,
+    "kalan_efor_saat": {
+     "min": 20,
+     "beklenen": 40,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 210,
+     "max": 330
+    },
+    "satis_basina_kurucu_saati": 25,
+    "musteri_basina_aylik_destek_dk": 240,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 0,
+     "iyi": 0
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.25
+    },
+    "dayanak": "Plan bölüm 5 (gün ücreti 15.000 ₺ + KDV, varsayım) ve derinlik dosyası D.7: ilk kurumsal teklif 2027 ilk çeyrek, ilk oda atölyesi ve sözleşme ikinci çeyrek, vade 30-60 gün; 6 aylık pencere dışında. Üç senaryoda da 6 ayda 0 tahsilat. Teklif-sözleşme dönüşümü %25 (varsayım)."
+   },
+   "deney": {
+    "varsayim": "Bir oda ya da üretici KOBİ, kanıt görmeden 1 günlük atölye için yazılı satın alma niyeti bildirir.",
+    "yontem": "3 odaya teklif şablonu ve örnek rapor; LinkedIn'de 5 üretici KOBİ'ye çevik çalışma oturumu daveti; ücretsiz 45 dakikalık oturum; yazılı niyet istenir.",
+    "sure_gun": 45,
+    "maliyet_saat": 30,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "45 günde en az 1 yazılı teklif talebi ya da satın alma niyeti",
+    "birakma_olcutu": "8 kurum teması sonrası 45 günde 0 teklif talebi",
+    "sonraki_dilim": "Ücretli pilot atölye, sonra 2 günlük paket; kanıt olarak kohort mezun sonuçları"
+   },
+   "etiketler": {
+    "segment": "Oda, belediye eğitim birimi, üretici KOBİ",
+    "kanal_turu": "ortak",
+    "teknoloji": "Sunum seti, rapor şablonu, görüntülü ders",
+    "regulasyon": "mevzuata bağlı"
+   },
+   "kanit_notlari": "Kaynak: iş planı bölüm 5, 9, 11; derinlik dosyası B.3 (kurumsal alıcı kişiliği), C.7, D.4, D.7; GPT çevik prensip dosyası (kısa mini ders ve tek ekip senaryosu, atölye hizmeti). Gün ücreti ve kurum bütçesi (15-60 bin ₺) varsayım; ücretsiz bakanlık etkinlikleri ve oda akademileri ikame. Ödeyen kurum yok, referans yok; agile sunum seti tamamlanmış."
+  }
+ ]
+}

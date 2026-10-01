@@ -1,0 +1,23 @@
+{
+ "slug": "volley-tap",
+ "secenekler": {
+  "volley-tap-a": {
+   "satis_basina_kurucu_saati": 12,
+   "teslim_saat_odeme_basina": 40,
+   "musteri_basina_aylik_destek_dk": 60,
+   "not": "Kapsam: 2 haftalık tema, logo, test, skor ekranı ve oynanış raporu; 40 saat, AI hızlanma payı dahil. Karttaki 34 saatin teslim kısmı taşındı; satış 12 saat. Baz 6 ayda satış 0."
+  },
+  "volley-tap-b": {
+   "satis_basina_kurucu_saati": 0,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 15,
+   "not": "Portal reklam gelirli ücretsiz oyun: müşteri yok, satış ve müşteriye özel teslim 0. Oyuncu ve portal yazışması için 15 dk destek korundu; geliştirme kalan eforda."
+  },
+  "volley-tap-c": {
+   "satis_basina_kurucu_saati": 1,
+   "teslim_saat_odeme_basina": 0,
+   "musteri_basina_aylik_destek_dk": 5,
+   "not": "Dijital oyun kopyası satışı: müşteriye özel teslim yok, 0. Satış 1 saat ve destek 5 dk karttaki gibi korundu; demo ve premium paket hazırlığı kalan eforda."
+  }
+ }
+}

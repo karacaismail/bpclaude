@@ -1,0 +1,665 @@
+{
+ "kriter": "A1",
+ "puanlar": {
+  "zabuno-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Fiyat değişince menünün yeniden basılması düzenli para kaybı; 40 masalık baskı hesabı varsayım, yönetmelik karekodu zorunlu kılmıyor, ceza yok."
+  },
+  "zabuno-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Şubeler arası fiyat tutarsızlığı ve şube başı yeniden baskı düzenli kayıp; tutarlar varsayım, ceza ya da gelir kaybı rakamla gösterilmedi."
+  },
+  "zabuno-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Tasarımı çalışan modüle çevirme ihtiyacı yalnız rol hipotezi; alıcının bugünkü kaybını gösteren hiçbir rakam yok."
+  },
+  "parselq-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yanlış parsel ve kapora riski büyük ama olasılığı ölçülmedi, kartta kayıp hesabı yok; düzenli kayıp saatler süren ilan taraması."
+  },
+  "parselq-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ofisin derdi ilanı ayrıştırmak; kayıp olarak yalnız ayda 4-5 saat tekrar anlatım varsayımı var, para kaybı gösterilmedi."
+  },
+  "parselq-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ayda 5-30 dosyada kaynak ve tarih her alıcı görüşmesi öncesi yeniden toplanıyor; düzenli zaman kaybı, süre ölçülmedi, para kaybı yok."
+  },
+  "destektesvik-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Kaçan çağrı ve boşa giden hazırlık kaybı var; program üst limitleri kamuya açık ama bu fırsat kaybı, ceza ya da iş durması doğmuyor."
+  },
+  "destektesvik-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Çağrı açılınca 30-100 mükellefi elle taramak çağrı başına onlarca saat (varsayım); büronun işi durmuyor, ceza yok."
+  },
+  "destektesvik-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oda ya da OSB'nin kendi para ya da ceza kaybı yok; sorun üye memnuniyeti ve hizmet görünürlüğü, rakamlanamıyor."
+  },
+  "asgari-iscilik-a": {
+   "p": 5,
+   "k": 1,
+   "g": "Eksik işçilik fark prim ve gecikme zammı doğurur; ilişiksizlik belgesi gecikince teminat ve hakediş kilitlenir. Kayıp mevzuatla rakamlanabiliyor."
+  },
+  "asgari-iscilik-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Aynı ceza ve teminat riski var ama asıl alıcı mali müşavir; kayıp mükellefe düşer, büronun kendi kaybı tablo güncelleme emeği ve itibar."
+  },
+  "asgari-iscilik-c": {
+   "p": 4,
+   "k": 1,
+   "g": "Tablo hatası fark prim, gecikme zammı ve teminat gecikmesi doğurur; kayıp ancak hata varsa oluşur, gerçek bir dosyada rakam görülmedi."
+  },
+  "zincir-danismanligi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Site, mağaza, uygulama ve POS verisi birleşmiyor, reklam ölçülemiyor; düzenli para kaybı var, israf tutarı varsayım, iş durmuyor."
+  },
+  "zincir-danismanligi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı ölçümsüz reklam ve kopuk veri sorunu diğer zincirlerde varsayılıyor; yalnız tek zincirde gözlendi, kayıp tutarı hesaplanmadı."
+  },
+  "zincir-danismanligi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "şubelerde fiyat tutarsızlığı ve yeniden baskı gideri düzenli kayıp; baskı hesabı varsayım, yönetmelik karekodu zorunlu kılmıyor."
+  },
+  "kar-pusulasi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Komisyon, kargo ve stopaj sonrası kalan pay kamuya açık oranlarla hesaplanıyor; yanlış fiyat ürün bazında zarar ettirir, iş durmuyor."
+  },
+  "kar-pusulasi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Danışman her müşterinin fiyat raporunu Excel'de elle hazırlıyor; ayda yaklaşık 15 saat varsayım, ceza ya da gelir kaybı yok."
+  },
+  "kar-pusulasi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "200 SKU'luk dosyada katkı kaybeden ürünler gizli kalıyor; oranlar kamuya açık ama kayıp alıcının dosyasına özgü ve ölçülmedi."
+  },
+  "titanlar-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Yeni başlayan satıcıda komisyon, kargo ve stopaj yükü kaynaklı; ilk deneme-yanılma zararının tutarı varsayım, ceza ya da iş durması yok."
+  },
+  "titanlar-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Alıcı cirosu olup kâr edemeyen satıcı; ürün başına zarar kamuya açık komisyon ve kargo oranlarıyla rakamlanabiliyor, iş durmuyor."
+  },
+  "titanlar-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oda için sorun takipsiz kalan ücretsiz etkinlik ve üye talebi; kurumun para ya da ceza kaybı rakamlanamıyor."
+  },
+  "kurumsal-site-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Tek dilli ve mobilde bozuk sitede yabancı alıcının teklifi kaçıyor; 20 üretici karşılaştırması var, kaybın tutarı ölçülmedi."
+  },
+  "kurumsal-site-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Mikro ihracatçı WhatsApp ve katalogla idare ediyor; sitesizliğin kaybı küçük ve rakamla gösterilmedi."
+  },
+  "kurumsal-site-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Hazır kalıp ajans ve geliştiriciye yalnız kolaylık; kalıbı kendisi yazabiliyor, kayıp ya da ceza gösterilmedi."
+  },
+  "uretici-kobi-paketi-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcı pazar yerine çıkmayı henüz düşünüyor; sipariş başı zarar hesabı kamuya açık oranlarla var ama kendi kaybı ileriye dönük."
+  },
+  "uretici-kobi-paketi-b": {
+   "p": 4,
+   "k": 1,
+   "g": "Pazar yerinde zarar eden üreticide sipariş başı kayıp 2026 oranlarıyla rakamlı: 250 ₺ altı sepette zarar; iş durmuyor."
+  },
+  "uretici-kobi-paketi-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Dağınık teknik bilgi yüzünden numune ve teklif isteği kaçıyor; diğer ihracatçı site seçenekleriyle aynı durum, kayıp tutarı ölçülmedi."
+  },
+  "wp-nis-eklentiler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "KVKK cezası mevzuatta rakamlı ama site sahibine kesilir, küçük sitede olasılığı ölçülmedi; ajansın kendi kaybı site başı elle kurulum emeği."
+  },
+  "wp-nis-eklentiler-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Sepet terki ve teslim edilemeyen kapıda ödeme gönderisi düzenli para kaybı; gönderi başı tutar ve dönüşüm etkisi varsayım."
+  },
+  "wp-nis-eklentiler-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Aynı KVKK ceza riski ve kapıda ödeme kaybı; ceza tutarı mevzuatta yazılı ama küçük sitede olasılığı ölçülmedi, iş durmuyor."
+  },
+  "qral-a": {
+   "p": 1,
+   "k": 1,
+   "g": "Bağlantı yapıştırma zahmeti küçük; yüz binlerce kullanıcılı ücretsiz uzantılar aynı işi görüyor, kayıp ya da ceza gösterilemiyor."
+  },
+  "qral-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Öğretmenin QR sayfası hazırlığı yılda yaklaşık 27 saat varsayımı; para ya da ceza kaybı yok, küçük zaman kaybı."
+  },
+  "qral-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Rapor kaynaklarını yeniden biçimlendirmek küçük ve ölçülmemiş emek; yer imi ve ücretsiz yapay zekâ aynı işi görüyor, para kaybı yok."
+  },
+  "frontend-atlasi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Eğitmen her dönem müfredatı elle yeniden yazıyor; dönem başına yaklaşık 75 saat varsayım, gelir kaybı ya da ceza yok."
+  },
+  "frontend-atlasi-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Öğrenen mülakat ve portföy hazırlığında zaman kaybediyor; ücretsiz dersler bol, para ya da ceza kaybı yok."
+  },
+  "frontend-atlasi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Eğitmen promptlardan tutarlı ders ve laboratuvar çıkaramıyor; aynı dönemlik müfredat emeği kaybı, rakam varsayım."
+  },
+  "karar-kitabi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Tekrarlayan kalite ve teslimat sorunu şirketin, atölyenin çözdüğü karar verme eksiğinin kaybı rakamla gösterilmedi; ceza ya da durma yok."
+  },
+  "karar-kitabi-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Karar yöntemini öğrenmek yönetici için olsa iyi olur düzeyinde; uygulanmamasının kaybı rakamla gösterilemiyor."
+  },
+  "karar-kitabi-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Oturum sonrası yaklaşık 2 saatlik toparlama danışmanın olağan teslim emeği; gelir kaybı ya da ceza yok, kayıp ölçülmedi."
+  },
+  "kurucu-sunum-hizmeti-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Sunum, model ve form rakamları çelişince başvuru zayıflıyor; tek vakada çelişkiler bulundu. Kaçan hibe fırsat kaybı, ceza yok."
+  },
+  "kurucu-sunum-hizmeti-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Tek vakada rakam çelişkileri bulundu; jüri ya da yatırımcı önünde çıkarsa başvuru zayıflar. Kayıp fırsat ve itibar, ceza yok."
+  },
+  "kurucu-sunum-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Mentör saatinin slayt düzeltmeye gitmesi dönem başına yaklaşık 20 saat varsayım; kurumun para ya da ceza kaybı gösterilemiyor."
+  },
+  "vize-operasyon-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Excel ve WhatsApp'la izlenen dosyada kaçan randevu ve eksik evrak ret ve iade edilmeyen ücret doğurur; acente başına kayıp varsayım."
+  },
+  "vize-operasyon-b": {
+   "p": 3,
+   "k": 1,
+   "g": "Ayda 50-300 dosyada eksik bilgi için müşteriye tekrar tekrar sorma düzenli emek kaybı; süre ölçülmedi, ret verisi yalnız dolaylı."
+  },
+  "vize-operasyon-c": {
+   "p": 3,
+   "k": 1,
+   "g": "Ret hâlinde 90 € başvuru ücreti iade edilmiyor, ret oranı yüzde 14,59; evrak eksiğinin retteki payı bilinmiyor, kayıp tek seferlik."
+  },
+  "software-factory-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Teknik ortağı olmayan girişim ajansa 10-50 bin dolar asgari proje bedeli ve gecikme ödüyor; girişim başına kayıp rakamlanmadı."
+  },
+  "software-factory-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajan PR'larında uzayan review kuyruğu ve kaybolan kanıt zaman alıyor; saat ölçülmedi, tasarruf gözlenmedi."
+  },
+  "software-factory-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Geliştiricisi olmayan ajans uygulama talebini geri çeviriyor ya da serbest çalışana verip marj kaybediyor; tutar ölçülmedi."
+  },
+  "strateji-simulatoru-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Çağrı başına yüzlerce fikri okumak yaklaşık 100 mentor saati (varsayım); program yükümlülüğü dış kaynaklı, ceza ya da durma yok."
+  },
+  "strateji-simulatoru-b": {
+   "p": 3,
+   "k": 1,
+   "g": "KOSGEB başvurularının yaklaşık yüzde 17'si destek alıyor; ret 20-40 saat hazırlık ve aylarca bekleme kaybı, para cezası yok."
+  },
+  "strateji-simulatoru-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Yanlış yatırım kararı ya da reddedilen başvuru KOBİ'ye pahalı; milyonluk kayıp rakamı varsayım, zorunlu kayıp gösterilmedi."
+  },
+  "ajan-kaynak-koruyucu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Makine donması kamuya açık kayıtlarla belgeli ama kayıp yılda yaklaşık 26 saat varsayımı; para kaybı ya da iş durması yok."
+  },
+  "ajan-kaynak-koruyucu-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Donan iş istasyonunu teşhis etmek zaman alıyor; kayıp rakamsız, sorun ancak ikinci kez tekrarlarsa anlam kazanıyor."
+  },
+  "ajan-kaynak-koruyucu-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Orkestratör projeleri 16 GB kullanıcı şikâyeti alıyor; kendi para kaybı gösterilmedi, sponsorluk gönüllü bir destek."
+  },
+  "actionplan-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Ajana bağlam ve kabul ölçütü yazmak haftada 5-8 saat (kurucu tahmini); anketlerde 'neredeyse doğru' çıktı şikâyeti var, para kaybı yok."
+  },
+  "actionplan-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Müşterinin 'bunu istemedim' demesiyle yeniden açılan iş ajansa ücretsiz emek; düzenli kayıp varsayılıyor, tutar hipotez."
+  },
+  "actionplan-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajana görev yazmayı bilmemek öğrenme eksiği; parasal kayıp yok, ücretsiz kaynaklar ve genel yapay zekâ sohbetleri yetiyor."
+  },
+  "ajan-gozlem-paneli-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Limit çarpması ve donma rahatsız ediyor ama kayıp küçük ve varsayım; ücretsiz araçlar maliyeti zaten gösteriyor, iş durmuyor."
+  },
+  "ajan-gozlem-paneli-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın yapay zekâ harcamasını projelere elle dağıtması ayda yaklaşık 3 saat varsayımı; küçük kayıp, persona kurgusal."
+  },
+  "ajan-gozlem-paneli-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Takılı kalan ajan işinin fark edilmemesi gecikme yaratabilir; alıcı ve kayıp belgesiz, gelir ya da tasarruf rakamı yok."
+  },
+  "ai-first-tasarim-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Öğrenen geliştirici için kayıp 20-30 saatlik öğrenme zamanı varsayımı; ceza ya da iş durması yok, diğer rehber ürünleriyle aynı düzey."
+  },
+  "ai-first-tasarim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekip tasarım sistemini ve yapay zekâ yüzeyini içeride kurarken haftalar ve hata ayıklama saati harcıyor; tutarlar varsayım."
+  },
+  "ai-first-tasarim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Çok ajanla üretimde aynı ekran farklı çıkıyor, müşteri incelemesinde reddedilen arayüz yeniden iş doğuruyor; rakam yok."
+  },
+  "aicommandcard-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kafe sahibinin menü metni ve yorum yanıtı için haftada 1-3 saat yazı yükü düzenli kayıp; saat değeri varsayım, iş durmuyor."
+  },
+  "aicommandcard-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Panele yapay zekâ yüzeyi eklemek ekibe bir kez 2-4 hafta harcatıyor; düzenli kayıp değil, ceza ya da rakamlı zarar yok."
+  },
+  "atonota-denetim-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Kopuk izleme kodu ve yavaş site reklam harcayan KOBİ'ye düzenli kayıp; ayda 2.000 TL rakamı varsayım, ceza ya da durma yok."
+  },
+  "atonota-denetim-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans her müşteri sitesi için aylık raporu elle hazırlıyor, site başı 1-2 saat; aylık 15.000 TL emek rakamı varsayım."
+  },
+  "atonota-denetim-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Sınırsızlaşan küçük revizyonlar ve itiraz yönetimi ajansa düzenli ücretsiz emek; kayıp rakamı yok, ceza ya da durma yok."
+  },
+  "b2b-bilesenler-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yabancı alıcı tek dilli ürün sayfasında teklif formu bulamıyor; teklif kaçıyor ama kayıp ölçülmedi, müşteri getirisi varsayım."
+  },
+  "b2b-bilesenler-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın ürün sayfasını yeniden kurması 20-30 saat varsayımı; iki mobil görünüm için ayrı bir kayıp gösterilmedi."
+  },
+  "b2b-bilesenler-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Geliştirici şablonu sıfırdan da kurabiliyor; diğer hazır kalıp satışlarıyla aynı durum, kayıp gösterilmedi, olsa iyi olur düzeyi."
+  },
+  "banner-post-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Fiyat değişince görsel ve masa standı eskiyor; sahibi haftada 1-2 saat harcıyor ya da ajansa ödüyor. Rakamlar varsayım, iş durmuyor."
+  },
+  "banner-post-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı işletme haftada 1-2 saat görsel hazırlıyor ya da ajansa aylık ücret ödüyor; düzenli kayıp, rakamlar varsayım."
+  },
+  "banner-post-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans aynı briefin boyut ve içerik varyantlarını elle çoğaltıyor; süre ve tutar hiç rakamlanmadı, yalnız alıcı hipotezi."
+  },
+  "karar-sihirbazi-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans her fiyat talebinde teklife 4-8 saat harcıyor, geç teklif iş kaybettiriyor; aylık emek tutarı varsayım, iş durmuyor."
+  },
+  "karar-sihirbazi-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Gerekçesiz stack seçimi kapsam kaymasına ve teklif başı saatlerce emeğe yol açıyor; kayıp rakamı varsayım, ceza yok."
+  },
+  "karar-sihirbazi-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Aynı ajans, aynı sorun: görüşmeden önce kapsamı anlamak için teklif başına 4-8 saat (varsayım); iş durmuyor."
+  },
+  "sunum-bi-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Fiyat ya da ürün değişince 5-10 sunum elle güncelleniyor; yılda yaklaşık 80 saat varsayım, ceza ya da iş durması yok."
+  },
+  "sunum-bi-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans her ay 8 müşteriye sunum yetiştiriyor, tasarımcı darboğazı teslimi geciktiriyor; aylık maliyet hesabı varsayım."
+  },
+  "sunum-bi-hizmeti-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Danışmanın aynı sunumu yeni veriyle yeniden düzenleme emeği; en çok tekrar edilen slayt bile bilinmiyor, kayıp rakamı yok."
+  },
+  "ik-paneli-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Gösterecek ürünü olmayan kurucu yatırımcı ve pilot müşteri toplantısında zaman ve fırsat kaybediyor; rakamlar varsayım, ceza yok."
+  },
+  "ik-paneli-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans ayda 4-6 teklifte maket için tasarımcı günü harcıyor ve teklif kaybediyor; teklif başı maliyet varsayım, iş durmuyor."
+  },
+  "ik-paneli-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Eksik çıkış ve vardiya çakışması her ay bordro kapanışını geciktiriyor, yanlış ücret riski doğuruyor; kayıp ve ceza rakamlanmadı."
+  },
+  "ddd-renderer-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Bireysel geliştiricinin derdi boş sayfa; para ya da ceza kaybı yok, kayıp rakamla gösterilmiyor."
+  },
+  "ddd-renderer-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Mimari belgeyi her projede sıfırdan yazma zahmeti var; ücretsiz araçlar mevcut, kayıp ölçülmedi, ceza ya da gelir kaybı yok."
+  },
+  "ddd-renderer-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Ekipte mimari belgenin elle yazımı günler alıyor, yeni gelenin uyumu gecikiyor; tutarların tamamı varsayım, iş durmuyor."
+  },
+  "devpanel-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Canlı panelde yanlış toplu silme ve müşterinin denetim sorusu gerçek risk; olay kaydı yok, 100.000 ₺ kayıp rakamı varsayım."
+  },
+  "devpanel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı form kuralının iki ekranda farklı çalışması sınırlı bir sürtünme; ücretsiz form kütüphaneleri var, kayıp gösterilmedi."
+  },
+  "devpanel-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Hazır panel şablonu olsa iyi olur düzeyinde; alıcı kendisi yazabiliyor ya da ücretsiz seçenek kullanıyor, kayıp yok."
+  },
+  "e-menum-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajans hazır betiği uyarlamaya 2-4 hafta harcıyor; müşteri işi başına bir kez doğan zaman kaybı, rakamlanmadı, iş durmuyor."
+  },
+  "e-menum-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Şubelerde yanlış ya da eski fiyatın görünmesi düzenli para kaybı; zabuno zincir seçeneğiyle aynı durum, tutar ölçülmedi."
+  },
+  "e-menum-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Geliştirici için aynı uyarlama yükü: hazır betikler 19-89 USD ama haftalarca uyarlama istiyor; kayıp rakamsız, ceza yok."
+  },
+  "eklenti-firsat-panosu-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yanlış nişe 1-3 ay harcamak geliştiricinin kendi zamanı; tutar kaynaksız varsayım, kayıp düzenli değil, ceza ya da durma yok."
+  },
+  "eklenti-firsat-panosu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı alıcı, aynı karar: yanlış yönelimin 1-2 haftalık emek kaybı kaynaksız varsayım; ceza ya da iş durması yok."
+  },
+  "eklenti-firsat-panosu-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansın ürün hattı kararsızlığı bir fırsat eksiği; hizmet geliri sürüyor, kayıp rakamlanmadı, ekip zamanı tasarrufu varsayım."
+  },
+  "cok-dilli-arayuz-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Çeviri gelince taşan düğme ve bozuk RTL için 2-5 geliştirici günü düzeltme turu; rakam varsayım, iş durmuyor."
+  },
+  "cok-dilli-arayuz-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Alıcı öğrenen geliştirici; kayıp 10-20 saat araştırma varsayımı, ücretsiz W3C içerikleri var, ceza ya da gelir kaybı yok."
+  },
+  "cok-dilli-arayuz-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Her dil sürümünde son dakika CSS düzeltmesi ve geri gelen aynı hatalar düzenli saat kaybı; ölçülmedi, iş durmuyor."
+  },
+  "b2b-pazar-yeri-hizmeti-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Yanlış kategoriyle başlamak kuruma 3-6 aylık ekip ve yazılım maliyeti kaybettirir; rakam varsayım, ceza ya da durma yok."
+  },
+  "b2b-pazar-yeri-hizmeti-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Girişimde kayıtlı satıcı var ama işlem yok, kasa süresi kısalıyor; kayıp gerçek ama rakamlanmadı."
+  },
+  "b2b-pazar-yeri-hizmeti-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Bayi kaybı ve yanlış kamada yaklaşık 1 milyon ₺ ekip maliyeti varsayım; belgelenmiş kayıp olmadığı için 4 verilmedi."
+  },
+  "lifeos-a": {
+   "p": 1,
+   "k": 0,
+   "g": "Bildiği yöntemi uygulamama acısı nitel; kullanıcı görüşmesi yok, kayıp rakamlanamıyor, olsa iyi olur düzeyi."
+  },
+  "lifeos-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Bağımsız çalışan haftalık kaydı tutamayınca faturalanabilir saat kaybediyor; düzenli gelir kaybı varsayılıyor, rakamlanmadı."
+  },
+  "lifeos-c": {
+   "p": 1,
+   "k": 0,
+   "g": "Tek rutinli yeni sekme şablonu için kayıp gösterilemiyor; ücretsiz ya da ucuz eklentiler aynı işi görüyor."
+  },
+  "luquit-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Excel ve WhatsApp'la izlenen talepte kaçan müşteri ve komisyon kaydı tartışması gelir kaybı; tutar tahmin, ofisle görüşme yok."
+  },
+  "luquit-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Marka, odak ve 320 piksel uyumunu her projede yeniden çözmek küçük zaman kaybı; ücretsiz kütüphanelerle çözülebiliyor."
+  },
+  "metaframer-kernel-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Yeni projede izolasyon ve audit temelini elle yazmak 80-160 saat varsayımı; bir kezlik emek, sızıntı için olay ya da ceza kaydı yok."
+  },
+  "metaframer-kernel-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Güvenlik anketi başına 3-6 saat ve her projede yeniden kurulum varsayım; ajansla doğrulanmadı, para kaybı gösterilmedi."
+  },
+  "metaframer-kernel-c": {
+   "p": 3,
+   "k": 0,
+   "g": "Canlı çok kiracılı üründe yanlış kiracıya yazma ciddi sonuç doğurur; olay kaydı ve kayıp rakamı yok, ceza gösterilmedi."
+  },
+  "alan-adi-bulucu-a": {
+   "p": 2,
+   "k": 1,
+   "g": "Ad aramak saatler alıyor, marka başvurusu 2.820 ₺; yeniden markalaşma maliyeti varsayım. Kayıp ara sıra doğuyor, iş durmuyor."
+  },
+  "alan-adi-bulucu-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajans müşteri başına 2-3 saat kısa liste hazırlıyor (varsayım); küçük ve proje bazlı emek, ceza ya da gelir kaybı yok."
+  },
+  "alan-adi-bulucu-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Yanlış ad seçiminde başvuru ücreti 2.820 ₺ boşa gider; yeniden markalaşma tutarı varsayım, kayıp tek seferlik ve küçük."
+  },
+  "projector-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Geliştirici dağınık İngilizce kaynak taramaya zaman harcıyor; kayıp rakamsız, ceza ya da iş durması yok."
+  },
+  "projector-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ortak mimari standardı olmayan yazılım evi her projede tasarımı yeniden yapıyor; proje başı 12-25 bin TL kayıp varsayım."
+  },
+  "projector-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Dağınık teslim belgeleri ve sürüm belirsizliği toplantı yükü yaratıyor; kayıp ölçülmedi, tasarruf vaadi verilemiyor."
+  },
+  "kurucu-pusulasi-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Aynı kararı yeniden tartışmak ve yarım kalan işler kurucunun kendi zamanı; kayıp rakamı varsayım, ceza ya da durma yok."
+  },
+  "kurucu-pusulasi-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Ekiplerden tutarsız karar belgesi gelmesi dönem başına 10-20 saat varsayımı; kurumun para ya da ceza kaybı gösterilmiyor."
+  },
+  "kurucu-pusulasi-c": {
+   "p": 2,
+   "k": 1,
+   "g": "Yanlış çeviri alan okur kitap başına 300-600 TL ve okuma zamanı kaybediyor; küçük ve tek seferlik kayıp."
+  },
+  "signator-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Ajansta çalışan başına 15-30 dakikalık imza hazırlığı varsayım; tekrarlı ama küçük emek, ceza ya da iş durması yok."
+  },
+  "signator-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Tutarsız imza ve görünmeyen logo marka açısından rahatsız edici; para ya da ceza kaybı rakamla gösterilemiyor."
+  },
+  "signator-c": {
+   "p": 2,
+   "k": 0,
+   "g": "5 kişilik ekipte tutarsız imza küçük bir marka sorunu; ücretsiz Gmail ayarıyla yetinilebiliyor, kayıp rakamla gösterilmedi."
+  },
+  "volley-tap-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Kulüp ya da marka için kampanya oyunu etkileşim ihtiyacı; sponsor talebi dışında kayıp rakamla gösterilemiyor, acılar varsayım."
+  },
+  "volley-tap-b": {
+   "p": 1,
+   "k": 0,
+   "g": "Oyuncu için sorun yok, 1-3 dakikalık eğlence; ödeme yapan taraf da yok, kayıp gösterilemiyor."
+  },
+  "volley-tap-c": {
+   "p": 1,
+   "k": 0,
+   "g": "İki arkadaşın rövanş isteği eğlence düzeyinde; oyuncuya kayıp yok, ücretli talep doğrulanmadı."
+  },
+  "woocommnts-a": {
+   "p": 3,
+   "k": 0,
+   "g": "Mağaza taksit tablosunu elle güncelliyor, kapıda ödeme iadeleri kargo kaybettiriyor; aylık tutar ve iade sayısı varsayım."
+  },
+  "woocommnts-b": {
+   "p": 3,
+   "k": 0,
+   "g": "Ajans her mağazada taksit tablosunu yeniden kuruyor, mağaza başına 3-6 saat; yıllık tasarruf rakamı varsayım, iş durmuyor."
+  },
+  "woocommnts-c": {
+   "p": 2,
+   "k": 0,
+   "g": "Göçte yanlış ürüne bağlanan ya da tekrarlanan yorum itibar sorunu; tek seferlik, kayıp rakamlanmadı, ücretsiz seçenek güçlü."
+  },
+  "egitim-demolari-a": {
+   "p": 2,
+   "k": 0,
+   "g": "Öğretmenin haftalık ders hazırlığı emek alıyor; gelir kaybı ya da ceza yok, kaynakta hiçbir rakam yok."
+  },
+  "egitim-demolari-b": {
+   "p": 2,
+   "k": 0,
+   "g": "Prensiplerin ekip davranışına dönüşmemesi onboarding sürtünmesi; kayıp rakamla gösterilemiyor, ceza ya da durma yok."
+  },
+  "baz-secenekler-a": {
+   "p": 3,
+   "k": 1,
+   "g": "Alıcılarda ölçüm, entegrasyon ve hesap işleri düzenli para ve zaman kaybı; bu kapsamda iş durmuyor."
+  },
+  "baz-secenekler-b": {
+   "p": 2,
+   "k": 1,
+   "g": "Ajans hazır betiği uyarlamaya 2-4 hafta harcıyor; e-menum kurulum paketiyle aynı durum, kayıp rakamla gösterilmedi."
+  },
+  "baz-secenekler-c": {
+   "p": 1,
+   "k": 1,
+   "g": "Karşı taraf fon veren kamu programı; onun bir kaybı yok, ihtiyaç kurucunun nakit ihtiyacı, alıcı acısı değil."
+  }
+ }
+}

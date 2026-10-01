@@ -1,0 +1,344 @@
+{
+ "slug": "sunum-bi-hizmeti",
+ "baslik": "Sunum ve iş zekâsı çıktı hizmeti",
+ "ozet": "Ürün kataloğu ve marka renklerinden markalı, Türkçe yazım ve taşma denetimli satış sunumu seti (pptx, PDF, e-posta şablonu) üreten sabit paketli hizmet; kod üçüncü tarafa ait, ödeyen müşteri yok.",
+ "bugun": {
+  "var": [
+   "Python tabanlı sunum üretim çekirdeği ve 10 deste betiği yaklaşık %85 tamam; kod ve marka üçüncü taraf bir şirkete ait",
+   "Türkçe tipografi denetimi, taşma ve font denetimi, tek komutla tüm seti üretme betikleri çalışıyor",
+   "Altı slayt tipi, beş grafik tipi ve HTML e-posta şablonu var; hepsi üçüncü tarafın markasına bağlı",
+   "Plan üç paketi 8.000, 15.000 ve 20.000 ₺ olarak fiyatlıyor; ajans aboneliği 2.500 ₺/ay",
+   "Altyapı gideri 0-500 ₺/ay; havale ve küçük biletlerde sanal POS yolu planlanmış"
+  ],
+  "yok": [
+   "Ödeyen müşteri, ön ödeme, teklif yanıtı ya da yazılı niyet yok",
+   "Yazılı kullanım izni yok; izin gelmezse çekirdek sıfırdan yeniden yazılacak (2-3 gün)",
+   "Tema dosyası, katalog okuyucu, komut satırı aracı ve PDF çıktısı yok; marka sabitleri koda gömülü",
+   "Git deposu ve lisans dosyası yok",
+   "Tahsilat hesabı (sanal POS ya da havale ve fatura düzeni) açılmadı",
+   "Kurucunun 20 hedef alıcıyı ismen yazan listesi yok"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Koşullu evet: kendi markayla, markasız çekirdekle, katalogdan toplu sunum seti hizmeti. Set 8-20 bin ₺, ajans aboneliği 2.500 ₺/ay, 12 ayda 10 set ve yaklaşık 120 bin ₺ hedefi; yazılı izin ön koşul.",
+  "gpt": "BI veri ürünü doğrulanmadı; yalnız iş planından kurumsal sunum ve yönetici karar dosyası üretim hizmeti. İlk teslim tek izinli CSV/JSON ve beş slayt şablonu; ücretli birim teslim; tekrar görülmeden abonelik yok.",
+  "ayrisma": "Claude planı katalog odaklı, paketli ve abonelikli bir hizmet kuruyor, ajans ve franchise ekiplerini hedefliyor. GPT çalışması daha dar: danışman ya da analist, tek kaynak dosya, beş slayt, fiyat vermiyor, abonelik tekrar kanıtına bağlı.",
+  "birlesik": "Ürün değil, sabit kapsamlı ve sabit fiyatlı hizmet olarak başla; ilk ücretli birim tek set ya da tek sunum; abonelik ve platform yalnız tekrar eden talep görülürse; yazılı izin ya da sıfırdan yazım şart."
+ },
+ "analist_gorusu": "En gerçekçi yol, mevcut müşterilere 15.000 ₺ katalog paketi satmak; izin gelmezse çekirdeği sıfırdan yazmak 2-3 gün sürer. Abonelik tekrar kanıtı ister; sabit paket nakde daha yakın.",
+ "secenekler": [
+  {
+   "id": "sunum-bi-hizmeti-a",
+   "ad": "Katalogdan toplu markalı sunum seti (sabit paket)",
+   "tur": "hizmet",
+   "musteri": "Kataloglu işletmelerin ve franchise veren zincirlerin pazarlama sorumluları; ayrıca fuar öncesi çok dilli sunum isteyen üreticiler",
+   "is": "Fiyat ya da ürün değişince 5-10 satış sunumunu aynı gün güncel, marka kurallarına uygun ve Türkçe hatasız tutmak",
+   "tetikleyici": "Franchise başvuru dönemi, zam sonrası fiyat güncellemesi, fuar kaydı, yönetim kurulu toplantısı",
+   "teklif": "Katalog paketi: tema kurulumu, 5 sunum, PDF, e-posta şablonu, 48 saat teslim, 2 revizyon; önce müşterinin logosuyla 3 slaytlık ücretsiz örnek",
+   "fiyat": "15.000 ₺ + KDV tek seferlik; çeyreklik güncelleme 3.000 ₺; havale ve EFT, peşin yüzde 50",
+   "kanal_birincil": "Mevcut kurumsal site müşterilerine birebir WhatsApp ve e-posta ile ücretsiz 3 slaytlık örnek teklifi",
+   "kanal_yedek": "LinkedIn birebir temas (haftada 15 pazarlama sorumlusu), kurumsal site yapan ortak ajanslar ve yüzde 15 gelir payı",
+   "ilk_adim": "Üçüncü taraf şirketten kod ve marka için yazılı izin iste; izin yoksa çekirdeği python-pptx ile sıfırdan yazmaya başla",
+   "ilk_kapsam": "Tema dosyası, katalog okuyucu, komut satırı, PDF çıktısı, bir demo marka ve 2 örnek sunum; ardından 3 slaytlık ücretsiz örnek ve ilk teklif",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Kod, marka ve desteler üçüncü taraf bir şirkete ait; yazılı izin yok, ticari kullanım izne bağlı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "KDV, e-arşiv ve müşteri marka kullanım izni için mali müşavir ve hukukçu teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura ya da sanal POS yolu belli ama hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; yaklaşık 8 mevcut ilişki var ama 20 kişilik isim listesi yazılı değil"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Birincil kanal mevcut müşteriler ve ücretsiz örnek, ilk adım adlı; LinkedIn ve ortak ajanslar yedek"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 120 saat (6 hafta; derinlik D.8 14,5-17 gün) tahmini; satış döngüsü 2-4 hafta varsayım, ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 7.000 ₺ (alan adı, hukuk ve muhasebe teyidi), tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit paket, sabit fiyat, 2 revizyon; animasyon ve özel şekil istekleri kapsam dışı"
+    }
+   },
+   "kapi_duzeltme": "Yazılı izni al ya da çekirdeği sıfırdan yaz (G1); hukuk ve muhasebe teyidi, ödeme hesabı ve test ödemesi, 20 kişilik liste, ilk 3 satışla döngü ölçümü.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 15000,
+    "degisken_maliyet_tl": 1500,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 7000,
+    "kalan_efor_saat": {
+     "min": 90,
+     "beklenen": 120,
+     "max": 160
+    },
+    "ilk_tahsilat_gun": {
+     "min": 42,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 14,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 33000,
+     "iyi": 93000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 3,
+     "iyi": 7
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 6
+    },
+    "donusum_orani": {
+     "dusuk": 0.1,
+     "yuksek": 0.3
+    },
+    "dayanak": "Plan 5, 7.2, 8; derinlik B.3, C.2, D.8: katalog paketi 15.000 ₺; mevcut 8 ilişki x yüzde 30 örnek-sipariş varsayımı yaklaşık 2 set. Baz: 2 set (30.000) + 1 güncelleme (3.000); iyi: plan hedefi 6 set + 1 güncelleme; ilk tahsilat 6-7. hafta. Kötü: izin ya da satış yok. Dönüşüm kanıtsız plan varsayımı. Kalan efor D.8: 14,5-17 gün."
+   },
+   "deney": {
+    "varsayim": "Kataloglu işletme sahipleri 3 slaytlık ücretsiz örneği görünce 15.000 ₺ katalog paketi için peşin ödemeyi kabul eder",
+    "yontem": "Yazılı izin ya da sıfırdan çekirdekle demo marka yap; 8 mevcut ilişkiye logo ve bir ürünle örnek gönder; 3 teklif PDF'i ve havale talimatı hazırla",
+    "sure_gun": 21,
+    "maliyet_saat": 40,
+    "maliyet_tl": 1000,
+    "basari_olcutu": "8 örnekten en az 3 teklif talebi ve en az 1 yazılı onay ya da peşin ödeme",
+    "birakma_olcutu": "21 günde 0 teklif talebi ya da yazılı izin ve sıfırdan yazım yolu kapanırsa dur",
+    "sonraki_dilim": "İlk ödeme gelirse 2 set daha ve çeyreklik güncelleme; ardından ajans paketi"
+   },
+   "etiketler": {
+    "segment": "Kataloglu KOBİ ve franchise pazarlama ekipleri",
+    "kanal_turu": "mevcut müşteri",
+    "teknoloji": "Python, python-pptx, Git",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "Plan bölüm 2, 5, 7.2, 8: paketler, 90 günde 4 set, mevcut ilişki listesi; derinlik dosyası B.3 ve D.8: kod eksikleri yaklaşık 14,5-17 gün, kurucu ajanla 2-3 hafta. Plan bölüm 5.1: ticarileşme yazılı izne bağlı. Rakip fiyatları: Pitch 10-20 €, Beautiful.ai 14,5-40 $. Ödeme kanıtı yok; ajans sunum fiyatı varsayım."
+  },
+  {
+   "id": "sunum-bi-hizmeti-b",
+   "ad": "Butik ajanslara çok markalı sunum üretim aboneliği",
+   "tur": "hizmet",
+   "musteri": "5 ve üzeri müşteriye aylık kampanya sunumu hazırlayan 3-15 kişilik butik reklam ve pazarlama ajansları",
+   "is": "Her ay 8 müşteri için sunum yetiştirmek; tasarımcı darboğazını ve marka tutarsızlığını azaltmak",
+   "tetikleyici": "Yeni müşteri onboarding'i, ay sonu kampanya raporu sıkışıklığı, tasarımcının ayrılması ya da izni",
+   "teklif": "Marka başına tema kurulumu, ayda sınırsız sunum üretimi (3 marka), öncelikli destek; ilk ay ücretsiz pilot",
+   "fiyat": "Tema kurulumu 8.000 ₺ tek seferlik + 2.500 ₺/ay abonelik, KDV hariç",
+   "kanal_birincil": "LinkedIn'de İstanbul, Ankara ve İzmir ajans sahiplerine haftada 15 birebir not ve ücretsiz örnek teklifi",
+   "kanal_yedek": "Kurumsal site yapan ortak ajanslar (yaklaşık 10 ajans, yüzde 15 pay)",
+   "ilk_adim": "Ücretsiz örnek formunu aç, 15 ajans sahibine birebir not gönder, bir ajansla tek müşterilik ücretsiz pilot yap",
+   "ilk_kapsam": "Tek ajans için tek marka teması, katalog okuyucu, PDF ve pptx çıktısı; çok marka deposu ve üretim kuyruğu sonraya",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Kod ve marka üçüncü taraf bir şirkete ait; yazılı izin yok, sıfırdan yazım henüz yapılmadı"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Ajansın müşteri marka ve fotoğraf lisansları ile abonelik sözleşmesi, KDV ve fatura için teyit gerekir"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Aylık havale ya da sanal POS düzeni belli ama hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net (butik ajans); belgede ajans isim listesi yok, yalnız birebir arama planı var"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "LinkedIn birebir temas ve ortak ajanslar adlı; ilk adım ücretsiz örnek formu"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Çok marka ve kuyruk 10 gün ek iş; ilk ödeme kapsamı yaklaşık 130 saat, döngü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 7.000 ₺, tavanın altında"
+    },
+    "G8": {
+     "durum": "test",
+     "not": "Sınırsız üretim vaadi için kapsam sınırı (aylık sunum, revizyon, slayt tipi) yazılı değil"
+    }
+   },
+   "kapi_duzeltme": "Yazılı izin ya da sıfırdan yazım; aylık sunum ve revizyon tavanını yaz; ödeme hesabını aç; ajans isim listesi çıkar; pilotla kuruluş saatini ölç.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 2500,
+    "degisken_maliyet_tl": 300,
+    "sabit_gider_aylik_tl": 500,
+    "baslangic_nakit_tl": 7000,
+    "kalan_efor_saat": {
+     "min": 90,
+     "beklenen": 130,
+     "max": 180
+    },
+    "ilk_tahsilat_gun": {
+     "min": 45,
+     "max": 100
+    },
+    "satis_basina_kurucu_saati": 16,
+    "musteri_basina_aylik_destek_dk": 120,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 8000,
+     "iyi": 16000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 1,
+     "iyi": 2
+    },
+    "donusum_orani": {
+     "dusuk": 0.03,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan 5 ve derinlik C.2, C.3: abonelik 2.500 ₺/ay plana göre ay 7 sonrası, ilk ay ücretsiz pilot; bu yüzden 6 ayda abonelik tahsilatı sayılmadı, yalnız 8.000 ₺ tema kurulumu. Baz: 1 ajans; iyi: 2 ajans. Dönüşüm LinkedIn varsayımı (yüzde 3 satış, yüzde 10 görüşme), kanıtsız."
+   },
+   "deney": {
+    "varsayim": "Butik ajans sahipleri müşteri sunumlarını katalog ve temadan üretmek için 8.000 ₺ kurulum ve aylık 2.500 ₺ öder",
+    "yontem": "15 ajans sahibine birebir not; ilgilenene tek müşteriyle ücretsiz pilot; pilot sonunda yazılı kurulum ve abonelik teklifi",
+    "sure_gun": 30,
+    "maliyet_saat": 30,
+    "maliyet_tl": 500,
+    "basari_olcutu": "En az 1 ajanstan yazılı abonelik onayı ya da kurulum ücreti ödemesi",
+    "birakma_olcutu": "30 günde 15 temastan hiç pilot kabulü yoksa dur",
+    "sonraki_dilim": "İlk ajans ödemesinde çok marka deposu ve üretim kuyruğu; ikinci ajansla çoğalt"
+   },
+   "etiketler": {
+    "segment": "Butik reklam ve pazarlama ajansları",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Python, python-pptx, Git",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "Plan bölüm 5 ve 6: ajans aboneliği 2.500 ₺/ay, ARPA ve yüzde 5 aylık kayıp varsayımı; derinlik A.8: ajans başına aylık yaklaşık 29.500 ₺ kazanç hesabı varsayımla; B.3 ajans persona karar süreci 3-10 gün. Abone ve ödeme yok; ajans sayısı varsayım."
+  },
+  {
+   "id": "sunum-bi-hizmeti-c",
+   "ad": "Danışmana tek kaynaktan yönetici karar dosyası üretimi",
+   "tur": "hizmet",
+   "musteri": "Müşteri raporu hazırlayan bağımsız danışman ve analistler",
+   "is": "İzinli CSV ya da JSON veriden marka ve yazım tutarlı, 5 slaytlık yönetici karar dosyası çıkarıp her güncellemede yeniden üretmek",
+   "tetikleyici": "Müşteri raporu teslim tarihi, aynı sunumun yeni verilerle tekrar hazırlanması, yönetici revizyon talebi",
+   "teklif": "Tek sunum paketi: kaynak dosya kontrolü, 5 slayt şablonu uyarlaması, pptx ve PDF, 2 revizyon, bir tekrar üretim hakkı",
+   "fiyat": "8.000 ₺ + KDV tek seferlik; tekrar üretim planın güncelleme fiyatı olan 3.000 ₺ ile",
+   "kanal_birincil": "LinkedIn'de danışman ve analistlere birebir not ve ücretsiz 1 slaytlık örnek teklifi",
+   "kanal_yedek": "Mevcut kurumsal site müşterileri ve tanıdık danışmanlardan yönlendirme",
+   "ilk_adim": "Kurgusal bir iş planı verisiyle aynı sunumu iki kez üretip örnek yap; 10 danışmana en çok tekrar düzenledikleri 3 slaytı sor",
+   "ilk_kapsam": "Elle ve basit betikle: tek CSV girdisi, 5 slayt şablonu, Türkçe denetim ve PDF; katalog okuyucu, tema ve komut satırı yok",
+   "kapilar": {
+    "G1": {
+     "durum": "kaldi",
+     "not": "Mevcut kod ve marka üçüncü tarafın; yazılı izin yok. Sıfırdan yazılan küçük betik 2-3 günde hakları çözer"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Danışmanın müşteri verisi gizlilik ve KVKK kapsamı belirsiz; veri yalnız izinli ve kişisel veri içermemeli"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Havale ve fatura yolu belli, hesap ve fatura düzeni hazır değil, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Hedef rol belli (danışman, analist) ama belgelerde isim listesi yok; GPT çalışması rolü hipotez sayıyor"
+    },
+    "G5": {
+     "durum": "test",
+     "not": "GPT belgesi kanalın kullanıcı ya da ödeme getirdiğini doğrulamadı; LinkedIn ve yönlendirme somutlaştırılmadı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Kalan efor yaklaşık 50 saat tahmini; ilk tahsilat ve satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 3.000 ₺ (alan adı, muhasebe teyidi), tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Tek kaynak, beş slayt, sabit fiyat; tekrar kullanım görülmeden abonelik ya da platform yok"
+    }
+   },
+   "kapi_duzeltme": "Küçük çekirdeği sıfırdan yaz ya da yazılı izin al; veri gizlilik şartını sözleşmeye yaz; hesap aç; 20 danışmanlık listesi çıkar; kanalı 10 görüşmeyle sına.",
+   "finans": {
+    "satis_tipi": "tek seferlik",
+    "net_fiyat_tl": 8000,
+    "degisken_maliyet_tl": 500,
+    "sabit_gider_aylik_tl": 300,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 30,
+     "beklenen": 50,
+     "max": 80
+    },
+    "ilk_tahsilat_gun": {
+     "min": 35,
+     "max": 60
+    },
+    "satis_basina_kurucu_saati": 12,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 16000,
+     "iyi": 35000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 5
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 4
+    },
+    "donusum_orani": {
+     "dusuk": 0.05,
+     "yuksek": 0.1
+    },
+    "dayanak": "Plan 5: başlangıç paketi 8.000 ₺; GPT belgesi fiyat vermiyor ve beş slayt daha dar, fiyat riski var. Baz: 2 satış (16.000); iyi: 4 satış + 1 tekrar üretim (35.000). Dönüşüm varsayım; plan teklif-sipariş yüzde 30, danışman kanalı kanıtsız."
+   },
+   "deney": {
+    "varsayim": "Danışmanlar müşteri raporu için tek kaynaktan yönetici karar dosyası üretimine 8.000 ₺ öder ve aynı işi tekrar ister",
+    "yontem": "Kurgusal veriyle aynı sunumu iki kez üret; 10 danışmanla görüşüp en çok tekrar düzenlenen 3 slaytı öğren; 3 kişiye ücretsiz 1 slayt örneği gönder",
+    "sure_gun": 14,
+    "maliyet_saat": 25,
+    "maliyet_tl": 0,
+    "basari_olcutu": "10 görüşmeden en az 2 ücretli teklif talebi ve 1 yazılı fiyat onayı",
+    "birakma_olcutu": "14 günde 10 görüşmeden hiç teklif talebi çıkmazsa dur",
+    "sonraki_dilim": "İlk ödemeden sonra aynı müşteriye tekrar üretim sat; tekrar yoksa abonelik açma"
+   },
+   "etiketler": {
+    "segment": "Bağımsız danışman ve analist",
+    "kanal_turu": "kurucu satışı",
+    "teknoloji": "Python, python-pptx",
+    "regulasyon": "lisans"
+   },
+   "kanit_notlari": "GPT çalışması (ürün, kullanıcı, dağıtım): BI veri ürünü doğrulanmadı, ilk teslim tek CSV/JSON ve beş slayt, ücretli birim teslim; kanal kanıtsız. Plan bölüm 5: başlangıç paketi 8.000 ₺. Derinlik D.8: çekirdek yeniden yazımı 2-3 gün. Ödeyen müşteri yok; danışman ismi ve fiyat kanıtı yok."
+  }
+ ]
+}

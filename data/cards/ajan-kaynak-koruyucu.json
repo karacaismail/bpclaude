@@ -1,0 +1,345 @@
+{
+ "slug": "ajan-kaynak-koruyucu",
+ "baslik": "Yapay zekâ ajanı kaynak ve maliyet koruyucu",
+ "ozet": "Mac'te Claude Code ve Codex gibi ajan CLI'larının belleği tüketmesini önleyen, ağa çıkmayan bekçi; hedef 16 GB Mac'te çalışan geliştirici. Çekirdek yazılmış, testleri yeniden çalıştırılmadı; ödeyen müşteri yok, rakipler ücretsiz.",
+ "bugun": {
+  "var": [
+   "Python çekirdeği v1.0.0: 22 modül, yaklaşık 3.500 satır, 150 birim testi, 33 entegrasyon kontrolü",
+   "16 GB bir Mac'te kayıtlı yeşil test kanıtı (Ağustos 2026); bu çalışmada yeniden çalıştırılmadı",
+   "Süreç kimliği, yetim süreç temizliği, oturum karantinası, kabul API'si (NORMAL, GUARDED, BLOCKED)",
+   "Sohbette yüklenebilir beceri paketi ve kurulum/kaldırma kılavuzu",
+   "Türkçe 16 GB Mac ve 5 geliştirici platform rehberleri yazılmış",
+   "Kamuya açık kayıtlarda Eylül 2026 tarihli bellek şikâyetleri"
+  ],
+  "yok": [
+   "Git deposu, lisans kararı ve ürün adı (adında üçüncü taraf markası var)",
+   "Menü çubuğu uygulaması, imzalama ve notarizasyon, Homebrew dağıtımı",
+   "Codex, Cursor ve Gemini CLI süreç tanıma (Codex bugün dokunulmaz listede)",
+   "Maliyet panosu ve lisans anahtarı akışı",
+   "Ödeme hesabı (Lemon Squeezy, Gumroad) ve ödeme alan satış sayfası",
+   "Gerçek 16 GB test cihazı: geliştirme makinesi 128 GB"
+  ],
+  "odeyen_musteri": 0
+ },
+ "iki_calisma": {
+  "claude": "Açık kaynak çekirdek + ücretli Pro (menü çubuğu, maliyet panosu) 15-19 $ tek sefer, rehber 9 $, paket 24 $, sponsorluk. Baz senaryo 1. yıl yaklaşık 5.000 $; asıl getiri görünürlük ve portföy.",
+  "gpt": "Önce yalnız rapor veren, güvenli bir paket; maliyet ve kota vaadi yok. Para: tekrar eden sorun sonrası 29-99 $ destekli kurulum/uyumluluk paketi ya da takıma 150-400 $; 90 günde 2 ücretli destek yoksa bakım aracı.",
+  "ayrisma": "Claude planı ürünleşmiş Pro uygulaması ve maliyet panosuyla geniş tek sefer satış öngörüyor; GPT ücretsiz çekirdeğe ek destek hizmeti ve kanıtlanmadıkça abonelik yok diyor, maliyet panosunu da vaat dışı tutuyor.",
+  "birlesik": "Ücretsiz çekirdek herkese; para önce 15-19 $ Pro ile, ek olarak destekli kurulum paketiyle denenir. Üç yıllık gelir küçüktür; 6 ayda 3.000 $ ancak iyi senaryoda görülür. Codex'e müdahale edilmez."
+ },
+ "analist_gorusu": "En gerçekçi yol bireysel geliştiriciye 15 $ Pro ve rehber paketi; tek başına 6 ayda hedefe ulaşmaz (baz yaklaşık 1.000 $). Destekli kurulum paketi daha hızlı nakit, ama daha az ölçeklenir.",
+ "secenekler": [
+  {
+   "id": "ajan-kaynak-koruyucu-a",
+   "ad": "Pro menü çubuğu uygulaması ve rehber paketi (bireysel geliştirici)",
+   "tur": "yazılım ürünü",
+   "musteri": "16 GB Mac'te Claude Code, Codex ve benzeri ajanları paralel çalıştıran bağımsız geliştirici ve tek kişilik kurucu",
+   "is": "Ajan oturumları makineyi dondurmadan çalışsın; sahipsiz süreçler temizlensin; yeni ajan başlatmanın uygun olup olmadığı görünsün",
+   "tetikleyici": "Makine donması, takas alanının dolması, oturum kapanınca arkada kalan süreçler; yeni 16 GB Mac alımı",
+   "teklif": "Ücretsiz açık kaynak çekirdek; Pro: menü çubuğu, bildirim, log analizi, karantina arayüzü. Paket: Pro + İngilizce 16 GB Mac rehberi",
+   "fiyat": "Pro 15 $ lansman, sonra 19 $ tek sefer (720 ve 912 TL); rehber 9 $; paket 24 $; aylık Pro 5 $",
+   "kanal_birincil": "GitHub public depo, Homebrew tap, Show HN ve r/ClaudeAI, r/macapps gönderileri",
+   "kanal_yedek": "Anthropic ve OpenAI depolarındaki bellek kayıtlarına ölçüm paylaşan yorumlar; ccusage ve CodexBar yazarlarına karşılıklı bağlantı",
+   "ilk_adim": "Git deposu aç, ürün adından Claude ibaresini çıkar, README'yi düzelt, lisans kararını kurucudan al, Homebrew formülünü yayımla",
+   "ilk_kapsam": "Notarize edilmiş menü çubuğu uygulaması (baskı rengi, ağaç RSS, bildirim), lisans anahtarı, ödeme sayfası, kısa İngilizce rehber",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucunun; git deposu ve lisans kararı yok; adında üçüncü taraf markası var, ad değişmeli"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Süreç sonlandıran araç için sorumluluk metni; yurt dışı platform satışında KDV istisnası mali müşavirde"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Lemon Squeezy (MoR) ve Gumroad yolu belli; hesap açılmadı, test ödemesi yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 20 kişilik isim listesi yok, yalnız küçük bir geliştirici çevresi anılıyor"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "GitHub, Homebrew, Show HN, Reddit adlı; yedek kanallar ve ilk adım yazılı"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Plan MVP tablosu 18 iş günü (~144 saat); haftada 20 saatle 7+ hafta, üst sınır 8 haftayı aşar; satış döngüsü ölçülmedi"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Plan kalemleri 864 $ (cihaz 700 varsayım, Apple 99, alan adı 15, site 50) ≈ 41.500 TL; cihaz %20 pahalı olsa da tavan altı"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Herkes aynı uygulamayı ve aynı sabit fiyatı alır; özel geliştirme yok"
+    }
+   },
+   "kapi_duzeltme": "Lisans ve ad kararı, mali müşavir teyidi, Lemon Squeezy hesabı ve test ödemesi, 20 geliştirici adı; ilk kapsamı 8 haftanın altına daralt, efor ve satış döngüsünü beta ile ölç.",
+   "finans": {
+    "satis_tipi": "karma",
+    "net_fiyat_tl": 720,
+    "degisken_maliyet_tl": 62,
+    "sabit_gider_aylik_tl": 460,
+    "baslangic_nakit_tl": 41500,
+    "kalan_efor_saat": {
+     "min": 100,
+     "beklenen": 144,
+     "max": 200
+    },
+    "ilk_tahsilat_gun": {
+     "min": 56,
+     "max": 105
+    },
+    "satis_basina_kurucu_saati": 0.3,
+    "musteri_basina_aylik_destek_dk": 10,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 10080,
+     "baz": 47376,
+     "iyi": 200000
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 18,
+     "baz": 74,
+     "iyi": 297
+    },
+    "alti_ay_musteri": {
+     "kotu": 15,
+     "baz": 62,
+     "iyi": 250
+    },
+    "donusum_orani": {
+     "dusuk": 0.005,
+     "yuksek": 0.02
+    },
+    "dayanak": "Plan 5, 6, 8: Pro 15 $ x 48 = 720 TL. Baz: plan yıl 1 baz (120 Pro, 150 rehber, 60 paket) ilk tahsilat gecikmesiyle 2,5 satış ayına orantılı: 25 Pro, 31 rehber (432), 12 paket (1.152), 6 sponsor ödemesi 2.160 = 47.376 TL. Nakit: plan 864 $ x 48 = 41.500 TL. Dönüşüm: plan yüzde 2 üst sınır, kanıt yok, varsayım; sponsor yüzde 1'in çok altında ayrı."
+   },
+   "deney": {
+    "varsayim": "Ücretsiz rakipler ve ücretsiz çekirdek varken geliştiriciler menü çubuğu uygulaması için 15 $ ön ödeme yapar",
+    "yontem": "Açık kaynak çekirdeği yayımla; 20 kişilik beta listesi ve 5 ekip tanıdığına menü çubuğu önizlemesi göster; 15 $ ön sipariş bağlantısı koy.",
+    "sure_gun": 30,
+    "maliyet_saat": 25,
+    "maliyet_tl": 1500,
+    "basari_olcutu": "20 beta kişisinden en az 5 ön sipariş ya da 300 yıldız ve 10 ön sipariş",
+    "birakma_olcutu": "30 günde 2'den az ön sipariş ve 100'den az yıldız",
+    "sonraki_dilim": "Ön sipariş gelirse notarize uygulamayı bitir; gelmezse yalnız açık kaynak ve destek paketine dön"
+   },
+   "etiketler": {
+    "segment": "16 GB Mac geliştiricisi",
+    "kanal_turu": "topluluk",
+    "teknoloji": "Python çekirdek, Swift menü çubuğu",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Claude planı bölüm 0-3, 5-8: çekirdek 150 test ve 16 GB Mac kanıtı, kamuya açık bellek kayıtları (Eylül 2026), rakipler ücretsiz (ccusage, CodexBar, Stats), benzer araçlarda sponsor dönüşümü yüzde 1'in çok altında; ödeyen müşteri 0. GPT: ücretsiz çıkış beklentisi yüksek, abonelik kanıtlanmalı."
+  },
+  {
+   "id": "ajan-kaynak-koruyucu-b",
+   "ad": "Rapor-yalnız paket ve destekli kurulum/uyumluluk hizmeti",
+   "tur": "hizmet",
+   "musteri": "macOS'ta ajan CLI kullanan 5-20 mühendisli takımın geliştirici deneyimi sorumlusu ve bireysel danışman",
+   "is": "Ajan yüzünden donan iş istasyonunu güvenli teşhis etmek, doğru süreci seçmek, kurulumu ve geri almayı sorunsuz yapmak",
+   "tetikleyici": "Aynı iş istasyonu donma şikâyetinin ikinci kez gelmesi; sürüm güncellemesi sonrası uyum sorunu",
+   "teklif": "Ücretsiz rapor-yalnız CLI; ücretli: destekli kurulum, sürüm uyumluluk kontrolü, gizlilik güvenli teşhis raporu, geri alma doğrulaması",
+   "fiyat": "Bireysel destekli kurulum 60 $ (2.880 TL); takım paketi 200 $ (9.600 TL), tek sefer",
+   "kanal_birincil": "Public depo ve sorun giderme yazısı; Claude Code deposunda bellek kayıtlarına redakte rapor örneği paylaşımı",
+   "kanal_yedek": "Kurucunun çevresindeki küçük geliştirici takımları; ccusage kullanıcıları için karşılaştırma sayfası",
+   "ilk_adim": "Rapor-yalnız paketi yayımla, desteklenen macOS ve Claude sürüm listesini yaz, kurulum teşhis paketinin kapsamını bir sayfaya indir",
+   "ilk_kapsam": "Rapor-yalnız CLI, desteklenen sürüm listesi, redakte teşhis çıktısı, kaldırma doğrulaması, 60-90 dakikalık uzaktan kurulum oturumu",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucunun; git deposu yok, lisans kararı bekliyor, ürün adındaki marka değişmeli"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Süreç sonlandıran araçta hizmet sorumluluğu ve KVKK metni; mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "Hizmet ihracatı için havale ya da Lemon Squeezy yolu belli; hesap yok, fatura düzeni yok"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi net; 20 kişilik isim listesi yok; takım lideri ilişkisi tek kaynakta anılıyor"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Public depo, sorun giderme yazısı ve Claude Code kayıtları adlı; ilk adım ve yedek kanal var"
+    },
+    "G6": {
+     "durum": "gecti",
+     "not": "İlk paket 8-16 saat; ilk tahsilat 3-8 hafta; 8 haftanın çok altında"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "Alan adı ve hukuk metni dahil yaklaşık 3.000 TL; tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sabit kapsam ve sabit fiyatlı paket; özel geliştirme dışarıda"
+    }
+   },
+   "kapi_duzeltme": "Depo, lisans ve ad kararı; mali müşavirle hizmet ihracatı ve sorumluluk metni; Lemon Squeezy ya da havale düzeni; 20 takım adını listele.",
+   "finans": {
+    "satis_tipi": "proje",
+    "net_fiyat_tl": 2880,
+    "degisken_maliyet_tl": 170,
+    "sabit_gider_aylik_tl": 150,
+    "baslangic_nakit_tl": 3000,
+    "kalan_efor_saat": {
+     "min": 20,
+     "beklenen": 32,
+     "max": 60
+    },
+    "ilk_tahsilat_gun": {
+     "min": 21,
+     "max": 60
+    },
+    "satis_basina_kurucu_saati": 3,
+    "musteri_basina_aylik_destek_dk": 20,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 18240,
+     "iyi": 54720
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 4,
+     "iyi": 12
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 4,
+     "iyi": 12
+    },
+    "donusum_orani": {
+     "dusuk": 0.01,
+     "yuksek": 0.03
+    },
+    "dayanak": "GPT paketi: 29-99 $ tek sefer, takım 150-400 $; orta nokta 60 $ ve 200 $ x 48 = 2.880 ve 9.600 TL. Baz: GPT eşiği 90 günde 2 ücretli talep, 6 ayda 4: 3 bireysel + 1 takım = 18.240 TL; iyi: 9 + 3 = 54.720; kötü 0. Dönüşüm ve talep kanıtı yok, varsayım."
+   },
+   "deney": {
+    "varsayim": "Ücretsiz rapor aracını kullanan biri, sorun tekrarlayınca teşhis ve kurulum desteği için 60 $ öder",
+    "yontem": "Rapor-yalnız paketi yayımla; sorun gideren 10 kişiye raporlarını ücretsiz incele; ikinci kez sorun yaşayana 60 $ destekli kurulum teklif et.",
+    "sure_gun": 45,
+    "maliyet_saat": 20,
+    "maliyet_tl": 500,
+    "basari_olcutu": "45 günde en az 2 ücretli destekli kurulum",
+    "birakma_olcutu": "90 günde ücretli destek talebi yok ve tekrar sorun yaşayan 5 kullanıcı bulunamadı",
+    "sonraki_dilim": "Talep gelirse takım paketini (sürüm uyumluluğu, politika dosyası) sat; gelmezse yalnız bakım aracı olarak tut"
+   },
+   "etiketler": {
+    "segment": "Takım lideri, bireysel danışman",
+    "kanal_turu": "içerik",
+    "teknoloji": "Python CLI, macOS",
+    "regulasyon": "KVKK"
+   },
+   "kanit_notlari": "GPT stratejisi: ücretsiz rapor sonra 29-99 $ destekli paket, 90 günde 5 tekrar kullanıcı ve 2 ücretli talep eşiği; Claude planı bölüm 4: ücretsiz rakipler. Yerleşik düzeltme beklentisi ve ücretsiz çözüm riski var; ödeyen müşteri 0; kurulum desteği için talep kanıtı yok."
+  },
+  {
+   "id": "ajan-kaynak-koruyucu-c",
+   "ad": "Orkestratör ortaklığı ve kurumsal sponsorluk (kabul API'si)",
+   "tur": "diğer",
+   "musteri": "Paralel ajan başlatan açık kaynak orkestratör ve geliştirici aracı şirketleri; ayrıca bireysel GitHub sponsorları",
+   "is": "Orkestratörün yeni ajan başlatmadan önce makinenin uygun olup olmadığını tek çağrıyla öğrenmesi ve kullanıcı şikâyetini azaltması",
+   "tetikleyici": "16 GB Mac kullanıcılarından gelen donma şikâyetleri; ajan sayısını artıran yeni sürümler",
+   "teklif": "Kabul API'si entegrasyonu (yaklaşık 20 satır), öncelikli hata düzeltme, yol haritası oyu, isim görünürlüğü karşılığında aylık sponsorluk",
+   "fiyat": "Kurumsal sponsor 64 $/ay (3.072 TL); bireysel sponsor 4-16 $/ay",
+   "kanal_birincil": "Orkestratör projelerinin sorun ve PR kayıtları (Pane ve Superset benzeri); GitHub Sponsors",
+   "kanal_yedek": "ccusage ve CodexBar yazarlarıyla karşılıklı bağlantı; Show HN duyurusu",
+   "ilk_adim": "Kabul API'sinin belgesini ve örnek entegrasyonunu yayımla; iki orkestratör projesine PR aç; GitHub Sponsors profilini aç",
+   "ilk_kapsam": "Public depo, README, kabul API'si belgesi, örnek entegrasyon PR'ı, Sponsors profili; Pro uygulaması gerekmez",
+   "kapilar": {
+    "G1": {
+     "durum": "test",
+     "not": "Kod kurucunun; depo ve lisans kararı yok; ad değişikliği gerekli; sponsorluk kuralları teyit edilecek"
+    },
+    "G2": {
+     "durum": "test",
+     "not": "Kurumsal sponsor faturası ve yurt dışı gelir için mali müşavir teyidi bekliyor"
+    },
+    "G3": {
+     "durum": "test",
+     "not": "GitHub Sponsors Türkiye'den ödeme kabulü ve banka yolu teyit edilmedi; hesap açılmadı"
+    },
+    "G4": {
+     "durum": "test",
+     "not": "Alıcı tipi belli (20-50 proje varsayımı); isim listesi yok; ödeme isteği düşük"
+    },
+    "G5": {
+     "durum": "gecti",
+     "not": "Orkestratör kayıtları ve GitHub adlı; ilk adım yazılı; yedek kanal var"
+    },
+    "G6": {
+     "durum": "test",
+     "not": "Efor 12-30 saat; kurumsal sponsor döngüsü ölçülmedi, 4-10 hafta varsayım; yanıt gelmeyebilir"
+    },
+    "G7": {
+     "durum": "gecti",
+     "not": "İlk tahsilata kadar yaklaşık 1.000 TL; tavanın çok altında"
+    },
+    "G8": {
+     "durum": "gecti",
+     "not": "Sponsorluk kademeleri sabit; özel geliştirme sözü verilmez"
+    }
+   },
+   "kapi_duzeltme": "Lisans ve ad kararı, GitHub Sponsors Türkiye teyidi, mali müşavir görüşü, 20 orkestratör ve geliştirici aracı adını listele; döngüyü iki orkestratör görüşmesiyle ölç.",
+   "finans": {
+    "satis_tipi": "aylık abonelik",
+    "net_fiyat_tl": 384,
+    "degisken_maliyet_tl": 0,
+    "sabit_gider_aylik_tl": 50,
+    "baslangic_nakit_tl": 1000,
+    "kalan_efor_saat": {
+     "min": 12,
+     "beklenen": 20,
+     "max": 30
+    },
+    "ilk_tahsilat_gun": {
+     "min": 28,
+     "max": 75
+    },
+    "satis_basina_kurucu_saati": 6,
+    "musteri_basina_aylik_destek_dk": 30,
+    "alti_ay_tahsilat_tl": {
+     "kotu": 0,
+     "baz": 2304,
+     "iyi": 26880
+    },
+    "alti_ay_odeme_adedi": {
+     "kotu": 0,
+     "baz": 6,
+     "iyi": 14
+    },
+    "alti_ay_musteri": {
+     "kotu": 0,
+     "baz": 2,
+     "iyi": 5
+    },
+    "donusum_orani": {
+     "dusuk": 0.005,
+     "yuksek": 0.02
+    },
+    "dayanak": "Plan 5, 12 ve persona 5: plan orkestratör segmentini gelir saymadı; baz yalnız bireysel sponsor: 2 x 3 ay x 8 $ x 48 = 2.304 TL (GitHub komisyonu teyitsiz, 0 alındı). İyi: 2 kurumsal 64 $ x 4 ay + 6 bireysel ödeme = 26.880 TL; kötü 0. Dönüşüm kanıt yok; benzer araçlarda sponsor dönüşümü yüzde 1'in çok altında."
+   },
+   "deney": {
+    "varsayim": "Bir orkestratör şirketi kabul API'si karşılığında ayda 64 $ sponsor olur",
+    "yontem": "Örnek entegrasyon PR'ı hazırla, iki orkestratör projesine sun, ücretli sponsorluk kademesini görünür yap.",
+    "sure_gun": 30,
+    "maliyet_saat": 15,
+    "maliyet_tl": 0,
+    "basari_olcutu": "En az 1 entegrasyon PR'ı kabul ve 1 sponsor ya da yazılı sponsorluk niyeti",
+    "birakma_olcutu": "2 orkestratörden yanıt yok ya da entegrasyon reddi ve 30 günde sponsor yok",
+    "sonraki_dilim": "Entegrasyon kabul edilirse ikinci orkestratöre git; sponsor gelirse yol haritası oylaması başlat"
+   },
+   "etiketler": {
+    "segment": "Orkestratör ve geliştirici aracı şirketleri",
+    "kanal_turu": "ortak",
+    "teknoloji": "Python çekirdek, JSON API",
+    "regulasyon": "yok"
+   },
+   "kanit_notlari": "Claude planı bölüm 3-5, 7, 12: orkestratör segmenti 'stratejik, gelir sayılmadı'; sponsor tabanı küçük (benzer ücretsiz araçların sponsor sayısı düşük). GPT bu segmenti anmıyor. Ödeyen müşteri 0; ödeme isteği düşük, dağıtım değeri yüksek."
+  }
+ ]
+}
