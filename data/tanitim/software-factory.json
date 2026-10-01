@@ -1,0 +1,27 @@
+{
+ "slug": "software-factory",
+ "bir_cumle": "software-factory, teknik ortağı olmayan girişimler için web uygulamasının ilk sürümünü yapay zekâ destekli bir üretim hattında yapıp test kanıtıyla sabit fiyata teslim eden bir hizmettir.",
+ "tur": "hizmet paketi (sabit fiyatlı yazılım geliştirme)",
+ "ad_nereden": "İngilizce 'yazılım fabrikası'. Kaynak, işi bir fabrika hattı gibi adım adım geçiren bu düzeni 'yapay zekâ yazılım fabrikası' diye anlatıyor.",
+ "kim_icin": "Yazılımcı ortağı olmayan tohum ve ön tohum aşamasındaki girişim kurucuları ile KOBİ sahipleri. Hizmeti onlar satın alır; kurucu hattı işletir ve teslim eder.",
+ "sorun": "Girişimci ilk sürümü (MVP) ajansa yaptırınca pahalı ve yavaş oluyor. Serbest yazılımcı ucuz ama test ve kanıt bırakmıyor, kodu ikinci kişi devralamıyor. Yapay zekâ araçlarıyla kendi yapılan prototip de canlı kullanıma taşınamıyor.",
+ "nasil_calisir": [
+  "Müşteri, istediği özellikleri kabul ölçütleriyle birlikte kısa kullanıcı hikâyeleri olarak yazar.",
+  "Her hikâye hattan geçer: önce test yazılır, sonra kod, ardından bağımsız inceleme ve otomatik derleme.",
+  "Uygulama üç farklı tarayıcı motorunda ve erişilebilirlik açısından denetlenir.",
+  "Kurucu son onayı verir; uygulama müşterinin sunucusuna kurulur ve kanıt paketi teslim edilir."
+ ],
+ "ornek": "Teknik ortağı olmayan bir girişimci, yatırımcı toplantısından önce çalışan bir web uygulaması ister. Sekiz hikâyelik küçük paketi seçer; iki hafta sonra uygulamayla birlikte test kayıtlarını ve kanıt raporunu alır.",
+ "benzerleri": "Yazılım ajansları ve serbest yazılımcılar aynı işi yapar; fark sabit fiyat, sabit süre ve test kanıtıdır. Devin, Cursor, GitHub Copilot gibi araçlar ise geliştiriciye satılır; bu hizmet sonucu teslim eder.",
+ "teknoloji": "Kurucunun bilgisayarında çalışan bir görev panosu, iş akışı motoru ve yapay zekâ kodlama ajanlarından oluşur. Çıkan uygulama paketlenip müşterinin kendi sunucusuna kurulur.",
+ "durum": "Hat çalışıyor ve iki küçük gerçek teslimle denendi. Müşteriye uygun kanıt raporu, sözleşme şablonu ve maliyet tavanı henüz yok. Ödeyen müşteri ve referans yok.",
+ "para": "Proje başına sabit fiyatlı paket: küçük paket 95.000 TL, orta 240.000 TL, büyük 480.000 TL (KDV hariç, yarısı peşin). İlk üç pilot 50.000 TL. Ek olarak aylık bakım.",
+ "ne_degil": "Satılık bir yazılım ya da abonelikli platform değildir; kurucunun kendi hattıyla verdiği geliştirme hizmetidir.",
+ "etiketler": [
+  "hizmet",
+  "MVP geliştirme",
+  "yapay zekâ",
+  "girişimler",
+  "test kanıtı"
+ ]
+}

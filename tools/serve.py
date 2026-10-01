@@ -6,6 +6,7 @@ import http.server, os, posixpath, sys, urllib.parse
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCS = os.path.join(ROOT, "docs")
+DOCS_REAL = os.path.realpath(DOCS)
 PREFIX = "/bpclaude/"
 
 
@@ -21,13 +22,18 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         path = urllib.parse.urlsplit(self.path).path
         if not path.startswith(PREFIX):
             return None
-        rel = posixpath.normpath(urllib.parse.unquote(path[len(PREFIX):]) or ".")
-        if rel.startswith(".."):
+        rel = urllib.parse.unquote(path[len(PREFIX):]).lstrip("/")
+        full = os.path.realpath(os.path.join(DOCS, posixpath.normpath(rel) if rel else "."))
+        # Çözülmüş yol docs/ dışına çıkıyorsa (mutlak yol, "..", sembolik bağ) dosya sunulmaz.
+        if os.path.commonpath([full, DOCS_REAL]) != DOCS_REAL:
             return None
-        full = os.path.join(DOCS, rel) if rel != "." else DOCS
         if os.path.isdir(full):
             full = os.path.join(full, "index.html")
         return full if os.path.isfile(full) else None
+
+    def _host_ok(self):
+        host = (self.headers.get("Host") or "").lower()
+        return host in ("127.0.0.1:%d" % self.server.server_port, "localhost:%d" % self.server.server_port)
 
     def do_GET(self):
         self._serve(True)
@@ -36,6 +42,9 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self._serve(False)
 
     def _serve(self, body):
+        if not self._host_ok():
+            self.send_error(421, "Misdirected Request")
+            return
         path = urllib.parse.urlsplit(self.path).path
         if path in ("/", PREFIX.rstrip("/")):
             self.send_response(302)

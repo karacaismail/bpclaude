@@ -1,0 +1,27 @@
+{
+ "slug": "kurucu-sunum-hizmeti",
+ "bir_cumle": "Kurucu sunum hizmeti, hibe başvurusuna ya da ilk yatırımcı görüşmesine hazırlanan girişimciler için sunum sitesi, canlı finans modeli ve rakam tutarlılığı denetimi hazırlayan bir danışmanlık hizmetidir.",
+ "tur": "hizmet paketi (danışmanlık)",
+ "ad_nereden": null,
+ "kim_icin": "KOSGEB, BİGG ya da TÜBİTAK desteğine başvuran teknik kurucular ve ilk dış yatırımcısıyla konuşan KOBİ sahipleri. Hizmeti kurucunun kendisi satın alır.",
+ "sorun": "Sunumdaki pazar büyüklüğü, finans modelindeki gelir ve hibe formundaki bütçe çoğu zaman birbirini tutmaz; kurucu aynı rakamları üç ayrı biçimde yeniden yazar. Slayt ajansları statik sunum verir, model ayrı kalır; jüri ya da yatırımcı tutarsızlığı görünce güven kaybolur.",
+ "nasil_calisir": [
+  "Kurucu girişimin bilgilerini, mevcut sunumunu ve rakamlarını teslim eder.",
+  "Hizmet, telefonda da açılan bir sunum sitesi ve Google Sheets'te üç senaryolu, 36 aylık bir finans modeli kurar.",
+  "Sitedeki rakamlar modelden okunur; bir doğrulama aracı sunum, model ve hibe formu arasındaki çelişkileri raporlar.",
+  "Teslimde PDF ve PowerPoint çıktısı, iki revizyon turu ve kendi rakamını güncelleme eğitimi verilir."
+ ],
+ "ornek": "Bir yazılım girişimcisi hibe başvurusundan önce sunumunu, modelini ve formunu gönderir. Rapor, sunumdaki gelir hedefiyle modeldeki kadro maliyetinin uyuşmadığını gösterir; düzeltilmiş tek rakam listesiyle başvuru tamamlanır.",
+ "benzerleri": "Pitch ve Slidebean gibi araçlar ile slayt ajansları sunum hazırlar; hibe danışmanları form doldurur. Bunların hiçbiri Türkçe hibe biçimini, canlı modeli ve rakam denetimini tek pakette vermez.",
+ "teknoloji": "Bu bir yazılım ürünü değil, hizmettir. Sunum sitesi tarayıcıda çalışan bir React uygulaması; finans modeli müşterinin Google Sheets dosyasında durur.",
+ "durum": "Altyapı kurucunun daha önce yaptığı tek bir projede çalışıyor; başka müşteriye uyarlanabilir bir şablona henüz dönüştürülmedi. Sözleşme ve tahsilat düzeni yok. Ödeyen müşteri: 0.",
+ "para": "Paket başına hizmet bedeli: Başlangıç 25.000 TL, Standart 45.000 TL, Premium 75.000 TL (KDV hariç); pilotta yüzde 50 indirim. Sonra aylık güncelleme ve kuluçka merkezi lisansı.",
+ "ne_degil": "Yatırımcı bulma ya da hibe kazanma garantisi veren bir aracılık hizmeti değildir; yalnız sunumu ve rakamları hazırlar.",
+ "etiketler": [
+  "hizmet",
+  "sunum",
+  "finans modeli",
+  "hibe başvurusu",
+  "girişimci"
+ ]
+}

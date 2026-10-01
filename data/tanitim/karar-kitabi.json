@@ -1,0 +1,27 @@
+{
+ "slug": "karar-kitabi",
+ "bir_cumle": "Karar Kitabı (yeni çalışma adı Yöntem Atlası), küçük ve orta ölçekli işletme (KOBİ) yöneticileri için 128 karar yöntemini Türkçe ve Türkiye örnekleriyle anlatan bir web uygulaması ve buna bağlı atölye hizmetidir.",
+ "tur": "web uygulaması (içerik) ve atölye hizmeti",
+ "ad_nereden": null,
+ "kim_icin": "KOBİ sahipleri, ekip liderleri, orta kademe yöneticiler ve işletme eğitmenleri. İlk ödeyen olarak 50-250 çalışanlı üretici KOBİ'lerin yönetim ekibi hedefleniyor.",
+ "sorun": "Teklif karşılaştırma, öncelik belirleme ya da tekrarlayan bir sorunu çözme gibi kararlar için yöntemler İngilizce bloglara, kurslara ve kitaplara dağılmış. Türkçe, aranabilir, Türkiye örnekli ve doldurulabilir kâğıt veren bir kaynak yok; yöntem öğrenilse bile işe uygulanmıyor.",
+ "nasil_calisir": [
+  "Yönetici siteye girer, 15 temadan birini ya da bir yöntemi (SWOT, Pareto, Eisenhower matrisi gibi) seçer.",
+  "Her yöntem üç sayfada anlatılır: kavram, nasıl uygulanır ve gerçek vaka; çoğunda grafik vardır.",
+  "Sayfadaki içeriği kendi notları için Markdown ya da JSON olarak dışa aktarır.",
+  "Şirket isterse yarım günlük atölyede kendi iki gerçek kararını bu yöntemlerle ele alır ve 30 gün karar günlüğüyle izler."
+ ],
+ "ornek": "Bir üretici firmanın yönetim ekibi üç tedarikçi teklifi arasında kalır. Atölyede seçenekleri bir karşılaştırma yöntemiyle tabloya döker, varsayımlarını yazar ve bir ay sonra sonucun beklentiyi tutup tutmadığına bakar.",
+ "benzerleri": "Mind Tools gibi İngilizce yöntem kütüphaneleri ve Udemy'deki stratejik düşünme kursları benzer iş görür. Fark: Türkçe, Türkiye örnekli, ücretsiz okunabilir ve şirketin kendi kararına uygulanan atölyeyle birleşik olması.",
+ "teknoloji": "Tarayıcıda çalışan tek sayfalık bir web uygulaması; TypeScript ile yazılmış, grafikler için ECharts kullanıyor. Sunucu ya da kullanıcı hesabı yok; içerik sitenin içinde duruyor.",
+ "durum": "Site canlı ve 128 yöntemin içeriği yazılı. Satıştan önce içeriğin özgünleştirilmesi ve hak teyidi gerekiyor; çalışma kâğıtları, satış sayfası ve ödeme yok. Ödeyen müşteri: 0.",
+ "para": "İlk para yarım günlük kurumsal atölyeden beklenir: 19.900 TL artı KDV, ilk iki pilotta 9.900 TL. Sonra 199 TL'lik tema çalışma kâğıdı paketleri ve 799 TL'lik tam set.",
+ "ne_degil": "Bir kitap özeti ya da kararı yapay zekâyla otomatik veren bir araç değildir; yöntemi öğretir, kararı kişi verir.",
+ "etiketler": [
+  "karar yöntemleri",
+  "KOBİ",
+  "strateji",
+  "atölye",
+  "Türkçe içerik"
+ ]
+}

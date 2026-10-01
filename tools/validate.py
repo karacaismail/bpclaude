@@ -5,6 +5,7 @@
   python3 tools/validate.py final data/final/<KRITER>.json
   python3 tools/validate.py hakem data/hakem/<slug>.json
   python3 tools/validate.py teslim data/teslim/<slug>.json
+  python3 tools/validate.py tanitim data/tanitim/<slug>.json
 Çıkış kodu 0 = geçti."""
 import json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -145,6 +146,27 @@ def teslim(d, slug):
         text(x, "not", 240, oid, 20)
 
 
+def tanitim(d, slug):
+    """Proje tanıtımı: "bu proje nedir?" sorusunun beş parçalı yanıtı."""
+    need(d.get("slug") == slug, "slug dosya adıyla aynı olmalı")
+    need(slug in MAP, f"slug eşlemede yok: {slug}")
+    for k, lo, hi in (("bir_cumle", 60, 220), ("tur", 3, 60), ("kim_icin", 20, 220), ("sorun", 40, 320), ("ornek", 40, 260),
+                      ("benzerleri", 20, 240), ("teknoloji", 20, 200), ("durum", 20, 220), ("para", 20, 220)):
+        text(d, k, hi, "tanitim", lo)
+    for k, hi in (("ad_nereden", 160), ("ne_degil", 200)):
+        v = d.get(k)
+        need(v is None or (isinstance(v, str) and 5 <= len(v) <= hi), f"tanitim.{k}: null ya da 5-{hi} karakter")
+    adim = d.get("nasil_calisir")
+    need(isinstance(adim, list) and 3 <= len(adim) <= 5, "tanitim.nasil_calisir: 3-5 madde")
+    for x in adim or []:
+        need(isinstance(x, str) and 10 <= len(x) <= 160, f"tanitim.nasil_calisir maddesi 10-160 karakter: {str(x)[:40]}")
+    et = d.get("etiketler")
+    need(isinstance(et, list) and 2 <= len(et) <= 6, "tanitim.etiketler: 2-6 etiket")
+    for x in et or []:
+        need(isinstance(x, str) and 2 <= len(x) <= 24, f"tanitim.etiketler: 2-24 karakter: {str(x)[:30]}")
+    need(not any(ord(ch) >= 0x1F000 or 0x2600 <= ord(ch) <= 0x27BF for ch in json.dumps(d, ensure_ascii=False)), "tanitim: emoji olmamalı")
+
+
 def final(d, crit):
     need(d.get("kriter") == crit, "kriter dosya adıyla aynı olmalı: " + crit)
     need(crit in CRIT, "bilinmeyen kriter: " + crit)
@@ -187,6 +209,8 @@ def main():
         hakem(d, base[:-5])
     elif kind == "teslim":
         teslim(d, base[:-5])
+    elif kind == "tanitim":
+        tanitim(d, base[:-5])
     else:
         slug, rater = base[:-5].rsplit(".", 1)
         scores(d, slug, rater)

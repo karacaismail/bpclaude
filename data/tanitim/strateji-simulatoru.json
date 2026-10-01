@@ -1,0 +1,28 @@
+{
+ "slug": "strateji-simulatoru",
+ "bir_cumle": "Strateji Simülatörü, girişimci adayları, kuluçka merkezleri ve KOBİ'ler için bir iş fikrini ya da iç projeyi 32 soru ve 6 karar kapısıyla ön değerlendirmeden geçiren tarayıcı aracıdır.",
+ "tur": "web uygulaması (tarayıcıda çalışan tek dosya)",
+ "ad_nereden": null,
+ "kim_icin": "Destek programına başvuracak girişimci adayları, yüzlerce başvuruyu ön eleyen kuluçka merkezleri ve teknoloji transfer ofisleri, bir iç projeye karar verecek KOBİ ekipleri. Asıl ödeyici kurumlar.",
+ "sorun": "İnsanlar fikri sınamadan destek başvurusu yazıyor; başvuruların çoğu reddediliyor. Kuluçka merkezleri fikirleri serbest metin formlar ve mentor saatiyle eliyor, tutarlı bir puan yok. Şirketler kararı sunum ve Excel'le veriyor, varsayımlar kayboluyor.",
+ "nasil_calisir": [
+  "Kullanıcı fikri ya da projeyi altı bölümde 32 soruyla anlatır: problem, talep, kapsam, ekip, ekonomi, risk.",
+  "Araç her bölümü puanlar, geri ödeme süresi ve kapasite gibi ölçüleri hesaplar.",
+  "Altı karar kapısı geçti, uyarı ya da engel der; her birinin nedenini eşikle birlikte gösterir.",
+  "Sonuç EVET, KOŞULLU EVET, HENÜZ DEĞİL ya da HAYIR olur; öneriler ve eksikler listelenir.",
+  "Sonuç Excel, CSV, Markdown ya da JSON olarak indirilir; veri tarayıcıdan çıkmaz."
+ ],
+ "ornek": "Bir girişimci adayı destek programına başvurmadan önce fikrini araca girer. Talep kapısı engel verir: 'beş gerçek kullanıcıyla konuşup isimlerini yazın.' Aday başvuruyu bir dönem erteler ve kanıt toplar.",
+ "benzerleri": "ChatGPT gibi genel sohbet araçları, Strategyzer, Canvanizer, IdeaBuddy ve ValidatorAI. Fark: kapı mantığı ve gerekçeli karar, Türkçe ve yerel destek programlarına göre sorular, verinin cihazda kalması.",
+ "teknoloji": "Tek bir web sayfası olarak tarayıcıda, internetsiz çalışır. Hesaplama motoru ve arayüz aynı dosyadadır. Kayıtlar yalnız kullanıcının tarayıcısında tutulur; sunucu yoktur.",
+ "durum": "Değerlendirme çekirdeği çalışıyor ve kendi 32 testini geçiyor. Satış sayfası, PDF rapor, ödeme ve kurum sürümü henüz yok. Ödeyen müşteri ya da imzalı pilot yok.",
+ "para": "Kuluçka merkezlerine ve destek programı uygulayıcılarına kendi logolarıyla yıllık lisans: 24.900 TL + KDV, ilk 3 ay ücretsiz pilot. Danışman paketi yıllık 9.900 TL.",
+ "ne_degil": "Bir iş fikrinin başarısını tahmin eden yapay zekâ değildir; yapılandırılmış bir kontrol listesi ve karar disiplinidir.",
+ "etiketler": [
+  "web uygulaması",
+  "fikir değerlendirme",
+  "kuluçka merkezi",
+  "karar desteği",
+  "çevrimdışı"
+ ]
+}

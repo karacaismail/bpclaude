@@ -25,17 +25,25 @@ def walk(suite, file=None):
         for t in sp.get("tests", []):
             res = t.get("results", [])
             status = t.get("status")  # expected | unexpected | skipped | flaky
+            ann = list(t.get("annotations") or [])
+            for x in res: ann += list(x.get("annotations") or [])
+            neden = next((a.get("description") or "" for a in ann if a.get("type") == "skip"), "")
             rows.append({"dosya": os.path.basename(sp.get("file") or file or ""), "baslik": sp["title"], "profil": t.get("projectName", ""), "durum": status,
-                         "sure": sum(x.get("duration", 0) for x in res)})
+                         "neden": neden, "olcum": [a.get("description") for a in ann if a.get("type") == "olcum"], "sure": sum(x.get("duration", 0) for x in res)})
     for s in suite.get("suites", []):
         walk(s, file)
 for s in R.get("suites", []):
     walk(s)
 
-DURUM = {"expected": "pass", "unexpected": "fail", "flaky": "fail", "skipped": "not_applicable"}
+DURUM = {"expected": "pass", "unexpected": "fail", "flaky": "fail"}
+def durum(x):
+    """Atlanan test, atlama gerekçesinin önekine göre sınıflanır: "not_run:" çalıştırılmadı, "not_applicable:" o profilde anlamsız."""
+    if x["durum"] == "skipped":
+        return "not_run" if x["neden"].startswith("not_run") else "not_applicable"
+    return DURUM.get(x["durum"], x["durum"])
 def say(items):
-    c = collections.Counter(DURUM.get(x["durum"], x["durum"]) for x in items)
-    return c.get("pass", 0), c.get("fail", 0), c.get("not_applicable", 0)
+    c = collections.Counter(durum(x) for x in items)
+    return c.get("pass", 0), c.get("fail", 0), c.get("not_run", 0), c.get("not_applicable", 0)
 
 def versions():
     try:
@@ -51,7 +59,23 @@ node = subprocess.run(["node", "--version"], capture_output=True, text=True).std
 osname = "%s %s (%s)" % (platform.system().replace("Darwin", "macOS"), platform.mac_ver()[0] or platform.release(), platform.machine())
 st = R.get("stats", {})
 when = (st.get("startTime") or "")[:16].replace("T", " ")
-p, f, n = say(rows)
+p, f, nr, n = say(rows)
+import hashlib
+def icerik_ozeti():
+    h = hashlib.sha256()
+    for base in ("docs", "src"):
+        for dp, _, fs in sorted(os.walk(os.path.join(ROOT, base))):
+            for fn in sorted(fs):
+                full = os.path.join(dp, fn)
+                h.update(os.path.relpath(full, ROOT).encode()); h.update(open(full, "rb").read())
+    return h.hexdigest()[:16]
+def rev():
+    try:
+        r = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True, cwd=ROOT).stdout.strip()
+        kirli = subprocess.run(["git", "status", "--porcelain", "--", "docs", "src", "tests", "tools"], capture_output=True, text=True, cwd=ROOT).stdout.strip()
+        return r + (" (commit edilmemiş değişiklik var)" if kirli else "")
+    except Exception:
+        return "bilinmiyor"
 L = []
 L.append("# Test kanıt raporu\n")
 L.append("Bu dosya `npm run rapor` ile son test koşusundan üretilir; elle düzenlenmez.\n")
@@ -61,29 +85,39 @@ L.append("| İşletim sistemi | %s |" % osname)
 L.append("| Araçlar | Node %s, Playwright %s, axe-core %s, Python %s |" % (node, pw, axe, platform.python_version()))
 L.append("| Motorlar | %s |" % ", ".join("%s %s" % (k, v) for k, v in V.items()) if V else "| Motorlar | okunamadı |")
 L.append("| Komut | `npm test` (yerel sunucu `tools/serve.py`, site `/bpclaude/` yolu altında) |")
-L.append("| Toplam | %d pass, %d fail, %d not_applicable; süre %.0f sn |\n" % (p, f, n, (st.get("duration") or 0) / 1000.0))
-L.append("`not_applicable`: o profilde anlamı olmayan test (ör. klavye denetimi dokunmatik profilde, dosya düzeyi denetim tek profilde). Atlanan testlerin gerekçesi test dosyasında yazılıdır.\n")
+L.append("| Revizyon | %s |" % rev())
+L.append("| docs/ ve src/ içerik özeti | `%s` (SHA-256, ilk 16 hane) |" % icerik_ozeti())
+L.append("| Toplam | %d pass, %d fail, %d not_run, %d not_applicable; süre %.0f sn |\n" % (p, f, nr, n, (st.get("duration") or 0) / 1000.0))
+L.append("`not_run`: araç desteği olmadığı ya da bilerek sınırlandığı için o profilde çalıştırılmayan denetim (ör. zorunlu renk emülasyonu yalnız Chromium'da var). `not_applicable`: o profilde anlamı olmayan test (ör. klavye denetimi dokunmatik profilde, dosya düzeyi denetim tek profilde). Gerekçeler test dosyalarında atlama açıklaması olarak yazılıdır.\n")
 
 L.append("## Profil matrisi\n")
-L.append("| Profil | Motor | Görünüm alanı | Giriş | pass | fail | not_applicable |\n|---|---|---|---|---:|---:|---:|")
+L.append("| Profil | Motor | Görünüm alanı | Giriş | pass | fail | not_run | not_applicable |\n|---|---|---|---|---:|---:|---:|---:|")
 for prof, (motor, vp, giris) in PROFIL.items():
     it = [x for x in rows if x["profil"] == prof]
     if not it:
-        L.append("| %s | %s | %s | %s | not_run | | |" % (prof, motor, vp, giris)); continue
-    a, b, c = say(it)
-    L.append("| %s | %s | %s | %s | %d | %d | %d |" % (prof, motor, vp, giris, a, b, c))
+        L.append("| %s | %s | %s | %s | not_run | | | |" % (prof, motor, vp, giris)); continue
+    a, b, c, d = say(it)
+    L.append("| %s | %s | %s | %s | %d | %d | %d | %d |" % (prof, motor, vp, giris, a, b, c, d))
 L.append("\nMotor sütunundaki emülasyon, gerçek cihaz değildir: dokunma, görünüm alanı ve kullanıcı aracısı taklit edilir.\n")
 
 L.append("## Katmanlar\n")
-L.append("| Katman | pass | fail | not_applicable |\n|---|---:|---:|---:|")
+L.append("| Katman | pass | fail | not_run | not_applicable |\n|---|---:|---:|---:|---:|")
 for fn, ad in KATMAN.items():
     it = [x for x in rows if x["dosya"] == fn]
     if not it:
-        L.append("| %s | not_run | | |" % ad); continue
-    a, b, c = say(it)
-    L.append("| %s | %d | %d | %d |" % (ad, a, b, c))
+        L.append("| %s | not_run | | | |" % ad); continue
+    a, b, c, d = say(it)
+    L.append("| %s | %d | %d | %d | %d |" % (ad, a, b, c, d))
 
-fails = [x for x in rows if DURUM.get(x["durum"]) == "fail"]
+fails = [x for x in rows if durum(x) == "fail"]
+olcum = sorted(set(m for x in rows for m in x["olcum"]))
+if olcum:
+    L.append("\n## Ölçümler\n")
+    for m in olcum: L.append("- " + m)
+nrun = collections.Counter("%s: %s" % (x["neden"].split(":", 1)[1].strip(), x["profil"]) for x in rows if durum(x) == "not_run")
+if nrun:
+    L.append("\n## Çalıştırılmayan denetimler (not_run)\n")
+    for k, v in sorted(nrun.items()): L.append("- %s (%d test)" % (k, v))
 L.append("\n## Başarısız testler\n")
 if fails:
     for x in fails:
@@ -105,5 +139,5 @@ if os.path.exists(pc):
     L.append("%d dosya tarandı (metin %d, çalışma kitabı %d, ikili %d); özel ad listesi %s (%d kural); ihlal %d." % (
         C["dosya"], C["taranan"]["metin"], C["taranan"]["xlsx"], C["taranan"]["ikili"], "yüklü" if C["ozel_liste"] else "yok", C["ozel_kural"], C["ihlal"]))
 open(os.path.join(ROOT, "qa", "RAPOR.md"), "w", encoding="utf-8").write("\n".join(L) + "\n")
-print("qa/RAPOR.md yazıldı: %d pass, %d fail, %d not_applicable" % (p, f, n))
+print("qa/RAPOR.md yazıldı: %d pass, %d fail, %d not_run, %d not_applicable" % (p, f, nr, n))
 sys.exit(1 if f else 0)

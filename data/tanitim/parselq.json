@@ -1,0 +1,28 @@
+{
+ "slug": "parselq",
+ "bir_cumle": "ParselQ, arsa ya da tarla almayı düşünen kişiler ve emlakçılar için bir parselin imar durumunu, çevresini, risklerini ve emsal fiyat aralığını sade dille anlatan arsa bilgi raporu ve ilan kartı hizmetidir.",
+ "tur": "rapor hizmeti ve emlakçı aracı (web)",
+ "ad_nereden": null,
+ "kim_icin": "Şehir dışından ya da yurt dışından arsa bakan bireysel alıcılar rapor başına öder; arsa portföylü emlak ofisleri ilan kartı için aylık öder.",
+ "sorun": "Arsa çoğu zaman yerinde görülmeden alınıyor. Alıcı parselin doğru yer olup olmadığını, imar durumunu ve fiyatın makul olup olmadığını bilemiyor. Bilgi belediye belgeleri, harita uygulamaları ve emlakçının sözü arasında dağınık; resmi değerleme raporu ise pahalı.",
+ "nasil_calisir": [
+  "Kullanıcı il, ilçe, ada ve parsel bilgisini girer; varsa imar durumu belgesini yükler.",
+  "Sistem belgeyi okuyup sade dille özetler; açık haritalardan yol, yerleşim ve mesafeleri, açık kamu verisinden deprem sınıfını ekler.",
+  "Kullanıcının paylaştığı benzer ilanlardan metrekare fiyat aralığı çıkarılır.",
+  "48 saat içinde üç sayfalık PDF bilgi notu teslim edilir; ilk raporlar bir analist tarafından kontrol edilir.",
+  "Emlakçı aynı bilgilerle ilanına eklenecek QR kodlu bir Parsel Kartı alır."
+ ],
+ "ornek": "Almanya'da yaşayan biri, Didim'de ilanda gördüğü bir tarla için kapora istenince ParselQ'dan rapor alıyor. Raporda parselin haritadaki yeri, imar özeti, yola uzaklığı ve bölgedeki fiyat aralığı yazıyor.",
+ "benzerleri": "Endeksa ve Eder Mi değerleme raporu satar; TKGM Parsel Sorgu ücretsiz ama yalnız bilgilendirme amaçlıdır. Fark: arsaya özel imar, çevre, risk ve emsal bilgisi tek raporda; ilan sitesi değil, parseli anlatır.",
+ "teknoloji": "Tarayıcıda çalışan bir web sitesi olarak planlandı: React ile ön yüz, Python ile sunucu, açık harita verisi, belge okumada yapay zekâ. Bugün yalnız tanıtım siteleri ve bir prototip var.",
+ "durum": "Fikir ve prototip aşamasında: tanıtım siteleri, sunum ve tıklanabilir prototip var; çalışan ürün yaklaşık yüzde 15-20. Ödeyen müşteri yok, dış sermaye taahhüdü yok.",
+ "para": "Tek seferlik rapor satışı: Temel 299, Standart 499, Pro 799 TL (KDV dahil). Emlakçılara ayrıca 299-499 TL/ay Parsel Kartı aboneliği.",
+ "ne_degil": "Resmi değerleme ya da ekspertiz raporu değildir; şimdilik bir ilan pazar yeri de değildir.",
+ "etiketler": [
+  "arsa",
+  "parsel raporu",
+  "emlak",
+  "web hizmeti",
+  "imar bilgisi"
+ ]
+}

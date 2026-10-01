@@ -1,0 +1,27 @@
+{
+ "slug": "projector",
+ "bir_cumle": "Projector, Türkçe konuşan yazılımcılar için kurumsal SaaS (çok müşterili web yazılımı) mimarisini anlatan 315 sayfalık bir içerik külliyatını arama ve sözlükle sunan çevrim içi bir okuma sitesidir.",
+ "tur": "içerik ürünü (e-kitap, kurs, atölye)",
+ "ad_nereden": null,
+ "kim_icin": "2-5 yıl deneyimli, Türkçe konuşan arka uç geliştiricileri ve ortak mimari standardı isteyen 3-15 kişilik yazılım evleri. Okur e-kitabı, yazılım evi atölyeyi satın alır.",
+ "sorun": "Türkçe konuşan geliştirici çok müşterili yazılımın veri ayrımı, işlem kaydı, modül sınırları gibi konularını dağınık İngilizce kaynaklardan ya da yüzeysel Türkçe videolardan öğreniyor. Kararların gerekçesini uçtan uca anlatan Türkçe bir kaynak yok.",
+ "nasil_calisir": [
+  "Okur siteye girer; sayfalar konulara göre dizilmiştir.",
+  "Arama kutusuyla Türkçe karakterlere duyarlı biçimde konu bulur.",
+  "Sözlükten terimlerin anlamına, karar kayıtlarından gerekçelere bakar.",
+  "İlk bölümler ücretsiz okunur; tam kitap, kurs ya da ekip atölyesi satın alınır."
+ ],
+ "ornek": "Küçük bir yazılım evinin teknik lideri, yeni projede müşteri verilerini nasıl ayıracağına karar veremiyor. Siteden ilgili bölümü ve karar kaydını okuyor; sonra ekibi için iki günlük atölye istiyor.",
+ "benzerleri": "Docusaurus ve Starlight ücretsiz doküman sitesi araçlarıdır, içerik vermez. BTK Akademi ve Udemy kursları temel düzeyde kalır. İleri düzey Türkçe özgün mimari kitabı bulunmadı.",
+ "teknoloji": "Tarayıcıda çalışan, sunucusuz statik bir site; React ile yazıldı, içerik JSON dosyalarında. Herkese açık önizleme olarak yayında; ödeme ve teslim dış hizmetle planlanıyor.",
+ "durum": "Okuma sitesi çalışıyor ve yayında; içerik ham, yayın kalitesine yaklaşık dörtte biri ulaşmış (tahmin). Satış sayfası, ödeme ve kurs yok. Ödeyen müşteri: 0.",
+ "para": "İçerik satışı: e-kitap 349 TL, kurs 1.990 TL, iki günlük ekip atölyesi 35.000 TL + KDV. Okuma sitesi ücretsiz önizleme olarak kalır.",
+ "ne_degil": "Satılık bir doküman yazılımı değildir; satılan şey okuma sitesi aracı değil, içindeki Türkçe içeriktir.",
+ "etiketler": [
+  "eğitim içeriği",
+  "yazılım mimarisi",
+  "e-kitap",
+  "atölye",
+  "Türkçe"
+ ]
+}

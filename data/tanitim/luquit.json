@@ -1,0 +1,28 @@
+{
+ "slug": "luquit",
+ "bir_cumle": "Luquit, küçük emlak ofisleri için ilan, müşteri, randevu ve komisyon kaydını tek yerde tutan bir web paneli ile React geliştiricilerine yönelik ücretsiz bir cam görünümlü arayüz bileşen kütüphanesidir.",
+ "tur": "web uygulaması (abonelik planlı) ve açık kaynak kütüphane",
+ "ad_nereden": null,
+ "kim_icin": "Panel 1-10 kişilik, franchise dışı bağımsız emlak ofisleri içindir; ofis sahibi aylık abonelik öder. Kütüphane ise React ile arayüz yapan geliştiriciler içindir ve ücretsizdir.",
+ "sorun": "Küçük emlak ofislerinde ilanlar portallarda, müşteri notları WhatsApp ve Excel'de, komisyon kaydı defterde, randevular telefonda durur. Yeni ilan girince kimin aranacağı unutulur, aynı bilgi birkaç yere girilir, komisyonda anlaşmazlık çıkar.",
+ "nasil_calisir": [
+  "Ofis sahibi panele portföyündeki ilanları fotoğraf ve durum bilgisiyle girer.",
+  "Arayan müşterinin talebini (bölge, bütçe, oda sayısı gibi) kaydeder.",
+  "Panel yeni bir ilan girildiğinde bu ilana uyan müşteri taleplerini gösterir.",
+  "Randevular takvimde, tahsilat ve komisyonlar defter bölümünde tutulur; basit raporlar alınır.",
+  "Veriler istenildiği an dosya olarak dışa aktarılabilir."
+ ],
+ "ornek": "Üç danışmanlı bir ofise yeni bir 3+1 daire gelir. Ofis sahibi ilanı panele girer; panel geçen ay bu bölgede 3+1 arayan iki müşteriyi listeler. Danışman ikisini de aynı gün arar ve randevuyu takvime yazar.",
+ "benzerleri": "Türkiye'de EmlakCRMx ve PortföyCRM gibi emlak programları aynı fiyat bandında; HubSpot ve Bitrix24 genel amaçlı. Planlanan fark talep-ilan eşleştirme ve verinin her an dışa aktarılabilmesi.",
+ "teknoloji": "Tarayıcıda çalışan React arayüzü hazır; bugün veriler yalnız tarayıcıda tutuluyor. Laravel ve Postgres ile sunucu tarafı ve gerçek veri tabanı planlanıyor.",
+ "durum": "Prototip. Panelin arayüzü ve 165 otomatik testi hazır; sunucu tarafı, giriş sistemi ve ödeme yok. Kütüphane 12 bileşenli, henüz yayımlanmadı. Ödeyen müşteri: 0.",
+ "para": "Panel aylık abonelikle satılacak: 499, 899 ve 1.490 TL'lik üç plan (KDV hariç), ilk 3 ofise 2 ay ücretsiz pilot. Kütüphaneden gelir beklenmiyor.",
+ "ne_degil": "Bir ilan portalı değildir; ilan yayınlamaz, ofisin kendi iç defteridir. Yeni ürün adı henüz seçilmedi.",
+ "etiketler": [
+  "emlak ofisi",
+  "müşteri takibi",
+  "web uygulaması",
+  "arayüz kütüphanesi",
+  "abonelik"
+ ]
+}

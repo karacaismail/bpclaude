@@ -1,0 +1,27 @@
+{
+ "slug": "signator",
+ "bir_cumle": "signator, şirket çalışanları ve ajanslar için tarayıcıda form doldurarak düzenli, Türkçe bir e-posta imzası hazırlayıp kopyalamayı sağlayan bir web uygulamasıdır.",
+ "tur": "web uygulaması (tarayıcıda çalışan araç)",
+ "ad_nereden": null,
+ "kim_icin": "İmzasını hazırlayan çalışan kullanır. Ücreti, ekibinin imzasını düzenlemek isteyen küçük şirketin marka ya da operasyon sorumlusu ve müşterilerine imza teslim eden ajanslar öder.",
+ "sorun": "Küçük şirketlerde her çalışan farklı yazı tipi ve logoyla imza kullanır; gizlilik ve KVKK (kişisel verilerin korunması kanunu) uyarısı kiminde vardır, kiminde yoktur. Ajanslar imzayı her müşteri için elle hazırlar, çalışanlar da imzayı e-posta programına eklemekte zorlanır.",
+ "nasil_calisir": [
+  "Kullanıcı ad, unvan, telefon, web sitesi, sosyal medya ve logo bilgisini forma yazar.",
+  "İki marka rengini seçer; imza yan tarafta anında önizlenir.",
+  "Hazır imzayı tek tıkla kopyalayıp e-posta programının imza ayarına yapıştırır.",
+  "Taslak tarayıcıda saklanır; sonradan açıp düzeltilebilir."
+ ],
+ "ornek": "On kişilik bir şirketin operasyon sorumlusu, herkesin aynı logolu ve aynı gizlilik altbilgili imzayı kullanmasını ister. Hedeflenen ekip sürümünde çalışan listesini yükleyip herkesin imzasını tek seferde üretir.",
+ "benzerleri": "HubSpot'un ücretsiz imza aracı, WiseStamp, Exclaimer ve Signitic. Fark: Türkçe arayüz, KVKK altbilgi metinleri, Türkçe kurulum rehberi ve küçük ekipler için alt kullanıcı sınırı olmaması hedefleniyor.",
+ "teknoloji": "Tamamen tarayıcıda çalışan tek sayfalık bir site; HTML, CSS ve JavaScript ile yazıldı. Bilgiler sunucuya gitmez, taslak kullanıcının kendi tarayıcısında durur.",
+ "durum": "Çalışan ilk sürüm var: form, canlı önizleme ve kopyalama. Görselin sunucuda barındırılması, ekip modu, toplu üretim ve ödeme henüz yok. Canlı yayında doğrulanmadı; ödeyen müşteri yok.",
+ "para": "İlk seçenek ajans paketi: müşterilerinin ekiplerine toplu imza ve KVKK altbilgisi hazırlayan ajanslara yıllık peşin 4.990 TL + KDV lisans satışı.",
+ "ne_degil": "Bir e-posta programı ya da e-posta gönderme servisi değildir; yalnız imzayı hazırlar.",
+ "etiketler": [
+  "e-posta imzası",
+  "web uygulaması",
+  "KOBİ",
+  "ajans",
+  "Türkçe"
+ ]
+}

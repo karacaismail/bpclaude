@@ -1,0 +1,27 @@
+{
+ "slug": "destektesvik",
+ "bir_cumle": "DestekTeşvik, KOBİ'ler ve mali müşavirler için bir şirketin hangi KOSGEB, TÜBİTAK ve kalkınma ajansı desteğine neden uygun olduğunu resmi kaynağa dayanarak gösteren bir web uygulaması ve uzman onaylı rapor hizmetidir.",
+ "tur": "web uygulaması ve rapor hizmeti",
+ "ad_nereden": null,
+ "kim_icin": "Ar-Ge yapan ya da üretim yapan küçük ve orta ölçekli işletmeler (KOBİ) rapor için öder; mali müşavirler ve teşvik danışmanları müşteri portföylerini taramak için kullanır.",
+ "sorun": "Devlet destekleri onlarca programa dağılmış; her birinin sektör, yaş, ölçek, bölge ve son tarih şartı farklı ve dili mevzuat dili. Şirket sahibi hangisine uygun olduğunu bilemiyor, son tarihi kaçırıyor ya da yanlış başvuruya aylar ve danışman ücreti harcıyor.",
+ "nasil_calisir": [
+  "Kullanıcı şirketin sektörünü, çalışan sayısını, kuruluş yılını ve ilini girer.",
+  "Sistem bu bilgileri her programın resmi kaynaktan alınmış, tarihli kurallarıyla karşılaştırır.",
+  "Her program için uygun, koşullu, veri eksik ya da uygun değil sonucu ve gerekçesi gösterilir.",
+  "İsteyen şirket 48 saatte uzman kontrolünden geçmiş, kaynaklı ve takvimli PDF rapor alır."
+ ],
+ "ornek": "Yazılım geliştiren 15 kişilik bir şirket, TÜBİTAK çağrısı kapanmadan önce hangi programlara girebileceğini soruyor. Rapor 1501 ve 1507 için uygunluğu, eksik belgeyi ve son tarihi kaynağıyla birlikte gösteriyor.",
+ "benzerleri": "yatirimadestek.gov.tr ücretsiz ama kişiye özel uygunluk vermez; TeşvikAra ve Teşvik Rotası analiz satar; bağımsız danışmanlar dosya yazar. Fark: her sonucun hangi kaynağa ve tarihe dayandığı görünür, uzman onayı vardır.",
+ "teknoloji": "Tarayıcıda çalışan bir web uygulaması; sunucu Python, arayüz React ile yazıldı. Veri, şirketlerin ayrı tutulduğu bir PostgreSQL veritabanında durur. Sonucu kurallar üretir, yapay zekâ değil.",
+ "durum": "Prototip: kural motoru, arayüz ve testler çalışıyor; yalnız 3 program verisi var ve uzman doğrulaması bekliyor. Ödeme ve yayın hazırlığı yok. Ödeyen müşteri yok.",
+ "para": "İlk gelir tek seferlik uzman onaylı ön değerlendirme raporundan: 2.990 TL (KDV hariç). Sonra mali müşavirlere aylık portföy paketi planlanıyor.",
+ "ne_degil": "Başvuru yazmaz, kuruma başvuru göndermez ve destek alınacağını garanti etmez.",
+ "etiketler": [
+  "web uygulaması",
+  "devlet destekleri",
+  "KOBİ",
+  "mali müşavir",
+  "uygunluk raporu"
+ ]
+}

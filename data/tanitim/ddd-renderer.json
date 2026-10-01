@@ -1,0 +1,26 @@
+{
+ "slug": "ddd-renderer",
+ "bir_cumle": "DDD renderer, Türkçe konuşan yazılım geliştiriciler için bir yazılımın modüllerini ve mimari kararlarını tek veri dosyasında tutup gezilebilir belge sitesine ve kontrol listesine çeviren bir rehber ve araç takımıdır.",
+ "tur": "içerik paketi ve belge üretme aracı",
+ "ad_nereden": "DDD, alan odaklı tasarım (Domain-Driven Design) kısaltmasıdır; renderer, veriyi okunur sayfaya çeviren motor demektir.",
+ "kim_icin": "Mimarisini düzenli belgelemek isteyen geliştiriciler, teknik liderler ve danışman mimarlar kullanır; ilk alıcı kurucunun mimari e-kitabını okuyan geliştiricidir.",
+ "sorun": "Ekipler modül sınırlarını, bağımlılıkları ve karar gerekçelerini ya hiç yazmıyor ya da kodla uyumu çabuk bozulan belgelerde tutuyor. Yeni gelen geliştirici hangi modülün neye neden bağlı olduğunu bulamıyor.",
+ "nasil_calisir": [
+  "Geliştirici hazır bir şablonu alır: örnek mimari dosyası, kontrol listesi ve karar kaydı şablonları.",
+  "Kendi modüllerini, sınırlarını ve kararlarını bu yapılandırılmış veri dosyasına (JSON) yazar.",
+  "Motor dosyayı doğrular ve aranabilir, içindekiler tablolu, çapraz bağlantılı bir belge sitesi üretir.",
+  "Kontrol listesiyle kendi projesinin eksiklerini görür."
+ ],
+ "ornek": "Modüler bir yapıya geçmek isteyen bir geliştirici e-kitabı bitirir. Şablon ekini alır, kendi on modülünü dosyaya yazar ve ekibine bağlantısı paylaşılabilir bir mimari sitesi gösterir.",
+ "benzerleri": "Structurizr ve LikeC4 ücretsiz; IcePanel ve Eraser ücretli diyagram araçlarıdır. Fark: Türkçe şablonlar, modül ve karar kaydının tek dosyada tutulması ve e-kitapla bağlı içerik.",
+ "teknoloji": "Motor TypeScript ile yazıldı ve tamamen tarayıcıda çalışan statik site üretir. Sunucu ya da veritabanı yoktur; içerik yaklaşık 200 veri dosyasında durur.",
+ "durum": "Motor yaklaşık yüzde 60, şablon içeriği yaklaşık yüzde 50 hazır; komut satırı aracı yok, lisans kararı belirsiz. Dış kullanıcı yok. Ödeyen müşteri: 0.",
+ "para": "Tek seferlik içerik satışı: e-kitaba ek 3 mimari şablonlu paket 149 ₺. Talep görülürse 29-79 dolarlık şablon paketleri ve değerlendirme hizmeti gelir.",
+ "ne_degil": "Bir diyagram çizim programı ya da çalışan bir yazılım çatısı değildir; mimariyi belgeleme rehberidir.",
+ "etiketler": [
+  "içerik paketi",
+  "yazılım mimarisi",
+  "belgeleme",
+  "şablon"
+ ]
+}

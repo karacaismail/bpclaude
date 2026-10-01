@@ -1,0 +1,28 @@
+{
+ "slug": "ajan-kaynak-koruyucu",
+ "bir_cumle": "Ajan kaynak koruyucu, 16 GB belleği olan Mac'te yapay zekâ kodlama ajanları çalıştıran geliştiriciler için makinenin bellek dolup donmasını önleyen, arka planda çalışan bir bekçi programdır.",
+ "tur": "masaüstü yardımcı program (Mac, arka planda)",
+ "ad_nereden": "Kaynak ve maliyet koruyucu anlamında bir çalışma adı. Eski adında üçüncü taraf bir ürünün markası geçtiği için yeni ad aranıyor.",
+ "kim_icin": "Claude Code ve Codex gibi yapay zekâ kodlama ajanlarını 16 GB Mac'te çalıştıran bağımsız geliştiriciler ve tek kişilik kurucular. Ücretli Pro sürümü onlar alır.",
+ "sorun": "Ajan oturumu, yardımcı süreçler ve tarayıcı birlikte çalışınca Mac'in belleği doluyor, makine donuyor. Oturum kapansa da arkada kalan süreçler belleği bırakmıyor. Kullanıcı bugün Etkinlik Monitörü'nden tahminle süreç kapatıyor; yanlış olanı kapatma riski var.",
+ "nasil_calisir": [
+  "Mac açılınca arka planda başlar; internete çıkmaz, komut ve istem içeriğini okumaz.",
+  "Bellek baskısını izler; ajan süreçlerini isimden değil çalıştırıldığı yerden tanır.",
+  "Oturumu kapanmış ajanın arkada kalan süreçlerini 90 saniye bekledikten sonra temizler.",
+  "Bellek uzun süre kritikteyse şişmiş oturumu sınırlar; büyük oturum kayıtlarını geri alınabilir biçimde kenara alır.",
+  "'Şimdi yeni bir ajan başlatabilir miyim?' sorusuna normal, dikkatli ya da engelli diye yanıt verir."
+ ],
+ "ornek": "Bir geliştirici 16 GB Mac'inde iki ajanı ve tarayıcıyı birlikte çalıştırıyor. Bir oturum kapanınca arkada kalan süreçleri bekçi temizler; üçüncü ajanı açmadan önce 'dikkatli' uyarısı gelir ve makine donmaz.",
+ "benzerleri": "ccusage, CodexBar ve Claude Code Usage Monitor ücretsizdir ama yalnız kullanım ve kota gösterir. Stats ve iStat Menus belleği gösterir, ajanı tanımaz. Bu araç ajanı tanıyıp güvenli biçimde müdahale eder.",
+ "teknoloji": "Mac üzerinde arka planda çalışan Python programı; işletim sisteminden bellek ve süreç bilgisi okur. Planlanan Pro menü çubuğu uygulaması Swift ile yazılacak. Veri bilgisayardan çıkmaz.",
+ "durum": "Çekirdek yazıldı ve 150 birim testiyle bir 16 GB Mac'te denendi; testler bu çalışmada yeniden çalıştırılmadı. Menü çubuğu uygulaması, dağıtım ve ödeme sayfası yok. Ödeyen müşteri yok.",
+ "para": "Çekirdek ücretsiz ve açık kaynak. Pro sürümü (menü çubuğu, bildirim, karantina arayüzü) tek seferlik 15 dolar lansman, sonra 19 dolar; rehber 9 dolar, ikisi birlikte 24 dolar.",
+ "ne_degil": "Token ya da abonelik kotası sayacı değildir; genel bir Mac temizleme programı da değildir.",
+ "etiketler": [
+  "Mac uygulaması",
+  "yapay zekâ ajanları",
+  "bellek yönetimi",
+  "geliştirici aracı",
+  "açık kaynak"
+ ]
+}

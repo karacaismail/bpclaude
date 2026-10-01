@@ -1,0 +1,26 @@
+{
+ "slug": "ik-paneli-hizmeti",
+ "bir_cumle": "İK paneli arayüz hizmeti, ürünü henüz yazılmamış yazılım girişimleri için yatırımcıya ve ilk müşteriye gösterilecek tıklanabilir, markalı bir uygulama demosunu 7 iş gününde hazırlayan bir hizmettir.",
+ "tur": "hizmet paketi (demo üretimi)",
+ "ad_nereden": "İK, insan kaynakları demektir; hizmet, insan kaynakları paneli biçiminde üretilmiş bir arayüz demosundan türer.",
+ "kim_icin": "Ürünü henüz kodlanmamış, yatırımcı görüşmesine tarih almış yazılım girişimi kurucuları kullanır ve öder; müşteriye teklif veren ajanslar ikinci alıcıdır.",
+ "sorun": "Girişim kurucusu yatırımcıya ve ilk müşteriye çalışır gibi bir şey göstermek zorunda. Bugün slayt ya da verisiz tasarım maketiyle yetiniyor ya da aylar süren ve pahalı bir ilk sürüme giriyor.",
+ "nasil_calisir": [
+  "Kurucuyla bir saatlik keşif görüşmesi yapılır; logo, renkler ve 5-10 ekranlık liste alınır.",
+  "Hazır bileşen kitinden 25-35 ekranlı, sahte veriyle dolu bir demo kurulur.",
+  "Demoda filtreli tablolar ve yapay zekâ yanıtı gibi görünen canlandırmalar bulunur; telefonda da açılır.",
+  "İki revizyon turundan sonra demo ve kodu müşteriye teslim edilir."
+ ],
+ "ornek": "Bir lojistik yazılımı fikri olan kurucu üç hafta sonra yatırımcıyla görüşecek. Yedi günde kendi markalı, telefonda açılan bir demo alır ve toplantıda ekranları canlı gezdirir.",
+ "benzerleri": "Figma prototipleri tıklanabilir ama gerçek veri hissi vermez; tasarım ajansları ve yapay zekâ ile arayüz üreten araçlar da var. Fark: testli, sahte verili, kodu teslim edilen demo.",
+ "teknoloji": "Demo tarayıcıda çalışan statik bir web sitesidir (Astro ve React). Sunucu ve veritabanı yoktur; tüm veri sahte üretilir, yapay zekâ yanıtları canlandırmadır.",
+ "durum": "Kaynak demo kurucu tarafından birkaç günde yazıldı; kod ve marka üçüncü taraf bir şirkete ait, yazılı izin ön koşul. Markasız kit yaklaşık yüzde 40 hazır. Ödeyen müşteri: 0.",
+ "para": "Sabit fiyatlı hizmet bedeli: 45.000 ₺ (3 iş günü), 90.000 ₺ (7 iş günü) ve sunumlu 130.000 ₺ paket; yüzde 50 peşin, KDV hariç.",
+ "ne_degil": "Bu bir yazılım ürünü değil; demo üretim hizmetidir. Çalışan bir insan kaynakları ya da bordro programı değildir.",
+ "etiketler": [
+  "hizmet",
+  "satış demosu",
+  "girişim",
+  "arayüz"
+ ]
+}

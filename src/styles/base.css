@@ -11,6 +11,11 @@ html {
   scroll-padding-top: var(--sp-6);
 }
 
+/* Yapışkan bölüm gezintisi olan sayfalarda çapa hedefi gezintinin altında kalmasın. */
+html:has(.toc) {
+  scroll-padding-top: calc(var(--toc-h) + var(--sp-4));
+}
+
 body {
   margin: 0;
   background: var(--c-paper);
@@ -64,6 +69,12 @@ table {
   margin: 0;
 }
 
+p,
+li,
+dd {
+  text-wrap: pretty;
+}
+
 ul,
 ol {
   padding: 0;
@@ -99,9 +110,9 @@ code,
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
-  margin: -1px;
+  inline-size: var(--sr-size);
+  block-size: var(--sr-size);
+  margin: calc(-1 * var(--sr-size));
   padding: 0;
   overflow: hidden;
   clip-path: inset(50%);
@@ -186,13 +197,20 @@ code,
 
 @media print {
   .site-nav,
+  .nav-toggle,
+  .toc,
   .skip-link,
   .filters {
     display: none;
   }
+}
 
-  body {
-    background: #fff;
-    color: #000;
-  }
+/* Odaklanınca görünen yardımcı bağlantı (ör. "Listeye geç"). */
+.skip-inline a:not(:focus-visible) {
+  position: absolute;
+  inline-size: var(--sr-size);
+  block-size: var(--sr-size);
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }

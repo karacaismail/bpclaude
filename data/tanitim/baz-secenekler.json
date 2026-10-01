@@ -1,0 +1,26 @@
+{
+ "slug": "baz-secenekler",
+ "bir_cumle": "Baz seçenekler, kurucunun haftalık 20 saatini projelere vermek yerine başka nasıl değerlendirebileceğini gösteren üç seçenekten oluşan bir karşılaştırma tabanıdır.",
+ "tur": "karşılaştırma tabanı",
+ "ad_nereden": null,
+ "kim_icin": "Kurucunun kendi kararı için. Her proje bu tabanla kıyaslanır; seçeneklerde para ödeyecek olanlar mevcut ilişkideki şirketler, web ajansları ve kamu destek programıdır.",
+ "sorun": "Bu bir proje değil, bir ölçüdür. Bir proje aynı saatlerde ücretli danışmanlıktan, mevcut kodu satmaktan ya da bir destek programına başvurmaktan daha az kazandırıyorsa, kurucunun zamanını o projeye vermesi anlamlı değildir.",
+ "nasil_calisir": [
+  "Seçenek 1: aynı saatleri günlük ücretli danışmanlık ya da yazılım işi olarak satmak.",
+  "Seçenek 2: elde hazır bulunan bir QR menü kod tabanını ajanslara kurulumuyla satmak.",
+  "Seçenek 3: pay karşılığı ön tohum yatırımı veren bir kamu destek programına başvurmak.",
+  "Her proje bu üç tabanın beklenen geliri ve süresiyle kıyaslanır."
+ ],
+ "ornek": "Bir projenin altı ayda birkaç bin lira getirmesi beklenirken, aynı saatlerde 5 günlük danışmanlık paketi ayda 20.000 TL eder; bu durumda proje tabanı geçemez.",
+ "benzerleri": "Doğrudan benzeri bulunmadı; bugün bu karar fırsat maliyeti hesabıyla, yani aynı zamanın başka bir işte ne kazandıracağına bakılarak yapılıyor.",
+ "teknoloji": "Bu bir yazılım ürünü değil. Yalnız ikinci seçenekte Python ve Django ile yazılmış, sunucuda çalışan, testli bir QR menü kod tabanı var.",
+ "durum": "Üç seçenekte de ödeyen müşteri yok. Günlük ücretli yazılı bir teklif verildi; kod tabanı mevcut ama ödeme bağlantısı eksik; destek çağrısı kapandı ve sonraki tarih bilinmiyor.",
+ "para": "Taban ölçü günlük ücrettir: yazılı teklif günlük 4.000 TL; 5 günlük aylık paket 20.000 TL + KDV. Bu bir hizmet bedelidir, ürün satışı değil.",
+ "ne_degil": "Bir girişim ya da satılacak ürün değildir; projeleri tartmak için kullanılan bir kıyas ölçüsüdür.",
+ "etiketler": [
+  "karşılaştırma",
+  "danışmanlık",
+  "fırsat maliyeti",
+  "destek programı"
+ ]
+}

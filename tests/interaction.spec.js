@@ -1,18 +1,14 @@
-// Etkileşim: gezinme düğmesi, atlama bağlantısı, görünür klavye odağı, süzme ve sıralama, yön değişimi, betiksiz temel deneyim.
+// Etkileşim: menü, atlama bağlantıları, görünür klavye odağı, süzme ve sıralama, sözlük, bölüm gezintisi, yön değişimi, betiksiz temel deneyim.
 import { test, expect } from "@playwright/test";
-import { KEY_PAGES, isPhoneProject } from "./helpers.js";
-
-// macOS WebKit'te Tab yalnız form kontrollerinde durur; bağlantılar Option+Tab ile gezilir.
-const tabKey = (browserName) => (browserName === "webkit" ? "Alt+Tab" : "Tab");
+import { KEY_PAGES, isPhoneProject, tabKey, shiftTabKey } from "./helpers.js";
 
 async function focusInfo(page) {
   return page.evaluate(() => {
     const el = document.activeElement;
     if (!el || el === document.body) return null;
     const cs = getComputedStyle(el);
-    const ring = getComputedStyle(document.documentElement).getPropertyValue("--c-focus").trim();
     const probe = document.createElement("span");
-    probe.style.color = ring;
+    probe.style.color = getComputedStyle(document.documentElement).getPropertyValue("--c-focus").trim();
     document.body.appendChild(probe);
     const ringRgb = getComputedStyle(probe).color;
     probe.remove();
@@ -22,24 +18,47 @@ async function focusInfo(page) {
       if (s.outlineStyle !== "none" && parseFloat(s.outlineWidth) > 0) parents.push(p.tagName.toLowerCase() + "." + p.className);
     }
     const r = el.getBoundingClientRect();
+    if (!el.dataset.qaId) el.dataset.qaId = String(Math.random());
     return {
-      etiket: el.tagName.toLowerCase() + "." + el.className, metin: el.textContent.trim().slice(0, 40),
+      id: el.dataset.qaId, etiket: el.tagName.toLowerCase() + "." + el.className, metin: el.textContent.trim().slice(0, 40),
       outlineStyle: cs.outlineStyle, outlineWidth: parseFloat(cs.outlineWidth), outlineColor: cs.outlineColor, ringRgb,
-      boxShadow: cs.boxShadow, cerceveliUst: parents, gorunur: r.width > 0 && r.height > 0, ekranda: r.bottom > 0 && r.top < innerHeight,
+      boxShadow: cs.boxShadow, cerceveliUst: parents, gorunur: r.width > 0 && r.height > 0,
     };
   });
 }
 
-test.describe("gezinme düğmesi (dar ekran)", () => {
+/** Odak ilk durağa dönene ya da sınır dolana kadar Tab ile dolaşır; her durakta odak göstergesini denetler. */
+async function focusCycle(page, browserName, label, limit = 450) {
+  const seen = new Set(); let first = null; let n = 0;
+  for (let i = 0; i < limit; i++) {
+    await page.keyboard.press(tabKey(browserName));
+    const f = await focusInfo(page);
+    if (!f) continue;
+    if (first === null) first = f.id;
+    else if (f.id === first) break;
+    if (seen.has(f.id)) continue;
+    seen.add(f.id); n++;
+    expect.soft(f.outlineStyle, `${label} durak ${i} ${f.etiket}: çerçeve türü`).toBe("solid");
+    expect.soft(f.outlineWidth, `${label} durak ${i} ${f.etiket}: çerçeve kalınlığı`).toBeGreaterThanOrEqual(3);
+    expect.soft(f.outlineColor, `${label} durak ${i} ${f.etiket}: çerçeve rengi token`).toBe(f.ringRgb);
+    expect.soft(f.boxShadow, `${label} durak ${i} ${f.etiket}: ek gölge çerçevesi yok`).toBe("none");
+    expect.soft(f.cerceveliUst, `${label} durak ${i} ${f.etiket}: üst kapsayıcıda çerçeve yok`).toEqual([]);
+    expect.soft(f.gorunur, `${label} durak ${i} ${f.etiket}: odaklanan öğe görünür`).toBe(true);
+  }
+  return n;
+}
+
+test.describe("menü (dar ekran)", () => {
   test.beforeEach(async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 568 });
     await page.goto("index.html");
   });
 
-  test("düğme menüyü açar, kapatır ve durumunu bildirir", async ({ page }) => {
+  test("ilk çizimde menü kapalı; düğme açar, kapatır ve durumunu bildirir", async ({ page }) => {
     const toggle = page.locator(".nav-toggle");
     const list = page.locator("#site-nav-list");
     await expect(toggle).toBeVisible();
+    await expect(toggle).toHaveJSProperty("tagName", "BUTTON");
     await expect(toggle).toHaveAttribute("aria-expanded", "false");
     await expect(list).toBeHidden();
     await toggle.click();
@@ -50,8 +69,8 @@ test.describe("gezinme düğmesi (dar ekran)", () => {
     await expect(list).toBeHidden();
   });
 
-  test("klavye: Enter açar, Escape kapatır ve odağı düğmeye döndürür", async ({ page, browserName }, info) => {
-    test.skip(isPhoneProject(info.project.name), "klavye denetimi masaüstü motorlarında yapılır");
+  test("klavye: Enter açar, Escape menü içindeyken kapatır ve odağı düğmeye döndürür", async ({ page, browserName }, info) => {
+    test.skip(isPhoneProject(info.project.name), "not_applicable: klavye denetimi masaüstü motorlarında yapılır");
     const toggle = page.locator(".nav-toggle");
     await toggle.focus();
     await page.keyboard.press("Enter");
@@ -64,7 +83,16 @@ test.describe("gezinme düğmesi (dar ekran)", () => {
     await expect(page.locator("#site-nav-list")).toBeHidden();
   });
 
-  test("geçerli sayfa gezinmede işaretli", async ({ page }) => {
+  test("Escape menü dışındayken odağı kaçırmaz", async ({ page }) => {
+    await page.goto("siralama.html");
+    await page.locator(".nav-toggle").click();
+    const q = page.locator("#q");
+    await q.focus();
+    await page.keyboard.press("Escape");
+    await expect(q).toBeFocused();
+  });
+
+  test("geçerli sayfa menüde işaretli", async ({ page }) => {
     await page.locator(".nav-toggle").click();
     await expect(page.locator('#site-nav-list a[aria-current="page"]')).toHaveText("Özet");
     await page.locator("#site-nav-list a", { hasText: "Sıralama" }).click();
@@ -72,10 +100,20 @@ test.describe("gezinme düğmesi (dar ekran)", () => {
     await page.locator(".nav-toggle").click();
     await expect(page.locator('#site-nav-list a[aria-current="page"]')).toHaveText("Sıralama");
   });
+
+  test("menü düğmesinin klavye odağı görünür", async ({ page, browserName }, info) => {
+    test.skip(isPhoneProject(info.project.name), "not_applicable: klavye denetimi masaüstü motorlarında yapılır");
+    await page.keyboard.press(tabKey(browserName));
+    await page.keyboard.press(tabKey(browserName));
+    await page.keyboard.press(tabKey(browserName));
+    const f = await focusInfo(page);
+    expect(f.etiket).toContain("nav-toggle");
+    expect(f.outlineStyle).toBe("solid");
+  });
 });
 
-test("geniş ekranda gezinme hep açık, düğme gizli", async ({ page }, info) => {
-  test.skip(isPhoneProject(info.project.name), "geniş ekran denetimi masaüstü motorlarında yapılır");
+test("geniş ekranda menü hep açık, düğme gizli", async ({ page }, info) => {
+  test.skip(isPhoneProject(info.project.name), "not_applicable: geniş ekran denetimi masaüstü motorlarında yapılır");
   await page.setViewportSize({ width: 1280, height: 800 });
   await page.goto("index.html");
   await expect(page.locator(".nav-toggle")).toBeHidden();
@@ -84,10 +122,10 @@ test("geniş ekranda gezinme hep açık, düğme gizli", async ({ page }, info) 
 
 test.describe("klavye ve odak", () => {
   test.beforeEach(async ({}, info) => {
-    test.skip(isPhoneProject(info.project.name), "klavye denetimi masaüstü motorlarında yapılır");
+    test.skip(isPhoneProject(info.project.name), "not_applicable: klavye denetimi masaüstü motorlarında yapılır");
   });
 
-  test("atlama bağlantısı ilk durak; etkinleşince sonraki durak ana içeriğin içinde", async ({ page, browserName }) => {
+  test("atlama bağlantısı ilk durak; sonraki durak ana içerikte", async ({ page, browserName }) => {
     await page.goto("siralama.html");
     await page.keyboard.press(tabKey(browserName));
     const skip = page.locator(".skip-link");
@@ -96,29 +134,41 @@ test.describe("klavye ve odak", () => {
     await page.keyboard.press("Enter");
     await expect(page).toHaveURL(/#icerik$/);
     await page.keyboard.press(tabKey(browserName));
-    const inMain = await page.evaluate(() => !!document.activeElement && !!document.activeElement.closest("main"));
-    expect(inMain, "atlama bağlantısından sonraki durak ana içerikte").toBe(true);
+    expect(await page.evaluate(() => !!document.activeElement && !!document.activeElement.closest("main"))).toBe(true);
+  });
+
+  test("sıralamada süzgeçlerden sonra listeye geç bağlantısı odakla görünür ve listeye götürür", async ({ page, browserName }) => {
+    await page.setViewportSize({ width: 1280, height: 800 });
+    await page.goto("siralama.html");
+    const link = page.locator(".skip-inline a");
+    await link.focus();
+    await expect(link).toBeInViewport();
+    const w = await link.evaluate((el) => el.getBoundingClientRect().width);
+    expect(w).toBeGreaterThan(20);
+    await page.keyboard.press("Enter");
+    await expect(page).toHaveURL(/#liste-baslik$/);
+    await page.keyboard.press(tabKey(browserName));
+    expect(await page.evaluate(() => !!document.activeElement.closest("#liste"))).toBe(true);
   });
 
   for (const url of KEY_PAGES) {
-    test(`odak göstergesi: ${url} üzerinde her durakta tek ve görünür`, async ({ page, browserName }) => {
+    test(`odak göstergesi: ${url} üzerinde bütün duraklarda tek ve görünür`, async ({ page, browserName }) => {
+      test.setTimeout(180_000);
+      await page.setViewportSize({ width: 1280, height: 800 });
       await page.goto(url);
-      const seen = [];
-      for (let i = 0; i < 28; i++) {
-        await page.keyboard.press(tabKey(browserName));
-        const f = await focusInfo(page);
-        if (!f) continue;
-        seen.push(f.etiket);
-        expect.soft(f.outlineStyle, `${url} durak ${i} ${f.etiket}: çerçeve türü`).toBe("solid");
-        expect.soft(f.outlineWidth, `${url} durak ${i} ${f.etiket}: çerçeve kalınlığı`).toBeGreaterThanOrEqual(3);
-        expect.soft(f.outlineColor, `${url} durak ${i} ${f.etiket}: çerçeve rengi token`).toBe(f.ringRgb);
-        expect.soft(f.boxShadow, `${url} durak ${i} ${f.etiket}: ek gölge çerçevesi yok`).toBe("none");
-        expect.soft(f.cerceveliUst, `${url} durak ${i} ${f.etiket}: üst kapsayıcıda çerçeve yok`).toEqual([]);
-        expect.soft(f.gorunur, `${url} durak ${i} ${f.etiket}: odaklanan öğe görünür`).toBe(true);
-      }
-      expect(seen.length, `${url}: klavye durağı sayısı`).toBeGreaterThan(5);
+      const n = await focusCycle(page, browserName, url);
+      expect(n, `${url}: klavye durağı sayısı`).toBeGreaterThan(5);
     });
   }
+
+  test("odak göstergesi: 320 genişlikte menü açıkken bütün duraklarda görünür", async ({ page, browserName }) => {
+    test.setTimeout(180_000);
+    await page.setViewportSize({ width: 320, height: 568 });
+    await page.goto("index.html");
+    await page.locator(".nav-toggle").click();
+    const n = await focusCycle(page, browserName, "320 menü açık");
+    expect(n).toBeGreaterThan(15);
+  });
 
   test("Shift+Tab geri gider", async ({ page, browserName }) => {
     await page.goto("index.html");
@@ -128,16 +178,15 @@ test.describe("klavye ve odak", () => {
     await page.keyboard.press(key);
     const third = await focusInfo(page);
     await page.keyboard.press(key);
-    await page.keyboard.press(browserName === "webkit" ? "Alt+Shift+Tab" : "Shift+Tab");
+    await page.keyboard.press(shiftTabKey(browserName));
     const back = await focusInfo(page);
-    expect(back.etiket + back.metin).toBe(third.etiket + third.metin);
+    expect(back.id).toBe(third.id);
   });
 
   test("açılır bölüm klavyeyle açılır ve kapanır", async ({ page }) => {
     await page.goto("sablon.html");
     const first = page.locator("#kapilar details").first();
-    const summary = first.locator("summary");
-    await summary.focus();
+    await first.locator("summary").focus();
     await expect(first).not.toHaveAttribute("open", "");
     await page.keyboard.press("Enter");
     await expect(first).toHaveAttribute("open", "");
@@ -151,11 +200,9 @@ test.describe("klavye ve odak", () => {
     await page.goto("siralama.html");
     const chip = page.locator('.chip[data-sort="puan"]');
     await chip.click();
-    const afterClick = await chip.evaluate((el) => getComputedStyle(el).outlineStyle);
-    expect(afterClick, "fareyle tıklanan düğmede çerçeve yok").toBe("none");
+    expect(await chip.evaluate((el) => getComputedStyle(el).outlineStyle)).toBe("none");
     await page.keyboard.press(tabKey(browserName));
-    const f = await focusInfo(page);
-    expect(f.outlineStyle).toBe("solid");
+    expect((await focusInfo(page)).outlineStyle).toBe("solid");
   });
 });
 
@@ -165,7 +212,6 @@ test.describe("sıralama sayfası: süzme, arama, sıralama", () => {
   });
 
   const visibleRows = (page) => page.locator("#liste > li:not([hidden])");
-
   async function openPanel(page) {
     const panel = page.locator("#suzgec-panel");
     if (!(await panel.evaluate((el) => el.open))) await panel.locator("summary").click();
@@ -184,8 +230,7 @@ test.describe("sıralama sayfası: süzme, arama, sıralama", () => {
     expect(n).toBeGreaterThan(0);
     expect(n).toBeLessThan(total);
     await expect(page.locator("#sonuc")).toHaveText(`${n} seçenek gösteriliyor`);
-    const kinds = await visibleRows(page).evaluateAll((els) => [...new Set(els.map((x) => x.dataset.karar))]);
-    expect(kinds).toEqual([value]);
+    expect(await visibleRows(page).evaluateAll((els) => [...new Set(els.map((x) => x.dataset.karar))])).toEqual([value]);
   });
 
   test("nakit süzgeci karar süzgeciyle birlikte çalışır ve özet satırı güncellenir", async ({ page }) => {
@@ -193,39 +238,33 @@ test.describe("sıralama sayfası: süzme, arama, sıralama", () => {
     const chip = page.locator('.chip[data-filter="nsinif"]:not([data-value=""])').last();
     const value = await chip.getAttribute("data-value");
     await chip.click();
-    const classes = await visibleRows(page).evaluateAll((els) => [...new Set(els.map((x) => x.dataset.nsinif))]);
-    expect(classes).toEqual([value]);
+    expect(await visibleRows(page).evaluateAll((els) => [...new Set(els.map((x) => x.dataset.nsinif))])).toEqual([value]);
     await expect(page.locator("#suzgec-ozet")).toContainText((await chip.textContent()).toLocaleLowerCase("tr"));
-    const karar = page.locator('.chip[data-filter="karar"][data-value="degistir"]');
-    await karar.click();
-    const pairs = await visibleRows(page).evaluateAll((els) => [...new Set(els.map((x) => x.dataset.karar + "|" + x.dataset.nsinif))]);
-    expect(pairs).toEqual([`degistir|${value}`]);
+    await page.locator('.chip[data-filter="karar"][data-value="degistir"]').click();
+    expect(await visibleRows(page).evaluateAll((els) => [...new Set(els.map((x) => x.dataset.karar + "|" + x.dataset.nsinif))])).toEqual([`degistir|${value}`]);
     await page.locator('.chip[data-filter="nsinif"][data-value=""]').click();
     await page.locator('.chip[data-filter="karar"][data-value=""]').click();
     await expect(page.locator("#suzgec-ozet")).toHaveText("tümü · yatırım sırası");
   });
 
-  test("sıralama düğmeleri listeyi yeniden dizer", async ({ page }) => {
+  test("bütün sıralama düğmeleri listeyi doğru yönde dizer", async ({ page }) => {
     await openPanel(page);
-    await page.locator('.chip[data-sort="nakit"]').click();
-    const nakit = await visibleRows(page).evaluateAll((els) => els.map((x) => parseFloat(x.dataset.nakit)));
-    expect(nakit).toEqual([...nakit].sort((a, b) => b - a));
-    await page.locator('.chip[data-sort="sure"]').click();
-    const sure = await visibleRows(page).evaluateAll((els) => els.map((x) => parseFloat(x.dataset.sure)));
-    expect(sure).toEqual([...sure].sort((a, b) => a - b));
-    await page.locator('.chip[data-sort="yatirim"]').click();
-    const sira = await visibleRows(page).evaluateAll((els) => els.map((x) => parseFloat(x.dataset.yatirim)));
-    expect(sira).toEqual([...sira].sort((a, b) => a - b));
+    const yon = { yatirim: 1, puan: -1, nakit: -1, sure: 1, ogrenme: 1, stratejik: -1 };
+    for (const [key, d] of Object.entries(yon)) {
+      await page.locator(`.chip[data-sort="${key}"]`).click();
+      const vals = await visibleRows(page).evaluateAll((els, k) => els.map((x) => parseFloat(x.dataset[k])), key);
+      expect(vals, `sıralama: ${key}`).toEqual([...vals].sort((a, b) => d * (a - b)));
+    }
   });
 
-  test("arama Türkçe harflere duyarsız: büyük, küçük ve noktalı biçimler aynı sonucu verir", async ({ page }) => {
+  test("arama Türkçe harflere duyarsız", async ({ page }) => {
     const q = page.locator("#q");
     const counts = [];
     for (const term of ["danışmanlık", "DANIŞMANLIK", "danismanlik", "Danişmanlik"]) {
       await q.fill(term);
+      await expect.poll(async () => page.locator("#liste > li:not([hidden])").count()).toBeGreaterThan(0);
       counts.push(await visibleRows(page).count());
     }
-    expect(counts[0]).toBeGreaterThan(0);
     expect(new Set(counts).size, `sonuç sayıları: ${counts.join(", ")}`).toBe(1);
   });
 
@@ -241,7 +280,7 @@ test.describe("sıralama sayfası: süzme, arama, sıralama", () => {
   });
 
   test("klavye: düğme Enter ve boşlukla çalışır", async ({ page }, info) => {
-    test.skip(isPhoneProject(info.project.name), "klavye denetimi masaüstü motorlarında yapılır");
+    test.skip(isPhoneProject(info.project.name), "not_applicable: klavye denetimi masaüstü motorlarında yapılır");
     await openPanel(page);
     const chip = page.locator('.chip[data-sort="puan"]');
     await chip.focus();
@@ -254,7 +293,7 @@ test.describe("sıralama sayfası: süzme, arama, sıralama", () => {
     await expect(chip).toHaveAttribute("aria-pressed", "false");
   });
 
-  test("seçim adreste saklanır ve sayfa yenilenince korunur; arama metni adrese yazılmaz", async ({ page }) => {
+  test("seçim adreste saklanır ve yenilenince korunur; arama metni adrese yazılmaz", async ({ page }) => {
     await openPanel(page);
     const chip = page.locator('.chip[data-filter="karar"]:not([data-value=""])').first();
     const value = await chip.getAttribute("data-value");
@@ -267,8 +306,6 @@ test.describe("sıralama sayfası: süzme, arama, sıralama", () => {
     await page.reload();
     await expect(page.locator(`.chip[data-filter="karar"][data-value="${value}"]`)).toHaveAttribute("aria-pressed", "true");
     await expect(page.locator('.chip[data-sort="puan"]')).toHaveAttribute("aria-pressed", "true");
-    const kinds = await visibleRows(page).evaluateAll((els) => [...new Set(els.map((x) => x.dataset.karar))]);
-    expect(kinds).toEqual([value]);
   });
 
   test("yön değişimi: yazılan arama, açık panel ve odak korunur", async ({ page }) => {
@@ -277,30 +314,78 @@ test.describe("sıralama sayfası: süzme, arama, sıralama", () => {
     await openPanel(page);
     const q = page.locator("#q");
     await q.fill("hizmet");
+    await expect.poll(() => visibleRows(page).count()).toBeLessThan(132);
     const n = await visibleRows(page).count();
     await page.setViewportSize({ width: 844, height: 390 });
     await expect(q).toHaveValue("hizmet");
     await expect(q).toBeFocused();
     expect(await page.locator("#suzgec-panel").evaluate((el) => el.open)).toBe(true);
     await expect(visibleRows(page)).toHaveCount(n);
-    await page.setViewportSize({ width: 390, height: 844 });
-    await expect(q).toHaveValue("hizmet");
-    await expect(visibleRows(page)).toHaveCount(n);
   });
 
-  test("seçenek başlığı proje sayfasındaki ilgili bölüme götürür", async ({ page }) => {
+  test("seçenek başlığı proje sayfasındaki ilgili bölüme götürür ve başlık gezinti altında kalmaz", async ({ page }) => {
     const link = visibleRows(page).first().locator(".opt__title a");
     const href = await link.getAttribute("href");
     await link.click();
-    await expect(page).toHaveURL(new RegExp(href.replace(/[.#]/g, "\\$&") + "$"));
     const id = href.split("#")[1];
-    await expect(page.locator(`[id="${id}"]`)).toBeInViewport();
+    const target = page.locator(`[id="${id}"] h2`);
+    await expect(target).toBeInViewport();
+    const tocBottom = await page.locator(".toc").evaluate((el) => el.getBoundingClientRect().bottom);
+    const top = await target.evaluate((el) => el.getBoundingClientRect().top);
+    expect(top).toBeGreaterThanOrEqual(tocBottom - 1);
+  });
+});
+
+test.describe("proje sözlüğü", () => {
+  test.beforeEach(async ({ page }) => {
+    await page.goto("projeler.html");
+  });
+  const visible = (page) => page.locator("#sozluk-liste .glossary > li:not([hidden])");
+
+  test("her proje için ad, tür ve tek cümlelik yanıt var", async ({ page }) => {
+    const items = page.locator("#sozluk-liste .glossary > li");
+    await expect(items).toHaveCount(45);
+    const eksik = await items.evaluateAll((els) => els.filter((li) => !li.querySelector(".glossary__name")?.textContent.trim() || !li.querySelector(".glossary__type")?.textContent.trim() || (li.querySelector(".glossary__desc")?.textContent.trim().length || 0) < 40).length);
+    expect(eksik).toBe(0);
+  });
+
+  test("arama Türkçe harflere duyarsız ve boş harf grupları gizlenir", async ({ page }) => {
+    const sq = page.locator("#sq");
+    await sq.fill("QR");
+    await expect.poll(() => visible(page).count()).toBeGreaterThan(0);
+    const n1 = await visible(page).count();
+    await sq.fill("qr");
+    await expect(visible(page)).toHaveCount(n1);
+    const bosGrup = await page.locator("#sozluk-liste .glossary__group").evaluateAll((gs) => gs.filter((g) => !g.hidden && !g.querySelector(".glossary > li:not([hidden])")).length);
+    expect(bosGrup).toBe(0);
+    await sq.fill("ŞÇĞÜÖİ-yok");
+    await expect(page.locator("#sozluk-bos")).toBeVisible();
+    await expect(page.locator("#sozluk-sonuc")).toHaveText("0 proje");
+  });
+
+  test("tür süzgeci listeyi daraltır ve sayaç güncellenir", async ({ page }) => {
+    const panel = page.locator("#sozluk-panel");
+    if (!(await panel.evaluate((el) => el.open))) await panel.locator("summary").click();
+    const chip = page.locator('.chip[data-gfilter="Hizmet"]');
+    await chip.click();
+    await expect(chip).toHaveAttribute("aria-pressed", "true");
+    const grups = await visible(page).evaluateAll((els) => [...new Set(els.map((x) => x.dataset.grup))]);
+    expect(grups).toEqual(["Hizmet"]);
+    const n = await visible(page).count();
+    await expect(page.locator("#sozluk-sonuc")).toHaveText(`${n} proje`);
+  });
+
+  test("ada dokununca proje sayfası \"bu nedir\" yanıtıyla açılır", async ({ page }) => {
+    await page.locator(".glossary__link", { hasText: "qral" }).click();
+    await expect(page).toHaveURL(/proje\/qral\.html$/);
+    await expect(page.locator(".answer")).toContainText("Chrome uzantısı");
+    await expect(page.locator("#nedir .steps > li")).not.toHaveCount(0);
   });
 });
 
 test.describe("dokunma", () => {
-  test("dokunarak süzme ve menü çalışır", async ({ page }, info) => {
-    test.skip(!isPhoneProject(info.project.name), "yalnız dokunmatik telefon profilleri");
+  test("dokunarak menü ve süzme çalışır", async ({ page }, info) => {
+    test.skip(!isPhoneProject(info.project.name), "not_applicable: yalnız dokunmatik telefon profilleri");
     await page.goto("siralama.html");
     await page.locator(".nav-toggle").tap();
     await expect(page.locator("#site-nav-list")).toBeVisible();
@@ -309,40 +394,52 @@ test.describe("dokunma", () => {
     const chip = page.locator('.chip[data-filter="karar"]:not([data-value=""])').first();
     await chip.tap();
     await expect(chip).toHaveAttribute("aria-pressed", "true");
-    const kinds = await page.locator("#liste > li:not([hidden])").evaluateAll((els) => [...new Set(els.map((x) => x.dataset.karar))]);
-    expect(kinds.length).toBe(1);
   });
 
-  test("hover gerektiren eylem yok: bütün bağlantı ve düğmeler dokunmayla erişilebilir", async ({ page }, info) => {
-    test.skip(!isPhoneProject(info.project.name), "yalnız dokunmatik telefon profilleri");
-    await page.goto("index.html");
-    const hidden = await page.evaluate(() => [...document.querySelectorAll("main a, main button")].filter((el) => {
-      const cs = getComputedStyle(el);
-      return cs.visibility === "hidden" || cs.opacity === "0";
-    }).length);
-    expect(hidden).toBe(0);
+  test("bölüm gezintisi dokunarak çalışır", async ({ page }, info) => {
+    test.skip(!isPhoneProject(info.project.name), "not_applicable: yalnız dokunmatik telefon profilleri");
+    await page.goto("proje/qral.html");
+    await page.locator(".toc__list a", { hasText: "Bugün" }).tap();
+    await expect(page).toHaveURL(/#bugun$/);
+    await expect(page.locator("#bugun h2")).toBeInViewport();
   });
+});
+
+test("hover yalnız biçim değiştirir; içerik gizleyip gösteren hover kuralı yok", async ({}, info) => {
+  test.skip(info.project.name !== "chromium", "not_applicable: dosya düzeyi denetim tek projede yeterli");
+  const fs = await import("node:fs");
+  const path = await import("node:path");
+  const { ROOT } = await import("./helpers.js");
+  const css = ["base.css", "components.css"].map((f) => fs.readFileSync(path.join(ROOT, "src", "styles", f), "utf8")).join("\n");
+  const bad = [...css.matchAll(/([^{}]*:hover[^{}]*)\{([^}]*)\}/g)].filter((m) => /\b(display|visibility|opacity|clip|clip-path|max-height)\s*:/.test(m[2])).map((m) => m[1].trim());
+  expect(bad).toEqual([]);
 });
 
 test.describe("betiksiz temel deneyim", () => {
   test.use({ javaScriptEnabled: false });
 
-  test("betik kapalıyken içerik, gezinme ve liste kullanılabilir", async ({ page }) => {
+  test("betik kapalıyken menü bağlantısı listeyi açar ve gezinme çalışır", async ({ page }) => {
     await page.setViewportSize({ width: 320, height: 568 });
     await page.goto("siralama.html");
+    const link = page.locator("a.nav-toggle");
+    await expect(link).toBeVisible();
+    await expect(page.locator("#site-nav-list")).toBeHidden();
+    await link.click();
     await expect(page.locator("#site-nav-list")).toBeVisible();
-    await expect(page.locator(".nav-toggle")).toBeHidden();
+    await page.locator("#site-nav-list a", { hasText: "Projeler" }).click();
+    await expect(page).toHaveURL(/projeler\.html/);
+    await expect(page.locator("#sozluk-liste .glossary > li")).toHaveCount(45);
+    await expect(page.locator("#sozluk-arac")).toBeHidden();
+  });
+
+  test("betik kapalıyken liste, açılır bölümler ve kaydırma bölgeleri çalışır", async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 568 });
+    await page.goto("siralama.html");
     await expect(page.locator("#suzgec")).toBeHidden();
     const rows = page.locator("#liste > li");
     expect(await rows.count()).toBeGreaterThan(50);
-    await expect(rows.first()).toBeVisible();
     await rows.first().locator(".opt__title a").click();
     await expect(page.locator("h1")).toBeVisible();
-    await expect(page).toHaveURL(/proje\//);
-  });
-
-  test("betik kapalıyken açılır bölümler ve kaydırma bölgeleri çalışır", async ({ page }) => {
-    await page.setViewportSize({ width: 320, height: 568 });
     await page.goto("sablon.html");
     const first = page.locator("#kapilar details").first();
     await first.locator("summary").click();

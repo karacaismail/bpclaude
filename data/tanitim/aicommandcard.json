@@ -1,0 +1,26 @@
+{
+ "slug": "aicommandcard",
+ "bir_cumle": "AiCommandCard, web uygulamalarının üst çubuğunda arama çubuğu gibi duran, tıklanınca komut kartlarına ve yapay zekâ soru alanına açılan bir React arayüz bileşenidir.",
+ "tur": "arayüz bileşeni (React) ve ürün özelliği",
+ "ad_nereden": "İngilizce AI Command Card, yani yapay zekâ komut kartı.",
+ "kim_icin": "İlk alıcı, kurucunun QR menü ürünü Zabuno'yu kullanan kafe ve restoran sahipleri; ikinci alıcı, yönetim paneline yapay zekâ eklemek isteyen ajanslar ve React ekipleri.",
+ "sorun": "Restoran sahibi menü açıklaması ve yorum yanıtı yazmaya zaman bulamıyor; bugün elle yazıyor ya da ChatGPT'ye kopyala-yapıştır yapıyor. Yazılım ekiplerinde ise ayrı sohbet penceresi arayüzü bozuyor ve onaysız iş yapma kaygısı doğuruyor.",
+ "nasil_calisir": [
+  "Kullanıcı ekranın üstündeki ince arama çubuğuna tıklar.",
+  "Çubuk aynı yerde büyüyerek komut kartlarını ve soru alanını açar.",
+  "Kullanıcı isteğini yazar; yapay zekâ bir taslak önerir.",
+  "Taslak önce önizlenir; kullanıcı onaylar ya da geri alır, onaysız hiçbir şey değişmez."
+ ],
+ "ornek": "Bir kafe sahibi yeni sezon menüsüne ürün ekler. Üst çubuktaki kartı açıp açıklama ister, önerilen metni önizler, küçük bir düzeltme yapıp onaylar.",
+ "benzerleri": "assistant-ui, CopilotKit ve Vercel AI Elements benzer yapay zekâ arayüz bileşenlerini ücretsiz verir; para bulut hizmetinden kazanılır. Fark: ayrı sohbet penceresi yerine tek, onay odaklı komut alanı.",
+ "teknoloji": "Tarayıcıda çalışan React ve TypeScript bileşeni; kendi başına veri çekmez, yalnız istek iletir. Menü ürününde yapay zekâ istekleri ürünün kendi sunucusu üzerinden modele gidecek.",
+ "durum": "Bileşen yaklaşık yüzde 85 hazır, herkese açık demosu var. Lisansı henüz belirlenmedi, paket olarak yayınlanmadı. Menü ürününe entegrasyon başlamadı. Ödeyen müşteri yok.",
+ "para": "Menü ürününde 999 TL'lik aylık planın parçası olur; 499 TL'lik plandan geçişte aylık 500 TL fark getirir. Ek olarak sabit fiyatlı entegrasyon hizmeti satılabilir.",
+ "ne_degil": "Bir sohbet botu ya da ayrı bir yapay zekâ hizmeti değildir; yalnız ekrandaki giriş noktasıdır.",
+ "etiketler": [
+  "React bileşeni",
+  "yapay zekâ arayüzü",
+  "QR menü",
+  "komut paleti"
+ ]
+}

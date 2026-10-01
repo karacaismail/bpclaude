@@ -1,0 +1,27 @@
+{
+ "slug": "uretici-kobi-paketi",
+ "bir_cumle": "Üretici KOBİ dijital başlangıç paketi, kendi markasıyla online satışa çıkmak isteyen üreticiler için rakip analizi, kârlılık hesabı, kurumsal site ve pazar yeri açılış planını birlikte sunan bir danışmanlık hizmetidir.",
+ "tur": "hizmet paketi (danışmanlık ve site)",
+ "ad_nereden": null,
+ "kim_icin": "Tekstil, iç giyim, aksesuar ya da mobilya üreten, 20-100 çalışanlı küçük ve orta ölçekli işletmeler (KOBİ) içindir. Kararı ve ödemeyi firma sahibi verir.",
+ "sorun": "Bu bir yazılım ürünü değil; danışmanlık hizmetidir. Fason işleri azalan üretici kendi markasıyla satmak istiyor ama hangi kanalda, hangi fiyatla, ne kadar reklamla satacağını bilmiyor. Komisyon ve kargoyu hesaba katmadan ucuz ürünü ücretsiz kargoyla satınca sipariş başına zarar edebiliyor.",
+ "nasil_calisir": [
+  "Firmayla görüşülür; ürünler, maliyetler ve hedef kanallar toplanır.",
+  "20 rakip incelenir; her kanal için komisyon, kargo, reklam ve iade sonrası kâr tablosu çıkarılır.",
+  "Etkileşimli bir simülatörle sepet tutarı ve fiyat senaryoları gösterilir, başabaş noktası belirlenir.",
+  "2 dilli kurumsal site kurulur ve pazar yeri açılış planı teslim edilir."
+ ],
+ "ornek": "İç giyim üreten bir atölye pazar yerinde mağaza açmayı düşünüyor. Paketle hangi sepet tutarının altında zarar edeceğini görüyor, fiyatını ve kampanya kurallarını buna göre koyuyor, sitesi ve açılış planıyla başlıyor.",
+ "benzerleri": "Pazar yeri yönetim ajansları operasyonu yürütür ama kârlılık modeli kurmaz; ikas ve Sentos gibi araçlar altyapı sunar; Armut'taki serbest danışmanlar ucuz ama yöntemsizdir. Bu paket hesap, vitrin ve planı tek pakette verir.",
+ "teknoloji": "Analiz tablolarla ve tarayıcıda açılan tek sayfalık etkileşimli bir simülatörle teslim edilir. Kurumsal site hazır, statik bir kalıptan üretilir. Müşteri verisi teslim dosyalarında durur.",
+ "durum": "İki üretici KOBİ için yapılmış işler var: kurumsal site, rakip raporu ve simülasyon sayfası. Anonim şablon, teklif ve sözleşme henüz hazır değil. Ödeyen müşteri 0.",
+ "para": "Sabit kapsamlı Başlangıç paketi 90.000 TL + KDV olarak tek seferlik satılır; yarısı avans, yarısı teslimde. Daha küçük giriş olarak yalnız fizibilite 35.000 TL + KDV'dir.",
+ "ne_degil": "Mağazayı her ay işleten bir ajans hizmeti ya da satış garantisi değildir.",
+ "etiketler": [
+  "danışmanlık",
+  "üretici",
+  "e-ticaret",
+  "fizibilite",
+  "kurumsal site"
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "slug": "zincir-danismanligi",
+ "bir_cumle": "Bu proje, çok şubeli bir kahve zincirinin sitesini, online mağazasını, uygulamasını ve şube kasalarını tek ölçüm düzenine bağlayan 90 günlük sabit fiyatlı dijital dönüşüm danışmanlığıdır.",
+ "tur": "hizmet paketi (danışmanlık)",
+ "ad_nereden": null,
+ "kim_icin": "20-60 şubeli, kendi teknoloji ekibi olmayan kahve ve yeme-içme zincirleri; ilk aday, mevcut ilişkideki çok şubeli bir kahve zinciri. Ücreti zincir öder, onay genel müdürdedir.",
+ "sorun": "Zincirin sitesi, online mağazası, mobil uygulaması ve şube kasa sistemi aynı veriyi görmüyor. Reklama para harcansa da hangi kanalın satış getirdiği ölçülemiyor; hangi e-ticaret platformunda kalınacağı kararı da netleşmemiş.",
+ "nasil_calisir": [
+  "Bu bir yazılım ürünü değil; kurucunun yürüttüğü bir danışmanlık hizmetidir.",
+  "İlk haftalarda hesap erişimleri devralınır ve platform kararı yazılı olarak verilir.",
+  "Ölçüm kurulur, yerel arama kayıtları düzenlenir, mağaza ile şube kasası arasındaki bağlantı yönetilir.",
+  "Üç test reklam kampanyası açılır; her hafta tek sayfalık rapor verilir, 90. günde iş ekibe devredilir."
+ ],
+ "ornek": "Zincirin pazarlama yöneticisi reklama ayda belli bir bütçe ayırıyor ama hangi kampanyanın mağazaya satış getirdiğini bilmiyor. 90 günün sonunda her kampanyanın satışa etkisini haftalık raporda görüyor.",
+ "benzerleri": "Tam hizmet dijital ajanslar ve e-ticaret platformu satıcıları (IdeaSoft, T-Soft, Ticimax). Fark: platform satmaz; kararı ve kurulumu kabul ölçütleriyle yönetir, sabit fiyatlıdır.",
+ "teknoloji": "Yazılım değil hizmet; Google Tag Manager ve Google Analytics 4 gibi hazır ölçüm araçlarıyla çalışır. Veri zincirin kendi hesaplarında kalır. Şube menüleri için kurucunun Zabuno ürünü kullanılabilir.",
+ "durum": "Hazırlık aşamasında: analiz ve strateji belgeleri ile bir denetim panosu hazır. Teklif henüz iletilmedi; sözleşme şablonları yok, ödeyen müşteri yok.",
+ "para": "Hizmet bedeli: 90 günlük paket 180.000 TL + KDV, üç taksitle; ardından aylık 45.000 TL + KDV yönetim ücreti.",
+ "ne_degil": "Bir e-ticaret platformu ya da hazır yazılım değildir; satış artışı garantisi vermez.",
+ "etiketler": [
+  "danışmanlık",
+  "dijital pazarlama",
+  "kahve zinciri",
+  "e-ticaret",
+  "ölçüm"
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "slug": "banner-post",
+ "bir_cumle": "Banner-post, kafe ve restoranların menü verisinden Instagram gönderisi, masa standı ve QR afişi gibi kampanya görsellerini otomatik üreten, Zabuno içine eklenecek bir modüldür.",
+ "tur": "web uygulaması modülü (abonelik planına dahil)",
+ "ad_nereden": null,
+ "kim_icin": "Kurucunun QR menü ürünü Zabuno'yu kullanan, Instagram hesabını kendi yöneten tek şubeli kafe ve restoran sahipleri.",
+ "sorun": "Restoran menüsünü sisteme girdikten sonra kampanya ve yeni ürün görsellerini Canva'da ayrıca elle hazırlıyor. Fiyat değişince görsel eskiyor. Bu iş haftada 1-2 saat ya da ajansa aylık ücret demek.",
+ "nasil_calisir": [
+  "Restoran sahibi menüsünü zaten Zabuno'ya girmiştir.",
+  "Modül logo ve renkleri alıp altı hazır şablonu doldurur.",
+  "Sahip görseli seçer, PNG ya da PDF olarak indirir.",
+  "Fiyat değişince görsel yeni fiyatla yeniden üretilir."
+ ],
+ "ornek": "Bir kafe sahibi yeni soğuk kahvesini menüye ekler. Modülden tek tıkla Instagram kare gönderisi ve masa standı PDF'i alır, yazdırıp masalara koyar.",
+ "benzerleri": "Canva, Adobe Express ve Snappa genel görsel tasarım araçlarıdır; Bannerbear ve Placid görsel üretimini otomatikleştirir. Fark: menü verisine bağlıdır, fiyat değişince görseli kendisi günceller.",
+ "teknoloji": "Zabuno'nun web uygulaması içinde, tarayıcıda çalışacak. Şablonlar React ile hazırlanıp resme dönüştürülür; PDF sunucuda üretilir. Dosyalar her restoranın kendi depolama alanında durur.",
+ "durum": "Yalnız fikir ve belge aşamasında; 17 belgelik gereksinim seti var, kod yok. Zabuno canlı ama tahsilatı henüz açık değil. Ödeyen müşteri yok.",
+ "para": "Zabuno'nun 999 TL'lik aylık planına dahil olur; 499 TL'lik plandan geçişte aylık 500 TL fark getirir.",
+ "ne_degil": "Bağımsız bir Canva benzeri tasarım editörü değildir; o fikir bırakıldı.",
+ "etiketler": [
+  "görsel üretimi",
+  "sosyal medya",
+  "restoran",
+  "QR menü",
+  "kampanya"
+ ]
+}

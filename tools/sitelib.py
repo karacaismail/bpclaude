@@ -8,7 +8,8 @@ TARIH = "1 Ekim 2026"
 # Yayın yolu: GitHub Pages proje sitesinde /bpclaude/. Yalnız 404 sayfası mutlak yol kullanır, çünkü her derinlikte sunulur.
 BASE_PATH = os.environ.get("BPCLAUDE_BASE", "/bpclaude/")
 # Site yalnız kendi kaynaklarını yükler; satır içi betik yoktur. Satır içi stil yalnız puan çubuğunun genişlik değişkenleri içindir.
-CSP = "default-src 'none'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; base-uri 'none'; form-action 'none'"
+CSP = ("default-src 'none'; style-src 'self'; style-src-elem 'self'; style-src-attr 'unsafe-inline'; script-src 'self'; img-src 'self'; font-src 'self'; "
+       "connect-src 'none'; base-uri 'none'; form-action 'none'")
 
 NAV = [
     ("index.html", "Özet"),
@@ -21,6 +22,15 @@ NAV = [
     ("indir.html", "İndir"),
     ("hakkinda.html", "Hakkında"),
 ]
+
+def _paper():
+    """theme-color değerleri elle yazılmaz; tokens.css içindeki --c-paper değerlerinden okunur."""
+    css = open(os.path.join(ROOT, "src", "styles", "tokens.css"), encoding="utf-8").read()
+    vals = re.findall(r"--c-paper:\s*(#[0-9a-fA-F]{6})", css)
+    return (vals[0], vals[1]) if len(vals) >= 2 else ("#ffffff", "#000000")
+
+
+PAPER = _paper()
 
 KAPI_AD = {"gecti": "geçti", "test": "test", "kaldi": "kaldı"}
 KARAR_ACIKLAMA = {
@@ -39,6 +49,19 @@ def e(s):
 
 TR_FOLD = str.maketrans({"İ": "i", "I": "i", "ı": "i", "Ş": "s", "ş": "s", "Ğ": "g", "ğ": "g", "Ü": "u", "ü": "u", "Ö": "o", "ö": "o", "Ç": "c", "ç": "c",
                          "Â": "a", "â": "a", "Î": "i", "î": "i", "Û": "u", "û": "u"})
+
+
+def tr_lower(s):
+    """Türkçe küçük harf: İ→i, I→ı (Python'un lower() işlevi İ harfine birleşik nokta ekler)."""
+    return str(s).replace("İ", "i").replace("I", "ı").lower()
+
+
+def tr_capitalize(s):
+    """Türkçe ilk harf büyütme: i→İ, ı→I."""
+    s = str(s)
+    if not s: return s
+    first = {"i": "İ", "ı": "I"}.get(s[0], s[0].upper())
+    return first + s[1:]
 
 
 def fold(s):
@@ -86,8 +109,8 @@ def page(path, title, desc, body, current=None, depth=0, absolute=False):
 <title>%(title)s · %(site)s</title>
 <meta name="description" content="%(desc)s">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#fbfbf8" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#131417" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="%(paper_l)s" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="%(paper_d)s" media="(prefers-color-scheme: dark)">
 <link rel="stylesheet" href="%(rel)sassets/site.css">
 <script src="%(rel)sassets/site.js" defer></script>
 </head>
@@ -96,7 +119,7 @@ def page(path, title, desc, body, current=None, depth=0, absolute=False):
 <header class="site-header">
 <div class="wrap site-header__in">
 <a class="brand" href="%(rel)sindex.html"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">%(site)s</span><span class="brand__sub">proje seçim defteri</span></a>
-<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-list" hidden>Menü</button>
+<a class="nav-toggle" href="#site-nav-list">Menü</a>
 </div>
 <nav class="site-nav" aria-label="Site"><ul id="site-nav-list" class="wrap site-nav__list">%(nav)s</ul></nav>
 </header>
@@ -109,7 +132,7 @@ def page(path, title, desc, body, current=None, depth=0, absolute=False):
 </div></footer>
 </body>
 </html>
-""" % {"title": e(title), "site": SITE, "desc": e(desc), "rel": rel, "nav": "".join(nav), "body": body, "tarih": TARIH, "csp": CSP}
+""" % {"title": e(title), "site": SITE, "desc": e(desc), "rel": rel, "nav": "".join(nav), "body": body, "tarih": TARIH, "csp": CSP, "paper_l": PAPER[0], "paper_d": PAPER[1]}
     full = os.path.join(OUT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, "w", encoding="utf-8").write(doc)
@@ -124,10 +147,21 @@ def head(eyebrow, title, lede=None):
     return s + "</div>"
 
 
-def section(title, inner, intro=None, sid=None, tag="h2"):
+def split_title(baslik):
+    """'qral (hızlı başvuru …)' biçimindeki başlığı ad ve açıklama olarak ayırır."""
+    b = str(baslik).strip()
+    if b.endswith(")") and " (" in b:
+        i = b.index(" (")
+        return b[:i], b[i + 2:-1]
+    return b, None
+
+
+def section(title, inner, intro=None, sid=None, tag="h2", kicker=None, band=False):
     ida = ' id="%s"' % sid if sid else ""
-    s = '<section class="section"%s><div class="wrap">' % ida
-    s += '<div class="section__head"><%s>%s</%s>' % (tag, e(title), tag)
+    s = '<section class="section%s"%s><div class="wrap">' % (" section--band" if band else "", ida)
+    s += '<div class="section__head">'
+    if kicker: s += '<p class="section__kicker">%s</p>' % e(kicker)
+    s += '<%s>%s</%s>' % (tag, e(title), tag)
     if intro: s += "<p>%s</p>" % intro
     s += "</div>" + inner + "</div></section>"
     return s
@@ -144,10 +178,10 @@ def tag(karar, ad):
 
 
 def gsum(k):
-    txt = "Kapılar: %d geçti, %d test, %d kaldı" % (k["gecti"], k["test"], k["kaldi"])
-    return ('<span class="gsum"><span class="visually-hidden">%s</span><span aria-hidden="true" class="gsum__part"><span class="dot dot--gecti"></span>%d</span>'
-            '<span aria-hidden="true" class="gsum__part"><span class="dot dot--test"></span>%d</span>'
-            '<span aria-hidden="true" class="gsum__part"><span class="dot dot--kaldi"></span>%d</span></span>') % (e(txt), k["gecti"], k["test"], k["kaldi"])
+    """Kapı özeti: işaret biçimle, anlam görünür metinle verilir (yalnız renge ya da biçime dayanmaz)."""
+    return ('<span class="gsum"><span class="visually-hidden">Kapılar: </span><span class="gsum__part"><span class="dot dot--gecti" aria-hidden="true"></span>%d geçti</span>'
+            '<span class="gsum__part"><span class="dot dot--test" aria-hidden="true"></span>%d test</span>'
+            '<span class="gsum__part"><span class="dot dot--kaldi" aria-hidden="true"></span>%d kaldı</span></span>') % (k["gecti"], k["test"], k["kaldi"])
 
 
 def pips(p):
@@ -157,11 +191,19 @@ def pips(p):
     return '<span class="pips" aria-hidden="true">%s</span><span>%d/5</span>' % (cells, p)
 
 
+def ev_legend(depth=0):
+    """E0-E4 kodlarının görünür açıklaması; ayrıntı şablon sayfasında."""
+    rel = "../" * depth
+    return ('<p class="ev-legend small"><span>Kanıt kodu:</span> <span class="ev" data-k="0">E0</span> varsayım · <span class="ev" data-k="1">E1</span> dış kaynak ya da beyan · '
+            '<span class="ev" data-k="2">E2</span> davranış · <span class="ev" data-k="3">E3</span> ödeme · <span class="ev" data-k="4">E4</span> tekrarlanan ödeme. '
+            '<a href="%ssablon.html#kanit">Kanıt ölçeği</a></p>') % rel
+
+
 def ev(k, olcek):
     return '<span class="ev" data-k="%d" title="%s">E%d</span>' % (k, e(olcek[k]["tanim"]), k)
 
 
-def opt_row(o, rank, depth=0, extra_attrs=""):
+def opt_row(o, rank, depth=0, extra_attrs="", ne=None):
     rel = "../" * depth
     n = o["nitel"]; f = o["finans"]; fi = o["finans_girdi"]
     saat = f["baz"]["saat_basi"]
@@ -173,20 +215,22 @@ def opt_row(o, rank, depth=0, extra_attrs=""):
     ]
     fhtml = "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(a), b) for a, b in facts)
     return ('<li class="opt" id="row-%(id)s" %(attrs)s>'
-            '<div class="opt__rank" aria-label="Sıra %(rank)s">%(rank)s</div>'
+            '<div class="opt__rank"><span class="visually-hidden">Sıra </span>%(rank)s</div>'
             '<div class="opt__main"><h3 class="opt__title"><a href="%(rel)sproje/%(proje)s.html#%(id)s">%(ad)s</a></h3>'
-            '<p class="opt__proj">%(pb)s · %(tur)s</p>'
+            '<p class="opt__proj">%(pb)s · %(tur)s</p>%(ne)s'
             '<div class="opt__tags">%(tag)s%(gs)s</div></div>'
             '<div class="opt__score"><div class="score"><span class="score__num">%(p)s</span><span class="score__den">/ 100 puan</span></div>%(meter)s'
             '<p class="xs muted">kanıtla desteklenen %(adj)s · ortalama kanıt E%(kort)s</p></div>'
             '<dl class="opt__facts facts">%(facts)s</dl></li>') % {
         "id": e(o["id"]), "attrs": extra_attrs, "rank": e(rank), "rel": rel, "proje": e(o["proje"]), "ad": e(o["tanim"]["ad"]),
-        "pb": e(o["proje_baslik"]), "tur": e(o["tanim"]["tur"]), "tag": tag(o["karar"], o["karar_ad"]), "gs": gsum(o["kapi"]),
+        "pb": e(o["proje_baslik"]), "tur": e(o["tanim"]["tur"]), "ne": ('<p class="opt__what">%s</p>' % e(ne)) if ne else "", "tag": tag(o["karar"], o["karar_ad"]), "gs": gsum(o["kapi"]),
         "p": num(n["puan"]), "meter": meter(n["puan"], n["duzeltilmis"]), "adj": num(n["duzeltilmis"]), "kort": num(n["kanit_ort"], 1), "facts": fhtml}
 
 
 def minify_css(css):
+    """Yorumları ve gereksiz boşlukları siler. ":" önündeki boşluk korunur: ".x :focus-visible" soy seçicisi bozulmasın."""
     css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
     css = re.sub(r"\s+", " ", css)
-    css = re.sub(r"\s*([{};:,>])\s*", r"\1", css)
+    css = re.sub(r"\s*([{};,>])\s*", r"\1", css)
+    css = re.sub(r":\s+", ":", css)
     return css.replace(";}", "}").strip()

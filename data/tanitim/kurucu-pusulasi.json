@@ -1,0 +1,28 @@
+{
+ "slug": "kurucu-pusulasi",
+ "bir_cumle": "Kurucu Pusulası, tek başına girişim yürüten kurucular için kararları kanıt etiketi, karar defteri ve durdurma kuralıyla tek dosyada toplayan Türkçe bir şablon paketi; yanında çeviri karşılaştırmalı bir kitap sitesidir.",
+ "tur": "içerik ürünü (şablon paketi) ve kitap sitesi",
+ "ad_nereden": null,
+ "kim_icin": "Maaşlı işinin yanında kendi ürününü yürüten solo kurucular ve yan girişimciler şablonu alır. Kitap sitesi klasikleri doğru çeviriden okumak isteyen okurlar içindir, okur ödemez.",
+ "sorun": "Solo kurucu kararlarını dağınık notlarda tutar, aynı tartışmayı tekrar yapar, nakit ve zaman bütçesini ölçmez, işe yaramayan ürünü ne zaman bırakacağını belirlemez. Okur ise bir klasiğin hangi çevirisinin güvenilir olduğunu bilmeden yanlış baskı alır.",
+ "nasil_calisir": [
+  "Kurucu şablon paketini indirir, Markdown ya da Notion içine aktarır.",
+  "Her bilgiyi kaynağına göre etiketler: beyan, resmi veri, varsayım, eksik.",
+  "Kararlarını tarih ve gerekçesiyle karar defterine yazar.",
+  "Her ürün için durdurma kapısı koyar; haftalık ve aylık ritim kartlarıyla gözden geçirir.",
+  "Kitap sitesinde okur bir kitabın künyesine bakar, önerilen çeviriyi ve kaçınılacak baskıyı görür."
+ ],
+ "ornek": "Akşamları yan ürün geliştiren bir yazılımcı üç fikir arasında kararsız. Şablonu doldurur; her fikre üç aylık nakit ve saat sınırı koyar. Sınırı aşan fikri karar defterine gerekçesiyle yazıp bırakır.",
+ "benzerleri": "Notion'daki kurucu şablonları ve ücretsiz Lean Canvas sayfaları var; Türkçe, kanıt etiketli ve durdurma kuralı olan biri bulunmadı. Kitap tarafında Goodreads ve 1000Kitap çeviri künyesine odaklanmaz.",
+ "teknoloji": "Şablon Markdown, Notion ve PDF dosyalarından oluşur, kullanıcının kendi bilgisayarında ya da Notion hesabında durur. Kitap sitesi Astro ile yazılmış statik bir sitedir.",
+ "durum": "Şablonun yapısı var ama kişisel içerikten arındırılmış satış sürümü, örnek ve ürün sayfası henüz yok. Kitap sitesi yayında, satın alma bağlantıları yok. Ödeyen müşteri: 0.",
+ "para": "Şablon tek seferlik 299 TL (yurt dışında 19 dolar). Kuluçka programlarına 1.490 TL kurum lisansı; kitap sitesi mağaza ortaklık komisyonu bekler.",
+ "ne_degil": "Bir proje yönetim ya da muhasebe yazılımı değildir; doldurulan bir karar şablonudur.",
+ "etiketler": [
+  "kurucu şablonu",
+  "karar defteri",
+  "girişimcilik",
+  "kitap rehberi",
+  "Türkçe"
+ ]
+}

@@ -1,0 +1,27 @@
+{
+ "slug": "kurumsal-site",
+ "bir_cumle": "Kurumsal site hizmeti, ihracat yapan üretici küçük ve orta ölçekli işletmeler için birkaç dilli, hızlı açılan ve teklif formlu kurumsal web sitesini sabit fiyatla kuran bir hizmettir.",
+ "tur": "hizmet (web sitesi kurulumu)",
+ "ad_nereden": null,
+ "kim_icin": "10-249 çalışanlı, ihracat yapan üretici firmalar içindir. Kararı ve ödemeyi genellikle patron ya da ihracat müdürü verir.",
+ "sorun": "Bu bir yazılım ürünü değil; web sitesi kurulum hizmetidir. Üreticilerin sitesi çoğu zaman eski, tek dilli ve telefonda bozuk; ürün, sertifika ve teklif sayfası yok. Yabancı alıcı firmayı kendi dilinde bulamayınca rakibe gidiyor. Ajanslarda çok dilli site 150 bin TL'nin üstüne çıkabiliyor.",
+ "nasil_calisir": [
+  "Kısa bir keşif görüşmesinde diller, ürünler, sertifikalar ve eski site adresleri toplanır.",
+  "Hazır, denenmiş bir site kalıbından firmanın sayfaları üretilir; metinler çevrilir ve ana dilde kontrol edilir.",
+  "Site telefondan masaüstüne farklı ekranlarda test edilir, eski adresler yeni sayfalara yönlendirilir.",
+  "Site yayına alınır; firmaya içerik güncelleme anlatılır, isteğe bağlı aylık bakım sunulur."
+ ],
+ "ornek": "Almanya'ya ürün satan bir makine parçası üreticisinin sitesi yalnız Türkçe. Hizmetle 15 iş gününde Türkçe, İngilizce ve Almanca sayfaları, sertifika listesi ve teklif formu olan bir site yayına giriyor.",
+ "benzerleri": "Yerel ajanslar benzer işi daha yüksek fiyatla, Wix ve Shopify gibi site kurucular aylık ücretle ama zayıf çok dil desteğiyle sunar. ThemeForest temaları geliştirici ister. Fark: hazır kalıp sayesinde hızlı teslim ve düşük bakım.",
+ "teknoloji": "Siteler Astro ile önceden hazırlanmış sabit sayfalar olarak üretilir; sunucuda çalışan kod yoktur. Bir içerik dağıtım ağında ya da firmanın sunucusunda yayımlanır; içerik ve kod firmaya teslim edilir.",
+ "durum": "Bir üretici için yapılmış çok dilli bir site canlı olarak yayında ve referans işlevi görüyor. Markasız şablon, teklif ve sözleşme şablonları henüz yok. Ödeyen dış müşteri 0.",
+ "para": "Proje başına tek seferlik bedel alınır: 3 dilli İhracat paketi 85.000 TL + KDV (yarısı avans, yarısı yayında). Ek dil, arama motoru kurulumu ve aylık bakım ayrıca ücretlendirilir.",
+ "ne_degil": "Bir site kurucu yazılımı ya da e-ticaret mağazası değildir; firmanın tanıtım ve teklif vitrinidir.",
+ "etiketler": [
+  "kurumsal site",
+  "web tasarım",
+  "ihracat",
+  "çok dilli",
+  "hizmet"
+ ]
+}

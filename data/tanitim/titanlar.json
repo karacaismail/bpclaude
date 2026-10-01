@@ -1,0 +1,27 @@
+{
+ "slug": "titanlar",
+ "bir_cumle": "Titanlar, e-ticarete başlayan ya da satış yapıp kâr edemeyen esnaf, üretici ve küçük işletme sahipleri için 10 haftalık canlı online eğitim ve danışmanlık hizmetidir.",
+ "tur": "hizmet (eğitim ve danışmanlık)",
+ "ad_nereden": null,
+ "kim_icin": "Pazar yerinde satışa başlamak isteyen ya da mağazası olup kâr edemeyen esnaf, üretici ve 1-3 çalışanlı işletme sahipleri katılır ve ücreti kendileri öder.",
+ "sorun": "Bu bir yazılım ürünü değil; eğitim ve danışmanlık hizmetidir. Ücretsiz akademilerde ve videolarda bilgi bol, ama 'benim ürünüm için hangi pazar yeri, hangi fiyat, hangi şirket türü' sorusuna yanıt yok. Deneme yanılma stok, reklam ve komisyon zararına dönüşüyor; kayıtlı kurslar da çoğu zaman yarıda bırakılıyor.",
+ "nasil_calisir": [
+  "Katılımcı ücretsiz bir canlı tanıtım seminerine katılır, ardından kısa bir tanışma görüşmesiyle kayıt olur.",
+  "20 kişilik grup 10 hafta boyunca haftada iki akşam 90 dakikalık canlı derse girer.",
+  "Her hafta zorunlu bir ödev yapılır ve yazılı geri bildirim alınır: niş seçimi, maliyet, fiyat, listeleme, reklam.",
+  "Program sonunda katılımcının kurulmuş mağazası, fiyatlanmış ürünleri ve 90 günlük yazılı planı olur."
+ ],
+ "ornek": "Ev tekstili üreten bir atölye sahibi pazar yerinde mağaza açmak istiyor. Programda ürünlerinin maliyetini çıkarıyor, komisyon ve kargo sonrası fiyatını belirliyor, 10. haftada mağazası açık ve elinde yazılı bir planla çıkıyor.",
+ "benzerleri": "Trendyol Akademi, Ticimax Kampüs ve BTK Akademi ücretsiz içerik verir; Udemy kursları ve üniversite sertifika programları kayıtlı ya da kalabalıktır. Titanlar küçük grup, zorunlu ödev ve kişiye özel plan sunar.",
+ "teknoloji": "Dersler görüntülü görüşme araçlarıyla canlı yapılır. Tanıtım için statik bir web sitesi hazırlanmış, henüz yayında değil. Derste kurucunun açık kaynak kâr hesaplayıcısı kullanılır.",
+ "durum": "Müfredat, fiyat tablosu ve site iskeleti hazır. Ödeme altyapısı, fatura düzeni ve hukuk sayfaları kurulmadı, site yayında değil, talep görüşmesi yapılmadı. Ödeyen müşteri 0.",
+ "para": "Ana gelir 10 haftalık canlı programın katılım ücretidir: kişi başı 5.000 TL + KDV, taksit ve erken kayıt indirimiyle. Birebir destekli VIP hat ve danışmanlık ek gelir olarak düşünülüyor.",
+ "ne_degil": "Bir yazılım ya da hazır video kurs platformu değildir; resmi onaylı bir kurs da değildir.",
+ "etiketler": [
+  "eğitim",
+  "danışmanlık",
+  "e-ticaret",
+  "canlı program",
+  "küçük işletme"
+ ]
+}

@@ -275,6 +275,8 @@ def main():
         proj["kaynak"] = m["kaynak"]
         proj["itirazlar"] = {k: (sc.get("B") or {}).get(k, []) for k in ("kart_itirazlari", "kapi_itirazlari", "finans_itirazlari")}
         proj["hakem"] = load_hakem(m["slug"])
+        tp = os.path.join(ROOT, "data", "tanitim", m["slug"] + ".json")
+        proj["tanitim"] = json.load(open(tp, encoding="utf-8")) if os.path.exists(tp) else None
         proj = insan_walk(proj, m["slug"])
         proj["secenekler"] = []
         for o in card["secenekler"]:

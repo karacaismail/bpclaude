@@ -1,0 +1,27 @@
+{
+ "slug": "actionplan",
+ "bir_cumle": "actionplan, yapay zekâ kodlama ajanlarıyla çalışan geliştiriciler için büyük işi kabul ölçütlü küçük görevlere bölen ve bunları ajana verilecek hazır paketlere çeviren bir tarayıcı aracıdır.",
+ "tur": "web uygulaması (tarayıcıda, hesapsız)",
+ "ad_nereden": null,
+ "kim_icin": "Codex ya da Claude Code ile ürün çıkaran tek başına çalışan geliştiriciler; küçük ekipler için ekip paketi. Ücretli şablon paketini bu geliştiriciler alır.",
+ "sorun": "Geliştirici her görevi ajana verirken bağlamı, kabul ölçütünü, bağımlılıkları ve 'yapma' listesini her seferinde elle yazıyor. Görev listesi bir yerde, istemler başka yerde duruyor, tutarsızlaşıyor; ajan da 'neredeyse doğru' iş üretiyor.",
+ "nasil_calisir": [
+  "Kullanıcı projeyi iş kırılımı olarak çizer: büyük iş, görev ve adım.",
+  "Her göreve bağlam, kabul ölçütü, bağımlılık, yapma listesi ve kanıt gereği yazar.",
+  "İşleri pano, tablo ya da bağımlılık grafiği olarak görür; kritik yolu araç hesaplar.",
+  "Görevi tek tıkla ajana verilecek görev paketi ya da geliştirici özeti olarak dışa aktarır."
+ ],
+ "ornek": "Tek başına çalışan bir geliştirici yeni bir uygulamanın ödeme modülünü on iki göreve böler. Her görevin kabul ölçütünü yazar, sırayı grafikte görür ve ilk görevi hazır paket olarak kodlama ajanına verir.",
+ "benzerleri": "Linear, Jira ve Plane görev yönetir ama ajana hazır görev üretmez. Açık kaynak claude-task-master ve GitHub spec-kit ücretsizdir; görsel plan sunmaz. Bu araç görsel plan ile ajan paketini birleştirir.",
+ "teknoloji": "Tarayıcıda çalışan bir web uygulaması (React ile yazıldı). Hesap ya da sunucu yok; plan kullanıcının bilgisayarında JSON dosyası olarak durur. Canlı bir demo sayfası yayında.",
+ "durum": "Araç kurucunun kendi işinde çalışıyor ama verisi kendi planına bağlı; boş proje başlatılamıyor. Ürünleşmesi için yeniden paketleme gerekiyor. Dış kullanıcı ve ödeyen müşteri yok.",
+ "para": "Çekirdek ücretsiz ve açık kaynak. Pro şablon ve istem paketi tek seferlik 39 dolar, 5 kişilik ekip paketi 99 dolar; ilk 10 kişiye 19 dolar.",
+ "ne_degil": "Linear ya da Jira gibi abonelikli bir ekip proje yönetimi platformu değildir; kodu kendisi yazmaz.",
+ "etiketler": [
+  "web uygulaması",
+  "iş kırılımı",
+  "görev planlama",
+  "yapay zekâ ajanları",
+  "geliştirici aracı"
+ ]
+}

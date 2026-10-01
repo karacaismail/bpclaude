@@ -1,0 +1,27 @@
+{
+ "slug": "b2b-pazar-yeri-hizmeti",
+ "bir_cumle": "Bu proje, firmalar arası (B2B) toptan pazar yeri kurmak isteyen kurumlara, yazılıma para harcamadan önce nereden başlanacağını belirleyen sabit kapsamlı bir danışmanlık hizmetidir.",
+ "tur": "hizmet paketi (danışmanlık)",
+ "ad_nereden": null,
+ "kim_icin": "Kendi toptan satış platformunu planlayan sektör kümesi, sanayi bölgesi, birlik ya da kooperatif yöneticileri; ikincil olarak tek kategoride çalışan B2B girişim kurucuları.",
+ "sorun": "Pazar yerinde satıcı yoksa alıcı gelmez, alıcı yoksa satıcı gelmez. Kurumlar bu döngüyü reklam ve yazılım büyüterek kırmaya çalışıyor; aylarca bütçe harcanıyor ama ilk satıcılar ve işlemler gelmiyor.",
+ "nasil_calisir": [
+  "Kurum iki haftalık teşhis paketini satın alır.",
+  "Hedef kategori, varsayımlar ve gerekli ilk satıcı sayısı birlikte çıkarılır.",
+  "Kendini ödeyen model hesabıyla ekibin ne zaman kâra geçeceği gösterilir.",
+  "Kurum 20 sayfalık karar belgesini ve devam ya da durdur ölçütlerini alır."
+ ],
+ "ornek": "300 üyeli bir sanayi kümesi ortak bir toptan satış sitesi kurmak istiyor. Teşhis, önce tek kategoride ilk satıcıları elle toplamayı ve yazılım bütçesini bekletmeyi öneriyor.",
+ "benzerleri": "Doğrudan benzeri bulunmadı; bugün bu iş büyük yönetim danışmanlıkları ya da serbest strateji danışmanlarıyla yapılıyor. Fark, yöntem, ekran taslakları ve 90 günlük planın tek pakette gelmesi.",
+ "teknoloji": "Bu bir yazılım ürünü değil; danışmanlık hizmetidir. Yöntem rehberi bir belge sitesinde, ekran taslakları tasarım dosyalarında durur. Yazılım kurulmaz.",
+ "durum": "Yöntem belge olarak büyük ölçüde hazır ama markasız sürüm yok. Kod ve veri üçüncü taraf bir şirkete ait; yazılı izin ön koşul ve alınmadı. Ödeyen müşteri: 0.",
+ "para": "Proje başına sabit ücret: iki haftalık teşhis paketi 60.000 TL artı KDV, yüzde 40'ı peşin. Daha büyük strateji ve tam paketler sonraki adımdır.",
+ "ne_degil": "Bir pazar yeri sitesi ya da satılık pazar yeri yazılımı değildir; pazar yerini işletmez, komisyon almaz.",
+ "etiketler": [
+  "B2B pazar yeri",
+  "danışmanlık",
+  "soğuk başlangıç",
+  "toptan ticaret",
+  "hizmet"
+ ]
+}

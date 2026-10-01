@@ -1,0 +1,26 @@
+{
+ "slug": "egitim-demolari",
+ "bir_cumle": "Eğitim demoları, öğretmen ve eğitmenler için oyun kuramı, ikilem, matematik ve çevik çalışma ilkelerini etkinlikle anlatan, yarım kalmış altı taslağın oluşturduğu bir içerik ailesidir.",
+ "tur": "içerik paketi (eğitim materyali)",
+ "ad_nereden": null,
+ "kim_icin": "Ortaokul ve lise öğretmenleri, özel ders veren eğitmenler, ebeveynler ve ekip atölyesi yapan eğitmenler kullanır. Hazır ders paketinin ücretini öğretmen ya da eğitmen öder.",
+ "sorun": "Öğretmen ve eğitmenler soyut bir kavramı (örneğin bir karar tablosunu ya da bir çalışma ilkesini) somut bir etkinlikle anlatmak ister. Haftalık ders hazırlığında doğrulanmış soru, örnek sonuç ve açıklamalı çözüm hazırlamak zaman alır.",
+ "nasil_calisir": [
+  "Eğitmen tek bir kazanım ya da kavram için hazırlanmış paketi alır.",
+  "Pakette öğretmen rehberi, örnek senaryo sonuçları ve çalışma sayfası bulunur.",
+  "Derste tarayıcıda açılan kısa bir demo ya da sunumla etkinliği yürütür.",
+  "Cevap anahtarıyla sonuçları sınıfla tartışır."
+ ],
+ "ornek": "Bir matematik öğretmeni yeni konuya başlarken o kazanım için hazırlanmış 20 soruluk paketi açar, sınıfta demoyu oynatır ve cevap anahtarıyla çözümleri tartışır.",
+ "benzerleri": "Doğrudan benzeri bulunmadı; bugün bu iş öğretmenlerin kendi hazırladığı çalışma kâğıtları ve paylaşım topluluklarındaki ücretsiz materyallerle yapılıyor.",
+ "teknoloji": "Taslaklar tarayıcıda çalışan sunum ve oyun denemeleridir. Hedeflenen paket PDF ve kurulum gerektirmeyen statik bir demo bağlantısıdır; çocuk verisi toplanmaz.",
+ "durum": "Fikir ve taslak aşamasında: altı ayrı taslak var, çoğu tasarım belgesi. Tamamlanmış oynanabilir ürün, ölçülmüş öğrenme etkisi ve ödeyen müşteri yok.",
+ "para": "Tek seferlik ders paketi satışı: bir kazanımlık paket için 600 TL, üç paket 1.500 TL; fiyatlar henüz varsayımdır.",
+ "ne_degil": "Bir çevrim içi eğitim platformu ya da abonelikli uygulama değildir.",
+ "etiketler": [
+  "eğitim içeriği",
+  "ders paketi",
+  "öğretmen",
+  "etkinlik"
+ ]
+}

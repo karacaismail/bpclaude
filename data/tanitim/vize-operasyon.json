@@ -1,0 +1,20 @@
+{"slug": "vize-operasyon",
+ "bir_cumle": "Vize operasyon platformu, vize danışmanlık acenteleri için müşteri dosyalarını, eksik evrakı, randevu tarihlerini ve kişisel veri saklama sürelerini tek panelde izleten abonelikli bir web uygulamasıdır.",
+ "tur": "web uygulaması (acentelere abonelikli)",
+ "ad_nereden": null,
+ "kim_icin": "5-12 personelli, Schengen ülkelerine dosya hazırlayan vize danışmanlık acenteleri; aboneliği acente öder. İkinci kol olarak acentesiz başvuranlara ücretli evrak kontrol raporu düşünülüyor.",
+ "sorun": "Acenteler dosyaları Excel, WhatsApp ve kâğıt klasörle izliyor; hangi müşterinin hangi evrakı eksik, personelin hafızasında. Kaçan bir tarih, iade edilmeyen 90 euro vize ücreti ve kaybedilen müşteri demek. Pasaport gibi kişisel veriler de kayıtsız biçimde telefonlarda dolaşıyor.",
+ "nasil_calisir": [
+  "Acente personeli her müşteri için bir dosya açar; ülke ve vize türünü seçer.",
+  "Sistem o ülkenin evrak listesini getirir; personel her evrakı alındı, eksik ya da hatalı olarak işaretler.",
+  "Personel aldığı randevu tarihini elle girer; sistem 7 gün ve 1 gün önce hatırlatır.",
+  "Müşteriye dosyasının durumu Telegram ya da SMS ile bildirilir; tahsilatlar dosyaya kaydedilir.",
+  "Dosya kapandıktan sonra kişisel veriler belirlenen sürede, varsayılan 90 günde otomatik silinir."
+ ],
+ "ornek": "Altı kişilik bir acente sabah paneli açar ve bu hafta randevusu olan on iki dosyadan üçünde banka dökümünün eksik olduğunu görür. Müşterilere tek tıkla hatırlatma gider, randevu günü dosya tam teslim edilir.",
+ "benzerleri": "iHMK CRM, Ahoraclario ve Sys-R gibi acente yazılımları var; çoğu acente ise Excel ve WhatsApp kullanıyor. Fark: ülke şablonlu evrak listesi ile kişisel veri saklama ve silme kaydının bir arada olması.",
+ "teknoloji": "Sunucuda çalışan bir web uygulaması; arka ucu Python ile kısmen yazılmış, acente arayüzü henüz yok. Müşteri verisi uygulamanın veritabanında, belirli süre sonra silinmek üzere tutulur.",
+ "durum": "Erken prototip: arka uç kodu kısmen yazılı ama hiç çalıştırılmadı, acente arayüzü yok. Pilot acente ve imzalı anlaşma yok. Ödeyen müşteri: 0.",
+ "para": "Acentelere aylık abonelik: Başlangıç 1.490 TL, Standart 2.990 TL, Pro 5.990 TL. Önce üç acenteyle 90 günlük ücretsiz pilot, sonra ücretli geçiş planlanıyor.",
+ "ne_degil": "Randevu alan ya da vize çıkacağını garanti eden bir araç değildir; randevuyu acente resmi kanaldan kendisi alır.",
+ "etiketler": ["web uygulaması", "vize acentesi", "evrak takibi", "KVKK", "abonelik"]}

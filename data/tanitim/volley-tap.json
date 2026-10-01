@@ -1,0 +1,26 @@
+{
+ "slug": "volley-tap",
+ "bir_cumle": "Volley Tap, aynı telefon ya da bilgisayarda iki kişinin karşı karşıya oynadığı, tarayıcıda açılan kısa bir voleybol oyunudur.",
+ "tur": "oyun (tarayıcıda çalışan arcade oyunu)",
+ "ad_nereden": null,
+ "kim_icin": "Kısa ve kurulumsuz oyun arayan oyuncular oynar. Ücreti ise kampanya için kendi renkli ve logolu sürümünü isteyen spor kulübü, marka ya da ajansın pazarlama sorumlusu öder.",
+ "sorun": "Kulüp ve markalar maç günü ya da sezon açılışında sosyal medyada paylaşılabilecek mini oyun ister. Bugün bunu ajanslara sıfırdan özel geliştirme yaptırarak ya da hazır oyunlaştırma platformlarıyla çözerler; bu yol yavaş ve pahalı kalabilir.",
+ "nasil_calisir": [
+  "Oyun tarayıcıda açılır; yükleme ya da üyelik gerekmez.",
+  "İki oyuncu aynı ekranda dokunarak ya da klavyeyle kendi oyuncusunu yönetir.",
+  "Servis atılır, top filenin üstünden karşı sahaya gönderilir, puanlar sayılır.",
+  "Maç bitince sonuç ekranı çıkar ve yeniden oynanabilir."
+ ],
+ "ornek": "Bir voleybol kulübü sezon açılışında taraftarlarına kendi renkleri ve logosuyla bir mini oyun bağlantısı paylaşır. Taraftar telefonda arkadaşıyla maç yapar, skoru paylaşır.",
+ "benzerleri": "Poki, CrazyGames ve Yandex Games gibi oyun sitelerinde binlerce benzer kısa spor oyunu var. Fark: kulüp ve markaya özel tema ile kişisel veri toplamayan kampanya sürümü hedefleniyor.",
+ "teknoloji": "Tarayıcıda çalışır, telefona uygulama gibi eklenebilir. Phaser oyun kütüphanesi ve TypeScript ile yazıldı. Sunucu gerektirmez, oyuncu verisi toplanmaz.",
+ "durum": "Tek günde yazılmış, oynanabilir iki kişilik ilk sürüm var; yaklaşık yüzde 35 hazır. Bilgisayar rakibi, ek modlar ve İngilizce arayüz yok; görseller oyun siteleri için fazla büyük. Ödeyen müşteri yok.",
+ "para": "İlk seçenek bir hizmet: kulüp ve markalara iki haftada teslim edilen, kendi tema ve logolu kampanya oyunu; paket fiyatı 25.000 TL + KDV, barındırma ayda 1.500 TL.",
+ "ne_degil": "Gerçek voleybol maçı skorunu tutan ya da antrenman yöneten bir uygulama değildir.",
+ "etiketler": [
+  "tarayıcı oyunu",
+  "voleybol",
+  "iki kişilik",
+  "kampanya oyunu"
+ ]
+}

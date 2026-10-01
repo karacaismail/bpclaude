@@ -1,0 +1,27 @@
+{
+ "slug": "cok-dilli-arayuz",
+ "bir_cumle": "Çok dilli arayüz denetimi, birden çok dilde yayın yapan siteler için çeviri eklenince bozulan ekranları bulan sabit fiyatlı bir denetim hizmeti ve Türkçe kontrol listesidir.",
+ "tur": "hizmet paketi (denetim) ve içerik",
+ "ad_nereden": null,
+ "kim_icin": "Üç-beş dilde kurumsal site yaptıran ihracatçı küçük ve orta işletmeler ve bu siteleri teslim eden ajanslar; ikincil olarak çok dilli projeye ilk kez giren geliştiriciler.",
+ "sorun": "Siteye yeni dil eklenince düğmeler taşar, Arapça gibi sağdan sola yazılan dillerde düzen kırılır, tarih ve sayılar yanlış biçimde görünür. Ekipler bunu çevirmen hatası sanır, düzeltme her sürümde tekrar eder ve günler sürer.",
+ "nasil_calisir": [
+  "Müşteri sitesinin en önemli 5 ekranını ve 2 dilini seçer.",
+  "Ekranlar masaüstünde ve 320 piksel telefon genişliğinde, uzun metin ve büyütmeyle denenir.",
+  "Bulunan her hata ekran görüntüsüyle, kabul ölçütü ve düzeltme sırasıyla dosyaya yazılır.",
+  "Müşteri 3 iş gününde raporu alır; düzeltmeden sonra 14 gün içinde yeniden kontrol yapılır."
+ ],
+ "ornek": "Bir ihracatçı firma sitesine Almanca ekliyor. Denetim, uzun Almanca kelimelerin sipariş düğmesini taşırdığını ve fiyatların yanlış ayraçla yazıldığını yayından önce yakalıyor.",
+ "benzerleri": "Lokalise, Phrase ve Crowdin çeviri sürecini yönetir ama ekranın çeviriye dayanıklılığını test etmez. Bu hizmet çeviri yapmaz; çevrilmiş arayüzün bozulup bozulmadığını denetler.",
+ "teknoloji": "Bu bir yazılım ürünü değil; denetim hizmetidir. Kontroller tarayıcıda, otomatik test araçlarıyla yapılır. Kılavuz ücretsiz derslerle internette yayımlanacak.",
+ "durum": "Türkçe rehber yazılı ve aynı kurallar iki çok dilli sitede elle uygulandı. Denetim şablonu, teklif ve sözleşme hazır değil. Ödeyen müşteri: 0.",
+ "para": "Proje başına sabit ücretli hizmet: temel denetim 7.500 TL (5 ekran, 2 dil), kapsamlı 15.000 TL. Yan gelir olarak 299 TL'lik kontrol listesi PDF'i.",
+ "ne_degil": "Bir çeviri hizmeti ya da çeviri yönetim yazılımı değildir; metin çevirmez.",
+ "etiketler": [
+  "çok dilli site",
+  "denetim hizmeti",
+  "yerelleştirme",
+  "erişilebilirlik",
+  "kontrol listesi"
+ ]
+}

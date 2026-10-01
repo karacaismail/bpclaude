@@ -1,0 +1,27 @@
+{
+ "slug": "wp-nis-eklentiler",
+ "bir_cumle": "WordPress Türkiye niş eklenti hattı, Türk WordPress ve WooCommerce siteleri için kişisel veri uyumu, taksit tablosu ve ileti izni işlerini çözen üç küçük eklentilik bir yazılım planıdır.",
+ "tur": "WordPress eklentisi (üç eklentilik hat)",
+ "ad_nereden": null,
+ "kim_icin": "Kişisel veri işleyen Türkçe WordPress siteleri ve WooCommerce mağazaları kullanır. Ödemeyi çoğunlukla bu siteleri kuran ajans ve serbest geliştiriciler yapar.",
+ "sorun": "Her site KVKK (Kişisel Verilerin Korunması Kanunu) için aydınlatma metni, açık rıza ve başvuru süreci işletmek zorunda; çoğu metni sayfaya yapıştırıp geçiyor. Taksit tabloları tek ödeme firmasına bağlı, kapıda ödeme kuralı yok. İleti izinleri İYS'ye (İleti Yönetim Sistemi) elle aktarılıyor.",
+ "nasil_calisir": [
+  "Site sahibi eklentiyi WordPress yönetim panelinden kurar.",
+  "KVKK Lite şirket bilgisinden aydınlatma metni üretir, formlardaki rızaları tarihli kaydeder, başvuruları 30 günlük sayaçla izler.",
+  "Taksit eklentisi ürün sayfasında kart ailesine göre taksit tablosu gösterir; kapıda ödemeye il, tutar ve ek ücret kuralı koyar.",
+  "İYS Köprü ileti izinlerini toplar ve İYS'ye yüklenecek biçimde dışa aktarır."
+ ],
+ "ornek": "Bir ajans yılda 20 kurumsal site kuruyor. Her sitede KVKK formunu ve rıza kaydını elle ayarlamak yerine tek ajans lisansıyla eklentiyi kuruyor, başvurular panelde sayaçla izleniyor.",
+ "benzerleri": "CookieYes ve Complianz çerez bandına odaklanır, KVKK süreçlerini tanımaz; Kolayonay aylık ücretli bir hizmettir. iyzico ve PayTR eklentileri tek ödeme firmasına bağlıdır. Bu hat Türkiye kurallarını WordPress içinde çözer.",
+ "teknoloji": "Sitenin kendi sunucusunda, WordPress içinde çalışır; PHP ile yazılması planlanıyor. Rıza ve başvuru kayıtları sitenin kendi veritabanında durur. Lisans ve güncelleme bir lisans servisiyle yönetilecek.",
+ "durum": "Yalnız fikir ve araştırma aşamasında. Ayrıntılı iş planı ve rakip taraması var; eklentilerin kodu yazılmadı, hiçbir ajansla fiyat görüşülmedi. Ödeyen müşteri 0.",
+ "para": "Temel sürüm ücretsiz dağıtılır; KVKK Lite Pro ajans lisansı yıllık 9.990 TL (ilk 10 ajansa ilk yıl 4.990 TL), tek site Pro yıllık 1.990 TL olarak planlanıyor.",
+ "ne_degil": "Hukuki danışmanlık ya da hazır avukat onaylı metin hizmeti değildir; ödeme altyapısı da değildir.",
+ "etiketler": [
+  "WordPress eklentisi",
+  "WooCommerce",
+  "KVKK",
+  "taksit",
+  "ajans lisansı"
+ ]
+}

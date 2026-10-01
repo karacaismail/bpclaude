@@ -1,0 +1,28 @@
+{
+ "slug": "zabuno",
+ "bir_cumle": "Zabuno, kafe ve restoranlar için menüyü internette yayınlayan, masalara basılacak QR kodu üreten ve misafirin telefondan menüyü okuyup sipariş vermesini sağlayan abonelikli bir web uygulamasıdır.",
+ "tur": "web uygulaması (abonelikli)",
+ "ad_nereden": null,
+ "kim_icin": "Menüsünü kendi yöneten tek şubeli kafe, pastane ve restoranlar; ikinci hedef çok şubeli kahve ve yeme-içme zincirleri. Aylık ücreti işletme sahibi öder.",
+ "sorun": "Fiyatlar sık değiştiği için basılı menü her zamda yeniden tasarlanıp bastırılıyor. Bugünkü yollar ya PDF menüye bağlanan QR kod (telefonda zor okunur), ya da kasa yazılımının hediye menüsü (kasa değişince menü de gider). Zabuno'da basılı kod sabit kalır, menü değişir.",
+ "nasil_calisir": [
+  "İşletme kayıt olur; menüyü elle yazar, CSV dosyasıyla yükler ya da basılı menünün fotoğrafından yapay zekâ ile taslak çıkarır.",
+  "Menüyü numaralı bir sürüm olarak yayınlar; hata olursa tek tıkla önceki sürüme döner.",
+  "Masalar için QR kod kartlarını basılmaya hazır olarak indirir.",
+  "Misafir kodu telefonuyla okutur, uygulama indirmeden menüyü görür ve masadan sipariş verir; sipariş mutfak ekranına düşer.",
+  "İşletme hangi ürünün ne kadar görüntülendiğini ve sipariş sayılarını panelden izler."
+ ],
+ "ornek": "Bir kafede kahve fiyatları bu ay iki kez arttı. Sahibi panelden fiyatları değiştirip yayınlıyor; masadaki QR kartlar aynı kalıyor, misafir okuttuğunda yeni fiyatı görüyor. Matbaaya yeniden baskı yaptırmıyor.",
+ "benzerleri": "Menulux, Restomenum, MONU, FineDine ve kasa yazılımlarının (Adisyo gibi) QR menüleri. Fark: sürümlü yayın ve geri alma, masadan sipariş ve ekip rolleri tek üründe; kasa yazılımına bağlı değil.",
+ "teknoloji": "Tarayıcıda çalışan bir web uygulaması; Laravel (PHP) ve React ile yazıldı. Veri, Almanya'da bir sunucudaki PostgreSQL veritabanında durur. Misafir sayfası hafiftir, uygulama indirmek gerekmez.",
+ "durum": "Ürün canlı: menü, yayın, QR kart, misafir sayfası ve sipariş çalışıyor. Ödeyen müşteri yok; kartla tahsilat kapalı, Türkçe ana sayfa hazırlanıyor, operasyonel hazırlıklar sürüyor.",
+ "para": "Aylık abonelik: Starter ücretsiz, Restaurant 499 TL/ay, Team 999 TL/ay. İlk satış kurulum dahil Restaurant planı, ödeme havale ile.",
+ "ne_degil": "Bir kasa (POS) ya da ödeme sistemi değildir; rezervasyon, kurye ve sadakat programı içermez.",
+ "etiketler": [
+  "web uygulaması",
+  "QR menü",
+  "restoran",
+  "masadan sipariş",
+  "abonelik"
+ ]
+}

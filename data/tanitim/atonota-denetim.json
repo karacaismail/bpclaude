@@ -1,0 +1,27 @@
+{
+ "slug": "atonota-denetim",
+ "bir_cumle": "atonota, WordPress sitesi olan küçük işletmeler ve ajanslar için sitenin hız, arama görünürlüğü, reklam ölçüm kodları ve çerez bandını tek puanla denetleyen bir WordPress eklentisidir.",
+ "tur": "WordPress eklentisi (ücretsiz ve yıllık Pro lisans)",
+ "ad_nereden": null,
+ "kim_icin": "Reklam harcayan Türk KOBİ'lerin WordPress ve WooCommerce sitesi sahipleri, siteyi yöneten serbest geliştiriciler ve 10-50 müşteri sitesi yöneten küçük ajanslar.",
+ "sorun": "Site sahibi sitesinin arama, hız ve ölçüm durumunu bilmiyor. Reklam ölçüm kodu kopuk olabiliyor, harcama ölçülemiyor. Ajanslar her müşteri için aylık durum raporunu elle hazırlıyor; bu müşteri başına 1-2 saat alıyor.",
+ "nasil_calisir": [
+  "Site sahibi eklentiyi WordPress panelinden ücretsiz kurar.",
+  "Eklenti yedi başlıkta kontrol yapar: arama temeli, hız, ölçüm kodları, sosyal etiketler, güvenlik, çerez bandı, eklenti güncelliği.",
+  "Sonuç tek ekranda puan kartı ve Türkçe düzeltme listesi olarak görünür.",
+  "Pro sürüm haftalık otomatik tarama, bozulma e-postası ve PDF rapor ekler."
+ ],
+ "ornek": "Yeni reklam kampanyası öncesi bir mobilya mağazası sahibi eklentiyi çalıştırır; ölçüm kodunun iki kez yüklendiğini ve çerez bandının eksik olduğunu görüp düzeltir.",
+ "benzerleri": "Google Site Kit ücretsizdir ama veri gösterir, denetim yapmaz. ManageWP, MainWP ve WP Umbrella bakım odaklıdır. AgencyAnalytics rapor üretir ama Türkiye için pahalıdır. Fark: Türkçe tek ekran denetim ve çerez bandı kontrolü.",
+ "teknoloji": "WordPress sitesinin içinde çalışan PHP eklentisi. Tarama verisi siteden çıkmaz; hız ölçümü kullanıcı onayıyla Google'ın aracına gider. Lisans doğrulaması küçük bir sunucu hizmetiyle yapılır.",
+ "durum": "Fikir ve iskelet aşamasında. Eklenti kodu yaklaşık yüzde 15 hazır, çalışan ürün yok, eklenti dizinine başvuru yapılmadı. Ödeyen müşteri yok.",
+ "para": "Ücretsiz sürümle kurulum toplanır; Pro lisans tek site için yıllık 1.990 TL (yaklaşık 39 dolar) peşin satılır. Ajanslara 25 siteli lisans ayrıca sunulur.",
+ "ne_degil": "Hukuki uyum danışmanlığı değildir; çerez bandı kontrolü yalnız teknik bir kontroldür. Reklam yönetim aracı da değildir.",
+ "etiketler": [
+  "WordPress eklentisi",
+  "site denetimi",
+  "SEO",
+  "KOBİ",
+  "ajans"
+ ]
+}

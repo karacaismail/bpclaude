@@ -9,7 +9,8 @@ Site: `docs/` klasöründen GitHub Pages ile yayımlanır.
 - **Şablon.** Sekiz telafi edilemez kapı, altı kategoride 26 kriter (0-5, davranışla tanımlanmış çapalar), puandan ayrı tutulan kanıt ölçeği (E0-E4), altı aylık nakit hesabı ve ayrı bir stratejik eksen.
 - **Puanlama.** 45 proje, 132 ticari seçenek. Her seçenek iki bağımsız değerlendirici tarafından puanlandı, itirazlar bir hakem tarafından karara bağlandı, her kriter bütün seçenekler boyunca tek elden kalibre edildi.
 - **Çalışma kitabı.** `docs/indir/bpclaude-secim-sablonu.xlsx`: formüllü. Ağırlık, puan, kanıt kodu ya da finans girdisi değişince sıralama yeniden hesaplanır.
-- **Site.** Özet, sıralama, proje sayfaları, şablon, tanı soruları, duyarlılık, portföy, indirme ve yöntem.
+- **Proje sözlüğü.** Her proje için "bu nedir?" sorusunun beş parçalı yanıtı: ne tür bir şey, kim için, hangi işi görür, nasıl çalışır, bugün nerede. Kaynak belgelerden yazıldı.
+- **Site.** Özet, sıralama, proje sözlüğü ve proje sayfaları, şablon, tanı soruları, duyarlılık, portföy, indirme ve yöntem.
 
 ## Nasıl okunmalı
 

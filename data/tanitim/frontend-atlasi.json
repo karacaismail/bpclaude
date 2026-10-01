@@ -1,0 +1,19 @@
+{"slug": "frontend-atlasi",
+ "bir_cumle": "Frontend Atlası, web sitelerinin görünen yüzünü (frontend) öğrenenler için Türkçe ders ve alıştırma sunan ücretsiz bir site; eğitmenlere de bu tür bir siteyi kendi konularında üretecekleri bir kit satan içerik paketidir.",
+ "tur": "eğitim içeriği (statik site ve satılık kit)",
+ "ad_nereden": null,
+ "kim_icin": "Ücretsiz site frontend öğrenen ve çalışan geliştiriciler için. Para ödeyen taraf, kendi eğitim sitesini kurmak isteyen Türkçe frontend eğitmenleri, kurs üreticileri ve bootcamp'ler.",
+ "sorun": "Türkçe frontend kaynakları ya onlarca saatlik video kurslar ya da genel video platformları. Bir arayüz parçasını ne zaman kullanacağını, alternatifini ve nasıl doğrulayacağını anlatan aranabilir Türkçe bir başvuru kaynağı yok. Eğitmenler de yüzlerce dersi tutarlı biçimde yazmak için aylar harcıyor.",
+ "nasil_calisir": [
+  "Öğrenen siteye girer, bir konuyu (form, menü, tablo gibi) seçer.",
+  "Ders sayfasında parçanın canlı önizlemesini görür, alternatifleriyle karşılaştırır.",
+  "Laboratuvar sayfasında birkaç parçayı birleştirip gerçek bir görevi tarayıcıda dener.",
+  "Eğitmen kiti satın alır; hazır yönerge setiyle kendi konusunda benzer bir siteyi yapay zekâ kodlama araçlarıyla üretir."
+ ],
+ "ornek": "Kariyer değiştiren biri açılır menünün klavyeyle nasıl çalışması gerektiğini arar, ilgili derste canlı örneği dener, sonra laboratuvarda bir form akışını kendi başına kurar. Bir kurs eğitmeni ise kiti alıp kendi müfredat sitesini birkaç haftada çıkarır.",
+ "benzerleri": "Udemy kursları, BTK Akademi ve İngilizce MDN ile web.dev aynı konuyu anlatır. Fark: Türkçe, video yerine gezilebilir başvuru biçiminde ve her derste canlı önizleme ile alıştırma olması.",
+ "teknoloji": "Tamamen statik bir site; sunucu, hesap ve kullanıcı verisi yok. Astro ve TypeScript ile yazılmış, okuma sayfaları JavaScript gerektirmeden açılır. Tarayıcıda çalışır.",
+ "durum": "Site kurulmuş: 160 ders, 160 canlı önizleme ve 24 laboratuvar var. Henüz yayında değil, dersler bağımsız olarak doğrulanmadı, satış ve ödeme düzeni yok. Ödeyen müşteri: 0.",
+ "para": "Site ücretsiz. Gelir eğitmen lisansı (2.990 TL) ve siteyi üreten kitin (899 TL) satışından gelir; ek olarak öğrenenlere 349 TL'lik laboratuvar paketi düşünülüyor.",
+ "ne_degil": "Bir video kurs ya da sertifika programı değildir; canlı ders, eğitmen ya da öğrenci hesabı içermez.",
+ "etiketler": ["eğitim", "frontend", "Türkçe içerik", "statik site", "eğitmen kiti"]}

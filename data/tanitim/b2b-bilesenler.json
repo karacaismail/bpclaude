@@ -1,0 +1,27 @@
+{
+ "slug": "b2b-bilesenler",
+ "bir_cumle": "B2B bileşenler, ihracat yapan üreticilerin web sitesine eklenen, yabancı alıcının kendi dilinde fiyat görüp teklif isteyebildiği hazır ürün sayfası ve animasyon bloklarıdır.",
+ "tur": "hizmet paketi (web sitesine hazır blok ekleme)",
+ "ad_nereden": "B2B, işletmeden işletmeye satış anlamına gelen İngilizce kısaltmadır.",
+ "kim_icin": "İhracat yapan üretici KOBİ'ler; özellikle kurucunun kurumsal web sitesi hizmetini alan mevcut ve yeni müşteriler. Ödemeyi işletme sahibi yapar.",
+ "sorun": "İhracatçının ürün sayfası çoğu zaman tek dillidir; Arapça gibi sağdan sola yazım, minimum sipariş miktarı, kademeli fiyat ve teklif formu yoktur. Yabancı alıcı katalog PDF'iyle kalır, teklif isteyecek yeri bulamaz.",
+ "nasil_calisir": [
+  "Kurucu müşterinin sitesine hazır ürün sayfası bloğunu ekler.",
+  "Blok ürünü beş dile kadar, sağdan sola yazım dahil gösterir.",
+  "Alıcı minimum sipariş miktarını ve kademeli fiyatı kendi para birimiyle görür.",
+  "Alıcı teklif formunu doldurur; hareketli bölümler (açılış, sayaç, galeri) isteğe bağlı ayrı paketle eklenir."
+ ],
+ "ornek": "Bir üreticinin sitesine giren Suudi bir toptancı, ürün sayfasını Arapça açar, 500 adetlik kademe fiyatını görür ve formdan teklif ister.",
+ "benzerleri": "Metronic gibi hazır şablonlar ve GSAP ile LottieFiles'ın ücretsiz animasyon örnekleri var. Fark: ihracat alıcısına göre kurulmuş ürün sayfası, çok dil ve teklif formu hazır gelir.",
+ "teknoloji": "Ziyaretçinin tarayıcısında çalışan web sayfası blokları; hedef yapı Astro ve Tailwind, animasyonlar GSAP ve Lottie ile. Bugünkü demo derlenmemiş durumda; teklifler müşterinin sitesinde kalır.",
+ "durum": "Prototip. 12 farklı tasarım yaklaşımıyla ürün sayfası demosu ve yaklaşık 780 animasyon demosu var; satılabilir bloklara dönüştürülmedi. Ödeyen müşteri yok.",
+ "para": "Site paketine ek olarak tek seferlik satılır: ürün sayfası bloğu 20.000 TL + KDV, hareket paketi 10.000 TL + KDV, yarısı avans.",
+ "ne_degil": "Bağımsız satılan bir şablon ya da e-ticaret sitesi değildir; sipariş ve ödeme almaz.",
+ "etiketler": [
+  "ihracat",
+  "ürün sayfası",
+  "çok dilli site",
+  "animasyon",
+  "hizmet"
+ ]
+}

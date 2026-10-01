@@ -1,0 +1,27 @@
+{
+ "slug": "lifeos",
+ "bir_cumle": "LifeOS, karar yöntemlerini günlük işinde kullanmak isteyen yöneticiler için tarayıcı yan panelinde her gün bir yöntem ve bir soru gösteren ücretsiz bir Chrome uzantısıdır.",
+ "tur": "Chrome uzantısı (yan panel)",
+ "ad_nereden": null,
+ "kim_icin": "LinkedIn'de aktif küçük işletme sahipleri ve yöneticiler; ikincil olarak işletme öğrencileri ve eğitmenler. Uzantı ücretsizdir; para ödeyen, çalışma kâğıdı paketini alan kullanıcıdır.",
+ "sorun": "Yöneticiler SWOT, Eisenhower, Pareto gibi karar yöntemlerini bilir ama gün içinde uygulamaz. Kitap ve kurs ağır gelir; Türkçe ve günlük ritimli kısa bir hatırlatıcı yoktur.",
+ "nasil_calisir": [
+  "Kullanıcı uzantıyı Chrome Web Store'dan kurar; hesap açmaz.",
+  "Yan paneli açınca günün karar yöntemini, kısa özetini ve uygulama adımlarını görür.",
+  "Bir uygulama sorusuyla yöntemi kendi işine bağlar; geçmiş günlere gün seçiciyle bakar.",
+  "İsterse yönteme ait çalışma kâğıdı paketine tek tıkla geçip satın alır."
+ ],
+ "ornek": "Bir kafe sahibi sabah tarayıcısını açıyor. Yan panelde günün yöntemi Eisenhower matrisi; soruya bakıp o günün işlerini acil ve önemli diye ayırıyor.",
+ "benzerleri": "Momentum, Infinity New Tab ve Tabliss yeni sekme ve odak araçlarıdır; İngilizcedir ve karar yöntemi öğretmez. Bu uzantı Türkçedir ve günde tek yönteme odaklanır.",
+ "teknoloji": "Tarayıcıda, Chrome yan panelinde çalışır. React ile yazılmıştır; sunucu yoktur, veriler yalnız kullanıcının kendi tarayıcısında saklanır.",
+ "durum": "Prototip: yan panelde günün yöntemi kartı çalışıyor, 20 yöntem kayıtlı. Mağazada yayın, kullanıcı ve ödeme akışı yok. Ödeyen müşteri: 0.",
+ "para": "Uzantı ücretsizdir. Gelir, kurucunun karar yöntemleri kitabına ait çalışma kâğıdı paketlerinin tek seferlik satışından gelir: paket başına 199 TL, KDV hariç.",
+ "ne_degil": "Ücretli bir verimlilik aboneliği ya da çalışan takip aracı değildir; yeni sekme sayfasının yerini almaz.",
+ "etiketler": [
+  "Chrome uzantısı",
+  "karar yöntemleri",
+  "yan panel",
+  "verimlilik",
+  "ücretsiz"
+ ]
+}

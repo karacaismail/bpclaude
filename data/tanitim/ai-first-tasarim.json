@@ -1,0 +1,27 @@
+{
+ "slug": "ai-first-tasarim",
+ "bir_cumle": "AI First tasarım, frontend geliştiricileri ve ekip liderleri için yapay zekâ özellikli arayüzlerin tasarım sistemini kurmayı anlatan Türkçe bir rehber ve ona eşlik eden kurulum hizmetidir.",
+ "tur": "içerik paketi (e-kitap) ve hizmet paketi",
+ "ad_nereden": "Adı, yapay zekâ öncelikli kurumsal mimari platformu (AI First Enterprise Architecture) vizyonundan geliyor.",
+ "kim_icin": "Türkçe öğrenen frontend geliştiriciler, tasarım sistemi sahibi frontend liderleri ve kendi ürününe yapay zekâ özelliği ekleyen yazılım ekiplerinin yöneticileri.",
+ "sorun": "Ekipler ürünlerine yapay zekâ komut ve asistan alanı eklerken ya hazır sohbet kütüphanelerine bağımlı kalıyor ya da erişilebilirliği bozuyor. Aynı ekran her seferinde farklı renk ve davranışla üretiliyor. Bunu düzenli kurmayı anlatan Türkçe bir yöntem yok.",
+ "nasil_calisir": [
+  "Okur ilk bölümü ücretsiz okur, beğenirse rehberin tamamını satın alır.",
+  "Rehber renk ve ölçü kurallarını tek kaynakta toplamayı (tasarım tokenları) adım adım anlatır.",
+  "Her bölümde Storybook üzerinde çalışan örnek bileşenler ve hazır komut metinleri vardır.",
+  "Daha fazlasını isteyen ekip, bir günlük atölye ya da iki haftalık kurulum hizmeti alabilir."
+ ],
+ "ornek": "Yöneticisi ürüne yapay zekâ asistanı eklenmesini isteyen bir frontend lideri, rehberdeki örnekle renk ve ölçü kurallarını tek dosyada toplar ve asistan alanını mevcut ekranları bozmadan ekler.",
+ "benzerleri": "assistant-ui ve CopilotKit gibi ücretsiz kütüphaneler hazır sohbet bileşeni verir; kurulum yöntemini Türkçe anlatmaz. Çeviri teknik kitaplar ise yapay zekâ arayüzüne odaklanmaz.",
+ "teknoloji": "Örnek kod tarayıcıda çalışan React bileşenleridir; Storybook ile belgelenir. Renk ve ölçü kuralları JSON dosyasından CSS ve tasarım aracı çıktılarına dönüştürülür. Sunucu ya da veri tabanı yok.",
+ "durum": "Prototip. Tasarım sistemi temeli ve bileşen kodu çalışıyor; rehber içeriği yaklaşık yüzde 70 yazılı ama yayın kalitesinde değil. Satış sayfası yok, ödeyen müşteri yok.",
+ "para": "Rehber tek seferlik satılır: 399 TL (KDV dahil). Yanında 25.000 TL atölye ve 120.000 TL kurulum hizmeti var; hiçbiri henüz sınanmadı.",
+ "ne_degil": "Bir kurumsal mimari platformu değildir; o vizyon tek kişiyle yapılamayacağı için bırakıldı.",
+ "etiketler": [
+  "e-kitap",
+  "tasarım sistemi",
+  "frontend",
+  "yapay zekâ arayüzü",
+  "danışmanlık"
+ ]
+}

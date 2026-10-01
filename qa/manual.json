@@ -35,8 +35,33 @@
   "not": "Tek profil vardır: bir stil dosyası ve bir betik. Koşullu ya da gizlenmiş ek paket yoktur; istek sayısı testle sınırlandı."
  },
  {
+  "katman": "Bağımsız QA incelemesi (yalnız okuyan inceleyici)",
+  "durum": "pass",
+  "not": "Çalıştı: 28 bulgu. Yayın öncesi gerekenlerin hepsi ve kalanların çoğu düzeltildi; testi eklenenler otomatik katmanlarda. Açık kalan: hover durumlarının görsel referansı yok."
+ },
+ {
+  "katman": "Yapay zekâ ile görsel inceleme",
+  "durum": "pass",
+  "not": "İnceleyici ve uygulayıcı referans görüntülerine baktı; grafik etiket çakışması ve kırpılmış iki referans böyle bulundu. Deterministik kanıt değildir; piksel karşılaştırmasının yerine geçmez."
+ },
+ {
   "katman": "Görsel referansların sahibi tarafından onayı",
   "durum": "not_run",
-  "not": "Referanslar ilk kez bu teslimde üretildi. Test düzeneğinden kaynaklanan iki hatalı referans düzeltildi; önce ve sonra görüntüleri gerekçesiyle qa/referans-degisiklikleri altında. Depo sahibinin incelemesi bekliyor."
+  "not": "Referanslar sahibin istediği arayüz düzenlemesiyle yeniden üretildi; önce ve sonra görüntüleri qa/ux-oncesi ve qa/ux-sonrasi altında, gerekçe qa/referans-degisiklikleri altında. Sahibin incelemesi bekliyor."
+ },
+ {
+  "katman": "Gerçek tarayıcı yakınlaştırması",
+  "durum": "not_run",
+  "not": "Yüzde 200 yazı boyutu ve metin aralığı otomatik test edildi; tarayıcının sayfa yakınlaştırması ayrıca denenmedi."
+ },
+ {
+  "katman": "Gerçek yazdırma çıktısı",
+  "durum": "not_run",
+  "not": "Yazdırma ortamı Chromium emülasyonuyla otomatik test edildi; kâğıda ya da PDF'e baskı elle denetlenmedi."
+ },
+ {
+  "katman": "Yayındaki adreste koşu (npm run test:canli)",
+  "durum": "not_run",
+  "not": "Bu satır yayından sonra güncellenir."
  }
 ]

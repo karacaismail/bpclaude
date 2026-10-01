@@ -1,0 +1,26 @@
+{
+ "slug": "karar-sihirbazi",
+ "bir_cumle": "Karar sihirbazı, web ajansları için müşterinin doldurduğu koşullu bir formdan teknoloji önerisi, iş kapsamı, kaba süre tahmini ve teklif taslağı çıkaran bir web uygulamasıdır.",
+ "tur": "web uygulaması (abonelikli, planlanan)",
+ "ad_nereden": "Kaynakta çalışma adı koşullu teknoloji yığını karar formudur; yığın, bir yazılımın kurulduğu dil, çatı ve veritabanı setidir.",
+ "kim_icin": "Teklif hazırlayan 2-8 kişilik web ajansları, küçük yazılım evleri ve bağımsız geliştiriciler kullanır; satın alma kararını ajans sahibi verir.",
+ "sorun": "Ajans her yeni müşteriyle 1-2 saatlik keşif görüşmesi yapıyor, notlar dağınık kalıyor ve teklif 3-7 günde çıkıyor. İlk teklif çoğu zaman kapsam hatası taşıyor; önce fiyat isteyen küçük müşteriyle görüşme bile kurulamıyor.",
+ "nasil_calisir": [
+  "Ajans formu kendi sitesine yerleştirir.",
+  "Müşteri projesini anlatan soruları yanıtlar; sonraki sorular önceki yanıtlara göre değişir.",
+  "Sistem kurallara göre önerilen teknolojiyi, modülleri, kaba iş süresini ve riskleri çıkarır.",
+  "Ajans bu sonuçtan kendi logolu teklif taslağını alır (bu adım henüz yazılmadı)."
+ ],
+ "ornek": "Bir kafe sahibi bir ajansın sitesinde e-ticaret sitesi için fiyat ister. Formu on dakikada doldurur; ajans ertesi gün görüşmeye önerilen yapı, kaba süre ve açık sorularla hazırlıklı girer.",
+ "benzerleri": "Tally ve Typeform form kurar ama öneri ya da teklif üretmez; ScoreApp ve Outgrow puanlı pazarlama testleri sunar. Fark: Türkçe teknik soru bankası ve formdan teklif taslağına giden tek akış.",
+ "teknoloji": "Form tarayıcıda çalışan TypeScript ile yazıldı. Sunucu tarafı Python ile taslak durumda; veri bugün hiçbir yerde saklanmıyor. Planda veritabanı sunucuda tutulacak.",
+ "durum": "Çalışan prototip: koşullu form motoru, 8 proje profili ve yaklaşık 100 soru var, canlı demo açık. Kayıt, PDF teklif ve ajans paneli yok; ürün yaklaşık yüzde 30 hazır. Ödeyen müşteri: 0.",
+ "para": "Planlanan model ajanslara aylık abonelik: 490 ₺ ve 990 ₺ paketler, üst pakette 5.000 ₺ tek seferlik kurulum. Önce 3 ajansla 90 günlük pilot denenecek.",
+ "ne_degil": "Kendi başına teklif yazan bir yapay zekâ ya da genel amaçlı bir anket aracı değildir.",
+ "etiketler": [
+  "web uygulaması",
+  "ajans",
+  "teklif hazırlama",
+  "koşullu form"
+ ]
+}

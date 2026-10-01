@@ -1,0 +1,28 @@
+{
+ "slug": "metaframer-kernel",
+ "bir_cumle": "Metaframer-kernel, yeni bir çok müşterili web yazılımı (SaaS) kuran geliştiriciler için müşteri verilerini birbirinden ayıran ve her işlemi kayda geçiren hazır bir arka uç başlangıç kitidir.",
+ "tur": "geliştirici başlangıç kiti (kod lisansı)",
+ "ad_nereden": null,
+ "kim_icin": "Node ya da Python ve Postgres ile yeni bir işletmeye yönelik SaaS kuran tek geliştiriciler, 2-5 kişilik ekipler ve küçük yazılım evleri; lisansı da bunlar öder.",
+ "sorun": "Birden çok şirkete hizmet veren her yazılımda aynı temel katmanlar baştan yazılır: müşterilerin verisini ayırmak, değiştirilemez işlem kaydı tutmak, olayları kaybetmeden iletmek. Elle yazılınca bir satır unutulur ve bir şirketin verisi diğerine görünebilir; iş haftalar sürer.",
+ "nasil_calisir": [
+  "Geliştirici kiti kendi projesine alır ve veri tabanı yapısını kurar.",
+  "Her istek imzalı bir müşteri bilgisiyle gelir; veri tabanı yalnız o müşterinin satırlarını gösterir.",
+  "Yapılan her değişiklik silinemeyen bir işlem kaydına yazılır.",
+  "Dışarıya gidecek olaylar işlemle birlikte kaydedilir, böylece kaybolmaz.",
+  "Örnek müşteri modülü ve hazır istemci kodu üzerine kendi ürününü ekler."
+ ],
+ "ornek": "İki kişilik bir ekip muhasebe bürolarına satacağı bir uygulama yazıyor. Kiti kurup ilk gün her büronun verisinin ayrı kaldığı bir temel elde ediyor; asıl ürün ekranlarına bir hafta erken başlıyor.",
+ "benzerleri": "Supabase bu güvenliği ücretsiz verir ama uygulamayı kendi platformuna bağlar; Frappe ve NocoBase kendi veri modelini dayatır. Bu kit herhangi bir Postgres'te çalışır, platforma bağlamaz.",
+ "teknoloji": "Sunucuda çalışır; Postgres 16 veri tabanı, JavaScript çekirdek ve Python ile JS sunucu örnekleri. Veri, kullanıcının kendi veri tabanında durur. Kod açık kaynak (AGPL-3.0).",
+ "durum": "Erken prototip. Tek uçtan uca çalışan parça müşteri kaydı oluşturma; geniş test seti var. Tek komutla çalışan demo, rehber, fiyat sayfası ve ödeme yok. Ödeyen müşteri: 0.",
+ "para": "Tek seferlik ticari lisans: tek geliştirici için 149 dolar, 5 kişilik ekip için 349 dolar, 12 ay güncelleme. Açık kaynak çekirdek ücretsiz kalır.",
+ "ne_degil": "Hazır bir uygulama ya da barındırma hizmeti değildir; geliştiricinin üzerine kendi ürününü yazdığı temel koddur.",
+ "etiketler": [
+  "geliştirici aracı",
+  "başlangıç kiti",
+  "SaaS altyapısı",
+  "veri güvenliği",
+  "Postgres"
+ ]
+}

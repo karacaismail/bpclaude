@@ -2,28 +2,38 @@
 (function () {
   "use strict";
 
-  // Dar ekranda gezinmeyi kapalı başlat; düğme yalnız betik çalışırsa görünür.
+  var root = document.documentElement;
+  var WIDE = (getComputedStyle(root).getPropertyValue("--bp-wide") || "").trim() || "60rem";
+
+  // Dar ekran menüsü. Betiksiz durumda "Menü" bir bağlantıdır ve listeyi :target ile açar.
+  // Betik çalışınca aynı yerde gerçek bir düğmeye dönüşür; sayfa düzeni kaymaz.
   var nav = document.querySelector(".site-nav");
-  var toggle = document.querySelector(".nav-toggle");
-  if (nav && toggle) {
-    toggle.hidden = false;
-    nav.classList.add("is-collapsed");
+  var link = document.querySelector("a.nav-toggle");
+  if (nav && link) {
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = link.className;
+    toggle.textContent = link.textContent;
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.setAttribute("aria-controls", "site-nav-list");
+    link.parentNode.replaceChild(toggle, link);
+    var setOpen = function (open) {
+      toggle.setAttribute("aria-expanded", String(open));
+      nav.classList.toggle("is-open", open);
+    };
     toggle.addEventListener("click", function () {
-      var open = toggle.getAttribute("aria-expanded") === "true";
-      toggle.setAttribute("aria-expanded", String(!open));
-      nav.classList.toggle("is-collapsed", open);
+      setOpen(toggle.getAttribute("aria-expanded") !== "true");
     });
     document.addEventListener("keydown", function (ev) {
-      if (ev.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
-        toggle.setAttribute("aria-expanded", "false");
-        nav.classList.add("is-collapsed");
-        toggle.focus();
-      }
+      if (ev.key !== "Escape" || toggle.getAttribute("aria-expanded") !== "true") return;
+      var a = document.activeElement;
+      if (a !== toggle && !nav.contains(a)) return;
+      setOpen(false);
+      toggle.focus();
     });
   }
 
-  // Kaydırma bölgeleri: içerik taşmıyorsa klavye durağı olmasın; taşıyorsa klavyeyle kaydırılabilsin.
-  // Bölge ya da içeriği boyut değiştirdiğinde (ilk yerleşim, yön değişimi, yazı büyütme, açılan bölüm) yeniden hesaplanır.
+  // Kaydırma bölgeleri: içerik taşıyorsa klavye durağı olur ve ok tuşlarıyla kayar; taşmıyorsa durak değildir.
   var regions = Array.prototype.slice.call(document.querySelectorAll(".table-wrap, .figure__scroll"));
   function syncRegions() {
     regions.forEach(function (r) {
@@ -43,7 +53,6 @@
         if (r.firstElementChild) ro.observe(r.firstElementChild);
       });
     }
-    // Odaklanan bölge ok tuşlarıyla yatay kayar; davranış bütün tarayıcılarda aynı olsun diye açıkça işlenir.
     regions.forEach(function (r) {
       r.addEventListener("keydown", function (ev) {
         if (ev.target !== r || ev.altKey || ev.ctrlKey || ev.metaKey) return;
@@ -53,6 +62,54 @@
         r.scrollLeft += step;
       });
     });
+  }
+
+  // Türkçe harfleri sadeleştirir: "İK", "ik" ve "IK" aynı sonucu verir. tools/sitelib.py içindeki fold() ile aynıdır.
+  var FOLD = { "İ": "i", "I": "i", "ı": "i", "Ş": "s", "ş": "s", "Ğ": "g", "ğ": "g", "Ü": "u", "ü": "u", "Ö": "o", "ö": "o", "Ç": "c", "ç": "c", "Â": "a", "â": "a", "Î": "i", "î": "i", "Û": "u", "û": "u" };
+  function fold(s) {
+    return s.normalize("NFC").replace(/[İIıŞşĞğÜüÖöÇçÂâÎîÛû]/g, function (c) { return FOLD[c]; }).toLowerCase();
+  }
+  function debounce(fn, ms) {
+    var t;
+    return function () { clearTimeout(t); t = setTimeout(fn, ms); };
+  }
+
+  // Proje sözlüğü: arama ve tür süzgeci.
+  var sozluk = document.getElementById("sozluk-arac");
+  if (sozluk) {
+    var items = Array.prototype.slice.call(document.querySelectorAll("#sozluk-liste .glossary > li"));
+    var groups = Array.prototype.slice.call(document.querySelectorAll("#sozluk-liste .glossary__group"));
+    var sq = document.getElementById("sq");
+    var sonuc = document.getElementById("sozluk-sonuc");
+    var bos = document.getElementById("sozluk-bos");
+    var gs = { q: "", grup: "" };
+    var filterGlossary = function () {
+      var n = 0;
+      items.forEach(function (li) {
+        var ok = (!gs.grup || li.dataset.grup === gs.grup) && (!gs.q || li.dataset.text.indexOf(gs.q) !== -1);
+        li.hidden = !ok;
+        if (ok) n += 1;
+      });
+      groups.forEach(function (g) { g.hidden = !g.querySelector(".glossary > li:not([hidden])"); });
+      if (bos) bos.hidden = n !== 0;
+      var shown = n;
+      clearTimeout(filterGlossary.t);
+      filterGlossary.t = setTimeout(function () { if (sonuc) sonuc.textContent = shown + " proje"; }, 300);
+    };
+    sozluk.hidden = false;
+    var spanel = document.getElementById("sozluk-panel");
+    var sozet = document.getElementById("sozluk-ozet");
+    if (spanel && window.matchMedia("(min-width: " + WIDE + ")").matches) spanel.open = true;
+    sozluk.addEventListener("submit", function (ev) { ev.preventDefault(); });
+    sozluk.addEventListener("click", function (ev) {
+      var btn = ev.target.closest(".chip");
+      if (!btn) return;
+      gs.grup = btn.dataset.gfilter || "";
+      Array.prototype.forEach.call(sozluk.querySelectorAll(".chip"), function (c) { c.setAttribute("aria-pressed", String(c === btn)); });
+      if (sozet) sozet.textContent = gs.grup ? gs.grup.toLocaleLowerCase("tr") : "tümü";
+      filterGlossary();
+    });
+    if (sq) sq.addEventListener("input", function () { gs.q = fold(sq.value.trim()); filterGlossary(); });
   }
 
   // Sıralama sayfası: süzme, arama ve sıralama.
@@ -70,12 +127,7 @@
   var FILTERS = ["karar", "nsinif", "tur"];
   var PARAM = { karar: "karar", nsinif: "nakit", tur: "tur" };
   var state = { karar: "", nsinif: "", tur: "", sort: "yatirim", q: "" };
-
-  // Türkçe harfleri sadeleştirir: "İK", "ik" ve "IK" aynı sonucu verir. Derleme tarafındaki fold() ile aynıdır.
-  var FOLD = { "İ": "i", "I": "i", "ı": "i", "Ş": "s", "ş": "s", "Ğ": "g", "ğ": "g", "Ü": "u", "ü": "u", "Ö": "o", "ö": "o", "Ç": "c", "ç": "c", "Â": "a", "â": "a", "Î": "i", "î": "i", "Û": "u", "û": "u" };
-  function fold(s) {
-    return s.replace(/[İIıŞşĞğÜüÖöÇçÂâÎîÛû]/g, function (c) { return FOLD[c]; }).toLowerCase();
-  }
+  var lastUrl = location.search;
 
   function chipsOf(kind) {
     return form ? Array.prototype.slice.call(form.querySelectorAll(kind === "sort" ? ".chip[data-sort]" : '.chip[data-filter="' + kind + '"]')) : [];
@@ -88,14 +140,16 @@
     chipsOf("sort").forEach(function (c) { c.setAttribute("aria-pressed", String(c.dataset.sort === state.sort)); });
   }
 
-  // Adres çubuğuna yalnız düğme seçimleri yazılır; arama metni adrese konmaz.
+  // Adres çubuğuna yalnız düğme seçimleri yazılır ve yalnız değiştiğinde; arama metni adrese konmaz.
   function writeUrl() {
     if (!window.history || !history.replaceState) return;
     var p = new URLSearchParams();
     FILTERS.forEach(function (k) { if (state[k]) p.set(PARAM[k], state[k]); });
     if (state.sort !== "yatirim") p.set("sirala", state.sort);
-    var s = p.toString();
-    try { history.replaceState(null, "", location.pathname + (s ? "?" + s : "") + location.hash); } catch (err) { /* dosyadan açıldıysa adres değişmez */ }
+    var s = p.toString() ? "?" + p.toString() : "";
+    if (s === lastUrl) return;
+    lastUrl = s;
+    try { history.replaceState(null, "", location.pathname + s + location.hash); } catch (err) { /* dosyadan açıldıysa adres değişmez */ }
   }
 
   function readUrl() {
@@ -109,7 +163,11 @@
     if (p.get("sirala") && has("sort", p.get("sirala"))) state.sort = p.get("sirala");
   }
 
-  function apply() {
+  var announceCount = debounce(function () {
+    if (count) count.textContent = rows.filter(function (r) { return !r.hidden; }).length + " seçenek gösteriliyor";
+  }, 300);
+
+  function apply(immediate) {
     var shown = 0;
     rows.forEach(function (r) {
       var ok = FILTERS.every(function (k) { return !state[k] || r.dataset[k] === state[k]; }) &&
@@ -121,7 +179,10 @@
     rows.slice().sort(function (a, b) {
       return dir[key] * (parseFloat(a.dataset[key]) - parseFloat(b.dataset[key])) || (parseFloat(a.dataset.yatirim) - parseFloat(b.dataset.yatirim));
     }).forEach(function (r) { list.appendChild(r); });
-    if (count) count.textContent = shown + " seçenek gösteriliyor";
+    if (count) {
+      if (immediate) count.textContent = shown + " seçenek gösteriliyor";
+      else announceCount();
+    }
     if (empty) empty.hidden = shown !== 0;
     if (ozet && form) {
       var parts = [];
@@ -145,13 +206,13 @@
       if (btn.dataset.filter) state[btn.dataset.filter] = btn.dataset.value;
       if (btn.dataset.sort) state.sort = btn.dataset.sort;
       syncChips();
-      apply();
+      apply(true);
     });
   }
   if (q) {
     q.addEventListener("input", function () {
       state.q = fold(q.value.trim());
-      apply();
+      apply(false);
     });
   }
   if (reset) {
@@ -160,14 +221,14 @@
       state.q = "";
       if (q) q.value = "";
       syncChips();
-      apply();
+      apply(true);
       if (q) q.focus();
     });
   }
 
   readUrl();
   var filtered = FILTERS.some(function (k) { return state[k]; }) || state.sort !== "yatirim";
-  if (panel && (window.matchMedia("(min-width: 60rem)").matches || filtered)) panel.open = true;
+  if (panel && (window.matchMedia("(min-width: " + WIDE + ")").matches || filtered)) panel.open = true;
   syncChips();
-  apply();
+  apply(true);
 })();

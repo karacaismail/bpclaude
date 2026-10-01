@@ -1,0 +1,27 @@
+{
+ "slug": "ajan-gozlem-paneli",
+ "bir_cumle": "Ajan Gözlem Paneli, yapay zekâ kodlama ajanı kullanan Mac geliştiricileri için ajanların harcadığı parayı ve makinenin bellek durumunu tek ekranda gösteren yerel bir paneldir.",
+ "tur": "masaüstü panel (ajan kaynak koruyucunun Pro özelliği)",
+ "ad_nereden": "Eski çalışma adında bir yapay zekâ modelinin adı geçiyordu ama kodun o modelle bağlantısı yok. Yeni ad yaptığı işi anlatıyor.",
+ "kim_icin": "16 GB Mac'te Claude Code ve Codex'i yan yana kullanan bağımsız geliştiriciler. Ayrı satılmaz; ajan kaynak koruyucunun Pro sürümünü alanlar kullanır.",
+ "sorun": "Geliştirici hangi ajanın ne kadar token ve para harcadığını, oturum kayıtlarının ne kadar yer tuttuğunu ve makinenin belleğini tek yerde göremiyor. Üç ayrı araç açıyor ya da hiç bakmıyor; kota sınırına ya da donmaya habersiz yakalanıyor.",
+ "nasil_calisir": [
+  "Bilgisayardaki ajan oturum kayıtlarını okur; internete bağlanmaz.",
+  "Ajan ve proje bazında gün, hafta ve ay için harcanan token ile tahmini maliyeti gösterir.",
+  "Aynı ekranda bellek baskısını ve yeni ajan başlatmanın uygun olup olmadığını gösterir.",
+  "Ücretsiz sürüm durumu statik bir rapor sayfası olarak dışa aktarır."
+ ],
+ "ornek": "Bir geliştirici ay ortasında panele bakar: bir proje bu ay en çok harcayan proje olmuş, bellek de sarıda. Yeni ajan açmak yerine eski oturumları kapatır ve bütçe uyarısı kurar.",
+ "benzerleri": "ccusage, CodexBar ve Claude Code Usage Monitor ücretsizdir ve kullanımı gösterir; Grafana ekipler için kurulum ister. Bu panel maliyeti ve bellek durumunu aynı ekranda, ağsız gösterir.",
+ "teknoloji": "Arayüz React ile yazılmış bir web sayfası; Mac'te koruyucu uygulamasının içinde açılacak. Verileri koruyucunun Python çekirdeği bilgisayardaki kayıtlardan okuyacak. Veri makineden çıkmaz.",
+ "durum": "Bugün yalnız sabit örnek veriyle çalışan küçük bir görsel iskelet. Gerçek veri okuyucusu, testler ve tasarım yok. Beta kullanıcısı ve ödeyen müşteri yok.",
+ "para": "Ayrı satılmaz. Ajan kaynak koruyucunun Pro sürümüne katılır: tek seferlik 19 dolar, lansmanda 15 dolar. Değeri Pro satışına katkısıyla ölçülür.",
+ "ne_degil": "Ayrı satılan bir ürün ya da ekipler için bulut izleme hizmeti değildir.",
+ "etiketler": [
+  "Mac uygulaması",
+  "maliyet takibi",
+  "yapay zekâ ajanları",
+  "geliştirici aracı",
+  "pano"
+ ]
+}

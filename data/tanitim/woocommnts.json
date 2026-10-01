@@ -1,0 +1,27 @@
+{
+ "slug": "woocommnts",
+ "bir_cumle": "WooCommnts, WordPress ile kurulmuş Türk e-ticaret sitelerinde ürün sayfasına banka taksit tablosu ve kapıda ödeme kuralları eklemesi planlanan bir WordPress eklentisidir.",
+ "tur": "WordPress eklentisi (WooCommerce için)",
+ "ad_nereden": null,
+ "kim_icin": "Ayda 50-500 sipariş alan, kapıda ödeme sunan küçük Türk mağaza sahipleri ve birçok mağaza kuran ajanslar kullanır. Ek özellikler için mağaza sahibi ya da ajans yıllık ücret öder.",
+ "sorun": "Mağaza sahibi her bankanın taksit oranını ürün sayfasında göstermek, bazı kategorilerde taksiti sınırlamak ve kapıda ödemeye tutar ya da il kuralı koymak ister. Bugün bunu tema içinde elle tablo yazarak ya da tek bir ödeme sağlayıcısına bağlı eklentiyle yapar; oranlar değiştikçe elle güncellemek gerekir.",
+ "nasil_calisir": [
+  "Mağaza sahibi eklentiyi WordPress yönetim panelinden kurar.",
+  "Bankaların taksit oranlarını bir tablo dosyasıyla içe aktarır.",
+  "Kategori bazında en fazla taksit sayısını ve kapıda ödeme kurallarını ayar sayfasından belirler.",
+  "Müşteri ürün sayfasında taksit tablosunu, ödeme adımında kapıda ödeme ek ücretini görür."
+ ],
+ "ornek": "Kapıda ödemede iade yaşayan bir giyim mağazası, kapıda ödemeyi belli bir tutarın üstündeki siparişlere ek ücretle açar ve ürün sayfasında hangi bankada kaç taksit olduğunu gösterir.",
+ "benzerleri": "WordPress eklenti dizininde PayTR Taksit Tablosu ve küçük sanal POS eklentileri var; bunlar kendi ödeme sağlayıcısına bağlı. Fark: ödeme sağlayıcısından bağımsız tablo ve kapıda ödeme kuralları.",
+ "teknoloji": "Mağazanın kendi WordPress sunucusunda çalışır, PHP ile yazıldı. Oranlar ve kurallar mağazanın kendi veritabanında durur.",
+ "durum": "Yalnız iskelet var: yorum gösterme eklentisinin temel yapısı ve birkaç birim testi, yaklaşık yüzde 45. Taksit ve kapıda ödeme özelliği henüz yazılmadı; eklenti yayında değil, ödeyen müşteri yok.",
+ "para": "Ücretsiz çekirdek sürüm ve yıllık lisanslı Pro sürüm: tek site 1.490 TL/yıl + KDV, ajans için 10 site 2.990 TL/yıl.",
+ "ne_degil": "Bir ödeme sağlayıcısı ya da sanal POS değildir; ödemeyi almaz, yalnız taksit ve kuralları gösterir.",
+ "etiketler": [
+  "WordPress eklentisi",
+  "WooCommerce",
+  "taksit",
+  "kapıda ödeme",
+  "e-ticaret"
+ ]
+}

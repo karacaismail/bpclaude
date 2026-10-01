@@ -1,0 +1,28 @@
+{
+ "slug": "qral",
+ "bir_cumle": "qral, not alan, yapay zekâ sohbetine kaynak yapıştıran ve ders için QR kod hazırlayan kişiler için açık sayfanın başlığını ve adresini istenen biçimde kopyalayan ve QR kod üreten bir Chrome uzantısıdır.",
+ "tur": "Chrome uzantısı (tarayıcı eklentisi)",
+ "ad_nereden": "Adı, kaynak belgede QRL olarak kısaltılan Quick Reference Links (hızlı başvuru bağlantıları) ifadesinden gelir.",
+ "kim_icin": "Notlarına ve yapay zekâ sohbetlerine düzenli bağlantı yapıştıran bilgi çalışanları, ders bağlantılarını QR koda çeviren öğretmenler ve küçük ekipler. Çekirdek ücretsiz; ek özellikler için birey ya da okul öder.",
+ "sorun": "Bir sayfayı nota ya da yapay zekâ sohbetine düzgün bir bağlantı olarak eklemek için başlık ve adres ayrı ayrı kopyalanıp elle biçimlendiriliyor. QR için ayrı bir araç gerekiyor. Bu iş bugün ücretsiz araçlarla yapılıyor; kayıp para değil, iki araç arasında gidip gelmek ve hazır biçim şablonu olmaması.",
+ "nasil_calisir": [
+  "Kullanıcı uzantıyı Chrome'a kurar; araç çubuğunda bir simge belirir.",
+  "Bir sayfadayken simgeye, sağ tık menüsüne ya da klavye kısayoluna basar.",
+  "Biçimi seçer (Markdown, HTML, BBCode, düz metin, JSON); başlık ve adres o biçimde panoya kopyalanır.",
+  "İsterse aynı pencereden sayfa için QR kod üretir ya da açık sekmelerin hepsini tek seferde kopyalar.",
+  "Ayarlar ve son kopyalamalar yalnız kullanıcının tarayıcısında saklanır."
+ ],
+ "ornek": "Bir öğretmen derste kullanacağı beş web sayfasını açar, her biri için QR kod üretip çalışma kâğıdına koyar. Aynı akşam bir analist okuduğu makaleyi tek kısayolla başlık ve adresiyle Markdown olarak notuna yapıştırır.",
+ "benzerleri": "Tab Copy, Copy as Markdown ve Obsidian Web Clipper bağlantı kopyalar; QR Code Generator ve Chrome'un kendi QR özelliği QR üretir. Hepsi ücretsiz. qral'ın farkı ikisini tek pencerede, şablonlarla ve 33 dilde sunması.",
+ "teknoloji": "Kullanıcının tarayıcısında çalışır; sunucusu yoktur. Düz JavaScript ile, Chrome'un güncel uzantı biçimiyle (Manifest V3) yazılmıştır. Ayarlar ve geçmiş tarayıcıda durur.",
+ "durum": "Prototip: kodun işlevi yaklaşık yüzde 80 hazır, yayın hazırlığı eksik. Chrome mağazasında yayında değil; ödeme akışı ve testler yok. Ödeyen müşteri: 0.",
+ "para": "Ücretsiz çekirdek; Pro sürüm tek seferlik 4,99 euro (yaklaşık 249 TL). Öğretmenlere yıllık 14,99 euro Sınıf Paketi düşünülüyor. Beklenen gelir çok küçük.",
+ "ne_degil": "Bir QR kod tarayıcısı ya da sayfa arşivleyici değildir; sayfanın tamamını kaydetmez, başlık ve adresi biçimlendirip kopyalar.",
+ "etiketler": [
+  "tarayıcı uzantısı",
+  "QR kod",
+  "not alma",
+  "Markdown",
+  "öğretmen"
+ ]
+}

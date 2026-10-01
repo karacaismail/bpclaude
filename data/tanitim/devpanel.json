@@ -1,0 +1,26 @@
+{
+ "slug": "devpanel",
+ "bir_cumle": "devpanel, React ile yönetim paneli yazan yazılım ekipleri için yıkıcı işlem onayı, denetim günlüğü ve yetki tablosu gibi test edilmiş panel parçalarını projeye yerleştiren sabit kapsamlı bir hizmettir.",
+ "tur": "hizmet paketi (entegrasyon)",
+ "ad_nereden": "devpanel, İngilizce developer panel yani geliştirici paneli sözünün kısaltmasıdır.",
+ "kim_icin": "10-50 kişilik yazılım ya da finans teknolojisi şirketlerinde iç araç geliştiren teknik lider ve geliştiriciler kullanır; hizmet bedelini şirket öder.",
+ "sorun": "Her projede yönetim paneli, yetki tablosu ve denetim günlüğü sıfırdan yeniden yazılıyor. Silme gibi geri dönüşsüz işlemlerin onay akışı her ekipte farklı ve çoğu zaman test edilmemiş kalıyor.",
+ "nasil_calisir": [
+  "Ekip panelinde eksik olan onay, denetim ya da yetki ihtiyacını tarif eder.",
+  "Kurucu test edilmiş bileşenleri ekibin React projesine yerleştirir.",
+  "Silme gibi işlemler adını yazarak onaylanır; her işlem kimin yaptığıyla birlikte değiştirilemez biçimde kaydedilir.",
+  "Üç iş gününün sonunda bileşenler testleriyle birlikte teslim edilir."
+ ],
+ "ornek": "Bir ödeme şirketinin iç panelinde bir çalışan yanlışlıkla müşteri kaydı silmiş. Ekip üç günlük paketle isimle onay, işlem günlüğü ve rol bazlı yetki tablosunu kendi paneline ekletir.",
+ "benzerleri": "Retool panel yapmayı abonelikle sunar; Refine ve shadcn ücretsiz, Metronic 49 dolarlık şablondur. Fark: hazır şablon değil, onay ve denetim desenlerinin mevcut projeye testli kurulumu.",
+ "teknoloji": "Bileşenler tarayıcıda çalışan React ve TypeScript ile yazıldı. Prototiplerin sunucusu ve veritabanı yoktur; tüm veri sahtedir. Entegrasyonda veri müşterinin kendi sisteminde kalır.",
+ "durum": "Altı paralel prototip var; en olgununda 31 ekran ve 116 test bulunuyor. Tek ana sürüm seçilmedi, lisans dosyası yok, veri sahte. Ödeyen ya da pilot müşteri: 0.",
+ "para": "Sabit fiyatlı hizmet bedeli: üç iş günlük entegrasyon paketi 36.000 ₺ artı KDV.",
+ "ne_degil": "Satın alınıp indirilen hazır bir yönetim paneli şablonu ya da çalışan bir panel yazılımı değildir.",
+ "etiketler": [
+  "hizmet",
+  "yönetim paneli",
+  "React",
+  "denetim günlüğü"
+ ]
+}

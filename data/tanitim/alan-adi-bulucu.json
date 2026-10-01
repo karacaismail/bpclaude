@@ -1,0 +1,28 @@
+{
+ "slug": "alan-adi-bulucu",
+ "bir_cumle": "Alan adı bulucu, yeni ürün ya da şirket adı arayan Türk kurucular ve ajanslar için aday adları boş .com durumu, Türkçe okunuş puanı ve marka sınıfı uyarısıyla kısa listeye çeviren bir web aracıdır.",
+ "tur": "web aracı (tarayıcıda çalışan)",
+ "ad_nereden": null,
+ "kim_icin": "Yeni bir ürün ya da şirket adı arayan Türk girişimciler, çok ürün çıkaran bağımsız geliştiriciler ve müşterisi için ad arayan küçük ajanslar; ücretli paketi bunlar alır.",
+ "sorun": "Akla gelen her adın .com'u dolu çıkar; Türkçe okunuşu ya da yazımı sorunlu olur; aynı sınıfta benzer marka olduğu çoğu zaman başvurudan sonra öğrenilir. Yanlış ad başvuru ücretini ve yeniden logo ile site maliyetini yakar, kurucuya günler kaybettirir.",
+ "nasil_calisir": [
+  "Kullanıcı kök kelimelerini girer ya da hazır aday listesine bakar.",
+  "Araç her aday için .com adının boş olup olmadığını sorgular.",
+  "Adayları uzunluk, okunuş ve yazım karışıklığına göre puanlar.",
+  "Seçilen marka sınıfı için resmi marka araştırma sayfasına hazır bağlantı verir.",
+  "Kullanıcı beğenmediklerinin üstünü çizer, kısa listeyi dosya olarak indirir."
+ ],
+ "ornek": "Bir kurucu yeni muhasebe uygulamasına ad arıyor. On kök kelime giriyor; araç .com'u boş, telefonda kolay söylenen beş ad öneriyor. Kurucu ilk ikisini marka araştırma bağlantısından kontrol edip birini seçiyor.",
+ "benzerleri": "Namelix ücretsiz ad üretir, Lean Domain Search boş .com bulur, TÜRKPATENT marka araştırması ayrı sitededir. Bu üçünü, Türkçe okunuş puanını da ekleyerek tek listede birleştiren bir araç bulunmadı.",
+ "teknoloji": "Tarayıcıda çalışan tek sayfalık arayüz; seçimler kullanıcının tarayıcısında saklanır. Canlı boşluk sorgusu için küçük bir bulut ara katmanı planlanıyor; veri tabanı yok.",
+ "durum": "Çalışan iç araç. 950 adaylı, puanlı liste herkese açık sayfada; canlı boşluk sorgusu, aday üretici, Türkçe puan ve ödeme henüz yok. Ödeyen müşteri: 0.",
+ "para": "Günde 20 sorgu ücretsiz; 30 günlük sınırsız kullanım ve dışa aktarma için tek seferlik 199 TL proje paketi. Ajanslara yıllık 499 TL paket planlanıyor.",
+ "ne_degil": "Bir alan adı satış ya da kayıt firması değildir; marka tescili yapmaz ve hukuki görüş vermez.",
+ "etiketler": [
+  "alan adı",
+  "marka adı",
+  "web aracı",
+  "girişimci",
+  "Türkçe"
+ ]
+}

@@ -6,6 +6,7 @@
   --c-paper: #fbfbf8;
   --c-surface: #ffffff;
   --c-sunken: #efefe9;
+  --c-band: #f4f2ec;
   --c-ink: #15171c;
   --c-ink-2: #3b3f48;
   --c-muted: #5a5e66;
@@ -35,6 +36,7 @@
   --fs-xl: 1.375rem;
   --fs-2xl: clamp(1.625rem, 1.2rem + 2.1vw, 2.25rem);
   --fs-3xl: clamp(1.875rem, 1.25rem + 3.2vw, 3rem);
+  --fs-answer: clamp(1.25rem, 1.05rem + 1vw, 1.625rem);
   --lh-tight: 1.2;
   --lh-snug: 1.38;
   --lh-body: 1.58;
@@ -59,14 +61,34 @@
   --r-sm: 3px;
   --r-md: 6px;
   --r-pill: 999px;
-  --line: 1px solid var(--c-line);
-  --line-strong: 1px solid var(--c-line-strong);
+  --line: var(--bw-1) solid var(--c-line);
+  --line-strong: var(--bw-1) solid var(--c-line-strong);
 
   /* etkileşim */
   --hit: 2.75rem;
   --focus-ring: 3px solid var(--c-focus);
   --focus-offset: 2px;
   --meter-h: 0.625rem;
+  --bw-1: 1px;
+  --sr-size: 1px;
+  --bw-2: 2px;
+  --bw-mark: 1.5px;
+  --r-xs: 1px;
+  --r-2xs: 2px;
+  --pip-gap: 3px;
+  --pad-tag-y: 0.2rem;
+  --hatch-line: 2px;
+  --hatch-gap: 5px;
+  --chev-shift: -2px;
+  --chart-fs: 12px;
+  --chart-fs-num: 10px;
+  --chart-stroke: 1;
+  --chart-stroke-strong: 1.5;
+  /* JS bu değeri okur; medya sorgularında aynı değer yazılıdır (CSS değişkeni medya sorgusunda kullanılamaz). */
+  --bp-wide: 60rem;
+  --funnel-h: 0.75rem;
+  --step-size: 2rem;
+  --toc-h: 3.75rem;
 }
 
 @media (any-pointer: coarse) {
@@ -80,6 +102,7 @@
     --c-paper: #131417;
     --c-surface: #1b1d21;
     --c-sunken: #0c0d0f;
+    --c-band: #18191c;
     --c-ink: #ecedef;
     --c-ink-2: #c9cbd1;
     --c-muted: #a2a6ae;
@@ -106,6 +129,7 @@
     --c-paper: Canvas;
     --c-surface: Canvas;
     --c-sunken: Canvas;
+    --c-band: Canvas;
     --c-ink: CanvasText;
     --c-ink-2: CanvasText;
     --c-muted: CanvasText;
@@ -123,5 +147,23 @@
     --c-focus: Highlight;
     --c-meter-proven: CanvasText;
     --c-meter-claim: CanvasText;
+  }
+}
+
+/* Yazdırma: koyu tema açık olsa da kâğıda açık tema renkleriyle basılır. */
+@media print {
+  :root {
+    --c-paper: #ffffff;
+    --c-surface: #ffffff;
+    --c-sunken: #f2f2f2;
+    --c-band: #ffffff;
+    --c-ink: #000000;
+    --c-ink-2: #222222;
+    --c-muted: #444444;
+    --c-line: #bbbbbb;
+    --c-line-strong: #777777;
+    --c-brand: #8a2f08;
+    --c-meter-proven: #000000;
+    --c-meter-claim: #666666;
   }
 }

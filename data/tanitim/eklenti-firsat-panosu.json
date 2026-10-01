@@ -1,0 +1,27 @@
+{
+ "slug": "eklenti-firsat-panosu",
+ "bir_cumle": "Eklenti Fırsat Panosu, eklenti yazan tek kişilik geliştiriciler için 28 eklenti pazarını aynı ölçüyle karşılaştıran ücretsiz bir pano ve aylık ücretli bir fırsat bültenidir.",
+ "tur": "içerik ürünü (web panosu ve e-posta bülteni)",
+ "ad_nereden": null,
+ "kim_icin": "WordPress, Shopify, Chrome, VS Code gibi pazarlara eklenti yazan, Türkiye'de çalışan tek kişilik geliştirici; ücreti kendi kartıyla ya da havaleyle kendisi öder.",
+ "sorun": "Tek başına çalışan geliştirici hangi pazarda, hangi konuda eklenti yapacağını içgüdüyle seçiyor. Yanlış seçim bir ila üç aylık emeği boşa harcatıyor. Bugün Reddit ve forumları tek tek taramak dağınık ve yorucu; genel trend siteleri eklentiye özel değil.",
+ "nasil_calisir": [
+  "Geliştirici ücretsiz panoda 28 eklenti pazarını kullanıcı sayısı, ödeme alışkanlığı ve rekabete göre yan yana görür.",
+  "E-posta adresini bırakıp ilk bülten sayısını ücretsiz alır.",
+  "Ücretli bültende her ay 5 puanlı fırsat kartı ve girilmemesi gereken bir kategori gelir.",
+  "İsteyen, kendi araştırmasını yapmak için tek seferlik keşif paketini (form, şablon, puanlama çerçevesi) satın alır."
+ ],
+ "ornek": "Bir geliştirici bir WordPress SEO eklentisi mi yoksa bir e-ticaret entegrasyonu mu yapsın, karar veremiyor. Panoda iki pazarı karşılaştırıyor, bültenin bu ayki kartlarına bakıp birini seçiyor.",
+ "benzerleri": "Exploding Topics trend verisi, Starter Story fikir veritabanı sunar; ikisi de eklenti pazarlarına özel değildir. Bu proje Türkçedir ve yalnız eklenti pazarlarına odaklanır.",
+ "teknoloji": "Pano tarayıcıda açılan statik bir web sayfasıdır; bülten e-postayla gider. Veri, yapay zekâ destekli araştırmayla toplanan tablolarda durur; kaynak etiketi eklenecek.",
+ "durum": "Fikir ve taslak aşaması: yöntem belgeleri ve pano taslağı var, ama pano yayında değil, çalışan uygulama ve abone yok. Ödeyen müşteri: 0.",
+ "para": "Aylık abonelikli bülten: 399 TL/ay ya da 3.490 TL/yıl (yurt dışına 12 USD/ay). Yan gelir olarak 349 TL'lik tek seferlik keşif paketi.",
+ "ne_degil": "Bir eklenti ya da eklenti mağazası değildir; eklenti yazmaz, satmaz. Hangi eklentinin yapılacağına karar vermeye yardım eden bir araştırma içeriğidir.",
+ "etiketler": [
+  "eklenti pazarları",
+  "fırsat bülteni",
+  "pazar araştırması",
+  "solo geliştirici",
+  "içerik"
+ ]
+}

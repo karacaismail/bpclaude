@@ -1,0 +1,27 @@
+{
+ "slug": "asgari-iscilik",
+ "bir_cumle": "Asgari işçilik uyum platformu, kamu ihalesi ya da ruhsatlı inşaat işi yapan yükleniciler için SGK'ya bildirilmesi gereken en az işçilik tutarını taşeron bazında hesaplayıp izleyen bir yazılım projesidir.",
+ "tur": "kurumsal yazılım projesi (müşteriye özel)",
+ "ad_nereden": null,
+ "kim_icin": "Çok taşeronlu çalışan orta ve büyük inşaat firmalarının mali işler birimi; ilk aday bir inşaat firması. İleride inşaat mükellefi olan mali müşavirler.",
+ "sorun": "Yüklenici, SGK asgari işçilik tutarını eksik bildirirse fark prim ve gecikme zammı öder; ilişiksizlik belgesi gecikir, teminat ve hakediş kilitlenir. Bu hesap bugün çoğunlukla elle tutulan Excel tablolarında yapılıyor; 2026'da kurallar değişti ve hakediş ile bordro programları bu hesabı yapmıyor.",
+ "nasil_calisir": [
+  "Güncel resmi oranlar ve birim maliyetler döneme kilitli bir parametre tablosuna girilir.",
+  "Kullanıcı ruhsat, ihale ve hakediş bilgilerini ve taşeronların aylık bildirimlerini yükler.",
+  "Sistem üç hesabı yapar; taşeron ve ay bazında eksik bildirimi ve kesinti önerisini gösterir.",
+  "Eşik aşılınca uyarı verir; her rakamın hangi dönem ve orana dayandığını rapora yazar."
+ ],
+ "ornek": "Bir yüklenici, iş bitiminde ilişiksizlik belgesi almadan önce 40 taşeronun bildirimlerini kontrol etmek istiyor. Sistem hangi taşeronun hangi ayda eksik bildirdiğini ve kesilmesi gereken tutarı gösteriyor.",
+ "benzerleri": "Hakediş programları (Oska, AMP) maliyet ve hakediş hesaplar; bordro programları (Logo, Mikro, Luca) işyeri bildirimi üretir. Doğrudan benzeri bulunmadı; bugün bu iş Excel ve SGK danışmanlarıyla yapılıyor.",
+ "teknoloji": "Sunucuda çalışan, başka sistemlere bağlanabilen bir hesap motoru olarak planlandı; açık kaynak Frappe ve Python ile. Veri müşterinin sunucusunda durabilir. Hesabı kurallar yapar.",
+ "durum": "Fikir ve teklif aşamasında: fiyatlı teklif, kapsam belgeleri ve hesap kuralları hazır; ürün kodu yok. Teklif süreci bir inşaat firmasıyla sürüyor; imzalı sözleşme ve ödeyen müşteri yok.",
+ "para": "Bir inşaat firmasına sabit fiyatlı proje: ilk sürüm 360.000 TL + KDV, imza, kabul ve canlıya alma taksitleriyle; ardından aylık bakım ücreti.",
+ "ne_degil": "SGK'ya otomatik bildirim göndermez, bordro programı değildir ve resmi hesabın yerine geçmez.",
+ "etiketler": [
+  "kurumsal yazılım",
+  "inşaat",
+  "SGK uyumu",
+  "hakediş",
+  "hesap motoru"
+ ]
+}
