@@ -61,7 +61,7 @@
  },
  {
   "katman": "Yayındaki adreste koşu (npm run test:canli)",
-  "durum": "not_run",
-  "not": "Bu satır yayından sonra güncellenir."
+  "durum": "pass",
+  "not": "Yayındaki siteye karşı koştu (revizyon d362c6a, 2026-10-02): Chromium masaüstü ve dokunmatik WebKit, görsel testler hariç; 360 pass, 0 fail, 68 atlandı. Yayındaki stil dosyasının özeti yerel derlemeyle aynı. Yerel sunucuya özgü testler bu koşuda atlanır."
  }
 ]

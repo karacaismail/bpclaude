@@ -4,12 +4,12 @@ Bu dosya `npm run rapor` ile son test koşusundan üretilir; elle düzenlenmez.
 
 | | |
 |---|---|
-| Koşu zamanı (UTC) | 2026-10-02 07:49 |
+| Koşu zamanı (UTC) | 2026-10-02 07:54 |
 | İşletim sistemi | macOS 26.5.1 (arm64) |
 | Araçlar | Node v24.21.0, Playwright 1.63.0, axe-core 4.13.0, Python 3.9.6 |
 | Motorlar | chromium 153.0.8010.12, firefox 155.0, webkit 26.6 |
 | Komut | `npm test` (yerel sunucu `tools/serve.py`, site `/bpclaude/` yolu altında) |
-| Revizyon | cbfcd57 (commit edilmemiş değişiklik var) |
+| Revizyon | d362c6a |
 | docs/ ve src/ içerik özeti | `0bb3317a0fb1fd5a` (SHA-256, ilk 16 hane) |
 | Toplam | 953 pass, 0 fail, 51 not_run, 191 not_applicable; süre 98 sn |
 
@@ -76,8 +76,8 @@ Yok.
 | Görsel referansların sahibi tarafından onayı | not_run | Referanslar sahibin istediği arayüz düzenlemeleriyle yeniden üretildi; önce ve sonra görüntüleri qa/ux-oncesi, qa/ux-sonrasi, qa/ux2-oncesi ve qa/ux2-sonrasi altında, gerekçe qa/referans-degisiklikleri altında. Sahibin incelemesi bekliyor. |
 | Gerçek tarayıcı yakınlaştırması | not_run | Yüzde 200 yazı boyutu ve metin aralığı otomatik test edildi; tarayıcının sayfa yakınlaştırması ayrıca denenmedi. |
 | Gerçek yazdırma çıktısı | not_run | Yazdırma ortamı Chromium emülasyonuyla otomatik test edildi; kâğıda ya da PDF'e baskı elle denetlenmedi. |
-| Yayındaki adreste koşu (npm run test:canli) | not_run | Bu satır yayından sonra güncellenir. |
+| Yayındaki adreste koşu (npm run test:canli) | pass | Yayındaki siteye karşı koştu (revizyon d362c6a, 2026-10-02): Chromium masaüstü ve dokunmatik WebKit, görsel testler hariç; 360 pass, 0 fail, 68 atlandı. Yayındaki stil dosyasının özeti yerel derlemeyle aynı. Yerel sunucuya özgü testler bu koşuda atlanır. |
 
 ## Yayın taraması
 
-701 dosya tarandı (metin 411, çalışma kitabı 1, ikili 283); özel ad listesi yüklü (13 kural); ihlal 0.
+696 dosya tarandı (metin 411, çalışma kitabı 1, ikili 283); özel ad listesi yüklü (13 kural); ihlal 0.
