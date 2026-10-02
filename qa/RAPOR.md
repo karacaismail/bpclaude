@@ -4,14 +4,14 @@ Bu dosya `npm run rapor` ile son test koşusundan üretilir; elle düzenlenmez.
 
 | | |
 |---|---|
-| Koşu zamanı (UTC) | 2026-10-01 22:06 |
+| Koşu zamanı (UTC) | 2026-10-01 22:11 |
 | İşletim sistemi | macOS 26.5.1 (arm64) |
 | Araçlar | Node v24.21.0, Playwright 1.63.0, axe-core 4.13.0, Python 3.9.6 |
 | Motorlar | chromium 153.0.8010.12, firefox 155.0, webkit 26.6 |
 | Komut | `npm test` (yerel sunucu `tools/serve.py`, site `/bpclaude/` yolu altında) |
-| Revizyon | 19c7490 (commit edilmemiş değişiklik var) |
+| Revizyon | 925a5d9 |
 | docs/ ve src/ içerik özeti | `5c9f13cb519d4c45` (SHA-256, ilk 16 hane) |
-| Toplam | 745 pass, 0 fail, 47 not_run, 163 not_applicable; süre 122 sn |
+| Toplam | 736 pass, 9 fail, 47 not_run, 163 not_applicable; süre 21327 sn |
 
 `not_run`: araç desteği olmadığı ya da bilerek sınırlandığı için o profilde çalıştırılmayan denetim (ör. zorunlu renk emülasyonu yalnız Chromium'da var). `not_applicable`: o profilde anlamı olmayan test (ör. klavye denetimi dokunmatik profilde, dosya düzeyi denetim tek profilde). Gerekçeler test dosyalarında atlama açıklaması olarak yazılıdır.
 
@@ -20,7 +20,7 @@ Bu dosya `npm run rapor` ile son test koşusundan üretilir; elle düzenlenmez.
 | Profil | Motor | Görünüm alanı | Giriş | pass | fail | not_run | not_applicable |
 |---|---|---|---|---:|---:|---:|---:|
 | chromium | Chromium | 1280 × 800 (testler 320-1920 arasında yeniden boyutlandırır) | fare ve klavye | 188 | 0 | 0 | 3 |
-| firefox | Firefox | 1280 × 800 (testler 320-1920 arasında yeniden boyutlandırır) | fare ve klavye | 157 | 0 | 15 | 19 |
+| firefox | Firefox | 1280 × 800 (testler 320-1920 arasında yeniden boyutlandırır) | fare ve klavye | 148 | 9 | 15 | 19 |
 | webkit | WebKit | 1280 × 800 (testler 320-1920 arasında yeniden boyutlandırır) | fare ve klavye | 157 | 0 | 15 | 19 |
 | telefon-chromium | Chromium, Android emülasyonu | 360 × 740 (testler 320-1024 arasında yeniden boyutlandırır) | dokunma | 116 | 0 | 14 | 61 |
 | telefon-webkit | WebKit, iOS emülasyonu | 390 × 664 (testler 320-1024 arasında yeniden boyutlandırır) | dokunma | 127 | 0 | 3 | 61 |
@@ -31,7 +31,7 @@ Motor sütunundaki emülasyon, gerçek cihaz değildir: dokunma, görünüm alan
 
 | Katman | pass | fail | not_run | not_applicable |
 |---|---:|---:|---:|---:|
-| Yerleşim | 339 | 0 | 3 | 33 |
+| Yerleşim | 330 | 9 | 3 | 33 |
 | Etkileşim ve durum geçişleri | 156 | 0 | 0 | 54 |
 | Ağ ve bütünlük | 71 | 0 | 0 | 34 |
 | Erişilebilirlik | 104 | 0 | 40 | 26 |
@@ -57,7 +57,15 @@ Motor sütunundaki emülasyon, gerçek cihaz değildir: dokunma, görünüm alan
 
 ## Başarısız testler
 
-Yok.
+- [firefox] layout.spec.js: yerleşim: proje/ik-paneli-hizmeti.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
+- [firefox] layout.spec.js: yerleşim: proje/kar-pusulasi.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
+- [firefox] layout.spec.js: yerleşim: proje/karar-kitabi.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
+- [firefox] layout.spec.js: yerleşim: proje/karar-sihirbazi.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
+- [firefox] layout.spec.js: yerleşim: proje/kurucu-pusulasi.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
+- [firefox] layout.spec.js: yerleşim: proje/kurucu-sunum-hizmeti.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
+- [firefox] layout.spec.js: yerleşim: proje/kurumsal-site.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
+- [firefox] layout.spec.js: yerleşim: proje/lifeos.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
+- [firefox] layout.spec.js: yerleşim: proje/luquit.html bütün kabul genişliklerinde, bölümler açıkken taşmıyor
 
 ## Otomatik koşmayan katmanlar
 
@@ -75,7 +83,7 @@ Yok.
 | Görsel referansların sahibi tarafından onayı | not_run | Referanslar sahibin istediği arayüz düzenlemesiyle yeniden üretildi; önce ve sonra görüntüleri qa/ux-oncesi ve qa/ux-sonrasi altında, gerekçe qa/referans-degisiklikleri altında. Sahibin incelemesi bekliyor. |
 | Gerçek tarayıcı yakınlaştırması | not_run | Yüzde 200 yazı boyutu ve metin aralığı otomatik test edildi; tarayıcının sayfa yakınlaştırması ayrıca denenmedi. |
 | Gerçek yazdırma çıktısı | not_run | Yazdırma ortamı Chromium emülasyonuyla otomatik test edildi; kâğıda ya da PDF'e baskı elle denetlenmedi. |
-| Yayındaki adreste koşu (npm run test:canli) | not_run | Bu satır yayından sonra güncellenir. |
+| Yayındaki adreste koşu (npm run test:canli) | pass | 2026-10-02, commit 925a5d9 yayındayken: Chromium ve dokunmatik WebKit profillerinde görsel dışı testler; 285 pass, 0 fail, 59 atlandı. GitHub Pages 404 sayfası, istek kümesi ve indirme dosyaları canlı adreste doğrulandı. |
 
 ## Yayın taraması
 

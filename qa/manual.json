@@ -61,7 +61,7 @@
  },
  {
   "katman": "Yayındaki adreste koşu (npm run test:canli)",
-  "durum": "not_run",
-  "not": "Bu satır yayından sonra güncellenir."
+  "durum": "pass",
+  "not": "2026-10-02, commit 925a5d9 yayındayken: Chromium ve dokunmatik WebKit profillerinde görsel dışı testler; 285 pass, 0 fail, 59 atlandı. GitHub Pages 404 sayfası, istek kümesi ve indirme dosyaları canlı adreste doğrulandı."
  }
 ]
