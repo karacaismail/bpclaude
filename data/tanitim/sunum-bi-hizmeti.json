@@ -12,8 +12,8 @@
   "Müşteri sunumları, PDF kopyalarını ve e-posta şablonunu 48 saatte alır; fiyat değişince set yeniden üretilir."
  ],
  "ornek": "Bir franchise zincirinin pazarlama sorumlusu zam sonrası beş sunumu aynı gün güncellemek ister. Yeni fiyat listesini gönderir; tüm set marka kurallarına uygun biçimde yeniden üretilip teslim edilir.",
- "benzerleri": "Gamma, Beautiful.ai, Pitch ve Canva hızlı sunum yapar ama katalogdan toplu üretim ve Türkçe yazım denetimi sunmaz; ajanslar ise sunum başına yavaş ve pahalıdır.",
- "teknoloji": "Kurucunun bilgisayarında Python ile çalışan betikler sunum dosyası (pptx) üretir. Sunucu ya da web uygulaması yoktur; müşteri verisi yalnız teslim için kullanılır.",
+ "benzerleri": "Gamma, Beautiful.ai, Pitch ve Canva hızlı sunum hazırlama araçlarıdır; ajanslar sunumu tek tek hazırlar. Fark: katalogdan toplu üretim ve Türkçe yazım denetimi.",
+ "teknoloji": "Python ile yazılmış betikler sunum dosyası (pptx) üretir. Sunucu ya da web uygulaması yoktur; müşteri verisi yalnız teslim için kullanılır.",
  "durum": "Üretim çekirdeği yaklaşık yüzde 85 hazır ama kod ve marka üçüncü taraf bir şirkete ait; yazılı izin ön koşul, yoksa çekirdek sıfırdan yazılacak. Ödeyen müşteri: 0.",
  "para": "Tek seferlik hizmet bedeli: katalog paketi 15.000 ₺ artı KDV (5 sunum, PDF, e-posta şablonu, 2 revizyon); çeyreklik güncelleme 3.000 ₺.",
  "ne_degil": "Bu bir yazılım ürünü değil; markalı sunum üretim hizmetidir. Canlı veri panosu ya da rapor yazılımı da değildir.",

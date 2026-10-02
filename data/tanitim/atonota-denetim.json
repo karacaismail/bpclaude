@@ -12,7 +12,7 @@
   "Pro sürüm haftalık otomatik tarama, bozulma e-postası ve PDF rapor ekler."
  ],
  "ornek": "Yeni reklam kampanyası öncesi bir mobilya mağazası sahibi eklentiyi çalıştırır; ölçüm kodunun iki kez yüklendiğini ve çerez bandının eksik olduğunu görüp düzeltir.",
- "benzerleri": "Google Site Kit ücretsizdir ama veri gösterir, denetim yapmaz. ManageWP, MainWP ve WP Umbrella bakım odaklıdır. AgencyAnalytics rapor üretir ama Türkiye için pahalıdır. Fark: Türkçe tek ekran denetim ve çerez bandı kontrolü.",
+ "benzerleri": "Google Site Kit ücretsizdir ve veri gösterir. ManageWP, MainWP ve WP Umbrella bakım odaklıdır. AgencyAnalytics ajanslara rapor üretir. Fark: Türkçe tek ekran denetim ve çerez bandı kontrolü.",
  "teknoloji": "WordPress sitesinin içinde çalışan PHP eklentisi. Tarama verisi siteden çıkmaz; hız ölçümü kullanıcı onayıyla Google'ın aracına gider. Lisans doğrulaması küçük bir sunucu hizmetiyle yapılır.",
  "durum": "Fikir ve iskelet aşamasında. Eklenti kodu yaklaşık yüzde 15 hazır, çalışan ürün yok, eklenti dizinine başvuru yapılmadı. Ödeyen müşteri yok.",
  "para": "Ücretsiz sürümle kurulum toplanır; Pro lisans tek site için yıllık 1.990 TL (yaklaşık 39 dolar) peşin satılır. Ajanslara 25 siteli lisans ayrıca sunulur.",

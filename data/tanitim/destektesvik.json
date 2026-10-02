@@ -12,7 +12,7 @@
   "İsteyen şirket 48 saatte uzman kontrolünden geçmiş, kaynaklı ve takvimli PDF rapor alır."
  ],
  "ornek": "Yazılım geliştiren 15 kişilik bir şirket, TÜBİTAK çağrısı kapanmadan önce hangi programlara girebileceğini soruyor. Rapor 1501 ve 1507 için uygunluğu, eksik belgeyi ve son tarihi kaynağıyla birlikte gösteriyor.",
- "benzerleri": "yatirimadestek.gov.tr ücretsiz ama kişiye özel uygunluk vermez; TeşvikAra ve Teşvik Rotası analiz satar; bağımsız danışmanlar dosya yazar. Fark: her sonucun hangi kaynağa ve tarihe dayandığı görünür, uzman onayı vardır.",
+ "benzerleri": "yatirimadestek.gov.tr ücretsiz genel bilgi verir; TeşvikAra ve Teşvik Rotası analiz satar; bağımsız danışmanlar dosya yazar. Fark: her sonucun hangi kaynağa ve tarihe dayandığı görünür, uzman onayı vardır.",
  "teknoloji": "Tarayıcıda çalışan bir web uygulaması; sunucu Python, arayüz React ile yazıldı. Veri, şirketlerin ayrı tutulduğu bir PostgreSQL veritabanında durur. Sonucu kurallar üretir, yapay zekâ değil.",
  "durum": "Prototip: kural motoru, arayüz ve testler çalışıyor; yalnız 3 program verisi var ve uzman doğrulaması bekliyor. Ödeme ve yayın hazırlığı yok. Ödeyen müşteri yok.",
  "para": "İlk gelir tek seferlik uzman onaylı ön değerlendirme raporundan: 2.990 TL (KDV hariç). Sonra mali müşavirlere aylık portföy paketi planlanıyor.",

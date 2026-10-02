@@ -12,7 +12,7 @@
   "2 dilli kurumsal site kurulur ve pazar yeri açılış planı teslim edilir."
  ],
  "ornek": "İç giyim üreten bir atölye pazar yerinde mağaza açmayı düşünüyor. Paketle hangi sepet tutarının altında zarar edeceğini görüyor, fiyatını ve kampanya kurallarını buna göre koyuyor, sitesi ve açılış planıyla başlıyor.",
- "benzerleri": "Pazar yeri yönetim ajansları operasyonu yürütür ama kârlılık modeli kurmaz; ikas ve Sentos gibi araçlar altyapı sunar; Armut'taki serbest danışmanlar ucuz ama yöntemsizdir. Bu paket hesap, vitrin ve planı tek pakette verir.",
+ "benzerleri": "Pazar yeri yönetim ajansları operasyonu yürütür; ikas ve Sentos gibi araçlar altyapı sunar; serbest danışmanlar iş başı çalışır. Bu paket hesap, vitrin ve planı tek pakette verir.",
  "teknoloji": "Analiz tablolarla ve tarayıcıda açılan tek sayfalık etkileşimli bir simülatörle teslim edilir. Kurumsal site hazır, statik bir kalıptan üretilir. Müşteri verisi teslim dosyalarında durur.",
  "durum": "İki üretici KOBİ için yapılmış işler var: kurumsal site, rakip raporu ve simülasyon sayfası. Anonim şablon, teklif ve sözleşme henüz hazır değil. Ödeyen müşteri 0.",
  "para": "Sabit kapsamlı Başlangıç paketi 90.000 TL + KDV olarak tek seferlik satılır; yarısı avans, yarısı teslimde. Daha küçük giriş olarak yalnız fizibilite 35.000 TL + KDV'dir.",

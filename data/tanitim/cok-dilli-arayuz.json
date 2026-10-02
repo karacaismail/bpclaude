@@ -12,7 +12,7 @@
   "Müşteri 3 iş gününde raporu alır; düzeltmeden sonra 14 gün içinde yeniden kontrol yapılır."
  ],
  "ornek": "Bir ihracatçı firma sitesine Almanca ekliyor. Denetim, uzun Almanca kelimelerin sipariş düğmesini taşırdığını ve fiyatların yanlış ayraçla yazıldığını yayından önce yakalıyor.",
- "benzerleri": "Lokalise, Phrase ve Crowdin çeviri sürecini yönetir ama ekranın çeviriye dayanıklılığını test etmez. Bu hizmet çeviri yapmaz; çevrilmiş arayüzün bozulup bozulmadığını denetler.",
+ "benzerleri": "Lokalise, Phrase ve Crowdin çeviri sürecini yönetmeye odaklanır. Bu hizmet çeviri yapmaz; çevrilmiş arayüzün bozulup bozulmadığını denetler.",
  "teknoloji": "Bu bir yazılım ürünü değil; denetim hizmetidir. Kontroller tarayıcıda, otomatik test araçlarıyla yapılır. Kılavuz ücretsiz derslerle internette yayımlanacak.",
  "durum": "Türkçe rehber yazılı ve aynı kurallar iki çok dilli sitede elle uygulandı. Denetim şablonu, teklif ve sözleşme hazır değil. Ödeyen müşteri: 0.",
  "para": "Proje başına sabit ücretli hizmet: temel denetim 7.500 TL (5 ekran, 2 dil), kapsamlı 15.000 TL. Yan gelir olarak 299 TL'lik kontrol listesi PDF'i.",

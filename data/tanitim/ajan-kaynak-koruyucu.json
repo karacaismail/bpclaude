@@ -13,7 +13,7 @@
   "'Şimdi yeni bir ajan başlatabilir miyim?' sorusuna normal, dikkatli ya da engelli diye yanıt verir."
  ],
  "ornek": "Bir geliştirici 16 GB Mac'inde iki ajanı ve tarayıcıyı birlikte çalıştırıyor. Bir oturum kapanınca arkada kalan süreçleri bekçi temizler; üçüncü ajanı açmadan önce 'dikkatli' uyarısı gelir ve makine donmaz.",
- "benzerleri": "ccusage, CodexBar ve Claude Code Usage Monitor ücretsizdir ama yalnız kullanım ve kota gösterir. Stats ve iStat Menus belleği gösterir, ajanı tanımaz. Bu araç ajanı tanıyıp güvenli biçimde müdahale eder.",
+ "benzerleri": "ccusage, CodexBar ve Claude Code Usage Monitor ücretsizdir; kullanım ve kota gösterir. Stats ve iStat Menus genel bellek göstergeleridir. Bu aracın farkı ajan süreçlerini tanıyıp güvenli biçimde müdahale etmesidir.",
  "teknoloji": "Mac üzerinde arka planda çalışan Python programı; işletim sisteminden bellek ve süreç bilgisi okur. Planlanan Pro menü çubuğu uygulaması Swift ile yazılacak. Veri bilgisayardan çıkmaz.",
  "durum": "Çekirdek yazıldı ve 150 birim testiyle bir 16 GB Mac'te denendi; testler bu çalışmada yeniden çalıştırılmadı. Menü çubuğu uygulaması, dağıtım ve ödeme sayfası yok. Ödeyen müşteri yok.",
  "para": "Çekirdek ücretsiz ve açık kaynak. Pro sürümü (menü çubuğu, bildirim, karantina arayüzü) tek seferlik 15 dolar lansman, sonra 19 dolar; rehber 9 dolar, ikisi birlikte 24 dolar.",

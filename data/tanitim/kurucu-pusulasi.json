@@ -13,7 +13,7 @@
   "Kitap sitesinde okur bir kitabın künyesine bakar, önerilen çeviriyi ve kaçınılacak baskıyı görür."
  ],
  "ornek": "Akşamları yan ürün geliştiren bir yazılımcı üç fikir arasında kararsız. Şablonu doldurur; her fikre üç aylık nakit ve saat sınırı koyar. Sınırı aşan fikri karar defterine gerekçesiyle yazıp bırakır.",
- "benzerleri": "Notion'daki kurucu şablonları ve ücretsiz Lean Canvas sayfaları var; Türkçe, kanıt etiketli ve durdurma kuralı olan biri bulunmadı. Kitap tarafında Goodreads ve 1000Kitap çeviri künyesine odaklanmaz.",
+ "benzerleri": "Notion'daki kurucu şablonları ve ücretsiz Lean Canvas sayfaları var; Türkçe, kanıt etiketli ve durdurma kuralı olan biri bulunmadı. Goodreads ve 1000Kitap genel okur platformlarıdır; bu site çeviri künyesine odaklanır.",
  "teknoloji": "Şablon Markdown, Notion ve PDF dosyalarından oluşur, kullanıcının kendi bilgisayarında ya da Notion hesabında durur. Kitap sitesi Astro ile yazılmış statik bir sitedir.",
  "durum": "Şablonun yapısı var ama kişisel içerikten arındırılmış satış sürümü, örnek ve ürün sayfası henüz yok. Kitap sitesi yayında, satın alma bağlantıları yok. Ödeyen müşteri: 0.",
  "para": "Şablon tek seferlik 299 TL (yurt dışında 19 dolar). Kuluçka programlarına 1.490 TL kurum lisansı; kitap sitesi mağaza ortaklık komisyonu bekler.",

@@ -12,7 +12,7 @@
   "Teslimde PDF ve PowerPoint çıktısı, iki revizyon turu ve kendi rakamını güncelleme eğitimi verilir."
  ],
  "ornek": "Bir yazılım girişimcisi hibe başvurusundan önce sunumunu, modelini ve formunu gönderir. Rapor, sunumdaki gelir hedefiyle modeldeki kadro maliyetinin uyuşmadığını gösterir; düzeltilmiş tek rakam listesiyle başvuru tamamlanır.",
- "benzerleri": "Pitch ve Slidebean gibi araçlar ile slayt ajansları sunum hazırlar; hibe danışmanları form doldurur. Bunların hiçbiri Türkçe hibe biçimini, canlı modeli ve rakam denetimini tek pakette vermez.",
+ "benzerleri": "Pitch ve Slidebean gibi araçlar ile slayt ajansları sunum hazırlar; hibe danışmanları form doldurur. Bu hizmetin farkı Türkçe hibe biçimini, canlı modeli ve rakam denetimini tek pakette vermesidir.",
  "teknoloji": "Bu bir yazılım ürünü değil, hizmettir. Sunum sitesi tarayıcıda çalışan bir React uygulaması; finans modeli müşterinin Google Sheets dosyasında durur.",
  "durum": "Altyapı kurucunun daha önce yaptığı tek bir projede çalışıyor; başka müşteriye uyarlanabilir bir şablona henüz dönüştürülmedi. Sözleşme ve tahsilat düzeni yok. Ödeyen müşteri: 0.",
  "para": "Paket başına hizmet bedeli: Başlangıç 25.000 TL, Standart 45.000 TL, Premium 75.000 TL (KDV hariç); pilotta yüzde 50 indirim. Sonra aylık güncelleme ve kuluçka merkezi lisansı.",

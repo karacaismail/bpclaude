@@ -12,7 +12,7 @@
   "Program sonunda katılımcının kurulmuş mağazası, fiyatlanmış ürünleri ve 90 günlük yazılı planı olur."
  ],
  "ornek": "Ev tekstili üreten bir atölye sahibi pazar yerinde mağaza açmak istiyor. Programda ürünlerinin maliyetini çıkarıyor, komisyon ve kargo sonrası fiyatını belirliyor, 10. haftada mağazası açık ve elinde yazılı bir planla çıkıyor.",
- "benzerleri": "Trendyol Akademi, Ticimax Kampüs ve BTK Akademi ücretsiz içerik verir; Udemy kursları ve üniversite sertifika programları kayıtlı ya da kalabalıktır. Titanlar küçük grup, zorunlu ödev ve kişiye özel plan sunar.",
+ "benzerleri": "Trendyol Akademi, Ticimax Kampüs ve BTK Akademi ücretsiz içerik verir; Udemy kursları kayıtlı videodur, üniversite sertifika programları daha büyük gruplarla yürür. Titanlar küçük grup, zorunlu ödev ve kişiye özel plan sunar.",
  "teknoloji": "Dersler görüntülü görüşme araçlarıyla canlı yapılır. Tanıtım için statik bir web sitesi hazırlanmış, henüz yayında değil. Derste kurucunun açık kaynak kâr hesaplayıcısı kullanılır.",
  "durum": "Müfredat, fiyat tablosu ve site iskeleti hazır. Ödeme altyapısı, fatura düzeni ve hukuk sayfaları kurulmadı, site yayında değil, talep görüşmesi yapılmadı. Ödeyen müşteri 0.",
  "para": "Ana gelir 10 haftalık canlı programın katılım ücretidir: kişi başı 5.000 TL + KDV, taksit ve erken kayıt indirimiyle. Birebir destekli VIP hat ve danışmanlık ek gelir olarak düşünülüyor.",

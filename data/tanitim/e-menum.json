@@ -12,7 +12,7 @@
   "İşletme rezervasyon, kupon, sadakat puanı ve stok gibi modülleri aynı panelden yönetir."
  ],
  "ornek": "Bir web ajansının müşterisi olan üç masalı bir kafe, menüsünü kendi logosuyla QR koda bağlar. Fiyat değişince menü panelden güncellenir, kâğıt menü yeniden basılmaz.",
- "benzerleri": "Menulux, FineDine ve Adisyo hazır abonelikli QR menü hizmeti sunar; CodeCanyon'daki betikler ucuz koddur. Bu kod tabanının farkı Türkçe iş kuralları ve çok sayıda otomatik testtir.",
+ "benzerleri": "Menulux, FineDine ve Adisyo hazır abonelikli QR menü hizmeti sunar; CodeCanyon'da düşük fiyatlı hazır betikler satılır. Bu kod tabanının farkı Türkçe iş kuralları ve çok sayıda otomatik testtir.",
  "teknoloji": "Sunucuda çalışan bir web uygulamasıdır. Python ve Django ile yazılmıştır; veri işletmenin ya da ajansın kendi sunucusundaki veritabanında durur.",
  "durum": "Prototip: modüller büyük ölçüde yazılı ve testli, ama satılabilir ürün olarak yarım. Ödeme bağlantısı ve çok müşterili ayrım tamamlanmadı. Canlı değil, ödeyen müşteri: 0.",
  "para": "Ajansa tek seferlik kurulum ve uyarlama paketi olarak satılır: 25.000 TL (KDV hariç), üstüne yıllık 6.000 TL bakım. Abonelikli bir hizmet olarak satılmıyor.",

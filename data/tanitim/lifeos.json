@@ -12,7 +12,7 @@
   "İsterse yönteme ait çalışma kâğıdı paketine tek tıkla geçip satın alır."
  ],
  "ornek": "Bir kafe sahibi sabah tarayıcısını açıyor. Yan panelde günün yöntemi Eisenhower matrisi; soruya bakıp o günün işlerini acil ve önemli diye ayırıyor.",
- "benzerleri": "Momentum, Infinity New Tab ve Tabliss yeni sekme ve odak araçlarıdır; İngilizcedir ve karar yöntemi öğretmez. Bu uzantı Türkçedir ve günde tek yönteme odaklanır.",
+ "benzerleri": "Momentum, Infinity New Tab ve Tabliss yeni sekme ve odak araçlarıdır. Bu uzantı Türkçedir ve günde tek karar yöntemine odaklanır.",
  "teknoloji": "Tarayıcıda, Chrome yan panelinde çalışır. React ile yazılmıştır; sunucu yoktur, veriler yalnız kullanıcının kendi tarayıcısında saklanır.",
  "durum": "Prototip: yan panelde günün yöntemi kartı çalışıyor, 20 yöntem kayıtlı. Mağazada yayın, kullanıcı ve ödeme akışı yok. Ödeyen müşteri: 0.",
  "para": "Uzantı ücretsizdir. Gelir, kurucunun karar yöntemleri kitabına ait çalışma kâğıdı paketlerinin tek seferlik satışından gelir: paket başına 199 TL, KDV hariç.",

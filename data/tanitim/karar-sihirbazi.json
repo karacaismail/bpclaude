@@ -12,7 +12,7 @@
   "Ajans bu sonuçtan kendi logolu teklif taslağını alır (bu adım henüz yazılmadı)."
  ],
  "ornek": "Bir kafe sahibi bir ajansın sitesinde e-ticaret sitesi için fiyat ister. Formu on dakikada doldurur; ajans ertesi gün görüşmeye önerilen yapı, kaba süre ve açık sorularla hazırlıklı girer.",
- "benzerleri": "Tally ve Typeform form kurar ama öneri ya da teklif üretmez; ScoreApp ve Outgrow puanlı pazarlama testleri sunar. Fark: Türkçe teknik soru bankası ve formdan teklif taslağına giden tek akış.",
+ "benzerleri": "Tally ve Typeform genel form araçlarıdır; ScoreApp ve Outgrow puanlı pazarlama testleri sunar. Fark: Türkçe teknik soru bankası ve formdan teklif taslağına giden tek akış.",
  "teknoloji": "Form tarayıcıda çalışan TypeScript ile yazıldı. Sunucu tarafı Python ile taslak durumda; veri bugün hiçbir yerde saklanmıyor. Planda veritabanı sunucuda tutulacak.",
  "durum": "Çalışan prototip: koşullu form motoru, 8 proje profili ve yaklaşık 100 soru var, canlı demo açık. Kayıt, PDF teklif ve ajans paneli yok; ürün yaklaşık yüzde 30 hazır. Ödeyen müşteri: 0.",
  "para": "Planlanan model ajanslara aylık abonelik: 490 ₺ ve 990 ₺ paketler, üst pakette 5.000 ₺ tek seferlik kurulum. Önce 3 ajansla 90 günlük pilot denenecek.",

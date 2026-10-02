@@ -12,7 +12,7 @@
   "Birden çok malzemeden oluşan ürün için reçete (maliyet listesi) kurulabilir; sonuç Excel ya da CSV olarak indirilir."
  ],
  "ornek": "Bir giyim satıcısı 500 liralık bir ürüne yüzde 20 kâr koyduğunu düşünüyor. Araca girince komisyon, kargo ve vergiler düşüldükten sonra aslında zarar ettiğini ve hangi fiyatın altına inmemesi gerektiğini görüyor.",
- "benzerleri": "Ticimax, ideasoft, ikas ve Nitru'nun ücretsiz hesaplayıcıları çoğunlukla tek pazar yeri ve tek ürünle çalışır. Karpanel aylık ücretle sipariş verisine bağlanır. Bu araç beş kanalı karşılaştırır, fiyat koymadan önceki karara odaklanır.",
+ "benzerleri": "Ticimax, ideasoft, ikas ve Nitru ücretsiz hesaplayıcı sunar. Karpanel aylık ücretle sipariş verisine bağlanır. Bu aracın farkı beş kanalı karşılaştırması ve fiyat koymadan önceki karara odaklanmasıdır.",
  "teknoloji": "Tamamen tarayıcıda çalışır, sunucu gerektirmez, internet olmadan da açılır. JavaScript ile yazıldı; veriler kullanıcının kendi tarayıcısında durur. Kod açık kaynaktır (MIT lisansı).",
  "durum": "Çalışan bir sürüm var. Ücretsiz araç olarak yaklaşık %80, ücretli ürün olarak yaklaşık %50 hazır. İki hesap modunda formül düzeltmesi ve güncel oranların işlenmesi bekliyor. Ödeyen müşteri 0.",
  "para": "Temel araç ücretsiz kalır. Toplu Excel, PDF rapor ve oran değişim bildirimi içeren Pro sürüm yıllık 499 TL, ilk 100 kişiye ömür boyu Kurucu Paketi tek seferlik 999 TL olarak planlanıyor.",

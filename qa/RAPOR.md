@@ -4,14 +4,14 @@ Bu dosya `npm run rapor` ile son test koşusundan üretilir; elle düzenlenmez.
 
 | | |
 |---|---|
-| Koşu zamanı (UTC) | 2026-10-02 04:08 |
+| Koşu zamanı (UTC) | 2026-10-02 04:15 |
 | İşletim sistemi | macOS 26.5.1 (arm64) |
 | Araçlar | Node v24.21.0, Playwright 1.63.0, axe-core 4.13.0, Python 3.9.6 |
 | Motorlar | chromium 153.0.8010.12, firefox 155.0, webkit 26.6 |
 | Komut | `npm test` (yerel sunucu `tools/serve.py`, site `/bpclaude/` yolu altında) |
-| Revizyon | 5951c1d |
-| docs/ ve src/ içerik özeti | `5c9f13cb519d4c45` (SHA-256, ilk 16 hane) |
-| Toplam | 745 pass, 0 fail, 47 not_run, 163 not_applicable; süre 86 sn |
+| Revizyon | 177a024 (commit edilmemiş değişiklik var) |
+| docs/ ve src/ içerik özeti | `d724eb226fe9ba04` (SHA-256, ilk 16 hane) |
+| Toplam | 745 pass, 0 fail, 47 not_run, 163 not_applicable; süre 79 sn |
 
 `not_run`: araç desteği olmadığı ya da bilerek sınırlandığı için o profilde çalıştırılmayan denetim (ör. zorunlu renk emülasyonu yalnız Chromium'da var). `not_applicable`: o profilde anlamı olmayan test (ör. klavye denetimi dokunmatik profilde, dosya düzeyi denetim tek profilde). Gerekçeler test dosyalarında atlama açıklaması olarak yazılıdır.
 

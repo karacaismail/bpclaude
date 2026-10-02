@@ -12,7 +12,7 @@
   "İlk bölümler ücretsiz okunur; tam kitap, kurs ya da ekip atölyesi satın alınır."
  ],
  "ornek": "Küçük bir yazılım evinin teknik lideri, yeni projede müşteri verilerini nasıl ayıracağına karar veremiyor. Siteden ilgili bölümü ve karar kaydını okuyor; sonra ekibi için iki günlük atölye istiyor.",
- "benzerleri": "Docusaurus ve Starlight ücretsiz doküman sitesi araçlarıdır, içerik vermez. BTK Akademi ve Udemy kursları temel düzeyde kalır. İleri düzey Türkçe özgün mimari kitabı bulunmadı.",
+ "benzerleri": "Docusaurus ve Starlight ücretsiz doküman sitesi araçlarıdır; içerik sunmazlar. BTK Akademi ve Udemy'de bu konuda Türkçe kurslar var. İleri düzey Türkçe özgün mimari kitabı bulunmadı.",
  "teknoloji": "Tarayıcıda çalışan, sunucusuz statik bir site; React ile yazıldı, içerik JSON dosyalarında. Herkese açık önizleme olarak yayında; ödeme ve teslim dış hizmetle planlanıyor.",
  "durum": "Okuma sitesi çalışıyor ve yayında; içerik ham, yayın kalitesine yaklaşık dörtte biri ulaşmış (tahmin). Satış sayfası, ödeme ve kurs yok. Ödeyen müşteri: 0.",
  "para": "İçerik satışı: e-kitap 349 TL, kurs 1.990 TL, iki günlük ekip atölyesi 35.000 TL + KDV. Okuma sitesi ücretsiz önizleme olarak kalır.",

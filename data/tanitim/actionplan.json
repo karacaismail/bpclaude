@@ -12,7 +12,7 @@
   "Görevi tek tıkla ajana verilecek görev paketi ya da geliştirici özeti olarak dışa aktarır."
  ],
  "ornek": "Tek başına çalışan bir geliştirici yeni bir uygulamanın ödeme modülünü on iki göreve böler. Her görevin kabul ölçütünü yazar, sırayı grafikte görür ve ilk görevi hazır paket olarak kodlama ajanına verir.",
- "benzerleri": "Linear, Jira ve Plane görev yönetir ama ajana hazır görev üretmez. Açık kaynak claude-task-master ve GitHub spec-kit ücretsizdir; görsel plan sunmaz. Bu araç görsel plan ile ajan paketini birleştirir.",
+ "benzerleri": "Linear, Jira ve Plane görev yönetimine odaklanır. Açık kaynak claude-task-master ve GitHub spec-kit ücretsiz ajan görev araçlarıdır. Bu aracın farkı görsel plan ile ajan paketini birleştirmesidir.",
  "teknoloji": "Tarayıcıda çalışan bir web uygulaması (React ile yazıldı). Hesap ya da sunucu yok; plan kullanıcının bilgisayarında JSON dosyası olarak durur. Canlı bir demo sayfası yayında.",
  "durum": "Araç kurucunun kendi işinde çalışıyor ama verisi kendi planına bağlı; boş proje başlatılamıyor. Ürünleşmesi için yeniden paketleme gerekiyor. Dış kullanıcı ve ödeyen müşteri yok.",
  "para": "Çekirdek ücretsiz ve açık kaynak. Pro şablon ve istem paketi tek seferlik 39 dolar, 5 kişilik ekip paketi 99 dolar; ilk 10 kişiye 19 dolar.",

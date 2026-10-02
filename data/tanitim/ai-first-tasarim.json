@@ -12,7 +12,7 @@
   "Daha fazlasını isteyen ekip, bir günlük atölye ya da iki haftalık kurulum hizmeti alabilir."
  ],
  "ornek": "Yöneticisi ürüne yapay zekâ asistanı eklenmesini isteyen bir frontend lideri, rehberdeki örnekle renk ve ölçü kurallarını tek dosyada toplar ve asistan alanını mevcut ekranları bozmadan ekler.",
- "benzerleri": "assistant-ui ve CopilotKit gibi ücretsiz kütüphaneler hazır sohbet bileşeni verir; kurulum yöntemini Türkçe anlatmaz. Çeviri teknik kitaplar ise yapay zekâ arayüzüne odaklanmaz.",
+ "benzerleri": "assistant-ui ve CopilotKit gibi ücretsiz kütüphaneler hazır sohbet bileşeni verir. Bu rehberin farkı, kurulum yöntemini Türkçe ve tasarım sistemi açısından anlatmasıdır.",
  "teknoloji": "Örnek kod tarayıcıda çalışan React bileşenleridir; Storybook ile belgelenir. Renk ve ölçü kuralları JSON dosyasından CSS ve tasarım aracı çıktılarına dönüştürülür. Sunucu ya da veri tabanı yok.",
  "durum": "Prototip. Tasarım sistemi temeli ve bileşen kodu çalışıyor; rehber içeriği yaklaşık yüzde 70 yazılı ama yayın kalitesinde değil. Satış sayfası yok, ödeyen müşteri yok.",
  "para": "Rehber tek seferlik satılır: 399 TL (KDV dahil). Yanında 25.000 TL atölye ve 120.000 TL kurulum hizmeti var; hiçbiri henüz sınanmadı.",

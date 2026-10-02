@@ -13,7 +13,7 @@
   "Örnek müşteri modülü ve hazır istemci kodu üzerine kendi ürününü ekler."
  ],
  "ornek": "İki kişilik bir ekip muhasebe bürolarına satacağı bir uygulama yazıyor. Kiti kurup ilk gün her büronun verisinin ayrı kaldığı bir temel elde ediyor; asıl ürün ekranlarına bir hafta erken başlıyor.",
- "benzerleri": "Supabase bu güvenliği ücretsiz verir ama uygulamayı kendi platformuna bağlar; Frappe ve NocoBase kendi veri modelini dayatır. Bu kit herhangi bir Postgres'te çalışır, platforma bağlamaz.",
+ "benzerleri": "Supabase bu güvenliği kendi platformu içinde ücretsiz sunar; Frappe ve NocoBase kendi veri modeliyle çalışır. Bu kit herhangi bir Postgres veritabanında çalışacak biçimde tasarlandı.",
  "teknoloji": "Sunucuda çalışır; Postgres 16 veri tabanı, JavaScript çekirdek ve Python ile JS sunucu örnekleri. Veri, kullanıcının kendi veri tabanında durur. Kod açık kaynak (AGPL-3.0).",
  "durum": "Erken prototip. Tek uçtan uca çalışan parça müşteri kaydı oluşturma; geniş test seti var. Tek komutla çalışan demo, rehber, fiyat sayfası ve ödeme yok. Ödeyen müşteri: 0.",
  "para": "Tek seferlik ticari lisans: tek geliştirici için 149 dolar, 5 kişilik ekip için 349 dolar, 12 ay güncelleme. Açık kaynak çekirdek ücretsiz kalır.",
