@@ -58,8 +58,12 @@ test.describe("statik bütünlük", () => {
   test("her sayfada (404 dahil) tek stil, tek betik, güvenlik politikası ve noindex var; satır içi betik yok", async () => {
     for (const rel of HTML_ALL) {
       const html = fs.readFileSync(path.join(DOCS, rel), "utf8");
-      expect.soft((html.match(/<link rel="stylesheet"/g) || []).length, `${rel}: stil dosyası`).toBe(1);
+      // Bir stil dosyası; ikincisi yalnız betik kapalıyken yüklenir (noscript içinde).
+      const noscript = (html.match(/<noscript>[\s\S]*?<\/noscript>/g) || []).join("");
+      expect.soft((html.replace(/<noscript>[\s\S]*?<\/noscript>/g, "").match(/<link rel="stylesheet"/g) || []).length, `${rel}: stil dosyası`).toBe(1);
+      expect.soft((noscript.match(/<link rel="stylesheet" href="[^"]*assets\/noscript\.css"/g) || []).length, `${rel}: betiksiz stil dosyası`).toBe(1);
       expect.soft((html.match(/<script /g) || []).length, `${rel}: betik dosyası`).toBe(1);
+      expect.soft((html.match(/<link rel="icon"/g) || []).length, `${rel}: sekme simgesi`).toBe(1);
       expect.soft(/<script>|<script(?![^>]*\ssrc=)/.test(html), `${rel}: satır içi betik`).toBe(false);
       expect.soft(/<style[\s>]/.test(html), `${rel}: satır içi stil öğesi`).toBe(false);
       expect.soft(/\son[a-z]+="/.test(html), `${rel}: satır içi olay işleyici`).toBe(false);
@@ -109,7 +113,8 @@ for (const url of KEY_PAGES) {
     expect.soft(external, "dış istek").toEqual([]);
     expect.soft(failed, "başarısız istek").toEqual([]);
     expect.soft(consoleMsgs, "konsol iletisi").toEqual([]);
-    const paths = requests.map((u) => new URL(u).pathname.replace(/^\/bpclaude\//, "")).sort();
+    // Sekme simgesi tarayıcıya göre istenir ya da istenmez; istek kümesinden ayrı tutulur.
+    const paths = requests.map((u) => new URL(u).pathname.replace(/^\/bpclaude\//, "")).filter((p) => p !== "assets/favicon.svg").sort();
     const beklenen = [url, "assets/site.css", "assets/site.js"].sort();
     expect(paths, "istek kümesi").toEqual(beklenen);
   });

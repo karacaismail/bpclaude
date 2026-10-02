@@ -10,7 +10,7 @@ const screens = Number(process.env.SCREENS || 2);
 fs.mkdirSync("qa/shots", { recursive: true });
 const browser = await chromium.launch();
 for (const [w, h, tag] of sizes) {
-  const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: w < 600 ? 2 : 1, colorScheme: process.env.SCHEME || "light" });
+  const ctx = await browser.newContext({ viewport: { width: w, height: h }, deviceScaleFactor: w < 600 ? 2 : 1, colorScheme: process.env.SCHEME || "light", reducedMotion: "reduce" });
   const page = await ctx.newPage();
   for (const p of pages) {
     await page.goto(base + p, { waitUntil: "load" });

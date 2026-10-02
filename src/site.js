@@ -2,43 +2,99 @@
 (function () {
   "use strict";
 
-  var root = document.documentElement;
-  var WIDE = (getComputedStyle(root).getPropertyValue("--bp-wide") || "").trim() || "60rem";
+  // Betik çalışıyor: betik gerektiren araçlar (arama ve süzgeç formları) görünür olur. Betik yüklenemezse gizli kalırlar.
+  document.documentElement.classList.add("js");
 
-  // Dar ekran menüsü. Betiksiz durumda "Menü" bir bağlantıdır ve listeyi :target ile açar.
-  // Betik çalışınca aynı yerde gerçek bir düğmeye dönüşür; sayfa düzeni kaymaz.
-  var nav = document.querySelector(".site-nav");
-  var link = document.querySelector("a.nav-toggle");
-  if (nav && link) {
-    var toggle = document.createElement("button");
-    toggle.type = "button";
-    toggle.className = link.className;
-    toggle.textContent = link.textContent;
-    toggle.setAttribute("aria-expanded", "false");
-    toggle.setAttribute("aria-controls", "site-nav-list");
-    link.parentNode.replaceChild(toggle, link);
-    var setOpen = function (open) {
-      toggle.setAttribute("aria-expanded", String(open));
-      nav.classList.toggle("is-open", open);
-    };
-    toggle.addEventListener("click", function () {
-      setOpen(toggle.getAttribute("aria-expanded") !== "true");
-    });
-    document.addEventListener("keydown", function (ev) {
-      if (ev.key !== "Escape" || toggle.getAttribute("aria-expanded") !== "true") return;
-      var a = document.activeElement;
-      if (a !== toggle && !nav.contains(a)) return;
-      setOpen(false);
-      toggle.focus();
-    });
+  // Yatay kayan bir kutunun konumunu bildirir (bas, orta, son); taşma yoksa özniteliği kaldırır. Stil, devamı olan kenarı soldurur.
+  function edgeOf(box) {
+    var max = box.scrollWidth - box.clientWidth;
+    if (max <= 1) box.removeAttribute("data-kenar");
+    else box.setAttribute("data-kenar", box.scrollLeft <= 1 ? "bas" : box.scrollLeft >= max - 1 ? "son" : "orta");
   }
 
-  // Kaydırma bölgeleri: içerik taşıyorsa klavye durağı olur ve ok tuşlarıyla kayar; taşmıyorsa durak değildir.
+  // Bir öğeyi kayan kutunun görünen kısmına, solma bölgelerinin dışına getirir (bölgeler kutunun scroll-padding değeridir).
+  function reveal(box, a) {
+    var cs = getComputedStyle(box);
+    var left = a.offsetLeft - box.offsetLeft;
+    var min = left - (parseFloat(cs.scrollPaddingLeft) || 0);
+    var max = left + a.offsetWidth - box.clientWidth + (parseFloat(cs.scrollPaddingRight) || 0);
+    if (box.scrollLeft > min) box.scrollLeft = Math.max(0, min);
+    else if (box.scrollLeft < max) box.scrollLeft = max;
+  }
+
+  // Gezinme şeridi her zaman görünür; betik geçerli sayfanın bağlantısını görünen kısma getirir ve şeridin konumunu bildirir.
+  var strip = document.getElementById("site-nav-list");
+  if (strip) {
+    var current = strip.querySelector("[aria-current]");
+    // Geçerli bağlantı görünmüyorsa ortalanır. Şeridin genişliği değiştikçe (yön değişimi, geç gelen yerleşim) yinelenir.
+    var center = function () {
+      if (!current || strip.scrollWidth <= strip.clientWidth) return;
+      var left = current.offsetLeft - strip.offsetLeft;
+      if (left < strip.scrollLeft || left + current.offsetWidth > strip.scrollLeft + strip.clientWidth) {
+        strip.scrollLeft = Math.max(0, left - (strip.clientWidth - current.offsetWidth) / 2);
+      }
+    };
+    var edge = function () { edgeOf(strip); };
+    // Yalnız genişlik gerçekten değiştiyse yeniden ortalanır: kullanıcının kaydırdığı şerit yerinden oynatılmaz.
+    var width = strip.clientWidth;
+    var sync = function () {
+      if (strip.clientWidth !== width) { width = strip.clientWidth; center(); }
+      edge();
+    };
+    center();
+    edge();
+    strip.addEventListener("scroll", edge, { passive: true });
+    if ("ResizeObserver" in window) new ResizeObserver(sync).observe(strip);
+    else window.addEventListener("resize", sync);
+  }
+
+  // Kayan şeritlerde klavyeyle gelinen bağlantı tam görünür olur: bazı tarayıcılar yarısı görünen öğeyi kaydırmaz.
+  // Yalnız klavye odağında çalışır: fare ya da dokunmayla odaklanan bağlantı işaretçinin altından kaydırılırsa tıklama boşa gider.
+  var toc = document.querySelector(".toc__list");
+  [strip, toc].forEach(function (box) {
+    if (!box) return;
+    box.addEventListener("focusin", function (ev) {
+      var a = ev.target;
+      if (a === box) return;
+      try { if (!a.matches(":focus-visible")) return; } catch (err) { return; }
+      reveal(box, a);
+    });
+  });
+
+  // Bölüm gezintisi: sayfa kaydıkça bulunulan bölümün bağlantısı işaretlenir ve şeritte görünür tutulur.
+  if (toc) {
+    var secs = [];
+    Array.prototype.forEach.call(toc.querySelectorAll("a"), function (a) {
+      var el = document.getElementById(a.getAttribute("href").slice(1));
+      if (el) secs.push({ a: a, el: el });
+    });
+    var here = null, waiting = false;
+    var mark = function () {
+      waiting = false;
+      // Eşik, çapa hedefinin geldiği konumla aynı kaynaktan (kökün scroll-padding-top değeri) okunur; başlık ekranın üst üçte birine
+      // girince de bölüm değişir. Sayfanın sonuna gelindiyse son bölüm işaretlenir (kısa son bölüm eşiğe hiç ulaşamaz).
+      var root = document.documentElement;
+      var line = Math.max((parseFloat(getComputedStyle(root).scrollPaddingTop) || 0) + 2, window.innerHeight / 3), now = null;
+      secs.forEach(function (x) { if (x.el.getBoundingClientRect().top <= line) now = x.a; });
+      if (now && secs.length && window.innerHeight + window.pageYOffset >= root.scrollHeight - 2) now = secs[secs.length - 1].a;
+      if (now === here) return;
+      if (here) here.removeAttribute("aria-current");
+      if (now) { now.setAttribute("aria-current", "location"); reveal(toc, now); }
+      here = now;
+    };
+    window.addEventListener("scroll", function () {
+      if (!waiting) { waiting = true; requestAnimationFrame(mark); }
+    }, { passive: true });
+    mark();
+  }
+
+  // Kaydırma bölgeleri (tablo, şekil): içerik taşıyorsa klavye durağı olur, ok tuşlarıyla kayar ve sağ kenarı solar; taşmıyorsa durak değildir.
   var regions = Array.prototype.slice.call(document.querySelectorAll(".table-wrap, .figure__scroll"));
   function syncRegions() {
     regions.forEach(function (r) {
       if (r.scrollWidth > r.clientWidth) r.setAttribute("tabindex", "0");
       else if (document.activeElement !== r) r.removeAttribute("tabindex");
+      edgeOf(r);
     });
   }
   if (regions.length) {
@@ -54,6 +110,7 @@
       });
     }
     regions.forEach(function (r) {
+      r.addEventListener("scroll", function () { edgeOf(r); }, { passive: true });
       r.addEventListener("keydown", function (ev) {
         if (ev.target !== r || ev.altKey || ev.ctrlKey || ev.metaKey) return;
         var step = ev.key === "ArrowRight" ? 48 : ev.key === "ArrowLeft" ? -48 : 0;
@@ -73,8 +130,9 @@
     var t;
     return function () { clearTimeout(t); t = setTimeout(fn, ms); };
   }
+  function lower(s) { return s.toLocaleLowerCase("tr"); }
 
-  // Proje sözlüğü: arama ve tür süzgeci.
+  // Proje sözlüğü: arama ve tür süzgeci. Sayı, açılır bölümün başlığında görünür; canlı bölge gecikmeyle duyurur.
   var sozluk = document.getElementById("sozluk-arac");
   if (sozluk) {
     var items = Array.prototype.slice.call(document.querySelectorAll("#sozluk-liste .glossary > li"));
@@ -82,7 +140,10 @@
     var sq = document.getElementById("sq");
     var sonuc = document.getElementById("sozluk-sonuc");
     var bos = document.getElementById("sozluk-bos");
+    var sozet = document.getElementById("sozluk-ozet");
     var gs = { q: "", grup: "" };
+    var shownG = items.length;
+    var announceG = debounce(function () { if (sonuc) sonuc.textContent = shownG + " proje"; }, 300);
     var filterGlossary = function () {
       var n = 0;
       items.forEach(function (li) {
@@ -92,24 +153,23 @@
       });
       groups.forEach(function (g) { g.hidden = !g.querySelector(".glossary > li:not([hidden])"); });
       if (bos) bos.hidden = n !== 0;
-      var shown = n;
-      clearTimeout(filterGlossary.t);
-      filterGlossary.t = setTimeout(function () { if (sonuc) sonuc.textContent = shown + " proje"; }, 300);
+      if (sozet) sozet.textContent = n + " proje · " + (gs.grup ? lower(gs.grup) : "tümü");
+      shownG = n;
+      announceG();
     };
-    sozluk.hidden = false;
-    var spanel = document.getElementById("sozluk-panel");
-    var sozet = document.getElementById("sozluk-ozet");
-    if (spanel && window.matchMedia("(min-width: " + WIDE + ")").matches) spanel.open = true;
     sozluk.addEventListener("submit", function (ev) { ev.preventDefault(); });
     sozluk.addEventListener("click", function (ev) {
       var btn = ev.target.closest(".chip");
       if (!btn) return;
       gs.grup = btn.dataset.gfilter || "";
       Array.prototype.forEach.call(sozluk.querySelectorAll(".chip"), function (c) { c.setAttribute("aria-pressed", String(c === btn)); });
-      if (sozet) sozet.textContent = gs.grup ? gs.grup.toLocaleLowerCase("tr") : "tümü";
       filterGlossary();
     });
-    if (sq) sq.addEventListener("input", function () { gs.q = fold(sq.value.trim()); filterGlossary(); });
+    if (sq) {
+      sq.addEventListener("input", function () { gs.q = fold(sq.value.trim()); filterGlossary(); });
+      gs.q = fold(sq.value.trim());
+      if (gs.q) filterGlossary();
+    }
   }
 
   // Sıralama sayfası: süzme, arama ve sıralama.
@@ -128,6 +188,7 @@
   var PARAM = { karar: "karar", nsinif: "nakit", tur: "tur" };
   var state = { karar: "", nsinif: "", tur: "", sort: "yatirim", q: "" };
   var lastUrl = location.search;
+  var distButtons = [];
 
   function chipsOf(kind) {
     return form ? Array.prototype.slice.call(form.querySelectorAll(kind === "sort" ? ".chip[data-sort]" : '.chip[data-filter="' + kind + '"]')) : [];
@@ -138,6 +199,7 @@
       chipsOf(k).forEach(function (c) { c.setAttribute("aria-pressed", String(c.dataset.value === state[k])); });
     });
     chipsOf("sort").forEach(function (c) { c.setAttribute("aria-pressed", String(c.dataset.sort === state.sort)); });
+    distButtons.forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.karar === state.karar)); });
   }
 
   // Adres çubuğuna yalnız düğme seçimleri yazılır ve yalnız değiştiğinde; arama metni adrese konmaz.
@@ -176,29 +238,29 @@
       if (ok) shown += 1;
     });
     var key = state.sort;
-    rows.slice().sort(function (a, b) {
+    var sorted = rows.slice().sort(function (a, b) {
       return dir[key] * (parseFloat(a.dataset[key]) - parseFloat(b.dataset[key])) || (parseFloat(a.dataset.yatirim) - parseFloat(b.dataset.yatirim));
-    }).forEach(function (r) { list.appendChild(r); });
+    });
+    // Sıra değişmediyse satırlar yerinden oynatılmaz.
+    if (sorted.some(function (r, i) { return list.children[i] !== r; })) sorted.forEach(function (r) { list.appendChild(r); });
     if (count) {
       if (immediate) count.textContent = shown + " seçenek gösteriliyor";
       else announceCount();
     }
     if (empty) empty.hidden = shown !== 0;
     if (ozet && form) {
-      var parts = [];
+      var parts = [shown + " seçenek"];
       Array.prototype.forEach.call(form.querySelectorAll('.chip[data-filter][aria-pressed="true"]'), function (c) {
-        if (c.dataset.value) parts.push(c.textContent.toLocaleLowerCase("tr"));
+        if (c.dataset.value) parts.push(lower(c.textContent));
       });
-      if (!parts.length) parts.push("tümü");
-      var sorted = form.querySelector('.chip[data-sort][aria-pressed="true"]');
-      if (sorted) parts.push(sorted.textContent.toLocaleLowerCase("tr"));
+      var sorted1 = form.querySelector('.chip[data-sort][aria-pressed="true"]');
+      if (sorted1) parts.push(lower(sorted1.textContent));
       ozet.textContent = parts.join(" · ");
     }
     writeUrl();
   }
 
   if (form) {
-    form.hidden = false;
     form.addEventListener("submit", function (ev) { ev.preventDefault(); });
     form.addEventListener("click", function (ev) {
       var btn = ev.target.closest(".chip");
@@ -226,9 +288,30 @@
     });
   }
 
+  // Karar dağılımı hücreleri, betik varken hızlı süzgeç düğmelerine dönüşür.
+  var dagilim = document.getElementById("dagilim");
+  if (dagilim) {
+    dagilim.setAttribute("aria-label", "Karara göre süz");
+    Array.prototype.forEach.call(dagilim.children, function (li) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.dataset.karar = li.dataset.karar;
+      btn.setAttribute("aria-pressed", "false");
+      while (li.firstChild) btn.appendChild(li.firstChild);
+      li.appendChild(btn);
+      distButtons.push(btn);
+      btn.addEventListener("click", function () {
+        state.karar = state.karar === btn.dataset.karar ? "" : btn.dataset.karar;
+        syncChips();
+        apply(true);
+      });
+    });
+  }
+
   readUrl();
-  var filtered = FILTERS.some(function (k) { return state[k]; }) || state.sort !== "yatirim";
-  if (panel && (window.matchMedia("(min-width: " + WIDE + ")").matches || filtered)) panel.open = true;
+  if (q) state.q = fold(q.value.trim());
+  // Süzgeç paneli kapalı başlar (liste ilk ekranda görünsün); adreste seçim varsa açılır.
+  if (panel && (FILTERS.some(function (k) { return state[k]; }) || state.sort !== "yatirim")) panel.open = true;
   syncChips();
   apply(true);
 })();

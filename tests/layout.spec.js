@@ -22,18 +22,6 @@ for (const url of ALL_PAGES) {
   });
 }
 
-test("yerleşim: 320 genişlikte menü açıkken de taşma yok", async ({ page }) => {
-  await page.setViewportSize({ width: 320, height: 568 });
-  for (const url of KEY_PAGES) {
-    await page.goto(url);
-    await page.locator(".nav-toggle").click();
-    await expect(page.locator("#site-nav-list")).toBeVisible();
-    const r = await overflowReport(page);
-    expect.soft(r.scrollWidth, `${url}: menü açık belge genişliği`).toBeLessThanOrEqual(r.clientWidth);
-    expect.soft(r.disarida, `${url}: menü açık taşan öğe`).toEqual([]);
-  }
-});
-
 test("kırılma noktaları stil dosyasıyla ve AGENTS.md ile aynı", async ({}, info) => {
   test.skip(info.project.name !== "chromium", "not_applicable: dosya düzeyi denetim tek projede yeterli");
   const css = cssBreakpoints();
@@ -88,8 +76,6 @@ test("dokunma hedefleri: metin içi bağlantılar dışındaki bütün kontrolle
   for (const url of KEY_PAGES) {
     await page.goto(url);
     await openAll(page);
-    const toggle = page.locator(".nav-toggle");
-    if (await toggle.isVisible()) await toggle.click();
     const small = await page.evaluate((inline) => {
       const out = [];
       for (const el of document.querySelectorAll("a, button, summary, input")) {
@@ -110,7 +96,7 @@ test("dokunma hedefleri: dokunmatik profilde bütün düğmeler 48 CSS px", asyn
   for (const url of ["siralama.html", "projeler.html"]) {
     await page.goto(url);
     await openAll(page);
-    const heights = await page.locator(".chip, .nav-toggle, .btn").evaluateAll((els) => els.filter((el) => el.getBoundingClientRect().height > 0).map((el) => el.getBoundingClientRect().height));
+    const heights = await page.locator(".chip, .btn, .site-nav a, .dist-legend button").evaluateAll((els) => els.filter((el) => el.getBoundingClientRect().height > 0).map((el) => el.getBoundingClientRect().height));
     expect(heights.length, `${url}: ölçülen düğme`).toBeGreaterThan(5);
     expect(Math.min(...heights), `${url}: en küçük düğme yüksekliği`).toBeGreaterThanOrEqual(47.5);
   }
@@ -176,7 +162,7 @@ test("düzen kayması: yavaş ağda ilk yüklemede menü ve içerik kaymıyor (C
   const cdp = await page.context().newCDPSession(page);
   await cdp.send("Network.enable");
   await cdp.send("Network.emulateNetworkConditions", { offline: false, latency: 300, downloadThroughput: 40 * 1024, uploadThroughput: 40 * 1024 });
-  for (const url of ["index.html", "proje/qral.html"]) {
+  for (const url of ["index.html", "proje/qral.html", "siralama.html", "projeler.html"]) {
     await page.goto(url, { waitUntil: "load" });
     const cls = await page.evaluate(() => new Promise((res) => {
       let v = 0;

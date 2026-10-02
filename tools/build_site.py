@@ -13,6 +13,9 @@ OLCEK = M["kanit_olcegi"]
 HEDEF = D["hedef"]
 HEDEF_TL = HEDEF["hedef_usd"] * HEDEF["kur_tl_usd"]
 
+ISARET_NOTU = ("Nakit çizgisinde hedef çentiği altı ayda %s (%s USD) net nakittir. Ölçek doğrusaldır: sol uç hedefin yarısı kadar eksi, sağ uç hedefin bir buçuk katıdır; "
+               "ok, aralığın ölçeğin dışına taştığını gösterir.") % (tl(HEDEF_TL), num(HEDEF["hedef_usd"]))
+
 aday = [o for o in D["secenekler"] if o["karar"] != "kapida-kaldi"]
 yatirim = sorted(aday, key=lambda o: o["yatirim_sirasi"])
 ogrenme = sorted(aday, key=lambda o: o["ogrenme_sirasi"])
@@ -23,14 +26,12 @@ def build_assets():
     os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
     css = "".join(open(os.path.join(ROOT, "src", "styles", f), encoding="utf-8").read() for f in ("tokens.css", "base.css", "components.css"))
     open(os.path.join(OUT, "assets", "site.css"), "w", encoding="utf-8").write(minify_css(css))
-    shutil.copy(os.path.join(ROOT, "src", "site.js"), os.path.join(OUT, "assets", "site.js"))
+    open(os.path.join(OUT, "assets", "site.js"), "w", encoding="utf-8").write(minify_js(open(os.path.join(ROOT, "src", "site.js"), encoding="utf-8").read()))
+    shutil.copy(os.path.join(ROOT, "src", "favicon.svg"), os.path.join(OUT, "assets", "favicon.svg"))
+    # Betik kapalıyken yüklenen tek kural: betik gerektiren araçları gizler. Betik açıkken istenmez (noscript içinde bağlanır).
+    open(os.path.join(OUT, "assets", "noscript.css"), "w", encoding="utf-8").write(".filters{display:none}")
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
     open(os.path.join(OUT, "robots.txt"), "w").write("User-agent: *\nDisallow: /\n")
-
-
-def legend():
-    return ('<div class="legend" aria-hidden="true"><span class="legend__item"><span class="legend__swatch"></span>kanıtla desteklenen puan</span>'
-            '<span class="legend__item"><span class="legend__swatch legend__swatch--claim"></span>varsayıma dayanan puan</span></div>')
 
 
 def deney_blok(o):
@@ -42,47 +43,63 @@ def deney_blok(o):
 
 
 def bulgular():
-    """Özet sayfasındaki 'ne çıktı' maddeleri. Hepsi veriden hesaplanır; veri değişince metin de değişir."""
+    """Özet sayfasındaki bulgular. Her biri (büyük sayı, payda ya da birim, başlık, açıklama) dörtlüsüdür; hepsi veriden hesaplanır."""
     import statistics as st
     O = D["secenekler"]
     net = lambda o: o["finans"]["baz"]["net_nakit"]
     sb = lambda o: o["finans"]["baz"]["saat_basi"]
     out = []
-    ulasan = [o for o in O if o["finans"]["hedefe_ulasir"]]
+    ulasan = sum(1 for o in O if o["finans"]["hedefe_ulasir"])
     en = max(O, key=net)
-    if ulasan:
-        out.append(("Hedefe ulaşan seçenek", "Baz senaryoda %d seçenek altı ayda %s net nakde ulaşıyor. En yükseği %s (%s)." % (len(ulasan), tl(HEDEF_TL), en["tanim"]["ad"], tl(net(en)))))
-    else:
-        out.append(("Hedefe ulaşan seçenek yok", "Baz senaryoda hiçbir seçenek altı ayda %s (%s USD) net nakde ulaşmıyor. En yakını %s: %s. %d seçeneğin %d tanesinde altı aylık net nakit sıfır ya da eksi." % (
-            tl(HEDEF_TL), num(HEDEF["hedef_usd"]), en["tanim"]["ad"], tl(net(en)), len(O), sum(1 for o in O if net(o) <= 0))))
-    olan = [o for o in O if sb(o) is not None]
-    ens = max(olan, key=sb)
+    out.append((num(ulasan), "/ %s" % num(len(O)), "seçenek hedefe ulaşıyor" if ulasan else "Hedefe ulaşan seçenek yok",
+                "Baz senaryoda altı ayda %s (%s USD) net nakit hedefi. En yakını %s: %s." % (tl(HEDEF_TL), num(HEDEF["hedef_usd"]), en["tanim"]["ad"], tl(net(en)))))
+    eksi = sum(1 for o in O if net(o) <= 0)
+    urun = [o for o in O if o["tanim"]["tur"] != "hizmet"]
+    oran = lambda xs: (sum(1 for o in xs if net(o) <= 0) / float(len(xs))) if xs else 0.0
+    ek = (" Hizmet dışındaki seçeneklerde (yazılım, eklenti, içerik, kod) oran %s." % pct(oran(urun))) if urun and oran(urun) > oran(O) else ""
+    out.append((num(eksi), "/ %s" % num(len(O)), "Altı ayda sıfır ya da eksi nakit",
+                "Bu seçeneklerde gelir geç başlıyor, sabit gider erken.%s" % ek))
+    ens = max((o for o in O if sb(o) is not None), key=sb)
     gecen = sum(1 for o in O if o["finans"]["esik_gecer"])
-    out.append(("Saat ücretini geçen seçenek yok" if not gecen else "Saat ücretini geçen %d seçenek var" % gecen,
-                "Aynı saatlerde danışmanlık yapmak saatte %s bırakır. Bu eşiği baz senaryoda %s. En yüksek saat başı nakit %s ile %s." % (
-                    tl(HEDEF["esik_saat_ucreti_tl"]), ("%d seçenek geçiyor" % gecen) if gecen else "hiçbir seçenek geçmiyor", tl(sb(ens)), ens["tanim"]["ad"])))
+    out.append((tl(sb(ens)), "/ saat", "En yüksek saat başı nakit",
+                "Aynı saatlerde danışmanlık yapmak saatte %s bırakır. Bu eşiği baz senaryoda %s. En yükseği: %s." % (
+                    tl(HEDEF["esik_saat_ucreti_tl"]), ("%d seçenek geçiyor" % gecen) if gecen else "hiçbir seçenek geçmiyor", ens["tanim"]["ad"])))
     kisa = [o for o in O if o["karar"] in ("yatirim-yap", "once-test-et")]
-    kopya = [o for o in O if o["tanim"]["tur"] in ("yazılım ürünü", "eklenti", "içerik")]
     hiz = sum(1 for o in kisa if o["tanim"]["tur"] == "hizmet")
-    if kisa:
-        out.append(("Kısa listede hizmetler var", "Kısa listedeki %d seçeneğin %d tanesi hizmet paketi. Kopyası satılan ürünlerin (yazılım, eklenti, içerik) %d tanesinden %d tanesi altı ayda sıfır ya da eksi nakit bırakıyor: gelir geç başlıyor, sabit gider erken." % (
-            len(kisa), hiz, len(kopya), sum(1 for o in kopya if net(o) <= 0))))
+    out.append((num(len(kisa)), "seçenek", "Kısa listede: önce test et" if kisa and all(o["karar"] == "once-test-et" for o in kisa) else "Kısa listede",
+                ("Kısa listedeki seçeneklerin %s hizmet paketi. Büyük yatırımdan önce her birinin deney kartındaki test yapılır." % ("hepsi" if hiz == len(kisa) else "%d tanesi" % hiz)) if kisa else "Hiçbir seçenek iki koşulu birlikte sağlamıyor."))
     crit = {c["id"]: c for c in M["kriterler"]}
     ort = {cid: st.mean([o["final"][cid]["p"] for o in O if o["final"][cid].get("p") is not None]) for cid in crit}
     dusuk = sorted(ort.items(), key=lambda kv: kv[1])[:2]
-    kat = {k["id"]: st.mean([o["kategori"][k["id"]] for o in O if o["kategori"].get(k["id"]) is not None]) for k in M["kategoriler"]}
-    kd = min(kat.items(), key=lambda kv: kv[1]); kad = {k["id"]: k["ad"] for k in M["kategoriler"]}
-    out.append(("Darboğaz kod değil, alıcıya erişim ve ödeme kanıtı", "En düşük ortalamalı iki kriter %s (%s / 5) ve %s (%s / 5). Kategorilerde en zayıf olan %s: ortalama %s / 100." % (
-        tr_lower(crit[dusuk[0][0]]["ad"]), num(dusuk[0][1], 1), tr_lower(crit[dusuk[1][0]]["ad"]), num(dusuk[1][1], 1), tr_lower(kad[kd[0]]), num(kd[1]))))
+    out.append((num(dusuk[0][1], 1), "/ 5", "Darboğaz kod değil, erişim ve ödeme kanıtı" if all(crit[cid]["kat"] in ("A", "B") for cid, _ in dusuk) else "En zayıf iki kriter",
+                "En düşük ortalamalı iki kriter: %s (%s) ve %s (%s)." % (tr_lower(crit[dusuk[0][0]]["ad"]), num(dusuk[0][1], 1), tr_lower(crit[dusuk[1][0]]["ad"]), num(dusuk[1][1], 1))))
     odeyen = sum(p["bugun"]["odeyen_musteri"] for p in D["projeler"])
-    kort = st.mean([o["nitel"]["kanit_ort"] for o in O])
-    out.append(("Puanların çoğu varsayım", "%d projede ödeyen müşteri sayısı %d. Puanların ağırlıklı kanıt ortalaması E%s; çubuklardaki taralı kısım bu yüzden geniş. Sıra, ilk gerçek görüşme ve tekliflerle değişecektir." % (
-        len(D["projeler"]), odeyen, num(kort, 1))))
+    pay = st.mean([(o["nitel"]["duzeltilmis"] / o["nitel"]["puan"]) for o in O if o["nitel"]["puan"] > 0])
+    out.append((pct(pay), "", "Puanın kanıtla desteklenen payı",
+                "%d projede ödeyen müşteri sayısı %d. Puanların kalanı varsayım; sıra, ilk gerçek görüşme ve tekliflerle değişecektir." % (len(D["projeler"]), odeyen)))
     return out
 
 
+def bigstats_html():
+    return '<ul class="bigstats">%s</ul>' % "".join(
+        '<li><p class="bigstats__num">%s%s</p><p class="bigstats__title">%s</p><p class="bigstats__text">%s</p></li>' % (
+            e(n), (' <span class="bigstats__den">%s</span>' % e(d)) if d else "", e(t), e(x)) for n, d, t, x in bulgular())
+
+
+def dist_html():
+    """Karar dağılımı: yığılmış çubuk ve altında karar başına sayı. Hücreler betik varken hızlı süzgeç düğmesine dönüşür."""
+    sira = ["yatirim-yap", "once-test-et", "degistir", "beklet", "birak", "kapida-kaldi"]
+    say = [(k, sum(1 for o in D["secenekler"] if o["karar"] == k)) for k in sira]
+    say = [(k, n) for k, n in say if n]
+    bar = '<div class="dist" aria-hidden="true">%s</div>' % "".join('<span class="dist__seg" data-karar="%s" style="--n:%d"></span>' % (k, n) for k, n in say)
+    leg = '<ul class="dist-legend" id="dagilim" aria-label="Karara göre seçenek sayısı">%s</ul>' % "".join(
+        '<li data-karar="%s"><span class="dist-legend__n tag" data-karar="%s">%s<span class="visually-hidden"> seçenek:</span></span> <span class="dist-legend__ad">%s</span></li>' % (
+            k, k, num(n), e(D["karar_ad"][k])) for k, n in say)
+    return '<h2 class="visually-hidden">Karar dağılımı</h2>' + bar + leg
+
+
 def p_siralama():
-    b = head("Karar ekranı", "Tüm seçenekler", "Her satır bir ticari seçenektir: aynı projenin farklı müşteri, fiyat ve kanal birleşimleri ayrı satırlardır. Süzgeçler ve sıralama düğmeleri listeyi yeniden düzenler.")
+    b = head("Karar ekranı", "Tüm seçenekler", None, dist_html())
     karar_order = ["once-test-et", "yatirim-yap", "degistir", "beklet", "birak", "kapida-kaldi"]
     present = [k for k in karar_order if any(o["karar"] == k for o in D["secenekler"])]
     chips = '<button type="button" class="chip" data-filter="karar" data-value="" aria-pressed="true">Tümü</button>'
@@ -95,16 +112,17 @@ def p_siralama():
     nchips += "".join('<button type="button" class="chip" data-filter="nsinif" data-value="%d" aria-pressed="false">%s</button>' % (k, e(v)) for k, v in NS.items() if any(o["nakit_sinifi"] == k for o in D["secenekler"]))
     sorts = [("yatirim", "Yatırım sırası"), ("puan", "Puan"), ("nakit", "6 ay net nakit"), ("sure", "İlk tahsilat süresi"), ("ogrenme", "Öğrenme sırası"), ("stratejik", "Stratejik puan")]
     schips = "".join('<button type="button" class="chip" data-sort="%s" aria-pressed="%s">%s</button>' % (k, "true" if k == "yatirim" else "false", e(v)) for k, v in sorts)
-    filt = ('<form class="filters" id="suzgec" role="search" aria-label="Seçenek süzgeçleri" hidden>'
-            '<div class="field"><label for="q">Ara</label><input id="q" type="search" autocomplete="off" placeholder="Proje, müşteri ya da kanal"></div>'
-            '<details class="filters__panel" id="suzgec-panel"><summary>Süzgeç ve sıralama <span class="muted small" id="suzgec-ozet">Tümü · yatırım sırası</span></summary><div class="details__body filters__body">'
+    filt = ('<form class="filters" id="suzgec" role="search" aria-label="Seçenek süzgeçleri">'
+            '<div class="field field--inline"><label for="q">Ara</label><input id="q" type="search" autocomplete="off" placeholder="Proje, müşteri ya da kanal"></div>'
+            '<details class="filters__panel" id="suzgec-panel"><summary>Süz ve sırala <span class="summary__meta" id="suzgec-ozet">%d seçenek · yatırım sırası</span></summary><div class="details__body filters__body">'
             '<div class="filters__group" role="group" aria-labelledby="f-karar"><span class="filters__label" id="f-karar">Karar</span><div class="chips">%s</div></div>'
             '<div class="filters__group" role="group" aria-labelledby="f-nakit"><span class="filters__label" id="f-nakit">6 ay net nakit (baz)</span><div class="chips">%s</div></div>'
             '<div class="filters__group" role="group" aria-labelledby="f-tur"><span class="filters__label" id="f-tur">Tür</span><div class="chips">%s</div></div>'
             '<div class="filters__group" role="group" aria-labelledby="f-sort"><span class="filters__label" id="f-sort">Sırala</span><div class="chips">%s</div></div>'
             '</div></details>'
-            '<p class="result-count" id="sonuc" role="status" aria-live="polite">%d seçenek gösteriliyor</p>'
-            '<div class="empty" id="bos" hidden><p>Bu süzgeçle eşleşen seçenek yok.</p><button type="button" class="btn btn--quiet" id="temizle">Süzgeçleri temizle</button></div></form>') % (chips, nchips, tchips, schips, len(D["secenekler"]))
+            '<p class="visually-hidden" id="sonuc" role="status" aria-live="polite">%d seçenek gösteriliyor</p>'
+            '<div class="empty" id="bos" hidden><p>Bu süzgeçle eşleşen seçenek yok.</p><button type="button" class="btn btn--quiet" id="temizle">Süzgeçleri temizle</button></div></form>') % (
+        len(D["secenekler"]), chips, nchips, tchips, schips, len(D["secenekler"]))
     allo = yatirim + sorted(kalan, key=lambda o: -o["nitel"]["puan"])
     rows = []
     for i, o in enumerate(allo):
@@ -113,8 +131,9 @@ def p_siralama():
         attrs = 'data-karar="%s" data-nsinif="%d" data-tur="%s" data-yatirim="%d" data-puan="%.2f" data-nakit="%.0f" data-sure="%d" data-ogrenme="%d" data-stratejik="%.1f" data-text="%s"' % (
             o["karar"], o["nakit_sinifi"], e(o["tanim"]["tur"]), o.get("yatirim_sirasi", 9000 + i), o["nitel"]["puan"], o["finans"]["baz"]["net_nakit"], o["finans_girdi"]["ilk_tahsilat_gun"]["min"], o.get("ogrenme_sirasi", 9000 + i), o["stratejik"] or 0, e(txt))
         rows.append(opt_row(o, rank, 0, attrs))
-    b += ('<div class="wrap">%s<p class="skip-inline"><a href="#liste-baslik">Listeye geç</a></p><h2 class="visually-hidden" id="liste-baslik" tabindex="-1">Seçenek listesi</h2>%s'
-          '<ol class="opts" id="liste">%s</ol></div>') % (filt, legend(), "".join(rows))
+    giris = "Her satır bir ticari seçenektir: aynı projenin farklı müşteri, fiyat ve kanal birleşimleri ayrı satırlardır."
+    b += ('<div class="wrap section section--tools">%s<p class="skip-inline"><a href="#liste-baslik">Listeye geç</a></p>%s'
+          '<h2 class="visually-hidden" id="liste-baslik" tabindex="-1">Seçenek listesi</h2><ol class="opts" id="liste">%s</ol></div>') % (filt, howto(giris, ISARET_NOTU), "".join(rows))
     page("siralama.html", "Sıralama", "Tüm ticari seçeneklerin kapı, puan, kanıt ve altı aylık nakit karşılaştırması.", b, "siralama.html")
 
 
@@ -160,10 +179,10 @@ def finans_tablo(o):
 def secenek_blok(o):
     t = o["tanim"]; n = o["nitel"]
     s = '<div class="opt__tags mb-4">%s%s<span class="small muted">%s</span></div>' % (
-        tag(o["karar"], o["karar_ad"]), gsum(o["kapi"]), e(("Yatırım sırası %d · öğrenme sırası %d" % (o["yatirim_sirasi"], o["ogrenme_sirasi"])) if "yatirim_sirasi" in o else "Sıralamaya girmiyor"))
+        tag(o["karar"], o["karar_ad"]), gsum(o["kapi"], o["kapilar"]), e(("Yatırım sırası %d · öğrenme sırası %d" % (o["yatirim_sirasi"], o["ogrenme_sirasi"])) if "yatirim_sirasi" in o else "Sıralamaya girmiyor"))
     s += '<p class="prose">%s</p>' % e(KARAR_ACIKLAMA[o["karar"]])
-    s += '<div class="split split--wide-first mt-5"><div><div class="score"><span class="score__num">%s</span><span class="score__den">/ 100 puan · kanıtla desteklenen %s · stratejik %s</span></div><div class="mt-3 mb-3">%s</div>%s</div>' % (
-        num(n["puan"]), num(n["duzeltilmis"]), num(o["stratejik"]) if o["stratejik"] is not None else "–", meter(n["puan"], n["duzeltilmis"]), legend())
+    s += '<div class="split split--wide-first mt-5"><div><div class="score"><span class="score__num">%s</span><span class="score__den">/ 100 puan · kanıtla desteklenen %s · ortalama kanıt E%s · stratejik %s</span></div><div class="mt-3 mb-3">%s</div>%s</div>' % (
+        num(n["puan"]), num(n["duzeltilmis"]), num(n["kanit_ort"], 1), num(o["stratejik"]) if o["stratejik"] is not None else "–", meter(n["puan"], n["duzeltilmis"], gizli=True), legend(False))
     cats = []
     for c in M["kategoriler"]:
         v = o["kategori"].get(c["id"]); vd = (o.get("kategori_duz") or {}).get(c["id"]) or 0
@@ -178,7 +197,7 @@ def secenek_blok(o):
         v["durum"], v["durum"], g, KAPI_AD[v["durum"]], e(gdef[g]["ad"]), e(v["not"])) for g, v in sorted(o["kapilar"].items()))
     fix = ('<p class="small mt-4"><strong>Kapılar nasıl geçilir:</strong> %s</p>' % e(t["kapi_duzeltme"])) if t["kapi_duzeltme"] else ""
     s += '<h3 class="mt-6 mb-4">Kapılar</h3><ul class="gates">%s</ul>%s' % (gl, fix)
-    s += '<h3 class="mt-6 mb-4">Altı aylık nakit</h3>%s' % finans_tablo(o)
+    s += '<h3 class="mt-6 mb-4">Altı aylık nakit</h3>%s%s' % (range_plot(o["finans"], True), finans_tablo(o))
     s += '<h3 class="mt-6 mb-4">Sıradaki deney</h3>%s' % deney_blok(o)
     ids = [c["id"] for c in M["kriterler"]]
     fk = o["fark"]
@@ -187,7 +206,7 @@ def secenek_blok(o):
     s += '<details><summary>Stratejik eksen (4)</summary><div class="details__body"><p class="small muted mb-3">Stratejik puan nakit puanıyla toplanmaz; uzun vadeli değeri ayrı gösterir.</p>%s</div></details>' % crit_rows(o, [c["id"] for c in M["stratejik"]])
     s += '<details><summary>Puanlamaya dayanak notlar</summary><div class="details__body"><p class="prose small">%s</p></div></details></div>' % e(t["kanit_notlari"])
     harf = o["id"].rsplit("-", 1)[1].upper()
-    return section(t["ad"], s, None, o["id"], kicker="Seçenek %s · %s · %s" % (harf, t["tur"], o["etiketler"]["segment"]))
+    return section(t["ad"], s, None, o["id"], kicker="Seçenek %s · %s · %s" % (harf, t["tur"], o["etiketler"]["segment"]), band=(harf in "AC"))
 
 
 TD = {p["slug"]: (p.get("tanitim") or {}) for p in D["projeler"]}
@@ -253,19 +272,26 @@ def p_index():
     if ulasan:
         cevap = "<strong>%d seçenek hedefe ulaşıyor.</strong> Baz senaryoda altı ayda %s USD net nakit bırakıyorlar; yine de kanıt zayıf." % (ulasan, num(HEDEF["hedef_usd"]))
     else:
-        cevap = "<strong>Bugünkü haliyle hiçbiri.</strong> Baz senaryoda hiçbir seçenek altı ayda %s USD net nakit bırakmıyor. Sınanmaya değer %d seçenek var%s." % (
+        cevap = "<strong>Bugünkü haliyle hiçbiri</strong> altı ayda %s USD bırakmıyor. Sınanmaya değer %d seçenek var%s." % (
             num(HEDEF["hedef_usd"]), len(kisa), ("; %s hizmet paketi" % ("hepsi" if hiz == len(kisa) else "%d tanesi" % hiz)) if kisa else "")
-    lede = ("İki ayrı çalışmanın ele aldığı %d proje %d ticari seçeneğe ayrıldı. Her seçenek sekiz kapıdan geçirildi, 26 kriterde puanlandı ve altı aylık nakit hesabı yapıldı. "
-            "Hiçbir seçenekte ödeyen müşteri kanıtı yok; sonuç bir kazanan değil, sınanacak kısa bir listedir.") % (oz["proje"], oz["secenek"])
-    b = ('<div class="wrap page-head"><div class="hero"><div><p class="eyebrow">Proje seçim defteri · %s</p>'
-         '<h1>Hangi proje, reklam vermeden, altı ayda nakit getirir?</h1><p class="hero__answer mt-5">%s</p><p class="lede">%s</p>'
-         '<p class="btn-row mt-5"><a class="btn" href="#kisa-liste">Kısa listeye git</a><a class="btn btn--quiet" href="projeler.html">Hangi proje ne?</a></p></div>'
-         '<div><h2 class="visually-hidden">Eleme hunisi</h2>%s</div></div></div>') % (e(TARIH), cevap, e(lede), funnel_html())
-    b += section("Ne çıktı", '<dl class="dl findings">%s</dl>' % "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(a), e(c)) for a, c in bulgular()),
-                 "Sıralama, hiçbirinin hedefe ulaşmadığı seçenekler arasındaki sıralamadır; önce bu bulgular okunmalı.", "bulgular", kicker="Bulgular", band=True)
-    rows = "".join(opt_row(o, str(o["yatirim_sirasi"]), ne=proje_ne(o["proje"])) for o in yatirim[:7])
-    b += section("Kısa liste: yatırım sırası", legend() + '<ol class="opts">%s</ol><p class="btn-row mt-5"><a class="btn" href="siralama.html">Tüm sıralamayı aç</a><a class="btn btn--quiet" href="sablon.html">Puan nasıl hesaplanıyor</a></p>' % rows,
-                 "Kısa listeye giren seçenek kapıda kalmamış, uygunluk tabanını geçmiş ve baz senaryoda altı ayda hedefin en az yarısını bırakan seçenektir. Sıra, kanıt düzeyiyle düzeltilmiş puana göredir.", "kisa-liste", kicker="Sıralama")
+    lede = ("%d proje %d ticari seçeneğe ayrıldı; her biri sekiz kapıdan geçirildi, 26 kriterde puanlandı ve altı aylık nakit hesabı yapıldı. "
+            "Hiçbirinde ödeyen müşteri kanıtı yok: sıralama bir kazananı değil, sınanacak kısa bir listeyi gösterir. Önce şu sayılar okunmalı.") % (oz["proje"], oz["secenek"])
+    b = ('<div class="cover on-cover"><div class="wrap cover__in"><div><p class="eyebrow">Proje seçim defteri · %s</p>'
+         '<h1>Hangi proje, reklam vermeden, altı\u00a0ayda nakit getirir?</h1><p class="cover__answer">%s</p>'
+         '<p class="btn-row mt-5"><a class="btn" href="#kisa-liste">Kısa listeyi gör</a><a class="btn btn--quiet" href="projeler.html">Hangi proje ne?</a></p></div>'
+         '<div class="cover__figure"><h2 class="cover__caption">%d seçenekten kısa listeye</h2>%s</div></div></div>') % (e(TARIH), cevap, oz["secenek"], funnel_html())
+    b += section("Ne çıktı", bigstats_html(), e(lede), "bulgular", kicker="Bulgular")
+    satir = lambda os_: "".join(opt_row(o, str(o["yatirim_sirasi"]), ne=proje_ne(o["proje"])) for o in os_)
+    if kisa:
+        ust, alt = kisa, [o for o in yatirim if o not in kisa][:3]
+        liste = '<ol class="opts" id="kisa-liste-satirlar">%s</ol>' % satir(ust)
+        if alt:
+            liste += ('<h3 class="opts__more">Kısa listenin hemen dışında</h3><p class="small muted">Sıradaki %d seçenek kısa liste koşullarını bugünkü haliyle sağlamıyor; '
+                      'müşteri, fiyat ya da kanal değişirse listeye girebilir.</p><ol class="opts" start="%d">%s</ol>') % (len(alt), len(ust) + 1, satir(alt))
+    else:
+        liste = '<ol class="opts" id="kisa-liste-satirlar">%s</ol>' % satir(yatirim[:5])
+    b += section("Kısa liste: yatırım sırası", howto(None, ISARET_NOTU) + liste + '<p class="btn-row mt-5"><a class="btn" href="siralama.html">Tüm sıralamayı aç</a><a class="btn btn--quiet" href="sablon.html">Puan nasıl hesaplanıyor</a></p>',
+                 "Kısa listeye giren seçenek kapıda kalmamış, uygunluk tabanını geçmiş ve baz senaryoda altı ayda hedefin en az yarısını bırakan seçenektir. Sıra, kanıt düzeyiyle düzeltilmiş puana göredir.", "kisa-liste", kicker="Sıralama", band=True)
     items = []
     for o in ogrenme[:5]:
         items.append('<details><summary><span>%d. %s <span class="summary__meta">%s</span></span></summary><div class="details__body"><p class="small muted mb-4">%s</p>%s'
@@ -273,13 +299,7 @@ def p_index():
                          o["ogrenme_sirasi"], e(o["tanim"]["ad"]), e(o["proje_baslik"]), e(proje_ne(o["proje"])), deney_blok(o), e(o["proje"]), e(o["id"])))
     b += section("Önce neyi sınamalı: öğrenme sırası", "".join(items),
                  "Puanı yüksek, kanıtı zayıf ve deneyi ucuz olan seçenekler öndedir: az saatle en çok belirsizliği kapatan test önce yapılır.", "ogrenme", kicker="Deneyler")
-    how = [
-        ("Kapılar", "Sekiz koşul telafi edilemez: haklar, hukuk, tahsilat yolu, ödeyecek alıcı, reklamsız kanal, süre, riske edilen nakit, standart teslim. Biri kaldıysa puan ne olursa olsun seçenek sıralamaya girmez; bilinmeyen koşul sıfır puan değil, testtir."),
-        ("Puan", "26 kriter altı kategoride toplanır. Her kriter 0-5 arası, davranışla tanımlanmış çapalara göre puanlanır; kategori ağırlığı kriterlere dağıtılır."),
-        ("Kanıt", "Her puanın yanında kanıt düzeyi durur: varsayımdan (E0) tekrarlanan ödemeye (E4). Çubuğun dolu kısmı kanıtla desteklenen, taralı kısmı varsayıma dayanan puandır."),
-        ("Nakit", "Puan parayı göstermez. Her seçenek için altı aylık tahsilat, maliyet ve kurucu saati kötü, baz ve iyi senaryoda ayrıca hesaplanır."),
-    ]
-    b += section("Nasıl okunur", '<dl class="dl">%s</dl>' % "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(a), e(c)) for a, c in how), None, "nasil", kicker="Yöntem", band=True)
+    b += section("Nasıl okunur", layers_html("sablon.html"), "Şablon beş katmandır. Her katmanın ayrıntısı Şablon sayfasında.", "nasil", kicker="Yöntem", band=True)
     lim = ["Puan bir başarı olasılığı değildir; 70 puan, yüzde 70 başarı demek değildir.",
            "Rakamların çoğu kaynak belgelerdeki varsayımlardır; kurucunun gerçek ilişki ağı ve gerçek görüşmeler puanları değiştirir.",
            "Birinci sıradaki seçenek, yatırım yapılmaya değer olduğu için değil, diğerlerinden önde olduğu için birincidir. Karşılaştırma tabanı Portföy sayfasındadır.",
@@ -296,15 +316,15 @@ FORMUL = [("Ne tür bir şey", "tarayıcı uzantısı mı, web uygulaması mı, 
 
 
 def p_projeler():
-    intro = ("Bir projenin ne olduğunu unuttuysanız buradan bakın. Her satır \"bu nedir?\" sorusunun kısa yanıtıdır; ada dokununca projenin tanıtımı, "
-             "değerlendirmesi ve deney kartı açılır.")
+    odeyen = sum(p["bugun"]["odeyen_musteri"] for p in D["projeler"])
+    intro = ("Bir projenin ne olduğunu unuttuysanız buradan bakın. Ada dokununca tanıtımı, değerlendirmesi ve deney kartı açılır.%s") % (
+        " %d projenin hiçbirinde ödeyen müşteri yok." % len(D["projeler"]) if odeyen == 0 else "")
     b = head("Proje sözlüğü", "Hangi proje ne?", e(intro))
     ornek = TD.get("qral", {}).get("bir_cumle")
     fl = "".join("<li><span><strong>%s:</strong> %s</span></li>" % (e(a), e(c)) for a, c in FORMUL)
     form = ('<div class="split"><div><ol class="formula">%s</ol></div><div class="prose"><p>Bu sözlükteki her yanıt aynı beş parçayla yazıldı. Bir projeyi başkasına anlatırken de bu sırayı kullanmak yeter: önce ne olduğunu, '
             'sonra kimin için hangi işi gördüğünü, en son bugün nerede durduğunu söyleyin.</p>%s</div></div>') % (
         fl, ('<p><strong>Örnek:</strong> %s</p>' % e(ornek)) if ornek else "")
-    b += section("Bir proje nasıl anlatılır", form, None, "nasil-anlatilir", kicker="Yanıt kalıbı", band=True)
     ps = sorted(D["projeler"], key=lambda p: tr_key(split_title(p["baslik"])[0]))
     gruplar = {}
     for p in ps:
@@ -312,17 +332,17 @@ def p_projeler():
         gruplar[tur_grubu(TD.get(p["slug"], {}).get("tur") or "")] += 1
     chips = '<button type="button" class="chip" data-gfilter="" aria-pressed="true">Tümü</button>' + "".join(
         '<button type="button" class="chip" data-gfilter="%s" aria-pressed="false">%s <span class="chip__n">%d</span></button>' % (e(g), e(g), n) for g, n in sorted(gruplar.items(), key=lambda kv: -kv[1]))
-    arac = ('<form class="filters" id="sozluk-arac" role="search" aria-label="Proje sözlüğünde ara" hidden><div class="field"><label for="sq">Ara</label>'
+    arac = ('<form class="filters" id="sozluk-arac" role="search" aria-label="Proje sözlüğünde ara"><div class="field field--inline"><label for="sq">Ara</label>'
             '<input id="sq" type="search" autocomplete="off" placeholder="Ad, tür ya da konu"></div>'
-            '<details class="filters__panel" id="sozluk-panel"><summary>Türe göre süz <span class="summary__meta" id="sozluk-ozet">tümü</span></summary><div class="details__body filters__body">'
+            '<details class="filters__panel" id="sozluk-panel"><summary>Türe göre süz <span class="summary__meta" id="sozluk-ozet">%d proje · tümü</span></summary><div class="details__body filters__body">'
             '<div class="filters__group" role="group" aria-labelledby="f-grup"><span class="filters__label" id="f-grup">Tür</span><div class="chips">%s</div></div></div></details>'
-            '<p class="result-count" id="sozluk-sonuc" role="status">%d proje</p>'
-            '<p class="empty" id="sozluk-bos" hidden>Bu aramayla eşleşen proje yok.</p></form>') % (chips, len(ps))
+            '<p class="visually-hidden" id="sozluk-sonuc" role="status">%d proje</p>'
+            '<p class="empty" id="sozluk-bos" hidden>Bu aramayla eşleşen proje yok.</p></form>') % (len(ps), chips, len(ps))
     harfler = []
     for p in ps:
         h = tr_upper(split_title(p["baslik"])[0][:1])
         if h not in harfler: harfler.append(h)
-    az = '<nav class="az mt-4" aria-label="Harfe göre">%s</nav>' % "".join('<a href="#harf-%s">%s</a>' % (e(fold(h)), e(h)) for h in harfler)
+    az = '<nav class="az" aria-label="Harfe göre">%s</nav>' % "".join('<a href="#harf-%s">%s</a>' % (e(fold(h)), e(h)) for h in harfler)
     body = ""
     for h in harfler:
         items = []
@@ -331,15 +351,16 @@ def p_projeler():
             best = en_iyi(p)
             tur = t.get("tur") or alt or ""
             metin = fold(" ".join([p["baslik"], tur, t.get("bir_cumle", ""), " ".join(t.get("etiketler", []))]))
-            meta = '%s<span>En iyi seçenek: %s / 100 puan · altı ay net %s</span><span>%s</span>' % (
+            meta = '%s<span>En iyi seçenek: %s / 100 puan · 6 ay net nakit %s%s</span>' % (
                 tag(best["karar"], best["karar_ad"]), num(best["nitel"]["puan"]), tl(best["finans"]["baz"]["net_nakit"]),
-                e("ödeyen müşteri %d" % p["bugun"]["odeyen_musteri"]))
+                e(" · ödeyen müşteri %d" % p["bugun"]["odeyen_musteri"]) if p["bugun"]["odeyen_musteri"] else "")
             items.append('<li data-text="%s" data-grup="%s"><a class="glossary__link" href="proje/%s.html"><span class="glossary__name">%s</span><span class="glossary__type">%s</span></a>'
                          '<p class="glossary__desc">%s</p><p class="glossary__meta">%s</p></li>' % (
                              e(metin), e(tur_grubu(t.get("tur") or "")), e(p["slug"]), e(ad), e(tur), e(t.get("bir_cumle") or p["ozet"]), meta))
         body += '<section class="glossary__group" aria-labelledby="harf-%s"><h2 class="glossary__letter" id="harf-%s">%s</h2><ul class="glossary">%s</ul></section>' % (
             e(fold(h)), e(fold(h)), e(h), "".join(items))
-    b += '<div class="wrap section" id="sozluk">%s%s<div id="sozluk-liste">%s</div></div>' % (arac, az, body)
+    b += '<div class="wrap section section--tools" id="sozluk">%s%s<div id="sozluk-liste" class="glossary-cols">%s</div></div>' % (arac, az, body)
+    b += section("Bir proje nasıl anlatılır", form, None, "nasil-anlatilir", kicker="Yanıt kalıbı", band=True)
     page("projeler.html", "Proje sözlüğü", "Her proje için \"bu nedir?\" sorusunun kısa yanıtı: tür, kim için, hangi iş, bugünkü durum.", b, "projeler.html")
 
 
@@ -348,27 +369,27 @@ def nedir_blok(p):
     if not t: return ""
     adim = "".join("<li><span>%s</span></li>" % e(x) for x in t["nasil_calisir"])
     s = ('<div class="split"><div><h3>Hangi işi görür</h3><p class="mt-3">%s</p><h3 class="mt-6">Kim için</h3><p class="mt-3">%s</p>'
-         '<h3 class="mt-6">Bir örnek</h3><p class="mt-3">%s</p></div><div><h3>Nasıl çalışır</h3><ol class="steps mt-4">%s</ol></div></div>') % (
-        e(t["sorun"]), e(t["kim_icin"]), e(t["ornek"]), adim)
-    rows = [("Benzerleri", t["benzerleri"]), ("Neyle ve nerede çalışır", t["teknoloji"]), ("Bugün nerede", t["durum"]), ("Nasıl para kazanır", t["para"])]
+         '<h3 class="mt-6">Bugün nerede</h3><p class="mt-3">%s</p></div>'
+         '<div><h3>Nasıl çalışır</h3><ol class="steps mt-4">%s</ol><h3 class="mt-6">Bir örnek</h3><p class="mt-3">%s</p></div></div>') % (
+        e(t["sorun"]), e(t["kim_icin"]), e(t["durum"]), adim, e(t["ornek"]))
+    rows = [("Nasıl para kazanır", t["para"]), ("Benzerleri", t["benzerleri"]), ("Neyle ve nerede çalışır", t["teknoloji"])]
     if t.get("ne_degil"): rows.append(("Ne değildir", t["ne_degil"]))
     if t.get("ad_nereden"): rows.append(("Adı nereden geliyor", t["ad_nereden"]))
     s += '<dl class="dl mt-6">%s</dl>' % "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(a), e(c)) for a, c in rows)
-    return section("Bu proje nedir?", s, None, "nedir", kicker="Tanıtım", band=True)
+    return section("Bu proje nedir?", s, None, "nedir", kicker="Tanıtım")
 
 
 def p_proje(p, prev_p, next_p):
     ad, alt = split_title(p["baslik"])
     t = p.get("tanitim") or {}
     best = en_iyi(p)
-    b = '<div class="wrap page-head"><p class="eyebrow">Proje%s</p><h1>%s</h1>' % ((" · " + e(t["tur"])) if t.get("tur") else "", e(ad))
-    if alt: b += '<p class="subtitle">%s</p>' % e(alt)
-    b += '<p class="answer">%s</p>' % e(t.get("bir_cumle") or p["ozet"])
-    kf = [("Ödeyen müşteri", num(p["bugun"]["odeyen_musteri"])),
-          ("En iyi seçenek", '%s<br><a href="#%s">%s</a>' % (tag(best["karar"], best["karar_ad"]), e(best["id"]), e(best["tanim"]["ad"]))),
-          ("Uygunluk puanı", "%s / 100 <span class=\"muted\">kanıtla desteklenen %s</span>" % (num(best["nitel"]["puan"]), num(best["nitel"]["duzeltilmis"]))),
-          ("Altı ay net nakit (baz)", tl(best["finans"]["baz"]["net_nakit"]))]
-    b += '<dl class="keyfacts">%s</dl></div>' % "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(a), c) for a, c in kf)
+    grup = tur_grubu(t.get("tur") or "") if t.get("tur") else ""
+    b = '<div class="masthead"><div class="wrap page-head"><div><p class="eyebrow">Proje%s</p><h1>%s</h1>' % ((" · " + e(grup)) if grup and grup != "Diğer" else "", e(ad))
+    b += '<p class="answer">%s</p></div>' % e(t.get("bir_cumle") or p["ozet"] or alt or "")
+    b += ('<div class="keyfacts"><div class="metric metric--best"><span class="metric__label">En iyi seçenek</span> %s <a href="#%s">%s</a></div>%s%s'
+          '<div class="metric metric--gates"><span class="metric__label">Kapılar</span> %s <span class="metric__sub">ödeyen müşteri %s</span></div></div></div></div>') % (
+        tag(best["karar"], best["karar_ad"]), e(best["id"]), e(best["tanim"]["ad"]), metric_score(best["nitel"]), metric_cash(best["finans"], True),
+        gsum(best["kapi"], best["kapilar"], onek=False), num(p["bugun"]["odeyen_musteri"]))
     links = ([("nedir", "Bu nedir")] if t else []) + [("bugun", "Bugün"), ("iki-calisma", "İki çalışma")]
     links += [(i, "Seçenek %s" % i.rsplit("-", 1)[1].upper()) for i in p["secenekler"]]
     if p.get("hakem"): links.append(("itirazlar", "İtirazlar"))
@@ -378,11 +399,11 @@ def p_proje(p, prev_p, next_p):
     var = '<ul class="bullets">%s</ul>' % "".join("<li>%s</li>" % e(x) for x in bugun["var"])
     yok = '<ul class="bullets">%s</ul>' % "".join("<li>%s</li>" % e(x) for x in bugun["yok"])
     b += section("Bugün", '<p class="prose">%s</p><div class="split mt-6"><div><h3>Var</h3><div class="mt-3">%s</div></div><div><h3>Henüz yok</h3><div class="mt-3">%s</div></div></div>'
-                 '<p class="mt-5"><strong>Ödeyen müşteri: %s.</strong></p>' % (e(p["ozet"]), var, yok, num(bugun["odeyen_musteri"])), None, "bugun", kicker="Durum")
+                 '<p class="mt-5"><strong>Ödeyen müşteri: %s.</strong></p>' % (e(p["ozet"]), var, yok, num(bugun["odeyen_musteri"])), None, "bugun", kicker="Durum", band=True)
     ik = p["iki_calisma"]
     b += section("İki çalışma ne diyor", '<dl class="dl"><div><dt>Claude çalışması</dt><dd>%s</dd></div><div><dt>GPT çalışması</dt><dd>%s</dd></div><div><dt>Ayrıştıkları yer</dt><dd>%s</dd></div><div><dt>Birleşik hüküm</dt><dd>%s</dd></div>'
                  '<div class="dl__wide"><dt>Analist görüşü</dt><dd>%s</dd></div></dl>' % (e(ik["claude"]), e(ik["gpt"]), e(ik["ayrisma"]), e(ik["birlesik"]), e(p["analist_gorusu"])),
-                 "Kaynak: Claude çalışmasından %d, GPT çalışmasından %d belge." % (p["kaynak"]["claude"], p["kaynak"]["gpt"]), "iki-calisma", kicker="Kaynaklar", band=True)
+                 "Kaynak: Claude çalışmasından %d, GPT çalışmasından %d belge." % (p["kaynak"]["claude"], p["kaynak"]["gpt"]), "iki-calisma", kicker="Kaynaklar")
     for i in p["secenekler"]:
         b += secenek_blok(OPT[i])
     hk = p.get("hakem") or []
@@ -398,7 +419,7 @@ def p_proje(p, prev_p, next_p):
     pg += ('<a class="pager__prev" href="%s.html"><small>Önceki proje</small>%s</a>' % (e(prev_p["slug"]), e(split_title(prev_p["baslik"])[0]))) if prev_p else "<span></span>"
     pg += ('<a class="pager__next" href="%s.html"><small>Sonraki proje</small>%s</a>' % (e(next_p["slug"]), e(split_title(next_p["baslik"])[0]))) if next_p else ""
     pg += "</nav></div>"
-    page("proje/%s.html" % p["slug"], ad, t.get("bir_cumle") or p["ozet"], b + pg, "projeler.html", 1)
+    page("proje/%s.html" % p["slug"], ad, t.get("bir_cumle") or p["ozet"], b + pg, "projeler.html", 1, ust=True)
 
 
 
@@ -413,7 +434,7 @@ def main():
     order = sorted(D["projeler"], key=lambda p: min([OPT[i].get("yatirim_sirasi", 999) for i in p["secenekler"]] + [999]))
     for i, p in enumerate(order):
         p_proje(p, order[i - 1] if i > 0 else None, order[i + 1] if i + 1 < len(order) else None)
-    pages_extra.build(D, yatirim, ogrenme, kalan, OPT)
+    pages_extra.build(D, yatirim, kalan)
     n = sum(len(fs) for _, _, fs in os.walk(OUT))
     print("site üretildi:", OUT, "dosya:", n)
 

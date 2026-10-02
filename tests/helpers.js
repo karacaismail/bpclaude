@@ -44,7 +44,7 @@ export const tabKey = (browserName) => (browserName === "webkit" ? "Alt+Tab" : "
 export const shiftTabKey = (browserName) => (browserName === "webkit" ? "Alt+Shift+Tab" : "Shift+Tab");
 
 // Kendi içinde kayan bölgeler: içerikleri bilerek görünüm alanını aşabilir.
-const SCROLLERS = ".table-wrap, .figure__scroll, .toc__list";
+const SCROLLERS = ".table-wrap, .figure__scroll, .toc__list, .site-nav__list";
 
 /** Bütün açılır bölümleri açar; kapalı içerik de ölçülsün. */
 export async function openAll(page) {
@@ -72,4 +72,4 @@ export async function overflowReport(page) {
 }
 
 /** Metin içindeki bağlantı mı? (paragraf, tablo hücresi, liste maddesi gibi akış metni) — dokunma hedefi kuralının adı konmuş istisnası. */
-export const INLINE_LINK = "p a, dd a, td a, th a, figcaption a, .bullets a, .prose a, .ruling a, .cols-list a";
+export const INLINE_LINK = "p a, dd a, td a, th a, figcaption a, .bullets a, .prose a, .ruling a";

@@ -9,7 +9,7 @@ if not os.path.exists(SRC):
     print("test-results/results.json yok; önce npm test çalıştırın"); sys.exit(1)
 R = json.load(open(SRC, encoding="utf-8"))
 
-KATMAN = {"layout.spec.js": "Yerleşim", "interaction.spec.js": "Etkileşim ve durum geçişleri", "network.spec.js": "Ağ ve bütünlük", "a11y.spec.js": "Erişilebilirlik", "visual.spec.js": "Görsel karşılaştırma"}
+KATMAN = {"layout.spec.js": "Yerleşim", "interaction.spec.js": "Etkileşim ve durum geçişleri", "network.spec.js": "Ağ ve bütünlük", "a11y.spec.js": "Erişilebilirlik", "kabul.spec.js": "Tasarım kabul ölçütleri", "visual.spec.js": "Görsel karşılaştırma"}
 PROFIL = {
     "chromium": ("Chromium", "1280 × 800 (testler 320-1920 arasında yeniden boyutlandırır)", "fare ve klavye"),
     "firefox": ("Firefox", "1280 × 800 (testler 320-1920 arasında yeniden boyutlandırır)", "fare ve klavye"),

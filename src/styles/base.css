@@ -92,7 +92,7 @@ a:hover {
 }
 
 :focus-visible {
-  outline: var(--focus-ring);
+  outline: var(--focus-width) solid var(--c-focus);
   outline-offset: var(--focus-offset);
 }
 
@@ -100,12 +100,6 @@ button,
 input {
   font: inherit;
   color: inherit;
-}
-
-code,
-.mono {
-  font-family: var(--font-mono);
-  font-size: 0.92em;
 }
 
 .visually-hidden {
@@ -156,7 +150,8 @@ code,
   list-style: disc;
 }
 
-.prose ol {
+.prose ol,
+ol.prose {
   padding-inline-start: 1.4em;
   list-style: decimal;
 }
@@ -165,12 +160,14 @@ code,
   margin-block-start: var(--sp-2);
 }
 
-.stack > * + * {
-  margin-block-start: var(--sp-5);
+.prose li::marker {
+  color: var(--c-line-strong);
 }
 
-.stack-lg > * + * {
-  margin-block-start: var(--sp-7);
+/* Tam genişlikteki notlar da okunur satır uzunluğunda kalır. */
+main p,
+main dd {
+  max-inline-size: var(--measure);
 }
 
 .muted {
@@ -179,10 +176,6 @@ code,
 
 .small {
   font-size: var(--fs-sm);
-}
-
-.xs {
-  font-size: var(--fs-xs);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -197,7 +190,6 @@ code,
 
 @media print {
   .site-nav,
-  .nav-toggle,
   .toc,
   .skip-link,
   .filters {

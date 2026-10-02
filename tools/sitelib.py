@@ -16,21 +16,21 @@ NAV = [
     ("siralama.html", "Sıralama"),
     ("projeler.html", "Projeler"),
     ("sablon.html", "Şablon"),
-    ("sorular.html", "Tanı soruları"),
+    ("sorular.html", "Sorular"),
     ("duyarlilik.html", "Duyarlılık"),
     ("portfoy.html", "Portföy"),
     ("indir.html", "İndir"),
     ("hakkinda.html", "Hakkında"),
 ]
 
-def _paper():
-    """theme-color değerleri elle yazılmaz; tokens.css içindeki --c-paper değerlerinden okunur."""
+def _cover():
+    """theme-color değerleri elle yazılmaz; tokens.css içindeki --c-cover değerlerinden (açık ve koyu tema) okunur."""
     css = open(os.path.join(ROOT, "src", "styles", "tokens.css"), encoding="utf-8").read()
-    vals = re.findall(r"--c-paper:\s*(#[0-9a-fA-F]{6})", css)
-    return (vals[0], vals[1]) if len(vals) >= 2 else ("#ffffff", "#000000")
+    vals = re.findall(r"--c-cover:\s*(#[0-9a-fA-F]{6})", css)
+    return (vals[0], vals[1]) if len(vals) >= 2 else ("#000000", "#000000")
 
 
-PAPER = _paper()
+COVER = _cover()
 
 KAPI_AD = {"gecti": "geçti", "test": "test", "kaldi": "kaldı"}
 KARAR_ACIKLAMA = {
@@ -73,7 +73,7 @@ def num(v, d=0):
     """Türkçe sayı biçimi: binlik nokta, ondalık virgül."""
     if v is None: return "–"
     s = ("{:,.%df}" % d).format(v)
-    return s.replace(",", "X").replace(".", ",").replace("X", ".")
+    return s.replace(",", "X").replace(".", ",").replace("X", ".").replace("-", "−")
 
 
 def tl(v):
@@ -84,22 +84,20 @@ def tl(v):
     return "%s₺%s" % (neg, num(a))
 
 
-def usd(v):
-    if v is None: return "–"
-    neg = "−" if v < 0 else ""
-    return "%s%s USD" % (neg, num(abs(v)))
-
-
 def pct(v, d=0):
     return "–" if v is None else "%%%s" % num(100 * v, d)
 
 
-def page(path, title, desc, body, current=None, depth=0, absolute=False):
+
+def page(path, title, desc, body, current=None, depth=0, absolute=False, ust=False):
+    """ust=True: sayfa, gezinmedeki bağlantının alt sayfasıdır (ör. proje sayfası); bağlantı "page" değil "true" ile işaretlenir."""
     rel = BASE_PATH if absolute else "../" * depth
     nav = []
     for href, label in NAV:
-        cur = ' aria-current="page"' if href == current else ""
+        cur = (' aria-current="%s"' % ("true" if ust else "page")) if href == current else ""
         nav.append('<li><a href="%s%s"%s>%s</a></li>' % (rel, href, cur, e(label)))
+    # Alt gezinme şeritle aynı sayfaları ve aynı adları kullanır: şeritte kaydıramayan kullanıcının ikinci yoludur.
+    foot = "".join('<li><a href="%s%s">%s</a></li>' % (rel, h, e(l)) for h, l in NAV)
     doc = """<!doctype html>
 <html lang="tr">
 <head>
@@ -109,42 +107,48 @@ def page(path, title, desc, body, current=None, depth=0, absolute=False):
 <title>%(title)s · %(site)s</title>
 <meta name="description" content="%(desc)s">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="%(paper_l)s" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="%(paper_d)s" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="%(cover_l)s" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="%(cover_d)s" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="%(rel)sassets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="%(rel)sassets/site.css">
+<noscript><link rel="stylesheet" href="%(rel)sassets/noscript.css"></noscript>
 <script src="%(rel)sassets/site.js" defer></script>
 </head>
 <body>
+<header class="site-header on-cover">
 <a class="skip-link" href="#icerik">İçeriğe geç</a>
-<header class="site-header">
 <div class="wrap site-header__in">
-<a class="brand" href="%(rel)sindex.html"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">%(site)s</span><span class="brand__sub">proje seçim defteri</span></a>
-<a class="nav-toggle" href="#site-nav-list">Menü</a>
+<a class="brand" href="%(rel)sindex.html"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">%(site)s</span></a>
+<nav class="site-nav" aria-label="Site"><ul id="site-nav-list" class="site-nav__list">%(nav)s</ul></nav>
 </div>
-<nav class="site-nav" aria-label="Site"><ul id="site-nav-list" class="wrap site-nav__list">%(nav)s</ul></nav>
 </header>
 <main id="icerik">
 %(body)s
 </main>
-<footer class="site-footer"><div class="wrap">
-<p>%(site)s · %(tarih)s. Puanlar kaynak belgelerden çıkarılmış tahminlerdir; bir başarı olasılığı değildir. Hiçbir seçenekte ödeyen müşteri kanıtı yoktur.</p>
-<p><a href="%(rel)shakkinda.html">Yöntem, kaynaklar ve sınırlar</a> · <a href="%(rel)sindir.html">Çalışma kitabını indir</a></p>
+<footer class="site-footer on-cover"><div class="wrap site-footer__in">
+<div><p class="brand"><span class="brand__mark" aria-hidden="true"></span><span class="brand__name">%(site)s</span></p>
+<p class="site-footer__note">%(tarih)s. Puanlar kaynak belgelerden çıkarılmış tahminlerdir; bir başarı olasılığı değildir. Hiçbir seçenekte ödeyen müşteri kanıtı yoktur.</p></div>
+<nav aria-label="Alt bölüm"><ul class="footer-nav">%(foot)s</ul></nav>
 </div></footer>
 </body>
 </html>
-""" % {"title": e(title), "site": SITE, "desc": e(desc), "rel": rel, "nav": "".join(nav), "body": body, "tarih": TARIH, "csp": CSP, "paper_l": PAPER[0], "paper_d": PAPER[1]}
+""" % {"title": e(title), "site": SITE, "desc": e(desc), "rel": rel, "nav": "".join(nav), "foot": foot, "body": body, "tarih": TARIH, "csp": CSP,
+       "cover_l": COVER[0], "cover_d": COVER[1]}
     full = os.path.join(OUT, path)
     os.makedirs(os.path.dirname(full), exist_ok=True)
     open(full, "w", encoding="utf-8").write(doc)
     return full
 
 
-def head(eyebrow, title, lede=None):
-    s = '<div class="wrap page-head">'
+def head(eyebrow, title, lede=None, fig=None):
+    """Sayfa başı bandı. fig verilirse başlığın yanına (dar ekranda altına) sayfanın özet grafiği yerleşir."""
+    s = '<div class="masthead"><div class="wrap page-head%s"><div>' % (" page-head--fig" if fig else "")
     if eyebrow: s += '<p class="eyebrow">%s</p>' % e(eyebrow)
     s += "<h1>%s</h1>" % e(title)
     if lede: s += '<p class="lede">%s</p>' % lede
-    return s + "</div>"
+    s += "</div>"
+    if fig: s += '<div class="page-head__fig">%s</div>' % fig
+    return s + "</div></div>"
 
 
 def split_title(baslik):
@@ -167,21 +171,89 @@ def section(title, inner, intro=None, sid=None, tag="h2", kicker=None, band=Fals
     return s
 
 
-def meter(puan, duzeltilmis, label=None):
+def meter(puan, duzeltilmis, label=None, gizli=False):
+    """Puan çubuğu. gizli=True: aynı sayılar bitişik metinde yazıyorsa grafik yardımcı teknolojiden gizlenir (yineleme olmasın)."""
     lab = label or ("Puan %s / 100; kanıtla desteklenen kısım %s" % (num(puan), num(duzeltilmis)))
-    return ('<div class="meter" role="img" aria-label="%s"><span class="meter__claim" style="--v:%.1f%%"></span>'
-            '<span class="meter__proven" style="--p:%.1f%%"></span></div>') % (e(lab), max(0, min(100, puan)), max(0, min(100, duzeltilmis)))
+    return ('<div class="meter" %s><span class="meter__claim" style="--v:%.1f%%"></span>'
+            '<span class="meter__proven" style="--p:%.1f%%"></span></div>') % (
+        'aria-hidden="true"' if gizli else 'role="img" aria-label="%s"' % e(lab), max(0, min(100, puan)), max(0, min(100, duzeltilmis)))
 
 
 def tag(karar, ad):
     return '<span class="tag" data-karar="%s">%s</span>' % (e(karar), e(ad))
 
 
-def gsum(k):
-    """Kapı özeti: işaret biçimle, anlam görünür metinle verilir (yalnız renge ya da biçime dayanmaz)."""
-    return ('<span class="gsum"><span class="visually-hidden">Kapılar: </span><span class="gsum__part"><span class="dot dot--gecti" aria-hidden="true"></span>%d geçti</span>'
-            '<span class="gsum__part"><span class="dot dot--test" aria-hidden="true"></span>%d test</span>'
-            '<span class="gsum__part"><span class="dot dot--kaldi" aria-hidden="true"></span>%d kaldı</span></span>') % (k["gecti"], k["test"], k["kaldi"])
+def gsum(k, kapilar=None, kisa=False, onek=True):
+    """Kapı özeti. Sekiz nokta kapıları sırasıyla gösterir (biçim durumu ayırır: dolu daire geçti, yarım daire test, içi boş kare kaldı).
+    Liste satırında görünür metin kısadır (geçen / toplam); tam döküm ekran okuyucuya verilir. Proje sayfasında tam döküm görünür.
+    onek=False: "Kapılar" adı bitişik görünür etikette zaten yazıyorsa gizli önek yinelenmez."""
+    dots = ""
+    if kapilar:
+        dots = '<span class="gates8" aria-hidden="true">%s</span>' % "".join(
+            '<span class="dot dot--%s"></span>' % v["durum"] for g, v in sorted(kapilar.items()))
+    if kisa:
+        return ('<span class="gsum"><span class="visually-hidden">Kapılar: %d geçti, %d test, %d kaldı.</span>%s'
+                '<span class="gsum__text" aria-hidden="true">%d/%d geçti</span></span>') % (
+            k["gecti"], k["test"], k["kaldi"], dots, k["gecti"], k["gecti"] + k["test"] + k["kaldi"])
+    return ('<span class="gsum">%s%s<span class="gsum__text">%d geçti · %d test · %d kaldı</span></span>') % (
+        '<span class="visually-hidden">Kapılar: </span>' if onek else "", dots, k["gecti"], k["test"], k["kaldi"])
+
+
+RANGE_LO, RANGE_HI = -0.5, 1.5   # hedefin katı olarak eksen sınırları: sıfır yüzde 25'te, hedef yüzde 75'te durur
+
+
+# Tarama kırıntısı kuralı (yüzde, çizgi genişliğine göre). Nokta ve halesi yaklaşık 16 px tutar; en dar sütunda (yaklaşık 200 px)
+# bu, noktanın iki yanında yüzde 4,5 eder. Noktanın bir yanında bundan sonra kalan tarama yüzde 5'ten kısaysa o yan çizilmez
+# (tarama noktanın merkezinden başlar); iki yan da kısaysa tarama hiç çizilmez. Uç değerler zaten metinde yazılıdır.
+# tests/kabul.spec.js içindeki denetim aynı iki sayıyı kullanır.
+RANGE_HALE = 4.5
+RANGE_KIRINTI = 5.0
+
+
+def range_plot(f, eksen=False):
+    """Altı aylık net nakit: kötü-iyi aralığı (taralı: varsayım), baz senaryo noktası (artı: dolu, eksi: içi boş), sıfır ve hedef çentiği.
+    Ölçek doğrusaldır. Aralık ölçeği aşarsa o uca ok konur; baz değerin kendisi ölçek dışındaysa nokta çizilmez, yalnız ok kalır.
+    Noktanın yanında kırıntı kadar kalan tarama çizilmez (RANGE_HALE ve RANGE_KIRINTI).
+    eksen=True çentiklerin altına "0" ve "hedef" yazar.
+    Grafik yardımcı teknolojiden gizlidir: aynı değerler her kullanımda bitişik metinde ya da tabloda yazılıdır."""
+    h = float(f["hedef_tl"])
+    def raw(v):
+        return (v / h - RANGE_LO) / (RANGE_HI - RANGE_LO)
+    def pos(v):
+        return max(0.0, min(1.0, raw(v))) * 100.0
+    k, b, i = f["kotu"]["net_nakit"], f["baz"]["net_nakit"], f["iyi"]["net_nakit"]
+    lo, hi = min(k, b, i), max(k, b, i)
+    a, z = pos(lo), pos(hi)
+    tasma = " ".join(ad for ad, var in (("sol", raw(lo) < 0), ("sag", raw(hi) > 1)) if var)
+    disarida = raw(b) < 0 or raw(b) > 1
+    bp = pos(b)
+    if not disarida:
+        if "sol" not in tasma and (bp - RANGE_HALE) - a < RANGE_KIRINTI: a = bp
+        if "sag" not in tasma and z - (bp + RANGE_HALE) < RANGE_KIRINTI: z = bp
+    # Taşma oku taramanın uç parçasıdır: ölçeği aşan satırda tarama sıfır genişlikte de olsa durur.
+    tarama = '<span class="range__span"></span>' if (tasma or z - a > 0) else ""
+    nokta = "" if disarida else '<span class="range__dot"></span>'
+    s = ('<div class="range" aria-hidden="true" data-isaret="%s"%s style="--a:%.1f%%;--w:%.1f%%;--b:%.1f%%;--z:%.1f%%;--t:%.1f%%">'
+         '%s<span class="range__zero"></span><span class="range__target"></span>%s</div>') % (
+        "eksi" if b <= 0 else "arti", (' data-tasma="%s"' % tasma) if tasma else "", a, z - a, bp, pos(0), pos(h), tarama, nokta)
+    if eksen:
+        s += '<span class="range__axis" aria-hidden="true" style="--z:%.1f%%;--t:%.1f%%"><span>0</span><span>hedef %s</span></span>' % (pos(0), pos(h), tl(h))
+    return s
+
+
+def metric_score(n):
+    """Uygunluk puanı ölçüsü: değer, kanıtla desteklenen kısım ve puan çubuğu. Liste satırı ile proje başı aynı bileşeni kullanır."""
+    return ('<div class="metric metric--score"><span class="metric__label">Uygunluk</span> '
+            '<span class="metric__val"><b>%s</b> / 100 <span class="metric__note">· kanıtlı %s</span></span>%s</div>') % (
+        num(n["puan"]), num(n["duzeltilmis"]), meter(n["puan"], n["duzeltilmis"], gizli=True))
+
+
+def metric_cash(f, eksen=False):
+    """Altı ay net nakit ölçüsü: baz değer, aralık çizgisi ve çizginin iki ucundaki kötü ve iyi senaryo."""
+    hedef = ('<span class="visually-hidden"> Hedef %s.</span>' % tl(f["hedef_tl"])) if eksen else ""
+    return ('<div class="metric metric--cash"><span class="metric__label">6 ay net nakit</span> <span class="metric__val"><b>%s</b></span>%s'
+            '<span class="metric__sub metric__sub--ends"><span>kötü\u00a0%s</span> <span>iyi\u00a0%s</span></span>%s</div>') % (
+        tl(f["baz"]["net_nakit"]), range_plot(f, eksen), tl(f["kotu"]["net_nakit"]), tl(f["iyi"]["net_nakit"]), hedef)
 
 
 def pips(p):
@@ -207,24 +279,64 @@ def opt_row(o, rank, depth=0, extra_attrs="", ne=None):
     rel = "../" * depth
     n = o["nitel"]; f = o["finans"]; fi = o["finans_girdi"]
     saat = f["baz"]["saat_basi"]
-    facts = [
-        ("6 ay net nakit", "%s<small>kötü %s</small><small>iyi %s</small>" % (tl(f["baz"]["net_nakit"]), tl(f["kotu"]["net_nakit"]), tl(f["iyi"]["net_nakit"]))),
-        ("İlk tahsilat", "%s-%s gün<small>kalan efor %s saat</small>" % (num(fi["ilk_tahsilat_gun"]["min"]), num(fi["ilk_tahsilat_gun"]["max"]), num(fi["kalan_efor_saat"]["beklenen"]))),
-        ("Kurucu saati", "%s saat<small>saat başı %s</small>%s" % (num(f["baz"]["kurucu_saat"]), tl(saat) if saat is not None else "–",
-                                                                   "<small>kapasiteyi aşıyor</small>" if f.get("kapasite_asimi") else "")),
-    ]
-    fhtml = "".join("<div><dt>%s</dt><dd>%s</dd></div>" % (e(a), b) for a, b in facts)
+    duz = ('<div class="metric metric--plain"><span class="metric__label">İlk\u00a0tahsilat</span> <span class="metric__val"><b>%s-%s\u00a0gün</b></span> '
+           '<span class="metric__sub">kalan\u00a0efor\u00a0%s\u00a0saat</span></div>'
+           '<div class="metric metric--plain"><span class="metric__label">Kurucu\u00a0saati</span> <span class="metric__val"><b>%s\u00a0saat</b></span> '
+           '<span class="metric__sub">saat\u00a0başı\u00a0%s</span>%s</div>') % (
+        num(fi["ilk_tahsilat_gun"]["min"]), num(fi["ilk_tahsilat_gun"]["max"]), num(fi["kalan_efor_saat"]["beklenen"]),
+        num(f["baz"]["kurucu_saat"]), tl(saat) if saat is not None else "–", ' <span class="metric__sub">kapasiteyi\u00a0aşıyor</span>' if f.get("kapasite_asimi") else "")
     return ('<li class="opt" id="row-%(id)s" %(attrs)s>'
             '<div class="opt__rank"><span class="visually-hidden">Sıra </span>%(rank)s</div>'
             '<div class="opt__main"><h3 class="opt__title"><a href="%(rel)sproje/%(proje)s.html#%(id)s">%(ad)s</a></h3>'
-            '<p class="opt__proj">%(pb)s · %(tur)s</p>%(ne)s'
+            '<p class="opt__proj">%(pb)s\u00a0· %(tur)s</p>%(ne)s'
             '<div class="opt__tags">%(tag)s%(gs)s</div></div>'
-            '<div class="opt__score"><div class="score"><span class="score__num">%(p)s</span><span class="score__den">/ 100 puan</span></div>%(meter)s'
-            '<p class="xs muted">kanıtla desteklenen %(adj)s · ortalama kanıt E%(kort)s</p></div>'
-            '<dl class="opt__facts facts">%(facts)s</dl></li>') % {
+            '<div class="opt__metrics">%(score)s%(cash)s%(duz)s</div></li>') % {
         "id": e(o["id"]), "attrs": extra_attrs, "rank": e(rank), "rel": rel, "proje": e(o["proje"]), "ad": e(o["tanim"]["ad"]),
-        "pb": e(o["proje_baslik"]), "tur": e(o["tanim"]["tur"]), "ne": ('<p class="opt__what">%s</p>' % e(ne)) if ne else "", "tag": tag(o["karar"], o["karar_ad"]), "gs": gsum(o["kapi"]),
-        "p": num(n["puan"]), "meter": meter(n["puan"], n["duzeltilmis"]), "adj": num(n["duzeltilmis"]), "kort": num(n["kanit_ort"], 1), "facts": fhtml}
+        "pb": e(o["proje_baslik"]), "tur": e(o["tanim"]["tur"]), "ne": ('<p class="opt__what">%s</p>' % e(ne)) if ne else "", "tag": tag(o["karar"], o["karar_ad"]),
+        "gs": gsum(o["kapi"], o["kapilar"], kisa=True), "score": metric_score(n), "cash": metric_cash(f), "duz": duz}
+
+
+def legend(nakit=True):
+    """İşaretlerin açıklaması, üç grupta: puan çubuğu (dolu: kanıt, taralı: varsayım), kapı noktaları ve nakit aralığı çizgisi."""
+    sw = lambda cls: '<span class="%s" aria-hidden="true"></span>' % cls
+    gruplar = [("Puan", [(sw("legend__swatch"), "kanıtla desteklenen"), (sw("legend__swatch legend__swatch--claim"), "varsayım")]),
+               ("Kapı", [(sw("dot dot--gecti"), "geçti"), (sw("dot dot--test"), "test"), (sw("dot dot--kaldi"), "kaldı")])]
+    if nakit:
+        gruplar.append(("Nakit", [(sw("i-dot"), "baz artı"), (sw("i-dot i-dot--eksi"), "baz eksi"), (sw("legend__swatch legend__swatch--claim"), "kötü ile iyi arası"),
+                                  (sw("i-zero"), "sıfır"), (sw("i-target"), "hedef"), (sw("i-arrow"), "ölçek dışına taşıyor")]))
+    return '<div class="legend">%s</div>' % "".join(
+        '<p class="legend__group"><strong>%s</strong>%s</p>' % (e(ad), "".join('<span class="legend__item">%s%s</span>' % (ikon, e(t)) for ikon, t in oge)) for ad, oge in gruplar)
+
+
+def howto(giris=None, not_=None):
+    """Liste başındaki kapalı "işaretler" bölümü: listeye yer açmak için gösterge açılır bölümde durur.
+    giris göstergeden önce, not_ (ör. hedef tutarı ve ölçek) göstergeden sonra yazılır."""
+    return '<details class="howto"><summary>İşaretler nasıl okunur</summary><div class="details__body">%s%s%s</div></details>' % (
+        ('<p class="small mb-3">%s</p>' % e(giris)) if giris else "", legend(), ('<p class="small mt-3">%s</p>' % e(not_)) if not_ else "")
+
+
+KATMANLAR = [("kapilar", "Kapılar", "Sekiz koşul; biri kaldıysa seçenek sıralamaya girmez."), ("kriterler", "Puan", "26 kriter, altı kategori; her biri 0 ile 5 arasında."),
+             ("kanit", "Kanıt", "Her puanın yanında E0-E4 kanıt düzeyi."), ("nakit", "Nakit", "Altı aylık net nakit; puanla toplanmaz."),
+             ("stratejik", "Strateji", "Uzun vadeli değer ayrı eksende.")]
+
+
+def layers_html(prefix=""):
+    """Şablonun beş katmanı: numaralı adım bağlantıları."""
+    return '<ol class="layers">%s</ol>' % "".join(
+        '<li><a href="%s#%s"><span><span class="layers__name">%s</span> <span class="layers__desc">%s</span></span></a></li>' % (prefix, a, e(n), e(d)) for a, n, d in KATMANLAR)
+
+
+def minify_js(js):
+    """Yorum satırlarını, satır başı girintisini ve boş satırları siler; kodun kendisine dokunmaz (satır sonları korunur).
+    Kaynak dosya (src/site.js) yorumlarıyla okunur kalır; yayımlanan dosya küçülür.
+    Sınır: satır tabanlıdır. Kaynakta çok satırlı şablon dizgisi ya da satırı "//" ile başlayan dizgi içeriği kullanılmaz;
+    kullanılırsa bu işlev onu sessizce bozar."""
+    out = []
+    for line in js.splitlines():
+        t = line.strip()
+        if not t or t.startswith("//"): continue
+        out.append(t)
+    return "\n".join(out) + "\n"
 
 
 def minify_css(css):
@@ -233,4 +345,11 @@ def minify_css(css):
     css = re.sub(r"\s+", " ", css)
     css = re.sub(r"\s*([{};,>])\s*", r"\1", css)
     css = re.sub(r":\s+", ":", css)
+    # Çarpma ve bölme işaretinin çevresindeki boşluk gereksizdir (toplama ve çıkarmanınki gereklidir, dokunulmaz);
+    # "1 / -1" gibi ızgara değerleri ve "> * + *" gibi seçiciler boşluksuz da geçerlidir.
+    css = re.sub(r" ?([*/]) ?", r"\1", css)
+    # Sınır: bu iki kural dizgi ve url() içine de uygulanır ve ".x *" soy seçicisini ".x*" yapar; stil dosyalarında
+    # içinde " / ", " * " ya da "0." geçen dizgi, url() ve boşlukla yazılmış "*" soy seçicisi kullanılmaz ("> *" güvenlidir).
+    # Baştaki sıfır: 0.625rem → .625rem
+    css = re.sub(r"(?<![\d.])0\.(\d)", r".\1", css)
     return css.replace(";}", "}").strip()

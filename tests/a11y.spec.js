@@ -26,8 +26,6 @@ for (const scheme of ["light", "dark"]) {
       await page.emulateMedia({ colorScheme: scheme });
       await page.goto(url);
       await openAll(page);
-      const toggle = page.locator(".nav-toggle");
-      if (await toggle.isVisible()) await toggle.click();
       expect(await axe(page)).toEqual([]);
     });
   }
@@ -86,15 +84,43 @@ test.describe("belge yapısı", () => {
     for (const f of ["base.css", "components.css"]) {
       const css = fs.readFileSync(path.join(ROOT, "src", "styles", f), "utf8").replace(/\/\*[\s\S]*?\*\//g, "");
       for (const m of css.matchAll(/#[0-9a-fA-F]{3,8}\b|\brgba?\(|\bhsla?\(|-?\d*\.?\d+px\b/g)) bad.push(`${f}: ${m[0]}`);
+      // Adlı renkler ve sistem renkleri de token dosyasında durur ("white-space" gibi özellik adları hariç).
+      for (const m of css.matchAll(/(?<![-\w])(black|white|red|green|blue|gr[ae]y|orange|yellow|purple|silver|navy|teal|maroon|olive|lime|aqua|fuchsia|Canvas|CanvasText|Highlight|HighlightText|LinkText|ButtonText|GrayText)(?![-\w])/g)) bad.push(`${f}: ${m[0]}`);
     }
     expect(bad).toEqual([]);
   });
 });
 
+test("koyu kapak bandında durum bileşeni yok; atlama bağlantısı bandın ilk öğesi", async ({ page }, info) => {
+  test.skip(info.project.name !== "chromium", "not_applicable: yapı denetimi tek projede yeterli");
+  // Durum renkleri (geçti, test, kaldı ve karar etiketleri) kapak için çevrilmez; bu bileşenler koyu bantta kullanılmaz.
+  for (const url of KEY_PAGES) {
+    await page.goto(url);
+    const r = await page.evaluate(() => ({
+      durum: document.querySelectorAll(".on-cover .tag, .on-cover .dot, .on-cover .gate, .on-cover .ev, .on-cover .ruling").length,
+      atlama: document.querySelector("header.on-cover")?.firstElementChild?.className,
+      bant: document.querySelectorAll(".on-cover").length,
+    }));
+    expect.soft(r.durum, `${url}: kapak içinde durum bileşeni`).toBe(0);
+    expect.soft(r.atlama, `${url}: atlama bağlantısı kapak bandının ilk öğesi`).toBe("skip-link");
+    expect.soft(r.bant, `${url}: kapak bandı sayısı (başlık ve alt bölüm; özet sayfasında kapak)`).toBeGreaterThanOrEqual(2);
+  }
+});
+
+test("sekme simgesi kapak tokenlarının renklerini kullanır", async ({}, info) => {
+  test.skip(info.project.name !== "chromium", "not_applicable: dosya düzeyi denetim tek projede yeterli");
+  const t = tokens().light;
+  const svg = fs.readFileSync(path.join(ROOT, "src", "favicon.svg"), "utf8");
+  const renkler = [...new Set([...svg.matchAll(/#[0-9a-fA-F]{6}/g)].map((m) => m[0].toLowerCase()))];
+  const izinli = ["--c-cover", "--c-cover-line", "--c-cover-accent", "--c-cover-muted"].map((k) => t[k].toLowerCase());
+  expect(renkler.length).toBeGreaterThan(0);
+  expect(renkler.filter((c) => !izinli.includes(c)), "simgede token dışı renk").toEqual([]);
+});
+
 function tokens() {
   const css = fs.readFileSync(path.join(ROOT, "src", "styles", "tokens.css"), "utf8");
   const light = css.slice(css.indexOf(":root"), css.indexOf("@media (any-pointer"));
-  const dark = css.slice(css.indexOf("@media (prefers-color-scheme: dark)"), css.indexOf("@media (forced-colors"));
+  const dark = css.slice(css.indexOf("@media screen and (prefers-color-scheme: dark)"), css.indexOf("@media (forced-colors"));
   const read = (block) => Object.fromEntries([...block.matchAll(/(--c-[a-z0-9-]+):\s*(#[0-9a-fA-F]{6})/g)].map((m) => [m[1], m[2]]));
   const l = read(light);
   return { light: l, dark: { ...l, ...read(dark) } };
@@ -110,14 +136,21 @@ test("token karşıtlığı: metin 4,5:1, odak göstergesi ve grafik parçalar 3
   const t = tokens();
   const TEXT = [["--c-ink", "--c-paper"], ["--c-ink-2", "--c-paper"], ["--c-muted", "--c-paper"], ["--c-brand", "--c-paper"], ["--c-ink", "--c-surface"], ["--c-ink-2", "--c-surface"],
     ["--c-muted", "--c-surface"], ["--c-brand", "--c-surface"], ["--c-ink-2", "--c-sunken"], ["--c-muted", "--c-sunken"], ["--c-ink", "--c-band"], ["--c-ink-2", "--c-band"], ["--c-muted", "--c-band"],
-    ["--c-brand", "--c-band"], ["--c-ok", "--c-ok-soft"], ["--c-test", "--c-test-soft"], ["--c-fail", "--c-fail-soft"], ["--c-brand", "--c-brand-soft"], ["--c-ok", "--c-paper"],
-    ["--c-test", "--c-paper"], ["--c-fail", "--c-paper"], ["--c-brand-ink", "--c-brand"], ["--c-paper", "--c-ink"]];
+    ["--c-brand", "--c-band"], ["--c-ok", "--c-ok-soft"], ["--c-test", "--c-test-soft"], ["--c-brand", "--c-brand-soft"], ["--c-selected-ink", "--c-selected"], ["--c-ink", "--c-sunken"], ["--c-ok", "--c-paper"],
+    ["--c-test", "--c-paper"], ["--c-fail", "--c-paper"], ["--c-brand-ink", "--c-brand"], ["--c-paper", "--c-ink"],
+    ["--c-cover-ink", "--c-cover"], ["--c-cover-muted", "--c-cover"], ["--c-cover-accent", "--c-cover"], ["--c-cover-ink", "--c-cover-2"], ["--c-cover-muted", "--c-cover-2"],
+    ["--c-cover", "--c-cover-accent"], ["--c-ok", "--c-band"], ["--c-test", "--c-band"], ["--c-fail", "--c-band"]];
   const GRAPHIC = [["--c-focus", "--c-paper"], ["--c-focus", "--c-surface"], ["--c-focus", "--c-sunken"], ["--c-focus", "--c-band"], ["--c-line-strong", "--c-paper"], ["--c-line-strong", "--c-surface"],
-    ["--c-meter-proven", "--c-sunken"], ["--c-meter-claim", "--c-sunken"], ["--c-meter-proven", "--c-meter-claim"]];
+    ["--c-meter-proven", "--c-track"], ["--c-meter-claim", "--c-track"], ["--c-meter-proven", "--c-meter-claim"], ["--c-ink-2", "--c-track"], ["--c-brand", "--c-track"],
+    ["--c-cover-accent", "--c-cover-track"], ["--c-cover-claim", "--c-cover-track"], ["--c-cover-muted", "--c-cover-track"], ["--c-cover-ink", "--c-cover-claim"], ["--c-cover-muted", "--c-cover"],
+    ["--c-cover-accent", "--c-cover"]];
+  // İz rengi zeminden ayrışmalı ama baskın olmamalı: kâğıtta en az 1,3:1, bantta en az 1,2:1.
+  const IZ = [["--c-track", "--c-paper", 1.3], ["--c-track", "--c-band", 1.2], ["--c-cover-track", "--c-cover", 1.3]];
   const low = [];
   for (const scheme of ["light", "dark"]) {
     for (const [fg, bg] of TEXT) { const r = ratio(t[scheme][fg], t[scheme][bg]); if (r < 4.5) low.push(`${scheme} metin ${fg} / ${bg}: ${r.toFixed(2)}`); }
     for (const [fg, bg] of GRAPHIC) { const r = ratio(t[scheme][fg], t[scheme][bg]); if (r < 3) low.push(`${scheme} grafik ${fg} / ${bg}: ${r.toFixed(2)}`); }
+    for (const [fg, bg, en] of IZ) { const r = ratio(t[scheme][fg], t[scheme][bg]); if (r < en) low.push(`${scheme} iz ${fg} / ${bg}: ${r.toFixed(2)}`); }
   }
   expect(low).toEqual([]);
 });
@@ -150,17 +183,48 @@ test("zorunlu renk kipi: puan çubuğu ve huni çizili, seçili düğme ayırt e
   const on = await page.locator('.chip[aria-pressed="true"]').first().evaluate((el) => getComputedStyle(el).backgroundColor);
   const off = await page.locator('.chip[aria-pressed="false"]').first().evaluate((el) => getComputedStyle(el).backgroundColor);
   expect(on).not.toBe(off);
+  const hizli = page.locator('#dagilim button[data-karar="degistir"]');
+  const once = await hizli.evaluate((el) => getComputedStyle(el).backgroundColor);
+  await hizli.click();
+  expect(await hizli.evaluate((el) => getComputedStyle(el).backgroundColor), "seçili dağılım düğmesi zorunlu renkte ayırt ediliyor").not.toBe(once);
 });
 
-test("durum yalnız renkle anlatılmıyor: kapı ve karar işaretlerinin görünür metni var", async ({ page }, info) => {
+test("durum yalnız renkle anlatılmıyor: işaretler biçimle ayrışır; satırda geçen kapı sayısı, proje sayfasında tam döküm görünür", async ({ page }, info) => {
   test.skip(isPhoneProject(info.project.name), "not_applicable: tek profil yeterli");
   await page.goto("siralama.html");
   const row = page.locator("#liste > li").first();
   await expect(row.locator(".tag")).not.toBeEmpty();
-  for (const w of ["geçti", "test", "kaldı"]) await expect(row.locator(".gsum")).toContainText(w);
-  const visibleText = await row.locator(".gsum__part").first().evaluate((el) => el.getBoundingClientRect().width > 20);
-  expect(visibleText).toBe(true);
+  // Satırda görünür metin kısadır (geçen / toplam). Tam döküm aynı öğede yalnız ekran okuyucuya verilir.
+  await expect(row.locator(".gsum__text")).toHaveText(/^\d\/8 geçti$/);
+  expect(await row.locator(".gsum__text").evaluate((el) => el.getBoundingClientRect().width > 40)).toBe(true);
+  for (const w of ["geçti", "test", "kaldı"]) await expect(row.locator(".gsum .visually-hidden")).toContainText(w);
+  await expect(row.locator(".gates8 .dot")).toHaveCount(8);
+  // Üç durumun biçimi birbirinden farklıdır: dolu daire, yarım daire, içi boş kare. Üçü de aynı ölçüyle denetlenir.
+  const bicim = await row.locator(".gates8").evaluate((box) => ["gecti", "test", "kaldi"].map((d) => {
+    const el = document.createElement("span");
+    el.className = "dot dot--" + d;
+    box.appendChild(el);
+    const s = getComputedStyle(el);
+    const r = parseFloat(s.borderTopLeftRadius) >= el.getBoundingClientRect().width / 2 - 0.5 ? "daire" : "kare";
+    const dolgu = s.backgroundImage !== "none" ? "yarım" : s.backgroundColor === "rgba(0, 0, 0, 0)" ? "boş" : "dolu";
+    el.remove();
+    return r + " " + dolgu;
+  }));
+  expect(bicim).toEqual(["daire dolu", "daire yarım", "kare boş"]);
+  // Karar etiketlerinin işaretleri de birbirinden farklı biçimdedir.
+  // Altı kararın işareti de ölçülür (listede o an görünmeyen kararlar sonda öğelerle): hiçbiri bir diğeriyle aynı biçimde değildir.
+  const isaret = await row.locator(".opt__tags").evaluate((box) => Object.fromEntries(["yatirim-yap", "once-test-et", "degistir", "beklet", "birak", "kapida-kaldi"].map((k) => {
+    const el = document.createElement("span");
+    el.className = "tag"; el.dataset.karar = k; el.textContent = k;
+    box.appendChild(el);
+    const s = getComputedStyle(el, "::before");
+    const v = [s.borderTopLeftRadius, s.transform !== "none" ? "döndürülmüş" : "düz", s.backgroundImage !== "none" ? "desen:" + s.backgroundImage.length : s.backgroundColor === "rgba(0, 0, 0, 0)" ? "boş" : "dolu"].join(" ");
+    el.remove();
+    return [k, v];
+  })));
+  expect(new Set(Object.values(isaret)).size, `karar işaretleri: ${JSON.stringify(isaret)}`).toBe(6);
   await page.goto("proje/qral.html");
+  for (const w of ["geçti", "test", "kaldı"]) await expect(page.locator(".keyfacts .gsum__text")).toContainText(w);
   await openAll(page);
   await expect(page.locator(".ev-legend").first()).toContainText("E0");
 });
@@ -170,6 +234,9 @@ test("yazdırma: gezinme gizli, renkler açık tema", async ({ page }, info) => 
   await page.emulateMedia({ media: "print", colorScheme: "dark" });
   await page.goto("proje/qral.html");
   await expect(page.locator(".toc")).toBeHidden();
-  const bg = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
-  expect(bg).toBe("rgb(255, 255, 255)");
+  const r = await page.evaluate(() => ({ bg: getComputedStyle(document.body).backgroundColor, ink: getComputedStyle(document.body).color, ust: getComputedStyle(document.querySelector(".site-header")).backgroundColor }));
+  expect(r.bg).toBe("rgb(255, 255, 255)");
+  // Koyu tema yalnız ekranda geçerlidir: kâğıtta metin açık temanın koyu mürekkebi, kapak bandı beyazdır.
+  expect(r.ink, "yazdırmada metin rengi").toBe("rgb(21, 23, 28)");
+  expect(r.ust, "yazdırmada kapak bandı").toBe("rgb(255, 255, 255)");
 });

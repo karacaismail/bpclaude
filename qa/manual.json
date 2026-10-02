@@ -37,17 +37,17 @@
  {
   "katman": "Bağımsız QA incelemesi (yalnız okuyan inceleyici)",
   "durum": "pass",
-  "not": "Çalıştı: 28 bulgu. Yayın öncesi gerekenlerin hepsi ve kalanların çoğu düzeltildi; testi eklenenler otomatik katmanlarda. Açık kalan: hover durumlarının görsel referansı yok."
+  "not": "Bu düzenleme için üç tur çalıştı (yalnız okuyan kod inceleyicisi). Birinci tur: 2 yüksek, 6 orta bulgu. İkinci tur: 2 önemli bulgu (kayan şeritte fareyle ilk tıklamanın boşa gitmesi, zorunlu renkte huni çubukları) ve 12 küçük bulgu. Üçüncü tur: engelleyici bulgu yok, 1 önemli bulgu (taşan tabloda odak çerçevesinin maskede solması) ve 8 küçük bulgu. Önemli bulguların hepsi düzeltildi ve regresyon testine bağlandı; tıklama testinin düzeltme kaldırılınca başarısız olduğu ayrıca denendi. Üçüncü turdan sonraki son düzeltmeler yeniden incelenmedi; otomatik testlerle doğrulandı. Açık kalan küçükler: eski tarayıcı tabanının yazılı olmaması, sekme simgesi için PNG yedeği."
  },
  {
   "katman": "Yapay zekâ ile görsel inceleme",
   "durum": "pass",
-  "not": "İnceleyici ve uygulayıcı referans görüntülerine baktı; grafik etiket çakışması ve kırpılmış iki referans böyle bulundu. Deterministik kanıt değildir; piksel karşılaştırmasının yerine geçmez."
+  "not": "Bağımsız tasarım eleştirmeni üç turda ekran görüntülerine baktı: birinci turda telefon 6,5 ve masaüstü 7, ikinci turda 7 ve 8, üçüncü turda 7,5 ve 8,5 puan verdi; son hüküm küçük düzeltmelerle yayımlanabilir. Üçüncü turun pürüzleri (tablo başlığındaki boşluk, sütun sırası, çentik ve tarama kırıntısı, sözlükte boş sütun) sonradan düzeltildi ve yeniden puanlanmadı. Deterministik kanıt değildir; piksel karşılaştırmasının yerine geçmez."
  },
  {
   "katman": "Görsel referansların sahibi tarafından onayı",
   "durum": "not_run",
-  "not": "Referanslar sahibin istediği arayüz düzenlemesiyle yeniden üretildi; önce ve sonra görüntüleri qa/ux-oncesi ve qa/ux-sonrasi altında, gerekçe qa/referans-degisiklikleri altında. Sahibin incelemesi bekliyor."
+  "not": "Referanslar sahibin istediği arayüz düzenlemeleriyle yeniden üretildi; önce ve sonra görüntüleri qa/ux-oncesi, qa/ux-sonrasi, qa/ux2-oncesi ve qa/ux2-sonrasi altında, gerekçe qa/referans-degisiklikleri altında. Sahibin incelemesi bekliyor."
  },
  {
   "katman": "Gerçek tarayıcı yakınlaştırması",
@@ -61,7 +61,7 @@
  },
  {
   "katman": "Yayındaki adreste koşu (npm run test:canli)",
-  "durum": "pass",
-  "not": "2026-10-02, commit 925a5d9 yayındayken: Chromium ve dokunmatik WebKit profillerinde görsel dışı testler; 285 pass, 0 fail, 59 atlandı. GitHub Pages 404 sayfası, istek kümesi ve indirme dosyaları canlı adreste doğrulandı."
+  "durum": "not_run",
+  "not": "Bu satır yayından sonra güncellenir."
  }
 ]
